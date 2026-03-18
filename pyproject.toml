@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+ 
+[project]
+name = "gradnorm"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.13.0",
+    "datasets>=4.8.2",
+    "ipykernel>=7.2.0",
+    "ipython>=8.38.0",
+    "ipywidgets>=8.1.8",
+    "torch>=2.10.0",
+    "transformers>=5.3.0",
+]
+ 
+[tool.hatch.build.targets.wheel]
+# Include every top-level directory as an importable package.
+# Add future directories (e.g. "baselines", "analysis") here as they appear.
+packages = [
+    "gradnorm",
+    "utils",
+]
