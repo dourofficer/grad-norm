@@ -19,7 +19,7 @@ from typing import Any
 # Per-trajectory metrics
 # ─────────────────────────────────────────────────────────────────────────────
 
-def acc_at_k(
+def step_at_k(
     scores:    dict[int, float],
     true_step: int,
     k:         int,
@@ -47,7 +47,7 @@ def acc_at_k(
     return int(true_step in ranked[:k])
 
 
-def agent_acc_at_k(
+def agent_at_k(
     scores:      dict[int, float],
     step_agents: dict[int, str],
     true_agent:  str,
@@ -117,10 +117,10 @@ def compute_metrics(
 
     for res in results:
         for k in ks:
-            totals[f"step_acc@{k}"] += acc_at_k(
+            totals[f"step_acc@{k}"] += step_at_k(
                 res["scores"], res["true_step"], k
             )
-            totals[f"agent_acc@{k}"] += agent_acc_at_k(
+            totals[f"agent_acc@{k}"] += agent_at_k(
                 res["scores"], res["step_agents"], res["true_agent"], k
             )
 
