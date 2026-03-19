@@ -212,143 +212,101 @@ def gradnorm_standard(
 
     return score
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Strategy 2 — Split forward
-# ─────────────────────────────────────────────────────────────────────────────
+class StopForwardException(Exception):
+    """Exception used to gracefully abort the forward pass at the target layer boundary."""
+    pass
 
 def gradnorm_split(
     model:         PreTrainedModel,
     input_ids:     Tensor,
     ctx_len:       int,
+    normalize:     bool,
     layer_variant: LayerVariant,
 ) -> float:
-    """Compute GradNorm via a split forward pass (memory-efficient).
-
-    Two-phase execution:
-
-    Phase 1 — no_grad:
-        Run the full model forward with ``torch.no_grad()``.
-        For the "lm_head" variant, capture the transformer body's output
-        (last_hidden_state).
-        For "out_proj" / "final_layer" variants, register a forward pre-hook
-        on ``transformer.layers[-1]`` to capture *exactly* the (args, kwargs)
-        passed to that layer during the normal forward — including any
-        model-specific tensors such as ``position_embeddings`` for Llama 3.
-        The hook is removed immediately after the pass.
-
-    Phase 2 — grad:
-        Re-run only the target component from the captured boundary state,
-        with ``requires_grad=True`` on the target parameters.
-        Backward propagates only through this lightweight sub-graph, so
-        activations for the prefix layers never need to be retained.
-
-    Requires PyTorch ≥ 2.0 (for ``register_forward_pre_hook(with_kwargs=True)``).
-
-    Parameters
-    ----------
-    model         : language model in eval mode, on the correct device.
-    input_ids     : (1, seq_len) on the same device.
-    ctx_len       : context token count (from build_context).
-    layer_variant : which weight(s) to differentiate.
-
-    Returns
-    -------
-    float — L1 norm of ∂L/∂W (summed over all target parameters).
-    """
-    model.eval()
+    """Compute GradNorm via a memory-efficient split forward pass."""
+    
+    # ── 1. Freeze everything, unfreeze target params ─────────────────
     for p in model.parameters():
         p.requires_grad_(False)
 
-    transformer = model.model   # the transformer body (LlamaModel / Qwen2Model)
-    score = 0.0
+    target_params = get_target_params(model, layer_variant)
+    for p in target_params:
+        p.requires_grad_(True)
 
-    # ── lm_head: clean split at the transformer-body boundary ────────────
-    if layer_variant == "lm_head":
-        # Phase 1: full transformer body, no grad
-        with torch.no_grad():
-            last_hidden = transformer(
-                input_ids = input_ids,
-                use_cache = False,
-            ).last_hidden_state.detach()   # (1, seq_len, d_model)
+    transformer = model.model
+    final_layer = transformer.layers[-1]
 
-        # Phase 2: lm_head only, with grad
-        target = model.lm_head.weight
-        target.requires_grad_(True)
-        try:
-            logits = model.lm_head(last_hidden)    # (1, seq_len, vocab)
-            loss   = _ntp_loss(logits, input_ids, ctx_len)
-            loss.backward()
-            if target.grad is not None:
-                score = target.grad.abs().sum().item()
-        finally:
-            if target.grad is not None:
-                target.grad = None
-            target.requires_grad_(False)
+    captured_args = None
+    captured_kwargs = None
 
-    # ── out_proj / final_layer: hook-based boundary capture ──────────────
-    elif layer_variant in ("out_proj", "final_layer"):
-        # Phase 1: full forward with no_grad; hook captures the exact inputs
-        # to the final transformer layer (args + all kwargs, e.g.
-        # position_embeddings for Llama 3), then is immediately removed.
-        _captured: dict[str, Any] = {}
+    def pre_hook(module, args, kwargs):
+        nonlocal captured_args, captured_kwargs
+        captured_args = args
+        captured_kwargs = kwargs
+        # Halt execution the exact moment inputs reach the final layer
+        raise StopForwardException()
 
-        def _pre_hook(module, args, kwargs):  # noqa: ANN001
-            # Detach all tensor arguments so they become leaf constants in the
-            # phase-2 graph; non-tensor arguments are passed through as-is.
-            _captured["args"] = tuple(
-                a.detach() if isinstance(a, Tensor) else a for a in args
-            )
-            _captured["kwargs"] = {
-                k: v.detach() if isinstance(v, Tensor) else v
-                for k, v in kwargs.items()
-            }
+    # with_kwargs=True reliably intercepts positional & keyword args (attention_mask, position_ids)
+    handle = final_layer.register_forward_pre_hook(pre_hook, with_kwargs=True)
 
-        handle = transformer.layers[-1].register_forward_pre_hook(
-            _pre_hook, with_kwargs=True   # requires PyTorch ≥ 2.0
-        )
-        with torch.no_grad():
+    # ── 2. Phase 1: Capture boundary state (Zero Memory Overhead) ────
+    try:
+        with torch.no_grad(): 
             model(input_ids, use_cache=False)
+    except StopForwardException:
+        pass
+    finally:
         handle.remove()
 
-        # Phase 2: re-run final_layer → norm → lm_head with grad
-        if layer_variant == "out_proj":
-            target_params = [transformer.layers[-1].self_attn.o_proj.weight]
-        else:  # "final_layer"
-            target_params = list(transformer.layers[-1].parameters())
-            target_params.append(model.lm_head.weight)
+    if captured_args is None:
+        raise RuntimeError("Failed to intercept inputs at the final layer boundary.")
 
-        for p in target_params:
-            p.requires_grad_(True)
+    # ── 3. Phase 2: Re-run target component (Autograd Enabled) ───────
+    # Recursively detach captured tensors to strictly isolate the backward graph.
+    # This acts as an absolute wall against tied-embedding gradient leaks.
+    def _detach(v):
+        if isinstance(v, Tensor): return v.detach()
+        if isinstance(v, tuple):  return tuple(_detach(x) for x in v)
+        if isinstance(v, list):   return [_detach(x) for x in v]
+        if isinstance(v, dict):   return {k: _detach(x) for k, x in v.items()}
+        return v
+    
+    args = _detach(captured_args)
+    kwargs = _detach(captured_kwargs)
 
-        try:
-            # Re-run the final layer from the captured boundary state.
-            # position_embeddings, attention_mask, etc. are already in kwargs.
-            layer_out  = transformer.layers[-1](
-                *_captured["args"], **_captured["kwargs"]
-            )
-            hidden     = layer_out[0]               # hidden_states output
-            hidden     = transformer.norm(hidden)   # final layer-norm
-            logits     = model.lm_head(hidden)      # (1, seq_len, vocab)
-            loss       = _ntp_loss(logits, input_ids, ctx_len)
-            loss.backward()
+    with torch.enable_grad():
+        # Re-run the final transformer block dynamically
+        layer_outs = final_layer(*args, **kwargs)
+        
+        # HF decoder layers typically return a tuple where [0] is the hidden_states
+        hidden_states = layer_outs[0] if isinstance(layer_outs, tuple) else layer_outs
 
-            score = sum(
-                p.grad.abs().sum().item()
-                for p in target_params
-                if p.grad is not None
-            )
-        finally:
-            for p in target_params:
-                if p.grad is not None:
-                    p.grad = None
-                p.requires_grad_(False)
+        # Route through the final layernorm (Standard in Llama/Qwen/Mistral architectures)
+        if hasattr(transformer, "norm") and transformer.norm is not None:
+            hidden_states = transformer.norm(hidden_states)
+            
+        # Compute final logits and sequence loss
+        logits = model.lm_head(hidden_states)
+        loss = _ntp_loss(logits, input_ids, ctx_len)
+        
+        # Backward pass strictly traverses only the isolated Phase 2 graph
+        loss.backward()
 
-    else:
-        raise ValueError(
-            f"Unknown layer_variant {layer_variant!r}. "
-            "Choose from: 'lm_head', 'out_proj', 'final_layer'."
-        )
+    # ── 4. Aggregate Score ───────────────────────────────────────────
+    score = sum(
+        p.grad.abs().sum().item()
+        for p in target_params
+        if p.grad is not None
+    )
+    
+    if normalize: 
+        score = score / sum(p.numel() for p in target_params)
+
+    # ── 5. Cleanup: zero grads, re-freeze ────────────────────────────
+    for p in target_params:
+        if p.grad is not None:
+            p.grad = None
+        p.requires_grad_(False)
 
     return score
 
@@ -430,14 +388,16 @@ def score_trajectory(
         scores[step_idx] = score
 
         if verbose:
-            print(f"  step {step_idx:3d} [{role}]: {score:.6f}")
+            print(f"  step {step_idx:3d} [{role}] (seq_len = {seq_len}): {score:.6f}")
 
         # ── Free CUDA memory between steps ───────────────────────────────
         del input_ids
         if device != "cpu" and str(device) != "cpu":
             torch.cuda.empty_cache()
 
+    scores = dict(sorted(scores.items(), key=lambda item: item[1], reverse=True))
     return {
+        "filename":    trajectory.filename,
         "question_id": trajectory.question_id,
         "scores":      scores,
         "true_step":   trajectory.mistake_step,

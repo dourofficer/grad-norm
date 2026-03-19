@@ -3,13 +3,14 @@ main.py ― GradNorm evaluation runner for Who&When.
 
 Usage
 -----
-    python main.py \\
-        --dataset   /path/to/whoandwhen.json \\
-        --model     meta-llama/Meta-Llama-3-8B-Instruct \\
-        --layer     lm_head \\
-        --strategy  standard \\
-        --subset    handcrafted \\
-        --output    results/llama_lmhead_handcrafted.json
+CUDA_VISIBLE_DEVICES=7 python main.py \
+    --dataset   ww \
+    --model     /data/hoang/resources/models/Qwen/Qwen3-8B \
+    --layer     lm_head \
+    --strategy  split \
+    --subset    hand-crafted \
+    --output    outputs/qwen_lmhead.json \
+    --verbose
 
 All six (model × layer) GradNorm combinations in one sweep:
     for LAYER in lm_head out_proj final_layer; do
@@ -25,14 +26,15 @@ import argparse
 import json
 import sys
 import time
+from tqdm import tqdm
 from pathlib import Path
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from data import load_dataset, build_context, custom_build_context
-from gradnorm import score_trajectory
-from metrics import compute_metrics
+from gradnorm.data import load_dataset, build_context, custom_build_context
+from gradnorm.gradnorm import score_trajectory
+from gradnorm.metrics import compute_metrics
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -58,14 +60,19 @@ def parse_args() -> argparse.Namespace:
         help="Which weight matrix W to differentiate against (default: lm_head)."
     )
     p.add_argument(
+        "--max_len", type=int,
+        default=16000,
+        help="Max context length"
+    )
+    p.add_argument(
         "--strategy", choices=["standard", "split"],
         default="standard",
         help="Gradient computation strategy (default: standard)."
     )
     p.add_argument(
-        "--subset", choices=["algo", "handcrafted", "all"],
-        default="all",
-        help="Dataset subset to evaluate (default: all)."
+        "--subset", choices=["algorithm-generated", "hand-crafted"],
+        default="hand-crafted",
+        help="Dataset subset to evaluate"
     )
     p.add_argument(
         "--output", default=None,
@@ -82,8 +89,8 @@ def parse_args() -> argparse.Namespace:
         help="Model dtype (default: bfloat16)."
     )
     p.add_argument(
-        "--ks", nargs="+", type=int, default=[1, 2, 3, 5, 10],
-        help="k values for Acc@k (default: 1 2 3 5 10)."
+        "--ks", nargs="+", type=int, default=[1, 3, 5, 10],
+        help="k values for Acc@k (default: 1 3 5 10)."
     )
     p.add_argument(
         "--verbose", action="store_true",
@@ -107,19 +114,6 @@ def _print_metrics(metrics: dict, prefix: str = "") -> None:
         print(f"  {key:<18} {metrics[key]:>8.4f}")
 
 
-def _split_by_subset(
-    results: list[dict],
-    trajectories: list,
-) -> dict[str, list[dict]]:
-    """Group results by subset label for per-subset reporting."""
-    by_subset: dict[str, list[dict]] = {"algo": [], "handcrafted": [], "all": results}
-    subset_map = {t.question_id: t.subset for t in trajectories}
-    for res in results:
-        s = subset_map.get(res["question_id"], "unknown")
-        by_subset.setdefault(s, []).append(res)
-    return by_subset
-
-
 # ─────────────────────────────────────────────────────────────────────────────
 # Main
 # ─────────────────────────────────────────────────────────────────────────────
@@ -129,6 +123,11 @@ def main() -> None:
 
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
     dtype  = getattr(torch, args.dtype)
+
+    # ── Load dataset ────────────────────────────────────────────────────────
+    trajectories  = load_dataset(args.dataset, subset=args.subset)
+    # trajectories = trajectories[1:20]
+    print(f"Loaded {len(trajectories)} trajectories  [subset={args.subset}]")
 
     # ── Load model ──────────────────────────────────────────────────────────
     print(f"\nLoading tokeniser: {args.model}")
@@ -144,11 +143,6 @@ def main() -> None:
     n_params = sum(p.numel() for p in model.parameters())
     print(f"  {n_params / 1e9:.2f}B parameters loaded.\n")
 
-    # ── Load dataset ────────────────────────────────────────────────────────
-    subset_filter = None if args.subset == "all" else args.subset
-    trajectories  = load_dataset(args.dataset, subset=subset_filter)
-    print(f"Loaded {len(trajectories)} trajectories  [subset={args.subset}]")
-
     # ── Score ───────────────────────────────────────────────────────────────
     # Swap context_builder to custom_build_context here if needed.
     context_builder = build_context
@@ -156,16 +150,12 @@ def main() -> None:
     all_results: list[dict] = []
     t0 = time.perf_counter()
 
-    for i, traj in enumerate(trajectories):
+    # for i, traj in tqdm(enumerate(trajectories)):
+    pbar = tqdm(trajectories)
+    for traj in pbar:
+        # pbar.set_description(traj.filename)
+        pbar.set_postfix(traj=traj.filename, steps=len(traj.history), subset=traj.subset)
         elapsed = time.perf_counter() - t0
-        print(
-            f"[{i+1:3d}/{len(trajectories)}]  {traj.question_id}"
-            f"  steps={len(traj.history)}"
-            f"  subset={traj.subset}"
-            f"  elapsed={elapsed:.0f}s",
-            flush=True,
-        )
-
         try:
             result = score_trajectory(
                 trajectory      = traj,
@@ -188,23 +178,15 @@ def main() -> None:
 
     # ── Metrics ─────────────────────────────────────────────────────────────
     # Report per-subset and combined.
-    by_subset = _split_by_subset(all_results, trajectories)
-
-    all_metrics: dict[str, dict] = {}
-    for subset_name, subset_results in by_subset.items():
-        if not subset_results:
-            continue
-        m = compute_metrics(subset_results, ks=args.ks)
-        all_metrics[subset_name] = m
-        _print_metrics(
-            m,
-            prefix=(
-                f"=== {subset_name.upper()}  |  "
-                f"model={args.model}  layer={args.layer}  "
-                f"strategy={args.strategy}  "
-                f"n={len(subset_results)} ==="
-            ),
-        )
+    all_metrics = compute_metrics(all_results, ks=args.ks)
+    _print_metrics(
+        all_metrics,
+        prefix=(
+            f"model={args.model} | layer={args.layer}  "
+            f"strategy={args.strategy}  "
+            f"n={len(all_results)} ==="
+        ),
+    )
 
     # ── Save ────────────────────────────────────────────────────────────────
     if args.output:
