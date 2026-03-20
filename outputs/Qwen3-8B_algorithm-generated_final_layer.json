@@ -1,0 +1,3499 @@
+{
+  "args": {
+    "dataset": "ww",
+    "model": "/data/hoang/resources/models/Qwen/Qwen3-8B",
+    "layer": "final_layer",
+    "max_len": 12000,
+    "strategy": "split",
+    "subset": "algorithm-generated",
+    "output": "outputs/Qwen3-8B_algorithm-generated_final_layer.json",
+    "device": null,
+    "dtype": "bfloat16",
+    "ks": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "verbose": true
+  },
+  "metrics": {
+    "step_acc@1": 0.00819672131147541,
+    "agent_acc@1": 0.2540983606557377,
+    "step_acc@3": 0.09836065573770492,
+    "agent_acc@3": 0.4262295081967213,
+    "step_acc@5": 0.36065573770491804,
+    "agent_acc@5": 0.7295081967213115,
+    "step_acc@10": 1.0,
+    "agent_acc@10": 1.0
+  },
+  "results": [
+    {
+      "filename": "1.json",
+      "question_id": "4d51c4bf-4b0e-4f3d-897b-3f6687a7d9f2",
+      "scores": {
+        "5": 0.0001602194196895372,
+        "3": 5.996203461273732e-05,
+        "1": 5.262764887226795e-05,
+        "4": 2.0081442412961483e-05,
+        "0": 9.142139589501038e-06,
+        "2": 9.024712708612163e-06
+      },
+      "true_step": 0,
+      "true_agent": "Excel_Expert",
+      "step_agents": {
+        "0": "Excel_Expert",
+        "1": "Computer_terminal",
+        "2": "BusinessLogic_Expert",
+        "3": "Computer_terminal",
+        "4": "DataVerification_Expert",
+        "5": "DataVerification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "2.json",
+      "question_id": "cf106601-ab4f-4af9-b045-5295fe67b37d",
+      "scores": {
+        "6": 0.00011497151119768615,
+        "5": 5.033208409404886e-05,
+        "1": 3.786596889532006e-05,
+        "4": 2.1622678459710092e-05,
+        "3": 1.577728660280869e-05,
+        "0": 1.1598161499194124e-05,
+        "2": 8.972893379466533e-06
+      },
+      "true_step": 2,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "Computer_terminal",
+        "2": "Verification_Expert",
+        "3": "Computer_terminal",
+        "4": "Statistics_Expert",
+        "5": "Verification_Expert",
+        "6": "DataAnalysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "3.json",
+      "question_id": "df6561b2-7ee5-4540-baab-5095f742716a",
+      "scores": {
+        "3": 0.00011043804039226515,
+        "7": 5.973798288304934e-05,
+        "1": 3.470422440398512e-05,
+        "5": 3.164294432110357e-05,
+        "0": 9.350640489558798e-06,
+        "2": 8.514268779165696e-06,
+        "4": 6.983055576008915e-06,
+        "6": 3.506311107980489e-06
+      },
+      "true_step": 4,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Python_Expert",
+        "1": "Computer_terminal",
+        "2": "Statistics_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "4.json",
+      "question_id": "f2feb6a4-363c-4c09-a804-0db564eafd68",
+      "scores": {
+        "7": 0.00012347275117855505,
+        "6": 3.9281497461508414e-05,
+        "5": 3.8357874606798326e-05,
+        "2": 2.2103803700040887e-05,
+        "4": 1.8698214533991205e-05,
+        "1": 1.6674908158941206e-05,
+        "0": 1.4007383586890853e-05,
+        "3": 1.1272546950825829e-05
+      },
+      "true_step": 2,
+      "true_agent": "HawaiiRealEstate_Expert",
+      "step_agents": {
+        "0": "HawaiiRealEstate_Expert",
+        "1": "Data_Analysis_Expert",
+        "2": "HawaiiRealEstate_Expert",
+        "3": "Validation_Expert",
+        "4": "Validation_Expert",
+        "5": "Computer_terminal",
+        "6": "Data_Analysis_Expert",
+        "7": "Validation_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "5.json",
+      "question_id": "42d4198c-5895-4f0a-b0c0-424a66465d83",
+      "scores": {
+        "8": 9.018072058168335e-05,
+        "7": 6.960811271626239e-05,
+        "6": 5.585013293370799e-05,
+        "2": 3.218344839651463e-05,
+        "4": 2.7297116000815175e-05,
+        "5": 1.696483335866074e-05,
+        "0": 1.1490231015556042e-05,
+        "1": 8.866069690866257e-06,
+        "3": 8.197415759264974e-06
+      },
+      "true_step": 3,
+      "true_agent": "DataVerification_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "Gaming_Awards_Expert",
+        "2": "Computer_terminal",
+        "3": "DataVerification_Expert",
+        "4": "Computer_terminal",
+        "5": "DataVerification_Expert",
+        "6": "DataVerification_Expert",
+        "7": "DataVerification_Expert",
+        "8": "DataVerification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "6.json",
+      "question_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+      "scores": {
+        "7": 0.00011560112904326245,
+        "5": 2.2794724095882205e-05,
+        "4": 1.576721045577619e-05,
+        "6": 1.5404433227702312e-05,
+        "0": 1.37398727834321e-05,
+        "1": 1.1544262736947158e-05,
+        "3": 1.134070108942013e-05,
+        "2": 8.354648332035752e-06
+      },
+      "true_step": 1,
+      "true_agent": "Literary_Analysis_Expert",
+      "step_agents": {
+        "0": "NorseMythology_Expert",
+        "1": "Literary_Analysis_Expert",
+        "2": "Computer_terminal",
+        "3": "Literary_Analysis_Expert",
+        "4": "Literary_Analysis_Expert",
+        "5": "Literary_Analysis_Expert",
+        "6": "Verification_Expert",
+        "7": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "7.json",
+      "question_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+      "scores": {
+        "9": 3.4874004846256485e-05,
+        "7": 3.170253876560678e-05,
+        "2": 2.871718194752648e-05,
+        "4": 2.0964461222009686e-05,
+        "1": 1.744746307363167e-05,
+        "6": 1.720099634876784e-05,
+        "3": 1.59932410008348e-05,
+        "0": 1.3637098359577827e-05,
+        "5": 1.1998138539707536e-05,
+        "8": 9.858970847745298e-06
+      },
+      "true_step": 5,
+      "true_agent": "ScientificPaperAnalysis_Expert",
+      "step_agents": {
+        "0": "ScientificPaperAnalysis_Expert",
+        "1": "ScientificPaperAnalysis_Expert",
+        "2": "Computer_terminal",
+        "3": "ScientificPaperAnalysis_Expert",
+        "4": "ScientificPaperAnalysis_Expert",
+        "5": "ScientificPaperAnalysis_Expert",
+        "6": "ScientificPaperAnalysis_Expert",
+        "7": "Computer_terminal",
+        "8": "NumericalAnalysis_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "8.json",
+      "question_id": "65afbc8a-89ca-4ad5-8d62-355bb401f61d",
+      "scores": {
+        "5": 3.739684591286678e-05,
+        "1": 3.6403308109274975e-05,
+        "7": 3.588543344063258e-05,
+        "9": 2.400646821813981e-05,
+        "8": 1.8279546552168336e-05,
+        "2": 8.653965717784987e-06,
+        "3": 6.51744403257439e-06,
+        "0": 5.553754059557077e-06,
+        "4": 3.5104927329555794e-06,
+        "6": 2.5689257840205334e-06
+      },
+      "true_step": 4,
+      "true_agent": "AlgorithmDesign_Expert",
+      "step_agents": {
+        "0": "Excel_Expert",
+        "1": "Computer_terminal",
+        "2": "AlgorithmDesign_Expert",
+        "3": "Computer_terminal",
+        "4": "AlgorithmDesign_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Computer_terminal",
+        "8": "Excel_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "9.json",
+      "question_id": "e142056d-56ab-4352-b091-b56054bd1359",
+      "scores": {
+        "4": 6.122948262724403e-05,
+        "3": 3.42047627800626e-05,
+        "2": 1.2224087632317476e-05,
+        "0": 6.903162103250083e-06,
+        "1": 5.714442671703215e-06
+      },
+      "true_step": 1,
+      "true_agent": "GameTheory_Expert",
+      "step_agents": {
+        "0": "AlgorithmDesign_Expert",
+        "1": "GameTheory_Expert",
+        "2": "VerificationExpert",
+        "3": "Computer_terminal",
+        "4": "VerificationExpert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "10.json",
+      "question_id": "d1af70ea-a9a4-421a-b9cc-94b5e02f1788",
+      "scores": {
+        "8": 6.976400312037531e-05,
+        "6": 4.931758426322587e-05,
+        "1": 3.664884412012974e-05,
+        "7": 2.6559434712456646e-05,
+        "9": 2.2290399281642053e-05,
+        "5": 2.2054568090480266e-05,
+        "4": 1.9359319740129005e-05,
+        "3": 1.6601321860718706e-05,
+        "0": 1.5163517247649303e-05,
+        "2": 1.0739456246073846e-05
+      },
+      "true_step": 5,
+      "true_agent": "Validation_Expert",
+      "step_agents": {
+        "0": "Validation_Expert",
+        "1": "Computer_terminal",
+        "2": "Validation_Expert",
+        "3": "Validation_Expert",
+        "4": "Validation_Expert",
+        "5": "Validation_Expert",
+        "6": "Computer_terminal",
+        "7": "Validation_Expert",
+        "8": "Computer_terminal",
+        "9": "Validation_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "11.json",
+      "question_id": "8e867cd7-cff9-4e6c-867a-ff5ddc2550be",
+      "scores": {
+        "9": 7.689536623687503e-05,
+        "5": 6.766846159948662e-05,
+        "7": 2.868923417499173e-05,
+        "2": 1.77253081565154e-05,
+        "1": 1.665527332749128e-05,
+        "3": 1.32153914827215e-05,
+        "0": 1.2851839258555131e-05,
+        "4": 1.2042646313754927e-05,
+        "6": 1.0386259263359688e-05,
+        "8": 8.84521846292186e-06
+      },
+      "true_step": 6,
+      "true_agent": "InformationVerification_Expert",
+      "step_agents": {
+        "0": "Latin_American_Music_Expert",
+        "1": "DataAnalysis_Expert",
+        "2": "InformationVerification_Expert",
+        "3": "Computer_terminal",
+        "4": "DataAnalysis_Expert",
+        "5": "Computer_terminal",
+        "6": "InformationVerification_Expert",
+        "7": "Computer_terminal",
+        "8": "InformationVerification_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "12.json",
+      "question_id": "db4fd70a-2d37-40ea-873f-9433dc5e301f",
+      "scores": {
+        "4": 0.00010643505501106884,
+        "2": 8.621925678402657e-05,
+        "3": 3.631539696055774e-05,
+        "0": 1.4848932319094996e-05,
+        "1": 1.2294863821060868e-05
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "MBTA_FranciscoFoxboroLine_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "MBTA_FranciscoFoxboroLine_Expert",
+        "4": "MBTA_FranciscoFoxboroLine_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "13.json",
+      "question_id": "853c8244-429e-46ca-89f2-addf40dfb2bd",
+      "scores": {
+        "6": 3.6717858300755583e-05,
+        "8": 1.67674441297807e-05,
+        "5": 1.452664414499076e-05,
+        "4": 1.4354333885490118e-05,
+        "0": 1.2407762904067805e-05,
+        "1": 1.1718321828433945e-05,
+        "2": 1.0749395840471814e-05,
+        "7": 8.79438015665065e-06,
+        "3": 8.668724182785872e-06,
+        "9": 6.626080637072631e-06
+      },
+      "true_step": 4,
+      "true_agent": "ArtHistory_Expert",
+      "step_agents": {
+        "0": "ArtHistory_Expert",
+        "1": "Chinese_Zodiac_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "ArtHistory_Expert",
+        "5": "ArtHistory_Expert",
+        "6": "Computer_terminal",
+        "7": "Verification_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "14.json",
+      "question_id": "dc22a632-937f-4e6a-b72f-ba0ff3f5ff97",
+      "scores": {
+        "1": 2.4144642714667055e-05,
+        "7": 1.87463816790781e-05,
+        "2": 1.7779665687701198e-05,
+        "5": 1.7588326698795144e-05,
+        "3": 1.724470277445994e-05,
+        "9": 1.4820455105643892e-05,
+        "8": 1.4786894301131693e-05,
+        "0": 1.3686329177817937e-05,
+        "6": 1.2676233768373747e-05,
+        "4": 5.522065164076623e-06
+      },
+      "true_step": 2,
+      "true_agent": "Culinary_Awards_Expert",
+      "step_agents": {
+        "0": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+        "1": "Culinary_Awards_Expert",
+        "2": "Computer_terminal",
+        "3": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+        "4": "Computer_terminal",
+        "5": "Culinary_Awards_Expert",
+        "6": "Computer_terminal",
+        "7": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+        "8": "Computer_terminal",
+        "9": "Culinary_Awards_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "15.json",
+      "question_id": "851e570a-e3de-4d84-bcfa-cc85578baa59",
+      "scores": {
+        "2": 7.559452271841371e-05,
+        "9": 4.8870769669067085e-05,
+        "7": 4.780066177240518e-05,
+        "5": 2.7295697769944217e-05,
+        "0": 1.2623592727760653e-05,
+        "1": 1.0775094686942189e-05,
+        "3": 9.032004499513298e-06,
+        "4": 6.097518928032714e-06,
+        "8": 3.4351555065442122e-06,
+        "6": 2.6855279588666265e-06
+      },
+      "true_step": 6,
+      "true_agent": "Boggle_Board_Expert",
+      "step_agents": {
+        "0": "Boggle_Board_Expert",
+        "1": "Dictionary_Expert",
+        "2": "Computer_terminal",
+        "3": "Boggle_Board_Expert",
+        "4": "Boggle_Board_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Computer_terminal",
+        "8": "Boggle_Board_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "16.json",
+      "question_id": "0512426f-4d28-49f0-be77-06d05daec096",
+      "scores": {
+        "9": 6.0679994825876746e-05,
+        "6": 3.875931539572754e-05,
+        "2": 3.442921937633368e-05,
+        "7": 2.018924952009643e-05,
+        "8": 1.726399981781391e-05,
+        "0": 1.1590858328906777e-05,
+        "4": 1.1115038278210662e-05,
+        "5": 1.0442859132544157e-05,
+        "3": 1.0104061265792634e-05,
+        "1": 9.986306778363889e-06
+      },
+      "true_step": 1,
+      "true_agent": "Narration_Expert",
+      "step_agents": {
+        "0": "Video_Analyst_Expert",
+        "1": "Narration_Expert",
+        "2": "Computer_terminal",
+        "3": "Video_Analyst_Expert",
+        "4": "Narration_Expert",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "Verification_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "17.json",
+      "question_id": "3ff6b7a9-a5bd-4412-ad92-0cd0d45c0fee",
+      "scores": {
+        "5": 0.00012177983390276157,
+        "7": 6.039089612894519e-05,
+        "9": 5.2451563052205436e-05,
+        "2": 3.705128150372503e-05,
+        "4": 1.9697458800310404e-05,
+        "3": 1.715692099139648e-05,
+        "0": 1.2798078246772829e-05,
+        "1": 1.097527426110423e-05,
+        "6": 1.0707935346268773e-05,
+        "8": 8.732508637075067e-06
+      },
+      "true_step": 4,
+      "true_agent": "Statistics_Expert",
+      "step_agents": {
+        "0": "MarineBiology_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Statistics_Expert",
+        "5": "Computer_terminal",
+        "6": "Statistics_Expert",
+        "7": "Computer_terminal",
+        "8": "Statistics_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "18.json",
+      "question_id": "23dd907f-1261-4488-b21c-e9185af91d5e",
+      "scores": {
+        "9": 3.38414225718288e-05,
+        "3": 2.9032383758596447e-05,
+        "8": 2.510662488138009e-05,
+        "1": 2.4625772746318362e-05,
+        "2": 2.100426990846691e-05,
+        "0": 1.757241951470199e-05,
+        "7": 1.5935879311689243e-05,
+        "5": 1.1380465456162636e-05,
+        "4": 9.875910561408356e-06,
+        "6": 6.953775816372388e-06
+      },
+      "true_step": 7,
+      "true_agent": "Poetry_Expert",
+      "step_agents": {
+        "0": "Poetry_Expert",
+        "1": "Python_Expert",
+        "2": "Literature_Expert",
+        "3": "Python_Expert",
+        "4": "Literature_Expert",
+        "5": "Computer_terminal",
+        "6": "Literature_Expert",
+        "7": "Poetry_Expert",
+        "8": "Literature_Expert",
+        "9": "Poetry_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "19.json",
+      "question_id": "3cef3a44-215e-4aed-8e3b-b1e3f08063b7",
+      "scores": {
+        "3": 4.9567897220629086e-05,
+        "4": 4.544409390145295e-05,
+        "6": 4.271383656996535e-05,
+        "2": 3.961452298487553e-05,
+        "7": 3.025881327821716e-05,
+        "9": 2.875761829697051e-05,
+        "1": 2.5488476356404223e-05,
+        "5": 1.7564295830777308e-05,
+        "8": 1.4746922709777131e-05,
+        "0": 1.3811213749080607e-05
+      },
+      "true_step": 0,
+      "true_agent": "Debugging_Problem_Solving_Expert",
+      "step_agents": {
+        "0": "Debugging_Problem_Solving_Expert",
+        "1": "DebuggingTesting_Expert",
+        "2": "Computer_terminal",
+        "3": "Debugging_Problem_Solving_Expert",
+        "4": "DebuggingTesting_Expert",
+        "5": "Computer_terminal",
+        "6": "Validation_Expert",
+        "7": "Debugging_Problem_Solving_Expert",
+        "8": "Computer_terminal",
+        "9": "DebuggingTesting_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "20.json",
+      "question_id": "f3917a3d-1d17-4ee2-90c5-683b072218fe",
+      "scores": {
+        "4": 3.237882407295035e-05,
+        "6": 1.5953715002287667e-05,
+        "1": 1.2763245945580292e-05,
+        "9": 1.267129870824846e-05,
+        "2": 1.0199365422056774e-05,
+        "3": 1.0102771801660384e-05,
+        "7": 9.706896730418585e-06,
+        "0": 8.147166785416492e-06,
+        "8": 8.109296787020623e-06,
+        "5": 3.7112134268777175e-06
+      },
+      "true_step": 0,
+      "true_agent": "WebServing_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "WebServing_Expert",
+        "2": "WebServing_Expert",
+        "3": "WebServing_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "WebServing_Expert",
+        "8": "WebServing_Expert",
+        "9": "WebServing_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "21.json",
+      "question_id": "ed58682d-bc52-4baa-9eb0-4eb81e1edacc",
+      "scores": {
+        "5": 0.00011780365116849811,
+        "4": 3.338099104478064e-05,
+        "2": 2.4882467742640884e-05,
+        "1": 1.9530888542780725e-05,
+        "0": 1.5845356893294067e-05,
+        "3": 1.4050136539801461e-05
+      },
+      "true_step": 0,
+      "true_agent": "Lyrics_Expert",
+      "step_agents": {
+        "0": "Lyrics_Expert",
+        "1": "MusicHistorian_Expert",
+        "2": "Lyrics_Expert",
+        "3": "Linguistics_Expert",
+        "4": "Lyrics_Expert",
+        "5": "Lyrics_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "22.json",
+      "question_id": "1f975693-876d-457b-a649-393859e79bf3",
+      "scores": {
+        "5": 0.00011575735483981107,
+        "1": 9.654174476922846e-05,
+        "3": 3.34901229520366e-05,
+        "0": 9.870701198183873e-06,
+        "2": 7.233333796338438e-06,
+        "4": 5.242223597827888e-06
+      },
+      "true_step": 0,
+      "true_agent": "PythonDebugging_Expert",
+      "step_agents": {
+        "0": "PythonDebugging_Expert",
+        "1": "Computer_terminal",
+        "2": "UnitTesting_Expert",
+        "3": "Computer_terminal",
+        "4": "Python_Expert",
+        "5": "PythonDebugging_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "23.json",
+      "question_id": "6b078778-0b90-464d-83f6-59511c811b01",
+      "scores": {
+        "8": 8.959249974531333e-05,
+        "2": 3.951567804275451e-05,
+        "4": 3.90930835737737e-05,
+        "3": 2.2692331180923538e-05,
+        "6": 1.8196569265746263e-05,
+        "1": 1.7607278767072396e-05,
+        "5": 1.3774814087166238e-05,
+        "7": 1.3195394906573071e-05,
+        "0": 1.2515571209032881e-05,
+        "9": 1.1625418123745308e-05
+      },
+      "true_step": 3,
+      "true_agent": "Church_Historian_Expert",
+      "step_agents": {
+        "0": "Art_Historian_Expert",
+        "1": "Art_Historian_Expert",
+        "2": "Computer_terminal",
+        "3": "Church_Historian_Expert",
+        "4": "Computer_terminal",
+        "5": "DataVerification_Expert",
+        "6": "Computer_terminal",
+        "7": "DataVerification_Expert",
+        "8": "Computer_terminal",
+        "9": "Church_Historian_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "24.json",
+      "question_id": "65da0822-a48a-4a68-bbad-8ed1b835a834",
+      "scores": {
+        "9": 8.1033965153786e-05,
+        "5": 5.001875089797779e-05,
+        "2": 3.712948543708903e-05,
+        "1": 3.3753384453118057e-05,
+        "7": 2.892606435647985e-05,
+        "8": 1.8731191995231316e-05,
+        "3": 1.721047118507634e-05,
+        "0": 1.66011517688406e-05,
+        "4": 1.5949354900623578e-05,
+        "6": 9.765361022196501e-06
+      },
+      "true_step": 0,
+      "true_agent": "PythonDebugging_Expert",
+      "step_agents": {
+        "0": "PythonDebugging_Expert",
+        "1": "Computer_terminal",
+        "2": "PythonDebugging_Expert",
+        "3": "Computer_terminal",
+        "4": "PythonDebugging_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Computer_terminal",
+        "8": "Verification_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "25.json",
+      "question_id": "c61d22de-5f6c-4958-a7f6-5e9707bd3466",
+      "scores": {
+        "9": 3.1544365297270855e-05,
+        "2": 1.3266159117015187e-05,
+        "8": 9.603557529659197e-06,
+        "7": 9.297838640251088e-06,
+        "0": 8.749457933379144e-06,
+        "3": 6.789050217239055e-06,
+        "4": 6.332842838135506e-06,
+        "6": 5.893564392223867e-06,
+        "5": 5.849512991455051e-06,
+        "1": 5.667669800884728e-06
+      },
+      "true_step": 4,
+      "true_agent": "ModelEvaluation_Interpretation_Expert",
+      "step_agents": {
+        "0": "ModelEvaluation_Interpretation_Expert",
+        "1": "Physics_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "ModelEvaluation_Interpretation_Expert",
+        "5": "Computer_terminal",
+        "6": "ModelEvaluation_Interpretation_Expert",
+        "7": "Physics_Expert",
+        "8": "Physics_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "26.json",
+      "question_id": "7d4a7d1d-cac6-44a8-96e8-ea9584a70825",
+      "scores": {
+        "8": 0.00010975223952238876,
+        "4": 1.8148113443598644e-05,
+        "7": 1.6675393280142843e-05,
+        "3": 1.568458173792122e-05,
+        "5": 1.389274046321828e-05,
+        "1": 1.3882742175144065e-05,
+        "6": 1.2612686484449797e-05,
+        "0": 1.2201761276571066e-05,
+        "2": 1.0190402059212716e-05
+      },
+      "true_step": 3,
+      "true_agent": "WomenInComputerScienceHistory_Expert",
+      "step_agents": {
+        "0": "WomenInComputerScienceHistory_Expert",
+        "1": "DataVerification_Expert",
+        "2": "Computer_terminal",
+        "3": "WomenInComputerScienceHistory_Expert",
+        "4": "WomenInComputerScienceHistory_Expert",
+        "5": "DataVerification_Expert",
+        "6": "Computer_terminal",
+        "7": "WomenInComputerScienceHistory_Expert",
+        "8": "Statistics_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "27.json",
+      "question_id": "7a4a336d-dcfa-45a0-b014-824c7619e8de",
+      "scores": {
+        "9": 0.00010072174069534573,
+        "6": 3.911339877273605e-05,
+        "7": 2.819826756233342e-05,
+        "5": 2.4694219155463773e-05,
+        "8": 1.708329037345926e-05,
+        "1": 1.509496183596229e-05,
+        "4": 1.3642623949955968e-05,
+        "3": 1.1895849835969963e-05,
+        "2": 1.078657049847867e-05,
+        "0": 9.976084496055834e-06
+      },
+      "true_step": 1,
+      "true_agent": "DataVerification_Expert",
+      "step_agents": {
+        "0": "MarioKart8Deluxe_Expert",
+        "1": "DataVerification_Expert",
+        "2": "Computer_terminal",
+        "3": "MarioKart8Deluxe_Expert",
+        "4": "Verification_Expert",
+        "5": "DataVerification_Expert",
+        "6": "Computer_terminal",
+        "7": "DataVerification_Expert",
+        "8": "Computer_terminal",
+        "9": "DataVerification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "28.json",
+      "question_id": "0e9e85b8-52b9-4de4-b402-5f635ab9631f",
+      "scores": {
+        "9": 2.6607815071306233e-05,
+        "2": 1.1424377908636661e-05,
+        "0": 1.0388656121444808e-05,
+        "1": 7.80007634069231e-06,
+        "8": 7.305590503119416e-06,
+        "7": 6.503480327863099e-06,
+        "5": 4.629976385303015e-06,
+        "3": 6.519564042171294e-07,
+        "6": 6.19617161841827e-07,
+        "4": 5.831003371681144e-07
+      },
+      "true_step": 8,
+      "true_agent": "DataVerification_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "WebServing_Expert",
+        "2": "WebServing_Expert",
+        "3": "WebServing_Expert",
+        "4": "WebServing_Expert",
+        "5": "WebServing_Expert",
+        "6": "WebServing_Expert",
+        "7": "Historian_Expert",
+        "8": "DataVerification_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "29.json",
+      "question_id": "d5141ca5-e7a0-469f-bf3e-e773507c86e2",
+      "scores": {
+        "7": 4.500347927603409e-05,
+        "3": 3.069239903644788e-05,
+        "5": 2.1730214857236227e-05,
+        "0": 1.6640208217977755e-05,
+        "9": 1.4222680376176965e-05,
+        "4": 1.162542770638633e-05,
+        "8": 9.878433191656863e-06,
+        "1": 9.691782509869833e-06,
+        "6": 4.65209431860724e-06,
+        "2": 6.252931547653527e-07
+      },
+      "true_step": 3,
+      "true_agent": "WebServing_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "WebServing_Expert",
+        "2": "WebServing_Expert",
+        "3": "WebServing_Expert",
+        "4": "Validation_Expert",
+        "5": "Computer_terminal",
+        "6": "Validation_Expert",
+        "7": "Computer_terminal",
+        "8": "Validation_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "30.json",
+      "question_id": "99c9cc74-fdc8-46c6-8f8d-3ce2d3bfeea3",
+      "scores": {
+        "6": 0.0001112615629788806,
+        "1": 5.0413210732923956e-05,
+        "2": 3.993148800189317e-05,
+        "3": 3.5167478018813664e-05,
+        "4": 2.9622976298618906e-05,
+        "5": 1.82208744368633e-05,
+        "0": 1.2449811532863446e-05
+      },
+      "true_step": 3,
+      "true_agent": "Culinary_Expert",
+      "step_agents": {
+        "0": "AudioProcessing_Expert",
+        "1": "Computer_terminal",
+        "2": "TranscriptionVerification_Expert",
+        "3": "Culinary_Expert",
+        "4": "TranscriptionVerification_Expert",
+        "5": "Computer_terminal",
+        "6": "AudioProcessing_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "31.json",
+      "question_id": "56137764-b4e0-45b8-9c52-1866420c3df5",
+      "scores": {
+        "9": 5.987560877337818e-05,
+        "5": 3.439057737642064e-05,
+        "8": 3.047540971319161e-05,
+        "7": 2.302625507688628e-05,
+        "6": 2.1494227948157865e-05,
+        "4": 1.661806153675047e-05,
+        "0": 1.440001792872271e-05,
+        "2": 1.2066632862058046e-05,
+        "1": 1.19071908916171e-05,
+        "3": 8.583719568873012e-06
+      },
+      "true_step": 3,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "OpenCV_Expert",
+        "1": "Chinese_Political_History_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Chinese_Political_History_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Computer_terminal",
+        "8": "Chinese_Political_History_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "32.json",
+      "question_id": "73c1b9fe-ee1d-4cf4-96ca-35c08f97b054",
+      "scores": {
+        "7": 3.5618810828213365e-05,
+        "2": 2.9935310504363646e-05,
+        "3": 2.840485253310225e-05,
+        "1": 2.4556463899481153e-05,
+        "8": 1.9512911508227257e-05,
+        "6": 1.8937270283856215e-05,
+        "5": 1.5507372353199115e-05,
+        "0": 1.4091019679883048e-05,
+        "4": 1.3638275826593156e-05,
+        "9": 1.280326485122489e-05
+      },
+      "true_step": 1,
+      "true_agent": "SpeciesSightingsData_Expert",
+      "step_agents": {
+        "0": "SpeciesSightingsData_Expert",
+        "1": "SpeciesSightingsData_Expert",
+        "2": "Computer_terminal",
+        "3": "DataVerification_Expert",
+        "4": "Computer_terminal",
+        "5": "AlligatorBiology_Expert",
+        "6": "DataVerification_Expert",
+        "7": "Computer_terminal",
+        "8": "SpeciesSightingsData_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "33.json",
+      "question_id": "114d5fd0-e2ae-4b6d-a65a-870da2d19c08",
+      "scores": {
+        "5": 2.7138324452133458e-05,
+        "9": 2.3938987260077164e-05,
+        "7": 1.631724925900212e-05,
+        "6": 1.591011398564679e-05,
+        "8": 1.5615723275211948e-05,
+        "0": 1.3470312492625199e-05,
+        "3": 1.3004760241781986e-05,
+        "4": 1.2626679535999211e-05,
+        "2": 1.0705156380372981e-05,
+        "1": 9.156802827006788e-06
+      },
+      "true_step": 8,
+      "true_agent": "InformationExtraction_Expert",
+      "step_agents": {
+        "0": "DOI_Expert",
+        "1": "InformationExtraction_Expert",
+        "2": "Computer_terminal",
+        "3": "DOI_Expert",
+        "4": "InformationExtraction_Expert",
+        "5": "Computer_terminal",
+        "6": "DOI_Expert",
+        "7": "InformationExtraction_Expert",
+        "8": "InformationExtraction_Expert",
+        "9": "InformationExtraction_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "34.json",
+      "question_id": "54612da3-fd56-4941-80f4-5eb82330de25",
+      "scores": {
+        "7": 0.00010655528840794644,
+        "3": 5.333698949980991e-05,
+        "5": 5.096283269126551e-05,
+        "1": 3.614708026670218e-05,
+        "2": 1.2726815738997673e-05,
+        "0": 9.838968282446232e-06,
+        "4": 8.779253957800622e-06,
+        "6": 5.92091025511955e-06
+      },
+      "true_step": 4,
+      "true_agent": "Locomotive_Expert",
+      "step_agents": {
+        "0": "CSVProcessing_Expert",
+        "1": "Computer_terminal",
+        "2": "Locomotive_Expert",
+        "3": "Computer_terminal",
+        "4": "Locomotive_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "36.json",
+      "question_id": "9318445f-fe6a-4e1b-acbf-c68228c9906a",
+      "scores": {
+        "7": 0.00016144515446768397,
+        "8": 0.00012070442201429511,
+        "3": 0.0001027662738180851,
+        "5": 2.96424051032869e-05,
+        "6": 2.2269988256269512e-05,
+        "1": 1.3127935509452717e-05,
+        "4": 1.3078371694437162e-05,
+        "2": 9.174264794605432e-06,
+        "0": 8.364483715212628e-06
+      },
+      "true_step": 2,
+      "true_agent": "ProblemSolving_Expert",
+      "step_agents": {
+        "0": "ImageProcessing_Expert",
+        "1": "Computer_terminal",
+        "2": "ProblemSolving_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Verification_Expert",
+        "8": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "37.json",
+      "question_id": "50ec8903-b81f-4257-9450-1085afd2c319",
+      "scores": {
+        "5": 0.00011567823097290915,
+        "3": 9.925107361272845e-05,
+        "4": 3.912276101301256e-05,
+        "2": 1.3324003531702127e-05,
+        "1": 1.029333639338901e-05,
+        "0": 8.356923610362932e-06
+      },
+      "true_step": 1,
+      "true_agent": "Cubing_Expert",
+      "step_agents": {
+        "0": "Cubing_Expert",
+        "1": "Cubing_Expert",
+        "2": "Verification_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Geometry_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "38.json",
+      "question_id": "305ac316-eef6-4446-960a-92d80d542f82",
+      "scores": {
+        "5": 0.0001320377157222068,
+        "3": 4.375457367190103e-05,
+        "2": 4.1102798170367e-05,
+        "4": 3.348100027778559e-05,
+        "0": 1.6016914915474643e-05,
+        "1": 1.4525434336561988e-05
+      },
+      "true_step": 2,
+      "true_agent": "Polish_TV_Series_Expert",
+      "step_agents": {
+        "0": "Polish_TV_Series_Expert",
+        "1": "PolishLanguage_Expert",
+        "2": "Polish_TV_Series_Expert",
+        "3": "Polish_TV_Series_Expert",
+        "4": "Verification_Expert",
+        "5": "Polish_TV_Series_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "39.json",
+      "question_id": "17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc",
+      "scores": {
+        "9": 0.00011821066426318044,
+        "2": 3.6933443767102424e-05,
+        "6": 2.2771143611992306e-05,
+        "8": 2.0674461756822248e-05,
+        "5": 1.8206910133236942e-05,
+        "7": 1.7259261201829533e-05,
+        "3": 1.5394278023881395e-05,
+        "0": 1.0744152339088697e-05,
+        "4": 1.0374212685767453e-05,
+        "1": 9.28718783421492e-06
+      },
+      "true_step": 1,
+      "true_agent": "GIS_DataAnalysis_Expert",
+      "step_agents": {
+        "0": "AquaticEcosystems_InvasiveSpecies_Expert",
+        "1": "GIS_DataAnalysis_Expert",
+        "2": "Computer_terminal",
+        "3": "Scientific_Verification_Expert",
+        "4": "AquaticEcosystems_InvasiveSpecies_Expert",
+        "5": "AquaticEcosystems_InvasiveSpecies_Expert",
+        "6": "GIS_DataAnalysis_Expert",
+        "7": "Computer_terminal",
+        "8": "Scientific_Verification_Expert",
+        "9": "Scientific_Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "40.json",
+      "question_id": "08f3a05f-5947-4089-a4c4-d4bcfaa6b7a0",
+      "scores": {
+        "8": 0.00011389762294914188,
+        "4": 3.4089488399912843e-05,
+        "2": 2.853081395364954e-05,
+        "7": 1.2121231157099468e-05,
+        "0": 1.0736824613283737e-05,
+        "6": 8.502672585701402e-06,
+        "1": 7.366949650857961e-06,
+        "5": 6.167207487020339e-06,
+        "3": 4.911100528160767e-06
+      },
+      "true_step": 3,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "NumericalMethods_Expert",
+        "1": "NumericalAlgorithms_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "NumericalMethods_Expert",
+        "8": "NumericalMethods_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "41.json",
+      "question_id": "42576abe-0deb-4869-8c63-225c2d75a95a",
+      "scores": {
+        "5": 0.00011157675520730955,
+        "4": 3.608969701661432e-05,
+        "2": 3.458783843747704e-05,
+        "3": 3.2791787987706076e-05,
+        "0": 1.2231187171483147e-05,
+        "1": 1.1704344348676188e-05
+      },
+      "true_step": 1,
+      "true_agent": "Tizin_Translation_Expert",
+      "step_agents": {
+        "0": "TizinGrammar_Expert",
+        "1": "Tizin_Translation_Expert",
+        "2": "Verification_Expert",
+        "3": "Verification_Expert",
+        "4": "TizinGrammar_Expert",
+        "5": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "42.json",
+      "question_id": "e0c10771-d627-4fd7-9694-05348e54ee36",
+      "scores": {
+        "5": 6.884648440799496e-05,
+        "2": 3.975145413373043e-05,
+        "3": 3.637541304126583e-05,
+        "4": 1.9227401510357677e-05,
+        "0": 1.1257178790290047e-05,
+        "1": 7.035854131283774e-06
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "DemographicData_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "ProblemSolving_Expert",
+        "4": "Computer_terminal",
+        "5": "DemographicData_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "43.json",
+      "question_id": "16d825ff-1623-4176-a5b5-42e0f5c2b0ac",
+      "scores": {
+        "8": 0.00012218191193731862,
+        "1": 8.12871960253798e-05,
+        "6": 5.320306250891477e-05,
+        "4": 3.834946104798279e-05,
+        "2": 2.3477405816106602e-05,
+        "7": 1.4570307448798265e-05,
+        "3": 1.0786343509669509e-05,
+        "5": 9.068747938674257e-06,
+        "0": 7.913007166197627e-06
+      },
+      "true_step": 0,
+      "true_agent": "DataAnalysis_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "Computer_terminal",
+        "2": "Database_Expert",
+        "3": "DataAnalysis_Expert",
+        "4": "Computer_terminal",
+        "5": "Database_Expert",
+        "6": "Computer_terminal",
+        "7": "Verification_Expert",
+        "8": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "44.json",
+      "question_id": "ad2b4d70-9314-4fe6-bfbe-894a45f6055f",
+      "scores": {
+        "4": 3.291134101707126e-05,
+        "6": 3.064429896984812e-05,
+        "3": 2.8012876997840518e-05,
+        "5": 2.413574523248001e-05,
+        "7": 2.1024103579717995e-05,
+        "1": 2.001714049605721e-05,
+        "8": 1.9374784924905114e-05,
+        "9": 1.7137338864472163e-05,
+        "2": 1.3956965718994393e-05,
+        "0": 1.2935223807220553e-05
+      },
+      "true_step": 1,
+      "true_agent": "WebDevelopment_Expert",
+      "step_agents": {
+        "0": "Web_Design_Expert",
+        "1": "WebDevelopment_Expert",
+        "2": "Computer_terminal",
+        "3": "Web_Design_Expert",
+        "4": "Web_Design_Expert",
+        "5": "Web_Design_Expert",
+        "6": "Web_Design_Expert",
+        "7": "GraphicDesign_Expert",
+        "8": "Web_Design_Expert",
+        "9": "GraphicDesign_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "45.json",
+      "question_id": "04a04a9b-226c-43fd-b319-d5e89743676f",
+      "scores": {
+        "4": 0.00011077293453063117,
+        "2": 8.460701576298022e-05,
+        "3": 1.531660832275426e-05,
+        "0": 1.1200547777522263e-05,
+        "1": 9.925042558662948e-06
+      },
+      "true_step": 1,
+      "true_agent": "PublicationData_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "PublicationData_Expert",
+        "2": "Computer_terminal",
+        "3": "VerificationExpert",
+        "4": "PublicationData_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "46.json",
+      "question_id": "c714ab3a-da30-4603-bacd-d008800188b9",
+      "scores": {
+        "6": 6.163418630544054e-05,
+        "4": 4.201042759721475e-05,
+        "3": 3.8630869675495824e-05,
+        "5": 2.014438838616143e-05,
+        "2": 1.236412235903272e-05,
+        "1": 1.0025741142906268e-05,
+        "0": 8.96529194947744e-06
+      },
+      "true_step": 1,
+      "true_agent": "Behavioral_Expert",
+      "step_agents": {
+        "0": "LogicExpert",
+        "1": "Behavioral_Expert",
+        "2": "Validation_Expert",
+        "3": "Computer_terminal",
+        "4": "LogicExpert",
+        "5": "Computer_terminal",
+        "6": "Validation_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "47.json",
+      "question_id": "0bb3b44a-ede5-4db5-a520-4e844b0079c5",
+      "scores": {
+        "5": 0.00011448457887689725,
+        "4": 0.00010017258828641413,
+        "3": 5.2687181029604534e-05,
+        "2": 4.211621037143423e-05,
+        "0": 1.571018895038684e-05,
+        "1": 1.161791012450616e-05
+      },
+      "true_step": 1,
+      "true_agent": "Mesopotamian_Number_Systems_Expert",
+      "step_agents": {
+        "0": "Mesopotamian_Number_Systems_Expert",
+        "1": "Mesopotamian_Number_Systems_Expert",
+        "2": "Mesopotamian_Number_Systems_Expert",
+        "3": "Mesopotamian_Number_Systems_Expert",
+        "4": "Mesopotamian_Number_Systems_Expert",
+        "5": "Mesopotamian_Number_Systems_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "48.json",
+      "question_id": "6359a0b1-8f7b-499b-9336-840f9ab90688",
+      "scores": {
+        "9": 0.00010639707900470669,
+        "1": 3.415546488333535e-05,
+        "8": 2.2996268597474528e-05,
+        "4": 2.124282137184824e-05,
+        "5": 1.8540014713392473e-05,
+        "7": 1.5424095609245168e-05,
+        "2": 1.390338198607096e-05,
+        "0": 1.1009187227673915e-05,
+        "6": 9.881091176709778e-06,
+        "3": 9.760658940031015e-06
+      },
+      "true_step": 6,
+      "true_agent": "Geometry_Expert",
+      "step_agents": {
+        "0": "Geometry_Expert",
+        "1": "Computer_terminal",
+        "2": "Validation_Expert",
+        "3": "Geometry_Expert",
+        "4": "Computer_terminal",
+        "5": "MathAnalysis_Expert",
+        "6": "Geometry_Expert",
+        "7": "Validation_Expert",
+        "8": "Validation_Expert",
+        "9": "Validation_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "49.json",
+      "question_id": "cffe0e32-c9a6-4c52-9877-78ceb4aaa9fb",
+      "scores": {
+        "5": 3.33120774818855e-05,
+        "1": 3.2153315781827325e-05,
+        "3": 2.3182219746467102e-05,
+        "2": 1.6856819026913733e-05,
+        "0": 1.0886681547044454e-05,
+        "4": 1.050193132311178e-05,
+        "6": 7.70973180007107e-06,
+        "7": 7.140333666324538e-06,
+        "9": 5.7335504578970416e-06,
+        "8": 5.296455057392765e-06
+      },
+      "true_step": 2,
+      "true_agent": "Validation_Expert",
+      "step_agents": {
+        "0": "DataExtraction_Expert",
+        "1": "Computer_terminal",
+        "2": "Validation_Expert",
+        "3": "Computer_terminal",
+        "4": "DataExtraction_Expert",
+        "5": "Computer_terminal",
+        "6": "Validation_Expert",
+        "7": "Computer_terminal",
+        "8": "DataExtraction_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "50.json",
+      "question_id": "076c8171-9b3b-49b9-a477-244d2a532826",
+      "scores": {
+        "1": 3.42240741973781e-05,
+        "2": 3.343017874113616e-05,
+        "4": 2.8520943833398967e-05,
+        "8": 2.1338850215339516e-05,
+        "6": 1.880629714205548e-05,
+        "5": 1.457077460254799e-05,
+        "3": 1.3044119741941396e-05,
+        "0": 1.2078875284876125e-05,
+        "7": 1.1145052307715345e-05,
+        "9": 7.196950305130792e-06
+      },
+      "true_step": 3,
+      "true_agent": "DataAnalysis_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "Computer_terminal",
+        "2": "Financial_Expert",
+        "3": "DataAnalysis_Expert",
+        "4": "Computer_terminal",
+        "5": "DataAnalysis_Expert",
+        "6": "Computer_terminal",
+        "7": "DataAnalysis_Expert",
+        "8": "Computer_terminal",
+        "9": "Financial_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "51.json",
+      "question_id": "2a649bb1-795f-4a01-b3be-9a01868dae73",
+      "scores": {
+        "5": 0.00011575735483981107,
+        "1": 9.654174476922846e-05,
+        "3": 3.34901229520366e-05,
+        "0": 9.870701198183873e-06,
+        "2": 7.233333796338438e-06,
+        "4": 5.242223597827888e-06
+      },
+      "true_step": 0,
+      "true_agent": "PythonDebugging_Expert",
+      "step_agents": {
+        "0": "PythonDebugging_Expert",
+        "1": "Computer_terminal",
+        "2": "UnitTesting_Expert",
+        "3": "Computer_terminal",
+        "4": "Python_Expert",
+        "5": "PythonDebugging_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "52.json",
+      "question_id": "b9763138-c053-4832-9f55-86200cb1f99c",
+      "scores": {
+        "1": 0.00012547717136598483,
+        "3": 8.225399826052589e-05,
+        "7": 7.915562377425603e-05,
+        "5": 7.528594251228855e-05,
+        "9": 7.073319143313536e-05,
+        "2": 1.1620935843408217e-05,
+        "0": 1.004729130473006e-05,
+        "6": 6.700993532161332e-06,
+        "8": 5.848356486466954e-06,
+        "4": 5.42509722176539e-06
+      },
+      "true_step": 0,
+      "true_agent": "ISBNCheckDigit_Expert",
+      "step_agents": {
+        "0": "ISBNCheckDigit_Expert",
+        "1": "Computer_terminal",
+        "2": "VerificationExpert",
+        "3": "Computer_terminal",
+        "4": "VerificationExpert",
+        "5": "Computer_terminal",
+        "6": "VerificationExpert",
+        "7": "Computer_terminal",
+        "8": "Python_Programmer_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "53.json",
+      "question_id": "a7feb290-76bb-4cb7-8800-7edaf7954f2f",
+      "scores": {
+        "4": 0.00011128222315291967,
+        "2": 9.728885537635065e-05,
+        "3": 1.6827996838385908e-05,
+        "0": 1.410312495115153e-05,
+        "1": 1.2029705555972518e-05
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Data_Extraction_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "54.json",
+      "question_id": "a0068077-79f4-461a-adfe-75c1a4148545",
+      "scores": {
+        "9": 0.00010136886602606551,
+        "2": 3.935856585191154e-05,
+        "8": 2.6471969156546842e-05,
+        "3": 2.615809933257865e-05,
+        "7": 2.510662009005958e-05,
+        "4": 1.9580203209129762e-05,
+        "1": 1.707193135036021e-05,
+        "5": 1.608179897782088e-05,
+        "0": 1.3227238022682441e-05,
+        "6": 9.971931020088738e-06
+      },
+      "true_step": 5,
+      "true_agent": "Clinical_Trial_Data_Analysis_Expert",
+      "step_agents": {
+        "0": "Clinical_Trial_Data_Analysis_Expert",
+        "1": "Clinical_Trial_Data_Analysis_Expert",
+        "2": "Computer_terminal",
+        "3": "ClinicalTrials_Expert",
+        "4": "Validation_Expert",
+        "5": "Clinical_Trial_Data_Analysis_Expert",
+        "6": "Validation_Expert",
+        "7": "Clinical_Trial_Data_Analysis_Expert",
+        "8": "ClinicalTrials_Expert",
+        "9": "Clinical_Trial_Data_Analysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "55.json",
+      "question_id": "840bfca7-4f7b-481a-8794-c560c340185d",
+      "scores": {
+        "5": 2.9827306953087786e-05,
+        "8": 2.747219803923084e-05,
+        "7": 2.548401324134917e-05,
+        "9": 2.250534989802132e-05,
+        "6": 2.1945673353589552e-05,
+        "0": 1.0930817394837258e-05,
+        "4": 1.0239244780491518e-05,
+        "2": 9.748631527720821e-06,
+        "3": 9.503004481776367e-06,
+        "1": 8.761810556568953e-06
+      },
+      "true_step": 5,
+      "true_agent": "WebServing_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "WebServing_Expert",
+        "2": "WebServing_Expert",
+        "3": "WebServing_Expert",
+        "4": "ResearchFunding_Expert",
+        "5": "WebServing_Expert",
+        "6": "WebServing_Expert",
+        "7": "ResearchFunding_Expert",
+        "8": "ResearchFunding_Expert",
+        "9": "ResearchFunding_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "56.json",
+      "question_id": "023e9d44-96ae-4eed-b912-244ee8c3b994",
+      "scores": {
+        "2": 3.971234258440741e-05,
+        "3": 3.875210445836001e-05,
+        "1": 2.5547289815664307e-05,
+        "7": 2.3123653040213284e-05,
+        "9": 1.878061566412195e-05,
+        "8": 1.7318189652781854e-05,
+        "6": 1.677890496844059e-05,
+        "4": 1.5341029683393663e-05,
+        "0": 1.2344039539115113e-05,
+        "5": 1.2278223564929685e-05
+      },
+      "true_step": 5,
+      "true_agent": "Validation_Expert",
+      "step_agents": {
+        "0": "AlgorithmDesign_Expert",
+        "1": "RecyclingRate_Expert",
+        "2": "Computer_terminal",
+        "3": "RecyclingRate_Expert",
+        "4": "RecyclingRate_Expert",
+        "5": "Validation_Expert",
+        "6": "Computer_terminal",
+        "7": "Validation_Expert",
+        "8": "Validation_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "57.json",
+      "question_id": "bfcd99e1-0690-4b53-a85c-0174a8629083",
+      "scores": {
+        "4": 0.00011234487096354752,
+        "3": 3.922038895972404e-05,
+        "2": 1.5340391239935708e-05,
+        "1": 8.109683686151803e-06,
+        "0": 8.057679891166538e-06
+      },
+      "true_step": 0,
+      "true_agent": "TextExtraction_Expert",
+      "step_agents": {
+        "0": "TextExtraction_Expert",
+        "1": "Computer_terminal",
+        "2": "Verification_Expert",
+        "3": "DataManipulation_Expert",
+        "4": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "58.json",
+      "question_id": "d0633230-7067-47a9-9dbf-ee11e0a2cdd6",
+      "scores": {
+        "5": 5.989523402218709e-05,
+        "2": 4.073239076438097e-05,
+        "4": 2.4993322129620185e-05,
+        "3": 2.094049982813924e-05,
+        "0": 1.4510529736285548e-05,
+        "1": 1.0714809693370477e-05
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Python_ScikitLearn_StatisticalAnalysis_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Python_ScikitLearn_StatisticalAnalysis_Expert",
+        "4": "Verification_Expert",
+        "5": "Python_ScikitLearn_StatisticalAnalysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "59.json",
+      "question_id": "1dcc160f-c187-48c2-b68e-319bd4354f3d",
+      "scores": {
+        "7": 3.1958701925352696e-05,
+        "9": 1.9667940672478506e-05,
+        "1": 1.9447159019038587e-05,
+        "8": 1.0737004287802861e-05,
+        "3": 1.0096245424210719e-05,
+        "5": 9.620767952931069e-06,
+        "0": 8.181308238082995e-06,
+        "6": 5.986736111403531e-06,
+        "2": 5.344520985833885e-06,
+        "4": 4.421474287415127e-06
+      },
+      "true_step": 1,
+      "true_agent": "DataExtraction_Expert",
+      "step_agents": {
+        "0": "DataExtraction_Expert",
+        "1": "Computer_terminal",
+        "2": "DataVerification_Expert",
+        "3": "Computer_terminal",
+        "4": "DataExtraction_Expert",
+        "5": "Computer_terminal",
+        "6": "DataVerification_Expert",
+        "7": "Computer_terminal",
+        "8": "DataAnalysis_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "60.json",
+      "question_id": "e29834fd-413a-455c-a33e-c3915b07401c",
+      "scores": {
+        "2": 9.610734448651106e-05,
+        "8": 8.009905394795439e-05,
+        "4": 6.943719673103015e-05,
+        "6": 5.671430508353016e-05,
+        "9": 1.4756637112111128e-05,
+        "0": 1.4356052771723075e-05,
+        "1": 1.160055117029848e-05,
+        "5": 9.373127354542292e-06,
+        "3": 9.223038640651905e-06,
+        "7": 6.367128329874841e-06
+      },
+      "true_step": 3,
+      "true_agent": "DataAnalysis_Expert",
+      "step_agents": {
+        "0": "RealityTV_Historian_Expert",
+        "1": "RealityTV_Historian_Expert",
+        "2": "Computer_terminal",
+        "3": "DataAnalysis_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "RealityTV_Historian_Expert",
+        "8": "Computer_terminal",
+        "9": "DataAnalysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "61.json",
+      "question_id": "b7f857e4-d8aa-4387-af2a-0e844df5b9d8",
+      "scores": {
+        "3": 6.913339826277396e-05,
+        "8": 5.658364577322283e-05,
+        "1": 3.5147028662877045e-05,
+        "6": 3.417682938148938e-05,
+        "4": 2.2450398243092285e-05,
+        "0": 1.236098584084387e-05,
+        "5": 1.1259974525807624e-05,
+        "7": 9.983793131841337e-06,
+        "9": 9.341056650708698e-06,
+        "2": 7.4300312783198474e-06
+      },
+      "true_step": 5,
+      "true_agent": "PythonProgramming_Expert",
+      "step_agents": {
+        "0": "PythonProgramming_Expert",
+        "1": "Computer_terminal",
+        "2": "PythonProgramming_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "PythonProgramming_Expert",
+        "6": "Computer_terminal",
+        "7": "PythonProgramming_Expert",
+        "8": "Computer_terminal",
+        "9": "PythonProgramming_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "62.json",
+      "question_id": "e4e91f1c-1dcd-439e-9fdd-cb976f5293fd",
+      "scores": {
+        "6": 0.00011962326054121667,
+        "4": 4.970226501301115e-05,
+        "3": 2.2330001941317347e-05,
+        "5": 2.0165261773963184e-05,
+        "1": 1.6979587032341114e-05,
+        "2": 1.338756279392735e-05,
+        "0": 9.843657188480317e-06
+      },
+      "true_step": 2,
+      "true_agent": "Research_Expert",
+      "step_agents": {
+        "0": "Literature_Expert",
+        "1": "Research_Expert",
+        "2": "Research_Expert",
+        "3": "Literature_Expert",
+        "4": "Literature_Expert",
+        "5": "VerificationExpert",
+        "6": "Research_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "63.json",
+      "question_id": "8f80e01c-1296-4371-9486-bb3d68651a60",
+      "scores": {
+        "1": 7.686979016799272e-05,
+        "4": 7.28497764337039e-05,
+        "9": 6.033653380643888e-05,
+        "8": 3.299725658079608e-05,
+        "2": 1.3961543825741686e-05,
+        "3": 1.2626674744678702e-05,
+        "5": 1.1103243244945203e-05,
+        "6": 1.079103002004334e-05,
+        "7": 8.536221411912326e-06,
+        "0": 8.252754313325191e-06
+      },
+      "true_step": 5,
+      "true_agent": "MusicTheory_Expert",
+      "step_agents": {
+        "0": "MusicTheory_Expert",
+        "1": "Computer_terminal",
+        "2": "Verification_Expert",
+        "3": "MusicTheory_Expert",
+        "4": "Computer_terminal",
+        "5": "MusicTheory_Expert",
+        "6": "MathAnalysis_Expert",
+        "7": "Verification_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "64.json",
+      "question_id": "b4cc024b-3f5e-480e-b96a-6656493255b5",
+      "scores": {
+        "5": 1.5939566232821675e-05,
+        "2": 1.3995722710599674e-05,
+        "3": 1.235716057033171e-05,
+        "1": 1.1937056390185974e-05,
+        "6": 1.1924902007882265e-05,
+        "8": 1.1419342230780665e-05,
+        "7": 1.0015560784652674e-05,
+        "0": 9.748363812687325e-06,
+        "9": 9.28961463805323e-06,
+        "4": 7.86151125118642e-06
+      },
+      "true_step": 1,
+      "true_agent": "MilitaryHistory_Expert",
+      "step_agents": {
+        "0": "Whitney_Collection_Expert",
+        "1": "MilitaryHistory_Expert",
+        "2": "Computer_terminal",
+        "3": "Whitney_Collection_Expert",
+        "4": "Computer_terminal",
+        "5": "MilitaryHistory_Expert",
+        "6": "Whitney_Collection_Expert",
+        "7": "Verification_Expert",
+        "8": "Computer_terminal",
+        "9": "Whitney_Collection_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "65.json",
+      "question_id": "05407167-39ec-4d3a-a234-73a9120c325d",
+      "scores": {
+        "5": 0.00016814982174484633,
+        "2": 3.1014778245641804e-05,
+        "4": 2.098876519529659e-05,
+        "0": 1.4559674310756477e-05,
+        "3": 1.2396057708061907e-05,
+        "1": 1.1743269036499317e-05
+      },
+      "true_step": 1,
+      "true_agent": "VideoContentAnalysis_Expert",
+      "step_agents": {
+        "0": "VSCode_Expert",
+        "1": "VideoContentAnalysis_Expert",
+        "2": "Computer_terminal",
+        "3": "VideoContentAnalysis_Expert",
+        "4": "VideoContentAnalysis_Expert",
+        "5": "VideoContentAnalysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "66.json",
+      "question_id": "87c610df-bef7-4932-b950-1d83ef4e282b",
+      "scores": {
+        "5": 0.00011352355497428622,
+        "3": 3.580414389686015e-05,
+        "2": 2.646159115632221e-05,
+        "1": 2.1906159333343692e-05,
+        "4": 1.353995074274747e-05,
+        "0": 1.2712072845788446e-05
+      },
+      "true_step": 1,
+      "true_agent": "BiblicalScholar_Expert",
+      "step_agents": {
+        "0": "BiblicalScholar_Expert",
+        "1": "BiblicalScholar_Expert",
+        "2": "MiddleEasternHistory_Expert",
+        "3": "MiddleEasternHistory_Expert",
+        "4": "Verification_Expert",
+        "5": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "67.json",
+      "question_id": "8b3379c0-0981-4f5b-8407-6444610cb212",
+      "scores": {
+        "9": 0.0001305587884030303,
+        "6": 5.257331050636419e-05,
+        "8": 4.5545890297008125e-05,
+        "5": 4.240236240625215e-05,
+        "7": 4.150700834255098e-05,
+        "3": 2.8914637057063533e-05,
+        "0": 1.580116774206059e-05,
+        "4": 1.0116422872708398e-05,
+        "1": 8.8749060837168e-06,
+        "2": 8.25659395779888e-06
+      },
+      "true_step": 4,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "MarineLifeData_Expert",
+        "1": "VideoContentAnalysis_Expert",
+        "2": "Verification_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "MarineLifeData_Expert",
+        "8": "VideoContentAnalysis_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "68.json",
+      "question_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+      "scores": {
+        "6": 0.00017682826392345657,
+        "2": 3.8101074201424586e-05,
+        "5": 2.8994072359798597e-05,
+        "3": 2.485125708083883e-05,
+        "4": 2.2058851531016196e-05,
+        "0": 8.35452795010794e-06,
+        "1": 7.302894786417485e-06
+      },
+      "true_step": 3,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "WebServing_Expert",
+        "5": "WebServing_Expert",
+        "6": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "69.json",
+      "question_id": "9d191bce-651d-4746-be2d-7ef8ecadb9c2",
+      "scores": {
+        "8": 6.293429196054332e-05,
+        "2": 4.326326687548651e-05,
+        "4": 3.340834469357215e-05,
+        "6": 2.73547028820247e-05,
+        "3": 2.442907466542189e-05,
+        "1": 2.4094836937965746e-05,
+        "5": 1.6483664996445352e-05,
+        "9": 1.3848968156869172e-05,
+        "7": 1.3482554316528214e-05,
+        "0": 1.3192818373968825e-05
+      },
+      "true_step": 1,
+      "true_agent": "VideoContentAnalysis_Expert",
+      "step_agents": {
+        "0": "VideoContentAnalysis_Expert",
+        "1": "VideoContentAnalysis_Expert",
+        "2": "Computer_terminal",
+        "3": "VideoContentAnalysis_Expert",
+        "4": "Computer_terminal",
+        "5": "VideoContentAnalysis_Expert",
+        "6": "Computer_terminal",
+        "7": "VideoContentAnalysis_Expert",
+        "8": "Computer_terminal",
+        "9": "VideoContentAnalysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "70.json",
+      "question_id": "14569e28-c88c-43e4-8c32-097d35b9a67d",
+      "scores": {
+        "5": 9.508938053095935e-05,
+        "1": 5.06266880182464e-05,
+        "3": 4.652518829604425e-05,
+        "4": 2.5699525640058233e-05,
+        "0": 1.283748566013734e-05,
+        "2": 8.710297273020898e-06
+      },
+      "true_step": 0,
+      "true_agent": "PythonDebugging_Expert",
+      "step_agents": {
+        "0": "PythonDebugging_Expert",
+        "1": "Computer_terminal",
+        "2": "Validation_Expert",
+        "3": "Computer_terminal",
+        "4": "Validation_Expert",
+        "5": "Validation_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "71.json",
+      "question_id": "ecbc4f94-95a3-4cc7-b255-6741a458a625",
+      "scores": {
+        "2": 0.00012075923472092935,
+        "9": 6.198581173502743e-05,
+        "8": 4.452265588889542e-05,
+        "4": 3.7898597787993065e-05,
+        "7": 3.379279066865244e-05,
+        "6": 1.8972163075470188e-05,
+        "1": 1.4383393244383186e-05,
+        "5": 1.3799645105709243e-05,
+        "0": 1.36124841482879e-05,
+        "3": 1.1632868627138338e-05
+      },
+      "true_step": 1,
+      "true_agent": "DataExtraction_Expert",
+      "step_agents": {
+        "0": "DataExtraction_Expert",
+        "1": "DataExtraction_Expert",
+        "2": "Computer_terminal",
+        "3": "DataExtraction_Expert",
+        "4": "Computer_terminal",
+        "5": "DataVerification_Expert",
+        "6": "DataAnalysis_Expert",
+        "7": "DataExtraction_Expert",
+        "8": "Computer_terminal",
+        "9": "DataVerification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "72.json",
+      "question_id": "7619a514-5fa8-43ef-9143-83b66a43d7a4",
+      "scores": {
+        "3": 8.113271426949682e-05,
+        "9": 5.198164950186801e-05,
+        "5": 4.542413805152886e-05,
+        "7": 3.697337942355316e-05,
+        "1": 3.6118291617417926e-05,
+        "0": 1.6292200235375914e-05,
+        "4": 1.5807277873540952e-05,
+        "6": 1.494833065873492e-05,
+        "2": 7.694604403390915e-06,
+        "8": 5.526170127923553e-06
+      },
+      "true_step": 8,
+      "true_agent": "API_Expert",
+      "step_agents": {
+        "0": "API_Expert",
+        "1": "Computer_terminal",
+        "2": "API_Expert",
+        "3": "Computer_terminal",
+        "4": "API_Expert",
+        "5": "Computer_terminal",
+        "6": "API_Expert",
+        "7": "Computer_terminal",
+        "8": "API_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "73.json",
+      "question_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+      "scores": {
+        "6": 6.105458026334748e-05,
+        "5": 5.5791151778230055e-05,
+        "4": 4.004599577076133e-05,
+        "3": 3.771165004433442e-05,
+        "2": 3.496378940129312e-05,
+        "1": 3.0456392962087472e-05,
+        "0": 1.3732923571947429e-05
+      },
+      "true_step": 1,
+      "true_agent": "VideoAnalysis_Expert",
+      "step_agents": {
+        "0": "DoctorWhoScript_Expert",
+        "1": "VideoAnalysis_Expert",
+        "2": "Validation_Expert",
+        "3": "Validation_Expert",
+        "4": "Computer_terminal",
+        "5": "Validation_Expert",
+        "6": "DoctorWhoScript_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "74.json",
+      "question_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+      "scores": {
+        "3": 4.224682655985697e-05,
+        "2": 4.116528178113773e-05,
+        "7": 3.4001299354606033e-05,
+        "9": 3.258574683181513e-05,
+        "5": 2.9611860435035736e-05,
+        "1": 2.667754076302781e-05,
+        "4": 2.5186620768614822e-05,
+        "8": 2.3222797439866177e-05,
+        "6": 2.0975481259182653e-05,
+        "0": 1.3651772976469787e-05
+      },
+      "true_step": 4,
+      "true_agent": "MerriamWebsterWordOfTheDay_Historian_Expert",
+      "step_agents": {
+        "0": "MerriamWebsterWordOfTheDay_Historian_Expert",
+        "1": "MerriamWebsterWordOfTheDay_Historian_Expert",
+        "2": "Computer_terminal",
+        "3": "Quotation_Specialist",
+        "4": "MerriamWebsterWordOfTheDay_Historian_Expert",
+        "5": "Computer_terminal",
+        "6": "Quotation_Specialist",
+        "7": "Verification_Expert",
+        "8": "Verification_Expert",
+        "9": "MerriamWebsterWordOfTheDay_Historian_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "75.json",
+      "question_id": "0b260a57-3f3a-4405-9f29-6d7a1012dbfb",
+      "scores": {
+        "6": 9.830864003369616e-05,
+        "3": 3.741482773874076e-05,
+        "4": 2.308482657446061e-05,
+        "0": 1.1747804021362019e-05,
+        "1": 8.674691772481062e-06,
+        "5": 6.745165913773025e-06,
+        "2": 5.487502674120304e-06
+      },
+      "true_step": 1,
+      "true_agent": "Data_Collection_Expert",
+      "step_agents": {
+        "0": "Data_Collection_Expert",
+        "1": "Data_Collection_Expert",
+        "2": "DataAnalysis_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Verification_Expert",
+        "6": "Data_Collection_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "76.json",
+      "question_id": "a0c07678-e491-4bbc-8f0b-07405144218f",
+      "scores": {
+        "8": 6.399430454489067e-05,
+        "2": 3.752256537172831e-05,
+        "3": 2.244875961147787e-05,
+        "6": 1.734774251768745e-05,
+        "1": 1.5901715998622912e-05,
+        "4": 1.5755172262994848e-05,
+        "9": 1.4344066085637217e-05,
+        "0": 1.2704683431731918e-05,
+        "5": 1.2572569955649807e-05,
+        "7": 9.696920003286666e-06
+      },
+      "true_step": 5,
+      "true_agent": "Validation_Expert",
+      "step_agents": {
+        "0": "Baseball_Expert",
+        "1": "Validation_Expert",
+        "2": "Computer_terminal",
+        "3": "SportsHistorian_Expert",
+        "4": "Computer_terminal",
+        "5": "Validation_Expert",
+        "6": "Computer_terminal",
+        "7": "Validation_Expert",
+        "8": "Computer_terminal",
+        "9": "Baseball_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "77.json",
+      "question_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+      "scores": {
+        "9": 5.796710123991733e-05,
+        "5": 5.122770647169859e-05,
+        "1": 4.856353103268471e-05,
+        "3": 3.2818727187273474e-05,
+        "7": 2.8581156358247967e-05,
+        "8": 2.3657902046698554e-05,
+        "2": 1.6772973313649226e-05,
+        "0": 8.88081318299055e-06,
+        "6": 7.209742232519861e-06,
+        "4": 4.696400857193212e-06
+      },
+      "true_step": 0,
+      "true_agent": "YouTubeDownload_Expert",
+      "step_agents": {
+        "0": "YouTubeDownload_Expert",
+        "1": "Computer_terminal",
+        "2": "YouTubeDownload_Expert",
+        "3": "Computer_terminal",
+        "4": "VideoProcessing_Expert",
+        "5": "Computer_terminal",
+        "6": "ResultVerification_Expert",
+        "7": "Computer_terminal",
+        "8": "VideoProcessing_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "78.json",
+      "question_id": "65638e28-7f37-4fa7-b7b9-8c19bb609879",
+      "scores": {
+        "2": 0.00011264013129865491,
+        "4": 6.21299729865319e-05,
+        "9": 2.1548710053676918e-05,
+        "8": 1.889861151432139e-05,
+        "1": 1.6798525425928983e-05,
+        "7": 1.6784012516104232e-05,
+        "5": 1.5315978264107197e-05,
+        "3": 1.3810042271215914e-05,
+        "6": 1.3691809250651235e-05,
+        "0": 1.143863029040868e-05
+      },
+      "true_step": 9,
+      "true_agent": "Neurology_Expert",
+      "step_agents": {
+        "0": "Literature_Expert",
+        "1": "Literature_Expert",
+        "2": "Computer_terminal",
+        "3": "Neurology_Expert",
+        "4": "Computer_terminal",
+        "5": "Neurology_Expert",
+        "6": "Computer_terminal",
+        "7": "Literature_Expert",
+        "8": "Computer_terminal",
+        "9": "Neurology_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "79.json",
+      "question_id": "e8cb5b03-41e0-4086-99e5-f6806cd97211",
+      "scores": {
+        "2": 0.00010372741271238837,
+        "9": 4.6699673815056426e-05,
+        "8": 4.057670638704998e-05,
+        "6": 1.4069077827607566e-05,
+        "1": 1.0062409118769195e-05,
+        "7": 1.0038397416033397e-05,
+        "0": 9.070917209035154e-06,
+        "4": 8.955605696151437e-06,
+        "5": 8.6810318873459e-06,
+        "3": 7.751298901155457e-06
+      },
+      "true_step": 1,
+      "true_agent": "WaybackMachine_Expert",
+      "step_agents": {
+        "0": "WaybackMachine_Expert",
+        "1": "WaybackMachine_Expert",
+        "2": "Computer_terminal",
+        "3": "MenuAnalysis_Expert",
+        "4": "Computer_terminal",
+        "5": "WaybackMachine_Expert",
+        "6": "WaybackMachine_Expert",
+        "7": "Verification_Expert",
+        "8": "Verification_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "81.json",
+      "question_id": "a56f1527-3abf-41d6-91f8-7296d6336c3f",
+      "scores": {
+        "8": 0.0001584115969652732,
+        "3": 5.776984257452119e-05,
+        "2": 3.910659509761187e-05,
+        "1": 3.560865802005271e-05,
+        "5": 2.7011179575420204e-05,
+        "7": 2.1245045742395e-05,
+        "4": 1.828082823040476e-05,
+        "6": 1.6940892327902463e-05,
+        "0": 1.3217685327415656e-05
+      },
+      "true_step": 5,
+      "true_agent": "DataVerification_Expert",
+      "step_agents": {
+        "0": "Fashion_Vogue_Expert",
+        "1": "Fashion_Vogue_Expert",
+        "2": "Geography_Expert",
+        "3": "Computer_terminal",
+        "4": "Fashion_Vogue_Expert",
+        "5": "DataVerification_Expert",
+        "6": "Geography_Expert",
+        "7": "DataVerification_Expert",
+        "8": "DataVerification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "82.json",
+      "question_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+      "scores": {
+        "6": 0.00011136101162738588,
+        "2": 9.112373870181786e-05,
+        "3": 2.7168651115301417e-05,
+        "5": 1.6056723601931863e-05,
+        "0": 1.15834928714528e-05,
+        "4": 9.701801161056214e-06,
+        "1": 7.001440471720797e-06
+      },
+      "true_step": 4,
+      "true_agent": "Marathon_Expert",
+      "step_agents": {
+        "0": "Marathon_Expert",
+        "1": "CelestialPhysics_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Marathon_Expert",
+        "5": "CelestialPhysics_Expert",
+        "6": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "83.json",
+      "question_id": "48eb8242-1099-4c26-95d4-ef22b002457a",
+      "scores": {
+        "6": 3.322338055660463e-05,
+        "9": 3.086739962241487e-05,
+        "4": 3.043532552580506e-05,
+        "7": 2.6619508289010854e-05,
+        "3": 2.0468103175947513e-05,
+        "2": 1.684845098564304e-05,
+        "5": 1.34778097113932e-05,
+        "8": 1.301931866915158e-05,
+        "0": 9.858502496165447e-06,
+        "1": 8.256399909318226e-06
+      },
+      "true_step": 8,
+      "true_agent": "DataAnalysis_Expert",
+      "step_agents": {
+        "0": "StatisticalAnalysis_Expert",
+        "1": "DataAnalysis_Expert",
+        "2": "Computer_terminal",
+        "3": "DataVerification_Expert",
+        "4": "Computer_terminal",
+        "5": "DataVerification_Expert",
+        "6": "Computer_terminal",
+        "7": "DataVerification_Expert",
+        "8": "DataAnalysis_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "84.json",
+      "question_id": "cca530fc-4052-43b2-b130-b30968d8aa44",
+      "scores": {
+        "8": 8.50184177072497e-05,
+        "1": 4.1557269294700744e-05,
+        "4": 2.187796480780268e-05,
+        "5": 2.1429106715446383e-05,
+        "2": 2.0714081186119326e-05,
+        "6": 1.8967292698171788e-05,
+        "3": 1.825071597882962e-05,
+        "0": 1.2312182049044213e-05,
+        "7": 1.0079800414390318e-05
+      },
+      "true_step": 7,
+      "true_agent": "Chess_Expert",
+      "step_agents": {
+        "0": "Chess_Expert",
+        "1": "Computer_terminal",
+        "2": "ChessRules_Expert",
+        "3": "Computer_terminal",
+        "4": "Chess_Expert",
+        "5": "Computer_terminal",
+        "6": "ChessRules_Expert",
+        "7": "Chess_Expert",
+        "8": "Chess_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "85.json",
+      "question_id": "624cbf11-6a41-4692-af9c-36b3e5ca3130",
+      "scores": {
+        "8": 0.00011271711823660939,
+        "7": 2.4252976867058105e-05,
+        "3": 1.9733139764148272e-05,
+        "4": 1.6537798533397305e-05,
+        "0": 1.2066933517420049e-05,
+        "5": 9.469264002745043e-06,
+        "1": 8.381607295800255e-06,
+        "2": 8.00886951130118e-06,
+        "6": 6.908224133368883e-06
+      },
+      "true_step": 6,
+      "true_agent": "BenAndJerrysFlavors_Expert",
+      "step_agents": {
+        "0": "WebServing_Expert",
+        "1": "WebServing_Expert",
+        "2": "WebServing_Expert",
+        "3": "WebServing_Expert",
+        "4": "DataVerification_Expert",
+        "5": "Computer_terminal",
+        "6": "BenAndJerrysFlavors_Expert",
+        "7": "DataVerification_Expert",
+        "8": "BenAndJerrysFlavors_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "86.json",
+      "question_id": "72e110e7-464c-453c-a309-90a95aed6538",
+      "scores": {
+        "6": 0.00011532470818040032,
+        "4": 1.2466478740172497e-05,
+        "2": 1.2400489080618581e-05,
+        "3": 1.2216706603071842e-05,
+        "5": 1.107548353174047e-05,
+        "0": 8.917503318710834e-06,
+        "1": 6.823285999028099e-06
+      },
+      "true_step": 0,
+      "true_agent": "Library_Database_Expert",
+      "step_agents": {
+        "0": "Library_Database_Expert",
+        "1": "Computer_terminal",
+        "2": "NaturalLanguageProcessing_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Library_Database_Expert",
+        "6": "Library_Database_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "87.json",
+      "question_id": "f46b4380-207e-4434-820b-f32ce04ae2a4",
+      "scores": {
+        "8": 0.0001174238527743125,
+        "5": 4.200747135246009e-05,
+        "7": 4.069542572664642e-05,
+        "3": 3.883791700869387e-05,
+        "6": 1.9124064705258545e-05,
+        "4": 1.61660112271044e-05,
+        "2": 1.4329692124107256e-05,
+        "1": 1.2709581359123253e-05,
+        "0": 1.2194170028138056e-05
+      },
+      "true_step": 1,
+      "true_agent": "Music_Critic_Expert",
+      "step_agents": {
+        "0": "MusicHistorian_Expert",
+        "1": "Music_Critic_Expert",
+        "2": "DataVerification_Expert",
+        "3": "Computer_terminal",
+        "4": "MusicHistorian_Expert",
+        "5": "Computer_terminal",
+        "6": "Music_Critic_Expert",
+        "7": "DataVerification_Expert",
+        "8": "MusicHistorian_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "88.json",
+      "question_id": "08cae58d-4084-4616-b6dd-dd6534e4825b",
+      "scores": {
+        "9": 6.987791676550023e-05,
+        "1": 3.906335822132975e-05,
+        "7": 3.261436299356103e-05,
+        "8": 3.078141698020291e-05,
+        "3": 1.741071124965982e-05,
+        "6": 1.5634746015466724e-05,
+        "0": 8.587701755131875e-06,
+        "4": 6.748711191492883e-06,
+        "2": 5.7807979689035496e-06,
+        "5": 2.6784305159036773e-06
+      },
+      "true_step": 0,
+      "true_agent": "FinancialData_Expert",
+      "step_agents": {
+        "0": "FinancialData_Expert",
+        "1": "Computer_terminal",
+        "2": "DataValidation_Expert",
+        "3": "Computer_terminal",
+        "4": "Verification_Expert",
+        "5": "Computer_terminal",
+        "6": "DataValidation_Expert",
+        "7": "Computer_terminal",
+        "8": "FinancialData_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "89.json",
+      "question_id": "3f57289b-8c60-48be-bd80-01f8099ca449",
+      "scores": {
+        "9": 0.00011874521272719758,
+        "6": 3.5463797235753775e-05,
+        "2": 2.375220481697611e-05,
+        "4": 1.7637116715548336e-05,
+        "7": 1.6626140900960438e-05,
+        "8": 1.3990901444336499e-05,
+        "0": 1.3193199283949369e-05,
+        "1": 1.1321310615316216e-05,
+        "3": 9.794741399563739e-06,
+        "5": 6.102152434423403e-06
+      },
+      "true_step": 8,
+      "true_agent": "Validation_Expert",
+      "step_agents": {
+        "0": "Baseball_Historian_Expert",
+        "1": "Validation_Expert",
+        "2": "Baseball_Historian_Expert",
+        "3": "DataAnalysis_Expert",
+        "4": "Computer_terminal",
+        "5": "DataAnalysis_Expert",
+        "6": "Computer_terminal",
+        "7": "Baseball_Historian_Expert",
+        "8": "Validation_Expert",
+        "9": "Validation_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "90.json",
+      "question_id": "c8b7e059-c60d-472e-ad64-3b04ae1166dc",
+      "scores": {
+        "4": 3.294942722380514e-05,
+        "6": 3.163318679688499e-05,
+        "5": 2.3810740379646613e-05,
+        "7": 1.8730906911660972e-05,
+        "0": 8.333556939150793e-06,
+        "8": 7.716739705231988e-06,
+        "3": 7.024844275666889e-06,
+        "9": 6.0029095132425215e-06,
+        "2": 4.5150176333918475e-06,
+        "1": 3.544182603664017e-06
+      },
+      "true_step": 5,
+      "true_agent": "Federico_Lauria_Expert",
+      "step_agents": {
+        "0": "Federico_Lauria_Expert",
+        "1": "Art_Expert",
+        "2": "Computer_terminal",
+        "3": "Federico_Lauria_Expert",
+        "4": "Art_Expert",
+        "5": "Federico_Lauria_Expert",
+        "6": "Federico_Lauria_Expert",
+        "7": "Federico_Lauria_Expert",
+        "8": "Federico_Lauria_Expert",
+        "9": "Federico_Lauria_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "91.json",
+      "question_id": "32102e3e-d12a-4209-9163-7b3a104efe5d",
+      "scores": {
+        "9": 4.8911170083607286e-05,
+        "5": 4.579744420642343e-05,
+        "1": 4.003417079174269e-05,
+        "7": 1.7848052205340236e-05,
+        "3": 1.6160141859479666e-05,
+        "4": 9.446410002827471e-06,
+        "0": 8.734901901669806e-06,
+        "8": 7.68487263252007e-06,
+        "2": 7.0347688971882625e-06,
+        "6": 6.504767396335094e-06
+      },
+      "true_step": 8,
+      "true_agent": "Blu-Ray_Expert",
+      "step_agents": {
+        "0": "Data_Analysis_Expert",
+        "1": "Computer_terminal",
+        "2": "Data_Analysis_Expert",
+        "3": "Computer_terminal",
+        "4": "Blu-Ray_Expert",
+        "5": "Computer_terminal",
+        "6": "Data_Analysis_Expert",
+        "7": "Computer_terminal",
+        "8": "Blu-Ray_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "92.json",
+      "question_id": "27d5d136-8563-469e-92bf-fd103c28b57c",
+      "scores": {
+        "8": 9.54458451942613e-05,
+        "6": 8.211210809494314e-05,
+        "3": 5.121393142523237e-05,
+        "1": 3.3753384453118057e-05,
+        "2": 2.47234510018952e-05,
+        "0": 1.66011517688406e-05,
+        "4": 1.6342052727452193e-05,
+        "9": 1.5944266518241973e-05,
+        "5": 1.2759118821876001e-05,
+        "7": 8.671230043412596e-06
+      },
+      "true_step": 0,
+      "true_agent": "PythonDebugging_Expert",
+      "step_agents": {
+        "0": "PythonDebugging_Expert",
+        "1": "Computer_terminal",
+        "2": "Verification_Expert",
+        "3": "PythonDebugging_Expert",
+        "4": "Computer_terminal",
+        "5": "PythonDebugging_Expert",
+        "6": "Computer_terminal",
+        "7": "PythonDebugging_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "93.json",
+      "question_id": "08c0b6e9-1b43-4c2e-ae55-4e3fce2c2715",
+      "scores": {
+        "5": 0.00011183521820090026,
+        "4": 5.1846064714076415e-05,
+        "2": 3.800545381800679e-05,
+        "3": 3.332308314509694e-05,
+        "1": 2.8287836507947107e-05,
+        "0": 1.5570580651196983e-05
+      },
+      "true_step": 4,
+      "true_agent": "FilmCritic_Expert",
+      "step_agents": {
+        "0": "JamesBondFilms_Expert",
+        "1": "JamesBondFilms_Expert",
+        "2": "MovieProp_Expert",
+        "3": "FilmCritic_Expert",
+        "4": "FilmCritic_Expert",
+        "5": "JamesBondFilms_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "94.json",
+      "question_id": "0383a3ee-47a7-41a4-b493-519bdefe0488",
+      "scores": {
+        "1": 3.958405497775253e-05,
+        "2": 3.398160702730999e-05,
+        "9": 3.216342067678289e-05,
+        "7": 2.052413407582142e-05,
+        "4": 1.9100402768919975e-05,
+        "8": 1.8451907120534335e-05,
+        "3": 1.6994232901310017e-05,
+        "0": 1.696906289684093e-05,
+        "5": 1.4261470907025816e-05,
+        "6": 1.3205810039531653e-05
+      },
+      "true_step": 8,
+      "true_agent": "AnimalBehavior_Expert",
+      "step_agents": {
+        "0": "BirdSpeciesIdentification_Expert",
+        "1": "Computer_terminal",
+        "2": "Ornithology_Expert",
+        "3": "Computer_terminal",
+        "4": "BirdSpeciesIdentification_Expert",
+        "5": "Computer_terminal",
+        "6": "BirdSpeciesIdentification_Expert",
+        "7": "Ornithology_Expert",
+        "8": "AnimalBehavior_Expert",
+        "9": "BirdSpeciesIdentification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "95.json",
+      "question_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+      "scores": {
+        "2": 2.769687503624538e-05,
+        "5": 1.6611501021142174e-05,
+        "6": 1.3043870593274878e-05,
+        "3": 1.2925673507614023e-05,
+        "1": 1.2307359584950912e-05,
+        "9": 1.192743062728141e-05,
+        "0": 1.0538165684468552e-05,
+        "4": 9.79748502947077e-06,
+        "7": 9.505306711281415e-06,
+        "8": 7.82707962417153e-06
+      },
+      "true_step": 5,
+      "true_agent": "AcademicPublication_Expert",
+      "step_agents": {
+        "0": "AcademicPublication_Expert",
+        "1": "AcademicPublication_Expert",
+        "2": "Computer_terminal",
+        "3": "PublicationAnalysis_Expert",
+        "4": "AcademicPublication_Expert",
+        "5": "AcademicPublication_Expert",
+        "6": "PublicationAnalysis_Expert",
+        "7": "Verification_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "96.json",
+      "question_id": "a26649c6-1cb2-470a-871e-6910c64c3e53",
+      "scores": {
+        "8": 8.000221177780654e-05,
+        "4": 7.769832447586161e-05,
+        "2": 3.1348510488784144e-05,
+        "5": 1.870705931165264e-05,
+        "1": 1.8593731405460058e-05,
+        "6": 1.828549258092123e-05,
+        "3": 1.4835194405362738e-05,
+        "7": 1.2537989797699108e-05,
+        "0": 1.1745214312626372e-05,
+        "9": 1.0167920584464796e-05
+      },
+      "true_step": 1,
+      "true_agent": "Data_Retrieval_Expert",
+      "step_agents": {
+        "0": "PopulationData_Expert",
+        "1": "Data_Retrieval_Expert",
+        "2": "Computer_terminal",
+        "3": "PopulationData_Expert",
+        "4": "Computer_terminal",
+        "5": "PopulationData_Expert",
+        "6": "Computer_terminal",
+        "7": "Data_Retrieval_Expert",
+        "8": "Computer_terminal",
+        "9": "PopulationData_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "97.json",
+      "question_id": "4fc2f1ae-8625-45b5-ab34-ad4433bc21f8",
+      "scores": {
+        "3": 0.00010659189409664273,
+        "5": 6.92943866319095e-05,
+        "9": 3.0357241375453815e-05,
+        "1": 2.312314755589948e-05,
+        "7": 2.2279676306340704e-05,
+        "2": 1.9001323052093966e-05,
+        "6": 1.887354332541314e-05,
+        "8": 1.8530285937096948e-05,
+        "0": 1.3919240059128888e-05,
+        "4": 1.3284156514680824e-05
+      },
+      "true_step": 2,
+      "true_agent": "WikipediaHistory_Expert",
+      "step_agents": {
+        "0": "WikipediaHistory_Expert",
+        "1": "Wikipedia_Editor_Expert",
+        "2": "WikipediaHistory_Expert",
+        "3": "Computer_terminal",
+        "4": "WikipediaHistory_Expert",
+        "5": "Computer_terminal",
+        "6": "Wikipedia_Editor_Expert",
+        "7": "WikipediaHistory_Expert",
+        "8": "Wikipedia_Editor_Expert",
+        "9": "Wikipedia_Editor_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "98.json",
+      "question_id": "ec09fa32-d03f-4bf8-84b0-1f16922c3ae4",
+      "scores": {
+        "6": 0.00011829066973305618,
+        "2": 3.4656517225667184e-05,
+        "5": 3.462648283305033e-05,
+        "4": 2.6028525256366832e-05,
+        "3": 1.2526030661706183e-05,
+        "0": 5.031122208563332e-06,
+        "1": 4.714678846566215e-06
+      },
+      "true_step": 1,
+      "true_agent": "Probability_Expert",
+      "step_agents": {
+        "0": "TheoreticalChemistry_Expert",
+        "1": "Probability_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Probability_Expert",
+        "5": "TheoreticalChemistry_Expert",
+        "6": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "99.json",
+      "question_id": "99da66d8af02491f98b98c56b26c709e773b5a2ad945fb280375951ba600de09",
+      "scores": {
+        "5": 0.00012619086730387036,
+        "6": 0.00010410117404273138,
+        "4": 2.1126465351093347e-05,
+        "3": 1.4644462716331326e-05,
+        "0": 8.582688836048301e-06,
+        "1": 4.744227519066365e-06,
+        "2": 3.970564611507964e-06
+      },
+      "true_step": 2,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Ticket_Pricing_Expert",
+        "1": "AnalyticalReasoning_Expert",
+        "2": "Verification_Expert",
+        "3": "Computer_terminal",
+        "4": "Ticket_Pricing_Expert",
+        "5": "Ticket_Pricing_Expert",
+        "6": "Ticket_Pricing_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "100.json",
+      "question_id": "c7afe00869f98cf363fd83677ac41757ed5e57f03eacc3d1304feb0a92084bd1",
+      "scores": {
+        "1": 1.7420868849140992e-05,
+        "2": 1.604148959837036e-05,
+        "4": 1.2111683253153194e-05,
+        "8": 1.1901058001364318e-05,
+        "0": 1.1335580964540146e-05,
+        "6": 9.236281251626443e-06,
+        "5": 9.216100209638379e-06,
+        "7": 8.180825213084082e-06,
+        "9": 7.790755425555196e-06,
+        "3": 7.302276706071697e-06
+      },
+      "true_step": 2,
+      "true_agent": "Movie_Expert",
+      "step_agents": {
+        "0": "Movie_Expert",
+        "1": "StreamingService_Expert",
+        "2": "Movie_Expert",
+        "3": "StreamingService_Expert",
+        "4": "Computer_terminal",
+        "5": "StreamingService_Expert",
+        "6": "Computer_terminal",
+        "7": "StreamingService_Expert",
+        "8": "Computer_terminal",
+        "9": "StreamingService_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "101.json",
+      "question_id": "57d9dc6935e8a40b02e7f8ec81768fe70e68a0c05f6866927c9fda38db38a486",
+      "scores": {
+        "7": 9.502800371522641e-05,
+        "4": 3.4342326383224827e-05,
+        "2": 2.299155872941321e-05,
+        "1": 1.606668236161187e-05,
+        "0": 1.0579828611963139e-05,
+        "3": 8.423475052246644e-06,
+        "6": 6.679206199972297e-06,
+        "5": 6.12948601956028e-06
+      },
+      "true_step": 2,
+      "true_agent": "Tickets_Pricing_Expert",
+      "step_agents": {
+        "0": "Tickets_Pricing_Expert",
+        "1": "Tickets_Pricing_Expert",
+        "2": "Tickets_Pricing_Expert",
+        "3": "Tickets_Pricing_Expert",
+        "4": "Computer_terminal",
+        "5": "Budgeting_Expert",
+        "6": "Verification_Expert",
+        "7": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "102.json",
+      "question_id": "52f7224e9c79431e7926afe317782711a0028750693e7456cde22ef6f4bd8bd5",
+      "scores": {
+        "6": 3.764981805315304e-05,
+        "7": 3.543133603929862e-05,
+        "8": 2.551941151727695e-05,
+        "4": 2.5175873836710923e-05,
+        "5": 2.0734384406780392e-05,
+        "2": 1.9050596992218666e-05,
+        "3": 1.651368142161029e-05,
+        "9": 1.5566576305080765e-05,
+        "1": 1.4394894809267408e-05,
+        "0": 1.2572082438787917e-05
+      },
+      "true_step": 1,
+      "true_agent": "Filmography_Expert",
+      "step_agents": {
+        "0": "Filmography_Expert",
+        "1": "Filmography_Expert",
+        "2": "StreamingAvailability_Expert",
+        "3": "StreamingAvailability_Expert",
+        "4": "IMDB_Ratings_Expert",
+        "5": "IMDB_Ratings_Expert",
+        "6": "IMDB_Ratings_Expert",
+        "7": "Computer_terminal",
+        "8": "IMDB_Ratings_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "103.json",
+      "question_id": "ccec2229ced20a4b0cb4897e3a99120a3017ea030903e01c9bda6b13d40b0b14",
+      "scores": {
+        "4": 1.693557875345689e-05,
+        "8": 1.3701740460238309e-05,
+        "6": 1.3333689186113065e-05,
+        "0": 1.211066330079963e-05,
+        "1": 1.157350476493467e-05,
+        "9": 9.36074718125955e-06,
+        "3": 6.771849975523267e-06,
+        "5": 6.031006415628146e-06,
+        "7": 5.561012311214643e-06,
+        "2": 5.545299475059674e-06
+      },
+      "true_step": 3,
+      "true_agent": "DataVerification_Expert",
+      "step_agents": {
+        "0": "Eateries_Expert",
+        "1": "Location-Based_Services_Expert",
+        "2": "Computer_terminal",
+        "3": "DataVerification_Expert",
+        "4": "Computer_terminal",
+        "5": "DataVerification_Expert",
+        "6": "Computer_terminal",
+        "7": "Eateries_Expert",
+        "8": "Computer_terminal",
+        "9": "DataVerification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "104.json",
+      "question_id": "291b53e665b4dd4365cde995042db4a6f6fecef3fe3a6f4482f23d61bd673918",
+      "scores": {
+        "3": 6.845223539115122e-05,
+        "8": 4.789958816697487e-05,
+        "6": 4.7261537597301e-05,
+        "1": 3.3753384453118057e-05,
+        "0": 1.66011517688406e-05,
+        "2": 1.2695581120593072e-05,
+        "4": 1.0158312190097082e-05,
+        "7": 7.0933044598587666e-06,
+        "9": 7.03216721015134e-06,
+        "5": 2.3174964489384855e-06
+      },
+      "true_step": 0,
+      "true_agent": "PythonDebugging_Expert",
+      "step_agents": {
+        "0": "PythonDebugging_Expert",
+        "1": "Computer_terminal",
+        "2": "PythonDebugging_Expert",
+        "3": "Computer_terminal",
+        "4": "Validation_Expert",
+        "5": "PythonDebugging_Expert",
+        "6": "Computer_terminal",
+        "7": "DebuggingOptimization_Expert",
+        "8": "Computer_terminal",
+        "9": "PythonDebugging_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "105.json",
+      "question_id": "b36ef2d8f2643b80e74a44ce3403f674ecb2aed7fd36afeaa289061a59feef92",
+      "scores": {
+        "7": 9.073093666376815e-05,
+        "2": 7.771383877167295e-05,
+        "6": 2.9817158936247636e-05,
+        "0": 1.325920092180456e-05,
+        "4": 1.1087930184595286e-05,
+        "5": 1.0511492403189457e-05,
+        "3": 1.0292842887376482e-05,
+        "1": 7.275981939112891e-06
+      },
+      "true_step": 6,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Local_Knowledge_Expert",
+        "1": "Local_Knowledge_Expert",
+        "2": "Computer_terminal",
+        "3": "Fitness_Expert",
+        "4": "Fitness_Expert",
+        "5": "Local_Knowledge_Expert",
+        "6": "Verification_Expert",
+        "7": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "106.json",
+      "question_id": "e6bc98089608217e45b6956a46518fe3cce64a799b3ac43c6974c449ae14c408",
+      "scores": {
+        "5": 9.018227296952858e-05,
+        "2": 3.519629781168123e-05,
+        "3": 2.995641387554988e-05,
+        "4": 1.5527567769148708e-05,
+        "1": 9.763260627067938e-06,
+        "0": 8.433045116050278e-06
+      },
+      "true_step": 0,
+      "true_agent": "DataAnalysis_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "RealEstate_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "107.json",
+      "question_id": "929b45f34805280d77c61d1e093e3d4e551d77ddb6ecd73552b12b1af286388d",
+      "scores": {
+        "7": 9.585642303140306e-05,
+        "2": 3.4420309915845366e-05,
+        "3": 3.3075997142057195e-05,
+        "4": 2.8453264035535152e-05,
+        "1": 1.6527709210233404e-05,
+        "5": 1.3608842744700309e-05,
+        "0": 1.1546557779471442e-05,
+        "6": 4.487785564358276e-06
+      },
+      "true_step": 6,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Genomics_Expert",
+        "1": "Bioinformatics_Expert",
+        "2": "Bioinformatics_Expert",
+        "3": "Computer_terminal",
+        "4": "Bioinformatics_Expert",
+        "5": "Computer_terminal",
+        "6": "Verification_Expert",
+        "7": "Genomics_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "109.json",
+      "question_id": "8ad84bd6fe38481ba49e7ad1f6fbd43219a999074e5c6fc940003281f55ec65b",
+      "scores": {
+        "2": 2.120990619777476e-05,
+        "6": 1.5443930478326385e-05,
+        "0": 1.3921795030790838e-05,
+        "3": 1.0893881703940836e-05,
+        "4": 8.531411525035364e-06,
+        "1": 7.913843551084152e-06,
+        "8": 7.17413763035262e-06,
+        "5": 5.714401945478881e-06,
+        "9": 5.332829864331986e-06,
+        "7": 2.584293046183719e-06
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "Geography_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Grocery_Expert",
+        "4": "Computer_terminal",
+        "5": "Geography_Expert",
+        "6": "Computer_terminal",
+        "7": "Geography_Expert",
+        "8": "Computer_terminal",
+        "9": "Grocery_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "111.json",
+      "question_id": "2aa5dd83fbcd0dce9a3dd4592106e5b5edf738008d932e357d477bba80e59ccf",
+      "scores": {
+        "9": 6.098388912054314e-05,
+        "4": 3.202538273289018e-05,
+        "6": 2.046893327222587e-05,
+        "2": 1.6939276455060472e-05,
+        "3": 1.663035366951884e-05,
+        "8": 1.5619918076318443e-05,
+        "5": 1.0143584868679511e-05,
+        "7": 9.37043463241568e-06,
+        "0": 8.041645138164807e-06,
+        "1": 5.8664260533977716e-06
+      },
+      "true_step": 8,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "DataAnalysis_Expert",
+        "6": "Computer_terminal",
+        "7": "ProbabilityTheory_Expert",
+        "8": "Verification_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "112.json",
+      "question_id": "e2dc3a6b10b762e8aba7fa4d4e70f757f6d04dcbc8b56c48fc53fd9928d31d07",
+      "scores": {
+        "9": 0.00012174459853173113,
+        "3": 4.7386346705265636e-05,
+        "1": 3.765938152889098e-05,
+        "7": 2.86607210266368e-05,
+        "8": 1.8093083929711323e-05,
+        "2": 1.5526681374854363e-05,
+        "6": 8.94086759426272e-06,
+        "4": 6.915515924270019e-06,
+        "0": 6.583042600591678e-06,
+        "5": 6.3994409953941895e-06
+      },
+      "true_step": 4,
+      "true_agent": "HistoricalWeatherData_Expert",
+      "step_agents": {
+        "0": "HistoricalWeatherData_Expert",
+        "1": "Computer_terminal",
+        "2": "Validation_Expert",
+        "3": "Computer_terminal",
+        "4": "HistoricalWeatherData_Expert",
+        "5": "Computer_terminal",
+        "6": "Statistics_Expert",
+        "7": "Computer_terminal",
+        "8": "Validation_Expert",
+        "9": "HistoricalWeatherData_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "113.json",
+      "question_id": "f88066d274e265edd6cd9d61cd80a41accb3a14baf2297652fdd05cdf716d455",
+      "scores": {
+        "8": 0.00010290151363079997,
+        "4": 1.3584038078420109e-05,
+        "6": 1.1758916291454805e-05,
+        "2": 1.0820455914955423e-05,
+        "0": 1.0381061279521416e-05,
+        "1": 9.667028152454988e-06,
+        "7": 6.695822200043398e-06,
+        "3": 5.0690245483726434e-06,
+        "5": 4.44335789520066e-06
+      },
+      "true_step": 7,
+      "true_agent": "Reviews_Expert",
+      "step_agents": {
+        "0": "Hiking_Expert",
+        "1": "Reviews_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "Reviews_Expert",
+        "8": "Hiking_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "114.json",
+      "question_id": "6b06d186921b8b390c65aebd0d16f09f60a47d2f1288ebe36953f734e84c0a3c",
+      "scores": {
+        "6": 9.357854301718634e-05,
+        "2": 1.6657265318993307e-05,
+        "0": 1.2721744126237853e-05,
+        "5": 9.869736944931238e-06,
+        "3": 5.295444388222689e-06,
+        "1": 4.771613808728852e-06,
+        "4": 3.766648106805665e-06
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "RealEstateMarket_Expert",
+        "6": "DataAnalysis_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "115.json",
+      "question_id": "4dbedc5e1a0205e14b7ff3ba89bce3060dab15d0ada3b7e1351a6f2aa8287aec",
+      "scores": {
+        "5": 6.344350871302416e-05,
+        "6": 5.970945536073288e-05,
+        "2": 3.540297621320001e-05,
+        "3": 2.4115322228806194e-05,
+        "4": 2.0753307727134582e-05,
+        "0": 1.3053328659961592e-05,
+        "1": 7.473858085939757e-06
+      },
+      "true_step": 1,
+      "true_agent": "Verification_Expert",
+      "step_agents": {
+        "0": "ProblemSolving_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "ArithmeticProgressions_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "116.json",
+      "question_id": "2ddae3b7a208e3c25f14d82d7a1faaaa1832fbf950b4dac345e755c4c361f294",
+      "scores": {
+        "6": 3.339961730326321e-05,
+        "8": 3.335013733635658e-05,
+        "9": 1.8113486570272972e-05,
+        "5": 1.644417253714179e-05,
+        "2": 1.550184915848123e-05,
+        "0": 1.268260143333152e-05,
+        "1": 1.118835266899422e-05,
+        "3": 8.806165008360025e-06,
+        "7": 8.713169669666635e-06,
+        "4": 3.258728604352896e-06
+      },
+      "true_step": 7,
+      "true_agent": "DataAnalysis_Expert",
+      "step_agents": {
+        "0": "DataAnalysis_Expert",
+        "1": "DataManipulation_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "DataManipulation_Expert",
+        "6": "Computer_terminal",
+        "7": "DataAnalysis_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "117.json",
+      "question_id": "748899d9d70c09beb3bd48ac8a3658bdcfd2f9114fe6dc4c4b8d2f9541ef4607",
+      "scores": {
+        "6": 8.916061011454316e-05,
+        "2": 5.023509818428572e-05,
+        "4": 2.861156207820434e-05,
+        "0": 1.4539985576950817e-05,
+        "5": 1.1514760180906918e-05,
+        "3": 9.01687171259757e-06,
+        "1": 7.649104227082893e-06
+      },
+      "true_step": 0,
+      "true_agent": "JSON_Expert",
+      "step_agents": {
+        "0": "JSON_Expert",
+        "1": "Debugging_Expert",
+        "2": "Computer_terminal",
+        "3": "Debugging_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "118.json",
+      "question_id": "9baaa267c95f9d8b75741ee9169c50563d297cfa592c20deaffd30dbc5984c74",
+      "scores": {
+        "6": 2.4905950004460328e-05,
+        "9": 2.0891149226886382e-05,
+        "8": 2.028344927698302e-05,
+        "2": 1.5572699612692526e-05,
+        "4": 1.229895800443665e-05,
+        "0": 1.0967415297637725e-05,
+        "3": 8.732364298544703e-06,
+        "1": 7.052955552014043e-06,
+        "5": 5.392077237555755e-06,
+        "7": 3.340122059888886e-06
+      },
+      "true_step": 1,
+      "true_agent": "Statistics_Expert",
+      "step_agents": {
+        "0": "WeatherData_Expert",
+        "1": "Statistics_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "Statistics_Expert",
+        "8": "Computer_terminal",
+        "9": "WeatherData_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "119.json",
+      "question_id": "0ec4371851b96837b0a81b3dd3df401415061bb532fbafeb4609f3337c358508",
+      "scores": {
+        "7": 0.00011228781591891459,
+        "1": 8.403609159365125e-05,
+        "3": 2.1911496864391818e-05,
+        "5": 1.767289111013615e-05,
+        "6": 1.405687433426863e-05,
+        "0": 8.580164409054602e-06,
+        "4": 7.817110084020375e-06,
+        "2": 6.900633483850937e-06
+      },
+      "true_step": 0,
+      "true_agent": "Geometry_Expert",
+      "step_agents": {
+        "0": "Geometry_Expert",
+        "1": "Computer_terminal",
+        "2": "VerificationExpert",
+        "3": "Computer_terminal",
+        "4": "VerificationExpert",
+        "5": "Computer_terminal",
+        "6": "LocalHistorian_Expert",
+        "7": "LocalHistorian_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "120.json",
+      "question_id": "797f7a5b65ca28b7e7156e7db1e9f117bd4a021de0cd512bfdbb0be897d89eab",
+      "scores": {
+        "4": 8.028771698435562e-05,
+        "3": 3.233968617136452e-05,
+        "2": 2.639155163310723e-05,
+        "0": 1.3190410735412557e-05,
+        "6": 1.2818655770533094e-05,
+        "9": 7.875024571769773e-06,
+        "7": 6.866376740034661e-06,
+        "1": 5.706923293077855e-06,
+        "8": 4.842166003238401e-06,
+        "5": 1.8409088885881776e-06
+      },
+      "true_step": 8,
+      "true_agent": "Vegan_Food_Expert",
+      "step_agents": {
+        "0": "Food_Expert",
+        "1": "Verification_Expert",
+        "2": "Computer_terminal",
+        "3": "Verification_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Computer_terminal",
+        "7": "Verification_Expert",
+        "8": "Vegan_Food_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "121.json",
+      "question_id": "9bdca8677af1e25cb7b0c7992dc62670c3e58e4afcd5ae60bcaa2483556bba00",
+      "scores": {
+        "6": 8.916061011454316e-05,
+        "2": 5.023509818428572e-05,
+        "4": 2.861156207820434e-05,
+        "0": 1.4539985576950817e-05,
+        "5": 1.1514760180906918e-05,
+        "3": 9.01687171259757e-06,
+        "1": 7.649104227082893e-06
+      },
+      "true_step": 1,
+      "true_agent": "Debugging_Expert",
+      "step_agents": {
+        "0": "JSON_Expert",
+        "1": "Debugging_Expert",
+        "2": "Computer_terminal",
+        "3": "Debugging_Expert",
+        "4": "Computer_terminal",
+        "5": "Verification_Expert",
+        "6": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "122.json",
+      "question_id": "557e78eceec08ca8b0da5f9fdaca6e1c7ec6140a8ce600983ee716327dab005e",
+      "scores": {
+        "4": 2.3457627245041378e-05,
+        "0": 1.737618020274435e-05,
+        "8": 1.6352340890417262e-05,
+        "3": 1.5315812963549603e-05,
+        "1": 1.3117085564157852e-05,
+        "2": 1.2454802891004723e-05,
+        "9": 1.0087074836754605e-05,
+        "5": 9.218469517630569e-06,
+        "6": 6.293925337293141e-06,
+        "7": 4.714590506594312e-06
+      },
+      "true_step": 3,
+      "true_agent": "BingAPI_Expert",
+      "step_agents": {
+        "0": "BingAPI_Expert",
+        "1": "Accessibility_Expert",
+        "2": "BingAPI_Expert",
+        "3": "BingAPI_Expert",
+        "4": "Computer_terminal",
+        "5": "BingAPI_Expert",
+        "6": "Computer_terminal",
+        "7": "Accessibility_Expert",
+        "8": "Computer_terminal",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "123.json",
+      "question_id": "4e615af6f0348597b4133cc1ec5418bb3f35328e3d95e23a275027cee97b5e09",
+      "scores": {
+        "8": 3.278211910291693e-05,
+        "2": 3.2310162054381986e-05,
+        "4": 1.9825125930959248e-05,
+        "3": 1.5364206498530593e-05,
+        "6": 1.2734990929617838e-05,
+        "1": 1.2601647880909852e-05,
+        "0": 1.2513397147351476e-05,
+        "7": 8.997340493453674e-06,
+        "5": 7.881170039238894e-06,
+        "9": 5.806519873603879e-06
+      },
+      "true_step": 3,
+      "true_agent": "Paintball_Expert",
+      "step_agents": {
+        "0": "Karting_Expert",
+        "1": "Geospatial_Expert",
+        "2": "Computer_terminal",
+        "3": "Paintball_Expert",
+        "4": "Computer_terminal",
+        "5": "Geospatial_Expert",
+        "6": "Computer_terminal",
+        "7": "Geospatial_Expert",
+        "8": "Computer_terminal",
+        "9": "Paintball_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "124.json",
+      "question_id": "6f224e7730ed027cbac73aebb1aea7f954053082041b02b19f4ff126a0a8a208",
+      "scores": {
+        "3": 4.326511632520336e-05,
+        "2": 3.812946517110651e-05,
+        "9": 2.923917715180746e-05,
+        "4": 2.8532390298097326e-05,
+        "1": 2.3103397732757315e-05,
+        "8": 1.8314532774532256e-05,
+        "5": 1.823101287106243e-05,
+        "0": 1.391684679453415e-05,
+        "6": 1.3078558555937052e-05,
+        "7": 1.1895375495239474e-05
+      },
+      "true_step": 8,
+      "true_agent": "Research_Expert",
+      "step_agents": {
+        "0": "Research_Expert",
+        "1": "Research_Expert",
+        "2": "Research_Expert",
+        "3": "Computer_terminal",
+        "4": "Research_Expert",
+        "5": "Research_Expert",
+        "6": "Computer_terminal",
+        "7": "Validation_Expert",
+        "8": "Research_Expert",
+        "9": "Computer_terminal"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "125.json",
+      "question_id": "6e3be83d1949fa52cba03fb1ce4b5b3bf7e37a83fd7d67694b10b2e439d90cf8",
+      "scores": {
+        "9": 0.00012175004147183046,
+        "6": 5.201861453960256e-05,
+        "4": 3.205478227553945e-05,
+        "2": 2.024729876373517e-05,
+        "7": 1.7912057060372886e-05,
+        "1": 1.505063972558466e-05,
+        "3": 1.4652811592319977e-05,
+        "0": 1.4184319866343887e-05,
+        "5": 1.2778763235966946e-05,
+        "8": 7.464310181993482e-06
+      },
+      "true_step": 5,
+      "true_agent": "MartialArts_Expert",
+      "step_agents": {
+        "0": "NYC_Local_Expert",
+        "1": "MartialArts_Expert",
+        "2": "NYC_Local_Expert",
+        "3": "NYC_Local_Expert",
+        "4": "MartialArts_Expert",
+        "5": "MartialArts_Expert",
+        "6": "MartialArts_Expert",
+        "7": "Verification_Expert",
+        "8": "Verification_Expert",
+        "9": "Verification_Expert"
+      },
+      "skipped": []
+    },
+    {
+      "filename": "126.json",
+      "question_id": "9e31099fffa6a3891c94934fd4fc2f3f522d51c1904ff3561f3a10e4bf245821",
+      "scores": {
+        "7": 0.0001093820141865821,
+        "4": 2.4214873890702436e-05,
+        "1": 1.5219838022414066e-05,
+        "0": 1.4790256610299576e-05,
+        "2": 1.362280465266641e-05,
+        "5": 1.0773656691874129e-05,
+        "3": 8.789061790884565e-06,
+        "6": 6.944058419463071e-06
+      },
+      "true_step": 5,
+      "true_agent": "CorporateHistory_IPOs_MondayCom_Expert",
+      "step_agents": {
+        "0": "CorporateHistory_IPOs_MondayCom_Expert",
+        "1": "CorporateHistory_IPOs_MondayCom_Expert",
+        "2": "Computer_terminal",
+        "3": "CorporateHistory_IPOs_MondayCom_Expert",
+        "4": "Computer_terminal",
+        "5": "CorporateHistory_IPOs_MondayCom_Expert",
+        "6": "Verification_Expert",
+        "7": "CorporateHistory_IPOs_MondayCom_Expert"
+      },
+      "skipped": []
+    }
+  ],
+  "total_time_s": 1012.6590832499787
+}
