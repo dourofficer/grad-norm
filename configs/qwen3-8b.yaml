@@ -1,0 +1,8 @@
+model: Qwen3-8B
+temperature: 0.6
+enable_thinking: true
+# max_tokens: 32000
+
+hostname: localhost
+port: 8881
+concurrent_requests: 24

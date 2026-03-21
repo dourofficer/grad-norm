@@ -30,7 +30,12 @@ def send_request(url, pload_config, data, request_id):
         
         # Handle cases where reasoning_content might be missing depending on model
         message = response_json["choices"][0]["message"]
-        reasoning = message.get("reasoning_content", None)
+        if "reasoning_content" in message.keys():
+            reasoning = message.get("reasoning_content", None)
+        elif "reasoning" in message.keys():
+            reasoning = message.get("reasoning", None)
+        else:
+            reasoning = None
         
         result_entry = {
             "request_id": request_id,
