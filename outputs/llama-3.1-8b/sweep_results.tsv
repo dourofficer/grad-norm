@@ -1,0 +1,7 @@
+subset	strategy	Step@1	Step@5	Step@10	Agent@1	Agent@5	Agent@10
+hand-crafted	all-at-once	24.14	24.14	24.14	34.48	34.48	34.48
+hand-crafted	step-by-step (k)	3.45	27.59	39.66	3.45	44.83	50.0
+hand-crafted	step-by-step (n)	3.45	12.07	13.79	15.52	36.21	41.38
+algorithm-generated	all-at-once	23.02	23.02	23.02	45.24	45.24	45.24
+algorithm-generated	step-by-step (k)	14.29	38.1	50.79	38.89	64.29	67.46
+algorithm-generated	step-by-step (n)	5.56	9.52	9.52	11.9	26.19	26.19

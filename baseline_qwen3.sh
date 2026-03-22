@@ -25,8 +25,7 @@ for METHOD in "${METHODS[@]}"; do
             --method "$METHOD" \
             --config "$CONFIG" \
             --input "$INPUT_PATH" \
-            --output "$OUTPUT_PATH" \
-            --start_idx 0 --end_idx 1
+            --output "$OUTPUT_PATH"
 
         if [ $? -ne 0 ]; then
             echo "ERROR: Failed on method=$METHOD, input=$INPUT. Continuing..."
