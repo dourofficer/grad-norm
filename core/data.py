@@ -257,6 +257,12 @@ def build_context(
         ):
             ctx_indices = ctx_indices[1:]   # drop oldest turn
             full_ids, prefix_ids = _apply(ctx_indices)
+
+        if full_ids["input_ids"].shape[1] > max_tokens:
+            step_len = full_ids["input_ids"].shape[1] - prefix_ids["input_ids"].shape[1]
+            full_ids["input_ids"] = full_ids["input_ids"][:, -max_tokens:]
+            ctx_len = max(0, max_tokens - step_len)
+            return {"input_ids": full_ids["input_ids"], "ctx_len": ctx_len}
  
     ctx_len = prefix_ids["input_ids"].shape[1]
  

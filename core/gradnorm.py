@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 from torch import Tensor
 from transformers import PreTrainedModel, PreTrainedTokenizer
-from gradnorm.data import load_dataset
+from core.data import load_dataset
 
 # ── Configuration (edit these) ───────────────────────────────────
 MODEL_NAME   = "/data/hoang/resources/models/Qwen/Qwen3-4B"          
@@ -323,7 +323,7 @@ def compare_rank_order(stats_std: dict, stats_hook: dict) -> None:
 
 if __name__ == "__main__":
     from transformers import AutoModelForCausalLM, AutoTokenizer
-    from gradnorm.data import build_context        # adjust import as needed
+    from core.data import build_context        # adjust import as needed
 
     print(f"\nLoading tokeniser: {MODEL_NAME}")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
