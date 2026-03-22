@@ -225,6 +225,7 @@ def build_context(
     """
     ctx_indices  = select_context(history, step_idx)
     step_content = history[step_idx].get("content", "").strip()
+    step_content = _serialize_turns(history, [step_idx])
     assistant_msg = {"role": "assistant", "content": step_content}
  
     def _apply(indices: list[int]) -> tuple:
