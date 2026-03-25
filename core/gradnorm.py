@@ -7,12 +7,13 @@ import torch.nn.functional as F
 from torch import Tensor
 from transformers import PreTrainedModel, PreTrainedTokenizer
 from core.data import load_dataset
+from contextlib import contextmanager
 
 # ── Configuration (edit these) ───────────────────────────────────
 MODEL_NAME   = "/data/hoang/resources/models/Qwen/Qwen3-4B"          
-DEVICE        = 0                             # CUDA device index
-DATASET_DIR   = "ww"                       # path to dataset
-SUBSET        = "hand-crafted"                          # or a string subset name
+DEVICE        = 0                        # CUDA device index
+DATASET_DIR   = "ww"                     # path to dataset
+SUBSET        = "hand-crafted"           # or a string subset name
 MAX_TOKENS    = 4096
 
 # ── Clean up memory ─────────────────────────────────────────────
@@ -118,17 +119,29 @@ def gradnorm_standard(
 
     statistics = {}
     for name, module in zip(module_names, target_weights):
-        n_params = sum(p.numel() for p in module.parameters())
-        l1_norm  = sum(p.grad.detach().abs().sum().item() for p in module.parameters())
-        l2_norm  = math.sqrt(
-            sum(p.grad.detach().norm(2).item() ** 2 for p in module.parameters())
-        )
-        if normalize:
-            l1_norm /= n_params
+        n_params = 0
+        l1_norm_total = 0.0
+        l2_norm_sq_total = 0.0
+        
+        for p in module.parameters():
+            if p.grad is not None:
+                n_params += p.numel()
+                
+                # ✨ Upcast to float64 before doing any math ✨
+                grad_f64 = p.grad.detach().double()
+                
+                l1_norm_total += grad_f64.abs().sum().item()
+                l2_norm_sq_total += grad_f64.square().sum().item()
+        
+        # Calculate final L2 norm from the accumulated double-precision squares
+        l2_norm = math.sqrt(l2_norm_sq_total)
+        
+        if normalize and n_params > 0:
+            l1_norm_total /= n_params
             l2_norm /= n_params
 
         statistics[name] = {
-            "l1_norm": l1_norm,
+            "l1_norm": l1_norm_total,
             "l2_norm": l2_norm,
         }
 
@@ -253,10 +266,88 @@ def gradnorm_hooked(
 
     return statistics
 
+# ---------------------------------------------------------------------
+# hook all layers
+# ---------------------------------------------------------------------
+def gradnorm_hooked_all(
+    model:          PreTrainedModel,
+    input_ids:      Tensor,
+    attention_mask: Tensor,
+    ctx_len:        int,
+    normalize:      bool = True,
+) -> dict:
+    # ── 1. Fix ACTIVATION memory ─────────────────────────────────────
+    # HF silently ignores gradient checkpointing if model is in eval mode!
+    was_training = model.training
+    model.train()
+    
+    # Ensure inputs require grad so checkpointing triggers correctly
+    if hasattr(model, "enable_input_require_grads"):
+        model.enable_input_require_grads()
+    model.gradient_checkpointing_enable()
+
+    # ── Build per-parameter stats + hooks ───────────────────────────
+    statistics = {}
+    handles = []
+    hooked_params = set()
+    device = next(model.parameters()).device
+
+    for param_name, p in model.named_parameters():
+        if not p.requires_grad or p in hooked_params:
+            continue
+        hooked_params.add(p)
+
+        statistics[param_name] = {
+            "l1_norm":    torch.tensor(0.0, device=device, dtype=torch.float64),
+            "l2_norm_sq": torch.tensor(0.0, device=device, dtype=torch.float64),
+            "n_params":   p.numel(),
+        }
+        entry = statistics[param_name]
+
+        def make_stat_hook(entry_dict):
+            def hook(param):
+                if param.grad is not None:
+                    with torch.no_grad():
+                        grad_f32 = param.grad.float()
+                        entry_dict["l1_norm"]    += grad_f32.abs().sum().double()
+                        entry_dict["l2_norm_sq"] += grad_f32.square().sum().double()
+                    param.grad = None
+            return hook
+
+        h = p.register_post_accumulate_grad_hook(make_stat_hook(entry))
+        handles.append(h)
+
+    # ── Forward + backward ───────────────────────────────────────────
+    model.zero_grad(set_to_none=True)
+    
+    logits = model(
+        input_ids, attention_mask, use_cache=False,
+    ).logits
+    
+    loss = _ntp_loss(logits, input_ids, ctx_len)
+    
+    # As backward runs, gradients are instantiated, recorded, and instantly destroyed!
+    loss.backward()
+
+    # ── Cleanup ──────────────────────────────────────────────────────
+    for name, stats in statistics.items():
+        for k, v in stats.items():
+            if isinstance(v, Tensor): stats[k] = v.item()
+        statistics[name] = stats
+
+    for h in handles:
+        h.remove()
+        
+    model.gradient_checkpointing_disable()
+    if not was_training: model.eval()
+
+    # Double check no stray gradients remain
+    model.zero_grad(set_to_none=True)
+
+    return statistics
+
 
 # ── Peak memory tracker ──────────────────────────────────────────
-from contextlib import contextmanager
-
 @contextmanager
 def track_peak_memory(device: int = 0, label: str = ""):
     """Context manager that yields peak GPU memory (MB) used inside the block."""

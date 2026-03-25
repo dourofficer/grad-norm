@@ -34,7 +34,7 @@ for entry in "${MODELS[@]}"; do
             --model      "$model_path" \
             --input      "ww/${subset}" \
             --max_tokens "$MAX_TOKENS" \
-            --output     "outputs/${model_tag}/grad-norm/${subset}" \
+            --output     "ablation/${model_tag}/${subset}" \
             --start_idx  "$START" \
             $END_FLAG
         echo ""

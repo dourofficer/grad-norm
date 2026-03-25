@@ -45,7 +45,7 @@ def _step_at_k(scores: dict[int, float], true_step: int, k: int) -> int:
     """1 if true_step is among the k highest-scored steps, else 0."""
     if true_step not in scores:
         return 0
-    ranked = sorted(scores, key=lambda idx: (scores[idx], -idx), reverse=False)
+    ranked = sorted(scores, key=lambda idx: (scores[idx], -idx), reverse=True)
     return int(true_step in ranked[:k])
 
 
@@ -56,7 +56,7 @@ def _agent_at_k(
     k:           int,
 ) -> int:
     """1 if true_agent appears in the agents of the k highest-scored steps, else 0."""
-    ranked = sorted(scores, key=lambda idx: (scores[idx], -idx), reverse=False)
+    ranked = sorted(scores, key=lambda idx: (scores[idx], -idx), reverse=True)
     top_k_agents = [step_agents.get(idx, "") for idx in ranked[:k]]
     # if k == 5 and true_agent.lower() == "orchestrator":
     #     import pdb; pdb.set_trace()

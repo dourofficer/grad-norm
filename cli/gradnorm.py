@@ -42,6 +42,13 @@ CUDA_VISIBLE_DEVICES=1 python -m cli.gradnorm \
     --output outputs/qwen3-8b/grad-norm/hand-crafted \
     --start_idx 0 --end_idx 5
 
+CUDA_VISIBLE_DEVICES=1 python -m cli.gradnorm \
+    --model  "/data/hoang/resources/models/Qwen/Qwen3-8B"  \
+    --input  ww/hand-crafted \
+    --max_tokens 8192 \
+    --output ablation/qwen3-8b/hand-crafted \
+    --start_idx 0 --end_idx 5
+
 Output schema (one JSON per trajectory)
 ---------------------------------------
 {
@@ -75,8 +82,9 @@ from core.data import (
     Trajectory,
     load_dataset,
     build_context,
+    iter_scoreable_steps
 )
-from core.gradnorm import gradnorm_hooked
+from core.gradnorm import gradnorm_hooked, gradnorm_hooked_all
 
 
 
@@ -157,7 +165,7 @@ def score_trajectory(
         torch.cuda.synchronize()
         
     logs = []
-    for step_idx in range(len(traj.history)):
+    for step_idx in iter_scoreable_steps(traj):
         encoded = build_context(
             traj.history, step_idx, tokenizer, max_tokens=max_tokens,
         )
@@ -176,7 +184,7 @@ def score_trajectory(
             logs.append({"step_idx": step_idx, "l1_norm": {}, "l2_norm": {}})
             continue
 
-        statistics = gradnorm_hooked(
+        statistics = gradnorm_hooked_all(
             model, input_ids, attention_mask, ctx_len,
         )
 
@@ -187,8 +195,10 @@ def score_trajectory(
 
         logs.append({
             "step_idx": step_idx,
-            "l1_norm":  {k: v["l1_norm"] for k, v in statistics.items()},
-            "l2_norm":  {k: v["l2_norm"] for k, v in statistics.items()},
+            "statistics": statistics,
+            # "l1_norm":  {k: v["l1_norm"] for k, v in statistics.items()},
+            # # "l2_norm":  {k: v["l2_norm"] for k, v in statistics.items()},
+            # "l2_norm_sq":  {k: v["l2_norm_sq"] for k, v in statistics.items()},
         })
 
     return logs
