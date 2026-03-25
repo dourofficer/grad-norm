@@ -72,6 +72,7 @@ import sys
 import time
 from pathlib import Path
 from typing import Any
+from collections import OrderedDict
 
 import torch
 from tqdm import tqdm
@@ -159,6 +160,7 @@ def score_trajectory(
     tokenizer,
     max_tokens:  int,
     device:      str,
+    pbar: None = None,
 ) -> list[dict]:
     """Score every scoreable step and return the logs list."""
     if torch.cuda.is_available():
@@ -177,7 +179,16 @@ def score_trajectory(
             attention_mask = attention_mask.to(device)
         seq_len = input_ids.shape[1]
         ctx_len = encoded["ctx_len"]
-        if True: print(f"step: {step_idx}, seq_len: {seq_len}, ctx_len: {ctx_len}")
+        if pbar is not None: 
+            postfix = OrderedDict([
+                ('file', traj.filename),
+                ('seq_len', seq_len),
+                ('ctx_len', ctx_len),
+                ('step_idx', step_idx),
+                ('n_steps', len(traj.history))
+            ])
+            pbar.set_postfix(postfix)
+            # print(f"step: {step_idx}, seq_len: {seq_len}, ctx_len: {ctx_len}")
 
         # Skip degenerate cases (step has 0 tokens)
         if input_ids.shape[1] <= ctx_len:
@@ -272,9 +283,9 @@ def main():
             print(out_path)
             continue                   
 
-        pbar.set_postfix(file=traj.filename, steps=len(traj.history))
+        pbar.set_postfix(file=traj.filename, n_steps=len(traj.history))
         logs = score_trajectory(
-            traj, model, tokenizer, args.max_tokens, device,
+            traj, model, tokenizer, args.max_tokens, device, pbar
         )
         # try:
         #     logs = score_trajectory(
