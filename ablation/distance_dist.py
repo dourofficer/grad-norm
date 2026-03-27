@@ -16,7 +16,7 @@ from .ablate import build_strategies, load_trajectories, get_param_names_and_siz
 # ── constants ─────────────────────────────────────────────────────────────────
 STRATEGIES = ["layer", "mlp", "attn", "mlp_weights", "attn_weights"]
 NORM_TYPES = ["l1_norm", "l2_norm"]
-JITTER_SEED = 42
+
 
 
 # ── args ──────────────────────────────────────────────────────────────────────
@@ -120,8 +120,7 @@ def collect_distances(
                     for log in valid_logs
                 ])  # (n_logs, n_configs)
 
-                # ARGMIN over steps for each config → predicted step index
-                # we select the smaller scores!!!
+                # argmin over steps for each config → predicted step index
                 best_log_idx  = np.nanargmin(score_matrix, axis=0)   # (n_configs,)
                 predicted_steps = step_indices[best_log_idx]          # (n_configs,)
 
@@ -151,7 +150,6 @@ def make_figure(
     )
 
     norm_labels = {"l1_norm": "L1", "l2_norm": "L2"}
-    rng         = np.random.default_rng(JITTER_SEED)
 
     for ci, nt in enumerate(NORM_TYPES):
         for ki in range(k_top):
@@ -184,16 +182,26 @@ def make_figure(
                     ax.set_visible(False)
                     continue
 
-                n      = len(dists)
-                jitter = rng.uniform(-0.35, 0.35, size=n)
+                # ── stacked dot plot ──────────────────────────────────────
+                # For each unique x value, stack dots upward at y=0,1,2,...
+                from collections import Counter
+                counts   = Counter(dists.tolist())
+                xs_stack = []
+                ys_stack = []
+                cs_stack = []
 
-                # colour by sign: exact=gold, negative=blue, positive=red
-                colors = np.where(
-                    dists == 0, "gold",
-                    np.where(dists < 0, "steelblue", "tomato"),
-                )
+                for x_val, count in sorted(counts.items()):
+                    color = (
+                        "gold"      if x_val == 0  else
+                        "steelblue" if x_val <  0  else
+                        "tomato"
+                    )
+                    for level in range(count):
+                        xs_stack.append(x_val)
+                        ys_stack.append(level)
+                        cs_stack.append(color)
 
-                ax.scatter(dists, jitter, c=colors, s=18, alpha=0.7,
+                ax.scatter(xs_stack, ys_stack, c=cs_stack, s=22, alpha=0.85,
                            edgecolors="none", zorder=3)
 
                 # vertical reference at 0
