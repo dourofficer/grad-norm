@@ -51,7 +51,8 @@ def context_word_count(data: dict, step_idx: int) -> int:
     """
     history     = data["steps"]
     ctx_indices = select_context(history, step_idx)
-    ctx_text    = _serialize_turns(history, ctx_indices)
+    seq_indices = ctx_indices + [step_idx]
+    ctx_text    = _serialize_turns(history, seq_indices)
     return min(len(ctx_text.split()), MAX_LENGTH)
 
 

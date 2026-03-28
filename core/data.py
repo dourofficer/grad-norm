@@ -304,7 +304,10 @@ def iter_scoreable_steps(trajectory: Trajectory) -> list[int]:
     Step 0 is the human question and is never a mistake step, so it is
     excluded.  Returns [1, 2, ..., T-1].
     """
-    if trajectory.history[0]['role'] == 'human':
+    is_handcrafted = trajectory.history[0]['role'] == 'human'
+    if is_handcrafted:
+        deps = get_dependency_dict(derive_llm_inputs(trajectory.history))
+        sucs = "..." # intends to remove leaf steps.
         return list(range(1, len(trajectory.history)))
     else:
         return list(range(len(trajectory.history)))

@@ -10,11 +10,11 @@ from core.data import load_dataset
 from contextlib import contextmanager
 
 # ── Configuration (edit these) ───────────────────────────────────
-MODEL_NAME   = "/data/hoang/resources/models/Qwen/Qwen3-4B"          
+MODEL_NAME   = "/data/hoang/resources/models/Qwen/Qwen3-8B"          
 DEVICE        = 0                        # CUDA device index
 DATASET_DIR   = "ww"                     # path to dataset
 SUBSET        = "hand-crafted"           # or a string subset name
-MAX_TOKENS    = 4096
+MAX_TOKENS    = 8192 # 12000 is the limit for qwen3-8b
 
 # ── Clean up memory ─────────────────────────────────────────────
 def memory_accounting():
@@ -326,6 +326,7 @@ def gradnorm_hooked_all(
     
     loss = _ntp_loss(logits, input_ids, ctx_len)
     
+    import pdb; pdb.set_trace()
     # As backward runs, gradients are instantiated, recorded, and instantly destroyed!
     loss.backward()
 
@@ -412,7 +413,43 @@ def compare_rank_order(stats_std: dict, stats_hook: dict) -> None:
             print(f"  {i+1:<6} {rank_std[i]:<14} {rank_hook[i]:<14} {match}")
 
 
-if __name__ == "__main__":
+def test_memory():
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from core.data import build_context        # adjust import as needed
+
+    print(f"\nLoading tokeniser: {MODEL_NAME}")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+
+    print(f"Loading model ({MODEL_NAME}) → cuda:{DEVICE}")
+    model = AutoModelForCausalLM.from_pretrained(
+        MODEL_NAME,
+        torch_dtype  = torch.bfloat16,
+        device_map   = {"": DEVICE},
+    )
+    model.eval()
+    n_params = sum(p.numel() for p in model.parameters())
+    print(f"  {n_params / 1e9:.2f}B parameters loaded.\n")
+
+    trajectories = load_dataset(DATASET_DIR, subset=SUBSET)
+    traj_idx, step_idx = 11, 15
+    traj = trajectories[traj_idx]
+
+    # ── Tokenise ────────────────────────────────────────────────────
+    encoded = build_context(traj.history, step_idx, tokenizer, max_tokens=MAX_TOKENS)
+    encoded = pad_encoded(encoded, tokenizer, max_tokens=MAX_TOKENS)
+
+    input_ids      = encoded["input_ids"].to(f"cuda:{DEVICE}")
+    attention_mask = encoded["attention_mask"].to(f"cuda:{DEVICE}")
+    ctx_len        = encoded["ctx_len"]
+    print(f"seq_len: {input_ids.shape[1]}, ctx_len: {ctx_len}")
+
+    # ── Run hooked ──────────────────────────────────────────────────
+    print("\n=== gradnorm_hooked ===")
+    with track_peak_memory(DEVICE, "hooked") as mem_hook:
+        gradnorm_hooked_all(model, input_ids, attention_mask, ctx_len)
+
+
+def test_correctness():
     from transformers import AutoModelForCausalLM, AutoTokenizer
     from core.data import build_context        # adjust import as needed
 
@@ -462,3 +499,6 @@ if __name__ == "__main__":
     print(f"  hooked:   {mem_hook['peak_mb']:.1f} MB  (delta {mem_hook['delta_mb']:.1f} MB)")
     ratio = mem_std['delta_mb'] / max(mem_hook['delta_mb'], 1e-6)
     print(f"  ratio:    {ratio:.2f}x")
+
+if __name__ == "__main__":
+    test_memory()

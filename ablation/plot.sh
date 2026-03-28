@@ -11,8 +11,8 @@ for MODEL in "${MODELS[@]}"; do
     echo "Starting sweep for Model: $MODEL | Subset: $SUBSET"
 
     python -m ablation.length_dist   --model "$MODEL" --subset "$SUBSET"
-    python -m ablation.score_dist    --model "$MODEL" --subset "$SUBSET"
-    python -m ablation.distance_dist --model "$MODEL" --subset "$SUBSET"
+    # python -m ablation.score_dist    --model "$MODEL" --subset "$SUBSET"
+    # python -m ablation.distance_dist --model "$MODEL" --subset "$SUBSET"
 
   done
 done
