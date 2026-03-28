@@ -12,7 +12,7 @@ START="${START:-0}"
 END="${END:-}"  # empty = all
 
 MODELS=(
-    # "/data/hoang/resources/models/Qwen/Qwen3-8B|qwen3-8b"
+    "/data/hoang/resources/models/Qwen/Qwen3-8B|qwen3-8b"
     "/data/hoang/resources/models/meta-llama/Llama-3.1-8B-Instruct|llama-3.1-8b"
 )
 
@@ -26,6 +26,7 @@ if [[ -n "$END" ]]; then
     END_FLAG="--end_idx $END"
 fi
 
+# -full suffix in the ouptut indicates full context.
 for entry in "${MODELS[@]}"; do
     IFS="|" read -r model_path model_tag <<< "$entry"
     for subset in "${SUBSETS[@]}"; do
@@ -34,7 +35,7 @@ for entry in "${MODELS[@]}"; do
             --model      "$model_path" \
             --input      "ww/${subset}" \
             --max_tokens "$MAX_TOKENS" \
-            --output     "ablation/${model_tag}/${subset}" \
+            --output     "ablation/${model_tag}-full/${subset}" \
             --start_idx  "$START" \
             $END_FLAG
         echo ""

@@ -139,7 +139,10 @@ def select_context(history: list[dict], step_idx: int) -> list[int]:
     is_handcrafted = any([m.get("role").startswith("Orchestrator") for m in history])
     if is_handcrafted:
         deps = get_dependency_dict(derive_llm_inputs(history))
-        return deps[step_idx]
+        all_steps = list(range(step_idx))
+        # if all_steps != deps[step_idx]:
+        #     import pdb; pdb.set_trace()
+        return all_steps
     else:
         return list(range(step_idx))
 
@@ -224,6 +227,7 @@ def build_context(
     or by patching the template variable before calling build_context.
     """
     ctx_indices  = select_context(history, step_idx)
+    assert ctx_indices == list(range(step_idx)), "taking full context, no graph"
     step_content = history[step_idx].get("content", "").strip()
     step_content = _serialize_turns(history, [step_idx])
     assistant_msg = {"role": "assistant", "content": step_content}
@@ -297,6 +301,18 @@ def custom_build_context(
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
 # ─────────────────────────────────────────────────────────────────────────────
+
+def get_steps_with_successors(history: list[dict]) -> set[int]:
+    """Return the set of step indices that have at least one successor.
+
+    A step *s* has a successor if any other step lists *s* in its
+    dependency inputs.  Steps not in this set are leaf nodes.
+    """
+    deps = get_dependency_dict(derive_llm_inputs(history))
+    has_successor: set[int] = set()
+    for inputs in deps.values():
+        has_successor.update(inputs)
+    return has_successor
 
 def iter_scoreable_steps(trajectory: Trajectory) -> list[int]:
     """Return step indices that should receive a GradNorm score.

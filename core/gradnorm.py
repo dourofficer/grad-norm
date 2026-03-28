@@ -326,7 +326,7 @@ def gradnorm_hooked_all(
     
     loss = _ntp_loss(logits, input_ids, ctx_len)
     
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     # As backward runs, gradients are instantiated, recorded, and instantly destroyed!
     loss.backward()
 
