@@ -1,0 +1,8 @@
+model: gpt-oss-20b
+temperature: 0.6
+max_tokens: 32000
+reasoning_effort: high
+
+hostname: localhost
+port: 8883
+concurrent_requests: 24
