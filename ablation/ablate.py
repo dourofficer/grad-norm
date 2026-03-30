@@ -71,7 +71,7 @@ def _sweep_unpacked(args):
 KS     = [1, 3, 5, 10]
 # MODELS = ["llama-3.1-8b", "qwen3-8b"]
 # SUBSETS = ["algorithm-generated", "hand-crafted"]
-MODELS = ["qwen3-8b-full"]
+MODELS = ["qwen3-8b-full", "llama-3.1-8b-full"]
 SUBSETS = ["algorithm-generated", "hand-crafted"]
 
 
