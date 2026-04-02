@@ -140,9 +140,7 @@ def select_context(history: list[dict], step_idx: int) -> list[int]:
     if is_handcrafted:
         deps = get_dependency_dict(derive_llm_inputs(history))
         all_steps = list(range(step_idx))
-        # if all_steps != deps[step_idx]:
-        #     import pdb; pdb.set_trace()
-        return all_steps
+        return deps[step_idx]
     else:
         return list(range(step_idx))
 
@@ -227,7 +225,7 @@ def build_context(
     or by patching the template variable before calling build_context.
     """
     ctx_indices  = select_context(history, step_idx)
-    assert ctx_indices == list(range(step_idx)), "taking full context, no graph"
+    # assert ctx_indices == list(range(step_idx)), "taking full context, no graph"
     step_content = history[step_idx].get("content", "").strip()
     step_content = _serialize_turns(history, [step_idx])
     assistant_msg = {"role": "assistant", "content": step_content}

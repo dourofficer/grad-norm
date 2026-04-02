@@ -1,459 +1,504 @@
-"""
-Core scoring and evaluation functions for gradient-norm ablation studies.
-
-This module owns the math: scoring steps, scoring trajectories, and evaluating
-predictions against ground-truth annotations.  It knows nothing about file paths,
-strategy construction, or plotting.
-
-Typical usage
--------------
->>> from ablation.core import build_strategies, load_trajectories, \
-...     get_param_names_and_sizes, discover_n_layers
->>> from ablation.core import CompiledConfigs, score_step, evaluate_trajectories
->>>
->>> trajs = load_trajectories(results_dir)
->>> param_names, param_sizes = get_param_names_and_sizes(trajs)
->>> strategies = build_strategies(discover_n_layers(param_names))
->>>
->>> cc = CompiledConfigs.compile(strategies["layer"], param_names, param_sizes)
->>> df = evaluate_trajectories(trajs, cc, "l1_norm", k=1)
-"""
-
 from __future__ import annotations
 
-import json
-import re
-from dataclasses import dataclass
-from pathlib import Path
+from typing import Any, Callable, Literal
+import math
+import torch
+import torch.nn.functional as F
+from torch import Tensor
+from transformers import PreTrainedModel, PreTrainedTokenizer
+from .data import load_dataset
+from contextlib import contextmanager
 
-import numpy as np
-import pandas as pd
+# ── Configuration (edit these) ───────────────────────────────────
+MODEL_NAME   = "/data/hoang/resources/models/Qwen/Qwen3-8B"          
+DEVICE        = 0                        # CUDA device index
+DATASET_DIR   = "ww"                     # path to dataset
+SUBSET        = "hand-crafted"           # or a string subset name
+MAX_TOKENS    = 8192 # 12000 is the limit for qwen3-8b
+
+# ── Clean up memory ─────────────────────────────────────────────
+def memory_accounting():
+    device = "cuda"
+    before_mb = torch.cuda.memory_reserved(device) / 1e6
+    torch.cuda.empty_cache()
+    after_mb = torch.cuda.memory_reserved(device) / 1e6
+    print(f"[{device}] reserved: {before_mb:.1f} MB → {after_mb:.1f} MB "
+          f"(freed {before_mb - after_mb:.1f} MB)")
+    allocated = torch.cuda.memory_allocated(device)
+    print(f"[{device}] allocated: {allocated / 1e6:.1f} MB")
 
 
-# ── constants ─────────────────────────────────────────────────────────────────
-
-STRATEGIES = ["layer", "mlp", "attn", "mlp_weights", "attn_weights"]
-NORM_TYPES = ["l1_norm", "l2_norm"]
-
-
-# ── strategy definitions ──────────────────────────────────────────────────────
-
-def build_strategies(L: int) -> dict[str, dict[str, str]]:
-    def per_layer(prefix, suffix=""):
-        return {f"{prefix}/{i}": rf"model\.layers\.{i}\.{suffix}" for i in range(L)}
-
+def pad_encoded(encoded: dict[str, Any], tokenizer: PreTrainedTokenizer, max_tokens: int = 4096):
+    padded = tokenizer.pad(
+        [{"input_ids": ids} for ids in encoded["input_ids"]],
+        return_tensors="pt",
+        padding_side="left",
+        padding="max_length",
+        max_length=max_tokens
+    )
+    padded_ids, attention_mask = padded["input_ids"], padded["attention_mask"]
+    num_padded = int(attention_mask.shape[1] - attention_mask.sum(dim=1))
+    padded_ctx_len = encoded["ctx_len"] + num_padded
     return {
-        "layer": {
-            **per_layer("layer"),
-            "lm_head":      r"lm_head\.",
-            "embed_tokens":  r"model\.embed_tokens\.",
-        },
-        "mlp":         per_layer("mlp",  r"mlp\."),
-        "mlp_weights": {
-            **per_layer("gate", r"mlp\.gate_proj\."),
-            **per_layer("up",   r"mlp\.up_proj\."),
-            **per_layer("down", r"mlp\.down_proj\."),
-        },
-        "attn":        per_layer("attn", r"self_attn\."),
-        "attn_weights": {
-            **per_layer("q", r"self_attn\.q_proj\."),
-            **per_layer("k", r"self_attn\.k_proj\."),
-            **per_layer("v", r"self_attn\.v_proj\."),
-            **per_layer("o", r"self_attn\.o_proj\."),
-        },
+        "input_ids": padded_ids,
+        "attention_mask": attention_mask,
+        "ctx_len": padded_ctx_len
     }
 
 
-# ── data loading ──────────────────────────────────────────────────────────────
+def _ntp_loss(
+    logits:    Tensor,   # (1, seq_len, vocab_size)
+    input_ids: Tensor,   # (1, seq_len)
+    ctx_len:   int,
+) -> Tensor:
+    """Mean NTP loss over the step tokens (positions ctx_len … seq_len-1).
 
-def load_trajectories(results_dir: Path) -> list[dict]:
-    return [json.loads(f.read_text()) for f in sorted(results_dir.glob("*.json"))]
+    Uses the standard autoregressive shift: logits[i] predicts token i+1.
 
-
-def get_param_names_and_sizes(trajectories: list[dict]) -> tuple[list[str], np.ndarray]:
-    sample_stats = next(
-        log["statistics"]
-        for data in trajectories
-        for log in data["logs"]
-        if log.get("statistics")
-    )
-    param_names = list(sample_stats.keys())
-    param_sizes = np.array(
-        [sample_stats[p]["n_params"] for p in param_names], dtype=np.float64,
-    )
-    return param_names, param_sizes
-
-
-def discover_n_layers(param_names: list[str]) -> int:
-    """Infer number of layers from the highest layer index in param names."""
-    indices = [
-        int(m.group(1))
-        for p in param_names
-        if (m := re.search(r"model\.layers\.(\d+)\.", p))
-    ]
-    if not indices:
-        raise ValueError("Could not discover n_layers: no 'model.layers.N.' params found.")
-    return max(indices) + 1
-
-
-# ── compiled config representation ────────────────────────────────────────────
-
-@dataclass(frozen=True)
-class CompiledConfigs:
-    """Pre-compiled parameter-group masks ready for vectorised scoring.
-
-    Attributes
-    ----------
-    names : list[str]
-        Human-readable config names (e.g. ``["layer/0", "layer/1", …]``).
-    param_names : list[str]
-        Ordered parameter names matching the ``statistics`` dicts in log
-        entries.  Length *P*.
-    mask : np.ndarray
-        Boolean matrix of shape ``(C, P)`` where ``mask[i, j]`` is True if
-        parameter *j* belongs to config *i*.  Stored as ``float64`` so it
-        can be used directly in matrix multiplications.
-    n_params : np.ndarray
-        Total parameter count per config, shape ``(C,)``.  Derived as
-        ``mask @ param_sizes``.
-    """
-
-    names:       list[str]
-    param_names: list[str]
-    mask:        np.ndarray   # (C, P)  float64
-    n_params:    np.ndarray   # (C,)    float64
-
-    @classmethod
-    def compile(
-        cls,
-        configs:     dict[str, str],
-        param_names: list[str],
-        param_sizes: np.ndarray,
-    ) -> CompiledConfigs:
-        """Build a ``CompiledConfigs`` from a raw strategy config dict.
-
-        Parameters
-        ----------
-        configs : dict[str, str]
-            Mapping from config name to a regex pattern that matches the
-            parameter names belonging to that group (e.g.
-            ``{"layer/0": r"model\\.layers\\.0\\.", …}``).
-        param_names : list[str]
-            Ordered list of all parameter names in the model.
-        param_sizes : np.ndarray
-            Number of scalar parameters per entry in *param_names*, shape
-            ``(P,)``.
-        """
-        names    = list(configs.keys())
-        patterns = list(configs.values())
-
-        mask = np.array(
-            [[bool(re.search(pat, p)) for p in param_names] for pat in patterns],
-            dtype=np.float64,
-        )
-        n_params = mask @ param_sizes
-
-        return cls(
-            names=names,
-            param_names=param_names,
-            mask=mask,
-            n_params=n_params,
-        )
-
-
-# ── step-level scoring ────────────────────────────────────────────────────────
-
-def score_step(
-    step_log:  dict,
-    cc:        CompiledConfigs,
-    norm_type: str,
-) -> np.ndarray:
-    """Score a single log entry for every config in *cc*.
+    Positions belonging to the context (indices 0 … ctx_len-1 in the shifted
+    representation) are masked with ignore_index=-100 so they do not
+    contribute to the loss.
 
     Parameters
     ----------
-    step_log : dict
-        A single log entry whose ``"statistics"`` dict is keyed by parameter
-        name.  Each value must contain ``"l1_norm"`` and ``"l2_norm_sq"``
-        fields.
-    cc : CompiledConfigs
-        Pre-compiled config masks.
-    norm_type : ``"l1_norm"`` | ``"l2_norm"``
-        Which norm to aggregate.
+    logits    : raw logits from the language model head.
+    input_ids : token IDs of the full sequence.
+    ctx_len   : number of tokens before the first step-content token.
 
     Returns
     -------
-    np.ndarray
-        Scores of shape ``(C,)`` — one per config.  Configs with zero
-        parameters produce ``NaN``.
+    Scalar Tensor (the mean NTP loss).
+
+    Derivation of the mask boundary
+    --------------------------------
+    Shifted positions:  0, 1, ..., N-2   (each predicts the next token)
+    Step tokens are at positions ctx_len … N-1 in input_ids.
+    In the shifted view, predicting step token ctx_len requires logit at
+    position ctx_len-1.  So we mask positions 0 … ctx_len-2, i.e. the first
+    (ctx_len - 1) positions of shift_labels.
     """
-    stats       = step_log["statistics"]
-    safe_counts = np.where(cc.n_params > 0, cc.n_params, np.nan)
+    # Autoregressive shift
+    shift_logits = logits[:, :-1, :].contiguous().float()   # (1, N-1, vocab)
+    shift_labels = input_ids[:, 1:].clone()          # (1, N-1)
 
-    with np.errstate(invalid="ignore"):
-        if norm_type == "l2_norm":
-            vals = np.array(
-                [stats[p]["l2_norm_sq"] for p in cc.param_names],
-                dtype=np.float64,
-            )
-            return np.sqrt(cc.mask @ vals) / safe_counts
-        else:
-            vals = np.array(
-                [stats[p]["l1_norm"] for p in cc.param_names],
-                dtype=np.float64,
-            )
-            return (cc.mask @ vals) / safe_counts
+    # Mask context positions: first (ctx_len - 1) positions do not predict
+    # step tokens.
+    mask_end = ctx_len - 1   # exclusive upper bound of masked region
+    if mask_end > 0:
+        shift_labels[:, :mask_end] = -100
 
-
-# ── trajectory-level scoring ──────────────────────────────────────────────────
-
-def score_trajectory(
-    traj:      dict,
-    cc:        CompiledConfigs,
-    norm_type: str,
-) -> tuple[np.ndarray, np.ndarray]:
-    """Score every valid step in a trajectory.
-
-    Parameters
-    ----------
-    traj : dict
-        A single trajectory dict with ``"logs"`` (list of log entries).
-    cc : CompiledConfigs
-        Pre-compiled config masks.
-    norm_type : ``"l1_norm"`` | ``"l2_norm"``
-
-    Returns
-    -------
-    score_matrix : np.ndarray
-        Shape ``(S, C)`` where *S* is the number of valid log entries and
-        *C* is the number of configs.
-    step_indices : np.ndarray
-        Shape ``(S,)`` — the ``step_idx`` of each valid log, aligned with
-        the rows of *score_matrix*.
-
-    Raises
-    ------
-    ValueError
-        If the trajectory contains no valid log entries (none with
-        ``"statistics"``).
-    """
-    valid_logs = [log for log in traj["logs"] if log.get("statistics")]
-    if not valid_logs:
-        raise ValueError("Trajectory contains no valid log entries.")
-
-    score_matrix = np.stack([
-        score_step(log, cc, norm_type) for log in valid_logs
-    ])  # (S, C)
-    step_indices = np.array(
-        [int(log["step_idx"]) for log in valid_logs],
-        dtype=np.int64,
+    loss = F.cross_entropy(
+        shift_logits.view(-1, shift_logits.shape[-1]),
+        shift_labels.view(-1),
+        ignore_index = -100,
+        reduction    = "mean",
     )
-    return score_matrix, step_indices
+    return loss
 
 
-# ── per-trajectory evaluation ─────────────────────────────────────────────────
+def gradnorm_standard(
+    model:          PreTrainedModel,
+    input_ids:      Tensor,
+    attention_mask: Tensor,
+    ctx_len:        int,
+    normalize:      bool = True,
+) -> dict:
+    # ── Compute gradients ────────────────────────────────────────────
+    logits = model(
+        input_ids, 
+        attention_mask, 
+        use_cache=False
+    ).logits
+    loss   = _ntp_loss(logits, input_ids, ctx_len)
+    loss.backward()
 
-def _resolve_agent(role: str) -> str:
-    """Normalise a step role string for agent-level matching.
+    # ── Compute score ────────────────────────────────────────────────
+    target_weights = list(model.model.layers) + [model.lm_head]
+    n_layers = len(model.model.layers)
+    module_names = [f"layer_{i}" for i in range(n_layers)] + ["lm_head"]
 
-    The Who&When hand-crafted subset uses ``"Orchestrator (thought)"``,
-    ``"Orchestrator (-> WebSurfer)"``, etc.  We collapse all Orchestrator
-    variants to ``"Orchestrator"`` so they match the ground-truth label.
-    """
-    if "orchestrator" in role.lower():
-        return "Orchestrator"
-    return role
+    statistics = {}
+    for name, module in zip(module_names, target_weights):
+        n_params = 0
+        l1_norm_total = 0.0
+        l2_norm_sq_total = 0.0
+        
+        for p in module.parameters():
+            if p.grad is not None:
+                n_params += p.numel()
+                
+                # ✨ Upcast to float64 before doing any math ✨
+                grad_f64 = p.grad.detach().double()
+                
+                l1_norm_total += grad_f64.abs().sum().item()
+                l2_norm_sq_total += grad_f64.square().sum().item()
+        
+        # Calculate final L2 norm from the accumulated double-precision squares
+        l2_norm = math.sqrt(l2_norm_sq_total)
+        
+        if normalize and n_params > 0:
+            l1_norm_total /= n_params
+            l2_norm /= n_params
 
+        statistics[name] = {
+            "l1_norm": l1_norm_total,
+            "l2_norm": l2_norm,
+        }
 
-def evaluate_trajectory(
-    traj:      dict,
-    cc:        CompiledConfigs,
-    norm_type: str,
-    k:         int,
-) -> tuple[np.ndarray, np.ndarray] | None:
-    """Evaluate top-*k* predictions for one trajectory.
+    # ── Cleanup ──────────────────────────────────────────────────────
+    for p in model.parameters():
+        p.grad = None
+    memory_accounting()
 
-    The predicted mistake step is the step with the **lowest** score
-    (``argmin``).  When *k* > 1 the top-*k* lowest-scoring steps are
-    considered; a prediction is correct if the ground-truth step or agent
-    appears among them.
+    return statistics
 
-    Parameters
-    ----------
-    traj : dict
-        Trajectory dict with ``"logs"``, ``"metadata"`` (containing
-        ``"mistake_step"`` and ``"mistake_agent"``), and ``"steps"``
-        (each with ``"step_idx"`` and ``"role"``).
-    cc : CompiledConfigs
-        Pre-compiled config masks.
-    norm_type : ``"l1_norm"`` | ``"l2_norm"``
-    k : int
-        Number of top predictions to consider.
+def gradnorm_hooked(
+    model:          PreTrainedModel,
+    input_ids:      Tensor,
+    attention_mask: Tensor,
+    ctx_len:        int,
+    normalize:      bool = True,
+) -> dict:
+    # ── 1. Fix ACTIVATION memory ─────────────────────────────────────
+    # HF silently ignores gradient checkpointing if model is in eval mode!
+    was_training = model.training
+    model.train()
+    
+    # Ensure inputs require grad so checkpointing triggers correctly
+    if hasattr(model, "enable_input_require_grads"):
+        model.enable_input_require_grads()
+        
+    model.gradient_checkpointing_enable()
 
-    Returns
-    -------
-    ``(step_correct, agent_correct)`` — each of shape ``(C,)`` with
-    values 0.0 or 1.0 — or ``None`` if the trajectory has no valid logs.
-    """
-    valid_logs = [log for log in traj["logs"] if log.get("statistics")]
-    if not valid_logs:
-        return None
+    # ── Build module → name mapping ──────────────────────────────────
+    target_modules = {module: name for name, module in zip(
+        [f"layer_{i}" for i in range(len(model.model.layers))] + ["lm_head"],
+        list(model.model.layers) + [model.lm_head],
+    )}
 
-    # Ground truth
-    meta          = traj["metadata"]
-    mistake_step  = int(meta["mistake_step"])
-    mistake_agent = meta["mistake_agent"]
-    step_roles    = {s["step_idx"]: s["role"] for s in traj["steps"]}
+    # ── 2. Fix GRADIENT memory via Post-Accumulate Hooks ─────────────
+    statistics = {}
+    handles = []
+    hooked_params = set() # Prevents double-counting tied weights (e.g. Qwen embeddings)
+    
+    # Pre-allocate stats on GPU to prevent CPU-GPU sync bottlenecks!
+    device = next(model.parameters()).device
 
-    # Score and rank
-    score_matrix = np.stack([
-        score_step(log, cc, norm_type) for log in valid_logs
-    ])  # (S, C)
-    step_indices = np.array(
-        [int(log["step_idx"]) for log in valid_logs],
-        dtype=np.int64,
-    )
+    for module, name in target_modules.items():
+        statistics[name] = {
+            "l1_norm": torch.tensor(0.0, device=device, dtype=torch.float64), 
+            "l2_norm_sq": torch.tensor(0.0, device=device, dtype=torch.float64), 
+            "n_params": 0
+        }
+        
+        for p in module.parameters():
+            if not p.requires_grad or p in hooked_params:
+                continue
+            hooked_params.add(p)
+            
+            entry = statistics[name]
+            entry["n_params"] += p.numel()
 
-    # Top-k lowest-scoring step indices per config: shape (k, C)
-    pred_step_matrix = step_indices[np.argsort(score_matrix, axis=0)[:k]]
+            def make_stat_hook(entry_dict):
+                # PyTorch 2.1+ post-accumulate hook receives the parameter itself
+                def hook(param):
+                    if param.grad is not None:
+                        with torch.no_grad():
+                            # Cast to float32/64 to prevent bf16 overflow when squaring
+                            grad_f32 = param.grad.float()
+                            entry_dict["l1_norm"]    += grad_f32.abs().sum().double()
+                            entry_dict["l2_norm_sq"] += grad_f32.square().sum().double()
+                        
+                        # IMMEDIATELY free the gradient memory!
+                        param.grad = None
+                return hook
 
-    # Step-level accuracy: is the ground-truth step among the top-k?
-    step_correct = np.any(
-        pred_step_matrix == mistake_step, axis=0,
-    ).astype(np.float64)
+            h = p.register_post_accumulate_grad_hook(make_stat_hook(entry))
+            handles.append(h)
 
-    # Agent-level accuracy: is the ground-truth agent among the predicted
-    # steps' agents?
-    n_configs = cc.mask.shape[0]
-    agent_correct = np.empty(n_configs, dtype=np.float64)
-    for c in range(n_configs):
-        predicted_agents = [
-            _resolve_agent(step_roles.get(int(idx), "unknown"))
-            for idx in pred_step_matrix[:, c]
-        ]
-        agent_correct[c] = float(mistake_agent in predicted_agents)
+    # ── 3. Catch untracked parameters (embeddings, layernorm) ────────
+    # So they don't silently leak VRAM
+    def clear_hook(param):
+        param.grad = None
 
-    return step_correct, agent_correct
+    for p in model.parameters():
+        if p.requires_grad and p not in hooked_params:
+            h = p.register_post_accumulate_grad_hook(clear_hook)
+            handles.append(h)
+            hooked_params.add(p)
 
+    # ── Forward + backward ───────────────────────────────────────────
+    model.zero_grad(set_to_none=True)
+    
+    logits = model(
+        input_ids, attention_mask, use_cache=False,
+    ).logits
+    
+    loss = _ntp_loss(logits, input_ids, ctx_len)
+    
+    # As backward runs, gradients are instantiated, recorded, and instantly destroyed!
+    loss.backward()
 
-# ── multi-trajectory evaluation ───────────────────────────────────────────────
+    # ── Cleanup ──────────────────────────────────────────────────────
+    for h in handles:
+        h.remove()
+        
+    model.gradient_checkpointing_disable()
+    if not was_training:
+        model.eval()
 
-def evaluate_trajectories(
-    trajectories: list[dict],
-    cc:           CompiledConfigs,
-    norm_type:    str,
-    k:            int,
-) -> pd.DataFrame:
-    """Evaluate all trajectories and return per-config accuracy.
+    # ── 4. Pull metrics to CPU exactly ONCE ──────────────────────────
+    for name, stats in statistics.items():
+        n_params = stats.pop("n_params")
+        
+        l1_val = stats.pop("l1_norm").item()
+        l2_val = math.sqrt(stats.pop("l2_norm_sq").item())
+        
+        if normalize and n_params > 0:
+            l1_val /= n_params
+            l2_val /= n_params
+            
+        stats["l1_norm"] = l1_val
+        stats["l2_norm"] = l2_val
 
-    Parameters
-    ----------
-    trajectories : list[dict]
-        List of trajectory dicts.
-    cc : CompiledConfigs
-        Pre-compiled config masks.
-    norm_type : ``"l1_norm"`` | ``"l2_norm"``
-    k : int
-        Number of top predictions per trajectory.
+    # Double check no stray gradients remain
+    model.zero_grad(set_to_none=True)
 
-    Returns
-    -------
-    pd.DataFrame
-        Columns: ``config``, ``step_acc``, ``agent_acc``.  One row per
-        config in *cc*.
-    """
-    n_configs         = len(cc.names)
-    step_correct_sum  = np.zeros(n_configs, dtype=np.float64)
-    agent_correct_sum = np.zeros(n_configs, dtype=np.float64)
-    n_total           = 0
+    return statistics
 
-    for traj in trajectories:
-        result = evaluate_trajectory(traj, cc, norm_type, k)
-        if result is None:
+# ---------------------------------------------------------------------
+# hook all layers
+# ---------------------------------------------------------------------
+def gradnorm_hooked_all(
+    model:          PreTrainedModel,
+    input_ids:      Tensor,
+    attention_mask: Tensor,
+    ctx_len:        int,
+    normalize:      bool = True,
+) -> dict:
+    # ── 1. Fix ACTIVATION memory ─────────────────────────────────────
+    # HF silently ignores gradient checkpointing if model is in eval mode!
+    was_training = model.training
+    model.train()
+    
+    # Ensure inputs require grad so checkpointing triggers correctly
+    if hasattr(model, "enable_input_require_grads"):
+        model.enable_input_require_grads()
+    model.gradient_checkpointing_enable()
+
+    # ── Build per-parameter stats + hooks ───────────────────────────
+    statistics = {}
+    handles = []
+    hooked_params = set()
+    device = next(model.parameters()).device
+
+    for param_name, p in model.named_parameters():
+        if not p.requires_grad or p in hooked_params:
             continue
-        step_correct, agent_correct = result
-        step_correct_sum  += step_correct
-        agent_correct_sum += agent_correct
-        n_total           += 1
+        hooked_params.add(p)
 
-    denom = max(n_total, 1)
-    return pd.DataFrame({
-        "config":    cc.names,
-        "step_acc":  step_correct_sum  / denom,
-        "agent_acc": agent_correct_sum / denom,
-    })
+        statistics[param_name] = {
+            "l1_norm":    torch.tensor(0.0, device=device, dtype=torch.float64),
+            "l2_norm_sq": torch.tensor(0.0, device=device, dtype=torch.float64),
+            "n_params":   p.numel(),
+        }
+        entry = statistics[param_name]
 
+        def make_stat_hook(entry_dict):
+            def hook(param):
+                if param.grad is not None:
+                    with torch.no_grad():
+                        grad_f32 = param.grad.float()
+                        entry_dict["l1_norm"]    += grad_f32.abs().sum().double()
+                        entry_dict["l2_norm_sq"] += grad_f32.square().sum().double()
+                    param.grad = None
+            return hook
 
-# ── helpers for *_dist.py scripts ─────────────────────────────────────────────
+        h = p.register_post_accumulate_grad_hook(make_stat_hook(entry))
+        handles.append(h)
 
-def load_top_configs(
-    agg_dir:  Path,
-    subset:   str,
-    k_sweep:  int,
-    norm_type: str,
-    k_top:    int,
-) -> dict[str, list[str]]:
-    """Load aggregated TSV and pick the top-*k_top* configs per strategy.
+    # ── Forward + backward ───────────────────────────────────────────
+    model.zero_grad(set_to_none=True)
+    
+    logits = model(
+        input_ids, attention_mask, use_cache=False,
+    ).logits
+    
+    loss = _ntp_loss(logits, input_ids, ctx_len)
+    
+    # import pdb; pdb.set_trace()
+    # As backward runs, gradients are instantiated, recorded, and instantly destroyed!
+    loss.backward()
 
-    Parameters
-    ----------
-    agg_dir : Path
-        Directory containing aggregated result TSVs.
-    subset : str
-        Subset name (e.g. ``"hand-crafted"``).
-    k_sweep : int
-        The *k* value used during the sweep that produced the TSV.
-    norm_type : str
-        ``"l1_norm"`` or ``"l2_norm"``.
-    k_top : int
-        Number of top configs to select per strategy.
+    # ── Cleanup ──────────────────────────────────────────────────────
+    for name, stats in statistics.items():
+        for k, v in stats.items():
+            if isinstance(v, Tensor): stats[k] = v.item()
+        statistics[name] = stats
 
-    Returns
-    -------
-    dict[str, list[str]]
-        ``{strategy_name: [config_name, …]}`` with *k_top* best configs
-        ranked by ``step_acc``.
-    """
-    tsv_path = agg_dir / f"{subset}_k{k_sweep}_{norm_type}.tsv"
-    df = pd.read_csv(tsv_path, sep="\t")
-    return {
-        strat: (
-            df[df["strategy"] == strat]
-            .sort_values("step_acc", ascending=False)
-            .head(k_top)["config"]
-            .tolist()
-        )
-        for strat in STRATEGIES
-    }
+    for h in handles:
+        h.remove()
+        
+    model.gradient_checkpointing_disable()
+    if not was_training: model.eval()
+
+    # Double check no stray gradients remain
+    model.zero_grad(set_to_none=True)
+
+    return statistics
 
 
-def compile_top_configs(
-    top_config_names: dict[str, list[str]],
-    all_strategies:   dict[str, dict[str, str]],
-    param_names:      list[str],
-    param_sizes:      np.ndarray,
-) -> dict[str, CompiledConfigs]:
-    """Compile a :class:`CompiledConfigs` for each strategy's selected configs.
+# ── Peak memory tracker ──────────────────────────────────────────
+@contextmanager
+def track_peak_memory(device: int = 0, label: str = ""):
+    """Context manager that yields peak GPU memory (MB) used inside the block."""
+    torch.cuda.reset_peak_memory_stats(device)
+    torch.cuda.synchronize(device)
+    before = torch.cuda.memory_allocated(device)
+    result = {"peak_mb": 0.0, "delta_mb": 0.0}
+    yield result
+    torch.cuda.synchronize(device)
+    peak  = torch.cuda.max_memory_allocated(device)
+    after = torch.cuda.memory_allocated(device)
+    result["peak_mb"]  = peak / 1e6
+    result["delta_mb"] = (peak - before) / 1e6
+    if label:
+        print(f"[{label}] peak allocated: {result['peak_mb']:.1f} MB  "
+              f"(delta: {result['delta_mb']:.1f} MB)")
 
-    Parameters
-    ----------
-    top_config_names : dict[str, list[str]]
-        ``{strategy_name: [config_name, …]}`` — output of
-        :func:`load_top_configs`.
-    all_strategies : dict[str, dict[str, str]]
-        Full strategy dict from :func:`build_strategies`.
-    param_names : list[str]
-        Ordered parameter names.
-    param_sizes : np.ndarray
-        Parameter counts, shape ``(P,)``.
 
-    Returns
-    -------
-    dict[str, CompiledConfigs]
-        ``{strategy_name: CompiledConfigs}`` ready for scoring.
-    """
-    compiled: dict[str, CompiledConfigs] = {}
-    for strat, cfg_names in top_config_names.items():
-        sub_configs = {name: all_strategies[strat][name] for name in cfg_names}
-        compiled[strat] = CompiledConfigs.compile(sub_configs, param_names, param_sizes)
-    return compiled
+# ── Comparison helpers ───────────────────────────────────────────
+def compare_statistics(stats_std: dict, stats_hook: dict) -> None:
+    """Print per-module relative differences between two statistics dicts."""
+    print(f"\n{'module':<12} {'metric':<8} {'standard':>14} {'hooked':>14} {'rel_diff':>12}")
+    print("─" * 62)
+    for name in stats_std:
+        for metric in ("l1_norm", "l2_norm"):
+            v_std  = stats_std[name][metric]
+            v_hook = stats_hook[name][metric]
+            denom  = max(abs(v_std), abs(v_hook), 1e-30)
+            rel    = abs(v_std - v_hook) / denom
+            flag   = " ✗" if rel > 1e-4 else ""
+            print(f"{name:<12} {metric:<8} {v_std:>14.8e} {v_hook:>14.8e} {rel:>11.2e}{flag}")
+
+
+def compare_rank_order(stats_std: dict, stats_hook: dict) -> None:
+    """Compare ranked module ordering by l1_norm between the two methods."""
+    from scipy.stats import spearmanr, kendalltau
+
+    for metric in ("l1_norm", "l2_norm"):
+        rank_std  = sorted(stats_std,  key=lambda n: stats_std[n][metric],  reverse=True)
+        rank_hook = sorted(stats_hook, key=lambda n: stats_hook[n][metric], reverse=True)
+
+        # Build rank vectors (0-indexed) for correlation
+        names = list(stats_std.keys())
+        pos_std  = {n: i for i, n in enumerate(rank_std)}
+        pos_hook = {n: i for i, n in enumerate(rank_hook)}
+        vec_std  = [pos_std[n]  for n in names]
+        vec_hook = [pos_hook[n] for n in names]
+
+        rho, p_spearman = spearmanr(vec_std, vec_hook)
+        tau, p_kendall  = kendalltau(vec_std, vec_hook)
+
+        print(f"\n── Rank comparison ({metric}) ──")
+        print(f"Spearman ρ = {rho:.6f}  (p = {p_spearman:.2e})")
+        print(f"Kendall  τ = {tau:.6f}  (p = {p_kendall:.2e})")
+
+        # Show side-by-side top/bottom 5
+        n_show = min(5, len(rank_std))
+        print(f"\n  {'rank':<6} {'standard':<14} {'hooked':<14} {'match'}")
+        print(f"  {'─'*42}")
+        for i in range(len(names)):
+            match = "✓" if rank_std[i] == rank_hook[i] else "✗"
+            print(f"  {i+1:<6} {rank_std[i]:<14} {rank_hook[i]:<14} {match}")
+
+
+def test_memory():
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from .data import build_context        # adjust import as needed
+
+    print(f"\nLoading tokeniser: {MODEL_NAME}")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+
+    print(f"Loading model ({MODEL_NAME}) → cuda:{DEVICE}")
+    model = AutoModelForCausalLM.from_pretrained(
+        MODEL_NAME,
+        torch_dtype  = torch.bfloat16,
+        device_map   = {"": DEVICE},
+    )
+    model.eval()
+    n_params = sum(p.numel() for p in model.parameters())
+    print(f"  {n_params / 1e9:.2f}B parameters loaded.\n")
+
+    trajectories = load_dataset(DATASET_DIR, subset=SUBSET)
+    traj_idx, step_idx = 11, 15
+    traj = trajectories[traj_idx]
+
+    # ── Tokenise ────────────────────────────────────────────────────
+    encoded = build_context(traj.history, step_idx, tokenizer, max_tokens=MAX_TOKENS)
+    encoded = pad_encoded(encoded, tokenizer, max_tokens=MAX_TOKENS)
+
+    input_ids      = encoded["input_ids"].to(f"cuda:{DEVICE}")
+    attention_mask = encoded["attention_mask"].to(f"cuda:{DEVICE}")
+    ctx_len        = encoded["ctx_len"]
+    print(f"seq_len: {input_ids.shape[1]}, ctx_len: {ctx_len}")
+
+    # ── Run hooked ──────────────────────────────────────────────────
+    print("\n=== gradnorm_hooked ===")
+    with track_peak_memory(DEVICE, "hooked") as mem_hook:
+        gradnorm_hooked_all(model, input_ids, attention_mask, ctx_len)
+
+
+def test_correctness():
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from .data import build_context        # adjust import as needed
+
+    print(f"\nLoading tokeniser: {MODEL_NAME}")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+
+    print(f"Loading model ({MODEL_NAME}) → cuda:{DEVICE}")
+    model = AutoModelForCausalLM.from_pretrained(
+        MODEL_NAME,
+        torch_dtype  = torch.bfloat16,
+        device_map   = {"": DEVICE},
+    )
+    model.eval()
+    n_params = sum(p.numel() for p in model.parameters())
+    print(f"  {n_params / 1e9:.2f}B parameters loaded.\n")
+
+    trajectories = load_dataset(DATASET_DIR, subset=SUBSET)
+    traj_idx, step_idx = 11, 15
+    traj = trajectories[traj_idx]
+
+    # ── Tokenise ────────────────────────────────────────────────────
+    encoded = build_context(traj.history, step_idx, tokenizer, max_tokens=MAX_TOKENS)
+    encoded = pad_encoded(encoded, tokenizer, max_tokens=MAX_TOKENS)
+
+    input_ids      = encoded["input_ids"].to(f"cuda:{DEVICE}")
+    attention_mask = encoded["attention_mask"].to(f"cuda:{DEVICE}")
+    ctx_len        = encoded["ctx_len"]
+    print(f"seq_len: {input_ids.shape[1]}, ctx_len: {ctx_len}")
+
+    # ── Run standard (zero grads first to avoid stale grad corruption) ──
+    print("\n=== gradnorm_standard ===")
+    model.zero_grad(set_to_none=True)
+    with track_peak_memory(DEVICE, "standard") as mem_std:
+        stats_std = gradnorm_standard(model, input_ids, attention_mask, ctx_len)
+
+    # ── Run hooked ──────────────────────────────────────────────────
+    print("\n=== gradnorm_hooked ===")
+    with track_peak_memory(DEVICE, "hooked") as mem_hook:
+        stats_hook = gradnorm_hooked(model, input_ids, attention_mask, ctx_len)
+
+    # ── Compare ─────────────────────────────────────────────────────
+    compare_statistics(stats_std, stats_hook)
+    compare_rank_order(stats_std, stats_hook)
+
+    print(f"\n── Peak memory ──")
+    print(f"  standard: {mem_std['peak_mb']:.1f} MB  (delta {mem_std['delta_mb']:.1f} MB)")
+    print(f"  hooked:   {mem_hook['peak_mb']:.1f} MB  (delta {mem_hook['delta_mb']:.1f} MB)")
+    ratio = mem_std['delta_mb'] / max(mem_hook['delta_mb'], 1e-6)
+    print(f"  ratio:    {ratio:.2f}x")
+
+if __name__ == "__main__":
+    test_memory()
