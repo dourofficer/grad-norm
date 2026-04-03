@@ -11,6 +11,7 @@ MAX_TOKENS="${MAX_TOKENS:-8192}"
 START="${START:-0}"
 END="${END:-}"  # empty = all
 BASE="outputs/gradnorm-v2"
+LOSS_FUNC="ntp"
 
 MODELS=(
     "/data/hoang/resources/models/Qwen/Qwen3-8B|qwen3-8b"
@@ -36,6 +37,7 @@ for entry in "${MODELS[@]}"; do
             --model      "$model_path" \
             --input      "ww/${subset}" \
             --max_tokens "$MAX_TOKENS" \
+            --loss       "$LOSS_FUNC" \
             --output     "${BASE}/${model_tag}-full/${subset}" \
             --start_idx  "$START" \
             $END_FLAG
