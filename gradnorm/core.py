@@ -6,15 +6,21 @@ import torch
 import torch.nn.functional as F
 from torch import Tensor
 from transformers import PreTrainedModel, PreTrainedTokenizer
-from .data import load_dataset
 from contextlib import contextmanager
 
+from .data import load_dataset
+from .losses import _kl_loss, _ntp_loss
+
 # ── Configuration (edit these) ───────────────────────────────────
-MODEL_NAME   = "/data/hoang/resources/models/Qwen/Qwen3-8B"          
+MODEL_NAME    = "/data/hoang/resources/models/Qwen/Qwen3-8B"          
 DEVICE        = 0                        # CUDA device index
 DATASET_DIR   = "ww"                     # path to dataset
 SUBSET        = "hand-crafted"           # or a string subset name
 MAX_TOKENS    = 8192 # 12000 is the limit for qwen3-8b
+LOSSES        = dict(
+    ntp=_ntp_loss,
+    kl_uniform=_kl_loss
+)
 
 # ── Clean up memory ─────────────────────────────────────────────
 def memory_accounting():
@@ -28,7 +34,11 @@ def memory_accounting():
     print(f"[{device}] allocated: {allocated / 1e6:.1f} MB")
 
 
-def pad_encoded(encoded: dict[str, Any], tokenizer: PreTrainedTokenizer, max_tokens: int = 4096):
+def pad_encoded(
+    encoded: dict[str, Any], 
+    tokenizer: PreTrainedTokenizer, 
+    max_tokens: int = 4096
+):
     padded = tokenizer.pad(
         [{"input_ids": ids} for ids in encoded["input_ids"]],
         return_tensors="pt",
@@ -46,61 +56,12 @@ def pad_encoded(encoded: dict[str, Any], tokenizer: PreTrainedTokenizer, max_tok
     }
 
 
-def _ntp_loss(
-    logits:    Tensor,   # (1, seq_len, vocab_size)
-    input_ids: Tensor,   # (1, seq_len)
-    ctx_len:   int,
-) -> Tensor:
-    """Mean NTP loss over the step tokens (positions ctx_len … seq_len-1).
-
-    Uses the standard autoregressive shift: logits[i] predicts token i+1.
-
-    Positions belonging to the context (indices 0 … ctx_len-1 in the shifted
-    representation) are masked with ignore_index=-100 so they do not
-    contribute to the loss.
-
-    Parameters
-    ----------
-    logits    : raw logits from the language model head.
-    input_ids : token IDs of the full sequence.
-    ctx_len   : number of tokens before the first step-content token.
-
-    Returns
-    -------
-    Scalar Tensor (the mean NTP loss).
-
-    Derivation of the mask boundary
-    --------------------------------
-    Shifted positions:  0, 1, ..., N-2   (each predicts the next token)
-    Step tokens are at positions ctx_len … N-1 in input_ids.
-    In the shifted view, predicting step token ctx_len requires logit at
-    position ctx_len-1.  So we mask positions 0 … ctx_len-2, i.e. the first
-    (ctx_len - 1) positions of shift_labels.
-    """
-    # Autoregressive shift
-    shift_logits = logits[:, :-1, :].contiguous().float()   # (1, N-1, vocab)
-    shift_labels = input_ids[:, 1:].clone()          # (1, N-1)
-
-    # Mask context positions: first (ctx_len - 1) positions do not predict
-    # step tokens.
-    mask_end = ctx_len - 1   # exclusive upper bound of masked region
-    if mask_end > 0:
-        shift_labels[:, :mask_end] = -100
-
-    loss = F.cross_entropy(
-        shift_logits.view(-1, shift_logits.shape[-1]),
-        shift_labels.view(-1),
-        ignore_index = -100,
-        reduction    = "mean",
-    )
-    return loss
-
-
 def gradnorm_standard(
     model:          PreTrainedModel,
     input_ids:      Tensor,
     attention_mask: Tensor,
     ctx_len:        int,
+    loss_func:      Callable = _ntp_loss,
     normalize:      bool = True,
 ) -> dict:
     # ── Compute gradients ────────────────────────────────────────────
@@ -109,7 +70,8 @@ def gradnorm_standard(
         attention_mask, 
         use_cache=False
     ).logits
-    loss   = _ntp_loss(logits, input_ids, ctx_len)
+    # loss   = _ntp_loss(logits, input_ids, ctx_len)
+    loss   = loss_func(logits, input_ids, ctx_len)
     loss.backward()
 
     # ── Compute score ────────────────────────────────────────────────
@@ -157,6 +119,7 @@ def gradnorm_hooked(
     input_ids:      Tensor,
     attention_mask: Tensor,
     ctx_len:        int,
+    loss_func:      Callable = _ntp_loss,
     normalize:      bool = True,
 ) -> dict:
     # ── 1. Fix ACTIVATION memory ─────────────────────────────────────
@@ -234,7 +197,8 @@ def gradnorm_hooked(
         input_ids, attention_mask, use_cache=False,
     ).logits
     
-    loss = _ntp_loss(logits, input_ids, ctx_len)
+    # loss = _ntp_loss(logits, input_ids, ctx_len)
+    loss = loss_func(logits, input_ids, ctx_len)
     
     # As backward runs, gradients are instantiated, recorded, and instantly destroyed!
     loss.backward()
@@ -274,6 +238,7 @@ def gradnorm_hooked_all(
     input_ids:      Tensor,
     attention_mask: Tensor,
     ctx_len:        int,
+    loss_func:      Callable = _ntp_loss,
     normalize:      bool = True,
 ) -> dict:
     # ── 1. Fix ACTIVATION memory ─────────────────────────────────────
@@ -324,7 +289,8 @@ def gradnorm_hooked_all(
         input_ids, attention_mask, use_cache=False,
     ).logits
     
-    loss = _ntp_loss(logits, input_ids, ctx_len)
+    # loss = _ntp_loss(logits, input_ids, ctx_len)
+    loss = loss_func(logits, input_ids, ctx_len)
     
     # import pdb; pdb.set_trace()
     # As backward runs, gradients are instantiated, recorded, and instantly destroyed!

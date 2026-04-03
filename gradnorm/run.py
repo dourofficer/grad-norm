@@ -14,11 +14,12 @@ CUDA_VISIBLE_DEVICES=1 python -m gradnorm.run \
     --output outputs/llama-3.1-8b/grad-norm/algorithm-generated \
     --start_idx 0 --end_idx 5
 
-CUDA_VISIBLE_DEVICES=1 python -m gradnorm.run \
+CUDA_VISIBLE_DEVICES=0 python -m gradnorm.run \
     --model  "/data/hoang/resources/models/meta-llama/Llama-3.1-8B-Instruct" \
     --input  ww/hand-crafted \
     --max_tokens 8192 \
-    --output outputs/llama-3.1-8b/grad-norm/hand-crafted \
+    --loss kl_uniform \
+    --output outputs/gradnorm-v2/llama-3.1-8b-kl/hand-crafted \
     --start_idx 0 --end_idx 5
 
 Output schema (one JSON per trajectory)
@@ -43,7 +44,7 @@ import json
 import sys
 import time
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 from collections import OrderedDict
 
 import torch
@@ -58,8 +59,7 @@ from .data import (
     iter_scoreable_steps
 )
 from .core import gradnorm_hooked, gradnorm_hooked_all
-
-
+from .core import LOSSES
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
@@ -131,6 +131,7 @@ def score_trajectory(
     model,
     tokenizer,
     max_tokens:  int,
+    loss_func:   Callable,
     device:      str,
     pbar: None = None,
 ) -> list[dict]:
@@ -160,7 +161,6 @@ def score_trajectory(
                 ('n_steps', len(traj.history))
             ])
             pbar.set_postfix(postfix)
-            # print(f"step: {step_idx}, seq_len: {seq_len}, ctx_len: {ctx_len}")
 
         # Skip degenerate cases (step has 0 tokens)
         if input_ids.shape[1] <= ctx_len:
@@ -168,12 +168,11 @@ def score_trajectory(
             continue
 
         statistics = gradnorm_hooked_all(
-            model, input_ids, attention_mask, ctx_len,
+            model, input_ids, attention_mask, ctx_len, loss_func
         )
 
         if torch.cuda.is_available():
             torch.cuda.synchronize()
-            # memory_accounting()
             torch.cuda.empty_cache()
 
         logs.append({
@@ -195,6 +194,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output",     required=True, help="Output directory for per-trajectory JSONs.")
     p.add_argument("--layers",     nargs="+", default=["sweep"],
                    help="Layer names to include, or 'sweep' for all.")
+    p.add_argument("--loss", choices=["ntp", "kl_uniform"], default="ntp", 
+                   help="Loss function for gradient computation.")
     p.add_argument("--max_tokens", type=int, default=8192)
     p.add_argument("--start_idx",  type=int, default=0)
     p.add_argument("--end_idx",    type=int, default=None)
@@ -212,6 +213,7 @@ def main():
     # ── Device / dtype ──────────────────────────────────────────────────
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
     dtype  = getattr(torch, args.dtype)
+    loss_func = LOSSES[args.loss]
 
     # ── Load model ──────────────────────────────────────────────────────
     print(f"Loading tokenizer: {args.model}")
@@ -254,7 +256,7 @@ def main():
 
         pbar.set_postfix(file=traj.filename, n_steps=len(traj.history))
         logs = score_trajectory(
-            traj, model, tokenizer, args.max_tokens, device, pbar
+            traj, model, tokenizer, args.max_tokens, loss_func, device, pbar
         )
 
         result = _build_output(traj, logs)
