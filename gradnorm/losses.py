@@ -3,6 +3,13 @@ import torch
 import torch.nn.functional as F
 from torch import Tensor
 
+SEEN = False
+def print_once(text):
+    global SEEN
+    if not SEEN: 
+        print(text)
+        SEEN = True
+
 def _ntp_loss(
     logits:    Tensor,   # (1, seq_len, vocab_size)
     input_ids: Tensor,   # (1, seq_len)
@@ -34,6 +41,7 @@ def _ntp_loss(
     position ctx_len-1.  So we mask positions 0 … ctx_len-2, i.e. the first
     (ctx_len - 1) positions of shift_labels.
     """
+    print_once("ntp loss")
     # Autoregressive shift
     shift_logits = logits[:, :-1, :].contiguous().float()   # (1, N-1, vocab)
     shift_labels = input_ids[:, 1:].clone()          # (1, N-1)
@@ -69,6 +77,7 @@ def _kl_uniform_loss(
 
     Same autoregressive shift and context masking as _ntp_loss.
     """
+    print_once("kl uniform")
     vocab_size = logits.shape[-1]
 
     # Autoregressive shift
@@ -86,7 +95,7 @@ def _kl_uniform_loss(
 
     # Average only over unmasked (step) positions
     loss = -mean_log_p[mask].mean()
-    breakpoint()
+    # breakpoint()
     return loss
 
 
@@ -94,7 +103,7 @@ def _kl_temp_loss(
     logits:      Tensor,   # (1, seq_len, vocab_size)
     input_ids:   Tensor,   # (1, seq_len)  — unused; kept for uniform signature
     ctx_len:     int,
-    temperature: float = 2.0,
+    temperature: float = 0.3,
 ) -> Tensor:
     """KL divergence KL(p_T ‖ p) where p_T = softmax(logits / T) is a fixed target.
 
@@ -120,7 +129,7 @@ def _kl_temp_loss(
     model than its own temperature-smoothed self.
 
     """
-
+    print_once(f"kl_temp {temperature}")
     shift_logits = logits[:, :-1, :].contiguous().float()  # (1, N-1, vocab)
 
     with torch.no_grad():
@@ -132,5 +141,16 @@ def _kl_temp_loss(
 
     mask_end = ctx_len - 1
     loss = kl_per_pos[:, mask_end:].mean()
+
+    # # ---- slicing for saving memory ----
+    # shift_logits = logits[:, :-1, :].contiguous().float()  # (1, N-1, vocab)
+    # mask_end    = ctx_len - 1
+    # step_logits = shift_logits[:, mask_end:, :]            # (1, S, vocab), in graph
+
+    # with torch.no_grad():
+    #     p_temp = F.softmax(step_logits / temperature, dim=-1)  # (1, S, vocab)
+
+    # log_p = F.log_softmax(step_logits, dim=-1)             # (1, S, vocab)
+    # loss = -(p_temp * log_p).sum(dim=-1).mean()            # scalar
     # breakpoint()
     return loss

@@ -11,6 +11,12 @@ from contextlib import contextmanager
 from .data import load_dataset
 from .losses import _kl_uniform_loss, _kl_temp_loss, _ntp_loss
 
+# qwen3-8b memory, seq_len: 8192, ctx_len: 8085
+# kl_temp:       [hooked] peak allocated: 41550.2 MB  (delta: 25168.6 MB)
+# kl_temp slice: [hooked] peak allocated: 29103.6 MB  (delta: 12722.0 MB)
+# kl_uniform:    [hooked] peak allocated: 36571.5 MB  (delta: 20189.9 MB)
+# ntp_loss:      [hooked] peak allocated: 36571.5 MB  (delta: 20189.9 MB)
+
 # ── Configuration (edit these) ───────────────────────────────────
 MODEL_NAME    = "/data/hoang/resources/models/Qwen/Qwen3-8B"          
 DEVICE        = 0                        # CUDA device index
@@ -384,6 +390,7 @@ def test_memory():
     from transformers import AutoModelForCausalLM, AutoTokenizer
     from .data import build_context        # adjust import as needed
 
+    loss_func = LOSSES['kl_temp']
     print(f"\nLoading tokeniser: {MODEL_NAME}")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
@@ -413,7 +420,7 @@ def test_memory():
     # ── Run hooked ──────────────────────────────────────────────────
     print("\n=== gradnorm_hooked ===")
     with track_peak_memory(DEVICE, "hooked") as mem_hook:
-        gradnorm_hooked_all(model, input_ids, attention_mask, ctx_len)
+        gradnorm_hooked_all(model, input_ids, attention_mask, ctx_len, loss_func)
 
 
 def test_correctness():
