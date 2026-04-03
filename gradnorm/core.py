@@ -9,7 +9,7 @@ from transformers import PreTrainedModel, PreTrainedTokenizer
 from contextlib import contextmanager
 
 from .data import load_dataset
-from .losses import _kl_loss, _ntp_loss
+from .losses import _kl_uniform_loss, _kl_temp_loss, _ntp_loss
 
 # ── Configuration (edit these) ───────────────────────────────────
 MODEL_NAME    = "/data/hoang/resources/models/Qwen/Qwen3-8B"          
@@ -18,8 +18,9 @@ DATASET_DIR   = "ww"                     # path to dataset
 SUBSET        = "hand-crafted"           # or a string subset name
 MAX_TOKENS    = 8192 # 12000 is the limit for qwen3-8b
 LOSSES        = dict(
-    ntp=_ntp_loss,
-    kl_uniform=_kl_loss
+    ntp        =_ntp_loss,
+    kl_uniform =_kl_uniform_loss,
+    kl_temp    =_kl_temp_loss
 )
 
 # ── Clean up memory ─────────────────────────────────────────────

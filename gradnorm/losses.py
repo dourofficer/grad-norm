@@ -52,7 +52,7 @@ def _ntp_loss(
     )
     return loss
 
-def _kl_loss(
+def _kl_uniform_loss(
     logits:    Tensor,   # (1, seq_len, vocab_size)
     input_ids: Tensor,   # (1, seq_len)
     ctx_len:   int,
@@ -87,4 +87,50 @@ def _kl_loss(
     # Average only over unmasked (step) positions
     loss = -mean_log_p[mask].mean()
     breakpoint()
+    return loss
+
+
+def _kl_temp_loss(
+    logits:      Tensor,   # (1, seq_len, vocab_size)
+    input_ids:   Tensor,   # (1, seq_len)  — unused; kept for uniform signature
+    ctx_len:     int,
+    temperature: float = 2.0,
+) -> Tensor:
+    """KL divergence KL(p_T ‖ p) where p_T = softmax(logits / T) is a fixed target.
+
+    Derivation
+    ----------
+    KL(p_T ‖ p)  =  Σ_c p_T_c · log(p_T_c / p_c)
+                 =  −H(p_T)  +  CE(p_T, p)
+
+    p_T is detached so −H(p_T) is a constant w.r.t. model parameters and
+    drops out of the gradient.  The effective loss is the soft cross-entropy:
+
+        loss = −mean_over_step_tokens( Σ_c p_T_c · log_softmax(logits)_c )
+
+    Intuition
+    ---------
+    A high temperature flattens p_T toward uniform.  A step whose output
+    distribution is *already* close to p_T (i.e. already uncertain) produces
+    a small loss and therefore a small gradient norm — the model is not
+    surprised.  A peaked, confident step diverges sharply from the flattened
+    target, yielding a large loss and a large gradient norm.  Compared with
+    _kl_loss (which measures distance from a perfectly uniform target),
+    _kl_temp_loss provides a *relative* measure: how much sharper is the
+    model than its own temperature-smoothed self.
+
+    """
+
+    shift_logits = logits[:, :-1, :].contiguous().float()  # (1, N-1, vocab)
+
+    with torch.no_grad():
+        p_temp = F.softmax(shift_logits / temperature, dim=-1)  # (1, N-1, vocab)
+
+    log_p = F.log_softmax(shift_logits, dim=-1)            # (1, N-1, vocab)
+
+    kl_per_pos = -(p_temp * log_p).sum(dim=-1)             # (1, N-1)
+
+    mask_end = ctx_len - 1
+    loss = kl_per_pos[:, mask_end:].mean()
+    # breakpoint()
     return loss

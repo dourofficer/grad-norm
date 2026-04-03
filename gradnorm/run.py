@@ -22,6 +22,15 @@ CUDA_VISIBLE_DEVICES=0 python -m gradnorm.run \
     --output outputs/gradnorm-v2/llama-3.1-8b-kl/hand-crafted \
     --start_idx 0 --end_idx 5
 
+
+CUDA_VISIBLE_DEVICES=3 python -m gradnorm.run \
+    --model  "/data/hoang/resources/models/meta-llama/Llama-3.1-8B-Instruct" \
+    --input  ww/hand-crafted \
+    --max_tokens 8192 \
+    --loss kl_temp --temperature 0.3 \
+    --output outputs/gradnorm-v2/llama-3.1-8b-kl_temp/hand-crafted \
+    --start_idx 0 --end_idx 5
+
 Output schema (one JSON per trajectory)
 ---------------------------------------
 {
@@ -192,10 +201,9 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--model",      required=True, help="HF model name or local path.")
     p.add_argument("--input",      required=True, help="Dataset directory (e.g. ww/hand-crafted).")
     p.add_argument("--output",     required=True, help="Output directory for per-trajectory JSONs.")
-    p.add_argument("--layers",     nargs="+", default=["sweep"],
-                   help="Layer names to include, or 'sweep' for all.")
-    p.add_argument("--loss", choices=["ntp", "kl_uniform"], default="ntp", 
+    p.add_argument("--loss", choices=["ntp", "kl_uniform", "kl_temp"], default="ntp", 
                    help="Loss function for gradient computation.")
+    p.add_argument("--temperature", type=float, default=None, help="scaled temperature, specifically for kl_temp.")
     p.add_argument("--max_tokens", type=int, default=8192)
     p.add_argument("--start_idx",  type=int, default=0)
     p.add_argument("--end_idx",    type=int, default=None)
@@ -214,6 +222,11 @@ def main():
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
     dtype  = getattr(torch, args.dtype)
     loss_func = LOSSES[args.loss]
+    if args.loss == "kl_temp":
+        from functools import partial
+        temp = args.temperature
+        print(f"Computing KL divergence with the temperatured-scaled ({temp}) distribution.")
+        loss_func = partial(LOSSES[args.loss], temperature=temp)
 
     # ── Load model ──────────────────────────────────────────────────────
     print(f"Loading tokenizer: {args.model}")
