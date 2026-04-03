@@ -9,8 +9,8 @@
 
 set -euo pipefail
 
-BASE_DIR="${BASE_DIR:-ablation}"
-MODELS="${MODELS:-qwen3-8b-full llama-3.1-8b-full}"
+BASE_DIR="${BASE_DIR:-outputs/gradnorm}"
+MODELS="${MODELS:-qwen3-8b llama-3.1-8b}"
 SUBSETS="${SUBSETS:-algorithm-generated hand-crafted}"
 KS="${KS:-1 3 5 10}"
 WORKERS="${WORKERS:-16}"

@@ -28,28 +28,31 @@ def sweep(
     norm_type: str,
     k:         int,
     base_dir:  str,
+    ascending: bool,
     verbose:   bool = False,
 ) -> pd.DataFrame:
     base         = Path(base_dir)
     results_dir  = base / model / subset
+    order = "ascending" if ascending else "descending"
     trajectories = load_trajectories(results_dir)
     param_names, param_sizes = get_param_names_and_sizes(trajectories)
     n_layers     = discover_n_layers(param_names)
     if verbose:
         print(f"Discovered {n_layers} layers.")
+        print(f"Raning scores in {order} order.")
 
     strategies = build_strategies(n_layers)
 
-    out_dir  = base / model / "aggregated-results"
+    out_dir  = base / model / "metrics"
     out_dir.mkdir(parents=True, exist_ok=True)
-    agg_path = out_dir / f"{subset}_k{k}_{norm_type}.tsv"
+    agg_path = out_dir / f"{subset}_k{k}_{norm_type}_{order}.tsv"
 
     strategy_dfs = {}
     for name, config_dict in strategies.items():
         if verbose:
             print(f"Running strategy: {name} ({len(config_dict)} configs)...")
         cc = CompiledConfigs.compile(config_dict, param_names, param_sizes)
-        df = evaluate_trajectories(trajectories, cc, norm_type, k)
+        df = evaluate_trajectories(trajectories, cc, norm_type, k, ascending)
         strategy_dfs[name] = df
 
     agg = (
@@ -67,9 +70,10 @@ def sweep(
 
 
 def _sweep_unpacked(args):
-    norm_type, k, model, subset, base_dir = args
+    norm_type, k, model, subset, base_dir, ascending = args
     return args, sweep(
-        model=model, subset=subset, norm_type=norm_type, k=k, base_dir=base_dir,
+        model=model, subset=subset, norm_type=norm_type, k=k,
+        base_dir=base_dir, ascending=ascending,
     )
 
 
@@ -112,6 +116,14 @@ def parse_args() -> argparse.Namespace:
         help=f"Norm types to evaluate (default: {' '.join(NORM_TYPES)}).",
     )
     p.add_argument(
+        "--orders",
+        nargs="+",
+        default=["ascending", "descending"],
+        choices=["ascending", "descending"],
+        metavar="ORDER",
+        help="Ranking orders to evaluate (default: ascending descending).",
+    )
+    p.add_argument(
         "--workers",
         type=int,
         default=16,
@@ -128,9 +140,17 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_args()
 
-    combos = list(product(args.norm_types, args.ks, args.models, args.subsets))
-    # Append base_dir to each combo so _sweep_unpacked can unpack it
-    combos = [(nt, k, m, s, args.base_dir) for nt, k, m, s in combos]
+    combos = list(product(
+        args.norm_types, 
+        args.ks, 
+        args.models, 
+        args.subsets, 
+        args.orders
+    ))
+    combos = [
+        (nt, k, m, s, args.base_dir, order == "ascending")
+        for nt, k, m, s, order in combos
+    ]
 
     with ProcessPoolExecutor(max_workers=args.workers) as executor:
         futures = {executor.submit(_sweep_unpacked, combo): combo for combo in combos}

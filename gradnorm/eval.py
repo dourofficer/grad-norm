@@ -270,6 +270,7 @@ def evaluate_trajectory(
     cc:        CompiledConfigs,
     norm_type: str,
     k:         int,
+    ascending: bool = True,
 ) -> tuple[np.ndarray, np.ndarray] | None:
     """Evaluate top-*k* predictions for one trajectory.
 
@@ -314,9 +315,12 @@ def evaluate_trajectory(
         dtype=np.int64,
     )
 
-    # Top-k lowest-scoring step indices per config: shape (k, C)
-    pred_step_matrix = step_indices[np.argsort(score_matrix, axis=0)[:k]]
-
+    # Top-k scoring (ascending/descending) step indices per config: shape (k, C)
+     # pred_step_matrix = step_indices[np.argsort(score_matrix, axis=0)[:k]]
+    ranked = np.argsort(score_matrix, axis=0) # sort ascending as default
+    if ascending: pred_step_matrix = step_indices[ranked[:k]]
+    else:         pred_step_matrix = step_indices[ranked[::-1][:k]]
+   
     # Step-level accuracy: is the ground-truth step among the top-k?
     step_correct = np.any(
         pred_step_matrix == mistake_step, axis=0,
@@ -343,6 +347,7 @@ def evaluate_trajectories(
     cc:           CompiledConfigs,
     norm_type:    str,
     k:            int,
+    ascending:    bool = True,
 ) -> pd.DataFrame:
     """Evaluate all trajectories and return per-config accuracy.
 
@@ -368,7 +373,7 @@ def evaluate_trajectories(
     n_total           = 0
 
     for traj in trajectories:
-        result = evaluate_trajectory(traj, cc, norm_type, k)
+        result = evaluate_trajectory(traj, cc, norm_type, k, ascending)
         if result is None:
             continue
         step_correct, agent_correct = result
