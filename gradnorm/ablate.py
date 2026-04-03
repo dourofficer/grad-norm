@@ -5,6 +5,11 @@ python -m gradnorm.ablate --base_dir "outputs/gradnorm-v2" \
                           --models qwen3-8b-full llama-3.1-8b-full \
                           --subsets hand-crafted algorithm-generated \
                           --ks 1 3 5 10
+
+python -m gradnorm.ablate --base_dir "outputs/gradnorm-losses" \
+                          --models qwen3-8b-kl_uniform \
+                          --subsets hand-crafted \
+                          --ks 1 3 5 10
 """
 
 import argparse

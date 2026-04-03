@@ -13,6 +13,7 @@ END="${END:-}"  # empty = all
 BASE="outputs/gradnorm-losses"
 
 MODELS=(
+    # "/data/hoang/resources/models/meta-llama/Llama-3.1-8B-Instruct|llama-3.1-8b"
     "/data/hoang/resources/models/Qwen/Qwen3-8B|qwen3-8b"
 )
 
