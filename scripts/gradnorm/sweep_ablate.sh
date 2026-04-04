@@ -9,11 +9,12 @@
 
 set -euo pipefail
 
-BASE_DIR="${BASE_DIR:-outputs/gradnorm}"
-MODELS="${MODELS:-qwen3-8b llama-3.1-8b}"
+BASE_DIR="${BASE_DIR:-outputs/gradnorm-losses}"
+# MODELS="${MODELS:-qwen3-8b llama-3.1-8b}"
+MODELS="${MODELS:-qwen3-8b-kl_15 qwen3-8b-kl_20 qwen3-8b-kl_uniform llama-3.1-8b-kl_15 llama-3.1-8b-kl_20 llama-3.1-8b-kl_uniform}"
 SUBSETS="${SUBSETS:-algorithm-generated hand-crafted}"
 KS="${KS:-1 3 5 10}"
-WORKERS="${WORKERS:-16}"
+WORKERS="${WORKERS:-32}"
 
 # shellcheck disable=SC2086
 python -m gradnorm.ablate \
