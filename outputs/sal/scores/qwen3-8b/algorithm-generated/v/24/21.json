@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "117.json",
+    "question_id": "748899d9d70c09beb3bd48ac8a3658bdcfd2f9114fe6dc4c4b8d2f9541ef4607",
+    "mistake_agent": "JSON_Expert",
+    "mistake_step": 0,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much does it cost to send an envelope with 1-week delivery from Rio de Janeiro to NYC with DHL, USPS, or Fedex? (Format your answers as a list of jsons with the keys \"sender\" and \"price (usd)\" for each option you find)"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JSON_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 966.3978881835938,
+        "gradnorm_l1_uncentered": 689.657958984375,
+        "gradnorm_l2_centered": 1.7866153717041016,
+        "gradnorm_l2_uncentered": 1.5097886323928833,
+        "sal_noref_c1": 0.1848435252904892,
+        "sal_noref_c2": 0.27559366822242737,
+        "sal_noref_c3": 0.19602377712726593,
+        "sal_noref_c4": 0.17258286476135254,
+        "sal_noref_c5": 0.14066852629184723,
+        "sal_wref_c1": 1.5271191596984863,
+        "sal_wref_c2": 0.7729909420013428,
+        "sal_wref_c3": 0.5168749094009399,
+        "sal_wref_c4": 0.4180426299571991,
+        "sal_wref_c5": 0.3353736400604248
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 808.7658081054688,
+        "gradnorm_l1_uncentered": 444.998291015625,
+        "gradnorm_l2_centered": 1.5768771171569824,
+        "gradnorm_l2_uncentered": 0.7956736087799072,
+        "sal_noref_c1": 0.07775964587926865,
+        "sal_noref_c2": 0.07048210501670837,
+        "sal_noref_c3": 0.047098804265260696,
+        "sal_noref_c4": 0.03923099860548973,
+        "sal_noref_c5": 0.032530490309000015,
+        "sal_wref_c1": 1.660799264907837,
+        "sal_wref_c2": 0.9640253186225891,
+        "sal_wref_c3": 0.6520319581031799,
+        "sal_wref_c4": 0.4979889690876007,
+        "sal_wref_c5": 0.4031040668487549
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3075.058837890625,
+        "gradnorm_l1_uncentered": 3373.93994140625,
+        "gradnorm_l2_centered": 5.717254638671875,
+        "gradnorm_l2_uncentered": 6.625583171844482,
+        "sal_noref_c1": 12.783733367919922,
+        "sal_noref_c2": 10.121715545654297,
+        "sal_noref_c3": 6.8884968757629395,
+        "sal_noref_c4": 5.180621147155762,
+        "sal_noref_c5": 4.346932888031006,
+        "sal_wref_c1": 1.984417200088501,
+        "sal_wref_c2": 4.865433216094971,
+        "sal_wref_c3": 3.244216203689575,
+        "sal_wref_c4": 2.458139181137085,
+        "sal_wref_c5": 1.9724327325820923
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 794.44287109375,
+        "gradnorm_l1_uncentered": 497.58001708984375,
+        "gradnorm_l2_centered": 1.5678447484970093,
+        "gradnorm_l2_uncentered": 0.9223082065582275,
+        "sal_noref_c1": 0.11335749179124832,
+        "sal_noref_c2": 0.10366267710924149,
+        "sal_noref_c3": 0.06911572068929672,
+        "sal_noref_c4": 0.05410502478480339,
+        "sal_noref_c5": 0.046329863369464874,
+        "sal_wref_c1": 1.55024254322052,
+        "sal_wref_c2": 0.8756328821182251,
+        "sal_wref_c3": 0.593048095703125,
+        "sal_wref_c4": 0.4496718943119049,
+        "sal_wref_c5": 0.3629368543624878
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1842.04736328125,
+        "gradnorm_l1_uncentered": 2024.76220703125,
+        "gradnorm_l2_centered": 2.9414539337158203,
+        "gradnorm_l2_uncentered": 3.6117806434631348,
+        "sal_noref_c1": 3.265983819961548,
+        "sal_noref_c2": 2.7250561714172363,
+        "sal_noref_c3": 1.821518063545227,
+        "sal_noref_c4": 1.3841335773468018,
+        "sal_noref_c5": 1.1105338335037231,
+        "sal_wref_c1": 0.005449140910059214,
+        "sal_wref_c2": 0.5330114960670471,
+        "sal_wref_c3": 0.3567001521587372,
+        "sal_wref_c4": 0.3016171455383301,
+        "sal_wref_c5": 0.2689777910709381
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 882.878662109375,
+        "gradnorm_l1_uncentered": 725.3749389648438,
+        "gradnorm_l2_centered": 1.6062450408935547,
+        "gradnorm_l2_uncentered": 1.3357081413269043,
+        "sal_noref_c1": 0.32907021045684814,
+        "sal_noref_c2": 0.2193806767463684,
+        "sal_noref_c3": 0.15876610577106476,
+        "sal_noref_c4": 0.12276872992515564,
+        "sal_noref_c5": 0.10392490774393082,
+        "sal_wref_c1": 1.0396727323532104,
+        "sal_wref_c2": 0.5891933441162109,
+        "sal_wref_c3": 0.4371452033519745,
+        "sal_wref_c4": 0.3372769057750702,
+        "sal_wref_c5": 0.27696406841278076
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5702.150390625,
+        "gradnorm_l1_uncentered": 6099.041015625,
+        "gradnorm_l2_centered": 10.976661682128906,
+        "gradnorm_l2_uncentered": 11.958834648132324,
+        "sal_noref_c1": 70.30200958251953,
+        "sal_noref_c2": 35.487613677978516,
+        "sal_noref_c3": 32.51468276977539,
+        "sal_noref_c4": 24.64322853088379,
+        "sal_noref_c5": 19.721590042114258,
+        "sal_wref_c1": 50.70069122314453,
+        "sal_wref_c2": 25.351871490478516,
+        "sal_wref_c3": 23.12178611755371,
+        "sal_wref_c4": 17.581619262695312,
+        "sal_wref_c5": 14.128149032592773
+      }
+    }
+  ]
+}

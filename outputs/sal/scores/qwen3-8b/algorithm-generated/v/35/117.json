@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "90.json",
+    "question_id": "c8b7e059-c60d-472e-ad64-3b04ae1166dc",
+    "mistake_agent": "Federico_Lauria_Expert",
+    "mistake_step": 5,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The work referenced in footnote 397 of Federico Lauria's 2014 dissertation is also the source for the titles of two paintings in the Smithsonian American Art Museum's collection, as of August 2023. What is the absolute difference between the chapter numbers of the chapters that the titles of these two paintings quote?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 617.6475219726562,
+        "gradnorm_l1_uncentered": 295.445556640625,
+        "gradnorm_l2_centered": 1.5668662786483765,
+        "gradnorm_l2_uncentered": 0.8947716355323792,
+        "sal_noref_c1": 0.48929429054260254,
+        "sal_noref_c2": 0.2748674750328064,
+        "sal_noref_c3": 0.2041105031967163,
+        "sal_noref_c4": 0.15423227846622467,
+        "sal_noref_c5": 0.1235298290848732,
+        "sal_wref_c1": 2.2304670810699463,
+        "sal_wref_c2": 1.1055779457092285,
+        "sal_wref_c3": 0.7414836883544922,
+        "sal_wref_c4": 0.5562030076980591,
+        "sal_wref_c5": 0.4528418183326721
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Art_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 627.9742431640625,
+        "gradnorm_l1_uncentered": 144.86074829101562,
+        "gradnorm_l2_centered": 2.0028138160705566,
+        "gradnorm_l2_uncentered": 0.2994421124458313,
+        "sal_noref_c1": 0.044798314571380615,
+        "sal_noref_c2": 0.022263573482632637,
+        "sal_noref_c3": 0.0168792475014925,
+        "sal_noref_c4": 0.012714359909296036,
+        "sal_noref_c5": 0.010370437987148762,
+        "sal_wref_c1": 3.7595133781433105,
+        "sal_wref_c2": 1.890770673751831,
+        "sal_wref_c3": 1.2614043951034546,
+        "sal_wref_c4": 0.948196530342102,
+        "sal_wref_c5": 0.771443247795105
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 544.848876953125,
+        "gradnorm_l1_uncentered": 235.6485595703125,
+        "gradnorm_l2_centered": 1.6735812425613403,
+        "gradnorm_l2_uncentered": 0.6038345694541931,
+        "sal_noref_c1": 0.3013324439525604,
+        "sal_noref_c2": 0.15130524337291718,
+        "sal_noref_c3": 0.10182562470436096,
+        "sal_noref_c4": 0.08096880465745926,
+        "sal_noref_c5": 0.0649542436003685,
+        "sal_wref_c1": 2.5804619789123535,
+        "sal_wref_c2": 1.2902300357818604,
+        "sal_wref_c3": 0.8608695864677429,
+        "sal_wref_c4": 0.6570602059364319,
+        "sal_wref_c5": 0.5351781249046326
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 627.2061767578125,
+        "gradnorm_l1_uncentered": 248.98654174804688,
+        "gradnorm_l2_centered": 1.8189058303833008,
+        "gradnorm_l2_uncentered": 0.5532144904136658,
+        "sal_noref_c1": 0.16834348440170288,
+        "sal_noref_c2": 0.08423374593257904,
+        "sal_noref_c3": 0.0638909563422203,
+        "sal_noref_c4": 0.04792190343141556,
+        "sal_noref_c5": 0.04058580473065376,
+        "sal_wref_c1": 3.079646348953247,
+        "sal_wref_c2": 1.5589430332183838,
+        "sal_wref_c3": 1.039298415184021,
+        "sal_wref_c4": 0.7820314168930054,
+        "sal_wref_c5": 0.6283804774284363
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Art_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1058.220703125,
+        "gradnorm_l1_uncentered": 1410.5977783203125,
+        "gradnorm_l2_centered": 1.862724781036377,
+        "gradnorm_l2_uncentered": 3.4728989601135254,
+        "sal_noref_c1": 8.960792541503906,
+        "sal_noref_c2": 4.5777692794799805,
+        "sal_noref_c3": 3.0853636264801025,
+        "sal_noref_c4": 2.325692653656006,
+        "sal_noref_c5": 1.8727461099624634,
+        "sal_wref_c1": 0.5333033800125122,
+        "sal_wref_c2": 0.3461753726005554,
+        "sal_wref_c3": 0.2434942126274109,
+        "sal_wref_c4": 0.18787114322185516,
+        "sal_wref_c5": 0.15029790997505188
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 738.34130859375,
+        "gradnorm_l1_uncentered": 938.7090454101562,
+        "gradnorm_l2_centered": 1.1823458671569824,
+        "gradnorm_l2_uncentered": 2.2954013347625732,
+        "sal_noref_c1": 3.7333786487579346,
+        "sal_noref_c2": 1.8755865097045898,
+        "sal_noref_c3": 1.304437518119812,
+        "sal_noref_c4": 0.9909703135490417,
+        "sal_noref_c5": 0.811360239982605,
+        "sal_wref_c1": 0.09202999621629715,
+        "sal_wref_c2": 0.04627937451004982,
+        "sal_wref_c3": 0.04846881702542305,
+        "sal_wref_c4": 0.041105251759290695,
+        "sal_wref_c5": 0.035499993711709976
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 833.8944091796875,
+        "gradnorm_l1_uncentered": 989.6143188476562,
+        "gradnorm_l2_centered": 1.5477831363677979,
+        "gradnorm_l2_uncentered": 2.1523327827453613,
+        "sal_noref_c1": 2.5782535076141357,
+        "sal_noref_c2": 1.3433037996292114,
+        "sal_noref_c3": 0.9169621467590332,
+        "sal_noref_c4": 0.694344699382782,
+        "sal_noref_c5": 0.5723334550857544,
+        "sal_wref_c1": 0.32017698884010315,
+        "sal_wref_c2": 0.2910498380661011,
+        "sal_wref_c3": 0.19989760220050812,
+        "sal_wref_c4": 0.16737200319766998,
+        "sal_wref_c5": 0.14610427618026733
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 702.2296142578125,
+        "gradnorm_l1_uncentered": 661.9228515625,
+        "gradnorm_l2_centered": 1.343057632446289,
+        "gradnorm_l2_uncentered": 1.5890847444534302,
+        "sal_noref_c1": 1.522383213043213,
+        "sal_noref_c2": 0.7593938708305359,
+        "sal_noref_c3": 0.5593187212944031,
+        "sal_noref_c4": 0.42447996139526367,
+        "sal_noref_c5": 0.3550582528114319,
+        "sal_wref_c1": 0.9406917095184326,
+        "sal_wref_c2": 0.5003851056098938,
+        "sal_wref_c3": 0.3491678535938263,
+        "sal_wref_c4": 0.26259925961494446,
+        "sal_wref_c5": 0.21070106327533722
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 617.5382080078125,
+        "gradnorm_l1_uncentered": 243.15975952148438,
+        "gradnorm_l2_centered": 1.830275297164917,
+        "gradnorm_l2_uncentered": 0.5651142001152039,
+        "sal_noref_c1": 0.16660021245479584,
+        "sal_noref_c2": 0.087568499147892,
+        "sal_noref_c3": 0.06621327251195908,
+        "sal_noref_c4": 0.04976758360862732,
+        "sal_noref_c5": 0.04089631512761116,
+        "sal_wref_c1": 3.066221237182617,
+        "sal_wref_c2": 1.5717207193374634,
+        "sal_wref_c3": 1.047814965248108,
+        "sal_wref_c4": 0.7871261239051819,
+        "sal_wref_c5": 0.6340629458427429
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Federico_Lauria_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 632.5236206054688,
+        "gradnorm_l1_uncentered": 217.20864868164062,
+        "gradnorm_l2_centered": 1.858880877494812,
+        "gradnorm_l2_uncentered": 0.5085834264755249,
+        "sal_noref_c1": 0.13338147103786469,
+        "sal_noref_c2": 0.06649771332740784,
+        "sal_noref_c3": 0.050748955458402634,
+        "sal_noref_c4": 0.038542527705430984,
+        "sal_noref_c5": 0.03210403397679329,
+        "sal_wref_c1": 3.2418951988220215,
+        "sal_wref_c2": 1.6367019414901733,
+        "sal_wref_c3": 1.0912362337112427,
+        "sal_wref_c4": 0.8191115260124207,
+        "sal_wref_c5": 0.6595754623413086
+      }
+    }
+  ]
+}

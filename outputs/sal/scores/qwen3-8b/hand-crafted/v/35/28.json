@@ -1,0 +1,101 @@
+{
+  "config": {
+    "subset": "hand-crafted",
+    "weight_config": "/home/hoangpham/exchange/hand-crafted/v/35"
+  },
+  "metadata": {
+    "filename": "34.json",
+    "question_id": "56137764-b4e0-45b8-9c52-1866420c3df5",
+    "mistake_agent": "WebSurfer",
+    "mistake_step": 4,
+    "level": 2,
+    "subset": "hand-crafted",
+    "question": "Which contributor to the version of OpenCV where support was added for the Mask-RCNN model has the same name as a former Chinese head of government when the names are transliterated to the Latin alphabet?"
+  },
+  "steps": [
+    {
+      "step_idx": 1,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 959.0924682617188,
+        "gradnorm_l1_uncentered": 379.99591064453125,
+        "gradnorm_l2_centered": 2.0300099849700928,
+        "gradnorm_l2_uncentered": 1.2075672149658203,
+        "sal_noref_c1": 0.8405876159667969,
+        "sal_noref_c2": 0.5868878364562988,
+        "sal_noref_c3": 0.3914990723133087,
+        "sal_noref_c4": 0.29468458890914917,
+        "sal_noref_c5": 0.23640386760234833,
+        "sal_wref_c1": 3.6919939517974854,
+        "sal_wref_c2": 1.8779555559158325,
+        "sal_wref_c3": 1.2529815435409546,
+        "sal_wref_c4": 0.9428606033325195,
+        "sal_wref_c5": 0.7550414800643921
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 843.7235107421875,
+        "gradnorm_l1_uncentered": 600.2803344726562,
+        "gradnorm_l2_centered": 1.6993588209152222,
+        "gradnorm_l2_uncentered": 1.5911873579025269,
+        "sal_noref_c1": 1.6962721347808838,
+        "sal_noref_c2": 1.0641121864318848,
+        "sal_noref_c3": 0.7118188738822937,
+        "sal_noref_c4": 0.5428590774536133,
+        "sal_noref_c5": 0.43546199798583984,
+        "sal_wref_c1": 2.4357998371124268,
+        "sal_wref_c2": 1.249055027961731,
+        "sal_wref_c3": 0.8449947834014893,
+        "sal_wref_c4": 0.633819043636322,
+        "sal_wref_c5": 0.5077625513076782
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1033.259765625,
+        "gradnorm_l1_uncentered": 1623.601806640625,
+        "gradnorm_l2_centered": 1.6054155826568604,
+        "gradnorm_l2_uncentered": 3.256155252456665,
+        "sal_noref_c1": 7.672051906585693,
+        "sal_noref_c2": 3.810365915298462,
+        "sal_noref_c3": 3.1870956420898438,
+        "sal_noref_c4": 2.4447457790374756,
+        "sal_noref_c5": 1.9791158437728882,
+        "sal_wref_c1": 0.012500163167715073,
+        "sal_wref_c2": 0.6595138311386108,
+        "sal_wref_c3": 0.49102750420570374,
+        "sal_wref_c4": 0.4509337842464447,
+        "sal_wref_c5": 0.3820531368255615
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebSurfer",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 923.3936767578125,
+        "gradnorm_l1_uncentered": 419.61859130859375,
+        "gradnorm_l2_centered": 1.9071195125579834,
+        "gradnorm_l2_uncentered": 1.4392225742340088,
+        "sal_noref_c1": 1.196804165840149,
+        "sal_noref_c2": 0.8763148784637451,
+        "sal_noref_c3": 0.5890169739723206,
+        "sal_noref_c4": 0.44187307357788086,
+        "sal_noref_c5": 0.35645732283592224,
+        "sal_wref_c1": 3.1084060668945312,
+        "sal_wref_c2": 1.661435842514038,
+        "sal_wref_c3": 1.1076704263687134,
+        "sal_wref_c4": 0.8333853483200073,
+        "sal_wref_c5": 0.6696091890335083
+      }
+    }
+  ]
+}

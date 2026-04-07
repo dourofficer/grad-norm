@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "44.json",
+    "question_id": "ad2b4d70-9314-4fe6-bfbe-894a45f6055f",
+    "mistake_agent": "WebDevelopment_Expert",
+    "mistake_step": 1,
+    "level": "3",
+    "subset": "algorithm-generated",
+    "question": "Eva Draconis has a personal website which can be accessed on her YouTube page. What is the meaning of the only symbol seen in the top banner that has a curved line that isn't a circle or a portion of a circle? Answer without punctuation."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Web_Design_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 970.614501953125,
+        "gradnorm_l1_uncentered": 415.0567626953125,
+        "gradnorm_l2_centered": 1.972260594367981,
+        "gradnorm_l2_uncentered": 0.9598971605300903,
+        "sal_noref_c1": 0.2311989665031433,
+        "sal_noref_c2": 0.12864957749843597,
+        "sal_noref_c3": 0.08654957264661789,
+        "sal_noref_c4": 0.07498280704021454,
+        "sal_noref_c5": 0.06067073345184326,
+        "sal_wref_c1": 3.269681692123413,
+        "sal_wref_c2": 1.6285310983657837,
+        "sal_wref_c3": 1.0856882333755493,
+        "sal_wref_c4": 0.8258680105209351,
+        "sal_wref_c5": 0.6606994271278381
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WebDevelopment_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1336.834228515625,
+        "gradnorm_l1_uncentered": 1604.016357421875,
+        "gradnorm_l2_centered": 3.1745214462280273,
+        "gradnorm_l2_uncentered": 4.0008368492126465,
+        "sal_noref_c1": 5.642430305480957,
+        "sal_noref_c2": 3.798114061355591,
+        "sal_noref_c3": 2.5695557594299316,
+        "sal_noref_c4": 2.012948513031006,
+        "sal_noref_c5": 1.6925907135009766,
+        "sal_wref_c1": 0.0014687750954180956,
+        "sal_wref_c2": 0.8998785614967346,
+        "sal_wref_c3": 0.6479273438453674,
+        "sal_wref_c4": 0.5753834247589111,
+        "sal_wref_c5": 0.5488945245742798
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 969.1522827148438,
+        "gradnorm_l1_uncentered": 1053.4072265625,
+        "gradnorm_l2_centered": 2.242537260055542,
+        "gradnorm_l2_uncentered": 2.8357667922973633,
+        "sal_noref_c1": 3.038236618041992,
+        "sal_noref_c2": 2.2758138179779053,
+        "sal_noref_c3": 1.5734267234802246,
+        "sal_noref_c4": 1.1886417865753174,
+        "sal_noref_c5": 0.9711194038391113,
+        "sal_wref_c1": 0.3463446795940399,
+        "sal_wref_c2": 0.8382936716079712,
+        "sal_wref_c3": 0.6311160922050476,
+        "sal_wref_c4": 0.47983884811401367,
+        "sal_wref_c5": 0.41907835006713867
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Web_Design_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2523.277587890625,
+        "gradnorm_l1_uncentered": 3013.0810546875,
+        "gradnorm_l2_centered": 5.2066144943237305,
+        "gradnorm_l2_uncentered": 6.397260665893555,
+        "sal_noref_c1": 16.767528533935547,
+        "sal_noref_c2": 8.432662963867188,
+        "sal_noref_c3": 6.1825032234191895,
+        "sal_noref_c4": 4.70443058013916,
+        "sal_noref_c5": 3.7662129402160645,
+        "sal_wref_c1": 3.0919156074523926,
+        "sal_wref_c2": 1.6050097942352295,
+        "sal_wref_c3": 1.6689987182617188,
+        "sal_wref_c4": 1.3020049333572388,
+        "sal_wref_c5": 1.0797724723815918
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Web_Design_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2329.304931640625,
+        "gradnorm_l1_uncentered": 2874.312255859375,
+        "gradnorm_l2_centered": 4.811017036437988,
+        "gradnorm_l2_uncentered": 6.114798069000244,
+        "sal_noref_c1": 17.689788818359375,
+        "sal_noref_c2": 9.169504165649414,
+        "sal_noref_c3": 6.635727405548096,
+        "sal_noref_c4": 4.977403163909912,
+        "sal_noref_c5": 3.9905612468719482,
+        "sal_wref_c1": 3.567591667175293,
+        "sal_wref_c2": 2.160670280456543,
+        "sal_wref_c3": 2.021155595779419,
+        "sal_wref_c4": 1.5167614221572876,
+        "sal_wref_c5": 1.2558163404464722
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Web_Design_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1667.109619140625,
+        "gradnorm_l1_uncentered": 2153.3896484375,
+        "gradnorm_l2_centered": 3.2204887866973877,
+        "gradnorm_l2_uncentered": 4.394876003265381,
+        "sal_noref_c1": 9.226853370666504,
+        "sal_noref_c2": 4.74800968170166,
+        "sal_noref_c3": 3.2364718914031982,
+        "sal_noref_c4": 2.4583933353424072,
+        "sal_noref_c5": 1.966957449913025,
+        "sal_wref_c1": 0.5082563757896423,
+        "sal_wref_c2": 0.4310457706451416,
+        "sal_wref_c3": 0.3809657394886017,
+        "sal_wref_c4": 0.32404813170433044,
+        "sal_wref_c5": 0.263397753238678
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Web_Design_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2797.976806640625,
+        "gradnorm_l1_uncentered": 3342.606689453125,
+        "gradnorm_l2_centered": 6.374239921569824,
+        "gradnorm_l2_uncentered": 7.691535472869873,
+        "sal_noref_c1": 25.651878356933594,
+        "sal_noref_c2": 13.05428695678711,
+        "sal_noref_c3": 9.161739349365234,
+        "sal_noref_c4": 7.333477973937988,
+        "sal_noref_c5": 6.100071907043457,
+        "sal_wref_c1": 7.230743408203125,
+        "sal_wref_c2": 3.8875882625579834,
+        "sal_wref_c3": 3.119084119796753,
+        "sal_wref_c4": 2.862281560897827,
+        "sal_wref_c5": 2.43668270111084
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "GraphicDesign_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1516.05712890625,
+        "gradnorm_l1_uncentered": 1970.9644775390625,
+        "gradnorm_l2_centered": 2.9566104412078857,
+        "gradnorm_l2_uncentered": 3.8885014057159424,
+        "sal_noref_c1": 6.142843723297119,
+        "sal_noref_c2": 3.1815733909606934,
+        "sal_noref_c3": 2.1226346492767334,
+        "sal_noref_c4": 1.8803132772445679,
+        "sal_noref_c5": 1.5114916563034058,
+        "sal_wref_c1": 0.023992864415049553,
+        "sal_wref_c2": 0.1680832952260971,
+        "sal_wref_c3": 0.11205872893333435,
+        "sal_wref_c4": 0.3496263325214386,
+        "sal_wref_c5": 0.28331056237220764
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Web_Design_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1686.111572265625,
+        "gradnorm_l1_uncentered": 2184.385009765625,
+        "gradnorm_l2_centered": 3.3315532207489014,
+        "gradnorm_l2_uncentered": 4.483086585998535,
+        "sal_noref_c1": 9.367408752441406,
+        "sal_noref_c2": 5.000165939331055,
+        "sal_noref_c3": 3.333760976791382,
+        "sal_noref_c4": 3.178377151489258,
+        "sal_noref_c5": 2.6166319847106934,
+        "sal_wref_c1": 0.5553721189498901,
+        "sal_wref_c2": 0.6524566411972046,
+        "sal_wref_c3": 0.4350105822086334,
+        "sal_wref_c4": 0.9848843216896057,
+        "sal_wref_c5": 0.8305344581604004
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "GraphicDesign_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1180.7293701171875,
+        "gradnorm_l1_uncentered": 1350.9208984375,
+        "gradnorm_l2_centered": 2.5482280254364014,
+        "gradnorm_l2_uncentered": 3.0801503658294678,
+        "sal_noref_c1": 3.061452865600586,
+        "sal_noref_c2": 1.553378939628601,
+        "sal_noref_c3": 1.0814075469970703,
+        "sal_noref_c4": 1.130056381225586,
+        "sal_noref_c5": 0.9938498735427856,
+        "sal_wref_c1": 0.3198073208332062,
+        "sal_wref_c2": 0.20676632225513458,
+        "sal_wref_c3": 0.19757992029190063,
+        "sal_wref_c4": 0.4381667375564575,
+        "sal_wref_c5": 0.4146142899990082
+      }
+    }
+  ]
+}

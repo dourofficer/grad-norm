@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "103.json",
+    "question_id": "ccec2229ced20a4b0cb4897e3a99120a3017ea030903e01c9bda6b13d40b0b14",
+    "mistake_agent": "DataVerification_Expert",
+    "mistake_step": 3,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "What is the closest eatery to Harkness Memorial State Park that is still open at 11pm on Wednesdays?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Eateries_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 677.6181030273438,
+        "gradnorm_l1_uncentered": 389.7579345703125,
+        "gradnorm_l2_centered": 1.5640511512756348,
+        "gradnorm_l2_uncentered": 1.2894850969314575,
+        "sal_noref_c1": 0.3154151439666748,
+        "sal_noref_c2": 0.35059767961502075,
+        "sal_noref_c3": 0.2728658616542816,
+        "sal_noref_c4": 0.20883679389953613,
+        "sal_noref_c5": 0.1700223982334137,
+        "sal_wref_c1": 0.8621581792831421,
+        "sal_wref_c2": 0.43597856163978577,
+        "sal_wref_c3": 0.5160765051841736,
+        "sal_wref_c4": 0.42202261090278625,
+        "sal_wref_c5": 0.3380587697029114
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Location-Based_Services_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 736.0155029296875,
+        "gradnorm_l1_uncentered": 549.51220703125,
+        "gradnorm_l2_centered": 1.580523133277893,
+        "gradnorm_l2_uncentered": 1.373970866203308,
+        "sal_noref_c1": 0.3950287997722626,
+        "sal_noref_c2": 0.20100490748882294,
+        "sal_noref_c3": 0.13464225828647614,
+        "sal_noref_c4": 0.14618754386901855,
+        "sal_noref_c5": 0.11800000816583633,
+        "sal_wref_c1": 0.5144715905189514,
+        "sal_wref_c2": 0.5005064606666565,
+        "sal_wref_c3": 0.44523751735687256,
+        "sal_wref_c4": 0.3350677490234375,
+        "sal_wref_c5": 0.26822343468666077
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 593.9628295898438,
+        "gradnorm_l1_uncentered": 200.2738800048828,
+        "gradnorm_l2_centered": 1.6682777404785156,
+        "gradnorm_l2_uncentered": 0.5825926661491394,
+        "sal_noref_c1": 0.007189505733549595,
+        "sal_noref_c2": 0.05779462307691574,
+        "sal_noref_c3": 0.052484530955553055,
+        "sal_noref_c4": 0.042580828070640564,
+        "sal_noref_c5": 0.03548609837889671,
+        "sal_wref_c1": 1.6384133100509644,
+        "sal_wref_c2": 1.032783031463623,
+        "sal_wref_c3": 0.7401983737945557,
+        "sal_wref_c4": 0.5852035880088806,
+        "sal_wref_c5": 0.47235673666000366
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataVerification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 612.718994140625,
+        "gradnorm_l1_uncentered": 266.7021179199219,
+        "gradnorm_l2_centered": 1.5856008529663086,
+        "gradnorm_l2_uncentered": 0.6841121315956116,
+        "sal_noref_c1": 0.09425897896289825,
+        "sal_noref_c2": 0.048365384340286255,
+        "sal_noref_c3": 0.032244738191366196,
+        "sal_noref_c4": 0.047161780297756195,
+        "sal_noref_c5": 0.037984855473041534,
+        "sal_wref_c1": 0.8448288440704346,
+        "sal_wref_c2": 0.8306905031204224,
+        "sal_wref_c3": 0.6948654651641846,
+        "sal_wref_c4": 0.5329481363296509,
+        "sal_wref_c5": 0.4269266128540039
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 835.349609375,
+        "gradnorm_l1_uncentered": 679.5803833007812,
+        "gradnorm_l2_centered": 1.7964009046554565,
+        "gradnorm_l2_uncentered": 1.7753806114196777,
+        "sal_noref_c1": 0.23609960079193115,
+        "sal_noref_c2": 0.7135761380195618,
+        "sal_noref_c3": 0.5189936757087708,
+        "sal_noref_c4": 0.4125438630580902,
+        "sal_noref_c5": 0.3300974369049072,
+        "sal_wref_c1": 1.639488935470581,
+        "sal_wref_c2": 0.817118227481842,
+        "sal_wref_c3": 0.550129771232605,
+        "sal_wref_c4": 0.4129745066165924,
+        "sal_wref_c5": 0.33129608631134033
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 655.2127685546875,
+        "gradnorm_l1_uncentered": 311.90374755859375,
+        "gradnorm_l2_centered": 1.7117459774017334,
+        "gradnorm_l2_uncentered": 0.611885666847229,
+        "sal_noref_c1": 0.011627018451690674,
+        "sal_noref_c2": 0.02283792570233345,
+        "sal_noref_c3": 0.017213227227330208,
+        "sal_noref_c4": 0.01574416644871235,
+        "sal_noref_c5": 0.012612705118954182,
+        "sal_wref_c1": 1.4119198322296143,
+        "sal_wref_c2": 0.9920099973678589,
+        "sal_wref_c3": 0.757230818271637,
+        "sal_wref_c4": 0.6064939498901367,
+        "sal_wref_c5": 0.4864048361778259
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 809.0907592773438,
+        "gradnorm_l1_uncentered": 606.2474365234375,
+        "gradnorm_l2_centered": 2.2594799995422363,
+        "gradnorm_l2_uncentered": 1.7170833349227905,
+        "sal_noref_c1": 0.00028074660804122686,
+        "sal_noref_c2": 0.01876271702349186,
+        "sal_noref_c3": 0.25225862860679626,
+        "sal_noref_c4": 0.2665303945541382,
+        "sal_noref_c5": 0.21437391638755798,
+        "sal_wref_c1": 2.0392510890960693,
+        "sal_wref_c2": 1.5240141153335571,
+        "sal_wref_c3": 1.0186536312103271,
+        "sal_wref_c4": 0.7701954245567322,
+        "sal_wref_c5": 0.6198440194129944
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Eateries_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 603.6942138671875,
+        "gradnorm_l1_uncentered": 237.00714111328125,
+        "gradnorm_l2_centered": 1.5609115362167358,
+        "gradnorm_l2_uncentered": 0.6101188063621521,
+        "sal_noref_c1": 0.04260045289993286,
+        "sal_noref_c2": 0.03908509016036987,
+        "sal_noref_c3": 0.039771538227796555,
+        "sal_noref_c4": 0.038667332381010056,
+        "sal_noref_c5": 0.03124319389462471,
+        "sal_wref_c1": 1.2653409242630005,
+        "sal_wref_c2": 0.9173768162727356,
+        "sal_wref_c3": 0.6698346734046936,
+        "sal_wref_c4": 0.5226770639419556,
+        "sal_wref_c5": 0.4209974706172943
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 794.6788330078125,
+        "gradnorm_l1_uncentered": 612.0557861328125,
+        "gradnorm_l2_centered": 2.2881968021392822,
+        "gradnorm_l2_uncentered": 1.7481577396392822,
+        "sal_noref_c1": 0.00134569825604558,
+        "sal_noref_c2": 0.06339635699987411,
+        "sal_noref_c3": 0.33250316977500916,
+        "sal_noref_c4": 0.2708676755428314,
+        "sal_noref_c5": 0.22064299881458282,
+        "sal_wref_c1": 2.256572961807251,
+        "sal_wref_c2": 1.494398593902588,
+        "sal_wref_c3": 1.0165860652923584,
+        "sal_wref_c4": 0.7634710073471069,
+        "sal_wref_c5": 0.6171960830688477
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 723.9866943359375,
+        "gradnorm_l1_uncentered": 545.7528686523438,
+        "gradnorm_l2_centered": 2.1314046382904053,
+        "gradnorm_l2_uncentered": 1.5351423025131226,
+        "sal_noref_c1": 0.00435973796993494,
+        "sal_noref_c2": 0.1500258594751358,
+        "sal_noref_c3": 0.3492702543735504,
+        "sal_noref_c4": 0.27078789472579956,
+        "sal_noref_c5": 0.21959242224693298,
+        "sal_wref_c1": 2.5363218784332275,
+        "sal_wref_c2": 1.493016004562378,
+        "sal_wref_c3": 1.011672854423523,
+        "sal_wref_c4": 0.7656780481338501,
+        "sal_wref_c5": 0.6219878792762756
+      }
+    }
+  ]
+}

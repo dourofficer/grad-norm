@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "5.json",
+    "question_id": "42d4198c-5895-4f0a-b0c0-424a66465d83",
+    "mistake_agent": "DataVerification_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I'm curious about how much information is available for popular video games before their release. Find the Wikipedia page for the 2019 game that won the British Academy Games Awards. How many revisions did that page have before the month listed as the game's release date on that Wikipedia page (as of the most recent entry from 2022)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 632.7674560546875,
+        "gradnorm_l1_uncentered": 493.9738464355469,
+        "gradnorm_l2_centered": 1.2088183164596558,
+        "gradnorm_l2_uncentered": 1.487614631652832,
+        "sal_noref_c1": 1.5142316818237305,
+        "sal_noref_c2": 0.7979594469070435,
+        "sal_noref_c3": 0.5666347146034241,
+        "sal_noref_c4": 0.42752543091773987,
+        "sal_noref_c5": 0.34480196237564087,
+        "sal_wref_c1": 0.979296863079071,
+        "sal_wref_c2": 0.4907776117324829,
+        "sal_wref_c3": 0.33726760745048523,
+        "sal_wref_c4": 0.253439337015152,
+        "sal_wref_c5": 0.20331421494483948
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Gaming_Awards_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 613.5844116210938,
+        "gradnorm_l1_uncentered": 338.6456604003906,
+        "gradnorm_l2_centered": 1.536624550819397,
+        "gradnorm_l2_uncentered": 0.8792001008987427,
+        "sal_noref_c1": 0.5202927589416504,
+        "sal_noref_c2": 0.2692561447620392,
+        "sal_noref_c3": 0.19822858273983002,
+        "sal_noref_c4": 0.15087758004665375,
+        "sal_noref_c5": 0.1210169568657875,
+        "sal_wref_c1": 2.1396448612213135,
+        "sal_wref_c2": 1.0627604722976685,
+        "sal_wref_c3": 0.7114396691322327,
+        "sal_wref_c4": 0.5338351130485535,
+        "sal_wref_c5": 0.4288770258426666
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1074.7908935546875,
+        "gradnorm_l1_uncentered": 1552.3685302734375,
+        "gradnorm_l2_centered": 2.353947162628174,
+        "gradnorm_l2_uncentered": 4.2800140380859375,
+        "sal_noref_c1": 16.034934997558594,
+        "sal_noref_c2": 8.003355979919434,
+        "sal_noref_c3": 5.417474746704102,
+        "sal_noref_c4": 4.253347873687744,
+        "sal_noref_c5": 3.4112308025360107,
+        "sal_wref_c1": 3.272676944732666,
+        "sal_wref_c2": 1.67474365234375,
+        "sal_wref_c3": 1.2564297914505005,
+        "sal_wref_c4": 1.0879254341125488,
+        "sal_wref_c5": 0.8827260732650757
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataVerification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 582.7479858398438,
+        "gradnorm_l1_uncentered": 342.4083557128906,
+        "gradnorm_l2_centered": 1.4742227792739868,
+        "gradnorm_l2_uncentered": 0.9149487018585205,
+        "sal_noref_c1": 0.6050258278846741,
+        "sal_noref_c2": 0.3078596591949463,
+        "sal_noref_c3": 0.21903568506240845,
+        "sal_noref_c4": 0.16997094452381134,
+        "sal_noref_c5": 0.136973574757576,
+        "sal_wref_c1": 1.980529546737671,
+        "sal_wref_c2": 0.9853783249855042,
+        "sal_wref_c3": 0.6576399207115173,
+        "sal_wref_c4": 0.49455296993255615,
+        "sal_wref_c5": 0.3958365321159363
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 687.294677734375,
+        "gradnorm_l1_uncentered": 982.3213500976562,
+        "gradnorm_l2_centered": 1.40240478515625,
+        "gradnorm_l2_uncentered": 2.742736339569092,
+        "sal_noref_c1": 5.515856742858887,
+        "sal_noref_c2": 2.7962307929992676,
+        "sal_noref_c3": 1.88905668258667,
+        "sal_noref_c4": 1.5169196128845215,
+        "sal_noref_c5": 1.3525190353393555,
+        "sal_wref_c1": 0.02478095144033432,
+        "sal_wref_c2": 0.11265049129724503,
+        "sal_wref_c3": 0.08763919025659561,
+        "sal_wref_c4": 0.2290094941854477,
+        "sal_wref_c5": 0.20137587189674377
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 607.3880004882812,
+        "gradnorm_l1_uncentered": 743.1533203125,
+        "gradnorm_l2_centered": 1.218261480331421,
+        "gradnorm_l2_uncentered": 2.5471887588500977,
+        "sal_noref_c1": 4.702143669128418,
+        "sal_noref_c2": 2.3560492992401123,
+        "sal_noref_c3": 1.8367832899093628,
+        "sal_noref_c4": 1.4232853651046753,
+        "sal_noref_c5": 1.1534827947616577,
+        "sal_wref_c1": 0.009161492809653282,
+        "sal_wref_c2": 0.004569907207041979,
+        "sal_wref_c3": 0.15886451303958893,
+        "sal_wref_c4": 0.16266237199306488,
+        "sal_wref_c5": 0.17241743206977844
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2059.7978515625,
+        "gradnorm_l1_uncentered": 2481.24853515625,
+        "gradnorm_l2_centered": 4.7459540367126465,
+        "gradnorm_l2_uncentered": 6.681567192077637,
+        "sal_noref_c1": 36.4478645324707,
+        "sal_noref_c2": 18.367979049682617,
+        "sal_noref_c3": 12.282703399658203,
+        "sal_noref_c4": 9.564957618713379,
+        "sal_noref_c5": 7.7588090896606445,
+        "sal_wref_c1": 13.70931339263916,
+        "sal_wref_c2": 7.114434719085693,
+        "sal_wref_c3": 4.747574329376221,
+        "sal_wref_c4": 3.8627257347106934,
+        "sal_wref_c5": 3.37554931640625
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1804.1971435546875,
+        "gradnorm_l1_uncentered": 2227.53173828125,
+        "gradnorm_l2_centered": 4.193380355834961,
+        "gradnorm_l2_uncentered": 5.902644157409668,
+        "sal_noref_c1": 25.313966751098633,
+        "sal_noref_c2": 13.308390617370605,
+        "sal_noref_c3": 9.066930770874023,
+        "sal_noref_c4": 6.864316463470459,
+        "sal_noref_c5": 5.595890998840332,
+        "sal_wref_c1": 8.12324047088623,
+        "sal_wref_c2": 4.737468719482422,
+        "sal_wref_c3": 3.269761085510254,
+        "sal_wref_c4": 2.5089194774627686,
+        "sal_wref_c5": 2.19437837600708
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2599.185546875,
+        "gradnorm_l1_uncentered": 3047.51025390625,
+        "gradnorm_l2_centered": 5.2390007972717285,
+        "gradnorm_l2_uncentered": 6.82245397567749,
+        "sal_noref_c1": 31.415769577026367,
+        "sal_noref_c2": 20.24510383605957,
+        "sal_noref_c3": 13.507813453674316,
+        "sal_noref_c4": 10.146480560302734,
+        "sal_noref_c5": 8.1290283203125,
+        "sal_wref_c1": 13.149577140808105,
+        "sal_wref_c2": 10.806511878967285,
+        "sal_wref_c3": 7.232250213623047,
+        "sal_wref_c4": 5.430001735687256,
+        "sal_wref_c5": 4.4132490158081055
+      }
+    }
+  ]
+}

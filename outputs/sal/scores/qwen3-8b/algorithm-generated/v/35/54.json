@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "33.json",
+    "question_id": "114d5fd0-e2ae-4b6d-a65a-870da2d19c08",
+    "mistake_agent": "InformationExtraction_Expert",
+    "mistake_step": 8,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "In the endnote found in the second-to-last paragraph of page 11 of the book with the doi 10.2307/j.ctv9b2xdv, what date in November was the Wikipedia article accessed? Just give the day of the month."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DOI_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 639.1644287109375,
+        "gradnorm_l1_uncentered": 521.8109130859375,
+        "gradnorm_l2_centered": 1.1890782117843628,
+        "gradnorm_l2_uncentered": 1.5137079954147339,
+        "sal_noref_c1": 1.5918647050857544,
+        "sal_noref_c2": 0.8349375128746033,
+        "sal_noref_c3": 0.5866355895996094,
+        "sal_noref_c4": 0.44105643033981323,
+        "sal_noref_c5": 0.3563212752342224,
+        "sal_wref_c1": 0.9134423136711121,
+        "sal_wref_c2": 0.45806142687797546,
+        "sal_wref_c3": 0.3137970566749573,
+        "sal_wref_c4": 0.23536108434200287,
+        "sal_wref_c5": 0.18880096077919006
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "InformationExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 568.3710327148438,
+        "gradnorm_l1_uncentered": 525.0480346679688,
+        "gradnorm_l2_centered": 1.1517318487167358,
+        "gradnorm_l2_uncentered": 1.4045065641403198,
+        "sal_noref_c1": 1.491642951965332,
+        "sal_noref_c2": 0.7784256339073181,
+        "sal_noref_c3": 0.5270374417304993,
+        "sal_noref_c4": 0.4005314111709595,
+        "sal_noref_c5": 0.3231392204761505,
+        "sal_wref_c1": 0.9604549407958984,
+        "sal_wref_c2": 0.48046427965164185,
+        "sal_wref_c3": 0.3203781247138977,
+        "sal_wref_c4": 0.24142354726791382,
+        "sal_wref_c5": 0.19314835965633392
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 552.600341796875,
+        "gradnorm_l1_uncentered": 431.19024658203125,
+        "gradnorm_l2_centered": 1.2653566598892212,
+        "gradnorm_l2_uncentered": 1.3142492771148682,
+        "sal_noref_c1": 1.20413076877594,
+        "sal_noref_c2": 0.7095458507537842,
+        "sal_noref_c3": 0.4750118553638458,
+        "sal_noref_c4": 0.3617701828479767,
+        "sal_noref_c5": 0.28952649235725403,
+        "sal_wref_c1": 1.234963297843933,
+        "sal_wref_c2": 0.6537314057350159,
+        "sal_wref_c3": 0.4367409944534302,
+        "sal_wref_c4": 0.32904762029647827,
+        "sal_wref_c5": 0.2654770612716675
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DOI_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 564.9837646484375,
+        "gradnorm_l1_uncentered": 529.2467651367188,
+        "gradnorm_l2_centered": 1.3970940113067627,
+        "gradnorm_l2_uncentered": 1.155502438545227,
+        "sal_noref_c1": 0.9085590839385986,
+        "sal_noref_c2": 0.4519733786582947,
+        "sal_noref_c3": 0.3036603033542633,
+        "sal_noref_c4": 0.22879378497600555,
+        "sal_noref_c5": 0.1908726841211319,
+        "sal_wref_c1": 1.484788179397583,
+        "sal_wref_c2": 0.7534300088882446,
+        "sal_wref_c3": 0.5206394195556641,
+        "sal_wref_c4": 0.39193689823150635,
+        "sal_wref_c5": 0.3144887685775757
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "InformationExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 581.4315185546875,
+        "gradnorm_l1_uncentered": 509.18804931640625,
+        "gradnorm_l2_centered": 1.3475441932678223,
+        "gradnorm_l2_uncentered": 1.1974949836730957,
+        "sal_noref_c1": 0.9755845665931702,
+        "sal_noref_c2": 0.5200555920600891,
+        "sal_noref_c3": 0.347952276468277,
+        "sal_noref_c4": 0.26918190717697144,
+        "sal_noref_c5": 0.218003511428833,
+        "sal_wref_c1": 1.4649379253387451,
+        "sal_wref_c2": 0.7288386821746826,
+        "sal_wref_c3": 0.48893842101097107,
+        "sal_wref_c4": 0.3681275248527527,
+        "sal_wref_c5": 0.2954743206501007
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 985.021484375,
+        "gradnorm_l1_uncentered": 1194.500732421875,
+        "gradnorm_l2_centered": 1.5613079071044922,
+        "gradnorm_l2_uncentered": 2.607787847518921,
+        "sal_noref_c1": 4.221736907958984,
+        "sal_noref_c2": 2.507652521133423,
+        "sal_noref_c3": 1.7210474014282227,
+        "sal_noref_c4": 1.2908836603164673,
+        "sal_noref_c5": 1.040795087814331,
+        "sal_wref_c1": 0.03147176280617714,
+        "sal_wref_c2": 0.3290875554084778,
+        "sal_wref_c3": 0.28795433044433594,
+        "sal_wref_c4": 0.2195751965045929,
+        "sal_wref_c5": 0.17900745570659637
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DOI_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 648.8800048828125,
+        "gradnorm_l1_uncentered": 774.2977905273438,
+        "gradnorm_l2_centered": 1.0705701112747192,
+        "gradnorm_l2_uncentered": 1.9351551532745361,
+        "sal_noref_c1": 2.7094781398773193,
+        "sal_noref_c2": 1.4454522132873535,
+        "sal_noref_c3": 0.9647136330604553,
+        "sal_noref_c4": 0.7515481114387512,
+        "sal_noref_c5": 0.6135950684547424,
+        "sal_wref_c1": 0.34196895360946655,
+        "sal_wref_c2": 0.20811747014522552,
+        "sal_wref_c3": 0.1434122920036316,
+        "sal_wref_c4": 0.11854732781648636,
+        "sal_wref_c5": 0.0973973348736763
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "InformationExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 605.515869140625,
+        "gradnorm_l1_uncentered": 671.8077392578125,
+        "gradnorm_l2_centered": 1.1421711444854736,
+        "gradnorm_l2_uncentered": 1.7291254997253418,
+        "sal_noref_c1": 2.0720019340515137,
+        "sal_noref_c2": 1.0632585287094116,
+        "sal_noref_c3": 0.7266990542411804,
+        "sal_noref_c4": 0.5693844556808472,
+        "sal_noref_c5": 0.46828603744506836,
+        "sal_wref_c1": 0.6177433729171753,
+        "sal_wref_c2": 0.3088425397872925,
+        "sal_wref_c3": 0.20641718804836273,
+        "sal_wref_c4": 0.1649610698223114,
+        "sal_wref_c5": 0.13532090187072754
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "InformationExtraction_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 581.5248413085938,
+        "gradnorm_l1_uncentered": 736.6229248046875,
+        "gradnorm_l2_centered": 0.9881105422973633,
+        "gradnorm_l2_uncentered": 1.9598770141601562,
+        "sal_noref_c1": 2.936753988265991,
+        "sal_noref_c2": 1.5038707256317139,
+        "sal_noref_c3": 1.0076336860656738,
+        "sal_noref_c4": 0.7795934081077576,
+        "sal_noref_c5": 0.6304795145988464,
+        "sal_wref_c1": 0.257381796836853,
+        "sal_wref_c2": 0.1372348517179489,
+        "sal_wref_c3": 0.09216641634702682,
+        "sal_wref_c4": 0.07975169271230698,
+        "sal_wref_c5": 0.06575185060501099
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "InformationExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 706.292724609375,
+        "gradnorm_l1_uncentered": 881.0506591796875,
+        "gradnorm_l2_centered": 1.1450291872024536,
+        "gradnorm_l2_uncentered": 2.2565712928771973,
+        "sal_noref_c1": 3.642305612564087,
+        "sal_noref_c2": 1.8173768520355225,
+        "sal_noref_c3": 1.2498809099197388,
+        "sal_noref_c4": 0.9573798775672913,
+        "sal_noref_c5": 0.8151823878288269,
+        "sal_wref_c1": 0.10859361290931702,
+        "sal_wref_c2": 0.05620355159044266,
+        "sal_wref_c3": 0.042904648929834366,
+        "sal_wref_c4": 0.037507738918066025,
+        "sal_wref_c5": 0.053643785417079926
+      }
+    }
+  ]
+}

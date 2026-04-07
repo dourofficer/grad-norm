@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "49.json",
+    "question_id": "cffe0e32-c9a6-4c52-9877-78ceb4aaa9fb",
+    "mistake_agent": "Validation_Expert",
+    "mistake_step": 2,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "An office held a Secret Santa gift exchange where each of its twelve employees was assigned one other employee in the group to present with a gift. Each employee filled out a profile including three likes or hobbies. On the day of the gift exchange, only eleven gifts were given, each one specific to one of the recipient's interests. Based on the information in the document, who did not give a gift?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 628.089111328125,
+        "gradnorm_l1_uncentered": 486.164306640625,
+        "gradnorm_l2_centered": 1.204498529434204,
+        "gradnorm_l2_uncentered": 1.463781714439392,
+        "sal_noref_c1": 1.4833812713623047,
+        "sal_noref_c2": 0.7997256517410278,
+        "sal_noref_c3": 0.5586214661598206,
+        "sal_noref_c4": 0.4224904477596283,
+        "sal_noref_c5": 0.3401782512664795,
+        "sal_wref_c1": 1.0032670497894287,
+        "sal_wref_c2": 0.5101484060287476,
+        "sal_wref_c3": 0.34586024284362793,
+        "sal_wref_c4": 0.26035064458847046,
+        "sal_wref_c5": 0.2098250836133957
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1066.0098876953125,
+        "gradnorm_l1_uncentered": 1481.686279296875,
+        "gradnorm_l2_centered": 2.2959671020507812,
+        "gradnorm_l2_uncentered": 4.150125503540039,
+        "sal_noref_c1": 14.216063499450684,
+        "sal_noref_c2": 7.37608528137207,
+        "sal_noref_c3": 5.059511661529541,
+        "sal_noref_c4": 3.8021645545959473,
+        "sal_noref_c5": 3.042165517807007,
+        "sal_wref_c1": 2.2911553382873535,
+        "sal_wref_c2": 1.438828706741333,
+        "sal_wref_c3": 1.0959004163742065,
+        "sal_wref_c4": 0.8512926697731018,
+        "sal_wref_c5": 0.6832496523857117
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 655.384765625,
+        "gradnorm_l1_uncentered": 911.201171875,
+        "gradnorm_l2_centered": 1.0589134693145752,
+        "gradnorm_l2_uncentered": 2.216862916946411,
+        "sal_noref_c1": 3.762162446975708,
+        "sal_noref_c2": 1.9545469284057617,
+        "sal_noref_c3": 1.304256558418274,
+        "sal_noref_c4": 0.9917528629302979,
+        "sal_noref_c5": 0.7941253185272217,
+        "sal_wref_c1": 0.07133865356445312,
+        "sal_wref_c2": 0.07583242654800415,
+        "sal_wref_c3": 0.060854244977235794,
+        "sal_wref_c4": 0.05144963786005974,
+        "sal_wref_c5": 0.0412464402616024
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 845.69189453125,
+        "gradnorm_l1_uncentered": 1014.3470458984375,
+        "gradnorm_l2_centered": 1.4183268547058105,
+        "gradnorm_l2_uncentered": 2.483064889907837,
+        "sal_noref_c1": 4.033411026000977,
+        "sal_noref_c2": 2.3626868724823,
+        "sal_noref_c3": 1.6140202283859253,
+        "sal_noref_c4": 1.2135850191116333,
+        "sal_noref_c5": 0.9733349680900574,
+        "sal_wref_c1": 0.0488230362534523,
+        "sal_wref_c2": 0.2888312041759491,
+        "sal_wref_c3": 0.25241971015930176,
+        "sal_wref_c4": 0.18937073647975922,
+        "sal_wref_c5": 0.15150609612464905
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 563.114990234375,
+        "gradnorm_l1_uncentered": 475.1219482421875,
+        "gradnorm_l2_centered": 1.354140043258667,
+        "gradnorm_l2_uncentered": 1.099119782447815,
+        "sal_noref_c1": 0.8909341096878052,
+        "sal_noref_c2": 0.45773014426231384,
+        "sal_noref_c3": 0.30528125166893005,
+        "sal_noref_c4": 0.23116904497146606,
+        "sal_noref_c5": 0.18808777630329132,
+        "sal_wref_c1": 1.533073902130127,
+        "sal_wref_c2": 0.7602018713951111,
+        "sal_wref_c3": 0.5154328346252441,
+        "sal_wref_c4": 0.38665851950645447,
+        "sal_wref_c5": 0.3114583492279053
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1253.74267578125,
+        "gradnorm_l1_uncentered": 1478.8988037109375,
+        "gradnorm_l2_centered": 2.4184608459472656,
+        "gradnorm_l2_uncentered": 3.7436716556549072,
+        "sal_noref_c1": 8.235774040222168,
+        "sal_noref_c2": 5.165724754333496,
+        "sal_noref_c3": 3.4599387645721436,
+        "sal_noref_c4": 2.6371846199035645,
+        "sal_noref_c5": 2.1124913692474365,
+        "sal_wref_c1": 0.3173823058605194,
+        "sal_wref_c2": 1.103704810142517,
+        "sal_wref_c3": 0.7702135443687439,
+        "sal_wref_c4": 0.600674569606781,
+        "sal_wref_c5": 0.4807732105255127
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 575.80078125,
+        "gradnorm_l1_uncentered": 310.4678039550781,
+        "gradnorm_l2_centered": 1.660360336303711,
+        "gradnorm_l2_uncentered": 0.7109613418579102,
+        "sal_noref_c1": 0.33750513195991516,
+        "sal_noref_c2": 0.17860917747020721,
+        "sal_noref_c3": 0.12040557712316513,
+        "sal_noref_c4": 0.09191127866506577,
+        "sal_noref_c5": 0.07493095099925995,
+        "sal_wref_c1": 2.522808074951172,
+        "sal_wref_c2": 1.2518541812896729,
+        "sal_wref_c3": 0.8487383723258972,
+        "sal_wref_c4": 0.6369221806526184,
+        "sal_wref_c5": 0.5129145383834839
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 626.626220703125,
+        "gradnorm_l1_uncentered": 201.49041748046875,
+        "gradnorm_l2_centered": 2.0166282653808594,
+        "gradnorm_l2_uncentered": 0.42002055048942566,
+        "sal_noref_c1": 0.0490536130964756,
+        "sal_noref_c2": 0.02969929575920105,
+        "sal_noref_c3": 0.019839880988001823,
+        "sal_noref_c4": 0.018487580120563507,
+        "sal_noref_c5": 0.017670445144176483,
+        "sal_wref_c1": 3.7053897380828857,
+        "sal_wref_c2": 1.8922983407974243,
+        "sal_wref_c3": 1.266476035118103,
+        "sal_wref_c4": 0.9641736149787903,
+        "sal_wref_c5": 0.7794367671012878
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 592.79248046875,
+        "gradnorm_l1_uncentered": 242.83876037597656,
+        "gradnorm_l2_centered": 1.7076451778411865,
+        "gradnorm_l2_uncentered": 0.6370047926902771,
+        "sal_noref_c1": 0.2637330889701843,
+        "sal_noref_c2": 0.14638645946979523,
+        "sal_noref_c3": 0.09800535440444946,
+        "sal_noref_c4": 0.07675839215517044,
+        "sal_noref_c5": 0.06363873928785324,
+        "sal_wref_c1": 2.7739202976226807,
+        "sal_wref_c2": 1.3745410442352295,
+        "sal_wref_c3": 0.9213604927062988,
+        "sal_wref_c4": 0.6910214424133301,
+        "sal_wref_c5": 0.5569828748703003
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 580.3351440429688,
+        "gradnorm_l1_uncentered": 170.24722290039062,
+        "gradnorm_l2_centered": 1.9179918766021729,
+        "gradnorm_l2_uncentered": 0.43895047903060913,
+        "sal_noref_c1": 0.09838500618934631,
+        "sal_noref_c2": 0.05835443735122681,
+        "sal_noref_c3": 0.038910817354917526,
+        "sal_noref_c4": 0.03314226493239403,
+        "sal_noref_c5": 0.03130004554986954,
+        "sal_wref_c1": 3.3578765392303467,
+        "sal_wref_c2": 1.7302418947219849,
+        "sal_wref_c3": 1.1590954065322876,
+        "sal_wref_c4": 0.8851349949836731,
+        "sal_wref_c5": 0.7144367694854736
+      }
+    }
+  ]
+}

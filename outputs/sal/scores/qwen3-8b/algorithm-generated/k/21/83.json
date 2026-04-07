@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "6.json",
+    "question_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+    "mistake_agent": "Literary_Analysis_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In Emily Midkiff's June 2014 article in a journal named for the one of Hreidmar's sons that guarded his house, what word was quoted from two different authors in distaste for the nature of dragon depictions?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "NorseMythology_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 738.33251953125,
+        "gradnorm_l1_uncentered": 510.20538330078125,
+        "gradnorm_l2_centered": 1.6563712358474731,
+        "gradnorm_l2_uncentered": 1.842039942741394,
+        "sal_noref_c1": 0.784853458404541,
+        "sal_noref_c2": 0.7682552337646484,
+        "sal_noref_c3": 0.5533993244171143,
+        "sal_noref_c4": 0.4283088445663452,
+        "sal_noref_c5": 0.3445805013179779,
+        "sal_wref_c1": 0.5686092376708984,
+        "sal_wref_c2": 0.2995719313621521,
+        "sal_wref_c3": 0.3986230790615082,
+        "sal_wref_c4": 0.3122614324092865,
+        "sal_wref_c5": 0.2498631775379181
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Literary_Analysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 706.2197265625,
+        "gradnorm_l1_uncentered": 516.39306640625,
+        "gradnorm_l2_centered": 1.640162706375122,
+        "gradnorm_l2_uncentered": 1.3665266036987305,
+        "sal_noref_c1": 0.49299970269203186,
+        "sal_noref_c2": 0.27822282910346985,
+        "sal_noref_c3": 0.18959437310695648,
+        "sal_noref_c4": 0.197854682803154,
+        "sal_noref_c5": 0.17005611956119537,
+        "sal_wref_c1": 0.24059443175792694,
+        "sal_wref_c2": 0.5661629438400269,
+        "sal_wref_c3": 0.5718399882316589,
+        "sal_wref_c4": 0.4298563301563263,
+        "sal_wref_c5": 0.3542802035808563
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 649.6355590820312,
+        "gradnorm_l1_uncentered": 310.39422607421875,
+        "gradnorm_l2_centered": 1.795727014541626,
+        "gradnorm_l2_uncentered": 1.0301235914230347,
+        "sal_noref_c1": 0.0008679616148583591,
+        "sal_noref_c2": 0.23009458184242249,
+        "sal_noref_c3": 0.20234334468841553,
+        "sal_noref_c4": 0.1540333777666092,
+        "sal_noref_c5": 0.1267162412405014,
+        "sal_wref_c1": 2.2370574474334717,
+        "sal_wref_c2": 1.1926984786987305,
+        "sal_wref_c3": 0.8066096305847168,
+        "sal_wref_c4": 0.6294968128204346,
+        "sal_wref_c5": 0.5128583908081055
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Literary_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 731.26171875,
+        "gradnorm_l1_uncentered": 556.2332153320312,
+        "gradnorm_l2_centered": 1.6513397693634033,
+        "gradnorm_l2_uncentered": 1.514890432357788,
+        "sal_noref_c1": 0.2873660624027252,
+        "sal_noref_c2": 0.6430281400680542,
+        "sal_noref_c3": 0.42877745628356934,
+        "sal_noref_c4": 0.3224910497665405,
+        "sal_noref_c5": 0.25853216648101807,
+        "sal_wref_c1": 1.2760735750198364,
+        "sal_wref_c2": 0.6433948874473572,
+        "sal_wref_c3": 0.4885616600513458,
+        "sal_wref_c4": 0.4210023283958435,
+        "sal_wref_c5": 0.3376646041870117
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Literary_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1028.6123046875,
+        "gradnorm_l1_uncentered": 1119.2880859375,
+        "gradnorm_l2_centered": 2.069122791290283,
+        "gradnorm_l2_uncentered": 2.4077157974243164,
+        "sal_noref_c1": 0.8008495569229126,
+        "sal_noref_c2": 1.1623419523239136,
+        "sal_noref_c3": 0.8713328242301941,
+        "sal_noref_c4": 0.6539802551269531,
+        "sal_noref_c5": 0.5247994661331177,
+        "sal_wref_c1": 0.9745263457298279,
+        "sal_wref_c2": 0.5515480041503906,
+        "sal_wref_c3": 0.3787597119808197,
+        "sal_wref_c4": 0.30849823355674744,
+        "sal_wref_c5": 0.25667330622673035
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Literary_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1290.8846435546875,
+        "gradnorm_l1_uncentered": 1457.443603515625,
+        "gradnorm_l2_centered": 3.426448345184326,
+        "gradnorm_l2_uncentered": 4.100368022918701,
+        "sal_noref_c1": 2.595207452774048,
+        "sal_noref_c2": 5.030087947845459,
+        "sal_noref_c3": 3.4069411754608154,
+        "sal_noref_c4": 2.584028720855713,
+        "sal_noref_c5": 2.076115131378174,
+        "sal_wref_c1": 0.8698535561561584,
+        "sal_wref_c2": 2.488776683807373,
+        "sal_wref_c3": 1.7214206457138062,
+        "sal_wref_c4": 1.334128499031067,
+        "sal_wref_c5": 1.0830265283584595
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 985.5345458984375,
+        "gradnorm_l1_uncentered": 1019.203857421875,
+        "gradnorm_l2_centered": 2.246333122253418,
+        "gradnorm_l2_uncentered": 2.9757728576660156,
+        "sal_noref_c1": 3.574578285217285,
+        "sal_noref_c2": 2.0368354320526123,
+        "sal_noref_c3": 1.3913979530334473,
+        "sal_noref_c4": 1.0653579235076904,
+        "sal_noref_c5": 0.853906512260437,
+        "sal_wref_c1": 0.04277358576655388,
+        "sal_wref_c2": 0.11242195218801498,
+        "sal_wref_c3": 0.19339574873447418,
+        "sal_wref_c4": 0.14550331234931946,
+        "sal_wref_c5": 0.11807365715503693
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7041.42333984375,
+        "gradnorm_l1_uncentered": 7357.61474609375,
+        "gradnorm_l2_centered": 16.611913681030273,
+        "gradnorm_l2_uncentered": 17.00255012512207,
+        "sal_noref_c1": 66.80484008789062,
+        "sal_noref_c2": 75.37223052978516,
+        "sal_noref_c3": 50.28399658203125,
+        "sal_noref_c4": 40.060848236083984,
+        "sal_noref_c5": 36.16057205200195,
+        "sal_wref_c1": 103.96041870117188,
+        "sal_wref_c2": 68.39555358886719,
+        "sal_wref_c3": 45.61142349243164,
+        "sal_wref_c4": 37.062862396240234,
+        "sal_wref_c5": 32.92401885986328
+      }
+    }
+  ]
+}

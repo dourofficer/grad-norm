@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "2.json",
+    "question_id": "cf106601-ab4f-4af9-b045-5295fe67b37d",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 2,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "What country had the least number of athletes at the 1928 Summer Olympics? If there's a tie for a number of athletes, return the first in alphabetical order. Give the IOC country code as your answer."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 865.2860107421875,
+        "gradnorm_l1_uncentered": 501.2664794921875,
+        "gradnorm_l2_centered": 1.6636873483657837,
+        "gradnorm_l2_uncentered": 1.0543403625488281,
+        "sal_noref_c1": 0.08430778980255127,
+        "sal_noref_c2": 0.12452997267246246,
+        "sal_noref_c3": 0.08614105731248856,
+        "sal_noref_c4": 0.07788418233394623,
+        "sal_noref_c5": 0.06559900939464569,
+        "sal_wref_c1": 1.7255175113677979,
+        "sal_wref_c2": 0.9270484447479248,
+        "sal_wref_c3": 0.6187360286712646,
+        "sal_wref_c4": 0.4813989996910095,
+        "sal_wref_c5": 0.39018553495407104
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2463.408447265625,
+        "gradnorm_l1_uncentered": 2749.861083984375,
+        "gradnorm_l2_centered": 4.823245048522949,
+        "gradnorm_l2_uncentered": 5.688447952270508,
+        "sal_noref_c1": 8.273295402526855,
+        "sal_noref_c2": 6.871282577514648,
+        "sal_noref_c3": 4.648434638977051,
+        "sal_noref_c4": 3.8679380416870117,
+        "sal_noref_c5": 3.501448154449463,
+        "sal_wref_c1": 0.5235087871551514,
+        "sal_wref_c2": 2.2508931159973145,
+        "sal_wref_c3": 1.711140751838684,
+        "sal_wref_c4": 1.5572659969329834,
+        "sal_wref_c5": 1.625237226486206
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 819.9078979492188,
+        "gradnorm_l1_uncentered": 572.16796875,
+        "gradnorm_l2_centered": 1.5427511930465698,
+        "gradnorm_l2_uncentered": 1.0303635597229004,
+        "sal_noref_c1": 0.1672954112291336,
+        "sal_noref_c2": 0.11412917822599411,
+        "sal_noref_c3": 0.08677644282579422,
+        "sal_noref_c4": 0.06538491696119308,
+        "sal_noref_c5": 0.05280565470457077,
+        "sal_wref_c1": 1.3872708082199097,
+        "sal_wref_c2": 0.8377810120582581,
+        "sal_wref_c3": 0.5593558549880981,
+        "sal_wref_c4": 0.4232329726219177,
+        "sal_wref_c5": 0.3386010527610779
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1817.7060546875,
+        "gradnorm_l1_uncentered": 2054.6064453125,
+        "gradnorm_l2_centered": 2.8525896072387695,
+        "gradnorm_l2_uncentered": 3.607102870941162,
+        "sal_noref_c1": 4.06162166595459,
+        "sal_noref_c2": 2.7646870613098145,
+        "sal_noref_c3": 1.9461230039596558,
+        "sal_noref_c4": 1.5247818231582642,
+        "sal_noref_c5": 1.2500190734863281,
+        "sal_wref_c1": 0.03138935938477516,
+        "sal_wref_c2": 0.3047426640987396,
+        "sal_wref_c3": 0.2711203396320343,
+        "sal_wref_c4": 0.2655891478061676,
+        "sal_wref_c5": 0.21376565098762512
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Statistics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1466.15673828125,
+        "gradnorm_l1_uncentered": 1612.852294921875,
+        "gradnorm_l2_centered": 2.3607282638549805,
+        "gradnorm_l2_uncentered": 2.885270118713379,
+        "sal_noref_c1": 2.0566623210906982,
+        "sal_noref_c2": 1.226416826248169,
+        "sal_noref_c3": 0.9330137372016907,
+        "sal_noref_c4": 0.6998409628868103,
+        "sal_noref_c5": 0.5789148211479187,
+        "sal_wref_c1": 0.09714387357234955,
+        "sal_wref_c2": 0.04979599639773369,
+        "sal_wref_c3": 0.05892527103424072,
+        "sal_wref_c4": 0.0546308271586895,
+        "sal_wref_c5": 0.04924580082297325
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3221.20263671875,
+        "gradnorm_l1_uncentered": 3550.442138671875,
+        "gradnorm_l2_centered": 5.216732025146484,
+        "gradnorm_l2_uncentered": 5.989123821258545,
+        "sal_noref_c1": 12.37880802154541,
+        "sal_noref_c2": 6.285024166107178,
+        "sal_noref_c3": 4.303844928741455,
+        "sal_noref_c4": 3.2960598468780518,
+        "sal_noref_c5": 2.6424455642700195,
+        "sal_wref_c1": 3.8556394577026367,
+        "sal_wref_c2": 2.18011736869812,
+        "sal_wref_c3": 1.4800420999526978,
+        "sal_wref_c4": 1.1520178318023682,
+        "sal_wref_c5": 0.9452770948410034
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8365.40234375,
+        "gradnorm_l1_uncentered": 8699.935546875,
+        "gradnorm_l2_centered": 14.296568870544434,
+        "gradnorm_l2_uncentered": 15.06064224243164,
+        "sal_noref_c1": 90.35222625732422,
+        "sal_noref_c2": 64.01551818847656,
+        "sal_noref_c3": 43.12895202636719,
+        "sal_noref_c4": 32.3934440612793,
+        "sal_noref_c5": 25.930334091186523,
+        "sal_wref_c1": 84.01017761230469,
+        "sal_wref_c2": 52.9619140625,
+        "sal_wref_c3": 35.673362731933594,
+        "sal_wref_c4": 26.922571182250977,
+        "sal_wref_c5": 21.743858337402344
+      }
+    }
+  ]
+}

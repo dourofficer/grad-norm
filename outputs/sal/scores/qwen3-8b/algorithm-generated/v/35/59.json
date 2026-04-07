@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "38.json",
+    "question_id": "305ac316-eef6-4446-960a-92d80d542f82",
+    "mistake_agent": "Polish_TV_Series_Expert",
+    "mistake_step": 2,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Who did the actor who played Ray in the Polish-language version of Everybody Loves Raymond play in Magda M.? Give only the first name."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Polish_TV_Series_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 674.080078125,
+        "gradnorm_l1_uncentered": 633.299560546875,
+        "gradnorm_l2_centered": 1.1424260139465332,
+        "gradnorm_l2_uncentered": 1.8230105638504028,
+        "sal_noref_c1": 2.2997031211853027,
+        "sal_noref_c2": 1.2136056423187256,
+        "sal_noref_c3": 0.8622434735298157,
+        "sal_noref_c4": 0.6470357179641724,
+        "sal_noref_c5": 0.5182861089706421,
+        "sal_wref_c1": 0.5042359828948975,
+        "sal_wref_c2": 0.2690054178237915,
+        "sal_wref_c3": 0.20581816136837006,
+        "sal_wref_c4": 0.154446542263031,
+        "sal_wref_c5": 0.12823346257209778
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "PolishLanguage_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 634.0,
+        "gradnorm_l1_uncentered": 673.9852294921875,
+        "gradnorm_l2_centered": 1.074937105178833,
+        "gradnorm_l2_uncentered": 1.7131450176239014,
+        "sal_noref_c1": 2.177536725997925,
+        "sal_noref_c2": 1.1099061965942383,
+        "sal_noref_c3": 0.7578954696655273,
+        "sal_noref_c4": 0.5754414200782776,
+        "sal_noref_c5": 0.461590051651001,
+        "sal_wref_c1": 0.5366595983505249,
+        "sal_wref_c2": 0.2681642472743988,
+        "sal_wref_c3": 0.18154723942279816,
+        "sal_wref_c4": 0.13889533281326294,
+        "sal_wref_c5": 0.11113481223583221
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Polish_TV_Series_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1087.135986328125,
+        "gradnorm_l1_uncentered": 1285.3046875,
+        "gradnorm_l2_centered": 1.6531376838684082,
+        "gradnorm_l2_uncentered": 2.4265246391296387,
+        "sal_noref_c1": 3.234267234802246,
+        "sal_noref_c2": 1.6203416585922241,
+        "sal_noref_c3": 1.0820605754852295,
+        "sal_noref_c4": 0.8188269734382629,
+        "sal_noref_c5": 0.6756422519683838,
+        "sal_wref_c1": 0.16078436374664307,
+        "sal_wref_c2": 0.08026064187288284,
+        "sal_wref_c3": 0.07003984600305557,
+        "sal_wref_c4": 0.052673984318971634,
+        "sal_wref_c5": 0.042669374495744705
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Polish_TV_Series_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1358.6943359375,
+        "gradnorm_l1_uncentered": 1636.731201171875,
+        "gradnorm_l2_centered": 2.017890691757202,
+        "gradnorm_l2_uncentered": 2.9942495822906494,
+        "sal_noref_c1": 4.902769565582275,
+        "sal_noref_c2": 2.522761344909668,
+        "sal_noref_c3": 1.7928184270858765,
+        "sal_noref_c4": 1.3448338508605957,
+        "sal_noref_c5": 1.0856616497039795,
+        "sal_wref_c1": 0.001103140297345817,
+        "sal_wref_c2": 0.052291058003902435,
+        "sal_wref_c3": 0.16798625886440277,
+        "sal_wref_c4": 0.13702692091464996,
+        "sal_wref_c5": 0.12400336563587189
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1521.54443359375,
+        "gradnorm_l1_uncentered": 1922.026611328125,
+        "gradnorm_l2_centered": 3.2812774181365967,
+        "gradnorm_l2_uncentered": 5.185353755950928,
+        "sal_noref_c1": 22.094938278198242,
+        "sal_noref_c2": 11.459074974060059,
+        "sal_noref_c3": 7.642175197601318,
+        "sal_noref_c4": 5.913638114929199,
+        "sal_noref_c5": 4.742177963256836,
+        "sal_wref_c1": 5.801417350769043,
+        "sal_wref_c2": 3.3899753093719482,
+        "sal_wref_c3": 2.260146379470825,
+        "sal_wref_c4": 1.8681672811508179,
+        "sal_wref_c5": 1.5357394218444824
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Polish_TV_Series_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3933.921142578125,
+        "gradnorm_l1_uncentered": 4434.23046875,
+        "gradnorm_l2_centered": 7.3257832527160645,
+        "gradnorm_l2_uncentered": 9.178853034973145,
+        "sal_noref_c1": 68.25428009033203,
+        "sal_noref_c2": 34.19873046875,
+        "sal_noref_c3": 23.60491180419922,
+        "sal_noref_c4": 17.863689422607422,
+        "sal_noref_c5": 14.81725025177002,
+        "sal_wref_c1": 39.55316925048828,
+        "sal_wref_c2": 19.67854881286621,
+        "sal_wref_c3": 13.638107299804688,
+        "sal_wref_c4": 10.488426208496094,
+        "sal_wref_c5": 8.713088035583496
+      }
+    }
+  ]
+}

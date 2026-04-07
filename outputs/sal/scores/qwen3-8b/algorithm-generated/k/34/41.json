@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "21.json",
+    "question_id": "ed58682d-bc52-4baa-9eb0-4eb81e1edacc",
+    "mistake_agent": "Lyrics_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What is the last word before the second chorus of the King of Pop's fifth single from his sixth studio album?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Lyrics_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1020.298095703125,
+        "gradnorm_l1_uncentered": 622.181396484375,
+        "gradnorm_l2_centered": 1.9872928857803345,
+        "gradnorm_l2_uncentered": 1.4610702991485596,
+        "sal_noref_c1": 0.5170562267303467,
+        "sal_noref_c2": 0.2909517288208008,
+        "sal_noref_c3": 0.1956654191017151,
+        "sal_noref_c4": 0.16486456990242004,
+        "sal_noref_c5": 0.13434013724327087,
+        "sal_wref_c1": 2.5006778240203857,
+        "sal_wref_c2": 1.2575104236602783,
+        "sal_wref_c3": 0.8385831713676453,
+        "sal_wref_c4": 0.6480439305305481,
+        "sal_wref_c5": 0.5187912583351135
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "MusicHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1131.764404296875,
+        "gradnorm_l1_uncentered": 921.2882080078125,
+        "gradnorm_l2_centered": 2.2611098289489746,
+        "gradnorm_l2_uncentered": 2.327359437942505,
+        "sal_noref_c1": 1.3795465230941772,
+        "sal_noref_c2": 0.9898867607116699,
+        "sal_noref_c3": 0.6913344860076904,
+        "sal_noref_c4": 0.5552816390991211,
+        "sal_noref_c5": 0.47739067673683167,
+        "sal_wref_c1": 1.289527416229248,
+        "sal_wref_c2": 0.8777960538864136,
+        "sal_wref_c3": 0.6277499794960022,
+        "sal_wref_c4": 0.5199536085128784,
+        "sal_wref_c5": 0.45110076665878296
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Lyrics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1401.43994140625,
+        "gradnorm_l1_uncentered": 1714.0992431640625,
+        "gradnorm_l2_centered": 3.100022792816162,
+        "gradnorm_l2_uncentered": 4.109982967376709,
+        "sal_noref_c1": 7.049259185791016,
+        "sal_noref_c2": 4.81011962890625,
+        "sal_noref_c3": 3.2210729122161865,
+        "sal_noref_c4": 2.4905149936676025,
+        "sal_noref_c5": 2.0040831565856934,
+        "sal_wref_c1": 0.09217097610235214,
+        "sal_wref_c2": 1.2485281229019165,
+        "sal_wref_c3": 0.842197835445404,
+        "sal_wref_c4": 0.6785845756530762,
+        "sal_wref_c5": 0.5591805577278137
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Linguistics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1052.697509765625,
+        "gradnorm_l1_uncentered": 1209.664306640625,
+        "gradnorm_l2_centered": 2.0218849182128906,
+        "gradnorm_l2_uncentered": 2.5633537769317627,
+        "sal_noref_c1": 2.7700257301330566,
+        "sal_noref_c2": 1.5782403945922852,
+        "sal_noref_c3": 1.0541657209396362,
+        "sal_noref_c4": 0.8363186717033386,
+        "sal_noref_c5": 0.6778969168663025,
+        "sal_wref_c1": 0.404897004365921,
+        "sal_wref_c2": 0.3531748056411743,
+        "sal_wref_c3": 0.23599521815776825,
+        "sal_wref_c4": 0.2048318088054657,
+        "sal_wref_c5": 0.17007562518119812
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Lyrics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1991.9310302734375,
+        "gradnorm_l1_uncentered": 2535.51025390625,
+        "gradnorm_l2_centered": 4.3738813400268555,
+        "gradnorm_l2_uncentered": 5.667111396789551,
+        "sal_noref_c1": 16.007705688476562,
+        "sal_noref_c2": 8.067399024963379,
+        "sal_noref_c3": 5.400482177734375,
+        "sal_noref_c4": 4.050586700439453,
+        "sal_noref_c5": 3.3123207092285156,
+        "sal_wref_c1": 2.9910521507263184,
+        "sal_wref_c2": 1.5745022296905518,
+        "sal_wref_c3": 1.0678123235702515,
+        "sal_wref_c4": 0.8159634470939636,
+        "sal_wref_c5": 0.6891542077064514
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Lyrics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5889.51416015625,
+        "gradnorm_l1_uncentered": 6608.67138671875,
+        "gradnorm_l2_centered": 10.844202995300293,
+        "gradnorm_l2_uncentered": 12.443404197692871,
+        "sal_noref_c1": 90.04084014892578,
+        "sal_noref_c2": 47.58864212036133,
+        "sal_noref_c3": 32.568538665771484,
+        "sal_noref_c4": 24.773242950439453,
+        "sal_noref_c5": 20.86794662475586,
+        "sal_wref_c1": 54.161888122558594,
+        "sal_wref_c2": 29.4494686126709,
+        "sal_wref_c3": 20.575773239135742,
+        "sal_wref_c4": 15.931490898132324,
+        "sal_wref_c5": 13.786794662475586
+      }
+    }
+  ]
+}

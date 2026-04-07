@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "86.json",
+    "question_id": "72e110e7-464c-453c-a309-90a95aed6538",
+    "mistake_agent": "Library_Database_Expert",
+    "mistake_step": 0,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Under DDC 633 on Bielefeld University Library's BASE, as of 2020, from what country was the unknown language article with a flag unique from the others?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Library_Database_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 802.8231811523438,
+        "gradnorm_l1_uncentered": 356.05499267578125,
+        "gradnorm_l2_centered": 1.5979257822036743,
+        "gradnorm_l2_uncentered": 0.7221881747245789,
+        "sal_noref_c1": 0.051585450768470764,
+        "sal_noref_c2": 0.05904565751552582,
+        "sal_noref_c3": 0.041149746626615524,
+        "sal_noref_c4": 0.038763031363487244,
+        "sal_noref_c5": 0.03245622664690018,
+        "sal_wref_c1": 1.7913519144058228,
+        "sal_wref_c2": 1.0297491550445557,
+        "sal_wref_c3": 0.68977952003479,
+        "sal_wref_c4": 0.5311306715011597,
+        "sal_wref_c5": 0.4262838363647461
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1106.105224609375,
+        "gradnorm_l1_uncentered": 743.3135986328125,
+        "gradnorm_l2_centered": 1.9533675909042358,
+        "gradnorm_l2_uncentered": 1.0776443481445312,
+        "sal_noref_c1": 0.013517000712454319,
+        "sal_noref_c2": 0.01258116401731968,
+        "sal_noref_c3": 0.008548575453460217,
+        "sal_noref_c4": 0.006435101386159658,
+        "sal_noref_c5": 0.005150395445525646,
+        "sal_wref_c1": 1.9521567821502686,
+        "sal_wref_c2": 1.1977953910827637,
+        "sal_wref_c3": 0.8078513145446777,
+        "sal_wref_c4": 0.6072286367416382,
+        "sal_wref_c5": 0.48944005370140076
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "NaturalLanguageProcessing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 870.8662109375,
+        "gradnorm_l1_uncentered": 644.7449951171875,
+        "gradnorm_l2_centered": 1.6679247617721558,
+        "gradnorm_l2_uncentered": 1.1486026048660278,
+        "sal_noref_c1": 0.15648365020751953,
+        "sal_noref_c2": 0.11309985816478729,
+        "sal_noref_c3": 0.07556139677762985,
+        "sal_noref_c4": 0.05667644366621971,
+        "sal_noref_c5": 0.0467151440680027,
+        "sal_wref_c1": 1.3856369256973267,
+        "sal_wref_c2": 0.8080308437347412,
+        "sal_wref_c3": 0.5528862476348877,
+        "sal_wref_c4": 0.4152696132659912,
+        "sal_wref_c5": 0.33373814821243286
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 846.4769897460938,
+        "gradnorm_l1_uncentered": 518.4458618164062,
+        "gradnorm_l2_centered": 1.6556109189987183,
+        "gradnorm_l2_uncentered": 0.969704806804657,
+        "sal_noref_c1": 0.08339197933673859,
+        "sal_noref_c2": 0.08239148557186127,
+        "sal_noref_c3": 0.06373053044080734,
+        "sal_noref_c4": 0.05085808411240578,
+        "sal_noref_c5": 0.04370051249861717,
+        "sal_wref_c1": 1.6531325578689575,
+        "sal_wref_c2": 0.9449012279510498,
+        "sal_wref_c3": 0.6314216256141663,
+        "sal_wref_c4": 0.4735928773880005,
+        "sal_wref_c5": 0.38211381435394287
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 863.2086791992188,
+        "gradnorm_l1_uncentered": 628.3670043945312,
+        "gradnorm_l2_centered": 1.6331435441970825,
+        "gradnorm_l2_uncentered": 1.0841646194458008,
+        "sal_noref_c1": 0.14366033673286438,
+        "sal_noref_c2": 0.10428523272275925,
+        "sal_noref_c3": 0.07048448175191879,
+        "sal_noref_c4": 0.05313003435730934,
+        "sal_noref_c5": 0.043040670454502106,
+        "sal_wref_c1": 1.4315050840377808,
+        "sal_wref_c2": 0.8440139293670654,
+        "sal_wref_c3": 0.5698930621147156,
+        "sal_wref_c4": 0.42772895097732544,
+        "sal_wref_c5": 0.34242138266563416
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Library_Database_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 865.7239379882812,
+        "gradnorm_l1_uncentered": 643.0960083007812,
+        "gradnorm_l2_centered": 1.6143935918807983,
+        "gradnorm_l2_uncentered": 1.1239581108093262,
+        "sal_noref_c1": 0.1650252789258957,
+        "sal_noref_c2": 0.12291591614484787,
+        "sal_noref_c3": 0.08226198703050613,
+        "sal_noref_c4": 0.06191519647836685,
+        "sal_noref_c5": 0.054142437875270844,
+        "sal_wref_c1": 1.3937283754348755,
+        "sal_wref_c2": 0.8098112344741821,
+        "sal_wref_c3": 0.5578381419181824,
+        "sal_wref_c4": 0.4185972809791565,
+        "sal_wref_c5": 0.3367350995540619
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Library_Database_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4356.294921875,
+        "gradnorm_l1_uncentered": 4722.115234375,
+        "gradnorm_l2_centered": 8.511877059936523,
+        "gradnorm_l2_uncentered": 9.496397018432617,
+        "sal_noref_c1": 35.84671401977539,
+        "sal_noref_c2": 18.36411476135254,
+        "sal_noref_c3": 14.458985328674316,
+        "sal_noref_c4": 12.171476364135742,
+        "sal_noref_c5": 10.038347244262695,
+        "sal_wref_c1": 16.998323440551758,
+        "sal_wref_c2": 9.944170951843262,
+        "sal_wref_c3": 8.413203239440918,
+        "sal_wref_c4": 7.863994598388672,
+        "sal_wref_c5": 6.346384525299072
+      }
+    }
+  ]
+}

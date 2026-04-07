@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "82.json",
+    "question_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+    "mistake_agent": "Marathon_Expert",
+    "mistake_step": 4,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "If Eliud Kipchoge could maintain his record-making marathon pace indefinitely, how many thousand hours would it take him to run the distance between the Earth and the Moon its closest approach? Please use the minimum perigee value on the Wikipedia page for the Moon when carrying out your calculation. Round your result to the nearest 1000 hours and do not use any comma separators if necessary."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Marathon_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 866.7638549804688,
+        "gradnorm_l1_uncentered": 498.9518127441406,
+        "gradnorm_l2_centered": 1.633352279663086,
+        "gradnorm_l2_uncentered": 1.068035364151001,
+        "sal_noref_c1": 0.10505635291337967,
+        "sal_noref_c2": 0.1345786154270172,
+        "sal_noref_c3": 0.09330559521913528,
+        "sal_noref_c4": 0.07788557559251785,
+        "sal_noref_c5": 0.06397486478090286,
+        "sal_wref_c1": 1.6468929052352905,
+        "sal_wref_c2": 0.887452244758606,
+        "sal_wref_c3": 0.5926341414451599,
+        "sal_wref_c4": 0.45696520805358887,
+        "sal_wref_c5": 0.3700048327445984
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "CelestialPhysics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 884.67333984375,
+        "gradnorm_l1_uncentered": 554.2916259765625,
+        "gradnorm_l2_centered": 1.6364011764526367,
+        "gradnorm_l2_uncentered": 1.0269159078598022,
+        "sal_noref_c1": 0.10524655878543854,
+        "sal_noref_c2": 0.10697949677705765,
+        "sal_noref_c3": 0.07328689843416214,
+        "sal_noref_c4": 0.06677635759115219,
+        "sal_noref_c5": 0.056271474808454514,
+        "sal_wref_c1": 1.5946321487426758,
+        "sal_wref_c2": 0.8906338810920715,
+        "sal_wref_c3": 0.5960645079612732,
+        "sal_wref_c4": 0.46420952677726746,
+        "sal_wref_c5": 0.3751427233219147
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5310.427734375,
+        "gradnorm_l1_uncentered": 5608.26171875,
+        "gradnorm_l2_centered": 9.739123344421387,
+        "gradnorm_l2_uncentered": 10.685450553894043,
+        "sal_noref_c1": 30.67117691040039,
+        "sal_noref_c2": 26.834117889404297,
+        "sal_noref_c3": 18.389530181884766,
+        "sal_noref_c4": 14.035338401794434,
+        "sal_noref_c5": 11.934029579162598,
+        "sal_wref_c1": 8.419469833374023,
+        "sal_wref_c2": 17.94279670715332,
+        "sal_wref_c3": 13.051285743713379,
+        "sal_wref_c4": 10.225540161132812,
+        "sal_wref_c5": 8.283454895019531
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2091.47607421875,
+        "gradnorm_l1_uncentered": 2259.96142578125,
+        "gradnorm_l2_centered": 3.5019474029541016,
+        "gradnorm_l2_uncentered": 4.070924758911133,
+        "sal_noref_c1": 3.641566753387451,
+        "sal_noref_c2": 2.079568862915039,
+        "sal_noref_c3": 1.4422688484191895,
+        "sal_noref_c4": 1.1183165311813354,
+        "sal_noref_c5": 0.9124997854232788,
+        "sal_wref_c1": 0.021315699443221092,
+        "sal_wref_c2": 0.027655314654111862,
+        "sal_wref_c3": 0.02878103218972683,
+        "sal_wref_c4": 0.11055424809455872,
+        "sal_wref_c5": 0.09664007276296616
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Marathon_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 876.624755859375,
+        "gradnorm_l1_uncentered": 640.884033203125,
+        "gradnorm_l2_centered": 1.6091382503509521,
+        "gradnorm_l2_uncentered": 1.0500320196151733,
+        "sal_noref_c1": 0.1595940887928009,
+        "sal_noref_c2": 0.09594538062810898,
+        "sal_noref_c3": 0.06468533724546432,
+        "sal_noref_c4": 0.049115028232336044,
+        "sal_noref_c5": 0.03930165618658066,
+        "sal_wref_c1": 1.3482352495193481,
+        "sal_wref_c2": 0.8431016206741333,
+        "sal_wref_c3": 0.5735048651695251,
+        "sal_wref_c4": 0.43576565384864807,
+        "sal_wref_c5": 0.3527626395225525
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "CelestialPhysics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1151.7203369140625,
+        "gradnorm_l1_uncentered": 1170.2078857421875,
+        "gradnorm_l2_centered": 1.9420560598373413,
+        "gradnorm_l2_uncentered": 1.9799377918243408,
+        "sal_noref_c1": 0.7792049050331116,
+        "sal_noref_c2": 0.41670697927474976,
+        "sal_noref_c3": 0.3119804561138153,
+        "sal_noref_c4": 0.2366383969783783,
+        "sal_noref_c5": 0.19398584961891174,
+        "sal_wref_c1": 0.48839321732521057,
+        "sal_wref_c2": 0.32697486877441406,
+        "sal_wref_c3": 0.3251006305217743,
+        "sal_wref_c4": 0.24407365918159485,
+        "sal_wref_c5": 0.2199278324842453
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7785.3818359375,
+        "gradnorm_l1_uncentered": 8234.2353515625,
+        "gradnorm_l2_centered": 13.472776412963867,
+        "gradnorm_l2_uncentered": 14.596904754638672,
+        "sal_noref_c1": 119.29029083251953,
+        "sal_noref_c2": 59.52848815917969,
+        "sal_noref_c3": 41.12893295288086,
+        "sal_noref_c4": 31.323986053466797,
+        "sal_noref_c5": 26.43593978881836,
+        "sal_wref_c1": 89.61685180664062,
+        "sal_wref_c2": 45.023033142089844,
+        "sal_wref_c3": 31.24877166748047,
+        "sal_wref_c4": 24.36001968383789,
+        "sal_wref_c5": 19.553272247314453
+      }
+    }
+  ]
+}

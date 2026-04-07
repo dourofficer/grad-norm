@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "117.json",
+    "question_id": "748899d9d70c09beb3bd48ac8a3658bdcfd2f9114fe6dc4c4b8d2f9541ef4607",
+    "mistake_agent": "JSON_Expert",
+    "mistake_step": 0,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much does it cost to send an envelope with 1-week delivery from Rio de Janeiro to NYC with DHL, USPS, or Fedex? (Format your answers as a list of jsons with the keys \"sender\" and \"price (usd)\" for each option you find)"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JSON_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 661.7947998046875,
+        "gradnorm_l1_uncentered": 620.6796875,
+        "gradnorm_l2_centered": 1.184087872505188,
+        "gradnorm_l2_uncentered": 1.752377986907959,
+        "sal_noref_c1": 2.088350296020508,
+        "sal_noref_c2": 1.0988062620162964,
+        "sal_noref_c3": 0.7803589701652527,
+        "sal_noref_c4": 0.5867341756820679,
+        "sal_noref_c5": 0.4694260060787201,
+        "sal_wref_c1": 0.5936111211776733,
+        "sal_wref_c2": 0.3093389868736267,
+        "sal_wref_c3": 0.23342245817184448,
+        "sal_wref_c4": 0.17700472474098206,
+        "sal_wref_c5": 0.14528866112232208
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 601.419677734375,
+        "gradnorm_l1_uncentered": 298.2696228027344,
+        "gradnorm_l2_centered": 1.521690845489502,
+        "gradnorm_l2_uncentered": 0.8954839110374451,
+        "sal_noref_c1": 0.5406929850578308,
+        "sal_noref_c2": 0.2771240770816803,
+        "sal_noref_c3": 0.21512140333652496,
+        "sal_noref_c4": 0.1630968600511551,
+        "sal_noref_c5": 0.13086941838264465,
+        "sal_wref_c1": 2.1078805923461914,
+        "sal_wref_c2": 1.0483680963516235,
+        "sal_wref_c3": 0.7070901989936829,
+        "sal_wref_c4": 0.530532717704773,
+        "sal_wref_c5": 0.42677372694015503
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1882.435302734375,
+        "gradnorm_l1_uncentered": 2365.39501953125,
+        "gradnorm_l2_centered": 4.053788185119629,
+        "gradnorm_l2_uncentered": 5.943970203399658,
+        "sal_noref_c1": 29.460092544555664,
+        "sal_noref_c2": 14.629071235656738,
+        "sal_noref_c3": 10.110169410705566,
+        "sal_noref_c4": 7.918308734893799,
+        "sal_noref_c5": 6.353010177612305,
+        "sal_wref_c1": 10.62786865234375,
+        "sal_wref_c2": 5.278056621551514,
+        "sal_wref_c3": 4.084656238555908,
+        "sal_wref_c4": 3.247257947921753,
+        "sal_wref_c5": 2.6101090908050537
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 588.3364868164062,
+        "gradnorm_l1_uncentered": 314.66680908203125,
+        "gradnorm_l2_centered": 1.5621227025985718,
+        "gradnorm_l2_uncentered": 0.8285128474235535,
+        "sal_noref_c1": 0.4708072543144226,
+        "sal_noref_c2": 0.23423783481121063,
+        "sal_noref_c3": 0.17396940290927887,
+        "sal_noref_c4": 0.1309180110692978,
+        "sal_noref_c5": 0.10943963378667831,
+        "sal_wref_c1": 2.227612257003784,
+        "sal_wref_c2": 1.125672459602356,
+        "sal_wref_c3": 0.7523694634437561,
+        "sal_wref_c4": 0.5648094415664673,
+        "sal_wref_c5": 0.45194298028945923
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 864.9893188476562,
+        "gradnorm_l1_uncentered": 1195.8095703125,
+        "gradnorm_l2_centered": 1.5284878015518188,
+        "gradnorm_l2_uncentered": 2.9176411628723145,
+        "sal_noref_c1": 6.274363994598389,
+        "sal_noref_c2": 3.1261541843414307,
+        "sal_noref_c3": 2.1072895526885986,
+        "sal_noref_c4": 1.7453447580337524,
+        "sal_noref_c5": 1.4515985250473022,
+        "sal_wref_c1": 0.10772831737995148,
+        "sal_wref_c2": 0.08133555948734283,
+        "sal_wref_c3": 0.07941051572561264,
+        "sal_wref_c4": 0.2621952295303345,
+        "sal_wref_c5": 0.2109435349702835
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 614.9169921875,
+        "gradnorm_l1_uncentered": 468.6884765625,
+        "gradnorm_l2_centered": 1.3311941623687744,
+        "gradnorm_l2_uncentered": 1.2507869005203247,
+        "sal_noref_c1": 1.0675715208053589,
+        "sal_noref_c2": 0.5318050980567932,
+        "sal_noref_c3": 0.41246411204338074,
+        "sal_noref_c4": 0.3158722519874573,
+        "sal_noref_c5": 0.25464722514152527,
+        "sal_wref_c1": 1.3351428508758545,
+        "sal_wref_c2": 0.6915760040283203,
+        "sal_wref_c3": 0.48279237747192383,
+        "sal_wref_c4": 0.3654029667377472,
+        "sal_wref_c5": 0.2930058538913727
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2640.9794921875,
+        "gradnorm_l1_uncentered": 3068.943359375,
+        "gradnorm_l2_centered": 5.428041934967041,
+        "gradnorm_l2_uncentered": 7.086198329925537,
+        "sal_noref_c1": 35.4639778137207,
+        "sal_noref_c2": 21.588756561279297,
+        "sal_noref_c3": 14.90365219116211,
+        "sal_noref_c4": 11.179423332214355,
+        "sal_noref_c5": 8.98591423034668,
+        "sal_wref_c1": 15.504020690917969,
+        "sal_wref_c2": 11.365629196166992,
+        "sal_wref_c3": 8.121567726135254,
+        "sal_wref_c4": 6.102693557739258,
+        "sal_wref_c5": 4.927381992340088
+      }
+    }
+  ]
+}

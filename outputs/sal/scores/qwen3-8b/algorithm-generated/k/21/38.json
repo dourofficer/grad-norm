@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "19.json",
+    "question_id": "3cef3a44-215e-4aed-8e3b-b1e3f08063b7",
+    "mistake_agent": "Debugging_Problem_Solving_Expert",
+    "mistake_step": 0,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "I'm making a grocery list for my mom, but she's a professor of botany and she's a real stickler when it comes to categorizing things. I need to add different foods to different categories on the grocery list, but if I make a mistake, she won't buy anything inserted in the wrong category. Here's the list I have so far:\n\nmilk, eggs, flour, whole bean coffee, Oreos, sweet potatoes, fresh basil, plums, green beans, rice, corn, bell pepper, whole allspice, acorns, broccoli, celery, zucchini, lettuce, peanuts\n\nI need to make headings for the fruits and vegetables. Could you please create a list of just the vegetables from my list? If you could do that, then I can figure out how to categorize the rest of the list into the appropriate categories. But remember that my mom is a real stickler, so make sure that no botanical fruits end up on the vegetable list, or she won't get them when she's at the store. Please alphabetize the list of vegetables, and place each item in a comma separated list."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Debugging_Problem_Solving_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 762.8710327148438,
+        "gradnorm_l1_uncentered": 553.2764282226562,
+        "gradnorm_l2_centered": 1.6453849077224731,
+        "gradnorm_l2_uncentered": 1.6891307830810547,
+        "sal_noref_c1": 0.7077694535255432,
+        "sal_noref_c2": 0.4596695005893707,
+        "sal_noref_c3": 0.3618701994419098,
+        "sal_noref_c4": 0.28941234946250916,
+        "sal_noref_c5": 0.24524660408496857,
+        "sal_wref_c1": 0.3923233449459076,
+        "sal_wref_c2": 0.21197980642318726,
+        "sal_wref_c3": 0.41363826394081116,
+        "sal_wref_c4": 0.32643455266952515,
+        "sal_wref_c5": 0.26803845167160034
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "DebuggingTesting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1723.22216796875,
+        "gradnorm_l1_uncentered": 1830.4759521484375,
+        "gradnorm_l2_centered": 3.095052480697632,
+        "gradnorm_l2_uncentered": 3.7434003353118896,
+        "sal_noref_c1": 4.204240798950195,
+        "sal_noref_c2": 2.352149486541748,
+        "sal_noref_c3": 1.6348031759262085,
+        "sal_noref_c4": 1.249935269355774,
+        "sal_noref_c5": 1.0264652967453003,
+        "sal_wref_c1": 0.11985961347818375,
+        "sal_wref_c2": 0.18069760501384735,
+        "sal_wref_c3": 0.2934536933898926,
+        "sal_wref_c4": 0.22107096016407013,
+        "sal_wref_c5": 0.18011526763439178
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2154.241455078125,
+        "gradnorm_l1_uncentered": 2304.62158203125,
+        "gradnorm_l2_centered": 4.823825359344482,
+        "gradnorm_l2_uncentered": 5.766053199768066,
+        "sal_noref_c1": 10.206816673278809,
+        "sal_noref_c2": 8.824365615844727,
+        "sal_noref_c3": 6.102411270141602,
+        "sal_noref_c4": 4.641753196716309,
+        "sal_noref_c5": 3.7701542377471924,
+        "sal_wref_c1": 0.31362384557724,
+        "sal_wref_c2": 4.0534210205078125,
+        "sal_wref_c3": 2.838383674621582,
+        "sal_wref_c4": 2.1642322540283203,
+        "sal_wref_c5": 1.7566591501235962
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Problem_Solving_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3200.9931640625,
+        "gradnorm_l1_uncentered": 3355.77294921875,
+        "gradnorm_l2_centered": 5.580974102020264,
+        "gradnorm_l2_uncentered": 6.454370021820068,
+        "sal_noref_c1": 10.718976020812988,
+        "sal_noref_c2": 7.111153602600098,
+        "sal_noref_c3": 4.871256351470947,
+        "sal_noref_c4": 3.9125888347625732,
+        "sal_noref_c5": 3.197387456893921,
+        "sal_wref_c1": 0.638530969619751,
+        "sal_wref_c2": 1.8054511547088623,
+        "sal_wref_c3": 1.3082025051116943,
+        "sal_wref_c4": 1.2778453826904297,
+        "sal_wref_c5": 1.0802375078201294
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "DebuggingTesting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3974.166015625,
+        "gradnorm_l1_uncentered": 4102.33056640625,
+        "gradnorm_l2_centered": 7.003065586090088,
+        "gradnorm_l2_uncentered": 7.732363224029541,
+        "sal_noref_c1": 10.71424388885498,
+        "sal_noref_c2": 6.993323802947998,
+        "sal_noref_c3": 4.672445297241211,
+        "sal_noref_c4": 4.208950996398926,
+        "sal_noref_c5": 3.7957770824432373,
+        "sal_wref_c1": 0.6868410110473633,
+        "sal_wref_c2": 1.8219788074493408,
+        "sal_wref_c3": 1.2717598676681519,
+        "sal_wref_c4": 1.5098071098327637,
+        "sal_wref_c5": 1.5974210500717163
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2512.6689453125,
+        "gradnorm_l1_uncentered": 2595.69091796875,
+        "gradnorm_l2_centered": 4.04395866394043,
+        "gradnorm_l2_uncentered": 4.119612216949463,
+        "sal_noref_c1": 0.7920469045639038,
+        "sal_noref_c2": 0.4595327377319336,
+        "sal_noref_c3": 0.3238373100757599,
+        "sal_noref_c4": 0.26904991269111633,
+        "sal_noref_c5": 0.22247116267681122,
+        "sal_wref_c1": 0.36546361446380615,
+        "sal_wref_c2": 0.2524784207344055,
+        "sal_wref_c3": 0.18513499200344086,
+        "sal_wref_c4": 0.29136866331100464,
+        "sal_wref_c5": 0.23357908427715302
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4315.34326171875,
+        "gradnorm_l1_uncentered": 4458.08935546875,
+        "gradnorm_l2_centered": 8.655110359191895,
+        "gradnorm_l2_uncentered": 9.301299095153809,
+        "sal_noref_c1": 12.729432106018066,
+        "sal_noref_c2": 6.416424751281738,
+        "sal_noref_c3": 5.121551513671875,
+        "sal_noref_c4": 7.426458835601807,
+        "sal_noref_c5": 6.082161903381348,
+        "sal_wref_c1": 2.782308578491211,
+        "sal_wref_c2": 1.582918405532837,
+        "sal_wref_c3": 1.2052102088928223,
+        "sal_wref_c4": 4.421197414398193,
+        "sal_wref_c5": 3.9206645488739014
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Debugging_Problem_Solving_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2004.178466796875,
+        "gradnorm_l1_uncentered": 2145.649169921875,
+        "gradnorm_l2_centered": 3.9284451007843018,
+        "gradnorm_l2_uncentered": 4.318179607391357,
+        "sal_noref_c1": 4.4825968742370605,
+        "sal_noref_c2": 2.272719144821167,
+        "sal_noref_c3": 1.6522501707077026,
+        "sal_noref_c4": 1.2802525758743286,
+        "sal_noref_c5": 1.0392489433288574,
+        "sal_wref_c1": 0.7847442626953125,
+        "sal_wref_c2": 0.4287090301513672,
+        "sal_wref_c3": 0.551175057888031,
+        "sal_wref_c4": 0.6040616035461426,
+        "sal_wref_c5": 0.4879585802555084
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2582.909912109375,
+        "gradnorm_l1_uncentered": 2737.85888671875,
+        "gradnorm_l2_centered": 5.823509693145752,
+        "gradnorm_l2_uncentered": 5.973311424255371,
+        "sal_noref_c1": 5.5608038902282715,
+        "sal_noref_c2": 5.803046703338623,
+        "sal_noref_c3": 4.313247203826904,
+        "sal_noref_c4": 3.24554443359375,
+        "sal_noref_c5": 2.6122498512268066,
+        "sal_wref_c1": 4.196840763092041,
+        "sal_wref_c2": 4.236047744750977,
+        "sal_wref_c3": 3.7816946506500244,
+        "sal_wref_c4": 3.060633659362793,
+        "sal_wref_c5": 2.4552834033966064
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "DebuggingTesting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2839.587890625,
+        "gradnorm_l1_uncentered": 2945.712646484375,
+        "gradnorm_l2_centered": 5.394662380218506,
+        "gradnorm_l2_uncentered": 5.977135181427002,
+        "sal_noref_c1": 6.3428473472595215,
+        "sal_noref_c2": 3.1679940223693848,
+        "sal_noref_c3": 2.152332067489624,
+        "sal_noref_c4": 2.8334298133850098,
+        "sal_noref_c5": 2.475210666656494,
+        "sal_wref_c1": 0.779503583908081,
+        "sal_wref_c2": 0.45853191614151,
+        "sal_wref_c3": 0.34551045298576355,
+        "sal_wref_c4": 1.1826176643371582,
+        "sal_wref_c5": 1.2426718473434448
+      }
+    }
+  ]
+}

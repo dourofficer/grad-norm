@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "39.json",
+    "question_id": "17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc",
+    "mistake_agent": "GIS_DataAnalysis_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I\u2019m researching species that became invasive after people who kept them as pets released them. There\u2019s a certain species of fish that was popularized as a pet by being the main character of the movie Finding Nemo. According to the USGS, where was this fish found as a nonnative species, before the year 2020? I need the answer formatted as the five-digit zip codes of the places the species was found, separated by commas if there is more than one place."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "AquaticEcosystems_InvasiveSpecies_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 834.6583251953125,
+        "gradnorm_l1_uncentered": 418.99005126953125,
+        "gradnorm_l2_centered": 1.6074150800704956,
+        "gradnorm_l2_uncentered": 0.8713465332984924,
+        "sal_noref_c1": 0.0653054490685463,
+        "sal_noref_c2": 0.09370927512645721,
+        "sal_noref_c3": 0.0657738521695137,
+        "sal_noref_c4": 0.05817314609885216,
+        "sal_noref_c5": 0.047808900475502014,
+        "sal_wref_c1": 1.7824084758758545,
+        "sal_wref_c2": 0.9820343255996704,
+        "sal_wref_c3": 0.6562588214874268,
+        "sal_wref_c4": 0.5071109533309937,
+        "sal_wref_c5": 0.40742167830467224
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "GIS_DataAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 807.2250366210938,
+        "gradnorm_l1_uncentered": 560.966552734375,
+        "gradnorm_l2_centered": 1.5103759765625,
+        "gradnorm_l2_uncentered": 1.103306531906128,
+        "sal_noref_c1": 0.197327122092247,
+        "sal_noref_c2": 0.16269192099571228,
+        "sal_noref_c3": 0.12044679373502731,
+        "sal_noref_c4": 0.10472994297742844,
+        "sal_noref_c5": 0.08478831499814987,
+        "sal_wref_c1": 1.3751015663146973,
+        "sal_wref_c2": 0.7777346968650818,
+        "sal_wref_c3": 0.5186697840690613,
+        "sal_wref_c4": 0.4166693687438965,
+        "sal_wref_c5": 0.3337785303592682
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2085.3251953125,
+        "gradnorm_l1_uncentered": 2381.81298828125,
+        "gradnorm_l2_centered": 3.913007974624634,
+        "gradnorm_l2_uncentered": 4.7170000076293945,
+        "sal_noref_c1": 6.040401935577393,
+        "sal_noref_c2": 4.532930374145508,
+        "sal_noref_c3": 3.031801462173462,
+        "sal_noref_c4": 2.398874282836914,
+        "sal_noref_c5": 2.375903367996216,
+        "sal_wref_c1": 0.22958940267562866,
+        "sal_wref_c2": 1.0755618810653687,
+        "sal_wref_c3": 0.7170606255531311,
+        "sal_wref_c4": 0.6422469019889832,
+        "sal_wref_c5": 0.8573812246322632
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Scientific_Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 983.555908203125,
+        "gradnorm_l1_uncentered": 989.1153564453125,
+        "gradnorm_l2_centered": 1.6796486377716064,
+        "gradnorm_l2_uncentered": 1.7603665590286255,
+        "sal_noref_c1": 0.7452516555786133,
+        "sal_noref_c2": 0.4171448349952698,
+        "sal_noref_c3": 0.30249151587486267,
+        "sal_noref_c4": 0.2276330292224884,
+        "sal_noref_c5": 0.18234066665172577,
+        "sal_wref_c1": 0.56836998462677,
+        "sal_wref_c2": 0.36799389123916626,
+        "sal_wref_c3": 0.245713472366333,
+        "sal_wref_c4": 0.18486009538173676,
+        "sal_wref_c5": 0.14788872003555298
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "AquaticEcosystems_InvasiveSpecies_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 857.51953125,
+        "gradnorm_l1_uncentered": 801.74755859375,
+        "gradnorm_l2_centered": 1.5147814750671387,
+        "gradnorm_l2_uncentered": 1.4299261569976807,
+        "sal_noref_c1": 0.46782544255256653,
+        "sal_noref_c2": 0.2967003881931305,
+        "sal_noref_c3": 0.22239667177200317,
+        "sal_noref_c4": 0.16922836005687714,
+        "sal_noref_c5": 0.13546600937843323,
+        "sal_wref_c1": 0.8888393044471741,
+        "sal_wref_c2": 0.5232019424438477,
+        "sal_wref_c3": 0.3490268886089325,
+        "sal_wref_c4": 0.2736407220363617,
+        "sal_wref_c5": 0.21935872733592987
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "AquaticEcosystems_InvasiveSpecies_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1429.5302734375,
+        "gradnorm_l1_uncentered": 1535.3529052734375,
+        "gradnorm_l2_centered": 2.3665027618408203,
+        "gradnorm_l2_uncentered": 2.7797629833221436,
+        "sal_noref_c1": 1.509682059288025,
+        "sal_noref_c2": 0.9840632081031799,
+        "sal_noref_c3": 0.7572357654571533,
+        "sal_noref_c4": 0.5681323409080505,
+        "sal_noref_c5": 0.4623177647590637,
+        "sal_wref_c1": 0.2747904658317566,
+        "sal_wref_c2": 0.13885553181171417,
+        "sal_wref_c3": 0.10711655020713806,
+        "sal_wref_c4": 0.09773128479719162,
+        "sal_wref_c5": 0.08989648520946503
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "GIS_DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1780.2452392578125,
+        "gradnorm_l1_uncentered": 1973.8424072265625,
+        "gradnorm_l2_centered": 2.840535879135132,
+        "gradnorm_l2_uncentered": 3.4034767150878906,
+        "sal_noref_c1": 2.7172722816467285,
+        "sal_noref_c2": 1.5758570432662964,
+        "sal_noref_c3": 1.2049905061721802,
+        "sal_noref_c4": 0.9222414493560791,
+        "sal_noref_c5": 0.7630279660224915,
+        "sal_wref_c1": 0.013028338551521301,
+        "sal_wref_c2": 0.0065784212201833725,
+        "sal_wref_c3": 0.03911389783024788,
+        "sal_wref_c4": 0.029881181195378304,
+        "sal_wref_c5": 0.040828488767147064
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2025.7646484375,
+        "gradnorm_l1_uncentered": 2253.883544921875,
+        "gradnorm_l2_centered": 3.275740385055542,
+        "gradnorm_l2_uncentered": 3.8346879482269287,
+        "sal_noref_c1": 4.740969657897949,
+        "sal_noref_c2": 2.3854784965515137,
+        "sal_noref_c3": 1.590748906135559,
+        "sal_noref_c4": 1.2076942920684814,
+        "sal_noref_c5": 1.0206745862960815,
+        "sal_wref_c1": 0.4487319886684418,
+        "sal_wref_c2": 0.3870036005973816,
+        "sal_wref_c3": 0.2616177499294281,
+        "sal_wref_c4": 0.21919122338294983,
+        "sal_wref_c5": 0.2278466522693634
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Scientific_Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1795.706787109375,
+        "gradnorm_l1_uncentered": 1923.1201171875,
+        "gradnorm_l2_centered": 2.8480308055877686,
+        "gradnorm_l2_uncentered": 3.200697660446167,
+        "sal_noref_c1": 1.917747139930725,
+        "sal_noref_c2": 0.9622434973716736,
+        "sal_noref_c3": 0.8683574199676514,
+        "sal_noref_c4": 0.6520670652389526,
+        "sal_noref_c5": 0.5217152833938599,
+        "sal_wref_c1": 0.06240860000252724,
+        "sal_wref_c2": 0.21350067853927612,
+        "sal_wref_c3": 0.2233523279428482,
+        "sal_wref_c4": 0.16871650516986847,
+        "sal_wref_c5": 0.14850053191184998
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Scientific_Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5115.90478515625,
+        "gradnorm_l1_uncentered": 5306.7392578125,
+        "gradnorm_l2_centered": 9.029203414916992,
+        "gradnorm_l2_uncentered": 9.432540893554688,
+        "sal_noref_c1": 14.994532585144043,
+        "sal_noref_c2": 10.630609512329102,
+        "sal_noref_c3": 7.277519226074219,
+        "sal_noref_c4": 6.802473068237305,
+        "sal_noref_c5": 5.700567722320557,
+        "sal_wref_c1": 8.020418167114258,
+        "sal_wref_c2": 6.864300727844238,
+        "sal_wref_c3": 4.8804402351379395,
+        "sal_wref_c4": 5.166999816894531,
+        "sal_wref_c5": 4.175681114196777
+      }
+    }
+  ]
+}

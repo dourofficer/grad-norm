@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "87.json",
+    "question_id": "f46b4380-207e-4434-820b-f32ce04ae2a4",
+    "mistake_agent": "Music_Critic_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "It is 1999. Before you party like it is 1999, please assist me in settling a bet.\n\nFiona Apple and Paula Cole released albums prior to 1999. Of these albums, which didn't receive a letter grade from Robert Christgau? Provide your answer as a comma delimited list of album titles, sorted alphabetically."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "MusicHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 645.1571655273438,
+        "gradnorm_l1_uncentered": 489.1501770019531,
+        "gradnorm_l2_centered": 1.3152499198913574,
+        "gradnorm_l2_uncentered": 1.366749882698059,
+        "sal_noref_c1": 1.2102382183074951,
+        "sal_noref_c2": 0.6440472602844238,
+        "sal_noref_c3": 0.4607774317264557,
+        "sal_noref_c4": 0.3460570275783539,
+        "sal_noref_c5": 0.2771669030189514,
+        "sal_wref_c1": 1.2260421514511108,
+        "sal_wref_c2": 0.6128228902816772,
+        "sal_wref_c3": 0.41962364315986633,
+        "sal_wref_c4": 0.3147381544113159,
+        "sal_wref_c5": 0.25992006063461304
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Music_Critic_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 594.6487426757812,
+        "gradnorm_l1_uncentered": 478.46435546875,
+        "gradnorm_l2_centered": 1.3396745920181274,
+        "gradnorm_l2_uncentered": 1.1132391691207886,
+        "sal_noref_c1": 0.9221361875534058,
+        "sal_noref_c2": 0.47238555550575256,
+        "sal_noref_c3": 0.31877562403678894,
+        "sal_noref_c4": 0.24225272238254547,
+        "sal_noref_c5": 0.19387458264827728,
+        "sal_wref_c1": 1.4931986331939697,
+        "sal_wref_c2": 0.7405803203582764,
+        "sal_wref_c3": 0.4939315617084503,
+        "sal_wref_c4": 0.37084755301475525,
+        "sal_wref_c5": 0.3003225326538086
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 610.095703125,
+        "gradnorm_l1_uncentered": 651.09619140625,
+        "gradnorm_l2_centered": 1.0274226665496826,
+        "gradnorm_l2_uncentered": 1.956765055656433,
+        "sal_noref_c1": 2.817166805267334,
+        "sal_noref_c2": 1.4413968324661255,
+        "sal_noref_c3": 1.0227755308151245,
+        "sal_noref_c4": 0.8073501586914062,
+        "sal_noref_c5": 0.6578205227851868,
+        "sal_wref_c1": 0.31414324045181274,
+        "sal_wref_c2": 0.1609562784433365,
+        "sal_wref_c3": 0.12508554756641388,
+        "sal_wref_c4": 0.12098473310470581,
+        "sal_wref_c5": 0.11441127210855484
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1739.2569580078125,
+        "gradnorm_l1_uncentered": 2190.757080078125,
+        "gradnorm_l2_centered": 3.957719087600708,
+        "gradnorm_l2_uncentered": 5.850079536437988,
+        "sal_noref_c1": 27.806276321411133,
+        "sal_noref_c2": 14.829618453979492,
+        "sal_noref_c3": 9.927643775939941,
+        "sal_noref_c4": 7.565503120422363,
+        "sal_noref_c5": 6.053982734680176,
+        "sal_wref_c1": 8.97003173828125,
+        "sal_wref_c2": 5.639168739318848,
+        "sal_wref_c3": 3.802804708480835,
+        "sal_wref_c4": 2.990597724914551,
+        "sal_wref_c5": 2.3925490379333496
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "MusicHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 612.337646484375,
+        "gradnorm_l1_uncentered": 736.582763671875,
+        "gradnorm_l2_centered": 1.03621244430542,
+        "gradnorm_l2_uncentered": 1.9554435014724731,
+        "sal_noref_c1": 2.8290395736694336,
+        "sal_noref_c2": 1.4981673955917358,
+        "sal_noref_c3": 1.003157377243042,
+        "sal_noref_c4": 0.7959570288658142,
+        "sal_noref_c5": 0.6436629295349121,
+        "sal_wref_c1": 0.2998828887939453,
+        "sal_wref_c2": 0.18384194374084473,
+        "sal_wref_c3": 0.1239810362458229,
+        "sal_wref_c4": 0.11787007749080658,
+        "sal_wref_c5": 0.09993661940097809
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2129.02392578125,
+        "gradnorm_l1_uncentered": 2541.330810546875,
+        "gradnorm_l2_centered": 3.7933640480041504,
+        "gradnorm_l2_uncentered": 5.3598127365112305,
+        "sal_noref_c1": 19.306272506713867,
+        "sal_noref_c2": 10.968429565429688,
+        "sal_noref_c3": 8.210885047912598,
+        "sal_noref_c4": 6.222406387329102,
+        "sal_noref_c5": 5.009487152099609,
+        "sal_wref_c1": 4.9235053062438965,
+        "sal_wref_c2": 4.05950927734375,
+        "sal_wref_c3": 3.3431179523468018,
+        "sal_wref_c4": 2.597365379333496,
+        "sal_wref_c5": 2.1195895671844482
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Music_Critic_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 630.5886840820312,
+        "gradnorm_l1_uncentered": 712.9539184570312,
+        "gradnorm_l2_centered": 1.1380949020385742,
+        "gradnorm_l2_uncentered": 1.692091703414917,
+        "sal_noref_c1": 2.0221638679504395,
+        "sal_noref_c2": 1.069930076599121,
+        "sal_noref_c3": 0.713994026184082,
+        "sal_noref_c4": 0.559631884098053,
+        "sal_noref_c5": 0.4506387710571289,
+        "sal_wref_c1": 0.6299496293067932,
+        "sal_wref_c2": 0.32961440086364746,
+        "sal_wref_c3": 0.2245233803987503,
+        "sal_wref_c4": 0.1784582883119583,
+        "sal_wref_c5": 0.1431945413351059
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1875.9212646484375,
+        "gradnorm_l1_uncentered": 2244.607421875,
+        "gradnorm_l2_centered": 3.7933731079101562,
+        "gradnorm_l2_uncentered": 5.563586711883545,
+        "sal_noref_c1": 23.02499008178711,
+        "sal_noref_c2": 12.036834716796875,
+        "sal_noref_c3": 8.22464656829834,
+        "sal_noref_c4": 6.480252265930176,
+        "sal_noref_c5": 5.282785415649414,
+        "sal_wref_c1": 6.252885341644287,
+        "sal_wref_c2": 3.7386674880981445,
+        "sal_wref_c3": 2.8153486251831055,
+        "sal_wref_c4": 2.2857182025909424,
+        "sal_wref_c5": 2.0112829208374023
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "MusicHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2471.32177734375,
+        "gradnorm_l1_uncentered": 2741.359375,
+        "gradnorm_l2_centered": 5.1569671630859375,
+        "gradnorm_l2_uncentered": 6.127960205078125,
+        "sal_noref_c1": 14.515253067016602,
+        "sal_noref_c2": 13.905065536499023,
+        "sal_noref_c3": 9.515602111816406,
+        "sal_noref_c4": 7.151317596435547,
+        "sal_noref_c5": 5.729105472564697,
+        "sal_wref_c1": 3.6943166255950928,
+        "sal_wref_c2": 8.342325210571289,
+        "sal_wref_c3": 5.9012908935546875,
+        "sal_wref_c4": 4.426911354064941,
+        "sal_wref_c5": 3.5543274879455566
+      }
+    }
+  ]
+}

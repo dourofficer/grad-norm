@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "4.json",
+    "question_id": "f2feb6a4-363c-4c09-a804-0db564eafd68",
+    "mistake_agent": "HawaiiRealEstate_Expert",
+    "mistake_step": 2,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I\u2019m thinking about selling my home, so I want to learn more about how homes in my area sold recently. I live in Pearl City, Hawaii, which is on the island of Oahu. I know two homes near me that sold in 2022 were 2072 Akaikai Loop, and 2017 Komo Mai Drive. Find which of those homes sold for more in 2022, and tell me how much it sold for. Don\u2019t put commas or decimal places in the answer."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "HawaiiRealEstate_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 885.987060546875,
+        "gradnorm_l1_uncentered": 574.7100219726562,
+        "gradnorm_l2_centered": 1.6096787452697754,
+        "gradnorm_l2_uncentered": 1.313345193862915,
+        "sal_noref_c1": 0.20878762006759644,
+        "sal_noref_c2": 0.2719345688819885,
+        "sal_noref_c3": 0.19168150424957275,
+        "sal_noref_c4": 0.16376715898513794,
+        "sal_noref_c5": 0.13216431438922882,
+        "sal_wref_c1": 1.4421197175979614,
+        "sal_wref_c2": 0.7330708503723145,
+        "sal_wref_c3": 0.48924148082733154,
+        "sal_wref_c4": 0.39338287711143494,
+        "sal_wref_c5": 0.31840211153030396
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1135.546630859375,
+        "gradnorm_l1_uncentered": 1078.82666015625,
+        "gradnorm_l2_centered": 1.8274450302124023,
+        "gradnorm_l2_uncentered": 1.862804651260376,
+        "sal_noref_c1": 0.5538057088851929,
+        "sal_noref_c2": 0.4057146906852722,
+        "sal_noref_c3": 0.29064124822616577,
+        "sal_noref_c4": 0.22104620933532715,
+        "sal_noref_c5": 0.17690785229206085,
+        "sal_wref_c1": 0.8519020080566406,
+        "sal_wref_c2": 0.4546642005443573,
+        "sal_wref_c3": 0.3033824861049652,
+        "sal_wref_c4": 0.23882445693016052,
+        "sal_wref_c5": 0.19162259995937347
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "HawaiiRealEstate_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1702.0057373046875,
+        "gradnorm_l1_uncentered": 1839.882080078125,
+        "gradnorm_l2_centered": 2.704380512237549,
+        "gradnorm_l2_uncentered": 3.1960017681121826,
+        "sal_noref_c1": 1.8566516637802124,
+        "sal_noref_c2": 1.4876421689987183,
+        "sal_noref_c3": 1.115883231163025,
+        "sal_noref_c4": 0.836979329586029,
+        "sal_noref_c5": 0.6726097464561462,
+        "sal_wref_c1": 0.22441866993904114,
+        "sal_wref_c2": 0.17592614889144897,
+        "sal_wref_c3": 0.1644611954689026,
+        "sal_wref_c4": 0.12468355149030685,
+        "sal_wref_c5": 0.10035737603902817
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1056.3594970703125,
+        "gradnorm_l1_uncentered": 1025.15576171875,
+        "gradnorm_l2_centered": 1.7170435190200806,
+        "gradnorm_l2_uncentered": 1.7636979818344116,
+        "sal_noref_c1": 0.551776111125946,
+        "sal_noref_c2": 0.38464614748954773,
+        "sal_noref_c3": 0.2933185398578644,
+        "sal_noref_c4": 0.2239832729101181,
+        "sal_noref_c5": 0.1798124611377716,
+        "sal_wref_c1": 0.8586443066596985,
+        "sal_wref_c2": 0.4769197106361389,
+        "sal_wref_c3": 0.31950488686561584,
+        "sal_wref_c4": 0.2556552290916443,
+        "sal_wref_c5": 0.20466729998588562
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1438.2529296875,
+        "gradnorm_l1_uncentered": 1562.3740234375,
+        "gradnorm_l2_centered": 2.246429443359375,
+        "gradnorm_l2_uncentered": 2.7021098136901855,
+        "sal_noref_c1": 1.5703352689743042,
+        "sal_noref_c2": 1.0814141035079956,
+        "sal_noref_c3": 0.7690170407295227,
+        "sal_noref_c4": 0.5905672907829285,
+        "sal_noref_c5": 0.47683286666870117,
+        "sal_wref_c1": 0.2644197642803192,
+        "sal_wref_c2": 0.13400274515151978,
+        "sal_wref_c3": 0.09222916513681412,
+        "sal_wref_c4": 0.11345174163579941,
+        "sal_wref_c5": 0.09107812494039536
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3047.740478515625,
+        "gradnorm_l1_uncentered": 3348.1416015625,
+        "gradnorm_l2_centered": 5.399815559387207,
+        "gradnorm_l2_uncentered": 6.316219329833984,
+        "sal_noref_c1": 11.801647186279297,
+        "sal_noref_c2": 8.350810050964355,
+        "sal_noref_c3": 5.661777019500732,
+        "sal_noref_c4": 4.783611297607422,
+        "sal_noref_c5": 4.119045734405518,
+        "sal_wref_c1": 1.7080917358398438,
+        "sal_wref_c2": 2.8670620918273926,
+        "sal_wref_c3": 2.1051347255706787,
+        "sal_wref_c4": 2.115363836288452,
+        "sal_wref_c5": 2.282639503479004
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3852.6181640625,
+        "gradnorm_l1_uncentered": 4084.747314453125,
+        "gradnorm_l2_centered": 6.193449974060059,
+        "gradnorm_l2_uncentered": 6.8127851486206055,
+        "sal_noref_c1": 10.748631477355957,
+        "sal_noref_c2": 5.5079426765441895,
+        "sal_noref_c3": 4.611242294311523,
+        "sal_noref_c4": 3.498749256134033,
+        "sal_noref_c5": 2.825407028198242,
+        "sal_wref_c1": 2.8850111961364746,
+        "sal_wref_c2": 1.8729898929595947,
+        "sal_wref_c3": 1.8095725774765015,
+        "sal_wref_c4": 1.3765950202941895,
+        "sal_wref_c5": 1.27211594581604
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 12877.7060546875,
+        "gradnorm_l1_uncentered": 13187.0205078125,
+        "gradnorm_l2_centered": 20.660686492919922,
+        "gradnorm_l2_uncentered": 21.359668731689453,
+        "sal_noref_c1": 139.8079071044922,
+        "sal_noref_c2": 102.84384155273438,
+        "sal_noref_c3": 86.95821380615234,
+        "sal_noref_c4": 66.17268371582031,
+        "sal_noref_c5": 54.258522033691406,
+        "sal_wref_c1": 136.39041137695312,
+        "sal_wref_c2": 90.53872680664062,
+        "sal_wref_c3": 77.39038848876953,
+        "sal_wref_c4": 58.689388275146484,
+        "sal_wref_c5": 47.036251068115234
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "37.json",
+    "question_id": "50ec8903-b81f-4257-9450-1085afd2c319",
+    "mistake_agent": "Cubing_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "A standard Rubik\u2019s cube has been broken into cubes making up its sides. The cubes are jumbled, and one is removed. There are 6 cubes with one colored face, 12 edge cubes with two colored faces, and 8 corner cubes with three colored faces. All blue cubes have been found. All cubes directly left, right, above, and below the orange center cube have been found, along with the center cube. The green corners have all been found, along with all green that borders yellow. For all orange cubes found, the opposite face\u2019s cubes have been found. The removed cube has two colors on its faces. What are they? Answer using a comma separated list, with the colors ordered alphabetically."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Cubing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 629.856201171875,
+        "gradnorm_l1_uncentered": 357.6917419433594,
+        "gradnorm_l2_centered": 1.4955670833587646,
+        "gradnorm_l2_uncentered": 0.9707253575325012,
+        "sal_noref_c1": 0.6100746393203735,
+        "sal_noref_c2": 0.32720673084259033,
+        "sal_noref_c3": 0.23317699134349823,
+        "sal_noref_c4": 0.17551301419734955,
+        "sal_noref_c5": 0.1411266028881073,
+        "sal_wref_c1": 1.995570182800293,
+        "sal_wref_c2": 0.988574206829071,
+        "sal_wref_c3": 0.6607756018638611,
+        "sal_wref_c4": 0.4956617057323456,
+        "sal_wref_c5": 0.400493323802948
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Cubing_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 631.21044921875,
+        "gradnorm_l1_uncentered": 500.3370361328125,
+        "gradnorm_l2_centered": 1.199144721031189,
+        "gradnorm_l2_uncentered": 1.6154189109802246,
+        "sal_noref_c1": 1.7277418375015259,
+        "sal_noref_c2": 0.8972080945968628,
+        "sal_noref_c3": 0.6770946383476257,
+        "sal_noref_c4": 0.5357238054275513,
+        "sal_noref_c5": 0.43621349334716797,
+        "sal_wref_c1": 0.8470894694328308,
+        "sal_wref_c2": 0.42233943939208984,
+        "sal_wref_c3": 0.30944305658340454,
+        "sal_wref_c4": 0.2506785988807678,
+        "sal_wref_c5": 0.2081146538257599
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 687.4898071289062,
+        "gradnorm_l1_uncentered": 728.6613159179688,
+        "gradnorm_l2_centered": 1.2266710996627808,
+        "gradnorm_l2_uncentered": 2.283069372177124,
+        "sal_noref_c1": 3.495929479598999,
+        "sal_noref_c2": 1.861528754234314,
+        "sal_noref_c3": 1.3367862701416016,
+        "sal_noref_c4": 1.0668654441833496,
+        "sal_noref_c5": 0.8619505167007446,
+        "sal_wref_c1": 0.1597367376089096,
+        "sal_wref_c2": 0.1284412294626236,
+        "sal_wref_c3": 0.12084057182073593,
+        "sal_wref_c4": 0.14199526607990265,
+        "sal_wref_c5": 0.13279521465301514
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4371.8740234375,
+        "gradnorm_l1_uncentered": 4869.56103515625,
+        "gradnorm_l2_centered": 9.926209449768066,
+        "gradnorm_l2_uncentered": 11.924327850341797,
+        "sal_noref_c1": 122.17828369140625,
+        "sal_noref_c2": 62.75400924682617,
+        "sal_noref_c3": 41.91819763183594,
+        "sal_noref_c4": 31.58213996887207,
+        "sal_noref_c5": 25.69449234008789,
+        "sal_wref_c1": 77.49562072753906,
+        "sal_wref_c2": 41.88288116455078,
+        "sal_wref_c3": 28.385963439941406,
+        "sal_wref_c4": 21.290815353393555,
+        "sal_wref_c5": 17.108013153076172
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1439.876220703125,
+        "gradnorm_l1_uncentered": 1821.2724609375,
+        "gradnorm_l2_centered": 3.504714012145996,
+        "gradnorm_l2_uncentered": 5.377296447753906,
+        "sal_noref_c1": 22.791091918945312,
+        "sal_noref_c2": 11.641036987304688,
+        "sal_noref_c3": 8.133570671081543,
+        "sal_noref_c4": 6.3391289710998535,
+        "sal_noref_c5": 5.078461170196533,
+        "sal_wref_c1": 5.908313274383545,
+        "sal_wref_c2": 3.236452579498291,
+        "sal_wref_c3": 2.4120399951934814,
+        "sal_wref_c4": 2.093377113342285,
+        "sal_wref_c5": 1.7778743505477905
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Geometry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3956.208251953125,
+        "gradnorm_l1_uncentered": 4397.25830078125,
+        "gradnorm_l2_centered": 8.390692710876465,
+        "gradnorm_l2_uncentered": 10.059937477111816,
+        "sal_noref_c1": 69.21671295166016,
+        "sal_noref_c2": 40.492698669433594,
+        "sal_noref_c3": 27.12572479248047,
+        "sal_noref_c4": 20.39425277709961,
+        "sal_noref_c5": 16.370033264160156,
+        "sal_wref_c1": 40.70805740356445,
+        "sal_wref_c2": 25.256593704223633,
+        "sal_wref_c3": 17.000959396362305,
+        "sal_wref_c4": 12.894232749938965,
+        "sal_wref_c5": 10.381559371948242
+      }
+    }
+  ]
+}

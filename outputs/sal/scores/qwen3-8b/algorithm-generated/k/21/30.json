@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "125.json",
+    "question_id": "6e3be83d1949fa52cba03fb1ce4b5b3bf7e37a83fd7d67694b10b2e439d90cf8",
+    "mistake_agent": "MartialArts_Expert",
+    "mistake_step": 5,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Where can I take martial arts classes within a five-minute walk from the New York Stock Exchange after work (7-9 pm)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "NYC_Local_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 735.971435546875,
+        "gradnorm_l1_uncentered": 497.63189697265625,
+        "gradnorm_l2_centered": 1.7315819263458252,
+        "gradnorm_l2_uncentered": 1.769940972328186,
+        "sal_noref_c1": 0.6289643049240112,
+        "sal_noref_c2": 0.6301642656326294,
+        "sal_noref_c3": 0.4939291775226593,
+        "sal_noref_c4": 0.3743855357170105,
+        "sal_noref_c5": 0.3086445927619934,
+        "sal_wref_c1": 0.6171889305114746,
+        "sal_wref_c2": 0.31329137086868286,
+        "sal_wref_c3": 0.47355738282203674,
+        "sal_wref_c4": 0.38935449719429016,
+        "sal_wref_c5": 0.31485897302627563
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "MartialArts_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 980.9562377929688,
+        "gradnorm_l1_uncentered": 851.545166015625,
+        "gradnorm_l2_centered": 2.3414883613586426,
+        "gradnorm_l2_uncentered": 2.056204319000244,
+        "sal_noref_c1": 0.41690537333488464,
+        "sal_noref_c2": 0.5450003743171692,
+        "sal_noref_c3": 0.36403152346611023,
+        "sal_noref_c4": 0.3673393428325653,
+        "sal_noref_c5": 0.2939724922180176,
+        "sal_wref_c1": 0.1187937930226326,
+        "sal_wref_c2": 1.2331784963607788,
+        "sal_wref_c3": 1.0057694911956787,
+        "sal_wref_c4": 0.7545415163040161,
+        "sal_wref_c5": 0.6036877632141113
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "NYC_Local_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1042.0633544921875,
+        "gradnorm_l1_uncentered": 1060.746337890625,
+        "gradnorm_l2_centered": 1.9187918901443481,
+        "gradnorm_l2_uncentered": 2.2804648876190186,
+        "sal_noref_c1": 1.140078067779541,
+        "sal_noref_c2": 0.6600505709648132,
+        "sal_noref_c3": 0.48800158500671387,
+        "sal_noref_c4": 0.4144127368927002,
+        "sal_noref_c5": 0.3328360319137573,
+        "sal_wref_c1": 0.2684158980846405,
+        "sal_wref_c2": 0.18359413743019104,
+        "sal_wref_c3": 0.13051436841487885,
+        "sal_wref_c4": 0.09893812239170074,
+        "sal_wref_c5": 0.07983331382274628
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "NYC_Local_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1091.321533203125,
+        "gradnorm_l1_uncentered": 986.5474853515625,
+        "gradnorm_l2_centered": 2.3174424171447754,
+        "gradnorm_l2_uncentered": 2.1937007904052734,
+        "sal_noref_c1": 0.09807523339986801,
+        "sal_noref_c2": 0.575310468673706,
+        "sal_noref_c3": 0.5195795297622681,
+        "sal_noref_c4": 0.3968431353569031,
+        "sal_noref_c5": 0.33443206548690796,
+        "sal_wref_c1": 2.0576274394989014,
+        "sal_wref_c2": 1.0245046615600586,
+        "sal_wref_c3": 0.6883105635643005,
+        "sal_wref_c4": 0.5220932960510254,
+        "sal_wref_c5": 0.4404737055301666
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "MartialArts_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2139.59619140625,
+        "gradnorm_l1_uncentered": 2268.010986328125,
+        "gradnorm_l2_centered": 4.578485488891602,
+        "gradnorm_l2_uncentered": 5.078996658325195,
+        "sal_noref_c1": 1.318007469177246,
+        "sal_noref_c2": 6.7854084968566895,
+        "sal_noref_c3": 4.820405960083008,
+        "sal_noref_c4": 3.642310619354248,
+        "sal_noref_c5": 2.9362716674804688,
+        "sal_wref_c1": 3.0601346492767334,
+        "sal_wref_c2": 4.431515216827393,
+        "sal_wref_c3": 3.2577762603759766,
+        "sal_wref_c4": 2.471158027648926,
+        "sal_wref_c5": 2.0075972080230713
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "MartialArts_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 887.7672119140625,
+        "gradnorm_l1_uncentered": 829.34814453125,
+        "gradnorm_l2_centered": 2.0046820640563965,
+        "gradnorm_l2_uncentered": 1.8676226139068604,
+        "sal_noref_c1": 0.1500653624534607,
+        "sal_noref_c2": 0.38430553674697876,
+        "sal_noref_c3": 0.46291136741638184,
+        "sal_noref_c4": 0.3472842276096344,
+        "sal_noref_c5": 0.2905741035938263,
+        "sal_wref_c1": 1.6253665685653687,
+        "sal_wref_c2": 0.8443539142608643,
+        "sal_wref_c3": 0.589185357093811,
+        "sal_wref_c4": 0.46187591552734375,
+        "sal_wref_c5": 0.3826187252998352
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "MartialArts_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3135.37841796875,
+        "gradnorm_l1_uncentered": 3365.153076171875,
+        "gradnorm_l2_centered": 5.580206394195557,
+        "gradnorm_l2_uncentered": 6.382976055145264,
+        "sal_noref_c1": 11.36635971069336,
+        "sal_noref_c2": 5.934604644775391,
+        "sal_noref_c3": 4.449766635894775,
+        "sal_noref_c4": 3.3406753540039062,
+        "sal_noref_c5": 2.771596908569336,
+        "sal_wref_c1": 1.8575607538223267,
+        "sal_wref_c2": 1.1852123737335205,
+        "sal_wref_c3": 1.2798727750778198,
+        "sal_wref_c4": 0.9599047303199768,
+        "sal_wref_c5": 0.7907323241233826
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1244.4345703125,
+        "gradnorm_l1_uncentered": 1318.9471435546875,
+        "gradnorm_l2_centered": 2.595963716506958,
+        "gradnorm_l2_uncentered": 3.3272998332977295,
+        "sal_noref_c1": 2.200021743774414,
+        "sal_noref_c2": 2.5827765464782715,
+        "sal_noref_c3": 1.7941664457321167,
+        "sal_noref_c4": 1.4540586471557617,
+        "sal_noref_c5": 1.1645605564117432,
+        "sal_wref_c1": 0.506379246711731,
+        "sal_wref_c2": 0.7159440517425537,
+        "sal_wref_c3": 0.4827049672603607,
+        "sal_wref_c4": 0.4123418927192688,
+        "sal_wref_c5": 0.3305736184120178
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 694.4882202148438,
+        "gradnorm_l1_uncentered": 509.4233093261719,
+        "gradnorm_l2_centered": 1.702775001525879,
+        "gradnorm_l2_uncentered": 1.429381012916565,
+        "sal_noref_c1": 0.08236636221408844,
+        "sal_noref_c2": 0.45308035612106323,
+        "sal_noref_c3": 0.4209331274032593,
+        "sal_noref_c4": 0.32119274139404297,
+        "sal_noref_c5": 0.2612363398075104,
+        "sal_wref_c1": 1.9495773315429688,
+        "sal_wref_c2": 0.9794626235961914,
+        "sal_wref_c3": 0.6549531817436218,
+        "sal_wref_c4": 0.49980583786964417,
+        "sal_wref_c5": 0.40673428773880005
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6004.15625,
+        "gradnorm_l1_uncentered": 6312.048828125,
+        "gradnorm_l2_centered": 11.675057411193848,
+        "gradnorm_l2_uncentered": 12.696062088012695,
+        "sal_noref_c1": 69.03515625,
+        "sal_noref_c2": 35.17731857299805,
+        "sal_noref_c3": 23.460859298706055,
+        "sal_noref_c4": 18.167783737182617,
+        "sal_noref_c5": 14.61658763885498,
+        "sal_wref_c1": 33.397621154785156,
+        "sal_wref_c2": 22.50947380065918,
+        "sal_wref_c3": 15.67436695098877,
+        "sal_wref_c4": 11.953207969665527,
+        "sal_wref_c5": 10.095067977905273
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "73.json",
+    "question_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "mistake_agent": "VideoAnalysis_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In Series 9, Episode 11 of Doctor Who, the Doctor is trapped inside an ever-shifting maze. What is this location called in the official script for the episode? Give the setting exactly as it appears in the first scene heading."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DoctorWhoScript_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 731.4169921875,
+        "gradnorm_l1_uncentered": 505.6663818359375,
+        "gradnorm_l2_centered": 1.7747522592544556,
+        "gradnorm_l2_uncentered": 2.0094943046569824,
+        "sal_noref_c1": 1.0872009992599487,
+        "sal_noref_c2": 0.8521220684051514,
+        "sal_noref_c3": 0.7157383561134338,
+        "sal_noref_c4": 0.5454623699188232,
+        "sal_noref_c5": 0.45045390725135803,
+        "sal_wref_c1": 0.2961514890193939,
+        "sal_wref_c2": 0.1764167696237564,
+        "sal_wref_c3": 0.4875844717025757,
+        "sal_wref_c4": 0.3919003903865814,
+        "sal_wref_c5": 0.3206639289855957
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "VideoAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1529.6121826171875,
+        "gradnorm_l1_uncentered": 1568.1759033203125,
+        "gradnorm_l2_centered": 2.9869942665100098,
+        "gradnorm_l2_uncentered": 3.735518217086792,
+        "sal_noref_c1": 3.571653366088867,
+        "sal_noref_c2": 2.031522750854492,
+        "sal_noref_c3": 1.4663047790527344,
+        "sal_noref_c4": 1.4244005680084229,
+        "sal_noref_c5": 1.1401698589324951,
+        "sal_wref_c1": 0.0008831203449517488,
+        "sal_wref_c2": 0.009298325516283512,
+        "sal_wref_c3": 0.007985387928783894,
+        "sal_wref_c4": 0.20811651647090912,
+        "sal_wref_c5": 0.1686740517616272
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2276.721923828125,
+        "gradnorm_l1_uncentered": 2304.38818359375,
+        "gradnorm_l2_centered": 4.840793132781982,
+        "gradnorm_l2_uncentered": 5.233717441558838,
+        "sal_noref_c1": 2.2543416023254395,
+        "sal_noref_c2": 1.1321253776550293,
+        "sal_noref_c3": 1.6188468933105469,
+        "sal_noref_c4": 1.8279608488082886,
+        "sal_noref_c5": 1.5062127113342285,
+        "sal_wref_c1": 0.042979996651411057,
+        "sal_wref_c2": 0.32806557416915894,
+        "sal_wref_c3": 0.4605588912963867,
+        "sal_wref_c4": 0.8464394807815552,
+        "sal_wref_c5": 0.6826409101486206
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2584.587158203125,
+        "gradnorm_l1_uncentered": 2675.980224609375,
+        "gradnorm_l2_centered": 6.645852088928223,
+        "gradnorm_l2_uncentered": 7.239969730377197,
+        "sal_noref_c1": 2.464118719100952,
+        "sal_noref_c2": 5.376057147979736,
+        "sal_noref_c3": 6.4889235496521,
+        "sal_noref_c4": 6.490215301513672,
+        "sal_noref_c5": 5.247164249420166,
+        "sal_wref_c1": 2.3077683448791504,
+        "sal_wref_c2": 2.0780200958251953,
+        "sal_wref_c3": 3.211284637451172,
+        "sal_wref_c4": 4.443323135375977,
+        "sal_wref_c5": 3.616565704345703
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2945.315185546875,
+        "gradnorm_l1_uncentered": 3134.476318359375,
+        "gradnorm_l2_centered": 9.542257308959961,
+        "gradnorm_l2_uncentered": 10.702580451965332,
+        "sal_noref_c1": 40.785640716552734,
+        "sal_noref_c2": 35.588958740234375,
+        "sal_noref_c3": 24.07074737548828,
+        "sal_noref_c4": 19.050649642944336,
+        "sal_noref_c5": 16.103511810302734,
+        "sal_wref_c1": 4.895203113555908,
+        "sal_wref_c2": 23.12447738647461,
+        "sal_wref_c3": 15.425375938415527,
+        "sal_wref_c4": 13.084733963012695,
+        "sal_wref_c5": 11.146652221679688
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5876.86083984375,
+        "gradnorm_l1_uncentered": 6082.546875,
+        "gradnorm_l2_centered": 16.44926643371582,
+        "gradnorm_l2_uncentered": 17.564538955688477,
+        "sal_noref_c1": 80.08832550048828,
+        "sal_noref_c2": 81.8384017944336,
+        "sal_noref_c3": 55.91994094848633,
+        "sal_noref_c4": 44.430721282958984,
+        "sal_noref_c5": 36.73424530029297,
+        "sal_wref_c1": 6.675176620483398,
+        "sal_wref_c2": 52.73689651489258,
+        "sal_wref_c3": 39.210811614990234,
+        "sal_wref_c4": 35.141395568847656,
+        "sal_wref_c5": 29.134021759033203
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DoctorWhoScript_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8580.2880859375,
+        "gradnorm_l1_uncentered": 8801.2490234375,
+        "gradnorm_l2_centered": 16.915790557861328,
+        "gradnorm_l2_uncentered": 17.473360061645508,
+        "sal_noref_c1": 24.596567153930664,
+        "sal_noref_c2": 14.566214561462402,
+        "sal_noref_c3": 33.87415313720703,
+        "sal_noref_c4": 26.320913314819336,
+        "sal_noref_c5": 23.288570404052734,
+        "sal_wref_c1": 2.4325783252716064,
+        "sal_wref_c2": 2.1163535118103027,
+        "sal_wref_c3": 29.60868263244629,
+        "sal_wref_c4": 22.20834732055664,
+        "sal_wref_c5": 19.026269912719727
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "126.json",
+    "question_id": "9e31099fffa6a3891c94934fd4fc2f3f522d51c1904ff3561f3a10e4bf245821",
+    "mistake_agent": "CorporateHistory_IPOs_MondayCom_Expert",
+    "mistake_step": 5,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "Which of the people in the monday.com C-suite did not have a C-suite position during the company's IPO?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "CorporateHistory_IPOs_MondayCom_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 949.9660034179688,
+        "gradnorm_l1_uncentered": 661.2418823242188,
+        "gradnorm_l2_centered": 1.7285699844360352,
+        "gradnorm_l2_uncentered": 1.4218734502792358,
+        "sal_noref_c1": 0.1871296763420105,
+        "sal_noref_c2": 0.24410822987556458,
+        "sal_noref_c3": 0.16674159467220306,
+        "sal_noref_c4": 0.1464906483888626,
+        "sal_noref_c5": 0.12242541462182999,
+        "sal_wref_c1": 1.485925555229187,
+        "sal_wref_c2": 0.7629651427268982,
+        "sal_wref_c3": 0.508806049823761,
+        "sal_wref_c4": 0.408309668302536,
+        "sal_wref_c5": 0.32863348722457886
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "CorporateHistory_IPOs_MondayCom_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 998.315185546875,
+        "gradnorm_l1_uncentered": 854.4116821289062,
+        "gradnorm_l2_centered": 1.8332449197769165,
+        "gradnorm_l2_uncentered": 1.6311801671981812,
+        "sal_noref_c1": 0.311763733625412,
+        "sal_noref_c2": 0.21344387531280518,
+        "sal_noref_c3": 0.14350824058055878,
+        "sal_noref_c4": 0.121207095682621,
+        "sal_noref_c5": 0.11061210930347443,
+        "sal_wref_c1": 1.1166738271713257,
+        "sal_wref_c2": 0.6424168348312378,
+        "sal_wref_c3": 0.4462430775165558,
+        "sal_wref_c4": 0.3539307117462158,
+        "sal_wref_c5": 0.2870942950248718
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 942.348388671875,
+        "gradnorm_l1_uncentered": 675.7576904296875,
+        "gradnorm_l2_centered": 1.722947597503662,
+        "gradnorm_l2_uncentered": 1.2245739698410034,
+        "sal_noref_c1": 0.13016775250434875,
+        "sal_noref_c2": 0.1321154683828354,
+        "sal_noref_c3": 0.10906948894262314,
+        "sal_noref_c4": 0.08326483517885208,
+        "sal_noref_c5": 0.07074892520904541,
+        "sal_wref_c1": 1.529228925704956,
+        "sal_wref_c2": 0.8446047306060791,
+        "sal_wref_c3": 0.5633611083030701,
+        "sal_wref_c4": 0.42268961668014526,
+        "sal_wref_c5": 0.3396708369255066
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "CorporateHistory_IPOs_MondayCom_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 806.90283203125,
+        "gradnorm_l1_uncentered": 532.4725341796875,
+        "gradnorm_l2_centered": 1.5835598707199097,
+        "gradnorm_l2_uncentered": 0.8747899532318115,
+        "sal_noref_c1": 0.10132073611021042,
+        "sal_noref_c2": 0.06715817004442215,
+        "sal_noref_c3": 0.04921017587184906,
+        "sal_noref_c4": 0.037288177758455276,
+        "sal_noref_c5": 0.030421793460845947,
+        "sal_wref_c1": 1.5438700914382935,
+        "sal_wref_c2": 0.9527856111526489,
+        "sal_wref_c3": 0.6400269865989685,
+        "sal_wref_c4": 0.48058706521987915,
+        "sal_wref_c5": 0.3855239450931549
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1436.717041015625,
+        "gradnorm_l1_uncentered": 1473.0694580078125,
+        "gradnorm_l2_centered": 2.3743064403533936,
+        "gradnorm_l2_uncentered": 2.441758632659912,
+        "sal_noref_c1": 0.722712516784668,
+        "sal_noref_c2": 0.5218462944030762,
+        "sal_noref_c3": 0.3518732488155365,
+        "sal_noref_c4": 0.39266347885131836,
+        "sal_noref_c5": 0.3228035569190979,
+        "sal_wref_c1": 0.6429554224014282,
+        "sal_wref_c2": 0.32609179615974426,
+        "sal_wref_c3": 0.22339588403701782,
+        "sal_wref_c4": 0.26753509044647217,
+        "sal_wref_c5": 0.23789560794830322
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "CorporateHistory_IPOs_MondayCom_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 857.7905883789062,
+        "gradnorm_l1_uncentered": 556.26171875,
+        "gradnorm_l2_centered": 1.665548324584961,
+        "gradnorm_l2_uncentered": 0.9248611927032471,
+        "sal_noref_c1": 0.07259723544120789,
+        "sal_noref_c2": 0.04974688962101936,
+        "sal_noref_c3": 0.03539213910698891,
+        "sal_noref_c4": 0.027005920186638832,
+        "sal_noref_c5": 0.02192007377743721,
+        "sal_wref_c1": 1.6543786525726318,
+        "sal_wref_c2": 1.0245108604431152,
+        "sal_wref_c3": 0.691307544708252,
+        "sal_wref_c4": 0.5191032886505127,
+        "sal_wref_c5": 0.41732239723205566
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 737.2151489257812,
+        "gradnorm_l1_uncentered": 488.0386047363281,
+        "gradnorm_l2_centered": 1.4512909650802612,
+        "gradnorm_l2_uncentered": 0.8904075026512146,
+        "sal_noref_c1": 0.18978159129619598,
+        "sal_noref_c2": 0.12355651706457138,
+        "sal_noref_c3": 0.08271483331918716,
+        "sal_noref_c4": 0.06451152265071869,
+        "sal_noref_c5": 0.05218347907066345,
+        "sal_wref_c1": 1.2960654497146606,
+        "sal_wref_c2": 0.7779266834259033,
+        "sal_wref_c3": 0.5295430421829224,
+        "sal_wref_c4": 0.4065878987312317,
+        "sal_wref_c5": 0.3269199728965759
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "CorporateHistory_IPOs_MondayCom_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3471.86572265625,
+        "gradnorm_l1_uncentered": 3906.330810546875,
+        "gradnorm_l2_centered": 6.268942356109619,
+        "gradnorm_l2_uncentered": 7.375930309295654,
+        "sal_noref_c1": 31.91132164001465,
+        "sal_noref_c2": 15.861312866210938,
+        "sal_noref_c3": 11.608757972717285,
+        "sal_noref_c4": 8.72840690612793,
+        "sal_noref_c5": 6.994792938232422,
+        "sal_wref_c1": 17.035186767578125,
+        "sal_wref_c2": 8.508056640625,
+        "sal_wref_c3": 6.634199619293213,
+        "sal_wref_c4": 4.980800628662109,
+        "sal_wref_c5": 4.011794090270996
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "79.json",
+    "question_id": "e8cb5b03-41e0-4086-99e5-f6806cd97211",
+    "mistake_agent": "WaybackMachine_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I went to Virtue restaurant & bar in Chicago for my birthday on March 22, 2021 and the main course I had was delicious!  Unfortunately, when I went back about a month later on April 21, it was no longer on the dinner menu.  Using the Wayback Machine, can you help me figure out which main course was on the dinner menu for Virtue on March 22, 2021 but not April 21, 2021? Answer using the singular form, without articles."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 617.4044799804688,
+        "gradnorm_l1_uncentered": 362.928955078125,
+        "gradnorm_l2_centered": 1.399530053138733,
+        "gradnorm_l2_uncentered": 1.0698717832565308,
+        "sal_noref_c1": 0.7906630039215088,
+        "sal_noref_c2": 0.4110974371433258,
+        "sal_noref_c3": 0.295822411775589,
+        "sal_noref_c4": 0.22282394766807556,
+        "sal_noref_c5": 0.1791909635066986,
+        "sal_wref_c1": 1.7078561782836914,
+        "sal_wref_c2": 0.8457187414169312,
+        "sal_wref_c3": 0.5680670142173767,
+        "sal_wref_c4": 0.42605119943618774,
+        "sal_wref_c5": 0.34368088841438293
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 639.0403442382812,
+        "gradnorm_l1_uncentered": 491.6190490722656,
+        "gradnorm_l2_centered": 1.3190923929214478,
+        "gradnorm_l2_uncentered": 1.2892661094665527,
+        "sal_noref_c1": 1.1003910303115845,
+        "sal_noref_c2": 0.5607134103775024,
+        "sal_noref_c3": 0.40901628136634827,
+        "sal_noref_c4": 0.3148183524608612,
+        "sal_noref_c5": 0.2570216953754425,
+        "sal_wref_c1": 1.3427906036376953,
+        "sal_wref_c2": 0.6666034460067749,
+        "sal_wref_c3": 0.45221182703971863,
+        "sal_wref_c4": 0.3417685925960541,
+        "sal_wref_c5": 0.27469295263290405
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3989.201171875,
+        "gradnorm_l1_uncentered": 4474.419921875,
+        "gradnorm_l2_centered": 8.565351486206055,
+        "gradnorm_l2_uncentered": 10.518266677856445,
+        "sal_noref_c1": 91.36744689941406,
+        "sal_noref_c2": 47.80046081542969,
+        "sal_noref_c3": 31.89300537109375,
+        "sal_noref_c4": 24.479333877563477,
+        "sal_noref_c5": 19.59074592590332,
+        "sal_wref_c1": 52.70059585571289,
+        "sal_wref_c2": 29.658594131469727,
+        "sal_wref_c3": 20.02819061279297,
+        "sal_wref_c4": 15.331985473632812,
+        "sal_wref_c5": 12.37682056427002
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "MenuAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 582.3561401367188,
+        "gradnorm_l1_uncentered": 351.8090515136719,
+        "gradnorm_l2_centered": 1.5459972620010376,
+        "gradnorm_l2_uncentered": 0.8507287502288818,
+        "sal_noref_c1": 0.49078476428985596,
+        "sal_noref_c2": 0.26605677604675293,
+        "sal_noref_c3": 0.18146789073944092,
+        "sal_noref_c4": 0.1414395123720169,
+        "sal_noref_c5": 0.1155414804816246,
+        "sal_wref_c1": 2.212290048599243,
+        "sal_wref_c2": 1.0960805416107178,
+        "sal_wref_c3": 0.7314465641975403,
+        "sal_wref_c4": 0.5491853356361389,
+        "sal_wref_c5": 0.44121426343917847
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 640.6080322265625,
+        "gradnorm_l1_uncentered": 323.532470703125,
+        "gradnorm_l2_centered": 1.7110414505004883,
+        "gradnorm_l2_uncentered": 0.6720483899116516,
+        "sal_noref_c1": 0.27768880128860474,
+        "sal_noref_c2": 0.15422774851322174,
+        "sal_noref_c3": 0.10282156616449356,
+        "sal_noref_c4": 0.07764013856649399,
+        "sal_noref_c5": 0.06337374448776245,
+        "sal_wref_c1": 2.7095465660095215,
+        "sal_wref_c2": 1.342627763748169,
+        "sal_wref_c3": 0.9011764526367188,
+        "sal_wref_c4": 0.6767438650131226,
+        "sal_wref_c5": 0.5448716878890991
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 623.6712036132812,
+        "gradnorm_l1_uncentered": 362.1933288574219,
+        "gradnorm_l2_centered": 1.5411807298660278,
+        "gradnorm_l2_uncentered": 0.8985945582389832,
+        "sal_noref_c1": 0.5219972729682922,
+        "sal_noref_c2": 0.2647762894630432,
+        "sal_noref_c3": 0.1948932409286499,
+        "sal_noref_c4": 0.1513366997241974,
+        "sal_noref_c5": 0.1224982738494873,
+        "sal_wref_c1": 2.1466293334960938,
+        "sal_wref_c2": 1.0705859661102295,
+        "sal_wref_c3": 0.7154316306114197,
+        "sal_wref_c4": 0.5375840067863464,
+        "sal_wref_c5": 0.4306729733943939
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 697.8079833984375,
+        "gradnorm_l1_uncentered": 533.2735595703125,
+        "gradnorm_l2_centered": 1.5078243017196655,
+        "gradnorm_l2_uncentered": 1.120741367340088,
+        "sal_noref_c1": 0.7150962352752686,
+        "sal_noref_c2": 0.3651796579360962,
+        "sal_noref_c3": 0.26141998171806335,
+        "sal_noref_c4": 0.20247098803520203,
+        "sal_noref_c5": 0.1638781577348709,
+        "sal_wref_c1": 1.8155572414398193,
+        "sal_wref_c2": 0.9022570252418518,
+        "sal_wref_c3": 0.603158712387085,
+        "sal_wref_c4": 0.4539906978607178,
+        "sal_wref_c5": 0.3638468384742737
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 525.1079711914062,
+        "gradnorm_l1_uncentered": 550.4686889648438,
+        "gradnorm_l2_centered": 1.0636276006698608,
+        "gradnorm_l2_uncentered": 1.561277151107788,
+        "sal_noref_c1": 1.8606148958206177,
+        "sal_noref_c2": 0.9483503103256226,
+        "sal_noref_c3": 0.6591091156005859,
+        "sal_noref_c4": 0.519487202167511,
+        "sal_noref_c5": 0.4183504581451416,
+        "sal_wref_c1": 0.7167555689811707,
+        "sal_wref_c2": 0.3558877408504486,
+        "sal_wref_c3": 0.24144043028354645,
+        "sal_wref_c4": 0.19636815786361694,
+        "sal_wref_c5": 0.1600613296031952
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1617.4801025390625,
+        "gradnorm_l1_uncentered": 2033.12646484375,
+        "gradnorm_l2_centered": 3.112186908721924,
+        "gradnorm_l2_uncentered": 4.850019454956055,
+        "sal_noref_c1": 17.584274291992188,
+        "sal_noref_c2": 9.150272369384766,
+        "sal_noref_c3": 6.10330057144165,
+        "sal_noref_c4": 4.8006510734558105,
+        "sal_noref_c5": 3.846606492996216,
+        "sal_wref_c1": 3.6979458332061768,
+        "sal_wref_c2": 2.252114772796631,
+        "sal_wref_c3": 1.516736626625061,
+        "sal_wref_c4": 1.34384286403656,
+        "sal_wref_c5": 1.0753554105758667
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1678.879150390625,
+        "gradnorm_l1_uncentered": 2083.299560546875,
+        "gradnorm_l2_centered": 3.0386760234832764,
+        "gradnorm_l2_uncentered": 4.650271892547607,
+        "sal_noref_c1": 15.256807327270508,
+        "sal_noref_c2": 7.594570636749268,
+        "sal_noref_c3": 5.080137729644775,
+        "sal_noref_c4": 3.9724881649017334,
+        "sal_noref_c5": 3.1802029609680176,
+        "sal_wref_c1": 2.890249490737915,
+        "sal_wref_c2": 1.4508283138275146,
+        "sal_wref_c3": 1.0219712257385254,
+        "sal_wref_c4": 0.8797088861465454,
+        "sal_wref_c5": 0.7163201570510864
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "119.json",
+    "question_id": "0ec4371851b96837b0a81b3dd3df401415061bb532fbafeb4609f3337c358508",
+    "mistake_agent": "Geometry_Expert",
+    "mistake_step": 0,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which gyms (not including gymnastics centers) in West Virginia are within 5 miles (by car) of the Mothman Museum?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Geometry_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1034.3641357421875,
+        "gradnorm_l1_uncentered": 670.284912109375,
+        "gradnorm_l2_centered": 1.8061246871948242,
+        "gradnorm_l2_uncentered": 1.0344678163528442,
+        "sal_noref_c1": 0.03629053011536598,
+        "sal_noref_c2": 0.05105232819914818,
+        "sal_noref_c3": 0.0345604307949543,
+        "sal_noref_c4": 0.028815284371376038,
+        "sal_noref_c5": 0.023198088631033897,
+        "sal_wref_c1": 1.8729853630065918,
+        "sal_wref_c2": 1.0710421800613403,
+        "sal_wref_c3": 0.7210314869880676,
+        "sal_wref_c4": 0.5487974882125854,
+        "sal_wref_c5": 0.44260892271995544
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3306.97998046875,
+        "gradnorm_l1_uncentered": 3618.11181640625,
+        "gradnorm_l2_centered": 6.85738468170166,
+        "gradnorm_l2_uncentered": 7.871046543121338,
+        "sal_noref_c1": 18.64607810974121,
+        "sal_noref_c2": 16.835464477539062,
+        "sal_noref_c3": 11.266175270080566,
+        "sal_noref_c4": 8.8052978515625,
+        "sal_noref_c5": 7.109315395355225,
+        "sal_wref_c1": 3.418497085571289,
+        "sal_wref_c2": 9.662320137023926,
+        "sal_wref_c3": 6.934765338897705,
+        "sal_wref_c4": 5.300401210784912,
+        "sal_wref_c5": 4.244826316833496
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 787.1132202148438,
+        "gradnorm_l1_uncentered": 397.5608825683594,
+        "gradnorm_l2_centered": 1.580437421798706,
+        "gradnorm_l2_uncentered": 0.7080792784690857,
+        "sal_noref_c1": 0.055902909487485886,
+        "sal_noref_c2": 0.05336475372314453,
+        "sal_noref_c3": 0.040203191339969635,
+        "sal_noref_c4": 0.030832849442958832,
+        "sal_noref_c5": 0.02472909912467003,
+        "sal_wref_c1": 1.7631934881210327,
+        "sal_wref_c2": 1.0410287380218506,
+        "sal_wref_c3": 0.6973698139190674,
+        "sal_wref_c4": 0.5277448296546936,
+        "sal_wref_c5": 0.4238937497138977
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1086.8946533203125,
+        "gradnorm_l1_uncentered": 1081.9971923828125,
+        "gradnorm_l2_centered": 1.7895880937576294,
+        "gradnorm_l2_uncentered": 1.9925581216812134,
+        "sal_noref_c1": 0.7767127752304077,
+        "sal_noref_c2": 0.7242610454559326,
+        "sal_noref_c3": 0.48664888739585876,
+        "sal_noref_c4": 0.36528122425079346,
+        "sal_noref_c5": 0.29375749826431274,
+        "sal_wref_c1": 0.7076752185821533,
+        "sal_wref_c2": 0.36156976222991943,
+        "sal_wref_c3": 0.2410763055086136,
+        "sal_wref_c4": 0.18156640231609344,
+        "sal_wref_c5": 0.1452859491109848
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 800.1064453125,
+        "gradnorm_l1_uncentered": 450.0714111328125,
+        "gradnorm_l2_centered": 1.6078057289123535,
+        "gradnorm_l2_uncentered": 0.7674117088317871,
+        "sal_noref_c1": 0.06749732047319412,
+        "sal_noref_c2": 0.0436520092189312,
+        "sal_noref_c3": 0.029102271422743797,
+        "sal_noref_c4": 0.021943865343928337,
+        "sal_noref_c5": 0.019170541316270828,
+        "sal_wref_c1": 1.6552914381027222,
+        "sal_wref_c2": 1.033564567565918,
+        "sal_wref_c3": 0.7067851424217224,
+        "sal_wref_c4": 0.531025767326355,
+        "sal_wref_c5": 0.42887744307518005
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1084.5653076171875,
+        "gradnorm_l1_uncentered": 1128.974853515625,
+        "gradnorm_l2_centered": 1.86846923828125,
+        "gradnorm_l2_uncentered": 2.145385265350342,
+        "sal_noref_c1": 1.064315676689148,
+        "sal_noref_c2": 0.8513031601905823,
+        "sal_noref_c3": 0.5739284157752991,
+        "sal_noref_c4": 0.46882185339927673,
+        "sal_noref_c5": 0.3909359276294708,
+        "sal_wref_c1": 0.44818833470344543,
+        "sal_wref_c2": 0.24387294054031372,
+        "sal_wref_c3": 0.17459388077259064,
+        "sal_wref_c4": 0.19149650633335114,
+        "sal_wref_c5": 0.20246703922748566
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "LocalHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 950.0540771484375,
+        "gradnorm_l1_uncentered": 895.6470947265625,
+        "gradnorm_l2_centered": 1.6420458555221558,
+        "gradnorm_l2_uncentered": 1.6658214330673218,
+        "sal_noref_c1": 0.5419065356254578,
+        "sal_noref_c2": 0.41325870156288147,
+        "sal_noref_c3": 0.2758180499076843,
+        "sal_noref_c4": 0.21120718121528625,
+        "sal_noref_c5": 0.17198699712753296,
+        "sal_wref_c1": 0.8615990877151489,
+        "sal_wref_c2": 0.4479060173034668,
+        "sal_wref_c3": 0.3066817820072174,
+        "sal_wref_c4": 0.24108664691448212,
+        "sal_wref_c5": 0.1928907036781311
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "LocalHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6012.671875,
+        "gradnorm_l1_uncentered": 6405.39013671875,
+        "gradnorm_l2_centered": 10.635605812072754,
+        "gradnorm_l2_uncentered": 11.561014175415039,
+        "sal_noref_c1": 53.420066833496094,
+        "sal_noref_c2": 26.536949157714844,
+        "sal_noref_c3": 20.41761589050293,
+        "sal_noref_c4": 15.490293502807617,
+        "sal_noref_c5": 12.536386489868164,
+        "sal_wref_c1": 32.93678283691406,
+        "sal_wref_c2": 16.92609977722168,
+        "sal_wref_c3": 13.864334106445312,
+        "sal_wref_c4": 10.453417778015137,
+        "sal_wref_c5": 8.362934112548828
+      }
+    }
+  ]
+}

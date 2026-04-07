@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "27.json",
+    "question_id": "7a4a336d-dcfa-45a0-b014-824c7619e8de",
+    "mistake_agent": "DataVerification_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "At the two-minute mark in the YouTube video uploaded by the channel \u201cGameGrumps\u201d on May 14, 2017 as part of their playthrough of the game Mario Kart 8 Deluxe, the shows\u2019 hosts are competing on one of the game\u2019s racetracks. What was the world record time for that track in the game\u2019s 150cc mode as of June 7, 2023? Express your answer in minutes and seconds, rounding the seconds to the nearest hundredth, e.g. 1:01.001."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "MarioKart8Deluxe_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 823.892822265625,
+        "gradnorm_l1_uncentered": 409.0961608886719,
+        "gradnorm_l2_centered": 1.605613350868225,
+        "gradnorm_l2_uncentered": 0.923568069934845,
+        "sal_noref_c1": 0.07784154266119003,
+        "sal_noref_c2": 0.1076996922492981,
+        "sal_noref_c3": 0.07497494667768478,
+        "sal_noref_c4": 0.06518201529979706,
+        "sal_noref_c5": 0.05305354669690132,
+        "sal_wref_c1": 1.7349406480789185,
+        "sal_wref_c2": 0.9466854333877563,
+        "sal_wref_c3": 0.6326974034309387,
+        "sal_wref_c4": 0.48947852849960327,
+        "sal_wref_c5": 0.39677533507347107
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "DataVerification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 969.4796142578125,
+        "gradnorm_l1_uncentered": 890.6749267578125,
+        "gradnorm_l2_centered": 1.6354879140853882,
+        "gradnorm_l2_uncentered": 1.779801845550537,
+        "sal_noref_c1": 0.6115203499794006,
+        "sal_noref_c2": 0.6107934713363647,
+        "sal_noref_c3": 0.4174363315105438,
+        "sal_noref_c4": 0.33512723445892334,
+        "sal_noref_c5": 0.2690320611000061,
+        "sal_wref_c1": 0.8891317844390869,
+        "sal_wref_c2": 0.4428332448005676,
+        "sal_wref_c3": 0.29546883702278137,
+        "sal_wref_c4": 0.25427159667015076,
+        "sal_wref_c5": 0.2037186175584793
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 845.6205444335938,
+        "gradnorm_l1_uncentered": 556.2111206054688,
+        "gradnorm_l2_centered": 1.7045458555221558,
+        "gradnorm_l2_uncentered": 1.1104787588119507,
+        "sal_noref_c1": 0.09915488213300705,
+        "sal_noref_c2": 0.09539663791656494,
+        "sal_noref_c3": 0.08018961548805237,
+        "sal_noref_c4": 0.06400997191667557,
+        "sal_noref_c5": 0.05885166674852371,
+        "sal_wref_c1": 1.6086817979812622,
+        "sal_wref_c2": 0.917445957660675,
+        "sal_wref_c3": 0.6118360161781311,
+        "sal_wref_c4": 0.458883136510849,
+        "sal_wref_c5": 0.3675834536552429
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "MarioKart8Deluxe_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 996.0106811523438,
+        "gradnorm_l1_uncentered": 895.0173950195312,
+        "gradnorm_l2_centered": 1.6660631895065308,
+        "gradnorm_l2_uncentered": 1.4686576128005981,
+        "sal_noref_c1": 0.29906079173088074,
+        "sal_noref_c2": 0.24990493059158325,
+        "sal_noref_c3": 0.1788875311613083,
+        "sal_noref_c4": 0.1341683715581894,
+        "sal_noref_c5": 0.10735341161489487,
+        "sal_wref_c1": 1.2018144130706787,
+        "sal_wref_c2": 0.6545657515525818,
+        "sal_wref_c3": 0.43720921874046326,
+        "sal_wref_c4": 0.3309911787509918,
+        "sal_wref_c5": 0.264815092086792
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1010.4256591796875,
+        "gradnorm_l1_uncentered": 950.1487426757812,
+        "gradnorm_l2_centered": 1.7732453346252441,
+        "gradnorm_l2_uncentered": 1.597174048423767,
+        "sal_noref_c1": 0.3324582278728485,
+        "sal_noref_c2": 0.2247944474220276,
+        "sal_noref_c3": 0.16959057748317719,
+        "sal_noref_c4": 0.13687291741371155,
+        "sal_noref_c5": 0.11143617331981659,
+        "sal_wref_c1": 1.0989714860916138,
+        "sal_wref_c2": 0.6462390422821045,
+        "sal_wref_c3": 0.431415319442749,
+        "sal_wref_c4": 0.3247857689857483,
+        "sal_wref_c5": 0.26219290494918823
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1349.85693359375,
+        "gradnorm_l1_uncentered": 1601.7491455078125,
+        "gradnorm_l2_centered": 2.1715917587280273,
+        "gradnorm_l2_uncentered": 2.841735363006592,
+        "sal_noref_c1": 2.660324811935425,
+        "sal_noref_c2": 1.5752201080322266,
+        "sal_noref_c3": 1.0524417161941528,
+        "sal_noref_c4": 0.7938160300254822,
+        "sal_noref_c5": 0.6380677819252014,
+        "sal_wref_c1": 0.013799999840557575,
+        "sal_wref_c2": 0.014319309964776039,
+        "sal_wref_c3": 0.01909010112285614,
+        "sal_wref_c4": 0.014432595111429691,
+        "sal_wref_c5": 0.015576163306832314
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2894.91845703125,
+        "gradnorm_l1_uncentered": 3246.399169921875,
+        "gradnorm_l2_centered": 5.3577423095703125,
+        "gradnorm_l2_uncentered": 6.318802833557129,
+        "sal_noref_c1": 12.403796195983887,
+        "sal_noref_c2": 8.876529693603516,
+        "sal_noref_c3": 5.944852352142334,
+        "sal_noref_c4": 4.784773826599121,
+        "sal_noref_c5": 4.049374580383301,
+        "sal_wref_c1": 1.8367377519607544,
+        "sal_wref_c2": 3.13055419921875,
+        "sal_wref_c3": 2.141456127166748,
+        "sal_wref_c4": 2.0002615451812744,
+        "sal_wref_c5": 2.289222002029419
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2753.89892578125,
+        "gradnorm_l1_uncentered": 3012.474609375,
+        "gradnorm_l2_centered": 4.538405895233154,
+        "gradnorm_l2_uncentered": 5.294861316680908,
+        "sal_noref_c1": 7.797754287719727,
+        "sal_noref_c2": 3.97200870513916,
+        "sal_noref_c3": 3.1840133666992188,
+        "sal_noref_c4": 2.3880703449249268,
+        "sal_noref_c5": 1.9125354290008545,
+        "sal_wref_c1": 1.0022122859954834,
+        "sal_wref_c2": 0.5055965185165405,
+        "sal_wref_c3": 0.6373130679130554,
+        "sal_wref_c4": 0.4795168340206146,
+        "sal_wref_c5": 0.42012906074523926
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2749.990966796875,
+        "gradnorm_l1_uncentered": 2977.76953125,
+        "gradnorm_l2_centered": 4.447206497192383,
+        "gradnorm_l2_uncentered": 4.9126458168029785,
+        "sal_noref_c1": 6.113293170928955,
+        "sal_noref_c2": 3.5783615112304688,
+        "sal_noref_c3": 2.513486623764038,
+        "sal_noref_c4": 1.8870667219161987,
+        "sal_noref_c5": 1.6964962482452393,
+        "sal_wref_c1": 1.23232102394104,
+        "sal_wref_c2": 1.5482821464538574,
+        "sal_wref_c3": 1.115371584892273,
+        "sal_wref_c4": 0.8450340032577515,
+        "sal_wref_c5": 0.706628680229187
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8208.8388671875,
+        "gradnorm_l1_uncentered": 8515.712890625,
+        "gradnorm_l2_centered": 14.149759292602539,
+        "gradnorm_l2_uncentered": 14.769258499145508,
+        "sal_noref_c1": 62.999759674072266,
+        "sal_noref_c2": 52.40492248535156,
+        "sal_noref_c3": 38.45006561279297,
+        "sal_noref_c4": 29.778732299804688,
+        "sal_noref_c5": 26.088123321533203,
+        "sal_wref_c1": 57.09135818481445,
+        "sal_wref_c2": 44.993492126464844,
+        "sal_wref_c3": 33.00790786743164,
+        "sal_wref_c4": 26.50481605529785,
+        "sal_wref_c5": 21.574188232421875
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "54.json",
+    "question_id": "a0068077-79f4-461a-adfe-75c1a4148545",
+    "mistake_agent": "Clinical_Trial_Data_Analysis_Expert",
+    "mistake_step": 5,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "What was the actual enrollment count of the clinical trial on H. pylori in acne vulgaris patients from Jan-May 2018 as listed on the NIH website?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Clinical_Trial_Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 966.4718017578125,
+        "gradnorm_l1_uncentered": 423.2525634765625,
+        "gradnorm_l2_centered": 1.9933477640151978,
+        "gradnorm_l2_uncentered": 0.9391989707946777,
+        "sal_noref_c1": 0.20676733553409576,
+        "sal_noref_c2": 0.11038345843553543,
+        "sal_noref_c3": 0.07493901997804642,
+        "sal_noref_c4": 0.05867788940668106,
+        "sal_noref_c5": 0.047483548521995544,
+        "sal_wref_c1": 3.361921787261963,
+        "sal_wref_c2": 1.6730341911315918,
+        "sal_wref_c3": 1.115446925163269,
+        "sal_wref_c4": 0.8402019739151001,
+        "sal_wref_c5": 0.6721651554107666
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Clinical_Trial_Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1000.852783203125,
+        "gradnorm_l1_uncentered": 525.525146484375,
+        "gradnorm_l2_centered": 2.119516372680664,
+        "gradnorm_l2_uncentered": 0.9632909893989563,
+        "sal_noref_c1": 0.11896481364965439,
+        "sal_noref_c2": 0.05969588831067085,
+        "sal_noref_c3": 0.050989363342523575,
+        "sal_noref_c4": 0.03824927657842636,
+        "sal_noref_c5": 0.03060113452374935,
+        "sal_wref_c1": 3.7946741580963135,
+        "sal_wref_c2": 1.892443299293518,
+        "sal_wref_c3": 1.2670146226882935,
+        "sal_wref_c4": 0.9507942199707031,
+        "sal_wref_c5": 0.7612196207046509
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1853.0013427734375,
+        "gradnorm_l1_uncentered": 2396.776611328125,
+        "gradnorm_l2_centered": 4.356485843658447,
+        "gradnorm_l2_uncentered": 5.6271467208862305,
+        "sal_noref_c1": 14.391836166381836,
+        "sal_noref_c2": 10.434864044189453,
+        "sal_noref_c3": 6.958672046661377,
+        "sal_noref_c4": 5.250924110412598,
+        "sal_noref_c5": 4.208132743835449,
+        "sal_wref_c1": 1.976922869682312,
+        "sal_wref_c2": 4.156380653381348,
+        "sal_wref_c3": 2.774650812149048,
+        "sal_wref_c4": 2.0951318740844727,
+        "sal_wref_c5": 1.6770493984222412
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "ClinicalTrials_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1723.76904296875,
+        "gradnorm_l1_uncentered": 2156.387451171875,
+        "gradnorm_l2_centered": 3.486494302749634,
+        "gradnorm_l2_uncentered": 4.379415035247803,
+        "sal_noref_c1": 6.598941326141357,
+        "sal_noref_c2": 3.4112863540649414,
+        "sal_noref_c3": 2.3187453746795654,
+        "sal_noref_c4": 2.0929131507873535,
+        "sal_noref_c5": 1.7853854894638062,
+        "sal_wref_c1": 0.040888965129852295,
+        "sal_wref_c2": 0.11212711036205292,
+        "sal_wref_c3": 0.10519037395715714,
+        "sal_wref_c4": 0.4073665738105774,
+        "sal_wref_c5": 0.5466511845588684
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 939.3016967773438,
+        "gradnorm_l1_uncentered": 1118.3250732421875,
+        "gradnorm_l2_centered": 1.943579077720642,
+        "gradnorm_l2_uncentered": 2.2817471027374268,
+        "sal_noref_c1": 2.014280080795288,
+        "sal_noref_c2": 1.1629741191864014,
+        "sal_noref_c3": 0.7821850180625916,
+        "sal_noref_c4": 0.7561333775520325,
+        "sal_noref_c5": 0.6081090569496155,
+        "sal_wref_c1": 0.7952320575714111,
+        "sal_wref_c2": 0.5124925971031189,
+        "sal_wref_c3": 0.3454533815383911,
+        "sal_wref_c4": 0.41348180174827576,
+        "sal_wref_c5": 0.33078858256340027
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Clinical_Trial_Data_Analysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 933.6068115234375,
+        "gradnorm_l1_uncentered": 982.5384521484375,
+        "gradnorm_l2_centered": 1.9814869165420532,
+        "gradnorm_l2_uncentered": 2.0694971084594727,
+        "sal_noref_c1": 1.361567735671997,
+        "sal_noref_c2": 0.704883337020874,
+        "sal_noref_c3": 0.4737098515033722,
+        "sal_noref_c4": 0.43130072951316833,
+        "sal_noref_c5": 0.3450407385826111,
+        "sal_wref_c1": 1.3345776796340942,
+        "sal_wref_c2": 0.674816370010376,
+        "sal_wref_c3": 0.45055243372917175,
+        "sal_wref_c4": 0.39965859055519104,
+        "sal_wref_c5": 0.3234543204307556
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 880.10400390625,
+        "gradnorm_l1_uncentered": 496.35418701171875,
+        "gradnorm_l2_centered": 1.870723843574524,
+        "gradnorm_l2_uncentered": 0.9654877781867981,
+        "sal_noref_c1": 0.3350079357624054,
+        "sal_noref_c2": 0.17059548199176788,
+        "sal_noref_c3": 0.13311387598514557,
+        "sal_noref_c4": 0.10641731321811676,
+        "sal_noref_c5": 0.08525782823562622,
+        "sal_wref_c1": 2.8983652591705322,
+        "sal_wref_c2": 1.4419565200805664,
+        "sal_wref_c3": 0.9891604781150818,
+        "sal_wref_c4": 0.746361255645752,
+        "sal_wref_c5": 0.5992147922515869
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Clinical_Trial_Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1214.0582275390625,
+        "gradnorm_l1_uncentered": 1277.6304931640625,
+        "gradnorm_l2_centered": 2.2176496982574463,
+        "gradnorm_l2_uncentered": 2.280407428741455,
+        "sal_noref_c1": 1.4066154956817627,
+        "sal_noref_c2": 0.7498606443405151,
+        "sal_noref_c3": 0.5000067353248596,
+        "sal_noref_c4": 0.38749411702156067,
+        "sal_noref_c5": 0.3130449950695038,
+        "sal_wref_c1": 1.2240046262741089,
+        "sal_wref_c2": 0.691891610622406,
+        "sal_wref_c3": 0.4630453288555145,
+        "sal_wref_c4": 0.3536437153816223,
+        "sal_wref_c5": 0.286062628030777
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "ClinicalTrials_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1252.40869140625,
+        "gradnorm_l1_uncentered": 1566.80615234375,
+        "gradnorm_l2_centered": 2.322559118270874,
+        "gradnorm_l2_uncentered": 2.9633915424346924,
+        "sal_noref_c1": 3.4263792037963867,
+        "sal_noref_c2": 1.9091588258743286,
+        "sal_noref_c3": 1.2731590270996094,
+        "sal_noref_c4": 1.1787201166152954,
+        "sal_noref_c5": 0.945097804069519,
+        "sal_wref_c1": 0.20284731686115265,
+        "sal_wref_c2": 0.3549162447452545,
+        "sal_wref_c3": 0.23949281871318817,
+        "sal_wref_c4": 0.3753184974193573,
+        "sal_wref_c5": 0.3018518388271332
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Clinical_Trial_Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3915.7529296875,
+        "gradnorm_l1_uncentered": 4457.7236328125,
+        "gradnorm_l2_centered": 7.582319736480713,
+        "gradnorm_l2_uncentered": 8.611673355102539,
+        "sal_noref_c1": 23.58296775817871,
+        "sal_noref_c2": 15.340547561645508,
+        "sal_noref_c3": 10.320096015930176,
+        "sal_noref_c4": 9.956643104553223,
+        "sal_noref_c5": 8.234036445617676,
+        "sal_wref_c1": 6.955080986022949,
+        "sal_wref_c2": 7.062373161315918,
+        "sal_wref_c3": 4.804274559020996,
+        "sal_wref_c4": 5.720636367797852,
+        "sal_wref_c5": 4.765198707580566
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "69.json",
+    "question_id": "9d191bce-651d-4746-be2d-7ef8ecadb9c2",
+    "mistake_agent": "VideoContentAnalysis_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Examine the video at https://www.youtube.com/watch?v=1htKBjuUWec.\n\nWhat does Teal'c say in response to the question \"Isn't that hot?\""
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 710.083251953125,
+        "gradnorm_l1_uncentered": 462.0052185058594,
+        "gradnorm_l2_centered": 1.6756813526153564,
+        "gradnorm_l2_uncentered": 1.6721910238265991,
+        "sal_noref_c1": 0.6616318225860596,
+        "sal_noref_c2": 0.46946030855178833,
+        "sal_noref_c3": 0.4028519093990326,
+        "sal_noref_c4": 0.3148898780345917,
+        "sal_noref_c5": 0.26515597105026245,
+        "sal_wref_c1": 0.4352198541164398,
+        "sal_wref_c2": 0.2212039977312088,
+        "sal_wref_c3": 0.47643598914146423,
+        "sal_wref_c4": 0.3808719217777252,
+        "sal_wref_c5": 0.3117113709449768
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1214.7989501953125,
+        "gradnorm_l1_uncentered": 1264.9703369140625,
+        "gradnorm_l2_centered": 3.264719247817993,
+        "gradnorm_l2_uncentered": 3.789217710494995,
+        "sal_noref_c1": 2.534228801727295,
+        "sal_noref_c2": 1.3239411115646362,
+        "sal_noref_c3": 1.083946704864502,
+        "sal_noref_c4": 1.392295479774475,
+        "sal_noref_c5": 1.113947868347168,
+        "sal_wref_c1": 0.013856654986739159,
+        "sal_wref_c2": 0.5404939651489258,
+        "sal_wref_c3": 0.3611879348754883,
+        "sal_wref_c4": 0.5796946287155151,
+        "sal_wref_c5": 0.4656639099121094
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1556.8734130859375,
+        "gradnorm_l1_uncentered": 1582.45068359375,
+        "gradnorm_l2_centered": 4.021937370300293,
+        "gradnorm_l2_uncentered": 4.546275615692139,
+        "sal_noref_c1": 1.7144982814788818,
+        "sal_noref_c2": 5.488883018493652,
+        "sal_noref_c3": 3.6618216037750244,
+        "sal_noref_c4": 2.8026626110076904,
+        "sal_noref_c5": 2.2677276134490967,
+        "sal_wref_c1": 1.7852208614349365,
+        "sal_wref_c2": 3.3595809936523438,
+        "sal_wref_c3": 2.2552449703216553,
+        "sal_wref_c4": 1.7081663608551025,
+        "sal_wref_c5": 1.4180718660354614
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1289.3544921875,
+        "gradnorm_l1_uncentered": 1273.4462890625,
+        "gradnorm_l2_centered": 2.575410842895508,
+        "gradnorm_l2_uncentered": 2.903028726577759,
+        "sal_noref_c1": 0.646090030670166,
+        "sal_noref_c2": 1.8800283670425415,
+        "sal_noref_c3": 1.3178921937942505,
+        "sal_noref_c4": 0.9983946681022644,
+        "sal_noref_c5": 0.7987676858901978,
+        "sal_wref_c1": 1.6821447610855103,
+        "sal_wref_c2": 1.156468391418457,
+        "sal_wref_c3": 0.7737264633178711,
+        "sal_wref_c4": 0.5815119743347168,
+        "sal_wref_c5": 0.4680865406990051
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1397.9012451171875,
+        "gradnorm_l1_uncentered": 1283.0478515625,
+        "gradnorm_l2_centered": 3.4674761295318604,
+        "gradnorm_l2_uncentered": 3.0764641761779785,
+        "sal_noref_c1": 0.07615304738283157,
+        "sal_noref_c2": 0.06150946021080017,
+        "sal_noref_c3": 0.7184727191925049,
+        "sal_noref_c4": 0.6273651123046875,
+        "sal_noref_c5": 0.5131591558456421,
+        "sal_wref_c1": 3.035308361053467,
+        "sal_wref_c2": 2.2514524459838867,
+        "sal_wref_c3": 1.6181305646896362,
+        "sal_wref_c4": 1.2306263446807861,
+        "sal_wref_c5": 1.0002706050872803
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 991.67529296875,
+        "gradnorm_l1_uncentered": 945.376953125,
+        "gradnorm_l2_centered": 1.8120672702789307,
+        "gradnorm_l2_uncentered": 1.6972851753234863,
+        "sal_noref_c1": 0.47942054271698,
+        "sal_noref_c2": 0.2560660243034363,
+        "sal_noref_c3": 0.17492152750492096,
+        "sal_noref_c4": 0.147370383143425,
+        "sal_noref_c5": 0.11795540899038315,
+        "sal_wref_c1": 0.4785859286785126,
+        "sal_wref_c2": 0.4091322124004364,
+        "sal_wref_c3": 0.3405766487121582,
+        "sal_wref_c4": 0.26510632038116455,
+        "sal_wref_c5": 0.21230535209178925
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1314.889404296875,
+        "gradnorm_l1_uncentered": 1275.427001953125,
+        "gradnorm_l2_centered": 3.1150569915771484,
+        "gradnorm_l2_uncentered": 3.2264039516448975,
+        "sal_noref_c1": 0.2489013522863388,
+        "sal_noref_c2": 0.89179527759552,
+        "sal_noref_c3": 1.0455803871154785,
+        "sal_noref_c4": 0.8303532600402832,
+        "sal_noref_c5": 0.6822091341018677,
+        "sal_wref_c1": 2.0510404109954834,
+        "sal_wref_c2": 1.0220831632614136,
+        "sal_wref_c3": 0.820977509021759,
+        "sal_wref_c4": 0.6303151249885559,
+        "sal_wref_c5": 0.5346460938453674
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 905.3309326171875,
+        "gradnorm_l1_uncentered": 744.2105102539062,
+        "gradnorm_l2_centered": 1.7935538291931152,
+        "gradnorm_l2_uncentered": 1.318053126335144,
+        "sal_noref_c1": 0.17239603400230408,
+        "sal_noref_c2": 0.18760710954666138,
+        "sal_noref_c3": 0.13304403424263,
+        "sal_noref_c4": 0.09988056868314743,
+        "sal_noref_c5": 0.08020199090242386,
+        "sal_wref_c1": 0.9839996099472046,
+        "sal_wref_c2": 0.5536829829216003,
+        "sal_wref_c3": 0.510231077671051,
+        "sal_wref_c4": 0.44577786326408386,
+        "sal_wref_c5": 0.3570685088634491
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4545.29541015625,
+        "gradnorm_l1_uncentered": 4621.8330078125,
+        "gradnorm_l2_centered": 9.330842018127441,
+        "gradnorm_l2_uncentered": 9.870804786682129,
+        "sal_noref_c1": 3.589958667755127,
+        "sal_noref_c2": 20.1115779876709,
+        "sal_noref_c3": 13.979371070861816,
+        "sal_noref_c4": 10.570940017700195,
+        "sal_noref_c5": 8.639884948730469,
+        "sal_wref_c1": 5.006935119628906,
+        "sal_wref_c2": 14.191197395324707,
+        "sal_wref_c3": 10.329551696777344,
+        "sal_wref_c4": 7.9726762771606445,
+        "sal_wref_c5": 6.6718316078186035
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 775.940673828125,
+        "gradnorm_l1_uncentered": 593.2847290039062,
+        "gradnorm_l2_centered": 1.8892756700515747,
+        "gradnorm_l2_uncentered": 1.268967628479004,
+        "sal_noref_c1": 0.06161810830235481,
+        "sal_noref_c2": 0.24541443586349487,
+        "sal_noref_c3": 0.16661612689495087,
+        "sal_noref_c4": 0.14312481880187988,
+        "sal_noref_c5": 0.11554110050201416,
+        "sal_wref_c1": 1.470835566520691,
+        "sal_wref_c2": 0.7532117962837219,
+        "sal_wref_c3": 0.5995103716850281,
+        "sal_wref_c4": 0.5835184454917908,
+        "sal_wref_c5": 0.46877217292785645
+      }
+    }
+  ]
+}

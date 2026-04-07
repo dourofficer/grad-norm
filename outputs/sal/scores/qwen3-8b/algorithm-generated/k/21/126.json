@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "99.json",
+    "question_id": "99da66d8af02491f98b98c56b26c709e773b5a2ad945fb280375951ba600de09",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 2,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "How much will I save by getting annual passes for a group of 4 adults and 1 student for the Philadelphia Museum of Art, compared to buying daily tickets, if we visit 5 times in a year (all non-consecutive days)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Ticket_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 667.591796875,
+        "gradnorm_l1_uncentered": 346.66595458984375,
+        "gradnorm_l2_centered": 1.59116530418396,
+        "gradnorm_l2_uncentered": 0.9670544266700745,
+        "sal_noref_c1": 0.1746368259191513,
+        "sal_noref_c2": 0.11685934662818909,
+        "sal_noref_c3": 0.10209504514932632,
+        "sal_noref_c4": 0.08050204813480377,
+        "sal_noref_c5": 0.06789582967758179,
+        "sal_wref_c1": 0.821161150932312,
+        "sal_wref_c2": 0.5522212386131287,
+        "sal_wref_c3": 0.594063401222229,
+        "sal_wref_c4": 0.4877690076828003,
+        "sal_wref_c5": 0.3910720944404602
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "AnalyticalReasoning_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 593.2596435546875,
+        "gradnorm_l1_uncentered": 241.50328063964844,
+        "gradnorm_l2_centered": 1.610629916191101,
+        "gradnorm_l2_uncentered": 0.6113085746765137,
+        "sal_noref_c1": 0.04283900186419487,
+        "sal_noref_c2": 0.0221962071955204,
+        "sal_noref_c3": 0.020940931513905525,
+        "sal_noref_c4": 0.02777669206261635,
+        "sal_noref_c5": 0.0232873372733593,
+        "sal_wref_c1": 1.1200875043869019,
+        "sal_wref_c2": 0.9488122463226318,
+        "sal_wref_c3": 0.7196187376976013,
+        "sal_wref_c4": 0.5597732067108154,
+        "sal_wref_c5": 0.45060840249061584
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 575.9664306640625,
+        "gradnorm_l1_uncentered": 180.9920196533203,
+        "gradnorm_l2_centered": 1.5608655214309692,
+        "gradnorm_l2_uncentered": 0.5225400328636169,
+        "sal_noref_c1": 0.0998264029622078,
+        "sal_noref_c2": 0.055611502379179,
+        "sal_noref_c3": 0.03775213286280632,
+        "sal_noref_c4": 0.03654329478740692,
+        "sal_noref_c5": 0.02955769933760166,
+        "sal_wref_c1": 0.7641754150390625,
+        "sal_wref_c2": 0.8162614703178406,
+        "sal_wref_c3": 0.6956827044487,
+        "sal_wref_c4": 0.5520930290222168,
+        "sal_wref_c5": 0.4416747987270355
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1286.202880859375,
+        "gradnorm_l1_uncentered": 1365.530029296875,
+        "gradnorm_l2_centered": 2.6136274337768555,
+        "gradnorm_l2_uncentered": 3.203364849090576,
+        "sal_noref_c1": 2.0380680561065674,
+        "sal_noref_c2": 1.3933316469192505,
+        "sal_noref_c3": 1.1085797548294067,
+        "sal_noref_c4": 1.022187352180481,
+        "sal_noref_c5": 0.8216452598571777,
+        "sal_wref_c1": 0.18782399594783783,
+        "sal_wref_c2": 0.10104437172412872,
+        "sal_wref_c3": 0.08746954053640366,
+        "sal_wref_c4": 0.17606636881828308,
+        "sal_wref_c5": 0.14110584557056427
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Ticket_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1029.7467041015625,
+        "gradnorm_l1_uncentered": 1063.94580078125,
+        "gradnorm_l2_centered": 2.4584431648254395,
+        "gradnorm_l2_uncentered": 2.415217399597168,
+        "sal_noref_c1": 0.853364884853363,
+        "sal_noref_c2": 0.7783074378967285,
+        "sal_noref_c3": 0.6012158393859863,
+        "sal_noref_c4": 0.5574839115142822,
+        "sal_noref_c5": 0.4586639404296875,
+        "sal_wref_c1": 0.015646550804376602,
+        "sal_wref_c2": 1.1699460744857788,
+        "sal_wref_c3": 0.8007050156593323,
+        "sal_wref_c4": 0.6119447350502014,
+        "sal_wref_c5": 0.5012367963790894
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Ticket_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3926.146240234375,
+        "gradnorm_l1_uncentered": 4187.50439453125,
+        "gradnorm_l2_centered": 8.97268009185791,
+        "gradnorm_l2_uncentered": 9.406157493591309,
+        "sal_noref_c1": 18.408689498901367,
+        "sal_noref_c2": 16.1732120513916,
+        "sal_noref_c3": 11.490832328796387,
+        "sal_noref_c4": 8.686333656311035,
+        "sal_noref_c5": 8.023521423339844,
+        "sal_wref_c1": 16.67918586730957,
+        "sal_wref_c2": 12.665228843688965,
+        "sal_wref_c3": 8.855805397033691,
+        "sal_wref_c4": 6.719534873962402,
+        "sal_wref_c5": 6.721566677093506
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Ticket_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5758.6533203125,
+        "gradnorm_l1_uncentered": 6081.6552734375,
+        "gradnorm_l2_centered": 10.681563377380371,
+        "gradnorm_l2_uncentered": 11.629619598388672,
+        "sal_noref_c1": 57.95942306518555,
+        "sal_noref_c2": 28.78377342224121,
+        "sal_noref_c3": 19.19281578063965,
+        "sal_noref_c4": 14.821589469909668,
+        "sal_noref_c5": 13.039164543151855,
+        "sal_wref_c1": 31.403026580810547,
+        "sal_wref_c2": 18.35169792175293,
+        "sal_wref_c3": 12.672471046447754,
+        "sal_wref_c4": 9.632823944091797,
+        "sal_wref_c5": 8.98774528503418
+      }
+    }
+  ]
+}

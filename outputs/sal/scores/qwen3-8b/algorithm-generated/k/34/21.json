@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "117.json",
+    "question_id": "748899d9d70c09beb3bd48ac8a3658bdcfd2f9114fe6dc4c4b8d2f9541ef4607",
+    "mistake_agent": "JSON_Expert",
+    "mistake_step": 0,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much does it cost to send an envelope with 1-week delivery from Rio de Janeiro to NYC with DHL, USPS, or Fedex? (Format your answers as a list of jsons with the keys \"sender\" and \"price (usd)\" for each option you find)"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JSON_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1006.3909301757812,
+        "gradnorm_l1_uncentered": 568.6465454101562,
+        "gradnorm_l2_centered": 2.0190234184265137,
+        "gradnorm_l2_uncentered": 1.3788456916809082,
+        "sal_noref_c1": 0.41630682349205017,
+        "sal_noref_c2": 0.25887423753738403,
+        "sal_noref_c3": 0.17331932485103607,
+        "sal_noref_c4": 0.13744354248046875,
+        "sal_noref_c5": 0.11021590232849121,
+        "sal_wref_c1": 2.7276833057403564,
+        "sal_wref_c2": 1.381639838218689,
+        "sal_wref_c3": 0.9238104224205017,
+        "sal_wref_c4": 0.701396107673645,
+        "sal_wref_c5": 0.5611171126365662
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 942.6876831054688,
+        "gradnorm_l1_uncentered": 254.4967041015625,
+        "gradnorm_l2_centered": 2.0453574657440186,
+        "gradnorm_l2_uncentered": 0.48639869689941406,
+        "sal_noref_c1": 0.08065297454595566,
+        "sal_noref_c2": 0.04502005875110626,
+        "sal_noref_c3": 0.030516447499394417,
+        "sal_noref_c4": 0.024015512317419052,
+        "sal_noref_c5": 0.020120278000831604,
+        "sal_wref_c1": 3.968301773071289,
+        "sal_wref_c2": 1.973061442375183,
+        "sal_wref_c3": 1.3154232501983643,
+        "sal_wref_c4": 0.9899842143058777,
+        "sal_wref_c5": 0.7953349351882935
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2708.326171875,
+        "gradnorm_l1_uncentered": 3259.68798828125,
+        "gradnorm_l2_centered": 5.191091537475586,
+        "gradnorm_l2_uncentered": 6.266943454742432,
+        "sal_noref_c1": 14.315225601196289,
+        "sal_noref_c2": 7.269306659698486,
+        "sal_noref_c3": 5.832151412963867,
+        "sal_noref_c4": 4.392592906951904,
+        "sal_noref_c5": 3.5548877716064453,
+        "sal_wref_c1": 2.1211705207824707,
+        "sal_wref_c2": 1.1774461269378662,
+        "sal_wref_c3": 1.7374337911605835,
+        "sal_wref_c4": 1.3636444807052612,
+        "sal_wref_c5": 1.0929745435714722
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 888.7559814453125,
+        "gradnorm_l1_uncentered": 365.7056884765625,
+        "gradnorm_l2_centered": 1.9163432121276855,
+        "gradnorm_l2_uncentered": 0.677134096622467,
+        "sal_noref_c1": 0.19463615119457245,
+        "sal_noref_c2": 0.1004490926861763,
+        "sal_noref_c3": 0.07055835425853729,
+        "sal_noref_c4": 0.053341493010520935,
+        "sal_noref_c5": 0.042712677270174026,
+        "sal_wref_c1": 3.3758537769317627,
+        "sal_wref_c2": 1.6793243885040283,
+        "sal_wref_c3": 1.1205229759216309,
+        "sal_wref_c4": 0.842400312423706,
+        "sal_wref_c5": 0.6739398241043091
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1827.7515869140625,
+        "gradnorm_l1_uncentered": 2176.823974609375,
+        "gradnorm_l2_centered": 3.26558256149292,
+        "gradnorm_l2_uncentered": 4.072107315063477,
+        "sal_noref_c1": 5.798312187194824,
+        "sal_noref_c2": 2.952484607696533,
+        "sal_noref_c3": 2.221064805984497,
+        "sal_noref_c4": 1.9086933135986328,
+        "sal_noref_c5": 1.6018245220184326,
+        "sal_wref_c1": 0.011267329566180706,
+        "sal_wref_c2": 0.10065042972564697,
+        "sal_wref_c3": 0.2979027330875397,
+        "sal_wref_c4": 0.42160695791244507,
+        "sal_wref_c5": 0.3731124699115753
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 913.2255859375,
+        "gradnorm_l1_uncentered": 470.43243408203125,
+        "gradnorm_l2_centered": 1.8947291374206543,
+        "gradnorm_l2_uncentered": 1.0099053382873535,
+        "sal_noref_c1": 0.3620191514492035,
+        "sal_noref_c2": 0.19435188174247742,
+        "sal_noref_c3": 0.14281056821346283,
+        "sal_noref_c4": 0.12789826095104218,
+        "sal_noref_c5": 0.1025916188955307,
+        "sal_wref_c1": 2.7589783668518066,
+        "sal_wref_c2": 1.409064769744873,
+        "sal_wref_c3": 0.9472727179527283,
+        "sal_wref_c4": 0.7445011138916016,
+        "sal_wref_c5": 0.5967284440994263
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2809.54150390625,
+        "gradnorm_l1_uncentered": 3305.674560546875,
+        "gradnorm_l2_centered": 5.529224872589111,
+        "gradnorm_l2_uncentered": 6.538438320159912,
+        "sal_noref_c1": 15.063712120056152,
+        "sal_noref_c2": 9.467362403869629,
+        "sal_noref_c3": 7.19594144821167,
+        "sal_noref_c4": 5.768719673156738,
+        "sal_noref_c5": 5.039658546447754,
+        "sal_wref_c1": 2.7720327377319336,
+        "sal_wref_c2": 3.384669303894043,
+        "sal_wref_c3": 3.121530771255493,
+        "sal_wref_c4": 2.962756633758545,
+        "sal_wref_c5": 2.5214028358459473
+      }
+    }
+  ]
+}

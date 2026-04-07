@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "74.json",
+    "question_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+    "mistake_agent": "MerriamWebsterWordOfTheDay_Historian_Expert",
+    "mistake_step": 4,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "What writer is quoted by Merriam-Webster for the Word of the Day from June 27, 2022?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "MerriamWebsterWordOfTheDay_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 995.7760009765625,
+        "gradnorm_l1_uncentered": 554.1603393554688,
+        "gradnorm_l2_centered": 1.9457879066467285,
+        "gradnorm_l2_uncentered": 1.2464945316314697,
+        "sal_noref_c1": 0.39582765102386475,
+        "sal_noref_c2": 0.221753790974617,
+        "sal_noref_c3": 0.14818179607391357,
+        "sal_noref_c4": 0.11517508327960968,
+        "sal_noref_c5": 0.09235650300979614,
+        "sal_wref_c1": 2.788738489151001,
+        "sal_wref_c2": 1.3950262069702148,
+        "sal_wref_c3": 0.9301069378852844,
+        "sal_wref_c4": 0.703606367111206,
+        "sal_wref_c5": 0.5629271268844604
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "MerriamWebsterWordOfTheDay_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1967.07763671875,
+        "gradnorm_l1_uncentered": 2399.572509765625,
+        "gradnorm_l2_centered": 5.37256383895874,
+        "gradnorm_l2_uncentered": 6.351477146148682,
+        "sal_noref_c1": 12.525985717773438,
+        "sal_noref_c2": 8.302030563354492,
+        "sal_noref_c3": 5.766487121582031,
+        "sal_noref_c4": 5.030910491943359,
+        "sal_noref_c5": 4.197052001953125,
+        "sal_wref_c1": 1.3533196449279785,
+        "sal_wref_c2": 2.6518397331237793,
+        "sal_wref_c3": 2.0207529067993164,
+        "sal_wref_c4": 2.233424186706543,
+        "sal_wref_c5": 2.012481212615967
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2880.830322265625,
+        "gradnorm_l1_uncentered": 3418.8251953125,
+        "gradnorm_l2_centered": 7.207770347595215,
+        "gradnorm_l2_uncentered": 8.385395050048828,
+        "sal_noref_c1": 25.152074813842773,
+        "sal_noref_c2": 18.636672973632812,
+        "sal_noref_c3": 13.686144828796387,
+        "sal_noref_c4": 10.479462623596191,
+        "sal_noref_c5": 8.688028335571289,
+        "sal_wref_c1": 6.784533500671387,
+        "sal_wref_c2": 9.474796295166016,
+        "sal_wref_c3": 7.642704010009766,
+        "sal_wref_c4": 5.914669513702393,
+        "sal_wref_c5": 5.0969390869140625
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Quotation_Specialist",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3588.7216796875,
+        "gradnorm_l1_uncentered": 4129.431640625,
+        "gradnorm_l2_centered": 6.9598708152771,
+        "gradnorm_l2_uncentered": 8.13001823425293,
+        "sal_noref_c1": 22.79885482788086,
+        "sal_noref_c2": 12.390515327453613,
+        "sal_noref_c3": 8.31124210357666,
+        "sal_noref_c4": 6.591423511505127,
+        "sal_noref_c5": 5.67987585067749,
+        "sal_wref_c1": 5.341015815734863,
+        "sal_wref_c2": 3.6520190238952637,
+        "sal_wref_c3": 2.463697910308838,
+        "sal_wref_c4": 2.240912437438965,
+        "sal_wref_c5": 2.5183730125427246
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "MerriamWebsterWordOfTheDay_Historian_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 2436.6591796875,
+        "gradnorm_l1_uncentered": 2888.258056640625,
+        "gradnorm_l2_centered": 4.800344944000244,
+        "gradnorm_l2_uncentered": 5.692514896392822,
+        "sal_noref_c1": 9.392544746398926,
+        "sal_noref_c2": 5.133603096008301,
+        "sal_noref_c3": 3.573716402053833,
+        "sal_noref_c4": 2.8388965129852295,
+        "sal_noref_c5": 2.3809893131256104,
+        "sal_wref_c1": 0.46809324622154236,
+        "sal_wref_c2": 0.6337287425994873,
+        "sal_wref_c3": 0.549305260181427,
+        "sal_wref_c4": 0.5925596356391907,
+        "sal_wref_c5": 0.7493196725845337
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2351.30029296875,
+        "gradnorm_l1_uncentered": 2792.429443359375,
+        "gradnorm_l2_centered": 5.282044410705566,
+        "gradnorm_l2_uncentered": 6.595975875854492,
+        "sal_noref_c1": 19.93625259399414,
+        "sal_noref_c2": 13.160592079162598,
+        "sal_noref_c3": 8.848193168640137,
+        "sal_noref_c4": 6.976997375488281,
+        "sal_noref_c5": 5.620265007019043,
+        "sal_wref_c1": 4.400572776794434,
+        "sal_wref_c2": 5.386390686035156,
+        "sal_wref_c3": 3.6629364490509033,
+        "sal_wref_c4": 3.1716418266296387,
+        "sal_wref_c5": 2.5572478771209717
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Quotation_Specialist",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1801.3331298828125,
+        "gradnorm_l1_uncentered": 2201.104248046875,
+        "gradnorm_l2_centered": 3.309265613555908,
+        "gradnorm_l2_uncentered": 4.383299827575684,
+        "sal_noref_c1": 8.126923561096191,
+        "sal_noref_c2": 4.17232608795166,
+        "sal_noref_c3": 2.848473310470581,
+        "sal_noref_c4": 2.477375030517578,
+        "sal_noref_c5": 1.9857780933380127,
+        "sal_wref_c1": 0.24166695773601532,
+        "sal_wref_c2": 0.21419131755828857,
+        "sal_wref_c3": 0.19536153972148895,
+        "sal_wref_c4": 0.48585376143455505,
+        "sal_wref_c5": 0.40367254614830017
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3547.531005859375,
+        "gradnorm_l1_uncentered": 4111.3046875,
+        "gradnorm_l2_centered": 6.761046886444092,
+        "gradnorm_l2_uncentered": 8.088448524475098,
+        "sal_noref_c1": 27.918867111206055,
+        "sal_noref_c2": 14.57349967956543,
+        "sal_noref_c3": 10.02011775970459,
+        "sal_noref_c4": 8.398274421691895,
+        "sal_noref_c5": 6.725738525390625,
+        "sal_wref_c1": 8.22148609161377,
+        "sal_wref_c2": 4.746860027313232,
+        "sal_wref_c3": 3.515197515487671,
+        "sal_wref_c4": 3.569638967514038,
+        "sal_wref_c5": 2.877856492996216
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1906.4976806640625,
+        "gradnorm_l1_uncentered": 2413.369140625,
+        "gradnorm_l2_centered": 3.4336049556732178,
+        "gradnorm_l2_uncentered": 4.689520835876465,
+        "sal_noref_c1": 10.768128395080566,
+        "sal_noref_c2": 5.4113993644714355,
+        "sal_noref_c3": 3.6931240558624268,
+        "sal_noref_c4": 2.971252202987671,
+        "sal_noref_c5": 2.3799192905426025,
+        "sal_wref_c1": 0.8641625046730042,
+        "sal_wref_c2": 0.4595671594142914,
+        "sal_wref_c3": 0.41223016381263733,
+        "sal_wref_c4": 0.5360664129257202,
+        "sal_wref_c5": 0.44583234190940857
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "MerriamWebsterWordOfTheDay_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1533.0838623046875,
+        "gradnorm_l1_uncentered": 2009.49365234375,
+        "gradnorm_l2_centered": 2.5078225135803223,
+        "gradnorm_l2_uncentered": 3.4007253646850586,
+        "sal_noref_c1": 5.1760573387146,
+        "sal_noref_c2": 2.584507942199707,
+        "sal_noref_c3": 1.8472920656204224,
+        "sal_noref_c4": 1.4003545045852661,
+        "sal_noref_c5": 1.1341139078140259,
+        "sal_wref_c1": 0.0004822120536118746,
+        "sal_wref_c2": 0.014999688602983952,
+        "sal_wref_c3": 0.15289999544620514,
+        "sal_wref_c4": 0.13584619760513306,
+        "sal_wref_c5": 0.14215032756328583
+      }
+    }
+  ]
+}

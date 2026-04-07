@@ -1,0 +1,122 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "45.json",
+    "question_id": "04a04a9b-226c-43fd-b319-d5e89743676f",
+    "mistake_agent": "PublicationData_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "If we assume all articles published by Nature in 2020 (articles, only, not book reviews/columns, etc) relied on statistical significance to justify their findings and they on average came to a p-value of 0.04, how many papers would be incorrect as to their claims of statistical significance? Round the value up to the next integer."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 838.6964721679688,
+        "gradnorm_l1_uncentered": 455.73138427734375,
+        "gradnorm_l2_centered": 1.6057407855987549,
+        "gradnorm_l2_uncentered": 0.9686735272407532,
+        "sal_noref_c1": 0.09421753883361816,
+        "sal_noref_c2": 0.1133468896150589,
+        "sal_noref_c3": 0.07817094773054123,
+        "sal_noref_c4": 0.06915335357189178,
+        "sal_noref_c5": 0.05792265012860298,
+        "sal_wref_c1": 1.6596859693527222,
+        "sal_wref_c2": 0.9091300964355469,
+        "sal_wref_c3": 0.6074000597000122,
+        "sal_wref_c4": 0.4703543186187744,
+        "sal_wref_c5": 0.3816724419593811
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "PublicationData_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 848.3961181640625,
+        "gradnorm_l1_uncentered": 581.7664184570312,
+        "gradnorm_l2_centered": 1.629780888557434,
+        "gradnorm_l2_uncentered": 1.3239244222640991,
+        "sal_noref_c1": 0.2062392681837082,
+        "sal_noref_c2": 0.2486475557088852,
+        "sal_noref_c3": 0.1674249917268753,
+        "sal_noref_c4": 0.16129517555236816,
+        "sal_noref_c5": 0.13742464780807495,
+        "sal_wref_c1": 1.430782437324524,
+        "sal_wref_c2": 0.7361921072006226,
+        "sal_wref_c3": 0.4922741949558258,
+        "sal_wref_c4": 0.411704957485199,
+        "sal_wref_c5": 0.3311314880847931
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5341.08349609375,
+        "gradnorm_l1_uncentered": 5667.54541015625,
+        "gradnorm_l2_centered": 9.40298843383789,
+        "gradnorm_l2_uncentered": 10.446281433105469,
+        "sal_noref_c1": 35.26063537597656,
+        "sal_noref_c2": 28.423721313476562,
+        "sal_noref_c3": 19.00309944152832,
+        "sal_noref_c4": 14.430734634399414,
+        "sal_noref_c5": 11.63714599609375,
+        "sal_wref_c1": 10.903040885925293,
+        "sal_wref_c2": 18.892078399658203,
+        "sal_wref_c3": 13.034035682678223,
+        "sal_wref_c4": 10.240246772766113,
+        "sal_wref_c5": 8.238504409790039
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 968.75927734375,
+        "gradnorm_l1_uncentered": 962.48291015625,
+        "gradnorm_l2_centered": 1.6741050481796265,
+        "gradnorm_l2_uncentered": 1.9421262741088867,
+        "sal_noref_c1": 0.8635867834091187,
+        "sal_noref_c2": 0.6857829093933105,
+        "sal_noref_c3": 0.4614567458629608,
+        "sal_noref_c4": 0.3847828507423401,
+        "sal_noref_c5": 0.30853933095932007,
+        "sal_wref_c1": 0.6269347071647644,
+        "sal_wref_c2": 0.3118904232978821,
+        "sal_wref_c3": 0.20913870632648468,
+        "sal_wref_c4": 0.2183343768119812,
+        "sal_wref_c5": 0.17512384057044983
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "PublicationData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6087.60009765625,
+        "gradnorm_l1_uncentered": 6556.314453125,
+        "gradnorm_l2_centered": 11.068696022033691,
+        "gradnorm_l2_uncentered": 12.198840141296387,
+        "sal_noref_c1": 87.36701965332031,
+        "sal_noref_c2": 43.507232666015625,
+        "sal_noref_c3": 32.8531608581543,
+        "sal_noref_c4": 25.688766479492188,
+        "sal_noref_c5": 20.715221405029297,
+        "sal_wref_c1": 62.90584182739258,
+        "sal_wref_c2": 31.757965087890625,
+        "sal_wref_c3": 23.61639976501465,
+        "sal_wref_c4": 18.822267532348633,
+        "sal_wref_c5": 15.161539077758789
+      }
+    }
+  ]
+}

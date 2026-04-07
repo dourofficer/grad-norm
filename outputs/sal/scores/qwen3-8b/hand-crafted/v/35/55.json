@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "hand-crafted",
+    "weight_config": "/home/hoangpham/exchange/hand-crafted/v/35"
+  },
+  "metadata": {
+    "filename": "6.json",
+    "question_id": "e6bc98089608217e45b6956a46518fe3cce64a799b3ac43c6974c449ae14c408",
+    "mistake_agent": "Orchestrator",
+    "mistake_step": 5,
+    "level": -1,
+    "subset": "hand-crafted",
+    "question": "What's the highest price a high-rise apartment was sold for in Mission Bay, San Francisco, in 2021?"
+  },
+  "steps": [
+    {
+      "step_idx": 1,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 942.799560546875,
+        "gradnorm_l1_uncentered": 509.71929931640625,
+        "gradnorm_l2_centered": 1.8142906427383423,
+        "gradnorm_l2_uncentered": 1.563522458076477,
+        "sal_noref_c1": 1.4966728687286377,
+        "sal_noref_c2": 1.0069786310195923,
+        "sal_noref_c3": 0.6728853583335876,
+        "sal_noref_c4": 0.5058211088180542,
+        "sal_noref_c5": 0.40465861558914185,
+        "sal_wref_c1": 2.665041923522949,
+        "sal_wref_c2": 1.4187486171722412,
+        "sal_wref_c3": 0.9473356604576111,
+        "sal_wref_c4": 0.7108914256095886,
+        "sal_wref_c5": 0.5745335817337036
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 863.5018920898438,
+        "gradnorm_l1_uncentered": 563.9293823242188,
+        "gradnorm_l2_centered": 1.7750298976898193,
+        "gradnorm_l2_uncentered": 1.4631614685058594,
+        "sal_noref_c1": 1.4347580671310425,
+        "sal_noref_c2": 0.9045565128326416,
+        "sal_noref_c3": 0.6034103035926819,
+        "sal_noref_c4": 0.45556995272636414,
+        "sal_noref_c5": 0.3668954372406006,
+        "sal_wref_c1": 2.733142375946045,
+        "sal_wref_c2": 1.4120694398880005,
+        "sal_wref_c3": 0.9444525837898254,
+        "sal_wref_c4": 0.7133173942565918,
+        "sal_wref_c5": 0.5730178952217102
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 657.9767456054688,
+        "gradnorm_l1_uncentered": 1029.4346923828125,
+        "gradnorm_l2_centered": 1.2389827966690063,
+        "gradnorm_l2_uncentered": 2.2086620330810547,
+        "sal_noref_c1": 3.8605968952178955,
+        "sal_noref_c2": 1.9203619956970215,
+        "sal_noref_c3": 1.4946449995040894,
+        "sal_noref_c4": 1.153184413909912,
+        "sal_noref_c5": 0.9341516494750977,
+        "sal_wref_c1": 0.7933388352394104,
+        "sal_wref_c2": 0.5730947852134705,
+        "sal_wref_c3": 0.41795969009399414,
+        "sal_wref_c4": 0.3275505602359772,
+        "sal_wref_c5": 0.2660900354385376
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebSurfer",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 924.4627075195312,
+        "gradnorm_l1_uncentered": 533.8802490234375,
+        "gradnorm_l2_centered": 1.796524167060852,
+        "gradnorm_l2_uncentered": 1.6199367046356201,
+        "sal_noref_c1": 1.5868433713912964,
+        "sal_noref_c2": 1.090512752532959,
+        "sal_noref_c3": 0.7320316433906555,
+        "sal_noref_c4": 0.5490275025367737,
+        "sal_noref_c5": 0.44358763098716736,
+        "sal_wref_c1": 2.5703916549682617,
+        "sal_wref_c2": 1.4059959650039673,
+        "sal_wref_c3": 0.9373693466186523,
+        "sal_wref_c4": 0.704704999923706,
+        "sal_wref_c5": 0.5666793584823608
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Orchestrator (thought)",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 860.1465454101562,
+        "gradnorm_l1_uncentered": 685.2471313476562,
+        "gradnorm_l2_centered": 1.6291558742523193,
+        "gradnorm_l2_uncentered": 1.794001579284668,
+        "sal_noref_c1": 2.119910478591919,
+        "sal_noref_c2": 1.3579599857330322,
+        "sal_noref_c3": 0.905358612537384,
+        "sal_noref_c4": 0.6905535459518433,
+        "sal_noref_c5": 0.5631504058837891,
+        "sal_wref_c1": 2.0111846923828125,
+        "sal_wref_c2": 1.0871607065200806,
+        "sal_wref_c3": 0.7407591938972473,
+        "sal_wref_c4": 0.5555753111839294,
+        "sal_wref_c5": 0.44450563192367554
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2533.504150390625,
+        "gradnorm_l1_uncentered": 3154.08642578125,
+        "gradnorm_l2_centered": 4.903669834136963,
+        "gradnorm_l2_uncentered": 7.046379566192627,
+        "sal_noref_c1": 32.7542724609375,
+        "sal_noref_c2": 17.562908172607422,
+        "sal_noref_c3": 12.45910358428955,
+        "sal_noref_c4": 9.939637184143066,
+        "sal_noref_c5": 7.967410087585449,
+        "sal_wref_c1": 7.100984573364258,
+        "sal_wref_c2": 3.5456182956695557,
+        "sal_wref_c3": 3.449660062789917,
+        "sal_wref_c4": 3.673473358154297,
+        "sal_wref_c5": 2.942528247833252
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Orchestrator (termination condition)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1315.9390869140625,
+        "gradnorm_l1_uncentered": 1685.177001953125,
+        "gradnorm_l2_centered": 2.3754169940948486,
+        "gradnorm_l2_uncentered": 4.335413932800293,
+        "sal_noref_c1": 13.060903549194336,
+        "sal_noref_c2": 8.25033950805664,
+        "sal_noref_c3": 5.541579723358154,
+        "sal_noref_c4": 4.189690113067627,
+        "sal_noref_c5": 3.366504669189453,
+        "sal_wref_c1": 0.43061119318008423,
+        "sal_wref_c2": 1.3797110319137573,
+        "sal_wref_c3": 0.9404652118682861,
+        "sal_wref_c4": 0.9416934251785278,
+        "sal_wref_c5": 0.8163444399833679
+      }
+    }
+  ]
+}

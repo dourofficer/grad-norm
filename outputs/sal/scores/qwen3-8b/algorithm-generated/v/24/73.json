@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "50.json",
+    "question_id": "076c8171-9b3b-49b9-a477-244d2a532826",
+    "mistake_agent": "DataAnalysis_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The attached file contains a list of vendors in the Liminal Springs mall, along with each vendor\u2019s monthly revenue and the rent they pay the mall. I want you to find the vendor that makes the least money, relative to the rent it pays. Then, tell me what is listed in the \u201ctype\u201d column for that vendor."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 849.0999145507812,
+        "gradnorm_l1_uncentered": 474.62872314453125,
+        "gradnorm_l2_centered": 1.6320894956588745,
+        "gradnorm_l2_uncentered": 1.00784432888031,
+        "sal_noref_c1": 0.09257303178310394,
+        "sal_noref_c2": 0.11523109674453735,
+        "sal_noref_c3": 0.0783592164516449,
+        "sal_noref_c4": 0.06539098918437958,
+        "sal_noref_c5": 0.053519684821367264,
+        "sal_wref_c1": 1.6681824922561646,
+        "sal_wref_c2": 0.9097016453742981,
+        "sal_wref_c3": 0.6092451810836792,
+        "sal_wref_c4": 0.46854063868522644,
+        "sal_wref_c5": 0.3772825002670288
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1676.9920654296875,
+        "gradnorm_l1_uncentered": 1868.0732421875,
+        "gradnorm_l2_centered": 3.230114698410034,
+        "gradnorm_l2_uncentered": 3.9019014835357666,
+        "sal_noref_c1": 3.365154266357422,
+        "sal_noref_c2": 2.9702706336975098,
+        "sal_noref_c3": 1.9834450483322144,
+        "sal_noref_c4": 1.7383861541748047,
+        "sal_noref_c5": 1.7804969549179077,
+        "sal_wref_c1": 0.010895970277488232,
+        "sal_wref_c2": 0.607835054397583,
+        "sal_wref_c3": 0.44672393798828125,
+        "sal_wref_c4": 0.5005325078964233,
+        "sal_wref_c5": 0.6048763990402222
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Financial_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2847.83740234375,
+        "gradnorm_l1_uncentered": 3095.7587890625,
+        "gradnorm_l2_centered": 4.7822346687316895,
+        "gradnorm_l2_uncentered": 5.5818562507629395,
+        "sal_noref_c1": 7.79401159286499,
+        "sal_noref_c2": 5.001773834228516,
+        "sal_noref_c3": 3.8073627948760986,
+        "sal_noref_c4": 2.878281593322754,
+        "sal_noref_c5": 2.305572032928467,
+        "sal_wref_c1": 0.6174587607383728,
+        "sal_wref_c2": 0.8207420110702515,
+        "sal_wref_c3": 0.9153458476066589,
+        "sal_wref_c4": 0.7194705605506897,
+        "sal_wref_c5": 0.6448887586593628
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1145.3607177734375,
+        "gradnorm_l1_uncentered": 1201.4842529296875,
+        "gradnorm_l2_centered": 1.860793113708496,
+        "gradnorm_l2_uncentered": 2.220057249069214,
+        "sal_noref_c1": 1.0571742057800293,
+        "sal_noref_c2": 0.9109447598457336,
+        "sal_noref_c3": 0.6411309838294983,
+        "sal_noref_c4": 0.4809519648551941,
+        "sal_noref_c5": 0.38730940222740173,
+        "sal_wref_c1": 0.5405776500701904,
+        "sal_wref_c2": 0.28238266706466675,
+        "sal_wref_c3": 0.19338254630565643,
+        "sal_wref_c4": 0.14610648155212402,
+        "sal_wref_c5": 0.11714327335357666
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2176.013671875,
+        "gradnorm_l1_uncentered": 2217.98486328125,
+        "gradnorm_l2_centered": 3.3290250301361084,
+        "gradnorm_l2_uncentered": 3.5370941162109375,
+        "sal_noref_c1": 1.1676783561706543,
+        "sal_noref_c2": 0.9131366014480591,
+        "sal_noref_c3": 0.7017384171485901,
+        "sal_noref_c4": 0.5979589819908142,
+        "sal_noref_c5": 0.5815577507019043,
+        "sal_wref_c1": 0.42189115285873413,
+        "sal_wref_c2": 0.22028450667858124,
+        "sal_wref_c3": 0.1658833920955658,
+        "sal_wref_c4": 0.1543361097574234,
+        "sal_wref_c5": 0.12356060743331909
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1368.437744140625,
+        "gradnorm_l1_uncentered": 1412.57763671875,
+        "gradnorm_l2_centered": 2.2738234996795654,
+        "gradnorm_l2_uncentered": 2.5393285751342773,
+        "sal_noref_c1": 0.9809209108352661,
+        "sal_noref_c2": 0.6649889349937439,
+        "sal_noref_c3": 0.5273405909538269,
+        "sal_noref_c4": 0.41279077529907227,
+        "sal_noref_c5": 0.33391037583351135,
+        "sal_wref_c1": 0.5471675992012024,
+        "sal_wref_c2": 0.29229891300201416,
+        "sal_wref_c3": 0.204289510846138,
+        "sal_wref_c4": 0.15523631870746613,
+        "sal_wref_c5": 0.12760360538959503
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1406.957275390625,
+        "gradnorm_l1_uncentered": 1434.0189208984375,
+        "gradnorm_l2_centered": 2.221451759338379,
+        "gradnorm_l2_uncentered": 2.419461250305176,
+        "sal_noref_c1": 0.8606780171394348,
+        "sal_noref_c2": 0.7293727397918701,
+        "sal_noref_c3": 0.5065980553627014,
+        "sal_noref_c4": 0.4193471670150757,
+        "sal_noref_c5": 0.3400229811668396,
+        "sal_wref_c1": 0.6288118958473206,
+        "sal_wref_c2": 0.31685206294059753,
+        "sal_wref_c3": 0.2122059017419815,
+        "sal_wref_c4": 0.18676187098026276,
+        "sal_wref_c5": 0.15079210698604584
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1002.5157470703125,
+        "gradnorm_l1_uncentered": 947.764892578125,
+        "gradnorm_l2_centered": 1.6841036081314087,
+        "gradnorm_l2_uncentered": 1.589390754699707,
+        "sal_noref_c1": 0.41604849696159363,
+        "sal_noref_c2": 0.2899203896522522,
+        "sal_noref_c3": 0.20866023004055023,
+        "sal_noref_c4": 0.1762637197971344,
+        "sal_noref_c5": 0.1414220929145813,
+        "sal_wref_c1": 0.9895643591880798,
+        "sal_wref_c2": 0.5598969459533691,
+        "sal_wref_c3": 0.3741130530834198,
+        "sal_wref_c4": 0.2876512110233307,
+        "sal_wref_c5": 0.23012098670005798
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2257.3935546875,
+        "gradnorm_l1_uncentered": 2297.028564453125,
+        "gradnorm_l2_centered": 3.2974274158477783,
+        "gradnorm_l2_uncentered": 3.4581174850463867,
+        "sal_noref_c1": 0.9199755191802979,
+        "sal_noref_c2": 0.7569628953933716,
+        "sal_noref_c3": 0.5399411916732788,
+        "sal_noref_c4": 0.5176029205322266,
+        "sal_noref_c5": 0.41789960861206055,
+        "sal_wref_c1": 0.5946638584136963,
+        "sal_wref_c2": 0.29905879497528076,
+        "sal_wref_c3": 0.20282875001430511,
+        "sal_wref_c4": 0.2523692846298218,
+        "sal_wref_c5": 0.21345190703868866
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Financial_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 852.9979248046875,
+        "gradnorm_l1_uncentered": 593.0941162109375,
+        "gradnorm_l2_centered": 1.6160069704055786,
+        "gradnorm_l2_uncentered": 0.9744817614555359,
+        "sal_noref_c1": 0.10364225506782532,
+        "sal_noref_c2": 0.08766874670982361,
+        "sal_noref_c3": 0.06550092250108719,
+        "sal_noref_c4": 0.05597997456789017,
+        "sal_noref_c5": 0.046525806188583374,
+        "sal_wref_c1": 1.5790975093841553,
+        "sal_wref_c2": 0.9216728210449219,
+        "sal_wref_c3": 0.6183006167411804,
+        "sal_wref_c4": 0.46459516882896423,
+        "sal_wref_c5": 0.37525585293769836
+      }
+    }
+  ]
+}

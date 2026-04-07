@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "1.json",
+    "question_id": "4d51c4bf-4b0e-4f3d-897b-3f6687a7d9f2",
+    "mistake_agent": "Excel_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "This spreadsheet contains a list of clients for a retractable awning company. Each client has ordered a new awning for the back of their house within the last 90 days. The company makes different designs depending on whether the awning is made to block sunrises or sunsets. In this region, houses with odd-numbered street addresses face east, and houses with even-numbered street addresses face west. How many of these clients will be receiving the sunset awning design?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Excel_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 634.0435180664062,
+        "gradnorm_l1_uncentered": 308.5365905761719,
+        "gradnorm_l2_centered": 1.4456613063812256,
+        "gradnorm_l2_uncentered": 1.0120617151260376,
+        "sal_noref_c1": 0.23559394478797913,
+        "sal_noref_c2": 0.1816098392009735,
+        "sal_noref_c3": 0.1246887817978859,
+        "sal_noref_c4": 0.10787933319807053,
+        "sal_noref_c5": 0.08791852742433548,
+        "sal_wref_c1": 0.8512617349624634,
+        "sal_wref_c2": 0.5269768238067627,
+        "sal_wref_c3": 0.4979880750179291,
+        "sal_wref_c4": 0.3901120126247406,
+        "sal_wref_c5": 0.31212297081947327
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4496.18310546875,
+        "gradnorm_l1_uncentered": 4562.7333984375,
+        "gradnorm_l2_centered": 7.54268217086792,
+        "gradnorm_l2_uncentered": 7.55579137802124,
+        "sal_noref_c1": 0.9702661037445068,
+        "sal_noref_c2": 0.4883188307285309,
+        "sal_noref_c3": 0.44784247875213623,
+        "sal_noref_c4": 0.4319791793823242,
+        "sal_noref_c5": 0.4933222830295563,
+        "sal_wref_c1": 0.11060357093811035,
+        "sal_wref_c2": 0.15797559916973114,
+        "sal_wref_c3": 0.5760800838470459,
+        "sal_wref_c4": 0.43235841393470764,
+        "sal_wref_c5": 0.5268183350563049
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "BusinessLogic_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 732.9798583984375,
+        "gradnorm_l1_uncentered": 615.6340942382812,
+        "gradnorm_l2_centered": 1.5341286659240723,
+        "gradnorm_l2_uncentered": 1.7588175535202026,
+        "sal_noref_c1": 0.6473308205604553,
+        "sal_noref_c2": 0.7439759373664856,
+        "sal_noref_c3": 0.5017794370651245,
+        "sal_noref_c4": 0.41145822405815125,
+        "sal_noref_c5": 0.3291791081428528,
+        "sal_wref_c1": 0.8202472925186157,
+        "sal_wref_c2": 0.41240036487579346,
+        "sal_wref_c3": 0.3124920427799225,
+        "sal_wref_c4": 0.23437076807022095,
+        "sal_wref_c5": 0.1877956986427307
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3048.5234375,
+        "gradnorm_l1_uncentered": 3250.5361328125,
+        "gradnorm_l2_centered": 5.47822904586792,
+        "gradnorm_l2_uncentered": 6.076517581939697,
+        "sal_noref_c1": 4.995474815368652,
+        "sal_noref_c2": 5.757922172546387,
+        "sal_noref_c3": 4.119101047515869,
+        "sal_noref_c4": 3.5109875202178955,
+        "sal_noref_c5": 2.8696000576019287,
+        "sal_wref_c1": 0.09626041352748871,
+        "sal_wref_c2": 2.188462972640991,
+        "sal_wref_c3": 1.9301353693008423,
+        "sal_wref_c4": 1.8133630752563477,
+        "sal_wref_c5": 1.5812441110610962
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1128.353271484375,
+        "gradnorm_l1_uncentered": 1154.6378173828125,
+        "gradnorm_l2_centered": 2.4016008377075195,
+        "gradnorm_l2_uncentered": 2.565504789352417,
+        "sal_noref_c1": 0.7883906364440918,
+        "sal_noref_c2": 0.3987610340118408,
+        "sal_noref_c3": 0.41202595829963684,
+        "sal_noref_c4": 0.4779735207557678,
+        "sal_noref_c5": 0.3867689073085785,
+        "sal_wref_c1": 0.341596782207489,
+        "sal_wref_c2": 0.4494119882583618,
+        "sal_wref_c3": 0.2996456027030945,
+        "sal_wref_c4": 0.278691828250885,
+        "sal_wref_c5": 0.2236759215593338
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 12714.333984375,
+        "gradnorm_l1_uncentered": 13001.865234375,
+        "gradnorm_l2_centered": 37.982444763183594,
+        "gradnorm_l2_uncentered": 38.90281677246094,
+        "sal_noref_c1": 719.8001708984375,
+        "sal_noref_c2": 371.2831726074219,
+        "sal_noref_c3": 368.9424743652344,
+        "sal_noref_c4": 283.66546630859375,
+        "sal_noref_c5": 227.1331024169922,
+        "sal_wref_c1": 559.2517700195312,
+        "sal_wref_c2": 452.422119140625,
+        "sal_wref_c3": 350.1437072753906,
+        "sal_wref_c4": 267.47412109375,
+        "sal_wref_c5": 217.0465850830078
+      }
+    }
+  ]
+}

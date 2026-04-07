@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "100.json",
+    "question_id": "c7afe00869f98cf363fd83677ac41757ed5e57f03eacc3d1304feb0a92084bd1",
+    "mistake_agent": "Movie_Expert",
+    "mistake_step": 2,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "What is the highest rated (according to IMDB) Daniel Craig movie that is less than 150 minutes and is available on Netflix (US)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Movie_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 655.866943359375,
+        "gradnorm_l1_uncentered": 355.3009033203125,
+        "gradnorm_l2_centered": 1.5721228122711182,
+        "gradnorm_l2_uncentered": 1.2224256992340088,
+        "sal_noref_c1": 0.29166465997695923,
+        "sal_noref_c2": 0.3233690857887268,
+        "sal_noref_c3": 0.26073557138442993,
+        "sal_noref_c4": 0.19568873941898346,
+        "sal_noref_c5": 0.1618540734052658,
+        "sal_wref_c1": 0.8554705381393433,
+        "sal_wref_c2": 0.43453124165534973,
+        "sal_wref_c3": 0.5192297101020813,
+        "sal_wref_c4": 0.44775235652923584,
+        "sal_wref_c5": 0.3593488335609436
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "StreamingService_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1163.401611328125,
+        "gradnorm_l1_uncentered": 1173.3624267578125,
+        "gradnorm_l2_centered": 2.069117307662964,
+        "gradnorm_l2_uncentered": 2.6473591327667236,
+        "sal_noref_c1": 2.061784505844116,
+        "sal_noref_c2": 1.3273917436599731,
+        "sal_noref_c3": 0.8864889144897461,
+        "sal_noref_c4": 0.7908743619918823,
+        "sal_noref_c5": 0.6491791009902954,
+        "sal_wref_c1": 0.07869290560483932,
+        "sal_wref_c2": 0.06367512047290802,
+        "sal_wref_c3": 0.12792089581489563,
+        "sal_wref_c4": 0.12838418781757355,
+        "sal_wref_c5": 0.10696463286876678
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Movie_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 968.3656005859375,
+        "gradnorm_l1_uncentered": 851.918212890625,
+        "gradnorm_l2_centered": 2.0504157543182373,
+        "gradnorm_l2_uncentered": 1.7066113948822021,
+        "sal_noref_c1": 0.2596251368522644,
+        "sal_noref_c2": 0.12955881655216217,
+        "sal_noref_c3": 0.08637840300798416,
+        "sal_noref_c4": 0.10181935131549835,
+        "sal_noref_c5": 0.08221293985843658,
+        "sal_wref_c1": 0.5858274102210999,
+        "sal_wref_c2": 0.6057212352752686,
+        "sal_wref_c3": 0.5323159098625183,
+        "sal_wref_c4": 0.4020235538482666,
+        "sal_wref_c5": 0.321789413690567
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "StreamingService_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 645.7581176757812,
+        "gradnorm_l1_uncentered": 461.44036865234375,
+        "gradnorm_l2_centered": 1.6441371440887451,
+        "gradnorm_l2_uncentered": 0.9324469566345215,
+        "sal_noref_c1": 0.10435908287763596,
+        "sal_noref_c2": 0.054886654019355774,
+        "sal_noref_c3": 0.054067883640527725,
+        "sal_noref_c4": 0.06018207594752312,
+        "sal_noref_c5": 0.04832112044095993,
+        "sal_wref_c1": 0.8543857336044312,
+        "sal_wref_c2": 0.8984647989273071,
+        "sal_wref_c3": 0.6613290309906006,
+        "sal_wref_c4": 0.5066760182380676,
+        "sal_wref_c5": 0.4058375954627991
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 717.6210327148438,
+        "gradnorm_l1_uncentered": 493.18212890625,
+        "gradnorm_l2_centered": 1.7129218578338623,
+        "gradnorm_l2_uncentered": 1.0833823680877686,
+        "sal_noref_c1": 0.07137473672628403,
+        "sal_noref_c2": 0.06004049628973007,
+        "sal_noref_c3": 0.06489349156618118,
+        "sal_noref_c4": 0.06841450184583664,
+        "sal_noref_c5": 0.054755330085754395,
+        "sal_wref_c1": 1.2026153802871704,
+        "sal_wref_c2": 0.8652074337005615,
+        "sal_wref_c3": 0.6182054281234741,
+        "sal_wref_c4": 0.4708446264266968,
+        "sal_wref_c5": 0.3768153786659241
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "StreamingService_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 678.5081176757812,
+        "gradnorm_l1_uncentered": 611.685546875,
+        "gradnorm_l2_centered": 1.822502851486206,
+        "gradnorm_l2_uncentered": 1.2701928615570068,
+        "sal_noref_c1": 0.28873559832572937,
+        "sal_noref_c2": 0.14449018239974976,
+        "sal_noref_c3": 0.10821399837732315,
+        "sal_noref_c4": 0.11401765793561935,
+        "sal_noref_c5": 0.0912841409444809,
+        "sal_wref_c1": 0.43334677815437317,
+        "sal_wref_c2": 0.4666402041912079,
+        "sal_wref_c3": 0.457935094833374,
+        "sal_wref_c4": 0.5350207090377808,
+        "sal_wref_c5": 0.4280245900154114
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 720.8187866210938,
+        "gradnorm_l1_uncentered": 430.6031799316406,
+        "gradnorm_l2_centered": 2.0952978134155273,
+        "gradnorm_l2_uncentered": 1.0760554075241089,
+        "sal_noref_c1": 0.023237671703100204,
+        "sal_noref_c2": 0.022052301093935966,
+        "sal_noref_c3": 0.08607074618339539,
+        "sal_noref_c4": 0.06759247183799744,
+        "sal_noref_c5": 0.05668690800666809,
+        "sal_wref_c1": 2.0888378620147705,
+        "sal_wref_c2": 1.5119199752807617,
+        "sal_wref_c3": 1.0228580236434937,
+        "sal_wref_c4": 0.797440767288208,
+        "sal_wref_c5": 0.640542209148407
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "StreamingService_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 816.3731689453125,
+        "gradnorm_l1_uncentered": 717.0381469726562,
+        "gradnorm_l2_centered": 1.9412899017333984,
+        "gradnorm_l2_uncentered": 1.3146964311599731,
+        "sal_noref_c1": 0.10201642662286758,
+        "sal_noref_c2": 0.05912872776389122,
+        "sal_noref_c3": 0.06988000124692917,
+        "sal_noref_c4": 0.052768927067518234,
+        "sal_noref_c5": 0.046274520456790924,
+        "sal_wref_c1": 0.7925698161125183,
+        "sal_wref_c2": 0.9001935720443726,
+        "sal_wref_c3": 0.6307733058929443,
+        "sal_wref_c4": 0.5354776382446289,
+        "sal_wref_c5": 0.4366970658302307
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 788.555908203125,
+        "gradnorm_l1_uncentered": 548.60693359375,
+        "gradnorm_l2_centered": 2.1920857429504395,
+        "gradnorm_l2_uncentered": 1.3530604839324951,
+        "sal_noref_c1": 0.011961369775235653,
+        "sal_noref_c2": 0.012736272998154163,
+        "sal_noref_c3": 0.13315989077091217,
+        "sal_noref_c4": 0.10357870906591415,
+        "sal_noref_c5": 0.08361697942018509,
+        "sal_wref_c1": 2.007826328277588,
+        "sal_wref_c2": 1.5168113708496094,
+        "sal_wref_c3": 1.0129386186599731,
+        "sal_wref_c4": 0.7841682434082031,
+        "sal_wref_c5": 0.6289834976196289
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "StreamingService_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 671.0709838867188,
+        "gradnorm_l1_uncentered": 559.411865234375,
+        "gradnorm_l2_centered": 1.828357219696045,
+        "gradnorm_l2_uncentered": 1.1125420331954956,
+        "sal_noref_c1": 0.10226864367723465,
+        "sal_noref_c2": 0.0511438213288784,
+        "sal_noref_c3": 0.03935065492987633,
+        "sal_noref_c4": 0.030993830412626266,
+        "sal_noref_c5": 0.02508779801428318,
+        "sal_wref_c1": 0.8470363616943359,
+        "sal_wref_c2": 0.7635844945907593,
+        "sal_wref_c3": 0.572411835193634,
+        "sal_wref_c4": 0.502534031867981,
+        "sal_wref_c5": 0.4081204831600189
+      }
+    }
+  ]
+}

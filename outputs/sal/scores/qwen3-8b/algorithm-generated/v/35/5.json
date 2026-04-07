@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "102.json",
+    "question_id": "52f7224e9c79431e7926afe317782711a0028750693e7456cde22ef6f4bd8bd5",
+    "mistake_agent": "Filmography_Expert",
+    "mistake_step": 1,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "What is the highest rated (according to IMDB) Isabelle Adjani feature film that is less than 2 hours and is available on Vudu (now called Fandango at Home) to buy or rent?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Filmography_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 640.6351928710938,
+        "gradnorm_l1_uncentered": 503.71966552734375,
+        "gradnorm_l2_centered": 1.3189173936843872,
+        "gradnorm_l2_uncentered": 1.3894926309585571,
+        "sal_noref_c1": 1.2392135858535767,
+        "sal_noref_c2": 0.6875579357147217,
+        "sal_noref_c3": 0.4788459241390228,
+        "sal_noref_c4": 0.3592071235179901,
+        "sal_noref_c5": 0.28771141171455383,
+        "sal_wref_c1": 1.196954607963562,
+        "sal_wref_c2": 0.6119190454483032,
+        "sal_wref_c3": 0.4143451154232025,
+        "sal_wref_c4": 0.31082284450531006,
+        "sal_wref_c5": 0.2613360285758972
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Filmography_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 712.1226806640625,
+        "gradnorm_l1_uncentered": 515.9034423828125,
+        "gradnorm_l2_centered": 1.489344596862793,
+        "gradnorm_l2_uncentered": 1.1461764574050903,
+        "sal_noref_c1": 0.757071852684021,
+        "sal_noref_c2": 0.406503826379776,
+        "sal_noref_c3": 0.28528913855552673,
+        "sal_noref_c4": 0.21653161942958832,
+        "sal_noref_c5": 0.17405232787132263,
+        "sal_wref_c1": 1.7576740980148315,
+        "sal_wref_c2": 0.8719319701194763,
+        "sal_wref_c3": 0.5827301144599915,
+        "sal_wref_c4": 0.4373277425765991,
+        "sal_wref_c5": 0.35336369276046753
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "StreamingAvailability_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 668.4102783203125,
+        "gradnorm_l1_uncentered": 805.907470703125,
+        "gradnorm_l2_centered": 1.1313101053237915,
+        "gradnorm_l2_uncentered": 2.1649694442749023,
+        "sal_noref_c1": 3.3485140800476074,
+        "sal_noref_c2": 1.6662393808364868,
+        "sal_noref_c3": 1.219618797302246,
+        "sal_noref_c4": 0.9215866327285767,
+        "sal_noref_c5": 0.7606254816055298,
+        "sal_wref_c1": 0.1586783081293106,
+        "sal_wref_c2": 0.1006433516740799,
+        "sal_wref_c3": 0.11684367805719376,
+        "sal_wref_c4": 0.08979225158691406,
+        "sal_wref_c5": 0.08510319888591766
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "StreamingAvailability_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 621.5599975585938,
+        "gradnorm_l1_uncentered": 683.9114379882812,
+        "gradnorm_l2_centered": 1.187805414199829,
+        "gradnorm_l2_uncentered": 1.5093122720718384,
+        "sal_noref_c1": 1.6128209829330444,
+        "sal_noref_c2": 0.8091275691986084,
+        "sal_noref_c3": 0.5464543700218201,
+        "sal_noref_c4": 0.4108676016330719,
+        "sal_noref_c5": 0.34548985958099365,
+        "sal_wref_c1": 0.8687241673469543,
+        "sal_wref_c2": 0.4336020350456238,
+        "sal_wref_c3": 0.28910619020462036,
+        "sal_wref_c4": 0.2177630364894867,
+        "sal_wref_c5": 0.17421552538871765
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "IMDB_Ratings_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 639.6015014648438,
+        "gradnorm_l1_uncentered": 781.9620971679688,
+        "gradnorm_l2_centered": 1.211531400680542,
+        "gradnorm_l2_uncentered": 1.8068468570709229,
+        "sal_noref_c1": 2.2216179370880127,
+        "sal_noref_c2": 1.1109875440597534,
+        "sal_noref_c3": 0.7606140971183777,
+        "sal_noref_c4": 0.5769928097724915,
+        "sal_noref_c5": 0.48926711082458496,
+        "sal_wref_c1": 0.4900861978530884,
+        "sal_wref_c2": 0.2847616970539093,
+        "sal_wref_c3": 0.19429464638233185,
+        "sal_wref_c4": 0.16584758460521698,
+        "sal_wref_c5": 0.13276562094688416
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "IMDB_Ratings_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 664.5289306640625,
+        "gradnorm_l1_uncentered": 816.8965454101562,
+        "gradnorm_l2_centered": 1.1450244188308716,
+        "gradnorm_l2_uncentered": 2.015380859375,
+        "sal_noref_c1": 2.8435213565826416,
+        "sal_noref_c2": 1.4625499248504639,
+        "sal_noref_c3": 0.983294665813446,
+        "sal_noref_c4": 0.7504290342330933,
+        "sal_noref_c5": 0.6142354011535645,
+        "sal_wref_c1": 0.2881638705730438,
+        "sal_wref_c2": 0.1542661190032959,
+        "sal_wref_c3": 0.10284775495529175,
+        "sal_wref_c4": 0.0804428979754448,
+        "sal_wref_c5": 0.06694852560758591
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "IMDB_Ratings_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1157.7689208984375,
+        "gradnorm_l1_uncentered": 1483.899169921875,
+        "gradnorm_l2_centered": 2.436378002166748,
+        "gradnorm_l2_uncentered": 4.154053688049316,
+        "sal_noref_c1": 12.86116886138916,
+        "sal_noref_c2": 6.4116926193237305,
+        "sal_noref_c3": 4.499216556549072,
+        "sal_noref_c4": 3.51162052154541,
+        "sal_noref_c5": 2.8581979274749756,
+        "sal_wref_c1": 1.6555490493774414,
+        "sal_wref_c2": 0.8297941088676453,
+        "sal_wref_c3": 0.660491943359375,
+        "sal_wref_c4": 0.6141726970672607,
+        "sal_wref_c5": 0.5819371938705444
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1360.715576171875,
+        "gradnorm_l1_uncentered": 1790.7398681640625,
+        "gradnorm_l2_centered": 2.659205913543701,
+        "gradnorm_l2_uncentered": 4.498355865478516,
+        "sal_noref_c1": 16.41490936279297,
+        "sal_noref_c2": 8.60280704498291,
+        "sal_noref_c3": 5.741530895233154,
+        "sal_noref_c4": 4.373201370239258,
+        "sal_noref_c5": 3.4996955394744873,
+        "sal_wref_c1": 3.225853681564331,
+        "sal_wref_c2": 2.0612096786499023,
+        "sal_wref_c3": 1.376693844795227,
+        "sal_wref_c4": 1.120039939880371,
+        "sal_wref_c5": 0.8996081352233887
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "IMDB_Ratings_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 873.3896484375,
+        "gradnorm_l1_uncentered": 1198.2132568359375,
+        "gradnorm_l2_centered": 1.4603047370910645,
+        "gradnorm_l2_uncentered": 3.0369646549224854,
+        "sal_noref_c1": 7.063151836395264,
+        "sal_noref_c2": 3.6662497520446777,
+        "sal_noref_c3": 2.4491217136383057,
+        "sal_noref_c4": 1.9430073499679565,
+        "sal_noref_c5": 1.5591672658920288,
+        "sal_wref_c1": 0.16287894546985626,
+        "sal_wref_c2": 0.18241465091705322,
+        "sal_wref_c3": 0.12278446555137634,
+        "sal_wref_c4": 0.17038404941558838,
+        "sal_wref_c5": 0.1536766141653061
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 898.9291381835938,
+        "gradnorm_l1_uncentered": 978.352783203125,
+        "gradnorm_l2_centered": 1.8495815992355347,
+        "gradnorm_l2_uncentered": 2.1846542358398438,
+        "sal_noref_c1": 2.0871219635009766,
+        "sal_noref_c2": 1.4588924646377563,
+        "sal_noref_c3": 0.9726529121398926,
+        "sal_noref_c4": 0.7362324595451355,
+        "sal_noref_c5": 0.6450082063674927,
+        "sal_wref_c1": 0.44874611496925354,
+        "sal_wref_c2": 0.8008872270584106,
+        "sal_wref_c3": 0.5432920455932617,
+        "sal_wref_c4": 0.4355098605155945,
+        "sal_wref_c5": 0.36683377623558044
+      }
+    }
+  ]
+}

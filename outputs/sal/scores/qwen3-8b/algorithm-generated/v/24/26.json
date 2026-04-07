@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "121.json",
+    "question_id": "9bdca8677af1e25cb7b0c7992dc62670c3e58e4afcd5ae60bcaa2483556bba00",
+    "mistake_agent": "Debugging_Expert",
+    "mistake_step": 1,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "What is the cheapest option to mail a DVD to Colombia from Hartford, Connecticut using FedEx, DHL, or USPS? (The answer should be a json object with the keys \"sender\" and \"price (usd)\")"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JSON_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 966.3978881835938,
+        "gradnorm_l1_uncentered": 689.657958984375,
+        "gradnorm_l2_centered": 1.7866153717041016,
+        "gradnorm_l2_uncentered": 1.5097886323928833,
+        "sal_noref_c1": 0.1848435252904892,
+        "sal_noref_c2": 0.27559366822242737,
+        "sal_noref_c3": 0.19602377712726593,
+        "sal_noref_c4": 0.17258286476135254,
+        "sal_noref_c5": 0.14066852629184723,
+        "sal_wref_c1": 1.5271191596984863,
+        "sal_wref_c2": 0.7729909420013428,
+        "sal_wref_c3": 0.5168749094009399,
+        "sal_wref_c4": 0.4180426299571991,
+        "sal_wref_c5": 0.3353736400604248
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Debugging_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 808.8115234375,
+        "gradnorm_l1_uncentered": 444.99798583984375,
+        "gradnorm_l2_centered": 1.5770992040634155,
+        "gradnorm_l2_uncentered": 0.7953636050224304,
+        "sal_noref_c1": 0.07766275852918625,
+        "sal_noref_c2": 0.07028432935476303,
+        "sal_noref_c3": 0.04696493223309517,
+        "sal_noref_c4": 0.03909759223461151,
+        "sal_noref_c5": 0.03241874650120735,
+        "sal_wref_c1": 1.6608695983886719,
+        "sal_wref_c2": 0.9643891453742981,
+        "sal_wref_c3": 0.6523114442825317,
+        "sal_wref_c4": 0.49815768003463745,
+        "sal_wref_c5": 0.40324339270591736
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3075.118408203125,
+        "gradnorm_l1_uncentered": 3374.038818359375,
+        "gradnorm_l2_centered": 5.716785430908203,
+        "gradnorm_l2_uncentered": 6.625610828399658,
+        "sal_noref_c1": 12.798964500427246,
+        "sal_noref_c2": 10.12724494934082,
+        "sal_noref_c3": 6.8922576904296875,
+        "sal_noref_c4": 5.183332920074463,
+        "sal_noref_c5": 4.347597122192383,
+        "sal_wref_c1": 1.9910506010055542,
+        "sal_wref_c2": 4.8682708740234375,
+        "sal_wref_c3": 3.246096611022949,
+        "sal_wref_c4": 2.4595775604248047,
+        "sal_wref_c5": 1.9736442565917969
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 794.496826171875,
+        "gradnorm_l1_uncentered": 497.67718505859375,
+        "gradnorm_l2_centered": 1.5682284832000732,
+        "gradnorm_l2_uncentered": 0.9223461151123047,
+        "sal_noref_c1": 0.11314906179904938,
+        "sal_noref_c2": 0.10347186774015427,
+        "sal_noref_c3": 0.06898783892393112,
+        "sal_noref_c4": 0.05398516729474068,
+        "sal_noref_c5": 0.04623008891940117,
+        "sal_wref_c1": 1.550902247428894,
+        "sal_wref_c2": 0.8761335015296936,
+        "sal_wref_c3": 0.5934284329414368,
+        "sal_wref_c4": 0.4499317407608032,
+        "sal_wref_c5": 0.3631454110145569
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1842.1575927734375,
+        "gradnorm_l1_uncentered": 2024.952392578125,
+        "gradnorm_l2_centered": 2.940703868865967,
+        "gradnorm_l2_uncentered": 3.610682964324951,
+        "sal_noref_c1": 3.265324115753174,
+        "sal_noref_c2": 2.720520496368408,
+        "sal_noref_c3": 1.818524956703186,
+        "sal_noref_c4": 1.3820738792419434,
+        "sal_noref_c5": 1.1088652610778809,
+        "sal_wref_c1": 0.005378903821110725,
+        "sal_wref_c2": 0.5301918387413025,
+        "sal_wref_c3": 0.3548589050769806,
+        "sal_wref_c4": 0.30042335391044617,
+        "sal_wref_c5": 0.2679624855518341
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 882.8236083984375,
+        "gradnorm_l1_uncentered": 725.297119140625,
+        "gradnorm_l2_centered": 1.6060361862182617,
+        "gradnorm_l2_uncentered": 1.3349463939666748,
+        "sal_noref_c1": 0.3287849724292755,
+        "sal_noref_c2": 0.21904176473617554,
+        "sal_noref_c3": 0.15855076909065247,
+        "sal_noref_c4": 0.12257300317287445,
+        "sal_noref_c5": 0.10372503101825714,
+        "sal_wref_c1": 1.0398849248886108,
+        "sal_wref_c2": 0.5895456075668335,
+        "sal_wref_c3": 0.43744587898254395,
+        "sal_wref_c4": 0.3374636173248291,
+        "sal_wref_c5": 0.27711552381515503
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5702.77880859375,
+        "gradnorm_l1_uncentered": 6099.67919921875,
+        "gradnorm_l2_centered": 10.978852272033691,
+        "gradnorm_l2_uncentered": 11.961201667785645,
+        "sal_noref_c1": 70.31468963623047,
+        "sal_noref_c2": 35.48577117919922,
+        "sal_noref_c3": 32.5246696472168,
+        "sal_noref_c4": 24.655075073242188,
+        "sal_noref_c5": 19.73111343383789,
+        "sal_wref_c1": 50.69035339355469,
+        "sal_wref_c2": 25.350994110107422,
+        "sal_wref_c3": 23.127470016479492,
+        "sal_wref_c4": 17.590139389038086,
+        "sal_wref_c5": 14.134462356567383
+      }
+    }
+  ]
+}

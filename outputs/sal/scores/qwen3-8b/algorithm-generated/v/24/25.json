@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "120.json",
+    "question_id": "797f7a5b65ca28b7e7156e7db1e9f117bd4a021de0cd512bfdbb0be897d89eab",
+    "mistake_agent": "Vegan_Food_Expert",
+    "mistake_step": 8,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which restaurants (not takeaway only) within 1 blocks of Washington Square Park have vegan mains for under $15?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Food_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 945.3575439453125,
+        "gradnorm_l1_uncentered": 605.1417846679688,
+        "gradnorm_l2_centered": 1.6985445022583008,
+        "gradnorm_l2_uncentered": 1.1363810300827026,
+        "sal_noref_c1": 0.09436983615159988,
+        "sal_noref_c2": 0.12737096846103668,
+        "sal_noref_c3": 0.08798254281282425,
+        "sal_noref_c4": 0.07865390181541443,
+        "sal_noref_c5": 0.0648968517780304,
+        "sal_wref_c1": 1.6846699714660645,
+        "sal_wref_c2": 0.9097350835800171,
+        "sal_wref_c3": 0.6079509854316711,
+        "sal_wref_c4": 0.47592979669570923,
+        "sal_wref_c5": 0.3820689618587494
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 797.5909423828125,
+        "gradnorm_l1_uncentered": 346.3678283691406,
+        "gradnorm_l2_centered": 1.6294437646865845,
+        "gradnorm_l2_uncentered": 0.5666093230247498,
+        "sal_noref_c1": 0.031384892761707306,
+        "sal_noref_c2": 0.0255093052983284,
+        "sal_noref_c3": 0.01703236810863018,
+        "sal_noref_c4": 0.013934876769781113,
+        "sal_noref_c5": 0.011573498137295246,
+        "sal_wref_c1": 1.8421530723571777,
+        "sal_wref_c2": 1.126694679260254,
+        "sal_wref_c3": 0.7645720839500427,
+        "sal_wref_c4": 0.5789835453033447,
+        "sal_wref_c5": 0.46575766801834106
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1074.741943359375,
+        "gradnorm_l1_uncentered": 1132.517333984375,
+        "gradnorm_l2_centered": 1.8668582439422607,
+        "gradnorm_l2_uncentered": 2.2617709636688232,
+        "sal_noref_c1": 1.2764294147491455,
+        "sal_noref_c2": 1.1549774408340454,
+        "sal_noref_c3": 0.7771263718605042,
+        "sal_noref_c4": 0.5852153897285461,
+        "sal_noref_c5": 0.47049206495285034,
+        "sal_wref_c1": 0.3867036700248718,
+        "sal_wref_c2": 0.28461024165153503,
+        "sal_wref_c3": 0.19724124670028687,
+        "sal_wref_c4": 0.14905202388763428,
+        "sal_wref_c5": 0.11977516114711761
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2105.5205078125,
+        "gradnorm_l1_uncentered": 2390.60791015625,
+        "gradnorm_l2_centered": 3.5777528285980225,
+        "gradnorm_l2_uncentered": 4.390506744384766,
+        "sal_noref_c1": 6.408628940582275,
+        "sal_noref_c2": 3.509002208709717,
+        "sal_noref_c3": 2.401648759841919,
+        "sal_noref_c4": 1.8534977436065674,
+        "sal_noref_c5": 1.5105650424957275,
+        "sal_wref_c1": 0.5445500016212463,
+        "sal_wref_c2": 0.371616929769516,
+        "sal_wref_c3": 0.31842416524887085,
+        "sal_wref_c4": 0.3033028244972229,
+        "sal_wref_c5": 0.24274501204490662
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3469.38232421875,
+        "gradnorm_l1_uncentered": 3758.5712890625,
+        "gradnorm_l2_centered": 5.84829044342041,
+        "gradnorm_l2_uncentered": 6.751106262207031,
+        "sal_noref_c1": 12.88294506072998,
+        "sal_noref_c2": 8.930845260620117,
+        "sal_noref_c3": 6.093185901641846,
+        "sal_noref_c4": 4.859341621398926,
+        "sal_noref_c5": 3.8874733448028564,
+        "sal_wref_c1": 2.0712592601776123,
+        "sal_wref_c2": 3.109333038330078,
+        "sal_wref_c3": 2.2277204990386963,
+        "sal_wref_c4": 2.0072832107543945,
+        "sal_wref_c5": 1.6198533773422241
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 741.0953979492188,
+        "gradnorm_l1_uncentered": 137.32772827148438,
+        "gradnorm_l2_centered": 1.6673564910888672,
+        "gradnorm_l2_uncentered": 0.22784355282783508,
+        "sal_noref_c1": 0.013120796531438828,
+        "sal_noref_c2": 0.007228611037135124,
+        "sal_noref_c3": 0.0048326607793569565,
+        "sal_noref_c4": 0.0036759618669748306,
+        "sal_noref_c5": 0.0030722678638994694,
+        "sal_wref_c1": 1.9103167057037354,
+        "sal_wref_c2": 1.2239155769348145,
+        "sal_wref_c3": 0.8285932540893555,
+        "sal_wref_c4": 0.6220747232437134,
+        "sal_wref_c5": 0.5009661912918091
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1013.4871826171875,
+        "gradnorm_l1_uncentered": 902.5657958984375,
+        "gradnorm_l2_centered": 1.7094793319702148,
+        "gradnorm_l2_uncentered": 1.5496618747711182,
+        "sal_noref_c1": 0.3813314437866211,
+        "sal_noref_c2": 0.30422133207321167,
+        "sal_noref_c3": 0.2103450894355774,
+        "sal_noref_c4": 0.15835146605968475,
+        "sal_noref_c5": 0.1270698606967926,
+        "sal_wref_c1": 1.019393801689148,
+        "sal_wref_c2": 0.5362568497657776,
+        "sal_wref_c3": 0.35750481486320496,
+        "sal_wref_c4": 0.2682192921638489,
+        "sal_wref_c5": 0.21643877029418945
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 775.4930419921875,
+        "gradnorm_l1_uncentered": 384.4888000488281,
+        "gradnorm_l2_centered": 1.5556814670562744,
+        "gradnorm_l2_uncentered": 0.7320654988288879,
+        "sal_noref_c1": 0.0716460645198822,
+        "sal_noref_c2": 0.06287194788455963,
+        "sal_noref_c3": 0.0430854894220829,
+        "sal_noref_c4": 0.03359496593475342,
+        "sal_noref_c5": 0.028976893052458763,
+        "sal_wref_c1": 1.687463641166687,
+        "sal_wref_c2": 0.9934998750686646,
+        "sal_wref_c3": 0.6691453456878662,
+        "sal_wref_c4": 0.5066198110580444,
+        "sal_wref_c5": 0.4092223644256592
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Vegan_Food_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 748.1661987304688,
+        "gradnorm_l1_uncentered": 243.56173706054688,
+        "gradnorm_l2_centered": 1.628025770187378,
+        "gradnorm_l2_uncentered": 0.4315652847290039,
+        "sal_noref_c1": 0.02306651882827282,
+        "sal_noref_c2": 0.019002076238393784,
+        "sal_noref_c3": 0.01266840472817421,
+        "sal_noref_c4": 0.009706203825771809,
+        "sal_noref_c5": 0.008436615578830242,
+        "sal_wref_c1": 1.8861056566238403,
+        "sal_wref_c2": 1.1576653718948364,
+        "sal_wref_c3": 0.78573077917099,
+        "sal_wref_c4": 0.5916035175323486,
+        "sal_wref_c5": 0.4775051176548004
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 761.9149169921875,
+        "gradnorm_l1_uncentered": 539.58056640625,
+        "gradnorm_l2_centered": 1.4900305271148682,
+        "gradnorm_l2_uncentered": 1.012891173362732,
+        "sal_noref_c1": 0.25861266255378723,
+        "sal_noref_c2": 0.1484503149986267,
+        "sal_noref_c3": 0.10808693617582321,
+        "sal_noref_c4": 0.08285294473171234,
+        "sal_noref_c5": 0.07163630425930023,
+        "sal_wref_c1": 1.092402696609497,
+        "sal_wref_c2": 0.6732549667358398,
+        "sal_wref_c3": 0.48366662859916687,
+        "sal_wref_c4": 0.3671243190765381,
+        "sal_wref_c5": 0.29690247774124146
+      }
+    }
+  ]
+}

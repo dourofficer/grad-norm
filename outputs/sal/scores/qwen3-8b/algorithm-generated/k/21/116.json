@@ -1,0 +1,122 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "9.json",
+    "question_id": "e142056d-56ab-4352-b091-b56054bd1359",
+    "mistake_agent": "GameTheory_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Bob was invited to participate in a game show, and he advanced to the final round. The final round offered Bob the chance to win a large sum by playing a game against the host. The host has 30 shiny prop coins, each of which is worth $1,000 if Bob manages to win them by playing the game. The host hides the coins in three different prize boxes and then shuffles their order. The only rule restricting the host's coin placement is that one box must contain at least 2 coins, and one box must contain 6 more coins than another box. In order to play, Bob must submit three guesses, one guess for the number of coins in each box. The box is then opened and the number of coins is revealed. If Bob's guess is a number greater than the number of coins in the box, Bob earns no coins. If Bob guesses a number equal to or less than the number of coins in the box, Bob wins a number of coins equal to his guess.\n\nIf Bob plays uses the optimal strategy, what's the minimum amount of money he can win from the game?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "AlgorithmDesign_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 630.78564453125,
+        "gradnorm_l1_uncentered": 277.5426330566406,
+        "gradnorm_l2_centered": 1.433292031288147,
+        "gradnorm_l2_uncentered": 0.9149149060249329,
+        "sal_noref_c1": 0.18467268347740173,
+        "sal_noref_c2": 0.1693827211856842,
+        "sal_noref_c3": 0.1130618155002594,
+        "sal_noref_c4": 0.09355317801237106,
+        "sal_noref_c5": 0.07524509727954865,
+        "sal_wref_c1": 0.980640709400177,
+        "sal_wref_c2": 0.5906974673271179,
+        "sal_wref_c3": 0.503718912601471,
+        "sal_wref_c4": 0.3990805149078369,
+        "sal_wref_c5": 0.3197036385536194
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "GameTheory_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 607.8271484375,
+        "gradnorm_l1_uncentered": 196.06869506835938,
+        "gradnorm_l2_centered": 1.6493507623672485,
+        "gradnorm_l2_uncentered": 0.4178350269794464,
+        "sal_noref_c1": 0.040741026401519775,
+        "sal_noref_c2": 0.02065839245915413,
+        "sal_noref_c3": 0.015475675463676453,
+        "sal_noref_c4": 0.012368512339890003,
+        "sal_noref_c5": 0.009925737977027893,
+        "sal_wref_c1": 1.0297189950942993,
+        "sal_wref_c2": 0.861125111579895,
+        "sal_wref_c3": 0.7234269976615906,
+        "sal_wref_c4": 0.5971132516860962,
+        "sal_wref_c5": 0.4789586067199707
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 877.2306518554688,
+        "gradnorm_l1_uncentered": 726.8863525390625,
+        "gradnorm_l2_centered": 1.9976515769958496,
+        "gradnorm_l2_uncentered": 1.6113404035568237,
+        "sal_noref_c1": 0.46966075897216797,
+        "sal_noref_c2": 0.3059273064136505,
+        "sal_noref_c3": 0.25337132811546326,
+        "sal_noref_c4": 0.20045165717601776,
+        "sal_noref_c5": 0.16186776757240295,
+        "sal_wref_c1": 0.15729445219039917,
+        "sal_wref_c2": 0.5529612302780151,
+        "sal_wref_c3": 0.692208468914032,
+        "sal_wref_c4": 0.5527029037475586,
+        "sal_wref_c5": 0.4499545991420746
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1850.923095703125,
+        "gradnorm_l1_uncentered": 1996.744384765625,
+        "gradnorm_l2_centered": 4.45318078994751,
+        "gradnorm_l2_uncentered": 5.392001152038574,
+        "sal_noref_c1": 8.90240478515625,
+        "sal_noref_c2": 6.660453796386719,
+        "sal_noref_c3": 4.440308570861816,
+        "sal_noref_c4": 3.6351494789123535,
+        "sal_noref_c5": 3.070180892944336,
+        "sal_wref_c1": 0.27698642015457153,
+        "sal_wref_c2": 2.0634546279907227,
+        "sal_wref_c3": 1.3766204118728638,
+        "sal_wref_c4": 1.3181861639022827,
+        "sal_wref_c5": 1.2152332067489624
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 9370.375,
+        "gradnorm_l1_uncentered": 9607.607421875,
+        "gradnorm_l2_centered": 20.307004928588867,
+        "gradnorm_l2_uncentered": 21.113874435424805,
+        "sal_noref_c1": 91.51911926269531,
+        "sal_noref_c2": 64.91142272949219,
+        "sal_noref_c3": 47.48992919921875,
+        "sal_noref_c4": 40.593101501464844,
+        "sal_noref_c5": 43.754066467285156,
+        "sal_wref_c1": 22.63727378845215,
+        "sal_wref_c2": 43.27325439453125,
+        "sal_wref_c3": 42.0188102722168,
+        "sal_wref_c4": 32.868988037109375,
+        "sal_wref_c5": 36.27538299560547
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "91.json",
+    "question_id": "32102e3e-d12a-4209-9163-7b3a104efe5d",
+    "mistake_agent": "Blu-Ray_Expert",
+    "mistake_step": 8,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The attached spreadsheet shows the inventory for a movie and video game rental store in Seattle, Washington. What is the title of the oldest Blu-Ray recorded in this spreadsheet? Return it as appearing in the spreadsheet."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 979.7308959960938,
+        "gradnorm_l1_uncentered": 312.8004455566406,
+        "gradnorm_l2_centered": 2.048278570175171,
+        "gradnorm_l2_uncentered": 0.6967916488647461,
+        "sal_noref_c1": 0.10473865270614624,
+        "sal_noref_c2": 0.06227497756481171,
+        "sal_noref_c3": 0.04190266132354736,
+        "sal_noref_c4": 0.03284575790166855,
+        "sal_noref_c5": 0.026494750753045082,
+        "sal_wref_c1": 3.8474090099334717,
+        "sal_wref_c2": 1.9138267040252686,
+        "sal_wref_c3": 1.2759675979614258,
+        "sal_wref_c4": 0.9599405527114868,
+        "sal_wref_c5": 0.7699693441390991
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1720.0484619140625,
+        "gradnorm_l1_uncentered": 2158.261962890625,
+        "gradnorm_l2_centered": 3.999837636947632,
+        "gradnorm_l2_uncentered": 5.082749366760254,
+        "sal_noref_c1": 10.440288543701172,
+        "sal_noref_c2": 6.79364013671875,
+        "sal_noref_c3": 4.7722344398498535,
+        "sal_noref_c4": 3.7436611652374268,
+        "sal_noref_c5": 3.087531805038452,
+        "sal_wref_c1": 0.7952060103416443,
+        "sal_wref_c2": 1.9096654653549194,
+        "sal_wref_c3": 1.5091800689697266,
+        "sal_wref_c4": 1.306546688079834,
+        "sal_wref_c5": 1.145384430885315
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 882.16845703125,
+        "gradnorm_l1_uncentered": 469.45208740234375,
+        "gradnorm_l2_centered": 1.8061816692352295,
+        "gradnorm_l2_uncentered": 1.0005273818969727,
+        "sal_noref_c1": 0.422303169965744,
+        "sal_noref_c2": 0.2193514108657837,
+        "sal_noref_c3": 0.1738913655281067,
+        "sal_noref_c4": 0.13529039919376373,
+        "sal_noref_c5": 0.10984142124652863,
+        "sal_wref_c1": 2.6543760299682617,
+        "sal_wref_c2": 1.3217673301696777,
+        "sal_wref_c3": 0.9013176560401917,
+        "sal_wref_c4": 0.6828987002372742,
+        "sal_wref_c5": 0.5468427538871765
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1118.800048828125,
+        "gradnorm_l1_uncentered": 1225.536376953125,
+        "gradnorm_l2_centered": 1.8874698877334595,
+        "gradnorm_l2_uncentered": 2.560227632522583,
+        "sal_noref_c1": 3.164703845977783,
+        "sal_noref_c2": 1.6400926113128662,
+        "sal_noref_c3": 1.1102629899978638,
+        "sal_noref_c4": 0.9140260815620422,
+        "sal_noref_c5": 0.7362266182899475,
+        "sal_wref_c1": 0.26985567808151245,
+        "sal_wref_c2": 0.17116616666316986,
+        "sal_wref_c3": 0.12628552317619324,
+        "sal_wref_c4": 0.1735759973526001,
+        "sal_wref_c5": 0.13886217772960663
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Blu-Ray_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 877.7702026367188,
+        "gradnorm_l1_uncentered": 630.6588134765625,
+        "gradnorm_l2_centered": 1.7886496782302856,
+        "gradnorm_l2_uncentered": 1.4316658973693848,
+        "sal_noref_c1": 0.8400825262069702,
+        "sal_noref_c2": 0.4203294515609741,
+        "sal_noref_c3": 0.2954452931880951,
+        "sal_noref_c4": 0.25007131695747375,
+        "sal_noref_c5": 0.2005174160003662,
+        "sal_wref_c1": 1.808318018913269,
+        "sal_wref_c2": 0.900798499584198,
+        "sal_wref_c3": 0.622084379196167,
+        "sal_wref_c4": 0.5044183135032654,
+        "sal_wref_c5": 0.4042212963104248
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3512.2763671875,
+        "gradnorm_l1_uncentered": 3944.02490234375,
+        "gradnorm_l2_centered": 7.7591352462768555,
+        "gradnorm_l2_uncentered": 8.909350395202637,
+        "sal_noref_c1": 26.866865158081055,
+        "sal_noref_c2": 13.428482055664062,
+        "sal_noref_c3": 9.958871841430664,
+        "sal_noref_c4": 7.558211803436279,
+        "sal_noref_c5": 6.394998550415039,
+        "sal_wref_c1": 7.739633083343506,
+        "sal_wref_c2": 3.8846170902252197,
+        "sal_wref_c3": 3.6926772594451904,
+        "sal_wref_c4": 2.879528045654297,
+        "sal_wref_c5": 2.4608776569366455
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Data_Analysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 843.4722900390625,
+        "gradnorm_l1_uncentered": 445.7768249511719,
+        "gradnorm_l2_centered": 1.8334486484527588,
+        "gradnorm_l2_uncentered": 0.8895504474639893,
+        "sal_noref_c1": 0.333197683095932,
+        "sal_noref_c2": 0.1707199513912201,
+        "sal_noref_c3": 0.11540073901414871,
+        "sal_noref_c4": 0.08931882679462433,
+        "sal_noref_c5": 0.07234317809343338,
+        "sal_wref_c1": 2.90392804145813,
+        "sal_wref_c2": 1.4637961387634277,
+        "sal_wref_c3": 0.9810414910316467,
+        "sal_wref_c4": 0.7368331551551819,
+        "sal_wref_c5": 0.5896468162536621
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1188.1492919921875,
+        "gradnorm_l1_uncentered": 1220.9462890625,
+        "gradnorm_l2_centered": 2.5475635528564453,
+        "gradnorm_l2_uncentered": 3.1050617694854736,
+        "sal_noref_c1": 3.2923595905303955,
+        "sal_noref_c2": 1.700546383857727,
+        "sal_noref_c3": 1.2073580026626587,
+        "sal_noref_c4": 1.103001594543457,
+        "sal_noref_c5": 1.121617078781128,
+        "sal_wref_c1": 0.22943738102912903,
+        "sal_wref_c2": 0.19821621477603912,
+        "sal_wref_c3": 0.22095590829849243,
+        "sal_wref_c4": 0.3642323911190033,
+        "sal_wref_c5": 0.46930986642837524
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Blu-Ray_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 880.8198852539062,
+        "gradnorm_l1_uncentered": 557.6911010742188,
+        "gradnorm_l2_centered": 1.7576018571853638,
+        "gradnorm_l2_uncentered": 1.322349190711975,
+        "sal_noref_c1": 0.725176990032196,
+        "sal_noref_c2": 0.3706527054309845,
+        "sal_noref_c3": 0.3067612051963806,
+        "sal_noref_c4": 0.23104143142700195,
+        "sal_noref_c5": 0.19816678762435913,
+        "sal_wref_c1": 2.032282829284668,
+        "sal_wref_c2": 1.0355184078216553,
+        "sal_wref_c3": 0.765354573726654,
+        "sal_wref_c4": 0.5742271542549133,
+        "sal_wref_c5": 0.4682181477546692
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2364.576171875,
+        "gradnorm_l1_uncentered": 2954.9111328125,
+        "gradnorm_l2_centered": 4.770721912384033,
+        "gradnorm_l2_uncentered": 6.2410054206848145,
+        "sal_noref_c1": 21.179977416992188,
+        "sal_noref_c2": 11.368080139160156,
+        "sal_noref_c3": 7.659306049346924,
+        "sal_noref_c4": 5.823032379150391,
+        "sal_noref_c5": 4.6722846031188965,
+        "sal_wref_c1": 5.1306867599487305,
+        "sal_wref_c2": 3.4004311561584473,
+        "sal_wref_c3": 2.366069793701172,
+        "sal_wref_c4": 1.8804556131362915,
+        "sal_wref_c5": 1.504530906677246
+      }
+    }
+  ]
+}

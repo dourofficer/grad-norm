@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "62.json",
+    "question_id": "e4e91f1c-1dcd-439e-9fdd-cb976f5293fd",
+    "mistake_agent": "Research_Expert",
+    "mistake_step": 2,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I need to fact-check a citation. This is the citation from the bibliography:\n\nGreetham, David. \"Uncoupled: OR, How I Lost My Author(s).\" Textual Cultures: Texts, Contexts, Interpretation, vol. 3 no. 1, 2008, p. 45-46. Project MUSE, doi:10.2979/tex.2008.3.1.44.\n\nAnd this is the in-line citation:\n\nOur relationship with the authors of the works we read can often be \u201cobscured not by a \"cloak of print\" but by the veil of scribal confusion and mis-transmission\u201d (Greetham 45-46).\n\nDoes the quoted text match what is actually in the article? If Yes, answer Yes, otherwise, give me the word in my citation that does not match with the correct one (without any article)."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 609.185791015625,
+        "gradnorm_l1_uncentered": 398.1781311035156,
+        "gradnorm_l2_centered": 1.362558126449585,
+        "gradnorm_l2_uncentered": 1.280279278755188,
+        "sal_noref_c1": 1.0287771224975586,
+        "sal_noref_c2": 0.5987547039985657,
+        "sal_noref_c3": 0.4201325476169586,
+        "sal_noref_c4": 0.3178214132785797,
+        "sal_noref_c5": 0.25435754656791687,
+        "sal_wref_c1": 1.437076210975647,
+        "sal_wref_c2": 0.7370843887329102,
+        "sal_wref_c3": 0.49622073769569397,
+        "sal_wref_c4": 0.37315282225608826,
+        "sal_wref_c5": 0.3082331120967865
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Research_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 658.5227661132812,
+        "gradnorm_l1_uncentered": 722.693115234375,
+        "gradnorm_l2_centered": 1.1606448888778687,
+        "gradnorm_l2_uncentered": 1.7857187986373901,
+        "sal_noref_c1": 2.2558860778808594,
+        "sal_noref_c2": 1.1326375007629395,
+        "sal_noref_c3": 0.7871355414390564,
+        "sal_noref_c4": 0.5915651321411133,
+        "sal_noref_c5": 0.4974297881126404,
+        "sal_wref_c1": 0.4725695550441742,
+        "sal_wref_c2": 0.2859480679035187,
+        "sal_wref_c3": 0.20002390444278717,
+        "sal_wref_c4": 0.15714649856090546,
+        "sal_wref_c5": 0.1309548169374466
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Research_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 632.7850952148438,
+        "gradnorm_l1_uncentered": 589.3816528320312,
+        "gradnorm_l2_centered": 1.2648637294769287,
+        "gradnorm_l2_uncentered": 1.4098409414291382,
+        "sal_noref_c1": 1.3375027179718018,
+        "sal_noref_c2": 0.6734800934791565,
+        "sal_noref_c3": 0.46637269854545593,
+        "sal_noref_c4": 0.35706189274787903,
+        "sal_noref_c5": 0.29941102862358093,
+        "sal_wref_c1": 1.102691888809204,
+        "sal_wref_c2": 0.550220251083374,
+        "sal_wref_c3": 0.36766019463539124,
+        "sal_wref_c4": 0.2765510678291321,
+        "sal_wref_c5": 0.22476895153522491
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 893.9049682617188,
+        "gradnorm_l1_uncentered": 1181.0928955078125,
+        "gradnorm_l2_centered": 1.5785043239593506,
+        "gradnorm_l2_uncentered": 2.8257644176483154,
+        "sal_noref_c1": 5.295457363128662,
+        "sal_noref_c2": 3.068373441696167,
+        "sal_noref_c3": 2.0519373416900635,
+        "sal_noref_c4": 1.5613322257995605,
+        "sal_noref_c5": 1.25367271900177,
+        "sal_wref_c1": 0.002890929114073515,
+        "sal_wref_c2": 0.3426001965999603,
+        "sal_wref_c3": 0.24707777798175812,
+        "sal_wref_c4": 0.19518239796161652,
+        "sal_wref_c5": 0.15655428171157837
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2325.770263671875,
+        "gradnorm_l1_uncentered": 2771.0859375,
+        "gradnorm_l2_centered": 5.43911075592041,
+        "gradnorm_l2_uncentered": 7.349454402923584,
+        "sal_noref_c1": 43.246952056884766,
+        "sal_noref_c2": 21.703283309936523,
+        "sal_noref_c3": 14.495208740234375,
+        "sal_noref_c4": 11.080219268798828,
+        "sal_noref_c5": 9.07594108581543,
+        "sal_wref_c1": 18.10293960571289,
+        "sal_wref_c2": 9.313090324401855,
+        "sal_wref_c3": 6.28099250793457,
+        "sal_wref_c4": 4.825752258300781,
+        "sal_wref_c5": 4.161653518676758
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 969.9395751953125,
+        "gradnorm_l1_uncentered": 1296.3814697265625,
+        "gradnorm_l2_centered": 1.8118058443069458,
+        "gradnorm_l2_uncentered": 3.5392911434173584,
+        "sal_noref_c1": 9.82408618927002,
+        "sal_noref_c2": 5.205750942230225,
+        "sal_noref_c3": 3.4791629314422607,
+        "sal_noref_c4": 2.7741479873657227,
+        "sal_noref_c5": 2.225039005279541,
+        "sal_wref_c1": 0.7373235821723938,
+        "sal_wref_c2": 0.6251451969146729,
+        "sal_wref_c3": 0.41687241196632385,
+        "sal_wref_c4": 0.45344990491867065,
+        "sal_wref_c5": 0.38636529445648193
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Research_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5578.27587890625,
+        "gradnorm_l1_uncentered": 6070.87548828125,
+        "gradnorm_l2_centered": 10.017084121704102,
+        "gradnorm_l2_uncentered": 11.746081352233887,
+        "sal_noref_c1": 97.7564468383789,
+        "sal_noref_c2": 48.48016357421875,
+        "sal_noref_c3": 36.7261848449707,
+        "sal_noref_c4": 28.314659118652344,
+        "sal_noref_c5": 23.31153106689453,
+        "sal_wref_c1": 62.64313507080078,
+        "sal_wref_c2": 31.264875411987305,
+        "sal_wref_c3": 24.612539291381836,
+        "sal_wref_c4": 19.188594818115234,
+        "sal_wref_c5": 15.949481010437012
+      }
+    }
+  ]
+}

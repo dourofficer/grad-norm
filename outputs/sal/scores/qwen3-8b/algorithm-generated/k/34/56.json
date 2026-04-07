@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "35.json",
+    "question_id": "71345b0a-9c7d-4b50-b2bf-937ec5879845",
+    "mistake_agent": "WebServing_Expert",
+    "mistake_step": 8,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "On a leap day before the year 2008, a joke was removed from the Wikipedia page for \u201cDragon\u201d. What was the phrase that was removed? Give the phrase as it appeared on the page, but without punctuation."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 978.2601928710938,
+        "gradnorm_l1_uncentered": 396.8455810546875,
+        "gradnorm_l2_centered": 1.9884446859359741,
+        "gradnorm_l2_uncentered": 0.9908460974693298,
+        "sal_noref_c1": 0.22461147606372833,
+        "sal_noref_c2": 0.1516723334789276,
+        "sal_noref_c3": 0.10147931426763535,
+        "sal_noref_c4": 0.07985995709896088,
+        "sal_noref_c5": 0.06519965082406998,
+        "sal_wref_c1": 3.3131766319274902,
+        "sal_wref_c2": 1.663532018661499,
+        "sal_wref_c3": 1.1111904382705688,
+        "sal_wref_c4": 0.8381601572036743,
+        "sal_wref_c5": 0.6707221269607544
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 996.2633056640625,
+        "gradnorm_l1_uncentered": 656.5978393554688,
+        "gradnorm_l2_centered": 2.034468173980713,
+        "gradnorm_l2_uncentered": 1.710480809211731,
+        "sal_noref_c1": 0.7272146940231323,
+        "sal_noref_c2": 0.6619024276733398,
+        "sal_noref_c3": 0.4633290767669678,
+        "sal_noref_c4": 0.3518029451370239,
+        "sal_noref_c5": 0.2827400267124176,
+        "sal_wref_c1": 2.101174831390381,
+        "sal_wref_c2": 1.2746273279190063,
+        "sal_wref_c3": 0.8804332613945007,
+        "sal_wref_c4": 0.6666456460952759,
+        "sal_wref_c5": 0.5347970128059387
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 932.2470092773438,
+        "gradnorm_l1_uncentered": 504.8877868652344,
+        "gradnorm_l2_centered": 1.8029142618179321,
+        "gradnorm_l2_uncentered": 1.1596872806549072,
+        "sal_noref_c1": 0.5296826362609863,
+        "sal_noref_c2": 0.26812827587127686,
+        "sal_noref_c3": 0.21014465391635895,
+        "sal_noref_c4": 0.16314245760440826,
+        "sal_noref_c5": 0.14795489609241486,
+        "sal_wref_c1": 2.4042482376098633,
+        "sal_wref_c2": 1.1946269273757935,
+        "sal_wref_c3": 0.8376438617706299,
+        "sal_wref_c4": 0.6307340860366821,
+        "sal_wref_c5": 0.5196289420127869
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1000.9979248046875,
+        "gradnorm_l1_uncentered": 1070.3433837890625,
+        "gradnorm_l2_centered": 2.15317440032959,
+        "gradnorm_l2_uncentered": 2.9325945377349854,
+        "sal_noref_c1": 3.9886393547058105,
+        "sal_noref_c2": 1.9923179149627686,
+        "sal_noref_c3": 1.4423764944076538,
+        "sal_noref_c4": 1.0840997695922852,
+        "sal_noref_c5": 0.8740190267562866,
+        "sal_wref_c1": 0.08598481118679047,
+        "sal_wref_c2": 0.047223933041095734,
+        "sal_wref_c3": 0.1643465757369995,
+        "sal_wref_c4": 0.12910807132720947,
+        "sal_wref_c5": 0.11486663669347763
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 900.2999267578125,
+        "gradnorm_l1_uncentered": 595.0025634765625,
+        "gradnorm_l2_centered": 1.8686295747756958,
+        "gradnorm_l2_uncentered": 1.7911735773086548,
+        "sal_noref_c1": 1.1862621307373047,
+        "sal_noref_c2": 0.5927250385284424,
+        "sal_noref_c3": 0.6028614640235901,
+        "sal_noref_c4": 0.4527719020843506,
+        "sal_noref_c5": 0.36948540806770325,
+        "sal_wref_c1": 1.402791976928711,
+        "sal_wref_c2": 0.697988748550415,
+        "sal_wref_c3": 0.6975776553153992,
+        "sal_wref_c4": 0.5255182385444641,
+        "sal_wref_c5": 0.428546667098999
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1004.1578979492188,
+        "gradnorm_l1_uncentered": 63.95374298095703,
+        "gradnorm_l2_centered": 2.249732732772827,
+        "gradnorm_l2_uncentered": 0.10951530933380127,
+        "sal_noref_c1": 0.0033661222551018,
+        "sal_noref_c2": 0.002136040013283491,
+        "sal_noref_c3": 0.001437647850252688,
+        "sal_noref_c4": 0.0011433917097747326,
+        "sal_noref_c5": 0.0009489391231909394,
+        "sal_wref_c1": 4.8649797439575195,
+        "sal_wref_c2": 2.4259493350982666,
+        "sal_wref_c3": 1.6179078817367554,
+        "sal_wref_c4": 1.2141916751861572,
+        "sal_wref_c5": 0.9741389155387878
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1014.3704223632812,
+        "gradnorm_l1_uncentered": 37.434852600097656,
+        "gradnorm_l2_centered": 2.2845168113708496,
+        "gradnorm_l2_uncentered": 0.06481971591711044,
+        "sal_noref_c1": 0.0004780248273164034,
+        "sal_noref_c2": 0.0002909140312112868,
+        "sal_noref_c3": 0.0002568423224147409,
+        "sal_noref_c4": 0.00019790609076153487,
+        "sal_noref_c5": 0.00016191363101825118,
+        "sal_wref_c1": 5.025722980499268,
+        "sal_wref_c2": 2.503413438796997,
+        "sal_wref_c3": 1.6693655252456665,
+        "sal_wref_c4": 1.252601981163025,
+        "sal_wref_c5": 1.0021998882293701
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 997.3922119140625,
+        "gradnorm_l1_uncentered": 234.87742614746094,
+        "gradnorm_l2_centered": 2.1078460216522217,
+        "gradnorm_l2_uncentered": 0.598314106464386,
+        "sal_noref_c1": 0.06684517115354538,
+        "sal_noref_c2": 0.033688947558403015,
+        "sal_noref_c3": 0.038921937346458435,
+        "sal_noref_c4": 0.029282407835125923,
+        "sal_noref_c5": 0.024743786081671715,
+        "sal_wref_c1": 4.0530829429626465,
+        "sal_wref_c2": 2.0177791118621826,
+        "sal_wref_c3": 1.3697667121887207,
+        "sal_wref_c4": 1.027454137802124,
+        "sal_wref_c5": 0.8225685954093933
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "WebServing_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 987.1470336914062,
+        "gradnorm_l1_uncentered": 519.9758911132812,
+        "gradnorm_l2_centered": 2.0058789253234863,
+        "gradnorm_l2_uncentered": 1.5166888236999512,
+        "sal_noref_c1": 0.5785186886787415,
+        "sal_noref_c2": 0.29070526361465454,
+        "sal_noref_c3": 0.3046581447124481,
+        "sal_noref_c4": 0.2351835072040558,
+        "sal_noref_c5": 0.23402881622314453,
+        "sal_wref_c1": 2.316326856613159,
+        "sal_wref_c2": 1.1626075506210327,
+        "sal_wref_c3": 0.9051995873451233,
+        "sal_wref_c4": 0.6823709011077881,
+        "sal_wref_c5": 0.5862882137298584
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 925.7207641601562,
+        "gradnorm_l1_uncentered": 407.82098388671875,
+        "gradnorm_l2_centered": 1.9427415132522583,
+        "gradnorm_l2_uncentered": 1.1102871894836426,
+        "sal_noref_c1": 0.34628456830978394,
+        "sal_noref_c2": 0.1734209656715393,
+        "sal_noref_c3": 0.15270186960697174,
+        "sal_noref_c4": 0.11457989364862442,
+        "sal_noref_c5": 0.0921802967786789,
+        "sal_wref_c1": 2.8546743392944336,
+        "sal_wref_c2": 1.4213062524795532,
+        "sal_wref_c3": 0.9957761168479919,
+        "sal_wref_c4": 0.7469167709350586,
+        "sal_wref_c5": 0.5992435216903687
+      }
+    }
+  ]
+}

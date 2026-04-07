@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "101.json",
+    "question_id": "57d9dc6935e8a40b02e7f8ec81768fe70e68a0c05f6866927c9fda38db38a486",
+    "mistake_agent": "Tickets_Pricing_Expert",
+    "mistake_step": 2,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much will I save by getting annual passes for my family (2 adults, 1 kid age 5, 1 kid age 2) for the Seattle Children Museum, compared to buying daily tickets, if we visit 4 times in a year?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Tickets_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 673.4244995117188,
+        "gradnorm_l1_uncentered": 364.2735290527344,
+        "gradnorm_l2_centered": 1.6383962631225586,
+        "gradnorm_l2_uncentered": 1.107701063156128,
+        "sal_noref_c1": 0.22283779084682465,
+        "sal_noref_c2": 0.1520591676235199,
+        "sal_noref_c3": 0.1554621309041977,
+        "sal_noref_c4": 0.11877600848674774,
+        "sal_noref_c5": 0.1024264320731163,
+        "sal_wref_c1": 0.7397847771644592,
+        "sal_wref_c2": 0.4692420959472656,
+        "sal_wref_c3": 0.6036162376403809,
+        "sal_wref_c4": 0.5059043765068054,
+        "sal_wref_c5": 0.4076208174228668
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Tickets_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 928.9052734375,
+        "gradnorm_l1_uncentered": 795.9070434570312,
+        "gradnorm_l2_centered": 2.1125588417053223,
+        "gradnorm_l2_uncentered": 2.0478858947753906,
+        "sal_noref_c1": 0.8691663146018982,
+        "sal_noref_c2": 0.4430561065673828,
+        "sal_noref_c3": 0.45590922236442566,
+        "sal_noref_c4": 0.3598501682281494,
+        "sal_noref_c5": 0.2975015342235565,
+        "sal_wref_c1": 0.07303565740585327,
+        "sal_wref_c2": 0.23533596098423004,
+        "sal_wref_c3": 0.6781478524208069,
+        "sal_wref_c4": 0.540782630443573,
+        "sal_wref_c5": 0.43899059295654297
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Tickets_Pricing_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1455.55078125,
+        "gradnorm_l1_uncentered": 1481.8751220703125,
+        "gradnorm_l2_centered": 3.5383236408233643,
+        "gradnorm_l2_uncentered": 3.5488903522491455,
+        "sal_noref_c1": 1.8371697664260864,
+        "sal_noref_c2": 1.3756153583526611,
+        "sal_noref_c3": 1.2578538656234741,
+        "sal_noref_c4": 0.9438417553901672,
+        "sal_noref_c5": 0.7550966143608093,
+        "sal_wref_c1": 0.24606752395629883,
+        "sal_wref_c2": 0.767412006855011,
+        "sal_wref_c3": 1.3261653184890747,
+        "sal_wref_c4": 1.105717658996582,
+        "sal_wref_c5": 0.8853470087051392
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Tickets_Pricing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 751.4148559570312,
+        "gradnorm_l1_uncentered": 539.13525390625,
+        "gradnorm_l2_centered": 1.7785512208938599,
+        "gradnorm_l2_uncentered": 1.1950165033340454,
+        "sal_noref_c1": 0.04589609056711197,
+        "sal_noref_c2": 0.25301435589790344,
+        "sal_noref_c3": 0.1747802495956421,
+        "sal_noref_c4": 0.13119634985923767,
+        "sal_noref_c5": 0.10518386214971542,
+        "sal_wref_c1": 1.6876999139785767,
+        "sal_wref_c2": 0.8768429756164551,
+        "sal_wref_c3": 0.6314817070960999,
+        "sal_wref_c4": 0.525905966758728,
+        "sal_wref_c5": 0.4214211404323578
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1581.9771728515625,
+        "gradnorm_l1_uncentered": 1748.5030517578125,
+        "gradnorm_l2_centered": 3.770185708999634,
+        "gradnorm_l2_uncentered": 4.567607879638672,
+        "sal_noref_c1": 7.216113090515137,
+        "sal_noref_c2": 4.777264595031738,
+        "sal_noref_c3": 3.68932843208313,
+        "sal_noref_c4": 2.767886161804199,
+        "sal_noref_c5": 2.2747137546539307,
+        "sal_wref_c1": 0.46316757798194885,
+        "sal_wref_c2": 1.6042426824569702,
+        "sal_wref_c3": 1.5527297258377075,
+        "sal_wref_c4": 1.1882654428482056,
+        "sal_wref_c5": 1.0189154148101807
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Budgeting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 657.7805786132812,
+        "gradnorm_l1_uncentered": 441.0086669921875,
+        "gradnorm_l2_centered": 1.4668868780136108,
+        "gradnorm_l2_uncentered": 1.0250598192214966,
+        "sal_noref_c1": 0.1960684210062027,
+        "sal_noref_c2": 0.12919321656227112,
+        "sal_noref_c3": 0.11206125468015671,
+        "sal_noref_c4": 0.09943363070487976,
+        "sal_noref_c5": 0.07965297996997833,
+        "sal_wref_c1": 0.9144459962844849,
+        "sal_wref_c2": 0.6627559065818787,
+        "sal_wref_c3": 0.4748809039592743,
+        "sal_wref_c4": 0.3649246096611023,
+        "sal_wref_c5": 0.2951511740684509
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 630.3646240234375,
+        "gradnorm_l1_uncentered": 411.11456298828125,
+        "gradnorm_l2_centered": 1.5349997282028198,
+        "gradnorm_l2_uncentered": 0.9503095746040344,
+        "sal_noref_c1": 0.1068008616566658,
+        "sal_noref_c2": 0.15669701993465424,
+        "sal_noref_c3": 0.12242397665977478,
+        "sal_noref_c4": 0.09369824081659317,
+        "sal_noref_c5": 0.07615026831626892,
+        "sal_wref_c1": 1.263409972190857,
+        "sal_wref_c2": 0.7393790483474731,
+        "sal_wref_c3": 0.5259155035018921,
+        "sal_wref_c4": 0.4235857129096985,
+        "sal_wref_c5": 0.34100058674812317
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6952.458984375,
+        "gradnorm_l1_uncentered": 7241.607421875,
+        "gradnorm_l2_centered": 17.530879974365234,
+        "gradnorm_l2_uncentered": 17.69101333618164,
+        "sal_noref_c1": 0.07175537943840027,
+        "sal_noref_c2": 2.3011202812194824,
+        "sal_noref_c3": 65.69036102294922,
+        "sal_noref_c4": 53.911434173583984,
+        "sal_noref_c5": 44.29104995727539,
+        "sal_wref_c1": 13.723226547241211,
+        "sal_wref_c2": 8.400667190551758,
+        "sal_wref_c3": 68.4855728149414,
+        "sal_wref_c4": 52.62771987915039,
+        "sal_wref_c5": 42.90498733520508
+      }
+    }
+  ]
+}

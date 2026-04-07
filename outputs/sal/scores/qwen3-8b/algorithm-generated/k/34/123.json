@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "96.json",
+    "question_id": "a26649c6-1cb2-470a-871e-6910c64c3e53",
+    "mistake_agent": "Data_Retrieval_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What is the absolute difference in tens of thousands between the population of chinstrap penguins on the Wikipedia page for penguin species populations as of the end of 2018 and the population recorded in the Nature.com \"global population assessment of the Chinstrap penguin\" article from 2020, assuming two penguins per breeding pair?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "PopulationData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1006.438720703125,
+        "gradnorm_l1_uncentered": 442.96575927734375,
+        "gradnorm_l2_centered": 2.039663076400757,
+        "gradnorm_l2_uncentered": 0.9650142788887024,
+        "sal_noref_c1": 0.17867593467235565,
+        "sal_noref_c2": 0.11001083254814148,
+        "sal_noref_c3": 0.0734202042222023,
+        "sal_noref_c4": 0.05763697251677513,
+        "sal_noref_c5": 0.04718686267733574,
+        "sal_wref_c1": 3.487006187438965,
+        "sal_wref_c2": 1.739663004875183,
+        "sal_wref_c3": 1.16110098361969,
+        "sal_wref_c4": 0.8746083974838257,
+        "sal_wref_c5": 0.6998564004898071
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Data_Retrieval_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 935.8969116210938,
+        "gradnorm_l1_uncentered": 815.5452270507812,
+        "gradnorm_l2_centered": 1.8191003799438477,
+        "gradnorm_l2_uncentered": 1.5364124774932861,
+        "sal_noref_c1": 0.849330484867096,
+        "sal_noref_c2": 0.4671619236469269,
+        "sal_noref_c3": 0.3480520248413086,
+        "sal_noref_c4": 0.3185340166091919,
+        "sal_noref_c5": 0.25566983222961426,
+        "sal_wref_c1": 1.8785420656204224,
+        "sal_wref_c2": 0.956359326839447,
+        "sal_wref_c3": 0.664542555809021,
+        "sal_wref_c4": 0.5616170167922974,
+        "sal_wref_c5": 0.44994401931762695
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1562.0736083984375,
+        "gradnorm_l1_uncentered": 2002.8173828125,
+        "gradnorm_l2_centered": 3.609265089035034,
+        "gradnorm_l2_uncentered": 4.672830581665039,
+        "sal_noref_c1": 9.284687042236328,
+        "sal_noref_c2": 7.0746564865112305,
+        "sal_noref_c3": 4.793478488922119,
+        "sal_noref_c4": 3.618093252182007,
+        "sal_noref_c5": 2.911620855331421,
+        "sal_wref_c1": 0.5416562557220459,
+        "sal_wref_c2": 2.6283628940582275,
+        "sal_wref_c3": 1.8298028707504272,
+        "sal_wref_c4": 1.3918896913528442,
+        "sal_wref_c5": 1.160516381263733
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "PopulationData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 871.5134887695312,
+        "gradnorm_l1_uncentered": 889.6716918945312,
+        "gradnorm_l2_centered": 1.7118018865585327,
+        "gradnorm_l2_uncentered": 1.834226131439209,
+        "sal_noref_c1": 1.4764032363891602,
+        "sal_noref_c2": 0.8170992732048035,
+        "sal_noref_c3": 0.5744695663452148,
+        "sal_noref_c4": 0.43117085099220276,
+        "sal_noref_c5": 0.3558334410190582,
+        "sal_wref_c1": 1.177254557609558,
+        "sal_wref_c2": 0.635047197341919,
+        "sal_wref_c3": 0.44485151767730713,
+        "sal_wref_c4": 0.3336746394634247,
+        "sal_wref_c5": 0.27761659026145935
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2663.294677734375,
+        "gradnorm_l1_uncentered": 3199.88037109375,
+        "gradnorm_l2_centered": 4.517776966094971,
+        "gradnorm_l2_uncentered": 5.650907039642334,
+        "sal_noref_c1": 12.814593315124512,
+        "sal_noref_c2": 6.3836989402771,
+        "sal_noref_c3": 5.987558841705322,
+        "sal_noref_c4": 4.493832111358643,
+        "sal_noref_c5": 3.656836748123169,
+        "sal_wref_c1": 1.5216025114059448,
+        "sal_wref_c2": 0.7594406008720398,
+        "sal_wref_c3": 2.207733154296875,
+        "sal_wref_c4": 1.6716233491897583,
+        "sal_wref_c5": 1.350954294204712
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "PopulationData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 969.230224609375,
+        "gradnorm_l1_uncentered": 1130.0830078125,
+        "gradnorm_l2_centered": 1.9583898782730103,
+        "gradnorm_l2_uncentered": 2.3740458488464355,
+        "sal_noref_c1": 2.2136294841766357,
+        "sal_noref_c2": 1.1575266122817993,
+        "sal_noref_c3": 0.83660888671875,
+        "sal_noref_c4": 0.6779455542564392,
+        "sal_noref_c5": 0.5444455146789551,
+        "sal_wref_c1": 0.6919977068901062,
+        "sal_wref_c2": 0.3749261200428009,
+        "sal_wref_c3": 0.29850873351097107,
+        "sal_wref_c4": 0.2583761513233185,
+        "sal_wref_c5": 0.20715904235839844
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1074.169677734375,
+        "gradnorm_l1_uncentered": 1136.76611328125,
+        "gradnorm_l2_centered": 2.318605661392212,
+        "gradnorm_l2_uncentered": 3.034529447555542,
+        "sal_noref_c1": 3.6920535564422607,
+        "sal_noref_c2": 2.237530469894409,
+        "sal_noref_c3": 1.5129579305648804,
+        "sal_noref_c4": 1.2740179300308228,
+        "sal_noref_c5": 1.0918329954147339,
+        "sal_wref_c1": 0.16759121417999268,
+        "sal_wref_c2": 0.4131876826286316,
+        "sal_wref_c3": 0.3036807179450989,
+        "sal_wref_c4": 0.3600854277610779,
+        "sal_wref_c5": 0.3352662920951843
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Data_Retrieval_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 839.8429565429688,
+        "gradnorm_l1_uncentered": 605.75146484375,
+        "gradnorm_l2_centered": 1.8319873809814453,
+        "gradnorm_l2_uncentered": 1.2712143659591675,
+        "sal_noref_c1": 0.5943430066108704,
+        "sal_noref_c2": 0.297746866941452,
+        "sal_noref_c3": 0.2341434508562088,
+        "sal_noref_c4": 0.18132078647613525,
+        "sal_noref_c5": 0.14506985247135162,
+        "sal_wref_c1": 2.2543187141418457,
+        "sal_wref_c2": 1.132247805595398,
+        "sal_wref_c3": 0.8003599643707275,
+        "sal_wref_c4": 0.6089370846748352,
+        "sal_wref_c5": 0.4892556667327881
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2942.33984375,
+        "gradnorm_l1_uncentered": 3489.44970703125,
+        "gradnorm_l2_centered": 5.286020278930664,
+        "gradnorm_l2_uncentered": 6.570616245269775,
+        "sal_noref_c1": 19.792497634887695,
+        "sal_noref_c2": 10.532918930053711,
+        "sal_noref_c3": 7.055457592010498,
+        "sal_noref_c4": 5.567144870758057,
+        "sal_noref_c5": 4.5621442794799805,
+        "sal_wref_c1": 4.634713649749756,
+        "sal_wref_c2": 3.000150680541992,
+        "sal_wref_c3": 2.038876533508301,
+        "sal_wref_c4": 1.8866069316864014,
+        "sal_wref_c5": 1.5633676052093506
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "PopulationData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 878.8269653320312,
+        "gradnorm_l1_uncentered": 428.4473876953125,
+        "gradnorm_l2_centered": 1.8880925178527832,
+        "gradnorm_l2_uncentered": 0.7971642017364502,
+        "sal_noref_c1": 0.26394209265708923,
+        "sal_noref_c2": 0.15614290535449982,
+        "sal_noref_c3": 0.1053200289607048,
+        "sal_noref_c4": 0.07967712730169296,
+        "sal_noref_c5": 0.0639786422252655,
+        "sal_wref_c1": 3.0820517539978027,
+        "sal_wref_c2": 1.5856410264968872,
+        "sal_wref_c3": 1.0571516752243042,
+        "sal_wref_c4": 0.7930161952972412,
+        "sal_wref_c5": 0.6344376802444458
+      }
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "84.json",
+    "question_id": "cca530fc-4052-43b2-b130-b30968d8aa44",
+    "mistake_agent": "Chess_Expert",
+    "mistake_step": 7,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Review the chess position provided in the image. It is black's turn. Provide the correct next move for black which guarantees a win. Please provide your response in algebraic notation."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Chess_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 978.6954345703125,
+        "gradnorm_l1_uncentered": 468.1600341796875,
+        "gradnorm_l2_centered": 1.9762152433395386,
+        "gradnorm_l2_uncentered": 1.063260555267334,
+        "sal_noref_c1": 0.2731991708278656,
+        "sal_noref_c2": 0.15772467851638794,
+        "sal_noref_c3": 0.10518420487642288,
+        "sal_noref_c4": 0.08713230490684509,
+        "sal_noref_c5": 0.07029968500137329,
+        "sal_wref_c1": 3.1218464374542236,
+        "sal_wref_c2": 1.558810830116272,
+        "sal_wref_c3": 1.0401955842971802,
+        "sal_wref_c4": 0.7897399663925171,
+        "sal_wref_c5": 0.631799578666687
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3031.342529296875,
+        "gradnorm_l1_uncentered": 3535.073486328125,
+        "gradnorm_l2_centered": 7.661664009094238,
+        "gradnorm_l2_uncentered": 8.827372550964355,
+        "sal_noref_c1": 27.725555419921875,
+        "sal_noref_c2": 18.93166732788086,
+        "sal_noref_c3": 13.738078117370605,
+        "sal_noref_c4": 11.148263931274414,
+        "sal_noref_c5": 9.441656112670898,
+        "sal_wref_c1": 8.445625305175781,
+        "sal_wref_c2": 9.367012023925781,
+        "sal_wref_c3": 7.353827953338623,
+        "sal_wref_c4": 6.455472469329834,
+        "sal_wref_c5": 5.587437629699707
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "ChessRules_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1553.368896484375,
+        "gradnorm_l1_uncentered": 2054.609619140625,
+        "gradnorm_l2_centered": 3.224827289581299,
+        "gradnorm_l2_uncentered": 4.32573938369751,
+        "sal_noref_c1": 8.569247245788574,
+        "sal_noref_c2": 4.661170482635498,
+        "sal_noref_c3": 3.1538617610931396,
+        "sal_noref_c4": 2.366678237915039,
+        "sal_noref_c5": 2.078418493270874,
+        "sal_wref_c1": 0.37972119450569153,
+        "sal_wref_c2": 0.5414764881134033,
+        "sal_wref_c3": 0.412813663482666,
+        "sal_wref_c4": 0.30961212515830994,
+        "sal_wref_c5": 0.545117199420929
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1319.361083984375,
+        "gradnorm_l1_uncentered": 1256.5711669921875,
+        "gradnorm_l2_centered": 2.6746459007263184,
+        "gradnorm_l2_uncentered": 2.4640052318573,
+        "sal_noref_c1": 0.7884972095489502,
+        "sal_noref_c2": 0.39302584528923035,
+        "sal_noref_c3": 0.3109436631202698,
+        "sal_noref_c4": 0.23435722291469574,
+        "sal_noref_c5": 0.18918804824352264,
+        "sal_wref_c1": 1.978110432624817,
+        "sal_wref_c2": 0.9893755912780762,
+        "sal_wref_c3": 0.6967405676841736,
+        "sal_wref_c4": 0.5233274102210999,
+        "sal_wref_c5": 0.4219653010368347
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Chess_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1483.7926025390625,
+        "gradnorm_l1_uncentered": 1779.725830078125,
+        "gradnorm_l2_centered": 3.478677272796631,
+        "gradnorm_l2_uncentered": 4.529794692993164,
+        "sal_noref_c1": 8.538378715515137,
+        "sal_noref_c2": 5.323416233062744,
+        "sal_noref_c3": 3.632425546646118,
+        "sal_noref_c4": 2.9285590648651123,
+        "sal_noref_c5": 2.4040632247924805,
+        "sal_wref_c1": 0.34184926748275757,
+        "sal_wref_c2": 1.1648633480072021,
+        "sal_wref_c3": 0.851271390914917,
+        "sal_wref_c4": 0.8227933049201965,
+        "sal_wref_c5": 0.7706683278083801
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1132.848876953125,
+        "gradnorm_l1_uncentered": 1103.03271484375,
+        "gradnorm_l2_centered": 2.0498123168945312,
+        "gradnorm_l2_uncentered": 2.29215931892395,
+        "sal_noref_c1": 1.8706779479980469,
+        "sal_noref_c2": 1.2339701652526855,
+        "sal_noref_c3": 0.833916962146759,
+        "sal_noref_c4": 0.6491769552230835,
+        "sal_noref_c5": 0.5269017815589905,
+        "sal_wref_c1": 0.851273775100708,
+        "sal_wref_c2": 0.6663244962692261,
+        "sal_wref_c3": 0.4521561563014984,
+        "sal_wref_c4": 0.36438438296318054,
+        "sal_wref_c5": 0.29576292634010315
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "ChessRules_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1281.7880859375,
+        "gradnorm_l1_uncentered": 1628.7613525390625,
+        "gradnorm_l2_centered": 2.4578027725219727,
+        "gradnorm_l2_uncentered": 3.3686752319335938,
+        "sal_noref_c1": 5.088847637176514,
+        "sal_noref_c2": 2.5562658309936523,
+        "sal_noref_c3": 1.8274813890457153,
+        "sal_noref_c4": 1.3946125507354736,
+        "sal_noref_c5": 1.1267212629318237,
+        "sal_wref_c1": 0.0035074427723884583,
+        "sal_wref_c2": 0.03878859430551529,
+        "sal_wref_c3": 0.1707579493522644,
+        "sal_wref_c4": 0.14434053003787994,
+        "sal_wref_c5": 0.11614657938480377
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Chess_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 895.9976196289062,
+        "gradnorm_l1_uncentered": 633.0136108398438,
+        "gradnorm_l2_centered": 1.83352530002594,
+        "gradnorm_l2_uncentered": 1.1844358444213867,
+        "sal_noref_c1": 0.49464496970176697,
+        "sal_noref_c2": 0.24722380936145782,
+        "sal_noref_c3": 0.17804133892059326,
+        "sal_noref_c4": 0.13740020990371704,
+        "sal_noref_c5": 0.11011555045843124,
+        "sal_wref_c1": 2.5098540782928467,
+        "sal_wref_c2": 1.2570973634719849,
+        "sal_wref_c3": 0.8592585921287537,
+        "sal_wref_c4": 0.6470397114753723,
+        "sal_wref_c5": 0.5200825333595276
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Chess_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2544.3427734375,
+        "gradnorm_l1_uncentered": 3012.221435546875,
+        "gradnorm_l2_centered": 4.226609706878662,
+        "gradnorm_l2_uncentered": 5.0163984298706055,
+        "sal_noref_c1": 7.332901954650879,
+        "sal_noref_c2": 4.644859790802002,
+        "sal_noref_c3": 3.6569511890411377,
+        "sal_noref_c4": 2.7484185695648193,
+        "sal_noref_c5": 2.218303918838501,
+        "sal_wref_c1": 0.16856318712234497,
+        "sal_wref_c2": 1.1682441234588623,
+        "sal_wref_c3": 1.3067249059677124,
+        "sal_wref_c4": 0.9988265037536621,
+        "sal_wref_c5": 0.8051084280014038
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "118.json",
+    "question_id": "9baaa267c95f9d8b75741ee9169c50563d297cfa592c20deaffd30dbc5984c74",
+    "mistake_agent": "Statistics_Expert",
+    "mistake_step": 1,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "Based on recent years (2020-2023), how likely am I to hit a day with a max temperature (in Fahrenheit) over 95 if I travel to Houston, Texas during June? (provide the answer in percentage)"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WeatherData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 853.2955932617188,
+        "gradnorm_l1_uncentered": 471.6416015625,
+        "gradnorm_l2_centered": 1.6498111486434937,
+        "gradnorm_l2_uncentered": 1.0158321857452393,
+        "sal_noref_c1": 0.08174153417348862,
+        "sal_noref_c2": 0.10806615650653839,
+        "sal_noref_c3": 0.07487626373767853,
+        "sal_noref_c4": 0.06707188487052917,
+        "sal_noref_c5": 0.05606026202440262,
+        "sal_wref_c1": 1.7211048603057861,
+        "sal_wref_c2": 0.9430326223373413,
+        "sal_wref_c3": 0.6303915977478027,
+        "sal_wref_c4": 0.4896685481071472,
+        "sal_wref_c5": 0.39396193623542786
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Statistics_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 772.9155883789062,
+        "gradnorm_l1_uncentered": 400.43310546875,
+        "gradnorm_l2_centered": 1.575757622718811,
+        "gradnorm_l2_uncentered": 0.7090948224067688,
+        "sal_noref_c1": 0.07039157301187515,
+        "sal_noref_c2": 0.05139773339033127,
+        "sal_noref_c3": 0.034405842423439026,
+        "sal_noref_c4": 0.026198484003543854,
+        "sal_noref_c5": 0.02164185419678688,
+        "sal_wref_c1": 1.6486668586730957,
+        "sal_wref_c2": 0.9974761009216309,
+        "sal_wref_c3": 0.6757783889770508,
+        "sal_wref_c4": 0.5098744630813599,
+        "sal_wref_c5": 0.4104803204536438
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1206.6898193359375,
+        "gradnorm_l1_uncentered": 1013.177734375,
+        "gradnorm_l2_centered": 1.9491721391677856,
+        "gradnorm_l2_uncentered": 1.5466386079788208,
+        "sal_noref_c1": 0.16166649758815765,
+        "sal_noref_c2": 0.1580229103565216,
+        "sal_noref_c3": 0.10694994777441025,
+        "sal_noref_c4": 0.08021280169487,
+        "sal_noref_c5": 0.06418214738368988,
+        "sal_wref_c1": 1.4091442823410034,
+        "sal_wref_c2": 0.7579273581504822,
+        "sal_wref_c3": 0.5069604516029358,
+        "sal_wref_c4": 0.38068750500679016,
+        "sal_wref_c5": 0.3062822222709656
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 847.7576904296875,
+        "gradnorm_l1_uncentered": 614.3515625,
+        "gradnorm_l2_centered": 1.53411066532135,
+        "gradnorm_l2_uncentered": 1.1177771091461182,
+        "sal_noref_c1": 0.19321708381175995,
+        "sal_noref_c2": 0.15393105149269104,
+        "sal_noref_c3": 0.10627362877130508,
+        "sal_noref_c4": 0.07970541715621948,
+        "sal_noref_c5": 0.06417979300022125,
+        "sal_wref_c1": 1.372871994972229,
+        "sal_wref_c2": 0.7834471464157104,
+        "sal_wref_c3": 0.5279008746147156,
+        "sal_wref_c4": 0.3983646035194397,
+        "sal_wref_c5": 0.3192993402481079
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2126.56494140625,
+        "gradnorm_l1_uncentered": 2109.474609375,
+        "gradnorm_l2_centered": 3.1656134128570557,
+        "gradnorm_l2_uncentered": 3.190708637237549,
+        "sal_noref_c1": 0.7027890682220459,
+        "sal_noref_c2": 0.49693480134010315,
+        "sal_noref_c3": 0.33763694763183594,
+        "sal_noref_c4": 0.28838086128234863,
+        "sal_noref_c5": 0.24427838623523712,
+        "sal_wref_c1": 0.6262614130973816,
+        "sal_wref_c2": 0.3166893720626831,
+        "sal_wref_c3": 0.23402376472949982,
+        "sal_wref_c4": 0.2104543149471283,
+        "sal_wref_c5": 0.18971626460552216
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 793.6736450195312,
+        "gradnorm_l1_uncentered": 408.5685119628906,
+        "gradnorm_l2_centered": 1.6243582963943481,
+        "gradnorm_l2_uncentered": 0.6214216351509094,
+        "sal_noref_c1": 0.04534383863210678,
+        "sal_noref_c2": 0.028625892475247383,
+        "sal_noref_c3": 0.019165759906172752,
+        "sal_noref_c4": 0.017310889437794685,
+        "sal_noref_c5": 0.013995980843901634,
+        "sal_wref_c1": 1.7292746305465698,
+        "sal_wref_c2": 1.0855082273483276,
+        "sal_wref_c3": 0.7380272746086121,
+        "sal_wref_c4": 0.5537590980529785,
+        "sal_wref_c5": 0.4460955262184143
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1729.85107421875,
+        "gradnorm_l1_uncentered": 1904.3780517578125,
+        "gradnorm_l2_centered": 2.864386796951294,
+        "gradnorm_l2_uncentered": 3.3760769367218018,
+        "sal_noref_c1": 2.7527825832366943,
+        "sal_noref_c2": 1.7612733840942383,
+        "sal_noref_c3": 1.258259654045105,
+        "sal_noref_c4": 1.2346079349517822,
+        "sal_noref_c5": 1.0811651945114136,
+        "sal_wref_c1": 0.003998862113803625,
+        "sal_wref_c2": 0.11054858565330505,
+        "sal_wref_c3": 0.14528600871562958,
+        "sal_wref_c4": 0.5196938514709473,
+        "sal_wref_c5": 0.48002395033836365
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Statistics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 728.6229858398438,
+        "gradnorm_l1_uncentered": 305.28448486328125,
+        "gradnorm_l2_centered": 1.6238600015640259,
+        "gradnorm_l2_uncentered": 0.5185871720314026,
+        "sal_noref_c1": 0.05175651237368584,
+        "sal_noref_c2": 0.02581428736448288,
+        "sal_noref_c3": 0.019136909395456314,
+        "sal_noref_c4": 0.019429747015237808,
+        "sal_noref_c5": 0.016145585104823112,
+        "sal_wref_c1": 1.6067464351654053,
+        "sal_wref_c2": 1.0792697668075562,
+        "sal_wref_c3": 0.7461392879486084,
+        "sal_wref_c4": 0.5611945986747742,
+        "sal_wref_c5": 0.45265451073646545
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1499.2113037109375,
+        "gradnorm_l1_uncentered": 1620.4354248046875,
+        "gradnorm_l2_centered": 2.588066577911377,
+        "gradnorm_l2_uncentered": 2.873278856277466,
+        "sal_noref_c1": 1.7521313428878784,
+        "sal_noref_c2": 0.9274969100952148,
+        "sal_noref_c3": 0.729921281337738,
+        "sal_noref_c4": 0.8950809240341187,
+        "sal_noref_c5": 0.7797526121139526,
+        "sal_wref_c1": 0.07130154967308044,
+        "sal_wref_c2": 0.046912942081689835,
+        "sal_wref_c3": 0.17138171195983887,
+        "sal_wref_c4": 0.5677905082702637,
+        "sal_wref_c5": 0.5240273475646973
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "WeatherData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1121.54150390625,
+        "gradnorm_l1_uncentered": 1204.814697265625,
+        "gradnorm_l2_centered": 1.8806581497192383,
+        "gradnorm_l2_uncentered": 2.298947334289551,
+        "sal_noref_c1": 1.4945244789123535,
+        "sal_noref_c2": 0.8672557473182678,
+        "sal_noref_c3": 0.5793195366859436,
+        "sal_noref_c4": 0.4632207453250885,
+        "sal_noref_c5": 0.382681280374527,
+        "sal_wref_c1": 0.21076838672161102,
+        "sal_wref_c2": 0.11651017516851425,
+        "sal_wref_c3": 0.08055071532726288,
+        "sal_wref_c4": 0.10111162811517715,
+        "sal_wref_c5": 0.08175746351480484
+      }
+    }
+  ]
+}

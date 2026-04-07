@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "16.json",
+    "question_id": "0512426f-4d28-49f0-be77-06d05daec096",
+    "mistake_agent": "Narration_Expert",
+    "mistake_step": 1,
+    "level": "3",
+    "subset": "algorithm-generated",
+    "question": "In the YouTube 360 VR video from March 2018 narrated by the voice actor of Lord of the Rings' Gollum, what number was mentioned by the narrator directly after dinosaurs were first shown in the video?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Video_Analyst_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 703.9939575195312,
+        "gradnorm_l1_uncentered": 425.6668701171875,
+        "gradnorm_l2_centered": 1.669162631034851,
+        "gradnorm_l2_uncentered": 1.2791967391967773,
+        "sal_noref_c1": 0.27519887685775757,
+        "sal_noref_c2": 0.2294643223285675,
+        "sal_noref_c3": 0.20855970680713654,
+        "sal_noref_c4": 0.15974390506744385,
+        "sal_noref_c5": 0.13613739609718323,
+        "sal_wref_c1": 0.7610844373703003,
+        "sal_wref_c2": 0.42348945140838623,
+        "sal_wref_c3": 0.5605044960975647,
+        "sal_wref_c4": 0.4640398621559143,
+        "sal_wref_c5": 0.37446263432502747
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Narration_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 679.4227905273438,
+        "gradnorm_l1_uncentered": 440.74169921875,
+        "gradnorm_l2_centered": 1.4779716730117798,
+        "gradnorm_l2_uncentered": 1.269559383392334,
+        "sal_noref_c1": 0.292523592710495,
+        "sal_noref_c2": 0.2608630359172821,
+        "sal_noref_c3": 0.17495812475681305,
+        "sal_noref_c4": 0.15655623376369476,
+        "sal_noref_c5": 0.12625692784786224,
+        "sal_wref_c1": 0.9071249961853027,
+        "sal_wref_c2": 0.5203837752342224,
+        "sal_wref_c3": 0.43313607573509216,
+        "sal_wref_c4": 0.33018115162849426,
+        "sal_wref_c5": 0.26415348052978516
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1415.73095703125,
+        "gradnorm_l1_uncentered": 1471.2816162109375,
+        "gradnorm_l2_centered": 4.181736469268799,
+        "gradnorm_l2_uncentered": 4.808990955352783,
+        "sal_noref_c1": 1.7423781156539917,
+        "sal_noref_c2": 5.91800594329834,
+        "sal_noref_c3": 4.422534465789795,
+        "sal_noref_c4": 3.48203706741333,
+        "sal_noref_c5": 2.8050918579101562,
+        "sal_wref_c1": 2.392655611038208,
+        "sal_wref_c2": 3.3054704666137695,
+        "sal_wref_c3": 2.5296618938446045,
+        "sal_wref_c4": 2.0776028633117676,
+        "sal_wref_c5": 1.6838687658309937
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Video_Analyst_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 716.2763671875,
+        "gradnorm_l1_uncentered": 457.9720153808594,
+        "gradnorm_l2_centered": 1.7912752628326416,
+        "gradnorm_l2_uncentered": 0.953424870967865,
+        "sal_noref_c1": 0.05147514119744301,
+        "sal_noref_c2": 0.041602782905101776,
+        "sal_noref_c3": 0.03164068982005119,
+        "sal_noref_c4": 0.04163088649511337,
+        "sal_noref_c5": 0.033830247819423676,
+        "sal_wref_c1": 0.9148170948028564,
+        "sal_wref_c2": 1.0374574661254883,
+        "sal_wref_c3": 0.8041875958442688,
+        "sal_wref_c4": 0.6213132739067078,
+        "sal_wref_c5": 0.49728456139564514
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Narration_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 718.0408325195312,
+        "gradnorm_l1_uncentered": 624.038818359375,
+        "gradnorm_l2_centered": 1.4570083618164062,
+        "gradnorm_l2_uncentered": 1.4401384592056274,
+        "sal_noref_c1": 0.5296992659568787,
+        "sal_noref_c2": 0.31527552008628845,
+        "sal_noref_c3": 0.21822917461395264,
+        "sal_noref_c4": 0.20984886586666107,
+        "sal_noref_c5": 0.16873103380203247,
+        "sal_wref_c1": 0.535510778427124,
+        "sal_wref_c2": 0.3770420551300049,
+        "sal_wref_c3": 0.30909493565559387,
+        "sal_wref_c4": 0.2318221926689148,
+        "sal_wref_c5": 0.1880175769329071
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 714.4226684570312,
+        "gradnorm_l1_uncentered": 598.792724609375,
+        "gradnorm_l2_centered": 1.5332609415054321,
+        "gradnorm_l2_uncentered": 1.940886378288269,
+        "sal_noref_c1": 1.3311631679534912,
+        "sal_noref_c2": 0.7172181606292725,
+        "sal_noref_c3": 0.47950994968414307,
+        "sal_noref_c4": 0.4635455012321472,
+        "sal_noref_c5": 0.3734743297100067,
+        "sal_wref_c1": 0.12359405308961868,
+        "sal_wref_c2": 0.10288472473621368,
+        "sal_wref_c3": 0.19120962917804718,
+        "sal_wref_c4": 0.15390852093696594,
+        "sal_wref_c5": 0.12653464078903198
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2231.66064453125,
+        "gradnorm_l1_uncentered": 2443.828125,
+        "gradnorm_l2_centered": 6.777732849121094,
+        "gradnorm_l2_uncentered": 7.887369155883789,
+        "sal_noref_c1": 19.9660701751709,
+        "sal_noref_c2": 21.3145751953125,
+        "sal_noref_c3": 14.235398292541504,
+        "sal_noref_c4": 10.685713768005371,
+        "sal_noref_c5": 8.605646133422852,
+        "sal_wref_c1": 0.6729898452758789,
+        "sal_wref_c2": 12.922904014587402,
+        "sal_wref_c3": 8.680076599121094,
+        "sal_wref_c4": 6.573523998260498,
+        "sal_wref_c5": 5.274794578552246
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1494.45166015625,
+        "gradnorm_l1_uncentered": 1571.225341796875,
+        "gradnorm_l2_centered": 3.505699872970581,
+        "gradnorm_l2_uncentered": 3.9675650596618652,
+        "sal_noref_c1": 1.0486024618148804,
+        "sal_noref_c2": 2.095956563949585,
+        "sal_noref_c3": 2.482374906539917,
+        "sal_noref_c4": 2.0355634689331055,
+        "sal_noref_c5": 1.631072998046875,
+        "sal_wref_c1": 1.6184297800064087,
+        "sal_wref_c2": 0.9786844253540039,
+        "sal_wref_c3": 1.2796354293823242,
+        "sal_wref_c4": 1.1608816385269165,
+        "sal_wref_c5": 0.9317720532417297
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1967.5382080078125,
+        "gradnorm_l1_uncentered": 2165.666748046875,
+        "gradnorm_l2_centered": 3.674391269683838,
+        "gradnorm_l2_uncentered": 4.526721954345703,
+        "sal_noref_c1": 7.894810676574707,
+        "sal_noref_c2": 5.047168731689453,
+        "sal_noref_c3": 3.432631254196167,
+        "sal_noref_c4": 2.6491293907165527,
+        "sal_noref_c5": 2.2585246562957764,
+        "sal_wref_c1": 0.6128271818161011,
+        "sal_wref_c2": 1.5552754402160645,
+        "sal_wref_c3": 1.0645198822021484,
+        "sal_wref_c4": 0.9196671843528748,
+        "sal_wref_c5": 0.8838592767715454
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 10059.5537109375,
+        "gradnorm_l1_uncentered": 10291.7958984375,
+        "gradnorm_l2_centered": 17.080896377563477,
+        "gradnorm_l2_uncentered": 17.560558319091797,
+        "sal_noref_c1": 49.127296447753906,
+        "sal_noref_c2": 25.383190155029297,
+        "sal_noref_c3": 17.405452728271484,
+        "sal_noref_c4": 27.11456298828125,
+        "sal_noref_c5": 32.108482360839844,
+        "sal_wref_c1": 34.684654235839844,
+        "sal_wref_c2": 17.551464080810547,
+        "sal_wref_c3": 14.419270515441895,
+        "sal_wref_c4": 23.537220001220703,
+        "sal_wref_c5": 26.746129989624023
+      }
+    }
+  ]
+}

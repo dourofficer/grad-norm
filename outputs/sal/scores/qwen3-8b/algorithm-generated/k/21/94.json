@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "7.json",
+    "question_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+    "mistake_agent": "ScientificPaperAnalysis_Expert",
+    "mistake_step": 5,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "What was the volume in m^3 of the fish bag that was calculated in the University of Leicester paper \"Can Hiccup Supply Enough Fish to Maintain a Dragon\u2019s Diet?\""
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "ScientificPaperAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 717.5573120117188,
+        "gradnorm_l1_uncentered": 473.0129699707031,
+        "gradnorm_l2_centered": 1.640165090560913,
+        "gradnorm_l2_uncentered": 1.6579914093017578,
+        "sal_noref_c1": 0.6391432285308838,
+        "sal_noref_c2": 0.5030097961425781,
+        "sal_noref_c3": 0.3947359621524811,
+        "sal_noref_c4": 0.30746689438819885,
+        "sal_noref_c5": 0.25302866101264954,
+        "sal_wref_c1": 0.5093519687652588,
+        "sal_wref_c2": 0.2535373866558075,
+        "sal_wref_c3": 0.4313066303730011,
+        "sal_wref_c4": 0.344862163066864,
+        "sal_wref_c5": 0.27816131711006165
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "ScientificPaperAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 751.0115356445312,
+        "gradnorm_l1_uncentered": 613.199462890625,
+        "gradnorm_l2_centered": 1.5502784252166748,
+        "gradnorm_l2_uncentered": 1.56658935546875,
+        "sal_noref_c1": 0.587714672088623,
+        "sal_noref_c2": 0.3008328974246979,
+        "sal_noref_c3": 0.2171316295862198,
+        "sal_noref_c4": 0.23537051677703857,
+        "sal_noref_c5": 0.1883901208639145,
+        "sal_wref_c1": 0.40464285016059875,
+        "sal_wref_c2": 0.42052891850471497,
+        "sal_wref_c3": 0.3336106836795807,
+        "sal_wref_c4": 0.25255319476127625,
+        "sal_wref_c5": 0.20324349403381348
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1007.5557250976562,
+        "gradnorm_l1_uncentered": 908.3864135742188,
+        "gradnorm_l2_centered": 2.7149152755737305,
+        "gradnorm_l2_uncentered": 2.661003351211548,
+        "sal_noref_c1": 0.030242301523685455,
+        "sal_noref_c2": 1.0651202201843262,
+        "sal_noref_c3": 1.0323578119277954,
+        "sal_noref_c4": 0.8027158379554749,
+        "sal_noref_c5": 0.6491343975067139,
+        "sal_wref_c1": 3.1915037631988525,
+        "sal_wref_c2": 1.6002753973007202,
+        "sal_wref_c3": 1.1363285779953003,
+        "sal_wref_c4": 0.8538962602615356,
+        "sal_wref_c5": 0.6911910176277161
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "ScientificPaperAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 914.1259155273438,
+        "gradnorm_l1_uncentered": 806.7750854492188,
+        "gradnorm_l2_centered": 2.1415815353393555,
+        "gradnorm_l2_uncentered": 1.995250940322876,
+        "sal_noref_c1": 0.1299816370010376,
+        "sal_noref_c2": 0.8486113548278809,
+        "sal_noref_c3": 0.6184937953948975,
+        "sal_noref_c4": 0.46567726135253906,
+        "sal_noref_c5": 0.3807257115840912,
+        "sal_wref_c1": 2.0412731170654297,
+        "sal_wref_c2": 1.041666030883789,
+        "sal_wref_c3": 0.6944447159767151,
+        "sal_wref_c4": 0.5599933862686157,
+        "sal_wref_c5": 0.45834988355636597
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "ScientificPaperAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1086.042724609375,
+        "gradnorm_l1_uncentered": 1060.720703125,
+        "gradnorm_l2_centered": 2.404296875,
+        "gradnorm_l2_uncentered": 2.5711116790771484,
+        "sal_noref_c1": 0.3367970287799835,
+        "sal_noref_c2": 0.8780660033226013,
+        "sal_noref_c3": 0.7321823239326477,
+        "sal_noref_c4": 0.6037396788597107,
+        "sal_noref_c5": 0.4870211184024811,
+        "sal_wref_c1": 1.7016648054122925,
+        "sal_wref_c2": 0.8532817959785461,
+        "sal_wref_c3": 0.5748616456985474,
+        "sal_wref_c4": 0.436802476644516,
+        "sal_wref_c5": 0.3614770472049713
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "ScientificPaperAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 772.2842407226562,
+        "gradnorm_l1_uncentered": 694.4644775390625,
+        "gradnorm_l2_centered": 1.8069859743118286,
+        "gradnorm_l2_uncentered": 1.4639521837234497,
+        "sal_noref_c1": 0.08808048814535141,
+        "sal_noref_c2": 0.36801159381866455,
+        "sal_noref_c3": 0.3204037845134735,
+        "sal_noref_c4": 0.24183379113674164,
+        "sal_noref_c5": 0.19929639995098114,
+        "sal_wref_c1": 1.731864094734192,
+        "sal_wref_c2": 0.8811624646186829,
+        "sal_wref_c3": 0.587475597858429,
+        "sal_wref_c4": 0.4881545305252075,
+        "sal_wref_c5": 0.40115657448768616
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "ScientificPaperAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1275.0096435546875,
+        "gradnorm_l1_uncentered": 1349.640869140625,
+        "gradnorm_l2_centered": 2.3773608207702637,
+        "gradnorm_l2_uncentered": 2.920469284057617,
+        "sal_noref_c1": 1.5910730361938477,
+        "sal_noref_c2": 2.145275354385376,
+        "sal_noref_c3": 1.4365535974502563,
+        "sal_noref_c4": 1.0787452459335327,
+        "sal_noref_c5": 0.864388108253479,
+        "sal_wref_c1": 0.6218897104263306,
+        "sal_wref_c2": 0.7544815540313721,
+        "sal_wref_c3": 0.5066551566123962,
+        "sal_wref_c4": 0.3886101245880127,
+        "sal_wref_c5": 0.32110291719436646
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1748.4757080078125,
+        "gradnorm_l1_uncentered": 1755.9866943359375,
+        "gradnorm_l2_centered": 4.312954425811768,
+        "gradnorm_l2_uncentered": 4.836426734924316,
+        "sal_noref_c1": 2.1891016960144043,
+        "sal_noref_c2": 6.457150936126709,
+        "sal_noref_c3": 4.467580318450928,
+        "sal_noref_c4": 3.3621466159820557,
+        "sal_noref_c5": 2.6904075145721436,
+        "sal_wref_c1": 1.4277094602584839,
+        "sal_wref_c2": 4.194210052490234,
+        "sal_wref_c3": 2.957625150680542,
+        "sal_wref_c4": 2.219097852706909,
+        "sal_wref_c5": 1.7754018306732178
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "NumericalAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 763.2605590820312,
+        "gradnorm_l1_uncentered": 565.0040283203125,
+        "gradnorm_l2_centered": 1.779348373413086,
+        "gradnorm_l2_uncentered": 1.5826194286346436,
+        "sal_noref_c1": 0.10547652095556259,
+        "sal_noref_c2": 0.599980354309082,
+        "sal_noref_c3": 0.4625072479248047,
+        "sal_noref_c4": 0.35812708735466003,
+        "sal_noref_c5": 0.2865162491798401,
+        "sal_wref_c1": 1.9794566631317139,
+        "sal_wref_c2": 0.9794471859931946,
+        "sal_wref_c3": 0.6546478867530823,
+        "sal_wref_c4": 0.49580883979797363,
+        "sal_wref_c5": 0.3971112370491028
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1716.896728515625,
+        "gradnorm_l1_uncentered": 1762.62646484375,
+        "gradnorm_l2_centered": 5.162184238433838,
+        "gradnorm_l2_uncentered": 5.564472675323486,
+        "sal_noref_c1": 1.4622434377670288,
+        "sal_noref_c2": 9.943672180175781,
+        "sal_noref_c3": 6.654353618621826,
+        "sal_noref_c4": 5.371511459350586,
+        "sal_noref_c5": 4.3160200119018555,
+        "sal_wref_c1": 3.250267744064331,
+        "sal_wref_c2": 7.748663902282715,
+        "sal_wref_c3": 5.169254302978516,
+        "sal_wref_c4": 4.311595916748047,
+        "sal_wref_c5": 3.5050129890441895
+      }
+    }
+  ]
+}

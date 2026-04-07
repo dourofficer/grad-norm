@@ -1,0 +1,122 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "53.json",
+    "question_id": "a7feb290-76bb-4cb7-8800-7edaf7954f2f",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "How many High Energy Physics - Lattice articles listed in January 2020 on Arxiv had ps versions available?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Data_Extraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 649.3762817382812,
+        "gradnorm_l1_uncentered": 570.2891845703125,
+        "gradnorm_l2_centered": 1.189154863357544,
+        "gradnorm_l2_uncentered": 1.6042677164077759,
+        "sal_noref_c1": 1.7574963569641113,
+        "sal_noref_c2": 0.9338853359222412,
+        "sal_noref_c3": 0.6545149683952332,
+        "sal_noref_c4": 0.4909711182117462,
+        "sal_noref_c5": 0.3937864899635315,
+        "sal_wref_c1": 0.7979119420051575,
+        "sal_wref_c2": 0.4085836708545685,
+        "sal_wref_c3": 0.2839761972427368,
+        "sal_wref_c4": 0.21314583718776703,
+        "sal_wref_c5": 0.17346687614917755
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 613.731201171875,
+        "gradnorm_l1_uncentered": 422.1521301269531,
+        "gradnorm_l2_centered": 1.3302868604660034,
+        "gradnorm_l2_uncentered": 1.194652795791626,
+        "sal_noref_c1": 0.9897276759147644,
+        "sal_noref_c2": 0.5001197457313538,
+        "sal_noref_c3": 0.37002620100975037,
+        "sal_noref_c4": 0.28511691093444824,
+        "sal_noref_c5": 0.23259201645851135,
+        "sal_wref_c1": 1.4504543542861938,
+        "sal_wref_c2": 0.7220089435577393,
+        "sal_wref_c3": 0.4903535842895508,
+        "sal_wref_c4": 0.37067732214927673,
+        "sal_wref_c5": 0.2985314130783081
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3010.28759765625,
+        "gradnorm_l1_uncentered": 3540.263916015625,
+        "gradnorm_l2_centered": 6.593625545501709,
+        "gradnorm_l2_uncentered": 8.564462661743164,
+        "sal_noref_c1": 63.19708251953125,
+        "sal_noref_c2": 31.932634353637695,
+        "sal_noref_c3": 21.31365394592285,
+        "sal_noref_c4": 17.08342742919922,
+        "sal_noref_c5": 13.707054138183594,
+        "sal_wref_c1": 33.38644027709961,
+        "sal_wref_c2": 17.570667266845703,
+        "sal_wref_c3": 11.755142211914062,
+        "sal_wref_c4": 9.677536964416504,
+        "sal_wref_c5": 7.743203639984131
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 615.2164306640625,
+        "gradnorm_l1_uncentered": 743.759521484375,
+        "gradnorm_l2_centered": 1.0939676761627197,
+        "gradnorm_l2_uncentered": 2.3763134479522705,
+        "sal_noref_c1": 4.195606231689453,
+        "sal_noref_c2": 2.1658084392547607,
+        "sal_noref_c3": 1.5502738952636719,
+        "sal_noref_c4": 1.2172116041183472,
+        "sal_noref_c5": 0.9837777018547058,
+        "sal_wref_c1": 0.04376978799700737,
+        "sal_wref_c2": 0.04923011362552643,
+        "sal_wref_c3": 0.07877213507890701,
+        "sal_wref_c4": 0.10484585165977478,
+        "sal_wref_c5": 0.10400853306055069
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3711.16357421875,
+        "gradnorm_l1_uncentered": 4211.0859375,
+        "gradnorm_l2_centered": 7.818645000457764,
+        "gradnorm_l2_uncentered": 9.65595531463623,
+        "sal_noref_c1": 73.69349670410156,
+        "sal_noref_c2": 41.513427734375,
+        "sal_noref_c3": 27.860689163208008,
+        "sal_noref_c4": 21.048566818237305,
+        "sal_noref_c5": 16.886512756347656,
+        "sal_wref_c1": 43.551761627197266,
+        "sal_wref_c2": 25.57777214050293,
+        "sal_wref_c3": 17.253507614135742,
+        "sal_wref_c4": 13.231531143188477,
+        "sal_wref_c5": 10.591641426086426
+      }
+    }
+  ]
+}

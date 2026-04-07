@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "79.json",
+    "question_id": "e8cb5b03-41e0-4086-99e5-f6806cd97211",
+    "mistake_agent": "WaybackMachine_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I went to Virtue restaurant & bar in Chicago for my birthday on March 22, 2021 and the main course I had was delicious!  Unfortunately, when I went back about a month later on April 21, it was no longer on the dinner menu.  Using the Wayback Machine, can you help me figure out which main course was on the dinner menu for Virtue on March 22, 2021 but not April 21, 2021? Answer using the singular form, without articles."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 667.4671020507812,
+        "gradnorm_l1_uncentered": 361.08172607421875,
+        "gradnorm_l2_centered": 1.5478553771972656,
+        "gradnorm_l2_uncentered": 1.2355310916900635,
+        "sal_noref_c1": 0.3307729959487915,
+        "sal_noref_c2": 0.28575873374938965,
+        "sal_noref_c3": 0.23334528505802155,
+        "sal_noref_c4": 0.17907389998435974,
+        "sal_noref_c5": 0.14998026192188263,
+        "sal_wref_c1": 0.7411066293716431,
+        "sal_wref_c2": 0.3965147137641907,
+        "sal_wref_c3": 0.506675124168396,
+        "sal_wref_c4": 0.4178006649017334,
+        "sal_wref_c5": 0.3360019326210022
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 827.5557861328125,
+        "gradnorm_l1_uncentered": 669.6607666015625,
+        "gradnorm_l2_centered": 1.7938152551651,
+        "gradnorm_l2_uncentered": 1.7905945777893066,
+        "sal_noref_c1": 0.499872624874115,
+        "sal_noref_c2": 0.2509027123451233,
+        "sal_noref_c3": 0.2000160962343216,
+        "sal_noref_c4": 0.28239497542381287,
+        "sal_noref_c5": 0.22717885673046112,
+        "sal_wref_c1": 0.47179070115089417,
+        "sal_wref_c2": 0.5481124520301819,
+        "sal_wref_c3": 0.4128904640674591,
+        "sal_wref_c4": 0.3278442621231079,
+        "sal_wref_c5": 0.2659844756126404
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4481.583984375,
+        "gradnorm_l1_uncentered": 4679.205078125,
+        "gradnorm_l2_centered": 12.973761558532715,
+        "gradnorm_l2_uncentered": 13.83799934387207,
+        "sal_noref_c1": 19.324785232543945,
+        "sal_noref_c2": 57.5064697265625,
+        "sal_noref_c3": 40.50177764892578,
+        "sal_noref_c4": 30.789594650268555,
+        "sal_noref_c5": 24.671157836914062,
+        "sal_wref_c1": 2.958130359649658,
+        "sal_wref_c2": 40.34212875366211,
+        "sal_wref_c3": 31.3060302734375,
+        "sal_wref_c4": 25.06505012512207,
+        "sal_wref_c5": 20.052213668823242
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "MenuAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 674.9354248046875,
+        "gradnorm_l1_uncentered": 479.8797607421875,
+        "gradnorm_l2_centered": 1.5972436666488647,
+        "gradnorm_l2_uncentered": 1.5426557064056396,
+        "sal_noref_c1": 0.3557036519050598,
+        "sal_noref_c2": 0.20682542026042938,
+        "sal_noref_c3": 0.2255859375,
+        "sal_noref_c4": 0.277167409658432,
+        "sal_noref_c5": 0.22425362467765808,
+        "sal_wref_c1": 0.7680869698524475,
+        "sal_wref_c2": 0.6172823309898376,
+        "sal_wref_c3": 0.41935375332832336,
+        "sal_wref_c4": 0.33122241497039795,
+        "sal_wref_c5": 0.26876160502433777
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 660.8377685546875,
+        "gradnorm_l1_uncentered": 353.86614990234375,
+        "gradnorm_l2_centered": 1.6883783340454102,
+        "gradnorm_l2_uncentered": 0.7644595503807068,
+        "sal_noref_c1": 0.01044775266200304,
+        "sal_noref_c2": 0.08050496131181717,
+        "sal_noref_c3": 0.07775624841451645,
+        "sal_noref_c4": 0.061484094709157944,
+        "sal_noref_c5": 0.04954105243086815,
+        "sal_wref_c1": 1.6866720914840698,
+        "sal_wref_c2": 1.0294101238250732,
+        "sal_wref_c3": 0.7214682698249817,
+        "sal_wref_c4": 0.5689308047294617,
+        "sal_wref_c5": 0.4568125307559967
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 648.4769287109375,
+        "gradnorm_l1_uncentered": 470.1312255859375,
+        "gradnorm_l2_centered": 1.3700615167617798,
+        "gradnorm_l2_uncentered": 1.289089322090149,
+        "sal_noref_c1": 0.3655441999435425,
+        "sal_noref_c2": 0.4277792274951935,
+        "sal_noref_c3": 0.30360352993011475,
+        "sal_noref_c4": 0.23398756980895996,
+        "sal_noref_c5": 0.18734614551067352,
+        "sal_wref_c1": 0.9749504923820496,
+        "sal_wref_c2": 0.49699506163597107,
+        "sal_wref_c3": 0.3523976504802704,
+        "sal_wref_c4": 0.2767801284790039,
+        "sal_wref_c5": 0.22261261940002441
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "WaybackMachine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 771.49609375,
+        "gradnorm_l1_uncentered": 673.8881225585938,
+        "gradnorm_l2_centered": 1.8168020248413086,
+        "gradnorm_l2_uncentered": 1.7811418771743774,
+        "sal_noref_c1": 0.2362338900566101,
+        "sal_noref_c2": 0.7722108364105225,
+        "sal_noref_c3": 0.6268309950828552,
+        "sal_noref_c4": 0.47240447998046875,
+        "sal_noref_c5": 0.3829424977302551,
+        "sal_wref_c1": 1.6810972690582275,
+        "sal_wref_c2": 0.8442239165306091,
+        "sal_wref_c3": 0.573369026184082,
+        "sal_wref_c4": 0.46533772349357605,
+        "sal_wref_c5": 0.3793209195137024
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 694.6375122070312,
+        "gradnorm_l1_uncentered": 688.593017578125,
+        "gradnorm_l2_centered": 1.4670721292495728,
+        "gradnorm_l2_uncentered": 2.225299119949341,
+        "sal_noref_c1": 2.1483521461486816,
+        "sal_noref_c2": 1.2474514245986938,
+        "sal_noref_c3": 0.8597730994224548,
+        "sal_noref_c4": 0.7080193758010864,
+        "sal_noref_c5": 0.5699915885925293,
+        "sal_wref_c1": 0.043446134775877,
+        "sal_wref_c2": 0.02173883654177189,
+        "sal_wref_c3": 0.021009212359786034,
+        "sal_wref_c4": 0.02643411234021187,
+        "sal_wref_c5": 0.024550793692469597
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3196.17236328125,
+        "gradnorm_l1_uncentered": 3394.625732421875,
+        "gradnorm_l2_centered": 7.589270114898682,
+        "gradnorm_l2_uncentered": 8.167685508728027,
+        "sal_noref_c1": 11.536683082580566,
+        "sal_noref_c2": 8.106440544128418,
+        "sal_noref_c3": 6.857912540435791,
+        "sal_noref_c4": 7.830365180969238,
+        "sal_noref_c5": 6.527683258056641,
+        "sal_wref_c1": 5.192155838012695,
+        "sal_wref_c2": 5.3931884765625,
+        "sal_wref_c3": 3.9336462020874023,
+        "sal_wref_c4": 5.546927452087402,
+        "sal_wref_c5": 4.75646448135376
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2852.5068359375,
+        "gradnorm_l1_uncentered": 3083.741455078125,
+        "gradnorm_l2_centered": 6.248233318328857,
+        "gradnorm_l2_uncentered": 7.365871429443359,
+        "sal_noref_c1": 24.407440185546875,
+        "sal_noref_c2": 13.493016242980957,
+        "sal_noref_c3": 9.000226974487305,
+        "sal_noref_c4": 6.839580059051514,
+        "sal_noref_c5": 5.487541198730469,
+        "sal_wref_c1": 6.143514633178711,
+        "sal_wref_c2": 5.690060138702393,
+        "sal_wref_c3": 3.8519551753997803,
+        "sal_wref_c4": 3.0462393760681152,
+        "sal_wref_c5": 2.4428179264068604
+      }
+    }
+  ]
+}

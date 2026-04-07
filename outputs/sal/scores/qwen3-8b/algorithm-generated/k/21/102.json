@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "77.json",
+    "question_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "mistake_agent": "YouTubeDownload_Expert",
+    "mistake_step": 0,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "YouTubeDownload_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 653.5835571289062,
+        "gradnorm_l1_uncentered": 328.0093078613281,
+        "gradnorm_l2_centered": 1.578726053237915,
+        "gradnorm_l2_uncentered": 0.8774203658103943,
+        "sal_noref_c1": 0.1261906623840332,
+        "sal_noref_c2": 0.11550909280776978,
+        "sal_noref_c3": 0.0882469192147255,
+        "sal_noref_c4": 0.0680832490324974,
+        "sal_noref_c5": 0.05832260102033615,
+        "sal_wref_c1": 0.9990958571434021,
+        "sal_wref_c2": 0.6210116147994995,
+        "sal_wref_c3": 0.5909451842308044,
+        "sal_wref_c4": 0.4887942373752594,
+        "sal_wref_c5": 0.39148932695388794
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1856.73681640625,
+        "gradnorm_l1_uncentered": 1941.3544921875,
+        "gradnorm_l2_centered": 3.4476940631866455,
+        "gradnorm_l2_uncentered": 3.8544199466705322,
+        "sal_noref_c1": 2.4053943157196045,
+        "sal_noref_c2": 1.3203754425048828,
+        "sal_noref_c3": 0.901823103427887,
+        "sal_noref_c4": 0.8032522797584534,
+        "sal_noref_c5": 0.6456423997879028,
+        "sal_wref_c1": 0.004191256128251553,
+        "sal_wref_c2": 0.0022535647731274366,
+        "sal_wref_c3": 0.185801699757576,
+        "sal_wref_c4": 0.1558769941329956,
+        "sal_wref_c5": 0.124777652323246
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "YouTubeDownload_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 920.113037109375,
+        "gradnorm_l1_uncentered": 797.3285522460938,
+        "gradnorm_l2_centered": 1.9192296266555786,
+        "gradnorm_l2_uncentered": 1.5509428977966309,
+        "sal_noref_c1": 0.4013155698776245,
+        "sal_noref_c2": 0.2842407524585724,
+        "sal_noref_c3": 0.19759757816791534,
+        "sal_noref_c4": 0.17532652616500854,
+        "sal_noref_c5": 0.14030107855796814,
+        "sal_wref_c1": 0.22575323283672333,
+        "sal_wref_c2": 0.7086554169654846,
+        "sal_wref_c3": 0.6948755383491516,
+        "sal_wref_c4": 0.5350208878517151,
+        "sal_wref_c5": 0.42893505096435547
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1275.602294921875,
+        "gradnorm_l1_uncentered": 1176.043212890625,
+        "gradnorm_l2_centered": 3.207143783569336,
+        "gradnorm_l2_uncentered": 2.8389334678649902,
+        "sal_noref_c1": 0.031254883855581284,
+        "sal_noref_c2": 0.24613627791404724,
+        "sal_noref_c3": 0.6080880761146545,
+        "sal_noref_c4": 0.47469863295555115,
+        "sal_noref_c5": 0.3811938464641571,
+        "sal_wref_c1": 3.183152437210083,
+        "sal_wref_c2": 1.8088802099227905,
+        "sal_wref_c3": 1.2848190069198608,
+        "sal_wref_c4": 0.9638921618461609,
+        "sal_wref_c5": 0.7734531760215759
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "VideoProcessing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 603.1703491210938,
+        "gradnorm_l1_uncentered": 369.16961669921875,
+        "gradnorm_l2_centered": 1.5839898586273193,
+        "gradnorm_l2_uncentered": 0.7837700247764587,
+        "sal_noref_c1": 0.0765063613653183,
+        "sal_noref_c2": 0.12412724643945694,
+        "sal_noref_c3": 0.08309408277273178,
+        "sal_noref_c4": 0.06389004737138748,
+        "sal_noref_c5": 0.05125712603330612,
+        "sal_wref_c1": 1.2459659576416016,
+        "sal_wref_c2": 0.7287344336509705,
+        "sal_wref_c3": 0.5644708275794983,
+        "sal_wref_c4": 0.49791690707206726,
+        "sal_wref_c5": 0.39835965633392334
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3271.952880859375,
+        "gradnorm_l1_uncentered": 3403.244140625,
+        "gradnorm_l2_centered": 7.349502086639404,
+        "gradnorm_l2_uncentered": 7.948414325714111,
+        "sal_noref_c1": 4.2831034660339355,
+        "sal_noref_c2": 15.547821044921875,
+        "sal_noref_c3": 10.5995454788208,
+        "sal_noref_c4": 7.950201988220215,
+        "sal_noref_c5": 6.375999927520752,
+        "sal_wref_c1": 2.543954372406006,
+        "sal_wref_c2": 10.49401569366455,
+        "sal_wref_c3": 7.492025852203369,
+        "sal_wref_c4": 5.649190902709961,
+        "sal_wref_c5": 4.559228897094727
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "ResultVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 651.5313720703125,
+        "gradnorm_l1_uncentered": 363.2380676269531,
+        "gradnorm_l2_centered": 1.6346205472946167,
+        "gradnorm_l2_uncentered": 0.6954365968704224,
+        "sal_noref_c1": 0.06816192716360092,
+        "sal_noref_c2": 0.039166126400232315,
+        "sal_noref_c3": 0.026113105937838554,
+        "sal_noref_c4": 0.020470743998885155,
+        "sal_noref_c5": 0.01666835881769657,
+        "sal_wref_c1": 1.0129495859146118,
+        "sal_wref_c2": 0.7967504262924194,
+        "sal_wref_c3": 0.6453978419303894,
+        "sal_wref_c4": 0.5334946513175964,
+        "sal_wref_c5": 0.42745986580848694
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2123.08251953125,
+        "gradnorm_l1_uncentered": 2159.712646484375,
+        "gradnorm_l2_centered": 4.024249076843262,
+        "gradnorm_l2_uncentered": 4.516397953033447,
+        "sal_noref_c1": 2.263514280319214,
+        "sal_noref_c2": 2.0537655353546143,
+        "sal_noref_c3": 1.4612159729003906,
+        "sal_noref_c4": 1.4639132022857666,
+        "sal_noref_c5": 1.1720808744430542,
+        "sal_wref_c1": 0.3227457106113434,
+        "sal_wref_c2": 0.34207746386528015,
+        "sal_wref_c3": 0.22897566854953766,
+        "sal_wref_c4": 0.4224677085876465,
+        "sal_wref_c5": 0.3381042778491974
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "VideoProcessing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1196.7001953125,
+        "gradnorm_l1_uncentered": 1180.80029296875,
+        "gradnorm_l2_centered": 2.095346689224243,
+        "gradnorm_l2_uncentered": 2.0571131706237793,
+        "sal_noref_c1": 0.5901030898094177,
+        "sal_noref_c2": 0.339805543422699,
+        "sal_noref_c3": 0.226560577750206,
+        "sal_noref_c4": 0.17050357162952423,
+        "sal_noref_c5": 0.1364544928073883,
+        "sal_wref_c1": 0.42642688751220703,
+        "sal_wref_c2": 0.2997084856033325,
+        "sal_wref_c3": 0.2799229919910431,
+        "sal_wref_c4": 0.25165581703186035,
+        "sal_wref_c5": 0.20197434723377228
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1784.2598876953125,
+        "gradnorm_l1_uncentered": 1818.199462890625,
+        "gradnorm_l2_centered": 4.719794750213623,
+        "gradnorm_l2_uncentered": 5.05379581451416,
+        "sal_noref_c1": 1.6034244298934937,
+        "sal_noref_c2": 4.992222309112549,
+        "sal_noref_c3": 3.343914747238159,
+        "sal_noref_c4": 2.809112071990967,
+        "sal_noref_c5": 2.2815308570861816,
+        "sal_wref_c1": 1.4056121110916138,
+        "sal_wref_c2": 3.220834255218506,
+        "sal_wref_c3": 2.1479458808898926,
+        "sal_wref_c4": 2.020498275756836,
+        "sal_wref_c5": 1.6958191394805908
+      }
+    }
+  ]
+}

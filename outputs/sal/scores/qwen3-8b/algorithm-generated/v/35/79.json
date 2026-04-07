@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "56.json",
+    "question_id": "023e9d44-96ae-4eed-b912-244ee8c3b994",
+    "mistake_agent": "Validation_Expert",
+    "mistake_step": 5,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "It's May 2023, and I'm about to drive across the U.S. from California to Maine. I always recycle my water bottles at the end of a trip, and I drink 5 12-ounce water bottles for every 100 miles I travel, rounded to the nearest 100. Assuming I follow I-40 from Los Angeles to Cincinnati, then take I-90 from Cincinnati to Augusta, how many dollars will I get back according to Wikipedia?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "AlgorithmDesign_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 634.3869018554688,
+        "gradnorm_l1_uncentered": 482.6175537109375,
+        "gradnorm_l2_centered": 1.28016197681427,
+        "gradnorm_l2_uncentered": 1.3971728086471558,
+        "sal_noref_c1": 1.2915184497833252,
+        "sal_noref_c2": 0.7001215815544128,
+        "sal_noref_c3": 0.4861527383327484,
+        "sal_noref_c4": 0.36633142828941345,
+        "sal_noref_c5": 0.2935292422771454,
+        "sal_wref_c1": 1.1577417850494385,
+        "sal_wref_c2": 0.5850947499275208,
+        "sal_wref_c3": 0.39384976029396057,
+        "sal_wref_c4": 0.29560285806655884,
+        "sal_wref_c5": 0.24056915938854218
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "RecyclingRate_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 896.0423583984375,
+        "gradnorm_l1_uncentered": 1165.6826171875,
+        "gradnorm_l2_centered": 1.4527714252471924,
+        "gradnorm_l2_uncentered": 2.7889301776885986,
+        "sal_noref_c1": 5.554995536804199,
+        "sal_noref_c2": 2.7648050785064697,
+        "sal_noref_c3": 1.9701799154281616,
+        "sal_noref_c4": 1.4780796766281128,
+        "sal_noref_c5": 1.1835012435913086,
+        "sal_wref_c1": 0.019057223573327065,
+        "sal_wref_c2": 0.010066509246826172,
+        "sal_wref_c3": 0.10051877051591873,
+        "sal_wref_c4": 0.07552112638950348,
+        "sal_wref_c5": 0.060472242534160614
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1686.411865234375,
+        "gradnorm_l1_uncentered": 2115.57958984375,
+        "gradnorm_l2_centered": 3.672062635421753,
+        "gradnorm_l2_uncentered": 5.529821395874023,
+        "sal_noref_c1": 24.11800765991211,
+        "sal_noref_c2": 13.403533935546875,
+        "sal_noref_c3": 8.945582389831543,
+        "sal_noref_c4": 6.791953086853027,
+        "sal_noref_c5": 5.4429521560668945,
+        "sal_wref_c1": 6.734885215759277,
+        "sal_wref_c2": 4.879336833953857,
+        "sal_wref_c3": 3.262988328933716,
+        "sal_wref_c4": 2.5745928287506104,
+        "sal_wref_c5": 2.064709186553955
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "RecyclingRate_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1719.9111328125,
+        "gradnorm_l1_uncentered": 2091.638427734375,
+        "gradnorm_l2_centered": 2.973008394241333,
+        "gradnorm_l2_uncentered": 4.574891090393066,
+        "sal_noref_c1": 14.395240783691406,
+        "sal_noref_c2": 7.688320159912109,
+        "sal_noref_c3": 5.316757678985596,
+        "sal_noref_c4": 4.0890631675720215,
+        "sal_noref_c5": 3.2912850379943848,
+        "sal_wref_c1": 2.3211328983306885,
+        "sal_wref_c2": 1.6713624000549316,
+        "sal_wref_c3": 1.3816148042678833,
+        "sal_wref_c4": 1.075543999671936,
+        "sal_wref_c5": 0.8891440629959106
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "RecyclingRate_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 640.8295288085938,
+        "gradnorm_l1_uncentered": 817.0441284179688,
+        "gradnorm_l2_centered": 1.0187627077102661,
+        "gradnorm_l2_uncentered": 2.117252826690674,
+        "sal_noref_c1": 3.3764748573303223,
+        "sal_noref_c2": 1.7781035900115967,
+        "sal_noref_c3": 1.1856083869934082,
+        "sal_noref_c4": 0.9296639561653137,
+        "sal_noref_c5": 0.7652003765106201,
+        "sal_wref_c1": 0.15770594775676727,
+        "sal_wref_c2": 0.12025100737810135,
+        "sal_wref_c3": 0.09549931436777115,
+        "sal_wref_c4": 0.08725754171609879,
+        "sal_wref_c5": 0.08701135218143463
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Validation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 597.4378051757812,
+        "gradnorm_l1_uncentered": 517.1724243164062,
+        "gradnorm_l2_centered": 1.247287392616272,
+        "gradnorm_l2_uncentered": 1.3530067205429077,
+        "sal_noref_c1": 1.2766516208648682,
+        "sal_noref_c2": 0.6553349494934082,
+        "sal_noref_c3": 0.45538821816444397,
+        "sal_noref_c4": 0.3607107698917389,
+        "sal_noref_c5": 0.29487144947052,
+        "sal_wref_c1": 1.162779450416565,
+        "sal_wref_c2": 0.5769469141960144,
+        "sal_wref_c3": 0.3855883777141571,
+        "sal_wref_c4": 0.29771187901496887,
+        "sal_wref_c5": 0.24007241427898407
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 723.468017578125,
+        "gradnorm_l1_uncentered": 854.7631225585938,
+        "gradnorm_l2_centered": 1.5150667428970337,
+        "gradnorm_l2_uncentered": 1.803391933441162,
+        "sal_noref_c1": 1.8108357191085815,
+        "sal_noref_c2": 0.9976580739021301,
+        "sal_noref_c3": 0.6657317876815796,
+        "sal_noref_c4": 0.5089828968048096,
+        "sal_noref_c5": 0.4167611598968506,
+        "sal_wref_c1": 0.6141980290412903,
+        "sal_wref_c2": 0.4833570718765259,
+        "sal_wref_c3": 0.3287403881549835,
+        "sal_wref_c4": 0.2695080637931824,
+        "sal_wref_c5": 0.2165880650281906
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 823.8245849609375,
+        "gradnorm_l1_uncentered": 1099.003662109375,
+        "gradnorm_l2_centered": 1.3393841981887817,
+        "gradnorm_l2_uncentered": 2.7073826789855957,
+        "sal_noref_c1": 5.330810546875,
+        "sal_noref_c2": 2.686344861984253,
+        "sal_noref_c3": 1.813919186592102,
+        "sal_noref_c4": 1.4216948747634888,
+        "sal_noref_c5": 1.1586247682571411,
+        "sal_wref_c1": 0.004314464051276445,
+        "sal_wref_c2": 0.009652940556406975,
+        "sal_wref_c3": 0.007634046021848917,
+        "sal_wref_c4": 0.042823269963264465,
+        "sal_wref_c5": 0.05942080169916153
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 702.3370361328125,
+        "gradnorm_l1_uncentered": 876.5233764648438,
+        "gradnorm_l2_centered": 1.24576997756958,
+        "gradnorm_l2_uncentered": 2.0072453022003174,
+        "sal_noref_c1": 2.6558310985565186,
+        "sal_noref_c2": 1.4043176174163818,
+        "sal_noref_c3": 0.9367127418518066,
+        "sal_noref_c4": 0.7439418435096741,
+        "sal_noref_c5": 0.5967496037483215,
+        "sal_wref_c1": 0.34483596682548523,
+        "sal_wref_c2": 0.20381513237953186,
+        "sal_wref_c3": 0.15000194311141968,
+        "sal_wref_c4": 0.13362731039524078,
+        "sal_wref_c5": 0.10772453248500824
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 758.3963623046875,
+        "gradnorm_l1_uncentered": 763.350830078125,
+        "gradnorm_l2_centered": 1.7714619636535645,
+        "gradnorm_l2_uncentered": 1.6591577529907227,
+        "sal_noref_c1": 1.0863338708877563,
+        "sal_noref_c2": 0.81943279504776,
+        "sal_noref_c3": 0.5481884479522705,
+        "sal_noref_c4": 0.4280117154121399,
+        "sal_noref_c5": 0.368341326713562,
+        "sal_wref_c1": 1.1636439561843872,
+        "sal_wref_c2": 1.0090004205703735,
+        "sal_wref_c3": 0.6882755756378174,
+        "sal_wref_c4": 0.5640005469322205,
+        "sal_wref_c5": 0.4550430178642273
+      }
+    }
+  ]
+}

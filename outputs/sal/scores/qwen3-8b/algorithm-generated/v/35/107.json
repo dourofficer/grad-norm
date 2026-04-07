@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "81.json",
+    "question_id": "a56f1527-3abf-41d6-91f8-7296d6336c3f",
+    "mistake_agent": "DataVerification_Expert",
+    "mistake_step": 5,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The cover of the August 2021 issue of Vogue shows a famous landmark in the background behind some trees. How tall is this monument in yards, rounded to the nearest yard? Give the number only."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Fashion_Vogue_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 657.3798217773438,
+        "gradnorm_l1_uncentered": 594.755859375,
+        "gradnorm_l2_centered": 1.1443711519241333,
+        "gradnorm_l2_uncentered": 1.8333181142807007,
+        "sal_noref_c1": 2.2979207038879395,
+        "sal_noref_c2": 1.1999181509017944,
+        "sal_noref_c3": 0.8913729786872864,
+        "sal_noref_c4": 0.6709839105606079,
+        "sal_noref_c5": 0.5381855964660645,
+        "sal_wref_c1": 0.5187856554985046,
+        "sal_wref_c2": 0.26831910014152527,
+        "sal_wref_c3": 0.22757650911808014,
+        "sal_wref_c4": 0.17233029007911682,
+        "sal_wref_c5": 0.1384255737066269
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Fashion_Vogue_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1070.9351806640625,
+        "gradnorm_l1_uncentered": 1415.786865234375,
+        "gradnorm_l2_centered": 1.8301864862442017,
+        "gradnorm_l2_uncentered": 3.4043829441070557,
+        "sal_noref_c1": 8.734233856201172,
+        "sal_noref_c2": 4.340908527374268,
+        "sal_noref_c3": 2.938833236694336,
+        "sal_noref_c4": 2.2041287422180176,
+        "sal_noref_c5": 1.7901808023452759,
+        "sal_wref_c1": 0.5608004331588745,
+        "sal_wref_c2": 0.2911034822463989,
+        "sal_wref_c3": 0.218306764960289,
+        "sal_wref_c4": 0.16434890031814575,
+        "sal_wref_c5": 0.1517302691936493
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Geography_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1572.3248291015625,
+        "gradnorm_l1_uncentered": 1942.50634765625,
+        "gradnorm_l2_centered": 3.280970573425293,
+        "gradnorm_l2_uncentered": 5.106386661529541,
+        "sal_noref_c1": 20.183361053466797,
+        "sal_noref_c2": 11.036185264587402,
+        "sal_noref_c3": 7.402925968170166,
+        "sal_noref_c4": 5.720022678375244,
+        "sal_noref_c5": 4.6087517738342285,
+        "sal_wref_c1": 4.710017681121826,
+        "sal_wref_c2": 3.359649658203125,
+        "sal_wref_c3": 2.3264005184173584,
+        "sal_wref_c4": 1.8590688705444336,
+        "sal_wref_c5": 1.5567950010299683
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2134.41162109375,
+        "gradnorm_l1_uncentered": 2522.893798828125,
+        "gradnorm_l2_centered": 4.203328609466553,
+        "gradnorm_l2_uncentered": 5.924256324768066,
+        "sal_noref_c1": 25.333229064941406,
+        "sal_noref_c2": 14.091957092285156,
+        "sal_noref_c3": 9.686042785644531,
+        "sal_noref_c4": 7.288812160491943,
+        "sal_noref_c5": 5.8396196365356445,
+        "sal_wref_c1": 7.675200939178467,
+        "sal_wref_c2": 5.53981876373291,
+        "sal_wref_c3": 3.8920154571533203,
+        "sal_wref_c4": 2.957385778427124,
+        "sal_wref_c5": 2.3702378273010254
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Fashion_Vogue_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 681.5560302734375,
+        "gradnorm_l1_uncentered": 866.9405517578125,
+        "gradnorm_l2_centered": 1.1485161781311035,
+        "gradnorm_l2_uncentered": 2.0889534950256348,
+        "sal_noref_c1": 3.071636199951172,
+        "sal_noref_c2": 1.7201818227767944,
+        "sal_noref_c3": 1.1591962575912476,
+        "sal_noref_c4": 0.8821696639060974,
+        "sal_noref_c5": 0.7205134630203247,
+        "sal_wref_c1": 0.22584651410579681,
+        "sal_wref_c2": 0.2253929078578949,
+        "sal_wref_c3": 0.1871035099029541,
+        "sal_wref_c4": 0.14170773327350616,
+        "sal_wref_c5": 0.11353664100170135
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 949.1043701171875,
+        "gradnorm_l1_uncentered": 1251.488525390625,
+        "gradnorm_l2_centered": 1.5951783657073975,
+        "gradnorm_l2_uncentered": 3.0734105110168457,
+        "sal_noref_c1": 6.814746856689453,
+        "sal_noref_c2": 3.6769278049468994,
+        "sal_noref_c3": 2.461906671524048,
+        "sal_noref_c4": 1.8620506525039673,
+        "sal_noref_c5": 1.5484269857406616,
+        "sal_wref_c1": 0.12119954824447632,
+        "sal_wref_c2": 0.2765449583530426,
+        "sal_wref_c3": 0.21960902214050293,
+        "sal_wref_c4": 0.16578324139118195,
+        "sal_wref_c5": 0.1548953503370285
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Geography_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 654.3815307617188,
+        "gradnorm_l1_uncentered": 841.347412109375,
+        "gradnorm_l2_centered": 1.2345821857452393,
+        "gradnorm_l2_uncentered": 1.9428552389144897,
+        "sal_noref_c1": 2.500229597091675,
+        "sal_noref_c2": 1.3835599422454834,
+        "sal_noref_c3": 0.9351227283477783,
+        "sal_noref_c4": 0.7188869714736938,
+        "sal_noref_c5": 0.5781633257865906,
+        "sal_wref_c1": 0.39927706122398376,
+        "sal_wref_c2": 0.27022069692611694,
+        "sal_wref_c3": 0.21657408773899078,
+        "sal_wref_c4": 0.1665642112493515,
+        "sal_wref_c5": 0.1362932026386261
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 684.89453125,
+        "gradnorm_l1_uncentered": 983.6083984375,
+        "gradnorm_l2_centered": 1.0228081941604614,
+        "gradnorm_l2_uncentered": 2.3461997509002686,
+        "sal_noref_c1": 4.4183125495910645,
+        "sal_noref_c2": 2.268841505050659,
+        "sal_noref_c3": 1.525428295135498,
+        "sal_noref_c4": 1.1684749126434326,
+        "sal_noref_c5": 0.9367375373840332,
+        "sal_wref_c1": 0.00852382741868496,
+        "sal_wref_c2": 0.042091004550457,
+        "sal_wref_c3": 0.058530066162347794,
+        "sal_wref_c4": 0.05620034784078598,
+        "sal_wref_c5": 0.0478733628988266
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4846.275390625,
+        "gradnorm_l1_uncentered": 5339.4794921875,
+        "gradnorm_l2_centered": 10.11996078491211,
+        "gradnorm_l2_uncentered": 11.94277286529541,
+        "sal_noref_c1": 109.93609619140625,
+        "sal_noref_c2": 54.65959167480469,
+        "sal_noref_c3": 41.11161422729492,
+        "sal_noref_c4": 30.887470245361328,
+        "sal_noref_c5": 25.06375503540039,
+        "sal_wref_c1": 72.60250091552734,
+        "sal_wref_c2": 36.708831787109375,
+        "sal_wref_c3": 27.941673278808594,
+        "sal_wref_c4": 21.002073287963867,
+        "sal_wref_c5": 17.482755661010742
+      }
+    }
+  ]
+}

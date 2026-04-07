@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "117.json",
+    "question_id": "748899d9d70c09beb3bd48ac8a3658bdcfd2f9114fe6dc4c4b8d2f9541ef4607",
+    "mistake_agent": "JSON_Expert",
+    "mistake_step": 0,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much does it cost to send an envelope with 1-week delivery from Rio de Janeiro to NYC with DHL, USPS, or Fedex? (Format your answers as a list of jsons with the keys \"sender\" and \"price (usd)\" for each option you find)"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JSON_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 833.0511474609375,
+        "gradnorm_l1_uncentered": 642.9083251953125,
+        "gradnorm_l2_centered": 2.0895161628723145,
+        "gradnorm_l2_uncentered": 2.3570291996002197,
+        "sal_noref_c1": 1.3730111122131348,
+        "sal_noref_c2": 0.8651147484779358,
+        "sal_noref_c3": 0.7987606525421143,
+        "sal_noref_c4": 0.6197360157966614,
+        "sal_noref_c5": 0.5214895606040955,
+        "sal_wref_c1": 0.12248668819665909,
+        "sal_wref_c2": 0.06997311860322952,
+        "sal_wref_c3": 0.553508996963501,
+        "sal_wref_c4": 0.43346020579338074,
+        "sal_wref_c5": 0.3620590567588806
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 645.0028076171875,
+        "gradnorm_l1_uncentered": 334.5805969238281,
+        "gradnorm_l2_centered": 1.5490068197250366,
+        "gradnorm_l2_uncentered": 0.9674683213233948,
+        "sal_noref_c1": 0.20982949435710907,
+        "sal_noref_c2": 0.12874585390090942,
+        "sal_noref_c3": 0.11455938220024109,
+        "sal_noref_c4": 0.09453609585762024,
+        "sal_noref_c5": 0.07611469179391861,
+        "sal_wref_c1": 0.7438334822654724,
+        "sal_wref_c2": 0.518774151802063,
+        "sal_wref_c3": 0.59100741147995,
+        "sal_wref_c4": 0.475575715303421,
+        "sal_wref_c5": 0.38103750348091125
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2942.27099609375,
+        "gradnorm_l1_uncentered": 3104.310791015625,
+        "gradnorm_l2_centered": 6.483802318572998,
+        "gradnorm_l2_uncentered": 7.283746242523193,
+        "sal_noref_c1": 12.919464111328125,
+        "sal_noref_c2": 8.192864418029785,
+        "sal_noref_c3": 5.639614582061768,
+        "sal_noref_c4": 4.632960319519043,
+        "sal_noref_c5": 3.706732988357544,
+        "sal_wref_c1": 1.46328604221344,
+        "sal_wref_c2": 2.871063232421875,
+        "sal_wref_c3": 2.114455461502075,
+        "sal_wref_c4": 1.8779774904251099,
+        "sal_wref_c5": 1.519594430923462
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 686.1883544921875,
+        "gradnorm_l1_uncentered": 473.4029846191406,
+        "gradnorm_l2_centered": 1.5061699151992798,
+        "gradnorm_l2_uncentered": 1.1614042520523071,
+        "sal_noref_c1": 0.27585482597351074,
+        "sal_noref_c2": 0.18004710972309113,
+        "sal_noref_c3": 0.12003779411315918,
+        "sal_noref_c4": 0.11162424087524414,
+        "sal_noref_c5": 0.08931046724319458,
+        "sal_wref_c1": 0.7645495533943176,
+        "sal_wref_c2": 0.5191845893859863,
+        "sal_wref_c3": 0.45506635308265686,
+        "sal_wref_c4": 0.3499414920806885,
+        "sal_wref_c5": 0.28001704812049866
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1695.5364990234375,
+        "gradnorm_l1_uncentered": 1767.9510498046875,
+        "gradnorm_l2_centered": 3.357520818710327,
+        "gradnorm_l2_uncentered": 3.667295217514038,
+        "sal_noref_c1": 0.5792890787124634,
+        "sal_noref_c2": 1.5320061445236206,
+        "sal_noref_c3": 1.4338254928588867,
+        "sal_noref_c4": 1.1866718530654907,
+        "sal_noref_c5": 0.9861650466918945,
+        "sal_wref_c1": 1.8687524795532227,
+        "sal_wref_c2": 1.025967001914978,
+        "sal_wref_c3": 0.8089751601219177,
+        "sal_wref_c4": 0.6631150245666504,
+        "sal_wref_c5": 0.556088387966156
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 723.1672973632812,
+        "gradnorm_l1_uncentered": 603.3372192382812,
+        "gradnorm_l2_centered": 1.5543371438980103,
+        "gradnorm_l2_uncentered": 1.348533272743225,
+        "sal_noref_c1": 0.5342399477958679,
+        "sal_noref_c2": 0.27727210521698,
+        "sal_noref_c3": 0.18642520904541016,
+        "sal_noref_c4": 0.14174237847328186,
+        "sal_noref_c5": 0.12655094265937805,
+        "sal_wref_c1": 0.36362919211387634,
+        "sal_wref_c2": 0.3248777985572815,
+        "sal_wref_c3": 0.3275521993637085,
+        "sal_wref_c4": 0.2800116240978241,
+        "sal_wref_c5": 0.23845350742340088
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6305.796875,
+        "gradnorm_l1_uncentered": 6610.32666015625,
+        "gradnorm_l2_centered": 13.03933048248291,
+        "gradnorm_l2_uncentered": 13.665042877197266,
+        "sal_noref_c1": 25.685327529907227,
+        "sal_noref_c2": 15.646198272705078,
+        "sal_noref_c3": 18.520004272460938,
+        "sal_noref_c4": 18.94888687133789,
+        "sal_noref_c5": 21.88360023498535,
+        "sal_wref_c1": 4.350898742675781,
+        "sal_wref_c2": 5.326672554016113,
+        "sal_wref_c3": 16.4492244720459,
+        "sal_wref_c4": 14.799057006835938,
+        "sal_wref_c5": 19.691884994506836
+      }
+    }
+  ]
+}

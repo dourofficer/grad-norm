@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "106.json",
+    "question_id": "e6bc98089608217e45b6956a46518fe3cce64a799b3ac43c6974c449ae14c408",
+    "mistake_agent": "DataAnalysis_Expert",
+    "mistake_step": 0,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "What's the highest price a high-rise apartment was sold for in Mission Bay, San Francisco, in 2021?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 610.1040649414062,
+        "gradnorm_l1_uncentered": 331.10040283203125,
+        "gradnorm_l2_centered": 1.4840166568756104,
+        "gradnorm_l2_uncentered": 0.9443719983100891,
+        "sal_noref_c1": 0.60731440782547,
+        "sal_noref_c2": 0.3140632212162018,
+        "sal_noref_c3": 0.23088844120502472,
+        "sal_noref_c4": 0.17339982092380524,
+        "sal_noref_c5": 0.1394629329442978,
+        "sal_wref_c1": 1.9916497468948364,
+        "sal_wref_c2": 0.9880661368370056,
+        "sal_wref_c3": 0.6630187034606934,
+        "sal_wref_c4": 0.4975328743457794,
+        "sal_wref_c5": 0.4012429118156433
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 578.5840454101562,
+        "gradnorm_l1_uncentered": 396.53729248046875,
+        "gradnorm_l2_centered": 1.3542543649673462,
+        "gradnorm_l2_uncentered": 1.1853083372116089,
+        "sal_noref_c1": 0.9478427171707153,
+        "sal_noref_c2": 0.48443907499313354,
+        "sal_noref_c3": 0.37730011343955994,
+        "sal_noref_c4": 0.2958509922027588,
+        "sal_noref_c5": 0.23670470714569092,
+        "sal_wref_c1": 1.506116509437561,
+        "sal_wref_c2": 0.7475212812423706,
+        "sal_wref_c3": 0.5180777311325073,
+        "sal_wref_c4": 0.3976359963417053,
+        "sal_wref_c5": 0.31853917241096497
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1513.0059814453125,
+        "gradnorm_l1_uncentered": 1992.095947265625,
+        "gradnorm_l2_centered": 3.288242816925049,
+        "gradnorm_l2_uncentered": 5.229882717132568,
+        "sal_noref_c1": 23.348434448242188,
+        "sal_noref_c2": 12.274349212646484,
+        "sal_noref_c3": 8.184328079223633,
+        "sal_noref_c4": 6.201045036315918,
+        "sal_noref_c5": 4.966170787811279,
+        "sal_wref_c1": 6.664940357208252,
+        "sal_wref_c2": 4.090211391448975,
+        "sal_wref_c3": 2.7273123264312744,
+        "sal_wref_c4": 2.142245054244995,
+        "sal_wref_c5": 1.7187246084213257
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "RealEstate_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1153.7664794921875,
+        "gradnorm_l1_uncentered": 1450.50439453125,
+        "gradnorm_l2_centered": 2.0120630264282227,
+        "gradnorm_l2_uncentered": 3.603803873062134,
+        "sal_noref_c1": 9.376968383789062,
+        "sal_noref_c2": 4.75750732421875,
+        "sal_noref_c3": 3.2161881923675537,
+        "sal_noref_c4": 2.5987861156463623,
+        "sal_noref_c5": 2.0964856147766113,
+        "sal_wref_c1": 0.6153325438499451,
+        "sal_wref_c2": 0.35874712467193604,
+        "sal_wref_c3": 0.2444968819618225,
+        "sal_wref_c4": 0.334148108959198,
+        "sal_wref_c5": 0.3307853937149048
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 781.95263671875,
+        "gradnorm_l1_uncentered": 941.1455688476562,
+        "gradnorm_l2_centered": 1.6042624711990356,
+        "gradnorm_l2_uncentered": 2.0617599487304688,
+        "sal_noref_c1": 2.320551633834839,
+        "sal_noref_c2": 1.4376063346862793,
+        "sal_noref_c3": 0.9893608689308167,
+        "sal_noref_c4": 0.7420251965522766,
+        "sal_noref_c5": 0.6226183772087097,
+        "sal_wref_c1": 0.34503617882728577,
+        "sal_wref_c2": 0.5700645446777344,
+        "sal_wref_c3": 0.44960376620292664,
+        "sal_wref_c4": 0.34536242485046387,
+        "sal_wref_c5": 0.2828484773635864
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3093.271240234375,
+        "gradnorm_l1_uncentered": 3526.516357421875,
+        "gradnorm_l2_centered": 6.091688632965088,
+        "gradnorm_l2_uncentered": 7.523331165313721,
+        "sal_noref_c1": 33.26902389526367,
+        "sal_noref_c2": 23.52214241027832,
+        "sal_noref_c3": 16.425928115844727,
+        "sal_noref_c4": 12.463678359985352,
+        "sal_noref_c5": 9.972105026245117,
+        "sal_wref_c1": 15.126410484313965,
+        "sal_wref_c2": 13.837574005126953,
+        "sal_wref_c3": 10.135842323303223,
+        "sal_wref_c4": 7.664161682128906,
+        "sal_wref_c5": 6.133351802825928
+      }
+    }
+  ]
+}

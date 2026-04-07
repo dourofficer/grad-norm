@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "47.json",
+    "question_id": "0bb3b44a-ede5-4db5-a520-4e844b0079c5",
+    "mistake_agent": "Mesopotamian_Number_Systems_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "Consider the following symbols: \ud809\udc1c  \ud809\udc10\ud809\udc1a\n\nThis is a number written using the Mesopotamian/Babylonian number system and represented with Sumerian cuneiform. Convert this number into Arabic numerals as a decimal number."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Mesopotamian_Number_Systems_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1029.1529541015625,
+        "gradnorm_l1_uncentered": 585.4784545898438,
+        "gradnorm_l2_centered": 2.017263650894165,
+        "gradnorm_l2_uncentered": 1.3202122449874878,
+        "sal_noref_c1": 0.3840674161911011,
+        "sal_noref_c2": 0.21548722684383392,
+        "sal_noref_c3": 0.1445050984621048,
+        "sal_noref_c4": 0.12550365924835205,
+        "sal_noref_c5": 0.10188808292150497,
+        "sal_wref_c1": 2.7929861545562744,
+        "sal_wref_c2": 1.397239089012146,
+        "sal_wref_c3": 0.9315073490142822,
+        "sal_wref_c4": 0.7161547541618347,
+        "sal_wref_c5": 0.574013352394104
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Mesopotamian_Number_Systems_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 968.6683959960938,
+        "gradnorm_l1_uncentered": 385.6415710449219,
+        "gradnorm_l2_centered": 2.0894367694854736,
+        "gradnorm_l2_uncentered": 0.7603654265403748,
+        "sal_noref_c1": 0.09707684069871902,
+        "sal_noref_c2": 0.04862438514828682,
+        "sal_noref_c3": 0.038350094109773636,
+        "sal_noref_c4": 0.03392603620886803,
+        "sal_noref_c5": 0.03156215697526932,
+        "sal_wref_c1": 3.8799233436584473,
+        "sal_wref_c2": 1.9342516660690308,
+        "sal_wref_c3": 1.2915352582931519,
+        "sal_wref_c4": 0.9766849279403687,
+        "sal_wref_c5": 0.7886214256286621
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Mesopotamian_Number_Systems_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1464.5128173828125,
+        "gradnorm_l1_uncentered": 1842.3717041015625,
+        "gradnorm_l2_centered": 2.7335002422332764,
+        "gradnorm_l2_uncentered": 3.4833269119262695,
+        "sal_noref_c1": 4.530263423919678,
+        "sal_noref_c2": 2.268721342086792,
+        "sal_noref_c3": 1.7190932035446167,
+        "sal_noref_c4": 1.3140714168548584,
+        "sal_noref_c5": 1.0901260375976562,
+        "sal_wref_c1": 0.03144047409296036,
+        "sal_wref_c2": 0.03927319496870041,
+        "sal_wref_c3": 0.2151719480752945,
+        "sal_wref_c4": 0.17193755507469177,
+        "sal_wref_c5": 0.19666911661624908
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Mesopotamian_Number_Systems_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2326.578369140625,
+        "gradnorm_l1_uncentered": 2807.1689453125,
+        "gradnorm_l2_centered": 4.4582133293151855,
+        "gradnorm_l2_uncentered": 5.27415132522583,
+        "sal_noref_c1": 8.015527725219727,
+        "sal_noref_c2": 4.2508111000061035,
+        "sal_noref_c3": 3.4184834957122803,
+        "sal_noref_c4": 2.601358413696289,
+        "sal_noref_c5": 2.159041404724121,
+        "sal_wref_c1": 0.2676730453968048,
+        "sal_wref_c2": 0.4341655373573303,
+        "sal_wref_c3": 0.8203780651092529,
+        "sal_wref_c4": 0.7196667194366455,
+        "sal_wref_c5": 0.6758900880813599
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Mesopotamian_Number_Systems_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4408.841796875,
+        "gradnorm_l1_uncentered": 4958.318359375,
+        "gradnorm_l2_centered": 10.787215232849121,
+        "gradnorm_l2_uncentered": 11.70587158203125,
+        "sal_noref_c1": 32.991668701171875,
+        "sal_noref_c2": 20.07160758972168,
+        "sal_noref_c3": 19.359737396240234,
+        "sal_noref_c4": 16.729717254638672,
+        "sal_noref_c5": 13.486727714538574,
+        "sal_wref_c1": 12.469099998474121,
+        "sal_wref_c2": 9.81020736694336,
+        "sal_wref_c3": 12.608612060546875,
+        "sal_wref_c4": 11.728155136108398,
+        "sal_wref_c5": 9.396354675292969
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Mesopotamian_Number_Systems_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4041.5009765625,
+        "gradnorm_l1_uncentered": 4609.7236328125,
+        "gradnorm_l2_centered": 7.733780860900879,
+        "gradnorm_l2_uncentered": 8.640303611755371,
+        "sal_noref_c1": 19.192501068115234,
+        "sal_noref_c2": 10.983415603637695,
+        "sal_noref_c3": 9.119795799255371,
+        "sal_noref_c4": 6.908921241760254,
+        "sal_noref_c5": 6.049826622009277,
+        "sal_wref_c1": 4.417103290557861,
+        "sal_wref_c2": 3.672152519226074,
+        "sal_wref_c3": 4.187594890594482,
+        "sal_wref_c4": 3.271415948867798,
+        "sal_wref_c5": 3.0498082637786865
+      }
+    }
+  ]
+}

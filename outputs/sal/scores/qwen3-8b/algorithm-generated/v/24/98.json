@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "73.json",
+    "question_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "mistake_agent": "VideoAnalysis_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In Series 9, Episode 11 of Doctor Who, the Doctor is trapped inside an ever-shifting maze. What is this location called in the official script for the episode? Give the setting exactly as it appears in the first scene heading."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DoctorWhoScript_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 892.9693603515625,
+        "gradnorm_l1_uncentered": 576.352294921875,
+        "gradnorm_l2_centered": 1.653963565826416,
+        "gradnorm_l2_uncentered": 1.2534133195877075,
+        "sal_noref_c1": 0.16413000226020813,
+        "sal_noref_c2": 0.18303799629211426,
+        "sal_noref_c3": 0.12920637428760529,
+        "sal_noref_c4": 0.11473742127418518,
+        "sal_noref_c5": 0.0932575911283493,
+        "sal_wref_c1": 1.493030309677124,
+        "sal_wref_c2": 0.7950267195701599,
+        "sal_wref_c3": 0.530025064945221,
+        "sal_wref_c4": 0.4227239191532135,
+        "sal_wref_c5": 0.33923426270484924
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "VideoAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1757.2398681640625,
+        "gradnorm_l1_uncentered": 1886.746337890625,
+        "gradnorm_l2_centered": 3.120939016342163,
+        "gradnorm_l2_uncentered": 3.801811933517456,
+        "sal_noref_c1": 3.0808472633361816,
+        "sal_noref_c2": 2.9514236450195312,
+        "sal_noref_c3": 2.0804243087768555,
+        "sal_noref_c4": 1.610505223274231,
+        "sal_noref_c5": 1.3081746101379395,
+        "sal_wref_c1": 0.047093458473682404,
+        "sal_wref_c2": 0.615687370300293,
+        "sal_wref_c3": 0.4956900179386139,
+        "sal_wref_c4": 0.43852561712265015,
+        "sal_wref_c5": 0.35214394330978394
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2787.804931640625,
+        "gradnorm_l1_uncentered": 2935.83447265625,
+        "gradnorm_l2_centered": 4.82273006439209,
+        "gradnorm_l2_uncentered": 5.316008567810059,
+        "sal_noref_c1": 3.1327576637268066,
+        "sal_noref_c2": 2.4366180896759033,
+        "sal_noref_c3": 2.0054361820220947,
+        "sal_noref_c4": 1.5047118663787842,
+        "sal_noref_c5": 1.2842682600021362,
+        "sal_wref_c1": 0.04422689229249954,
+        "sal_wref_c2": 0.1637481153011322,
+        "sal_wref_c3": 0.22723157703876495,
+        "sal_wref_c4": 0.18907757103443146,
+        "sal_wref_c5": 0.15148213505744934
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3104.5576171875,
+        "gradnorm_l1_uncentered": 3287.278076171875,
+        "gradnorm_l2_centered": 5.214739799499512,
+        "gradnorm_l2_uncentered": 5.766182899475098,
+        "sal_noref_c1": 4.213606834411621,
+        "sal_noref_c2": 3.125246047973633,
+        "sal_noref_c3": 2.222921133041382,
+        "sal_noref_c4": 1.6709249019622803,
+        "sal_noref_c5": 1.3804460763931274,
+        "sal_wref_c1": 0.0015960779273882508,
+        "sal_wref_c2": 0.2510438859462738,
+        "sal_wref_c3": 0.16974149644374847,
+        "sal_wref_c4": 0.15518656373023987,
+        "sal_wref_c5": 0.12439610064029694
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2855.7861328125,
+        "gradnorm_l1_uncentered": 3138.734619140625,
+        "gradnorm_l2_centered": 5.42232084274292,
+        "gradnorm_l2_uncentered": 6.2540130615234375,
+        "sal_noref_c1": 9.763964653015137,
+        "sal_noref_c2": 7.31978702545166,
+        "sal_noref_c3": 4.949502468109131,
+        "sal_noref_c4": 4.224761486053467,
+        "sal_noref_c5": 3.5871787071228027,
+        "sal_wref_c1": 1.0081920623779297,
+        "sal_wref_c2": 2.3549017906188965,
+        "sal_wref_c3": 1.7004112005233765,
+        "sal_wref_c4": 1.8470747470855713,
+        "sal_wref_c5": 2.2923450469970703
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6442.68994140625,
+        "gradnorm_l1_uncentered": 6731.2578125,
+        "gradnorm_l2_centered": 11.558245658874512,
+        "gradnorm_l2_uncentered": 12.246938705444336,
+        "sal_noref_c1": 26.73652458190918,
+        "sal_noref_c2": 13.6462984085083,
+        "sal_noref_c3": 11.700407981872559,
+        "sal_noref_c4": 8.811823844909668,
+        "sal_noref_c5": 7.505637168884277,
+        "sal_wref_c1": 9.718460083007812,
+        "sal_wref_c2": 4.968266010284424,
+        "sal_wref_c3": 4.3582682609558105,
+        "sal_wref_c4": 3.3160195350646973,
+        "sal_wref_c5": 2.883605480194092
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DoctorWhoScript_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 9646.9873046875,
+        "gradnorm_l1_uncentered": 9942.177734375,
+        "gradnorm_l2_centered": 15.722576141357422,
+        "gradnorm_l2_uncentered": 16.377281188964844,
+        "sal_noref_c1": 74.34986877441406,
+        "sal_noref_c2": 51.23780822753906,
+        "sal_noref_c3": 37.44483947753906,
+        "sal_noref_c4": 28.41612434387207,
+        "sal_noref_c5": 22.894386291503906,
+        "sal_wref_c1": 64.08818054199219,
+        "sal_wref_c2": 41.5057373046875,
+        "sal_wref_c3": 30.55821990966797,
+        "sal_wref_c4": 22.97160530090332,
+        "sal_wref_c5": 20.047800064086914
+      }
+    }
+  ]
+}

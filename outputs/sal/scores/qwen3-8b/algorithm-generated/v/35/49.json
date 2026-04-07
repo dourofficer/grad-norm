@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "29.json",
+    "question_id": "d5141ca5-e7a0-469f-bf3e-e773507c86e2",
+    "mistake_agent": "WebServing_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "When was a picture of St. Thomas Aquinas first added to the Wikipedia page on the Principle of double effect? Answer using the format DD/MM/YYYY."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 726.3193969726562,
+        "gradnorm_l1_uncentered": 696.7937622070312,
+        "gradnorm_l2_centered": 1.166213035583496,
+        "gradnorm_l2_uncentered": 1.830505609512329,
+        "sal_noref_c1": 2.2788264751434326,
+        "sal_noref_c2": 1.1864415407180786,
+        "sal_noref_c3": 0.8535782694816589,
+        "sal_noref_c4": 0.640346348285675,
+        "sal_noref_c5": 0.5135502815246582,
+        "sal_wref_c1": 0.5147075057029724,
+        "sal_wref_c2": 0.26575782895088196,
+        "sal_wref_c3": 0.20919370651245117,
+        "sal_wref_c4": 0.15689615905284882,
+        "sal_wref_c5": 0.1278361976146698
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 615.1705932617188,
+        "gradnorm_l1_uncentered": 379.0074157714844,
+        "gradnorm_l2_centered": 1.3884942531585693,
+        "gradnorm_l2_uncentered": 1.1439766883850098,
+        "sal_noref_c1": 0.8619188666343689,
+        "sal_noref_c2": 0.48309576511383057,
+        "sal_noref_c3": 0.3292616307735443,
+        "sal_noref_c4": 0.2516102194786072,
+        "sal_noref_c5": 0.20299334824085236,
+        "sal_wref_c1": 1.629001259803772,
+        "sal_wref_c2": 0.8142522573471069,
+        "sal_wref_c3": 0.542837917804718,
+        "sal_wref_c4": 0.40780213475227356,
+        "sal_wref_c5": 0.3267194628715515
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 658.1156005859375,
+        "gradnorm_l1_uncentered": 31.274328231811523,
+        "gradnorm_l2_centered": 2.1497960090637207,
+        "gradnorm_l2_uncentered": 0.07466819882392883,
+        "sal_noref_c1": 0.0030501866713166237,
+        "sal_noref_c2": 0.0015580507460981607,
+        "sal_noref_c3": 0.0011504575377330184,
+        "sal_noref_c4": 0.0009035671828314662,
+        "sal_noref_c5": 0.0007296929834410548,
+        "sal_wref_c1": 4.37485408782959,
+        "sal_wref_c2": 2.199657917022705,
+        "sal_wref_c3": 1.4712244272232056,
+        "sal_wref_c4": 1.1064244508743286,
+        "sal_wref_c5": 0.8965050578117371
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "WebServing_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1200.216552734375,
+        "gradnorm_l1_uncentered": 1570.5811767578125,
+        "gradnorm_l2_centered": 2.042975902557373,
+        "gradnorm_l2_uncentered": 3.7709920406341553,
+        "sal_noref_c1": 11.090174674987793,
+        "sal_noref_c2": 5.685925483703613,
+        "sal_noref_c3": 3.7911770343780518,
+        "sal_noref_c4": 2.84832501411438,
+        "sal_noref_c5": 2.3296923637390137,
+        "sal_wref_c1": 1.144123911857605,
+        "sal_wref_c2": 0.708459198474884,
+        "sal_wref_c3": 0.4737754166126251,
+        "sal_wref_c4": 0.35534098744392395,
+        "sal_wref_c5": 0.3041550815105438
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 601.5750732421875,
+        "gradnorm_l1_uncentered": 518.492431640625,
+        "gradnorm_l2_centered": 1.330533504486084,
+        "gradnorm_l2_uncentered": 1.2289848327636719,
+        "sal_noref_c1": 1.0359838008880615,
+        "sal_noref_c2": 0.553053617477417,
+        "sal_noref_c3": 0.36887452006340027,
+        "sal_noref_c4": 0.2887369990348816,
+        "sal_noref_c5": 0.2371538132429123,
+        "sal_wref_c1": 1.3877544403076172,
+        "sal_wref_c2": 0.6915991306304932,
+        "sal_wref_c3": 0.47257742285728455,
+        "sal_wref_c4": 0.35680025815963745,
+        "sal_wref_c5": 0.28624409437179565
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 828.0739135742188,
+        "gradnorm_l1_uncentered": 1116.1611328125,
+        "gradnorm_l2_centered": 1.2097194194793701,
+        "gradnorm_l2_uncentered": 2.5322160720825195,
+        "sal_noref_c1": 4.894126892089844,
+        "sal_noref_c2": 2.722776174545288,
+        "sal_noref_c3": 1.8257895708084106,
+        "sal_noref_c4": 1.3754793405532837,
+        "sal_noref_c5": 1.1018203496932983,
+        "sal_wref_c1": 0.00011228673247387633,
+        "sal_wref_c2": 0.22822149097919464,
+        "sal_wref_c3": 0.1620718389749527,
+        "sal_wref_c4": 0.1300358772277832,
+        "sal_wref_c5": 0.10675761848688126
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 611.7614135742188,
+        "gradnorm_l1_uncentered": 181.10443115234375,
+        "gradnorm_l2_centered": 1.8783866167068481,
+        "gradnorm_l2_uncentered": 0.41975849866867065,
+        "sal_noref_c1": 0.11238837987184525,
+        "sal_noref_c2": 0.056601282209157944,
+        "sal_noref_c3": 0.03889667987823486,
+        "sal_noref_c4": 0.029227422550320625,
+        "sal_noref_c5": 0.025100458413362503,
+        "sal_wref_c1": 3.323945999145508,
+        "sal_wref_c2": 1.6823257207870483,
+        "sal_wref_c3": 1.1243560314178467,
+        "sal_wref_c4": 0.8454796671867371,
+        "sal_wref_c5": 0.6807552576065063
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1775.800537109375,
+        "gradnorm_l1_uncentered": 2104.176025390625,
+        "gradnorm_l2_centered": 2.7915961742401123,
+        "gradnorm_l2_uncentered": 4.07811975479126,
+        "sal_noref_c1": 9.48801326751709,
+        "sal_noref_c2": 5.266983509063721,
+        "sal_noref_c3": 3.769780397415161,
+        "sal_noref_c4": 2.854865074157715,
+        "sal_noref_c5": 2.322939157485962,
+        "sal_wref_c1": 0.719140887260437,
+        "sal_wref_c2": 0.8771203756332397,
+        "sal_wref_c3": 0.8368727564811707,
+        "sal_wref_c4": 0.711176872253418,
+        "sal_wref_c5": 0.5750772953033447
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 561.1773071289062,
+        "gradnorm_l1_uncentered": 410.783203125,
+        "gradnorm_l2_centered": 1.417897343635559,
+        "gradnorm_l2_uncentered": 1.0045874118804932,
+        "sal_noref_c1": 0.7263956665992737,
+        "sal_noref_c2": 0.38038021326065063,
+        "sal_noref_c3": 0.2536635100841522,
+        "sal_noref_c4": 0.1984223872423172,
+        "sal_noref_c5": 0.1641879379749298,
+        "sal_wref_c1": 1.7859089374542236,
+        "sal_wref_c2": 0.884409487247467,
+        "sal_wref_c3": 0.5970625877380371,
+        "sal_wref_c4": 0.44868555665016174,
+        "sal_wref_c5": 0.36009711027145386
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 694.2611694335938,
+        "gradnorm_l1_uncentered": 650.2105712890625,
+        "gradnorm_l2_centered": 1.4038801193237305,
+        "gradnorm_l2_uncentered": 1.215660572052002,
+        "sal_noref_c1": 0.961606502532959,
+        "sal_noref_c2": 0.4835280179977417,
+        "sal_noref_c3": 0.3227311372756958,
+        "sal_noref_c4": 0.2466845065355301,
+        "sal_noref_c5": 0.21176162362098694,
+        "sal_wref_c1": 1.426313042640686,
+        "sal_wref_c2": 0.7120249271392822,
+        "sal_wref_c3": 0.4820362329483032,
+        "sal_wref_c4": 0.37980639934539795,
+        "sal_wref_c5": 0.30447447299957275
+      }
+    }
+  ]
+}

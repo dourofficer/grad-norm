@@ -1,0 +1,122 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "57.json",
+    "question_id": "bfcd99e1-0690-4b53-a85c-0174a8629083",
+    "mistake_agent": "TextExtraction_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "How many applicants for the job in the PDF are only missing a single qualification?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "TextExtraction_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 797.5701293945312,
+        "gradnorm_l1_uncentered": 337.8480224609375,
+        "gradnorm_l2_centered": 1.587895154953003,
+        "gradnorm_l2_uncentered": 0.7106369733810425,
+        "sal_noref_c1": 0.0513618141412735,
+        "sal_noref_c2": 0.06505468487739563,
+        "sal_noref_c3": 0.04625478386878967,
+        "sal_noref_c4": 0.03896268084645271,
+        "sal_noref_c5": 0.03142528235912323,
+        "sal_wref_c1": 1.8046870231628418,
+        "sal_wref_c2": 1.0244883298873901,
+        "sal_wref_c3": 0.6854460835456848,
+        "sal_wref_c4": 0.5232647061347961,
+        "sal_wref_c5": 0.42305788397789
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 742.687744140625,
+        "gradnorm_l1_uncentered": 236.54489135742188,
+        "gradnorm_l2_centered": 1.6001523733139038,
+        "gradnorm_l2_uncentered": 0.5017905235290527,
+        "sal_noref_c1": 0.030044211074709892,
+        "sal_noref_c2": 0.041043709963560104,
+        "sal_noref_c3": 0.029613198712468147,
+        "sal_noref_c4": 0.022346526384353638,
+        "sal_noref_c5": 0.018229477107524872,
+        "sal_wref_c1": 1.887938141822815,
+        "sal_wref_c2": 1.0908598899841309,
+        "sal_wref_c3": 0.7315547466278076,
+        "sal_wref_c4": 0.5511302947998047,
+        "sal_wref_c5": 0.44272536039352417
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1024.5440673828125,
+        "gradnorm_l1_uncentered": 931.5765991210938,
+        "gradnorm_l2_centered": 1.8204437494277954,
+        "gradnorm_l2_uncentered": 1.863734245300293,
+        "sal_noref_c1": 0.5099718570709229,
+        "sal_noref_c2": 0.4282071888446808,
+        "sal_noref_c3": 0.3023104965686798,
+        "sal_noref_c4": 0.2408844381570816,
+        "sal_noref_c5": 0.19324110448360443,
+        "sal_wref_c1": 0.9555521011352539,
+        "sal_wref_c2": 0.49264922738075256,
+        "sal_wref_c3": 0.328479140996933,
+        "sal_wref_c4": 0.2757282853126526,
+        "sal_wref_c5": 0.22094306349754333
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataManipulation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2084.74853515625,
+        "gradnorm_l1_uncentered": 2363.07177734375,
+        "gradnorm_l2_centered": 3.9151108264923096,
+        "gradnorm_l2_uncentered": 4.779624938964844,
+        "sal_noref_c1": 5.906658172607422,
+        "sal_noref_c2": 5.030888557434082,
+        "sal_noref_c3": 3.394085645675659,
+        "sal_noref_c4": 2.556814193725586,
+        "sal_noref_c5": 2.056988477706909,
+        "sal_wref_c1": 0.10780611634254456,
+        "sal_wref_c2": 1.2271255254745483,
+        "sal_wref_c3": 0.8234329223632812,
+        "sal_wref_c4": 0.6175747513771057,
+        "sal_wref_c5": 0.49412664771080017
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8100.87060546875,
+        "gradnorm_l1_uncentered": 8584.2978515625,
+        "gradnorm_l2_centered": 14.885114669799805,
+        "gradnorm_l2_uncentered": 16.10880470275879,
+        "sal_noref_c1": 162.29161071777344,
+        "sal_noref_c2": 80.51565551757812,
+        "sal_noref_c3": 53.94816970825195,
+        "sal_noref_c4": 41.11036682128906,
+        "sal_noref_c5": 37.04559326171875,
+        "sal_wref_c1": 124.2372055053711,
+        "sal_wref_c2": 63.47141647338867,
+        "sal_wref_c3": 42.49057388305664,
+        "sal_wref_c4": 33.41921615600586,
+        "sal_wref_c5": 26.83883285522461
+      }
+    }
+  ]
+}

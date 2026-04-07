@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "98.json",
+    "question_id": "ec09fa32-d03f-4bf8-84b0-1f16922c3ae4",
+    "mistake_agent": "Probability_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Here's a fun riddle that I think you'll enjoy.\n\nYou have been selected to play the final round of the hit new game show \"Pick That Ping-Pong\". In this round, you will be competing for a large cash prize. Your job will be to pick one of several different numbered ping-pong balls, and then the game will commence. The host describes how the game works.\n\nA device consisting of a winding clear ramp and a series of pistons controls the outcome of the game. The ramp feeds balls onto a platform. The platform has room for three ping-pong balls at a time. The three balls on the platform are each aligned with one of three pistons. At each stage of the game, one of the three pistons will randomly fire, ejecting the ball it strikes. If the piston ejects the ball in the first position on the platform the balls in the second and third position on the platform each advance one space, and the next ball on the ramp advances to the third position. If the piston ejects the ball in the second position, the ball in the first position is released and rolls away, the ball in the third position advances two spaces to occupy the first position, and the next two balls on the ramp advance to occupy the second and third positions on the platform. If the piston ejects the ball in the third position, the ball in the first position is released and rolls away, the ball in the second position advances one space to occupy the first position, and the next two balls on the ramp advance to occupy the second and third positions on the platform.\n\nThe ramp begins with 100 numbered ping-pong balls, arranged in ascending order from 1 to 100. The host activates the machine and the first three balls, numbered 1, 2, and 3, advance to the platform. Before the random firing of the pistons begins, you are asked which of the 100 balls you would like to pick. If your pick is ejected by one of the pistons, you win the grand prize, $10,000.\n\nWhich ball should you choose to maximize your odds of winning the big prize? Please provide your answer as the number of the ball selected."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "TheoreticalChemistry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 622.3661499023438,
+        "gradnorm_l1_uncentered": 196.21839904785156,
+        "gradnorm_l2_centered": 1.707722783088684,
+        "gradnorm_l2_uncentered": 0.6352868676185608,
+        "sal_noref_c1": 0.26163938641548157,
+        "sal_noref_c2": 0.13968296349048615,
+        "sal_noref_c3": 0.10142642259597778,
+        "sal_noref_c4": 0.07746729999780655,
+        "sal_noref_c5": 0.06274843215942383,
+        "sal_wref_c1": 2.7853636741638184,
+        "sal_wref_c2": 1.3826662302017212,
+        "sal_wref_c3": 0.9217889904975891,
+        "sal_wref_c4": 0.6913550496101379,
+        "sal_wref_c5": 0.5570454001426697
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Probability_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 610.8944091796875,
+        "gradnorm_l1_uncentered": 186.0963134765625,
+        "gradnorm_l2_centered": 1.7864995002746582,
+        "gradnorm_l2_uncentered": 0.5179173350334167,
+        "sal_noref_c1": 0.18231916427612305,
+        "sal_noref_c2": 0.09208814054727554,
+        "sal_noref_c3": 0.06968196481466293,
+        "sal_noref_c4": 0.05264091119170189,
+        "sal_noref_c5": 0.042769905179739,
+        "sal_wref_c1": 3.0296878814697266,
+        "sal_wref_c2": 1.5156676769256592,
+        "sal_wref_c3": 1.010501503944397,
+        "sal_wref_c4": 0.7583106756210327,
+        "sal_wref_c5": 0.6095228791236877
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1024.7984619140625,
+        "gradnorm_l1_uncentered": 1432.527587890625,
+        "gradnorm_l2_centered": 1.9876543283462524,
+        "gradnorm_l2_uncentered": 3.7471652030944824,
+        "sal_noref_c1": 11.641674041748047,
+        "sal_noref_c2": 5.7845869064331055,
+        "sal_noref_c3": 3.9445621967315674,
+        "sal_noref_c4": 3.190333604812622,
+        "sal_noref_c5": 2.561124563217163,
+        "sal_wref_c1": 1.5584489107131958,
+        "sal_wref_c2": 0.7893703579902649,
+        "sal_wref_c3": 0.6594226360321045,
+        "sal_wref_c4": 0.6941863894462585,
+        "sal_wref_c5": 0.5670967698097229
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 585.5958862304688,
+        "gradnorm_l1_uncentered": 535.2124633789062,
+        "gradnorm_l2_centered": 1.1175005435943604,
+        "gradnorm_l2_uncentered": 1.8206616640090942,
+        "sal_noref_c1": 2.301192045211792,
+        "sal_noref_c2": 1.1569746732711792,
+        "sal_noref_c3": 0.8792325854301453,
+        "sal_noref_c4": 0.6917906999588013,
+        "sal_noref_c5": 0.5687498450279236,
+        "sal_wref_c1": 0.5173827409744263,
+        "sal_wref_c2": 0.2568962574005127,
+        "sal_wref_c3": 0.21395491063594818,
+        "sal_wref_c4": 0.18204954266548157,
+        "sal_wref_c5": 0.16986297070980072
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Probability_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 750.4979858398438,
+        "gradnorm_l1_uncentered": 942.9342041015625,
+        "gradnorm_l2_centered": 1.2611026763916016,
+        "gradnorm_l2_uncentered": 2.512216091156006,
+        "sal_noref_c1": 4.524465084075928,
+        "sal_noref_c2": 2.2520017623901367,
+        "sal_noref_c3": 1.6404385566711426,
+        "sal_noref_c4": 1.2415080070495605,
+        "sal_noref_c5": 1.0190612077713013,
+        "sal_wref_c1": 0.011203083209693432,
+        "sal_wref_c2": 0.027822164818644524,
+        "sal_wref_c3": 0.08967430144548416,
+        "sal_wref_c4": 0.07301197201013565,
+        "sal_wref_c5": 0.07870703935623169
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "TheoreticalChemistry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1060.94970703125,
+        "gradnorm_l1_uncentered": 1343.586669921875,
+        "gradnorm_l2_centered": 2.427401065826416,
+        "gradnorm_l2_uncentered": 3.9215657711029053,
+        "sal_noref_c1": 10.035334587097168,
+        "sal_noref_c2": 5.023845672607422,
+        "sal_noref_c3": 4.049252986907959,
+        "sal_noref_c4": 3.1301560401916504,
+        "sal_noref_c5": 2.5041911602020264,
+        "sal_wref_c1": 0.7549311518669128,
+        "sal_wref_c2": 0.3865545392036438,
+        "sal_wref_c3": 0.7911337018013,
+        "sal_wref_c4": 0.7306681275367737,
+        "sal_wref_c5": 0.6071112751960754
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3380.058349609375,
+        "gradnorm_l1_uncentered": 3911.879638671875,
+        "gradnorm_l2_centered": 6.538835048675537,
+        "gradnorm_l2_uncentered": 8.380221366882324,
+        "sal_noref_c1": 56.76276397705078,
+        "sal_noref_c2": 31.524738311767578,
+        "sal_noref_c3": 21.05622673034668,
+        "sal_noref_c4": 15.80555248260498,
+        "sal_noref_c5": 12.907771110534668,
+        "sal_wref_c1": 30.924571990966797,
+        "sal_wref_c2": 17.99736213684082,
+        "sal_wref_c3": 12.084996223449707,
+        "sal_wref_c4": 9.1353178024292,
+        "sal_wref_c5": 7.506101131439209
+      }
+    }
+  ]
+}

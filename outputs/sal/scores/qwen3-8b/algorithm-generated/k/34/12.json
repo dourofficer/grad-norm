@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "109.json",
+    "question_id": "8ad84bd6fe38481ba49e7ad1f6fbd43219a999074e5c6fc940003281f55ec65b",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which supermarkets within 2 blocks of Lincoln Park in Chicago have ready-to-eat salad for under $15?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Geography_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 995.3017578125,
+        "gradnorm_l1_uncentered": 485.8071594238281,
+        "gradnorm_l2_centered": 2.0207505226135254,
+        "gradnorm_l2_uncentered": 1.1972771883010864,
+        "sal_noref_c1": 0.29059576988220215,
+        "sal_noref_c2": 0.19467344880104065,
+        "sal_noref_c3": 0.13102887570858002,
+        "sal_noref_c4": 0.10253982245922089,
+        "sal_noref_c5": 0.08578207343816757,
+        "sal_wref_c1": 3.0951621532440186,
+        "sal_wref_c2": 1.562036156654358,
+        "sal_wref_c3": 1.04517662525177,
+        "sal_wref_c4": 0.7889355421066284,
+        "sal_wref_c5": 0.6323079466819763
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 941.4690551757812,
+        "gradnorm_l1_uncentered": 249.789306640625,
+        "gradnorm_l2_centered": 2.055217981338501,
+        "gradnorm_l2_uncentered": 0.49293023347854614,
+        "sal_noref_c1": 0.07852844148874283,
+        "sal_noref_c2": 0.04612565040588379,
+        "sal_noref_c3": 0.03187485411763191,
+        "sal_noref_c4": 0.02641456574201584,
+        "sal_noref_c5": 0.021673191338777542,
+        "sal_wref_c1": 3.9725100994110107,
+        "sal_wref_c2": 1.9747731685638428,
+        "sal_wref_c3": 1.3203305006027222,
+        "sal_wref_c4": 0.9950394630432129,
+        "sal_wref_c5": 0.7975571751594543
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1029.2882080078125,
+        "gradnorm_l1_uncentered": 1406.7802734375,
+        "gradnorm_l2_centered": 1.9442559480667114,
+        "gradnorm_l2_uncentered": 2.963644027709961,
+        "sal_noref_c1": 4.93575382232666,
+        "sal_noref_c2": 2.6562817096710205,
+        "sal_noref_c3": 1.8527518510818481,
+        "sal_noref_c4": 1.4299752712249756,
+        "sal_noref_c5": 1.1472158432006836,
+        "sal_wref_c1": 0.005491874646395445,
+        "sal_wref_c2": 0.1639420986175537,
+        "sal_wref_c3": 0.20174777507781982,
+        "sal_wref_c4": 0.18888640403747559,
+        "sal_wref_c5": 0.15812082588672638
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Grocery_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 918.0972290039062,
+        "gradnorm_l1_uncentered": 355.66839599609375,
+        "gradnorm_l2_centered": 1.9702739715576172,
+        "gradnorm_l2_uncentered": 0.6467062830924988,
+        "sal_noref_c1": 0.15107417106628418,
+        "sal_noref_c2": 0.07678430527448654,
+        "sal_noref_c3": 0.05239398404955864,
+        "sal_noref_c4": 0.04009095951914787,
+        "sal_noref_c5": 0.0322309210896492,
+        "sal_wref_c1": 3.5614964962005615,
+        "sal_wref_c2": 1.7838274240493774,
+        "sal_wref_c3": 1.1933491230010986,
+        "sal_wref_c4": 0.8972100019454956,
+        "sal_wref_c5": 0.7205062508583069
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 899.1256103515625,
+        "gradnorm_l1_uncentered": 415.4270935058594,
+        "gradnorm_l2_centered": 1.8642158508300781,
+        "gradnorm_l2_uncentered": 1.0662767887115479,
+        "sal_noref_c1": 0.3990458548069,
+        "sal_noref_c2": 0.19939462840557098,
+        "sal_noref_c3": 0.21523673832416534,
+        "sal_noref_c4": 0.16198353469371796,
+        "sal_noref_c5": 0.13448259234428406,
+        "sal_wref_c1": 2.7122676372528076,
+        "sal_wref_c2": 1.3504276275634766,
+        "sal_wref_c3": 1.0003430843353271,
+        "sal_wref_c4": 0.7503498792648315,
+        "sal_wref_c5": 0.6025389432907104
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Geography_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 940.4147338867188,
+        "gradnorm_l1_uncentered": 279.66278076171875,
+        "gradnorm_l2_centered": 2.046557664871216,
+        "gradnorm_l2_uncentered": 0.6152107119560242,
+        "sal_noref_c1": 0.10145510733127594,
+        "sal_noref_c2": 0.05068397894501686,
+        "sal_noref_c3": 0.040178097784519196,
+        "sal_noref_c4": 0.030139077454805374,
+        "sal_noref_c5": 0.03143718093633652,
+        "sal_wref_c1": 3.816523790359497,
+        "sal_wref_c2": 1.9016555547714233,
+        "sal_wref_c3": 1.2793540954589844,
+        "sal_wref_c4": 0.9598234295845032,
+        "sal_wref_c5": 0.7731455564498901
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 979.1396484375,
+        "gradnorm_l1_uncentered": 893.3170166015625,
+        "gradnorm_l2_centered": 1.9240769147872925,
+        "gradnorm_l2_uncentered": 1.6584091186523438,
+        "sal_noref_c1": 0.8679823279380798,
+        "sal_noref_c2": 0.5655345320701599,
+        "sal_noref_c3": 0.4034205377101898,
+        "sal_noref_c4": 0.306902676820755,
+        "sal_noref_c5": 0.24706467986106873,
+        "sal_wref_c1": 1.8186966180801392,
+        "sal_wref_c2": 1.0922869443893433,
+        "sal_wref_c3": 0.7447463870048523,
+        "sal_wref_c4": 0.5667006969451904,
+        "sal_wref_c5": 0.4537271559238434
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Geography_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1005.1984252929688,
+        "gradnorm_l1_uncentered": 79.58702087402344,
+        "gradnorm_l2_centered": 2.2515299320220947,
+        "gradnorm_l2_uncentered": 0.17760762572288513,
+        "sal_noref_c1": 0.0034187387209385633,
+        "sal_noref_c2": 0.004007664509117603,
+        "sal_noref_c3": 0.004034312907606363,
+        "sal_noref_c4": 0.0033022903371602297,
+        "sal_noref_c5": 0.002657111966982484,
+        "sal_wref_c1": 4.869325160980225,
+        "sal_wref_c2": 2.4341108798980713,
+        "sal_wref_c3": 1.6228008270263672,
+        "sal_wref_c4": 1.2184972763061523,
+        "sal_wref_c5": 0.9776737093925476
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1015.9248046875,
+        "gradnorm_l1_uncentered": 287.61883544921875,
+        "gradnorm_l2_centered": 2.1084885597229004,
+        "gradnorm_l2_uncentered": 0.5135781168937683,
+        "sal_noref_c1": 0.05863123759627342,
+        "sal_noref_c2": 0.03087846376001835,
+        "sal_noref_c3": 0.022008465602993965,
+        "sal_noref_c4": 0.017970681190490723,
+        "sal_noref_c5": 0.015226118266582489,
+        "sal_wref_c1": 4.105267524719238,
+        "sal_wref_c2": 2.053654670715332,
+        "sal_wref_c3": 1.3734711408615112,
+        "sal_wref_c4": 1.0305213928222656,
+        "sal_wref_c5": 0.824752151966095
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Grocery_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 980.3369140625,
+        "gradnorm_l1_uncentered": 184.6680450439453,
+        "gradnorm_l2_centered": 2.187772274017334,
+        "gradnorm_l2_uncentered": 0.32205644249916077,
+        "sal_noref_c1": 0.017149867489933968,
+        "sal_noref_c2": 0.008857662789523602,
+        "sal_noref_c3": 0.0060160099528729916,
+        "sal_noref_c4": 0.0045167747884988785,
+        "sal_noref_c5": 0.0036537772975862026,
+        "sal_wref_c1": 4.572160243988037,
+        "sal_wref_c2": 2.2791202068328857,
+        "sal_wref_c3": 1.5210520029067993,
+        "sal_wref_c4": 1.141682505607605,
+        "sal_wref_c5": 0.9135781526565552
+      }
+    }
+  ]
+}

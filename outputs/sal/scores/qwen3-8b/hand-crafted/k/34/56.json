@@ -1,0 +1,521 @@
+{
+  "config": {
+    "subset": "hand-crafted",
+    "weight_config": "/home/hoangpham/exchange/hand-crafted/k/34"
+  },
+  "metadata": {
+    "filename": "7.json",
+    "question_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "mistake_agent": "WebSurfer",
+    "mistake_step": 8,
+    "level": 1,
+    "subset": "hand-crafted",
+    "question": "In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?"
+  },
+  "steps": [
+    {
+      "step_idx": 1,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1677.1497802734375,
+        "gradnorm_l1_uncentered": 482.3924560546875,
+        "gradnorm_l2_centered": 4.130000591278076,
+        "gradnorm_l2_uncentered": 1.043220043182373,
+        "sal_noref_c1": 0.17001071572303772,
+        "sal_noref_c2": 0.11130860447883606,
+        "sal_noref_c3": 0.07472120970487595,
+        "sal_noref_c4": 0.05643017590045929,
+        "sal_noref_c5": 0.04525278881192207,
+        "sal_wref_c1": 15.320514678955078,
+        "sal_wref_c2": 7.875267505645752,
+        "sal_wref_c3": 5.2509918212890625,
+        "sal_wref_c4": 3.9382593631744385,
+        "sal_wref_c5": 3.1701228618621826
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1502.75927734375,
+        "gradnorm_l1_uncentered": 911.6964111328125,
+        "gradnorm_l2_centered": 3.79044508934021,
+        "gradnorm_l2_uncentered": 2.656358480453491,
+        "sal_noref_c1": 1.502822756767273,
+        "sal_noref_c2": 1.4915153980255127,
+        "sal_noref_c3": 1.0009512901306152,
+        "sal_noref_c4": 0.787186861038208,
+        "sal_noref_c5": 0.630655825138092,
+        "sal_wref_c1": 10.394428253173828,
+        "sal_wref_c2": 5.19318962097168,
+        "sal_wref_c3": 3.46923828125,
+        "sal_wref_c4": 2.6417574882507324,
+        "sal_wref_c5": 2.11513352394104
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1025.966064453125,
+        "gradnorm_l1_uncentered": 1676.080078125,
+        "gradnorm_l2_centered": 2.2474281787872314,
+        "gradnorm_l2_uncentered": 4.513963222503662,
+        "sal_noref_c1": 15.318814277648926,
+        "sal_noref_c2": 7.651361465454102,
+        "sal_noref_c3": 5.619616985321045,
+        "sal_noref_c4": 4.228951930999756,
+        "sal_noref_c5": 3.3918089866638184,
+        "sal_wref_c1": 0.21781235933303833,
+        "sal_wref_c2": 0.3059329390525818,
+        "sal_wref_c3": 0.6194015741348267,
+        "sal_wref_c4": 0.46837499737739563,
+        "sal_wref_c5": 0.39015257358551025
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebSurfer",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1624.8858642578125,
+        "gradnorm_l1_uncentered": 801.5234375,
+        "gradnorm_l2_centered": 4.029127597808838,
+        "gradnorm_l2_uncentered": 2.110215425491333,
+        "sal_noref_c1": 0.6143441200256348,
+        "sal_noref_c2": 0.7603995203971863,
+        "sal_noref_c3": 0.5287054181098938,
+        "sal_noref_c4": 0.4022824168205261,
+        "sal_noref_c5": 0.32772430777549744,
+        "sal_wref_c1": 13.093992233276367,
+        "sal_wref_c2": 6.5085320472717285,
+        "sal_wref_c3": 4.357970714569092,
+        "sal_wref_c4": 3.28053617477417,
+        "sal_wref_c5": 2.642407178878784
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1508.081787109375,
+        "gradnorm_l1_uncentered": 944.326171875,
+        "gradnorm_l2_centered": 3.996307611465454,
+        "gradnorm_l2_uncentered": 2.686206102371216,
+        "sal_noref_c1": 0.9934096932411194,
+        "sal_noref_c2": 2.0321972370147705,
+        "sal_noref_c3": 1.4792803525924683,
+        "sal_noref_c4": 1.1172302961349487,
+        "sal_noref_c5": 0.8937843441963196,
+        "sal_wref_c1": 12.240792274475098,
+        "sal_wref_c2": 6.402751445770264,
+        "sal_wref_c3": 4.390872955322266,
+        "sal_wref_c4": 3.298128366470337,
+        "sal_wref_c5": 2.638521671295166
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1172.01318359375,
+        "gradnorm_l1_uncentered": 1617.89697265625,
+        "gradnorm_l2_centered": 2.2106523513793945,
+        "gradnorm_l2_uncentered": 4.016753196716309,
+        "sal_noref_c1": 11.8985013961792,
+        "sal_noref_c2": 5.929942607879639,
+        "sal_noref_c3": 4.286329746246338,
+        "sal_noref_c4": 3.215796709060669,
+        "sal_noref_c5": 2.611720323562622,
+        "sal_wref_c1": 0.8633924722671509,
+        "sal_wref_c2": 0.816727876663208,
+        "sal_wref_c3": 0.7891736626625061,
+        "sal_wref_c4": 0.593487560749054,
+        "sal_wref_c5": 0.52121901512146
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4850.66259765625,
+        "gradnorm_l1_uncentered": 6294.29541015625,
+        "gradnorm_l2_centered": 10.846561431884766,
+        "gradnorm_l2_uncentered": 14.704244613647461,
+        "sal_noref_c1": 184.16580200195312,
+        "sal_noref_c2": 92.2626724243164,
+        "sal_noref_c3": 61.54237365722656,
+        "sal_noref_c4": 46.177467346191406,
+        "sal_noref_c5": 37.49882507324219,
+        "sal_wref_c1": 86.26265716552734,
+        "sal_wref_c2": 43.41986083984375,
+        "sal_wref_c3": 29.006484985351562,
+        "sal_wref_c4": 21.783245086669922,
+        "sal_wref_c5": 17.507434844970703
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "WebSurfer",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1641.833984375,
+        "gradnorm_l1_uncentered": 359.2068786621094,
+        "gradnorm_l2_centered": 4.1880998611450195,
+        "gradnorm_l2_uncentered": 0.9942626953125,
+        "sal_noref_c1": 0.08269163966178894,
+        "sal_noref_c2": 0.24796263873577118,
+        "sal_noref_c3": 0.18446047604084015,
+        "sal_noref_c4": 0.13836577534675598,
+        "sal_noref_c5": 0.11207183450460434,
+        "sal_wref_c1": 16.637903213500977,
+        "sal_wref_c2": 8.314489364624023,
+        "sal_wref_c3": 5.562477111816406,
+        "sal_wref_c4": 4.17189884185791,
+        "sal_wref_c5": 3.346754789352417
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1543.0499267578125,
+        "gradnorm_l1_uncentered": 777.385986328125,
+        "gradnorm_l2_centered": 3.7622785568237305,
+        "gradnorm_l2_uncentered": 2.3030505180358887,
+        "sal_noref_c1": 1.028730034828186,
+        "sal_noref_c2": 1.7095777988433838,
+        "sal_noref_c3": 1.1668750047683716,
+        "sal_noref_c4": 0.8758842349052429,
+        "sal_noref_c5": 0.7064636945724487,
+        "sal_wref_c1": 11.975606918334961,
+        "sal_wref_c2": 6.113685607910156,
+        "sal_wref_c3": 4.103388786315918,
+        "sal_wref_c4": 3.0803282260894775,
+        "sal_wref_c5": 2.468613386154175
+      }
+    },
+    {
+      "step_idx": 10,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1103.724609375,
+        "gradnorm_l1_uncentered": 1731.1925048828125,
+        "gradnorm_l2_centered": 2.319187641143799,
+        "gradnorm_l2_uncentered": 4.5938544273376465,
+        "sal_noref_c1": 15.596061706542969,
+        "sal_noref_c2": 7.777504920959473,
+        "sal_noref_c3": 5.653519153594971,
+        "sal_noref_c4": 4.309103488922119,
+        "sal_noref_c5": 3.4555282592773438,
+        "sal_wref_c1": 0.1920674592256546,
+        "sal_wref_c2": 0.3904898166656494,
+        "sal_wref_c3": 0.6356234550476074,
+        "sal_wref_c4": 0.5395618677139282,
+        "sal_wref_c5": 0.43211036920547485
+      }
+    },
+    {
+      "step_idx": 11,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4635.47265625,
+        "gradnorm_l1_uncentered": 6117.0244140625,
+        "gradnorm_l2_centered": 11.142470359802246,
+        "gradnorm_l2_uncentered": 14.943825721740723,
+        "sal_noref_c1": 186.1211395263672,
+        "sal_noref_c2": 93.48656463623047,
+        "sal_noref_c3": 62.32649612426758,
+        "sal_noref_c4": 48.07237243652344,
+        "sal_noref_c5": 38.664058685302734,
+        "sal_wref_c1": 87.71418762207031,
+        "sal_wref_c2": 44.49367904663086,
+        "sal_wref_c3": 29.672470092773438,
+        "sal_wref_c4": 23.580297470092773,
+        "sal_wref_c5": 18.95555877685547
+      }
+    },
+    {
+      "step_idx": 12,
+      "role": "WebSurfer",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1576.978271484375,
+        "gradnorm_l1_uncentered": 975.919677734375,
+        "gradnorm_l2_centered": 3.8409554958343506,
+        "gradnorm_l2_uncentered": 2.840322971343994,
+        "sal_noref_c1": 1.4698656797409058,
+        "sal_noref_c2": 2.5244200229644775,
+        "sal_noref_c3": 1.7183979749679565,
+        "sal_noref_c4": 1.2889548540115356,
+        "sal_noref_c5": 1.0357290506362915,
+        "sal_wref_c1": 10.878853797912598,
+        "sal_wref_c2": 5.846227645874023,
+        "sal_wref_c3": 3.9309475421905518,
+        "sal_wref_c4": 2.951460599899292,
+        "sal_wref_c5": 2.3615574836730957
+      }
+    },
+    {
+      "step_idx": 13,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1511.7906494140625,
+        "gradnorm_l1_uncentered": 805.7200927734375,
+        "gradnorm_l2_centered": 3.768838405609131,
+        "gradnorm_l2_uncentered": 2.3715221881866455,
+        "sal_noref_c1": 1.052164077758789,
+        "sal_noref_c2": 1.875211477279663,
+        "sal_noref_c3": 1.3164407014846802,
+        "sal_noref_c4": 0.9873484969139099,
+        "sal_noref_c5": 0.7899456024169922,
+        "sal_wref_c1": 11.989665985107422,
+        "sal_wref_c2": 6.173737049102783,
+        "sal_wref_c3": 4.188527584075928,
+        "sal_wref_c4": 3.141653537750244,
+        "sal_wref_c5": 2.5141801834106445
+      }
+    },
+    {
+      "step_idx": 14,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1132.95166015625,
+        "gradnorm_l1_uncentered": 1592.9915771484375,
+        "gradnorm_l2_centered": 2.126103401184082,
+        "gradnorm_l2_uncentered": 4.104617118835449,
+        "sal_noref_c1": 12.749191284179688,
+        "sal_noref_c2": 6.356555461883545,
+        "sal_noref_c3": 4.602776050567627,
+        "sal_noref_c4": 3.452216625213623,
+        "sal_noref_c5": 2.7850635051727295,
+        "sal_wref_c1": 0.6556838750839233,
+        "sal_wref_c2": 0.6631646752357483,
+        "sal_wref_c3": 0.7262693047523499,
+        "sal_wref_c4": 0.544727623462677,
+        "sal_wref_c5": 0.4386133551597595
+      }
+    },
+    {
+      "step_idx": 15,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4908.40869140625,
+        "gradnorm_l1_uncentered": 6363.3232421875,
+        "gradnorm_l2_centered": 11.841980934143066,
+        "gradnorm_l2_uncentered": 15.64673900604248,
+        "sal_noref_c1": 206.83792114257812,
+        "sal_noref_c2": 105.01534271240234,
+        "sal_noref_c3": 71.12066650390625,
+        "sal_noref_c4": 53.39712142944336,
+        "sal_noref_c5": 43.12861633300781,
+        "sal_wref_c1": 103.77396392822266,
+        "sal_wref_c2": 53.311588287353516,
+        "sal_wref_c3": 36.74419021606445,
+        "sal_wref_c4": 27.64798355102539,
+        "sal_wref_c5": 22.412046432495117
+      }
+    },
+    {
+      "step_idx": 16,
+      "role": "WebSurfer",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1595.513671875,
+        "gradnorm_l1_uncentered": 405.643798828125,
+        "gradnorm_l2_centered": 3.993473529815674,
+        "gradnorm_l2_uncentered": 1.0133652687072754,
+        "sal_noref_c1": 0.22025197744369507,
+        "sal_noref_c2": 0.3191506862640381,
+        "sal_noref_c3": 0.22074925899505615,
+        "sal_noref_c4": 0.1656143069267273,
+        "sal_noref_c5": 0.13255834579467773,
+        "sal_wref_c1": 15.216621398925781,
+        "sal_wref_c2": 7.611006259918213,
+        "sal_wref_c3": 5.0833740234375,
+        "sal_wref_c4": 3.812537670135498,
+        "sal_wref_c5": 3.0526328086853027
+      }
+    },
+    {
+      "step_idx": 17,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1530.80517578125,
+        "gradnorm_l1_uncentered": 908.3524169921875,
+        "gradnorm_l2_centered": 3.7326385974884033,
+        "gradnorm_l2_uncentered": 2.4117913246154785,
+        "sal_noref_c1": 1.1874926090240479,
+        "sal_noref_c2": 1.8396859169006348,
+        "sal_noref_c3": 1.2728322744369507,
+        "sal_noref_c4": 0.9549906849861145,
+        "sal_noref_c5": 0.7679151892662048,
+        "sal_wref_c1": 11.502058982849121,
+        "sal_wref_c2": 5.903234481811523,
+        "sal_wref_c3": 3.9797182083129883,
+        "sal_wref_c4": 2.9848079681396484,
+        "sal_wref_c5": 2.397975444793701
+      }
+    },
+    {
+      "step_idx": 18,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1148.02197265625,
+        "gradnorm_l1_uncentered": 1219.5347900390625,
+        "gradnorm_l2_centered": 2.42233943939209,
+        "gradnorm_l2_uncentered": 3.2272701263427734,
+        "sal_noref_c1": 7.313547611236572,
+        "sal_noref_c2": 3.6446447372436523,
+        "sal_noref_c3": 2.691753625869751,
+        "sal_noref_c4": 2.0189578533172607,
+        "sal_noref_c5": 1.635318398475647,
+        "sal_wref_c1": 2.7540669441223145,
+        "sal_wref_c2": 1.793824553489685,
+        "sal_wref_c3": 1.39545476436615,
+        "sal_wref_c4": 1.0466188192367554,
+        "sal_wref_c5": 0.838135838508606
+      }
+    },
+    {
+      "step_idx": 19,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4328.31396484375,
+        "gradnorm_l1_uncentered": 5780.24267578125,
+        "gradnorm_l2_centered": 10.050265312194824,
+        "gradnorm_l2_uncentered": 13.678984642028809,
+        "sal_noref_c1": 151.38299560546875,
+        "sal_noref_c2": 77.9693603515625,
+        "sal_noref_c3": 53.78981018066406,
+        "sal_noref_c4": 40.43280029296875,
+        "sal_noref_c5": 32.736454010009766,
+        "sal_wref_c1": 66.14102935791016,
+        "sal_wref_c2": 35.73880386352539,
+        "sal_wref_c3": 25.85172462463379,
+        "sal_wref_c4": 19.515291213989258,
+        "sal_wref_c5": 15.744478225708008
+      }
+    },
+    {
+      "step_idx": 20,
+      "role": "WebSurfer",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1612.5301513671875,
+        "gradnorm_l1_uncentered": 689.4926147460938,
+        "gradnorm_l2_centered": 3.944002151489258,
+        "gradnorm_l2_uncentered": 1.8038146495819092,
+        "sal_noref_c1": 0.46879124641418457,
+        "sal_noref_c2": 0.91245037317276,
+        "sal_noref_c3": 0.6442767977714539,
+        "sal_noref_c4": 0.48320847749710083,
+        "sal_noref_c5": 0.38763147592544556,
+        "sal_wref_c1": 14.024158477783203,
+        "sal_wref_c2": 6.986801624298096,
+        "sal_wref_c3": 4.696880340576172,
+        "sal_wref_c4": 3.5228984355926514,
+        "sal_wref_c5": 2.8188588619232178
+      }
+    },
+    {
+      "step_idx": 21,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1521.869873046875,
+        "gradnorm_l1_uncentered": 1050.809326171875,
+        "gradnorm_l2_centered": 3.6653692722320557,
+        "gradnorm_l2_uncentered": 2.9449565410614014,
+        "sal_noref_c1": 2.113478422164917,
+        "sal_noref_c2": 2.6183252334594727,
+        "sal_noref_c3": 1.7804512977600098,
+        "sal_noref_c4": 1.3359395265579224,
+        "sal_noref_c5": 1.1088910102844238,
+        "sal_wref_c1": 9.256183624267578,
+        "sal_wref_c2": 4.974669456481934,
+        "sal_wref_c3": 3.351121187210083,
+        "sal_wref_c4": 2.5137369632720947,
+        "sal_wref_c5": 2.016491413116455
+      }
+    },
+    {
+      "step_idx": 22,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1184.322021484375,
+        "gradnorm_l1_uncentered": 1169.6881103515625,
+        "gradnorm_l2_centered": 2.4303650856018066,
+        "gradnorm_l2_uncentered": 3.0851430892944336,
+        "sal_noref_c1": 6.746748924255371,
+        "sal_noref_c2": 3.3671281337738037,
+        "sal_noref_c3": 2.47566294670105,
+        "sal_noref_c4": 1.859110713005066,
+        "sal_noref_c5": 1.4956609010696411,
+        "sal_wref_c1": 3.121701240539551,
+        "sal_wref_c2": 1.9100673198699951,
+        "sal_wref_c3": 1.4453338384628296,
+        "sal_wref_c4": 1.087772250175476,
+        "sal_wref_c5": 0.9038383364677429
+      }
+    },
+    {
+      "step_idx": 23,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4925.55859375,
+        "gradnorm_l1_uncentered": 6335.71435546875,
+        "gradnorm_l2_centered": 10.969460487365723,
+        "gradnorm_l2_uncentered": 14.699808120727539,
+        "sal_noref_c1": 177.02740478515625,
+        "sal_noref_c2": 88.56940460205078,
+        "sal_noref_c3": 59.26396560668945,
+        "sal_noref_c4": 44.47505187988281,
+        "sal_noref_c5": 36.143959045410156,
+        "sal_wref_c1": 82.05045318603516,
+        "sal_wref_c2": 41.02371597290039,
+        "sal_wref_c3": 27.55406951904297,
+        "sal_wref_c4": 20.7070255279541,
+        "sal_wref_c5": 16.611732482910156
+      }
+    },
+    {
+      "step_idx": 24,
+      "role": "WebSurfer",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1712.806396484375,
+        "gradnorm_l1_uncentered": 372.8015441894531,
+        "gradnorm_l2_centered": 4.2298903465271,
+        "gradnorm_l2_uncentered": 0.8472826480865479,
+        "sal_noref_c1": 0.06304028630256653,
+        "sal_noref_c2": 0.12009686231613159,
+        "sal_noref_c3": 0.08180107921361923,
+        "sal_noref_c4": 0.06138830631971359,
+        "sal_noref_c5": 0.049592237919569016,
+        "sal_wref_c1": 16.742122650146484,
+        "sal_wref_c2": 8.46097469329834,
+        "sal_wref_c3": 5.642728328704834,
+        "sal_wref_c4": 4.232299327850342,
+        "sal_wref_c5": 3.403857469558716
+      }
+    }
+  ]
+}
