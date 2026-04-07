@@ -270,8 +270,8 @@ def gradnorm_hooked_all(
         hooked_params.add(p)
 
         statistics[param_name] = {
-            "l1_norm":    torch.tensor(0.0, device=device, dtype=torch.float64),
-            "l2_norm_sq": torch.tensor(0.0, device=device, dtype=torch.float64),
+            "l1_norm":    torch.tensor(0.0, device=p.device, dtype=torch.float64),
+            "l2_norm_sq": torch.tensor(0.0, device=p.device, dtype=torch.float64),
             "n_params":   p.numel(),
         }
         entry = statistics[param_name]

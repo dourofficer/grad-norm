@@ -234,8 +234,11 @@ def main():
 
     print(f"Loading model → {device}  (dtype={args.dtype})")
     model = AutoModelForCausalLM.from_pretrained(
-        args.model, torch_dtype=dtype, device_map={"": device},
+        args.model, torch_dtype=dtype, 
+        # device_map={"": device},
+        device_map="auto",
     )
+    input_device = next(model.parameters()).device
     model.eval()
     n_params = sum(p.numel() for p in model.parameters())
     print(f"  {n_params / 1e9:.2f}B parameters loaded.")
@@ -269,7 +272,10 @@ def main():
 
         pbar.set_postfix(file=traj.filename, n_steps=len(traj.history))
         logs = score_trajectory(
-            traj, model, tokenizer, args.max_tokens, loss_func, device, pbar
+            traj, model, tokenizer, args.max_tokens, loss_func, 
+            # device, 
+            input_device,
+            pbar
         )
 
         result = _build_output(traj, logs)

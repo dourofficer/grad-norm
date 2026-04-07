@@ -2,8 +2,8 @@
 #PBS -N gradnorm_sweep
 #PBS -q normal
 #PBS -P 32000010
-#PBS -l select=1:ngpus=1:ncpus=14:mem=200gb
-#PBS -l walltime=12:00:00
+#PBS -l select=1:ngpus=2:ncpus=28:mem=200gb
+#PBS -l walltime=06:00:00
 #PBS -j oe
 #PBS -o /data/projects/32000010/thanhdo/pbsoutput
 
@@ -38,7 +38,7 @@ MON_LOG="${LOG_DIR_TASK}/monitor.log"
 
   # ── Run sweep ──────────────────────────────────────────────────────
   source .venv/bin/activate
-  CUDA_VISIBLE_DEVICES=0 \
+  CUDA_VISIBLE_DEVICES=0,1 \
     bash "${PROJECT_DIR}/scripts/gradnorm/sweep_large.sh" >> "${LOG_FILE}" 2>&1
 
   # ── Cleanup monitor ────────────────────────────────────────────────
