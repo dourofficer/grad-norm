@@ -9,6 +9,11 @@ import torch
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+from typing import Callable
+from .sal_scoring import make_sal_scoring_fn
+
+from concurrent.futures import ThreadPoolExecutor
+
 
 try:
     from safetensors.torch import save_file
@@ -127,13 +132,6 @@ def load_and_stack(
         device=device,
     )
 
-import pandas as pd
-import numpy as np
-from typing import Callable
-from scipy.stats import rankdata
-from concurrent.futures import ThreadPoolExecutor
-import torch
-
 def standardize_role(role: str) -> str:
     if "orchestrator" in role.lower(): return "Orchestrator"
     else: return role
@@ -222,6 +220,7 @@ def evaluate_weights(
     df = pd.DataFrame(results)
     df = df.sort_values("step@1_asc", ascending=False).reset_index(drop=True)
     return df
+
 def save_results(df: pd.DataFrame, out_dir: Path, subset: str, ks: list[int]) -> None:
     """
     Splits the wide evaluation DataFrame into per-(k, direction) TSV files.
@@ -229,7 +228,7 @@ def save_results(df: pd.DataFrame, out_dir: Path, subset: str, ks: list[int]) ->
     Output: {out_dir}/metrics/{subset}_k{k}_{direction}.tsv
     Columns: weight, step_acc, agent_acc
     """
-    metrics_dir = out_dir / "metrics"
+    metrics_dir = out_dir
     metrics_dir.mkdir(parents=True, exist_ok=True)
 
     for k in ks:
@@ -252,32 +251,71 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--subset",   required=True, help="Subset name, e.g. hand-crafted")
     p.add_argument("--grad_dir", default="outputs/grads",  help="Root gradient directory")
     p.add_argument("--data_dir", default=None, help="JSON data dir (defaults to ww/{subset})")
-    p.add_argument("--out_dir",  default=None, help="Output dir (defaults to outputs/gradnorm/{model}/{subset})")
+    p.add_argument("--out_dir",  default=None, help="Output dir (defaults to outputs/grads/{model}/{subset})")
     p.add_argument("--weights",  default="all", nargs="+", help="Weight names to load, or 'all'")
     p.add_argument("--ks",       default=[1, 3, 5], nargs="+", type=int)
     p.add_argument("--norm",     choices=["l1", "l2"], default="l1")
     p.add_argument("--device",   default="cuda")
     return p.parse_args()
 
-if __name__ == "__main__":
-    args = parse_args()
-
-    data_dir = Path(args.data_dir) if args.data_dir else Path("ww") / args.subset
-    out_dir  = Path(args.out_dir)  if args.out_dir  else Path("outputs/grads") / args.model / args.subset / "metrics"
-    device   = torch.device(args.device)
-
-    print(f"Model:   {args.model}")
-    print(f"Subset:  {args.subset}")
-    print(f"Device:  {device}")
-
-    store = load_and_stack(
-        model=args.model, subset=args.subset,
-        weight_names=args.weights if args.weights != ["all"] else "all",
-        data_dir=data_dir, device=device, grad_dir=Path(args.grad_dir),
+def sweep():
+    MODELS = ["llama-3.1-8b", "qwen3-8b"]
+    SUBSETS = ["hand-crafted", "algorithm-generated"]
+    SVD_FUNCTIONS = {
+        f"sal_{'wref' if centered else 'noref'}_c{c}": make_sal_scoring_fn(c, centered)
+        for centered in (True, False)
+        for c in range(1, 11)
+    }
+    GRADNORM_FUNCTIONS = dict(
+        gradnorm_l1=(lambda G: G.float().norm(p=1, dim=1)),
+        gradnorm_l2=(lambda G: G.float().norm(p=2, dim=1)),
     )
 
-    scoring_fn = (lambda G: G.float().norm(p=1, dim=1)) if args.norm == "l1" \
-            else (lambda G: G.float().norm(p=2, dim=1))
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    ks = [1, 3, 5, 10]
 
-    df = evaluate_weights(store, scoring_fn=scoring_fn, ks=args.ks)
-    save_results(df, out_dir=out_dir, subset=args.subset, ks=args.ks)
+    for model in MODELS:
+        for subset in SUBSETS:
+            print(f"\n=== {model} / {subset} ===")
+
+            store = load_and_stack(
+                model=model, subset=subset,
+                weight_names="all",
+                data_dir=Path("ww") / subset,
+                device=device,
+                grad_dir=Path("outputs/grads"),
+            )
+            out_dir = Path("outputs/grads") / model / "metrics"
+
+            for name, fn in {**GRADNORM_FUNCTIONS, **SVD_FUNCTIONS}.items():
+                print(f"  scoring: {name}")
+                df = evaluate_weights(store, scoring_fn=fn, ks=ks)
+                save_results(df, out_dir=out_dir / name, subset=subset, ks=ks)
+
+            del store
+
+if __name__ == "__main__":
+    sweep()
+
+# if __name__ == "__main__":
+#     args = parse_args()
+
+#     data_dir = Path(args.data_dir) if args.data_dir else Path("ww") / args.subset
+#     out_dir  = Path(args.out_dir)  if args.out_dir  else Path("outputs/grads") / args.model / args.subset / "metrics"
+#     device   = torch.device(args.device)
+
+#     print(f"Model:   {args.model}")
+#     print(f"Subset:  {args.subset}")
+#     print(f"Device:  {device}")
+
+#     store = load_and_stack(
+#         model=args.model, subset=args.subset,
+#         weight_names=args.weights if args.weights != ["all"] else "all",
+#         data_dir=data_dir, device=device, grad_dir=Path(args.grad_dir),
+#     )
+
+#     scoring_fn = (lambda G: G.float().norm(p=1, dim=1)) if args.norm == "l1" \
+#             else (lambda G: G.float().norm(p=2, dim=1))
+
+#     df = evaluate_weights(store, scoring_fn=scoring_fn, ks=args.ks)
+#     save_results(df, out_dir=out_dir, subset=args.subset, ks=args.ks)
