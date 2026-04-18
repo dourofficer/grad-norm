@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "34.json",
+    "question_id": "54612da3-fd56-4941-80f4-5eb82330de25",
+    "mistake_agent": "Locomotive_Expert",
+    "mistake_step": 4,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The attached file shows the locomotives in the collection of a North American railroad museum. How many wheels do the listed steam locomotives have in total?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "CSVProcessing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 835.62841796875,
+        "gradnorm_l1_uncentered": 452.1995849609375,
+        "gradnorm_l2_centered": 1.6147847175598145,
+        "gradnorm_l2_uncentered": 0.9502881169319153,
+        "sal_noref_c1": 0.0845346599817276,
+        "sal_noref_c2": 0.11620662361383438,
+        "sal_noref_c3": 0.07916208356618881,
+        "sal_noref_c4": 0.06564579159021378,
+        "sal_noref_c5": 0.05281912162899971,
+        "sal_wref_c1": 1.7011737823486328,
+        "sal_wref_c2": 0.9198070168495178,
+        "sal_wref_c3": 0.6160127520561218,
+        "sal_wref_c4": 0.47449350357055664,
+        "sal_wref_c5": 0.38105887174606323
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1967.0758056640625,
+        "gradnorm_l1_uncentered": 2044.244873046875,
+        "gradnorm_l2_centered": 3.2468554973602295,
+        "gradnorm_l2_uncentered": 3.6479952335357666,
+        "sal_noref_c1": 1.7977428436279297,
+        "sal_noref_c2": 1.816636323928833,
+        "sal_noref_c3": 1.2602866888046265,
+        "sal_noref_c4": 0.9461520314216614,
+        "sal_noref_c5": 0.7673586010932922,
+        "sal_wref_c1": 0.2586161196231842,
+        "sal_wref_c2": 0.42283159494400024,
+        "sal_wref_c3": 0.32928723096847534,
+        "sal_wref_c4": 0.24768102169036865,
+        "sal_wref_c5": 0.19816479086875916
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Locomotive_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 990.3528442382812,
+        "gradnorm_l1_uncentered": 832.5931396484375,
+        "gradnorm_l2_centered": 1.7731167078018188,
+        "gradnorm_l2_uncentered": 1.3866928815841675,
+        "sal_noref_c1": 0.18819232285022736,
+        "sal_noref_c2": 0.14391592144966125,
+        "sal_noref_c3": 0.10290724784135818,
+        "sal_noref_c4": 0.08046416193246841,
+        "sal_noref_c5": 0.06441917270421982,
+        "sal_wref_c1": 1.34977126121521,
+        "sal_wref_c2": 0.7768389582633972,
+        "sal_wref_c3": 0.5199198126792908,
+        "sal_wref_c4": 0.3902550935745239,
+        "sal_wref_c5": 0.3168938457965851
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3296.728271484375,
+        "gradnorm_l1_uncentered": 3565.305908203125,
+        "gradnorm_l2_centered": 5.705573081970215,
+        "gradnorm_l2_uncentered": 6.542208671569824,
+        "sal_noref_c1": 12.29679012298584,
+        "sal_noref_c2": 7.660006523132324,
+        "sal_noref_c3": 5.237691402435303,
+        "sal_noref_c4": 4.21709680557251,
+        "sal_noref_c5": 3.4485507011413574,
+        "sal_wref_c1": 2.345276355743408,
+        "sal_wref_c2": 2.661745071411133,
+        "sal_wref_c3": 1.8119980096817017,
+        "sal_wref_c4": 1.8279504776000977,
+        "sal_wref_c5": 1.4709999561309814
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Locomotive_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 820.296630859375,
+        "gradnorm_l1_uncentered": 646.9173583984375,
+        "gradnorm_l2_centered": 1.6239956617355347,
+        "gradnorm_l2_uncentered": 1.089996337890625,
+        "sal_noref_c1": 0.17951816320419312,
+        "sal_noref_c2": 0.10320212692022324,
+        "sal_noref_c3": 0.06896653771400452,
+        "sal_noref_c4": 0.07768107950687408,
+        "sal_noref_c5": 0.0622471459209919,
+        "sal_wref_c1": 1.277449369430542,
+        "sal_wref_c2": 0.8094589710235596,
+        "sal_wref_c3": 0.5556220412254333,
+        "sal_wref_c4": 0.4309038519859314,
+        "sal_wref_c5": 0.3455438017845154
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2334.015869140625,
+        "gradnorm_l1_uncentered": 2541.1259765625,
+        "gradnorm_l2_centered": 4.124755382537842,
+        "gradnorm_l2_uncentered": 4.7350945472717285,
+        "sal_noref_c1": 5.173255443572998,
+        "sal_noref_c2": 3.09873628616333,
+        "sal_noref_c3": 2.269747257232666,
+        "sal_noref_c4": 2.5859086513519287,
+        "sal_noref_c5": 2.1699934005737305,
+        "sal_wref_c1": 0.2511010468006134,
+        "sal_wref_c2": 0.4037979543209076,
+        "sal_wref_c3": 0.4576984941959381,
+        "sal_wref_c4": 1.4810785055160522,
+        "sal_wref_c5": 1.3215827941894531
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 700.0651245117188,
+        "gradnorm_l1_uncentered": 423.2716064453125,
+        "gradnorm_l2_centered": 1.4243035316467285,
+        "gradnorm_l2_uncentered": 0.8063351511955261,
+        "sal_noref_c1": 0.17779065668582916,
+        "sal_noref_c2": 0.1339617371559143,
+        "sal_noref_c3": 0.08962710946798325,
+        "sal_noref_c4": 0.06722881644964218,
+        "sal_noref_c5": 0.05471344664692879,
+        "sal_wref_c1": 1.332820177078247,
+        "sal_wref_c2": 0.7581940293312073,
+        "sal_wref_c3": 0.5158140063285828,
+        "sal_wref_c4": 0.38951119780540466,
+        "sal_wref_c5": 0.31429198384284973
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7511.8955078125,
+        "gradnorm_l1_uncentered": 7993.68994140625,
+        "gradnorm_l2_centered": 14.010783195495605,
+        "gradnorm_l2_uncentered": 15.219999313354492,
+        "sal_noref_c1": 144.56805419921875,
+        "sal_noref_c2": 71.74011993408203,
+        "sal_noref_c3": 51.17472457885742,
+        "sal_noref_c4": 38.557254791259766,
+        "sal_noref_c5": 32.401126861572266,
+        "sal_wref_c1": 110.20237731933594,
+        "sal_wref_c2": 56.31039047241211,
+        "sal_wref_c3": 39.810638427734375,
+        "sal_wref_c4": 30.326663970947266,
+        "sal_wref_c5": 24.38484764099121
+      }
+    }
+  ]
+}

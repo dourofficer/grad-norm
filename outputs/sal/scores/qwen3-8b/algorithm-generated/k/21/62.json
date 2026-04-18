@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "40.json",
+    "question_id": "08f3a05f-5947-4089-a4c4-d4bcfaa6b7a0",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "Given $x_0 = -5$ and $f(x) = x^3 + 4x^2 - 3x + 8$, what is the smallest $n$ where using Newton's Method $n = n+1$ after rounding to four decimal places?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "NumericalMethods_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 695.4819946289062,
+        "gradnorm_l1_uncentered": 424.72442626953125,
+        "gradnorm_l2_centered": 1.6290545463562012,
+        "gradnorm_l2_uncentered": 1.502281665802002,
+        "sal_noref_c1": 0.5130431652069092,
+        "sal_noref_c2": 0.40063974261283875,
+        "sal_noref_c3": 0.3473914861679077,
+        "sal_noref_c4": 0.2667849063873291,
+        "sal_noref_c5": 0.2210565060377121,
+        "sal_wref_c1": 0.5534411072731018,
+        "sal_wref_c2": 0.28178486227989197,
+        "sal_wref_c3": 0.4952685534954071,
+        "sal_wref_c4": 0.4053467810153961,
+        "sal_wref_c5": 0.3277387022972107
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "NumericalAlgorithms_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 644.7122802734375,
+        "gradnorm_l1_uncentered": 330.81927490234375,
+        "gradnorm_l2_centered": 1.5904676914215088,
+        "gradnorm_l2_uncentered": 0.999286949634552,
+        "sal_noref_c1": 0.22544541954994202,
+        "sal_noref_c2": 0.11288570612668991,
+        "sal_noref_c3": 0.08939314633607864,
+        "sal_noref_c4": 0.08718691766262054,
+        "sal_noref_c5": 0.07102964073419571,
+        "sal_wref_c1": 0.5836197733879089,
+        "sal_wref_c2": 0.5960179567337036,
+        "sal_wref_c3": 0.6223389506340027,
+        "sal_wref_c4": 0.48443183302879333,
+        "sal_wref_c5": 0.38770872354507446
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1038.8121337890625,
+        "gradnorm_l1_uncentered": 991.639892578125,
+        "gradnorm_l2_centered": 2.212869167327881,
+        "gradnorm_l2_uncentered": 2.3572044372558594,
+        "sal_noref_c1": 0.5068202614784241,
+        "sal_noref_c2": 0.7224982976913452,
+        "sal_noref_c3": 0.49707332253456116,
+        "sal_noref_c4": 0.5036202073097229,
+        "sal_noref_c5": 0.4051779806613922,
+        "sal_wref_c1": 1.0767494440078735,
+        "sal_wref_c2": 0.5385156869888306,
+        "sal_wref_c3": 0.39470016956329346,
+        "sal_wref_c4": 0.328145831823349,
+        "sal_wref_c5": 0.27630433440208435
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 679.7520141601562,
+        "gradnorm_l1_uncentered": 390.5190734863281,
+        "gradnorm_l2_centered": 1.7028639316558838,
+        "gradnorm_l2_uncentered": 0.6713793277740479,
+        "sal_noref_c1": 0.05000494420528412,
+        "sal_noref_c2": 0.025632016360759735,
+        "sal_noref_c3": 0.017325328662991524,
+        "sal_noref_c4": 0.014355190098285675,
+        "sal_noref_c5": 0.011759595945477486,
+        "sal_wref_c1": 0.9632680416107178,
+        "sal_wref_c2": 0.8825100660324097,
+        "sal_wref_c3": 0.7254045605659485,
+        "sal_wref_c4": 0.594989538192749,
+        "sal_wref_c5": 0.47808489203453064
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2028.859619140625,
+        "gradnorm_l1_uncentered": 2132.66845703125,
+        "gradnorm_l2_centered": 4.145358085632324,
+        "gradnorm_l2_uncentered": 4.428677082061768,
+        "sal_noref_c1": 0.6795771718025208,
+        "sal_noref_c2": 1.289889931678772,
+        "sal_noref_c3": 1.7677249908447266,
+        "sal_noref_c4": 1.5141637325286865,
+        "sal_noref_c5": 1.2547327280044556,
+        "sal_wref_c1": 1.6419693231582642,
+        "sal_wref_c2": 0.8351603746414185,
+        "sal_wref_c3": 0.965262234210968,
+        "sal_wref_c4": 0.8855757713317871,
+        "sal_wref_c5": 0.7387880682945251
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 615.041259765625,
+        "gradnorm_l1_uncentered": 311.9021301269531,
+        "gradnorm_l2_centered": 1.6809532642364502,
+        "gradnorm_l2_uncentered": 0.6838400959968567,
+        "sal_noref_c1": 0.06716825067996979,
+        "sal_noref_c2": 0.058700256049633026,
+        "sal_noref_c3": 0.04303480312228203,
+        "sal_noref_c4": 0.04691695049405098,
+        "sal_noref_c5": 0.03763837367296219,
+        "sal_wref_c1": 0.8028786182403564,
+        "sal_wref_c2": 0.9974743127822876,
+        "sal_wref_c3": 0.7703275680541992,
+        "sal_wref_c4": 0.5965043902397156,
+        "sal_wref_c5": 0.4779667258262634
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 816.242919921875,
+        "gradnorm_l1_uncentered": 706.8623046875,
+        "gradnorm_l2_centered": 1.9342232942581177,
+        "gradnorm_l2_uncentered": 1.9592115879058838,
+        "sal_noref_c1": 0.38773760199546814,
+        "sal_noref_c2": 1.1775667667388916,
+        "sal_noref_c3": 0.7851091027259827,
+        "sal_noref_c4": 0.6001845002174377,
+        "sal_noref_c5": 0.4817281663417816,
+        "sal_wref_c1": 1.4487394094467163,
+        "sal_wref_c2": 0.877964973449707,
+        "sal_wref_c3": 0.6178123354911804,
+        "sal_wref_c4": 0.5411139726638794,
+        "sal_wref_c5": 0.4362770617008209
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "NumericalMethods_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 700.0150756835938,
+        "gradnorm_l1_uncentered": 542.6466064453125,
+        "gradnorm_l2_centered": 2.050886631011963,
+        "gradnorm_l2_uncentered": 1.5155599117279053,
+        "sal_noref_c1": 0.28496408462524414,
+        "sal_noref_c2": 0.47391536831855774,
+        "sal_noref_c3": 0.3161637783050537,
+        "sal_noref_c4": 0.29510942101478577,
+        "sal_noref_c5": 0.2380875051021576,
+        "sal_wref_c1": 0.17218883335590363,
+        "sal_wref_c2": 1.2561174631118774,
+        "sal_wref_c3": 1.012742519378662,
+        "sal_wref_c4": 0.761057436466217,
+        "sal_wref_c5": 0.6142228841781616
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "NumericalMethods_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5904.458984375,
+        "gradnorm_l1_uncentered": 6193.578125,
+        "gradnorm_l2_centered": 14.914203643798828,
+        "gradnorm_l2_uncentered": 15.20041561126709,
+        "sal_noref_c1": 49.755592346191406,
+        "sal_noref_c2": 68.68449401855469,
+        "sal_noref_c3": 46.5413818359375,
+        "sal_noref_c4": 35.82243347167969,
+        "sal_noref_c5": 31.695331573486328,
+        "sal_wref_c1": 88.01789855957031,
+        "sal_wref_c2": 62.93186950683594,
+        "sal_wref_c3": 42.91831970214844,
+        "sal_wref_c4": 33.70291519165039,
+        "sal_wref_c5": 31.140981674194336
+      }
+    }
+  ]
+}

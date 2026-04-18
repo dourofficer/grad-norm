@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "78.json",
+    "question_id": "65638e28-7f37-4fa7-b7b9-8c19bb609879",
+    "mistake_agent": "Neurology_Expert",
+    "mistake_step": 9,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The book with the doi 10.1353/book.24372 concerns a certain neurologist. According to chapter 2 of the book, what author influenced this neurologist\u2019s belief in \u201cendopsychic myths\u201d? Give the last name only."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 856.932373046875,
+        "gradnorm_l1_uncentered": 507.1878356933594,
+        "gradnorm_l2_centered": 1.6234902143478394,
+        "gradnorm_l2_uncentered": 1.1404246091842651,
+        "sal_noref_c1": 0.13383765518665314,
+        "sal_noref_c2": 0.16504104435443878,
+        "sal_noref_c3": 0.11365745216608047,
+        "sal_noref_c4": 0.09685074537992477,
+        "sal_noref_c5": 0.07916053384542465,
+        "sal_wref_c1": 1.5714226961135864,
+        "sal_wref_c2": 0.834915816783905,
+        "sal_wref_c3": 0.5574022531509399,
+        "sal_wref_c4": 0.43563228845596313,
+        "sal_wref_c5": 0.35096684098243713
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1377.8599853515625,
+        "gradnorm_l1_uncentered": 1368.705078125,
+        "gradnorm_l2_centered": 2.383100986480713,
+        "gradnorm_l2_uncentered": 2.70803165435791,
+        "sal_noref_c1": 0.9717961549758911,
+        "sal_noref_c2": 1.017059564590454,
+        "sal_noref_c3": 0.7488059401512146,
+        "sal_noref_c4": 0.6667265892028809,
+        "sal_noref_c5": 0.5392991900444031,
+        "sal_wref_c1": 0.7017382979393005,
+        "sal_wref_c2": 0.3803030848503113,
+        "sal_wref_c3": 0.28067752718925476,
+        "sal_wref_c4": 0.3478873074054718,
+        "sal_wref_c5": 0.27888941764831543
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6351.75927734375,
+        "gradnorm_l1_uncentered": 6648.83251953125,
+        "gradnorm_l2_centered": 12.936079025268555,
+        "gradnorm_l2_uncentered": 13.936463356018066,
+        "sal_noref_c1": 48.37894821166992,
+        "sal_noref_c2": 49.8740234375,
+        "sal_noref_c3": 34.87128829956055,
+        "sal_noref_c4": 26.275142669677734,
+        "sal_noref_c5": 22.40435791015625,
+        "sal_wref_c1": 13.419408798217773,
+        "sal_wref_c2": 36.017173767089844,
+        "sal_wref_c3": 26.607011795043945,
+        "sal_wref_c4": 20.088912963867188,
+        "sal_wref_c5": 16.153654098510742
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Neurology_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1132.3406982421875,
+        "gradnorm_l1_uncentered": 1127.82666015625,
+        "gradnorm_l2_centered": 1.9329984188079834,
+        "gradnorm_l2_uncentered": 1.929163932800293,
+        "sal_noref_c1": 0.58684241771698,
+        "sal_noref_c2": 0.3328606188297272,
+        "sal_noref_c3": 0.22387449443340302,
+        "sal_noref_c4": 0.18263591825962067,
+        "sal_noref_c5": 0.14620289206504822,
+        "sal_wref_c1": 0.7230976819992065,
+        "sal_wref_c2": 0.46438068151474,
+        "sal_wref_c3": 0.3210720121860504,
+        "sal_wref_c4": 0.2452026605606079,
+        "sal_wref_c5": 0.1962757706642151
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3286.424072265625,
+        "gradnorm_l1_uncentered": 3563.609375,
+        "gradnorm_l2_centered": 5.321727275848389,
+        "gradnorm_l2_uncentered": 6.133174896240234,
+        "sal_noref_c1": 10.069279670715332,
+        "sal_noref_c2": 6.292557716369629,
+        "sal_noref_c3": 4.195881366729736,
+        "sal_noref_c4": 3.859445810317993,
+        "sal_noref_c5": 3.193551540374756,
+        "sal_wref_c1": 1.4226274490356445,
+        "sal_wref_c2": 1.6537034511566162,
+        "sal_wref_c3": 1.1027785539627075,
+        "sal_wref_c4": 1.773360013961792,
+        "sal_wref_c5": 1.4878785610198975
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Neurology_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1038.3792724609375,
+        "gradnorm_l1_uncentered": 1055.09765625,
+        "gradnorm_l2_centered": 1.7828054428100586,
+        "gradnorm_l2_uncentered": 1.8548243045806885,
+        "sal_noref_c1": 0.7232845425605774,
+        "sal_noref_c2": 0.42004162073135376,
+        "sal_noref_c3": 0.28187456727027893,
+        "sal_noref_c4": 0.2180546224117279,
+        "sal_noref_c5": 0.1953265368938446,
+        "sal_wref_c1": 0.5960580110549927,
+        "sal_wref_c2": 0.35770153999328613,
+        "sal_wref_c3": 0.2580680847167969,
+        "sal_wref_c4": 0.19912244379520416,
+        "sal_wref_c5": 0.1596314013004303
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1018.7479858398438,
+        "gradnorm_l1_uncentered": 879.8137817382812,
+        "gradnorm_l2_centered": 1.8231159448623657,
+        "gradnorm_l2_uncentered": 1.6395301818847656,
+        "sal_noref_c1": 0.2895403206348419,
+        "sal_noref_c2": 0.29625070095062256,
+        "sal_noref_c3": 0.239152193069458,
+        "sal_noref_c4": 0.18879365921020508,
+        "sal_noref_c5": 0.16945356130599976,
+        "sal_wref_c1": 1.245221495628357,
+        "sal_wref_c2": 0.6426681280136108,
+        "sal_wref_c3": 0.4318910837173462,
+        "sal_wref_c4": 0.32483386993408203,
+        "sal_wref_c5": 0.2603248059749603
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1299.9166259765625,
+        "gradnorm_l1_uncentered": 1321.357421875,
+        "gradnorm_l2_centered": 2.0757155418395996,
+        "gradnorm_l2_uncentered": 2.1593072414398193,
+        "sal_noref_c1": 0.626053512096405,
+        "sal_noref_c2": 0.4262382388114929,
+        "sal_noref_c3": 0.3081637918949127,
+        "sal_noref_c4": 0.23776398599147797,
+        "sal_noref_c5": 0.19697731733322144,
+        "sal_wref_c1": 0.7827243804931641,
+        "sal_wref_c2": 0.435200572013855,
+        "sal_wref_c3": 0.29104214906692505,
+        "sal_wref_c4": 0.21829666197299957,
+        "sal_wref_c5": 0.17847387492656708
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1890.558837890625,
+        "gradnorm_l1_uncentered": 1797.645751953125,
+        "gradnorm_l2_centered": 2.797187566757202,
+        "gradnorm_l2_uncentered": 2.5270040035247803,
+        "sal_noref_c1": 0.1684478521347046,
+        "sal_noref_c2": 0.11024919897317886,
+        "sal_noref_c3": 0.08073297142982483,
+        "sal_noref_c4": 0.12404347211122513,
+        "sal_noref_c5": 0.10189811885356903,
+        "sal_wref_c1": 1.339599370956421,
+        "sal_wref_c2": 0.8130301237106323,
+        "sal_wref_c3": 0.5472238659858704,
+        "sal_wref_c4": 0.45099934935569763,
+        "sal_wref_c5": 0.3705586791038513
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Neurology_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1170.585205078125,
+        "gradnorm_l1_uncentered": 1171.10888671875,
+        "gradnorm_l2_centered": 1.942166805267334,
+        "gradnorm_l2_uncentered": 1.942846417427063,
+        "sal_noref_c1": 0.5264104008674622,
+        "sal_noref_c2": 0.32967448234558105,
+        "sal_noref_c3": 0.2492416650056839,
+        "sal_noref_c4": 0.1901649683713913,
+        "sal_noref_c5": 0.15249308943748474,
+        "sal_wref_c1": 0.8465734124183655,
+        "sal_wref_c2": 0.5083227157592773,
+        "sal_wref_c3": 0.338971346616745,
+        "sal_wref_c4": 0.2542634606361389,
+        "sal_wref_c5": 0.2041262686252594
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "68.json",
+    "question_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 3,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1010.660400390625,
+        "gradnorm_l1_uncentered": 350.3966064453125,
+        "gradnorm_l2_centered": 2.052807331085205,
+        "gradnorm_l2_uncentered": 0.7887938618659973,
+        "sal_noref_c1": 0.12087394297122955,
+        "sal_noref_c2": 0.07446155697107315,
+        "sal_noref_c3": 0.05026684328913689,
+        "sal_noref_c4": 0.04017230495810509,
+        "sal_noref_c5": 0.03314622491598129,
+        "sal_wref_c1": 3.759840726852417,
+        "sal_wref_c2": 1.8719593286514282,
+        "sal_wref_c3": 1.2479830980300903,
+        "sal_wref_c4": 0.9395879507064819,
+        "sal_wref_c5": 0.7517206072807312
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 972.91796875,
+        "gradnorm_l1_uncentered": 277.28399658203125,
+        "gradnorm_l2_centered": 2.1150639057159424,
+        "gradnorm_l2_uncentered": 0.552635133266449,
+        "sal_noref_c1": 0.057486627250909805,
+        "sal_noref_c2": 0.03705980256199837,
+        "sal_noref_c3": 0.024985646829009056,
+        "sal_noref_c4": 0.01952095329761505,
+        "sal_noref_c5": 0.015668960288167,
+        "sal_wref_c1": 4.135098934173584,
+        "sal_wref_c2": 2.0551469326019287,
+        "sal_wref_c3": 1.3702143430709839,
+        "sal_wref_c4": 1.0299959182739258,
+        "sal_wref_c5": 0.8239968419075012
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1938.506591796875,
+        "gradnorm_l1_uncentered": 2532.801513671875,
+        "gradnorm_l2_centered": 3.9538989067077637,
+        "gradnorm_l2_uncentered": 5.3984503746032715,
+        "sal_noref_c1": 16.451656341552734,
+        "sal_noref_c2": 8.229100227355957,
+        "sal_noref_c3": 5.588531494140625,
+        "sal_noref_c4": 4.536737442016602,
+        "sal_noref_c5": 3.681173324584961,
+        "sal_wref_c1": 3.044116973876953,
+        "sal_wref_c2": 1.5586787462234497,
+        "sal_wref_c3": 1.1563252210617065,
+        "sal_wref_c4": 1.1750625371932983,
+        "sal_wref_c5": 0.9641038775444031
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1258.3529052734375,
+        "gradnorm_l1_uncentered": 1504.7510986328125,
+        "gradnorm_l2_centered": 2.733452796936035,
+        "gradnorm_l2_uncentered": 3.401134967803955,
+        "sal_noref_c1": 4.064499378204346,
+        "sal_noref_c2": 2.0865702629089355,
+        "sal_noref_c3": 1.4661434888839722,
+        "sal_noref_c4": 1.1699161529541016,
+        "sal_noref_c5": 0.9541519284248352,
+        "sal_wref_c1": 0.0781693384051323,
+        "sal_wref_c2": 0.1254914104938507,
+        "sal_wref_c3": 0.1709606647491455,
+        "sal_wref_c4": 0.18210729956626892,
+        "sal_wref_c5": 0.1462571918964386
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 937.276123046875,
+        "gradnorm_l1_uncentered": 1082.1287841796875,
+        "gradnorm_l2_centered": 1.7170552015304565,
+        "gradnorm_l2_uncentered": 1.9138320684432983,
+        "sal_noref_c1": 1.6902680397033691,
+        "sal_noref_c2": 0.996048092842102,
+        "sal_noref_c3": 0.6652639508247375,
+        "sal_noref_c4": 0.49985888600349426,
+        "sal_noref_c5": 0.40391892194747925,
+        "sal_wref_c1": 0.9536136388778687,
+        "sal_wref_c2": 0.6826112270355225,
+        "sal_wref_c3": 0.45512327551841736,
+        "sal_wref_c4": 0.34459900856018066,
+        "sal_wref_c5": 0.27619051933288574
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1485.7318115234375,
+        "gradnorm_l1_uncentered": 1991.1531982421875,
+        "gradnorm_l2_centered": 2.834465742111206,
+        "gradnorm_l2_uncentered": 3.9304118156433105,
+        "sal_noref_c1": 7.717695236206055,
+        "sal_noref_c2": 4.936797142028809,
+        "sal_noref_c3": 3.2929201126098633,
+        "sal_noref_c4": 2.470761775970459,
+        "sal_noref_c5": 1.977130651473999,
+        "sal_wref_c1": 0.26622793078422546,
+        "sal_wref_c2": 1.306660771369934,
+        "sal_wref_c3": 0.8749430775642395,
+        "sal_wref_c4": 0.658255398273468,
+        "sal_wref_c5": 0.5322273373603821
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8617.267578125,
+        "gradnorm_l1_uncentered": 9336.431640625,
+        "gradnorm_l2_centered": 19.13490867614746,
+        "gradnorm_l2_uncentered": 20.69211196899414,
+        "sal_noref_c1": 228.32174682617188,
+        "sal_noref_c2": 139.84622192382812,
+        "sal_noref_c3": 93.35808563232422,
+        "sal_noref_c4": 73.17936706542969,
+        "sal_noref_c5": 61.41535568237305,
+        "sal_wref_c1": 173.22975158691406,
+        "sal_wref_c2": 110.3655014038086,
+        "sal_wref_c3": 73.77116394042969,
+        "sal_wref_c4": 59.14961624145508,
+        "sal_wref_c5": 51.05325698852539
+      }
+    }
+  ]
+}

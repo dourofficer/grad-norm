@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "66.json",
+    "question_id": "87c610df-bef7-4932-b950-1d83ef4e282b",
+    "mistake_agent": "BiblicalScholar_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "In April of 1977, who was the Prime Minister of the first place mentioned by name in the Book of Esther (in the New International Version)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "BiblicalScholar_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 892.2968139648438,
+        "gradnorm_l1_uncentered": 589.7357177734375,
+        "gradnorm_l2_centered": 1.6491895914077759,
+        "gradnorm_l2_uncentered": 1.323376178741455,
+        "sal_noref_c1": 0.20839323103427887,
+        "sal_noref_c2": 0.23178717494010925,
+        "sal_noref_c3": 0.1600610762834549,
+        "sal_noref_c4": 0.13788442313671112,
+        "sal_noref_c5": 0.1122807040810585,
+        "sal_wref_c1": 1.3929519653320312,
+        "sal_wref_c2": 0.7234723567962646,
+        "sal_wref_c3": 0.4823196232318878,
+        "sal_wref_c4": 0.38519272208213806,
+        "sal_wref_c5": 0.31074994802474976
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "BiblicalScholar_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1864.734130859375,
+        "gradnorm_l1_uncentered": 1795.5653076171875,
+        "gradnorm_l2_centered": 2.9124999046325684,
+        "gradnorm_l2_uncentered": 3.0126278400421143,
+        "sal_noref_c1": 0.6788836717605591,
+        "sal_noref_c2": 0.6325892806053162,
+        "sal_noref_c3": 0.4277716875076294,
+        "sal_noref_c4": 0.3412329852581024,
+        "sal_noref_c5": 0.2747814357280731,
+        "sal_wref_c1": 0.8007367253303528,
+        "sal_wref_c2": 0.40012893080711365,
+        "sal_wref_c3": 0.26675280928611755,
+        "sal_wref_c4": 0.22871603071689606,
+        "sal_wref_c5": 0.1869257688522339
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "MiddleEasternHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2191.47509765625,
+        "gradnorm_l1_uncentered": 2385.014404296875,
+        "gradnorm_l2_centered": 3.3746540546417236,
+        "gradnorm_l2_uncentered": 3.995915174484253,
+        "sal_noref_c1": 3.003350257873535,
+        "sal_noref_c2": 2.407965660095215,
+        "sal_noref_c3": 1.7321182489395142,
+        "sal_noref_c4": 1.3018219470977783,
+        "sal_noref_c5": 1.0445350408554077,
+        "sal_wref_c1": 0.04100252687931061,
+        "sal_wref_c2": 0.24818436801433563,
+        "sal_wref_c3": 0.21402959525585175,
+        "sal_wref_c4": 0.17453692853450775,
+        "sal_wref_c5": 0.14079806208610535
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "MiddleEasternHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2620.495849609375,
+        "gradnorm_l1_uncentered": 2745.65234375,
+        "gradnorm_l2_centered": 4.043118953704834,
+        "gradnorm_l2_uncentered": 4.383801460266113,
+        "sal_noref_c1": 1.9494787454605103,
+        "sal_noref_c2": 1.4103095531463623,
+        "sal_noref_c3": 0.9493372440338135,
+        "sal_noref_c4": 0.7415504455566406,
+        "sal_noref_c5": 0.5949099659919739,
+        "sal_wref_c1": 0.16612982749938965,
+        "sal_wref_c2": 0.11949410289525986,
+        "sal_wref_c3": 0.08231684565544128,
+        "sal_wref_c4": 0.07440540194511414,
+        "sal_wref_c5": 0.059698086231946945
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1129.5413818359375,
+        "gradnorm_l1_uncentered": 1165.844970703125,
+        "gradnorm_l2_centered": 1.8688627481460571,
+        "gradnorm_l2_uncentered": 2.1984055042266846,
+        "sal_noref_c1": 0.9761870503425598,
+        "sal_noref_c2": 0.7319384813308716,
+        "sal_noref_c3": 0.5003193616867065,
+        "sal_noref_c4": 0.37960079312324524,
+        "sal_noref_c5": 0.3049594759941101,
+        "sal_wref_c1": 0.5774705410003662,
+        "sal_wref_c2": 0.2898558974266052,
+        "sal_wref_c3": 0.19625800848007202,
+        "sal_wref_c4": 0.1696867048740387,
+        "sal_wref_c5": 0.13627326488494873
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5857.82421875,
+        "gradnorm_l1_uncentered": 6299.12158203125,
+        "gradnorm_l2_centered": 11.080741882324219,
+        "gradnorm_l2_uncentered": 12.189757347106934,
+        "sal_noref_c1": 84.23308563232422,
+        "sal_noref_c2": 42.042320251464844,
+        "sal_noref_c3": 32.72893142700195,
+        "sal_noref_c4": 25.712295532226562,
+        "sal_noref_c5": 20.570405960083008,
+        "sal_wref_c1": 60.28385543823242,
+        "sal_wref_c2": 30.301748275756836,
+        "sal_wref_c3": 23.644712448120117,
+        "sal_wref_c4": 19.111539840698242,
+        "sal_wref_c5": 15.296902656555176
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "70.json",
+    "question_id": "14569e28-c88c-43e4-8c32-097d35b9a67d",
+    "mistake_agent": "PythonDebugging_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "In Unlambda, what exact charcter or text needs to be added to correct the following code to output \"For penguins\"? If what is needed is a character, answer with the name of the character. If there are different names for the character, use the shortest. The text location is not needed. Code:\n\n`r```````````.F.o.r. .p.e.n.g.u.i.n.si"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 993.0035400390625,
+        "gradnorm_l1_uncentered": 493.1207275390625,
+        "gradnorm_l2_centered": 2.026913642883301,
+        "gradnorm_l2_uncentered": 1.2947885990142822,
+        "sal_noref_c1": 0.335593581199646,
+        "sal_noref_c2": 0.25523990392684937,
+        "sal_noref_c3": 0.17293180525302887,
+        "sal_noref_c4": 0.13127386569976807,
+        "sal_noref_c5": 0.10559364408254623,
+        "sal_wref_c1": 2.976193428039551,
+        "sal_wref_c2": 1.529938817024231,
+        "sal_wref_c3": 1.0265061855316162,
+        "sal_wref_c4": 0.7725963592529297,
+        "sal_wref_c5": 0.6181284189224243
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2611.566650390625,
+        "gradnorm_l1_uncentered": 3135.180908203125,
+        "gradnorm_l2_centered": 5.041954040527344,
+        "gradnorm_l2_uncentered": 6.262753486633301,
+        "sal_noref_c1": 16.660791397094727,
+        "sal_noref_c2": 8.898723602294922,
+        "sal_noref_c3": 6.39948844909668,
+        "sal_noref_c4": 5.602228164672852,
+        "sal_noref_c5": 4.712275981903076,
+        "sal_wref_c1": 3.008589744567871,
+        "sal_wref_c2": 2.0733253955841064,
+        "sal_wref_c3": 1.8328309059143066,
+        "sal_wref_c4": 2.192172050476074,
+        "sal_wref_c5": 1.9241338968276978
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 876.8279418945312,
+        "gradnorm_l1_uncentered": 379.7721862792969,
+        "gradnorm_l2_centered": 1.836646318435669,
+        "gradnorm_l2_uncentered": 0.7880854606628418,
+        "sal_noref_c1": 0.2917940616607666,
+        "sal_noref_c2": 0.16888637840747833,
+        "sal_noref_c3": 0.11373577266931534,
+        "sal_noref_c4": 0.08669327199459076,
+        "sal_noref_c5": 0.07177482545375824,
+        "sal_wref_c1": 3.029352903366089,
+        "sal_wref_c2": 1.5129234790802002,
+        "sal_wref_c3": 1.0086631774902344,
+        "sal_wref_c4": 0.7603312730789185,
+        "sal_wref_c5": 0.6112708449363708
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3190.36572265625,
+        "gradnorm_l1_uncentered": 3596.611083984375,
+        "gradnorm_l2_centered": 9.669455528259277,
+        "gradnorm_l2_uncentered": 10.443920135498047,
+        "sal_noref_c1": 19.729631423950195,
+        "sal_noref_c2": 11.78705883026123,
+        "sal_noref_c3": 17.57680320739746,
+        "sal_noref_c4": 16.601215362548828,
+        "sal_noref_c5": 14.191675186157227,
+        "sal_wref_c1": 4.3550801277160645,
+        "sal_wref_c2": 4.236448287963867,
+        "sal_wref_c3": 12.36029052734375,
+        "sal_wref_c4": 12.026227951049805,
+        "sal_wref_c5": 9.919520378112793
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1178.4144287109375,
+        "gradnorm_l1_uncentered": 1284.1541748046875,
+        "gradnorm_l2_centered": 2.311485767364502,
+        "gradnorm_l2_uncentered": 2.6797497272491455,
+        "sal_noref_c1": 2.398402214050293,
+        "sal_noref_c2": 1.2036631107330322,
+        "sal_noref_c3": 1.0405329465866089,
+        "sal_noref_c4": 0.8799965977668762,
+        "sal_noref_c5": 0.7069166898727417,
+        "sal_wref_c1": 0.5310757756233215,
+        "sal_wref_c2": 0.28721854090690613,
+        "sal_wref_c3": 0.40930166840553284,
+        "sal_wref_c4": 0.46146857738494873,
+        "sal_wref_c5": 0.3747800290584564
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3839.984130859375,
+        "gradnorm_l1_uncentered": 4346.947265625,
+        "gradnorm_l2_centered": 8.561767578125,
+        "gradnorm_l2_uncentered": 9.554539680480957,
+        "sal_noref_c1": 26.559856414794922,
+        "sal_noref_c2": 14.518171310424805,
+        "sal_noref_c3": 14.411274909973145,
+        "sal_noref_c4": 13.13366985321045,
+        "sal_noref_c5": 10.534729957580566,
+        "sal_wref_c1": 8.61573600769043,
+        "sal_wref_c2": 5.576512336730957,
+        "sal_wref_c3": 8.447545051574707,
+        "sal_wref_c4": 9.59267520904541,
+        "sal_wref_c5": 7.674295902252197
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "63.json",
+    "question_id": "8f80e01c-1296-4371-9486-bb3d68651a60",
+    "mistake_agent": "MusicTheory_Expert",
+    "mistake_step": 5,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "Using bass clef notes, what is the age of someone who has experienced the word spelled out in the sheet music by the note letters the total number of lines and notes minus the number of notes on lines in the image?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "MusicTheory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 974.95703125,
+        "gradnorm_l1_uncentered": 255.06036376953125,
+        "gradnorm_l2_centered": 2.057143449783325,
+        "gradnorm_l2_uncentered": 0.604902982711792,
+        "sal_noref_c1": 0.08604095876216888,
+        "sal_noref_c2": 0.061840400099754333,
+        "sal_noref_c3": 0.041530754417181015,
+        "sal_noref_c4": 0.03124682977795601,
+        "sal_noref_c5": 0.025030266493558884,
+        "sal_wref_c1": 3.9563684463500977,
+        "sal_wref_c2": 1.970489740371704,
+        "sal_wref_c3": 1.315673828125,
+        "sal_wref_c4": 0.987528920173645,
+        "sal_wref_c5": 0.792279064655304
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4040.862548828125,
+        "gradnorm_l1_uncentered": 4668.18896484375,
+        "gradnorm_l2_centered": 9.256054878234863,
+        "gradnorm_l2_uncentered": 10.621273040771484,
+        "sal_noref_c1": 49.1888313293457,
+        "sal_noref_c2": 34.280517578125,
+        "sal_noref_c3": 23.333951950073242,
+        "sal_noref_c4": 17.52898406982422,
+        "sal_noref_c5": 14.248359680175781,
+        "sal_wref_c1": 21.69507598876953,
+        "sal_wref_c2": 20.84568214416504,
+        "sal_wref_c3": 14.4663724899292,
+        "sal_wref_c4": 10.886092185974121,
+        "sal_wref_c5": 9.26663589477539
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 823.618408203125,
+        "gradnorm_l1_uncentered": 763.5444946289062,
+        "gradnorm_l2_centered": 1.6771632432937622,
+        "gradnorm_l2_uncentered": 1.5713740587234497,
+        "sal_noref_c1": 1.0960328578948975,
+        "sal_noref_c2": 0.6695988178253174,
+        "sal_noref_c3": 0.457537442445755,
+        "sal_noref_c4": 0.35535627603530884,
+        "sal_noref_c5": 0.2851269841194153,
+        "sal_wref_c1": 1.5664191246032715,
+        "sal_wref_c2": 0.8625563383102417,
+        "sal_wref_c3": 0.5813921689987183,
+        "sal_wref_c4": 0.443278431892395,
+        "sal_wref_c5": 0.3559110462665558
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "MusicTheory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 792.1912841796875,
+        "gradnorm_l1_uncentered": 967.587646484375,
+        "gradnorm_l2_centered": 1.5811829566955566,
+        "gradnorm_l2_uncentered": 1.966162919998169,
+        "sal_noref_c1": 1.9780983924865723,
+        "sal_noref_c2": 1.0588027238845825,
+        "sal_noref_c3": 0.7169026732444763,
+        "sal_noref_c4": 0.5795536041259766,
+        "sal_noref_c5": 0.4639317989349365,
+        "sal_wref_c1": 0.8143085837364197,
+        "sal_wref_c2": 0.4500882923603058,
+        "sal_wref_c3": 0.3059209883213043,
+        "sal_wref_c4": 0.2602294981479645,
+        "sal_wref_c5": 0.20820896327495575
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2647.302490234375,
+        "gradnorm_l1_uncentered": 3249.771728515625,
+        "gradnorm_l2_centered": 5.389833927154541,
+        "gradnorm_l2_uncentered": 6.537562847137451,
+        "sal_noref_c1": 16.62956428527832,
+        "sal_noref_c2": 8.338661193847656,
+        "sal_noref_c3": 6.28978157043457,
+        "sal_noref_c4": 5.171117305755615,
+        "sal_noref_c5": 4.502618789672852,
+        "sal_wref_c1": 3.0693304538726807,
+        "sal_wref_c2": 1.5995501279830933,
+        "sal_wref_c3": 1.7750698328018188,
+        "sal_wref_c4": 1.633922815322876,
+        "sal_wref_c5": 1.4802522659301758
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "MusicTheory_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 805.1826782226562,
+        "gradnorm_l1_uncentered": 689.6441040039062,
+        "gradnorm_l2_centered": 1.6818817853927612,
+        "gradnorm_l2_uncentered": 1.4457520246505737,
+        "sal_noref_c1": 0.9498327374458313,
+        "sal_noref_c2": 0.4861351549625397,
+        "sal_noref_c3": 0.3326950669288635,
+        "sal_noref_c4": 0.2664383053779602,
+        "sal_noref_c5": 0.21345479786396027,
+        "sal_wref_c1": 1.7192471027374268,
+        "sal_wref_c2": 0.8581547141075134,
+        "sal_wref_c3": 0.5862621665000916,
+        "sal_wref_c4": 0.45298030972480774,
+        "sal_wref_c5": 0.36605364084243774
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "MathAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 842.9569091796875,
+        "gradnorm_l1_uncentered": 485.97332763671875,
+        "gradnorm_l2_centered": 1.7738077640533447,
+        "gradnorm_l2_uncentered": 0.9652634859085083,
+        "sal_noref_c1": 0.4349154233932495,
+        "sal_noref_c2": 0.22508129477500916,
+        "sal_noref_c3": 0.16971026360988617,
+        "sal_noref_c4": 0.127384215593338,
+        "sal_noref_c5": 0.10191019624471664,
+        "sal_wref_c1": 2.617828130722046,
+        "sal_wref_c2": 1.3281631469726562,
+        "sal_wref_c3": 0.9138467907905579,
+        "sal_wref_c4": 0.6856245994567871,
+        "sal_wref_c5": 0.5502303838729858
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 899.2576293945312,
+        "gradnorm_l1_uncentered": 324.9954528808594,
+        "gradnorm_l2_centered": 2.0249383449554443,
+        "gradnorm_l2_uncentered": 0.5802407264709473,
+        "sal_noref_c1": 0.10642227530479431,
+        "sal_noref_c2": 0.059568166732788086,
+        "sal_noref_c3": 0.04011246934533119,
+        "sal_noref_c4": 0.030362717807292938,
+        "sal_noref_c5": 0.024861281737685204,
+        "sal_wref_c1": 3.791215658187866,
+        "sal_wref_c2": 1.9103128910064697,
+        "sal_wref_c3": 1.2736424207687378,
+        "sal_wref_c4": 0.9567577242851257,
+        "sal_wref_c5": 0.765521764755249
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2333.597412109375,
+        "gradnorm_l1_uncentered": 2911.79833984375,
+        "gradnorm_l2_centered": 6.008780479431152,
+        "gradnorm_l2_uncentered": 7.401867389678955,
+        "sal_noref_c1": 27.404598236083984,
+        "sal_noref_c2": 13.733798027038574,
+        "sal_noref_c3": 10.261473655700684,
+        "sal_noref_c4": 8.389751434326172,
+        "sal_noref_c5": 7.8927321434021,
+        "sal_wref_c1": 8.758890151977539,
+        "sal_wref_c2": 4.430919170379639,
+        "sal_wref_c3": 4.027708053588867,
+        "sal_wref_c4": 3.5790464878082275,
+        "sal_wref_c5": 4.102301120758057
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5102.33056640625,
+        "gradnorm_l1_uncentered": 5722.560546875,
+        "gradnorm_l2_centered": 8.51589298248291,
+        "gradnorm_l2_uncentered": 9.733789443969727,
+        "sal_noref_c1": 37.0341796875,
+        "sal_noref_c2": 22.596271514892578,
+        "sal_noref_c3": 15.11340045928955,
+        "sal_noref_c4": 11.722434043884277,
+        "sal_noref_c5": 9.396295547485352,
+        "sal_wref_c1": 15.04355525970459,
+        "sal_wref_c2": 11.552898406982422,
+        "sal_wref_c3": 7.775905609130859,
+        "sal_wref_c4": 6.54293155670166,
+        "sal_wref_c5": 5.279233455657959
+      }
+    }
+  ]
+}

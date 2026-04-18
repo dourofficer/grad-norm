@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "52.json",
+    "question_id": "b9763138-c053-4832-9f55-86200cb1f99c",
+    "mistake_agent": "ISBNCheckDigit_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "Compute the check digit the Tropicos ID for the Order Helotiales would have if it were an ISBN-10 number."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "ISBNCheckDigit_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 833.25341796875,
+        "gradnorm_l1_uncentered": 426.79296875,
+        "gradnorm_l2_centered": 1.6011319160461426,
+        "gradnorm_l2_uncentered": 0.8763895034790039,
+        "sal_noref_c1": 0.07464537769556046,
+        "sal_noref_c2": 0.0977383702993393,
+        "sal_noref_c3": 0.0666513592004776,
+        "sal_noref_c4": 0.0581778883934021,
+        "sal_noref_c5": 0.04790513589978218,
+        "sal_wref_c1": 1.7251192331314087,
+        "sal_wref_c2": 0.9482960104942322,
+        "sal_wref_c3": 0.6348247528076172,
+        "sal_wref_c4": 0.48874905705451965,
+        "sal_wref_c5": 0.393799751996994
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5414.48974609375,
+        "gradnorm_l1_uncentered": 5731.7822265625,
+        "gradnorm_l2_centered": 10.849833488464355,
+        "gradnorm_l2_uncentered": 11.897685050964355,
+        "sal_noref_c1": 44.54843521118164,
+        "sal_noref_c2": 34.206207275390625,
+        "sal_noref_c3": 24.27946662902832,
+        "sal_noref_c4": 18.917043685913086,
+        "sal_noref_c5": 15.209394454956055,
+        "sal_wref_c1": 15.158432960510254,
+        "sal_wref_c2": 22.067346572875977,
+        "sal_wref_c3": 17.621736526489258,
+        "sal_wref_c4": 13.696200370788574,
+        "sal_wref_c5": 10.969324111938477
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1019.4193115234375,
+        "gradnorm_l1_uncentered": 1086.0301513671875,
+        "gradnorm_l2_centered": 1.6680197715759277,
+        "gradnorm_l2_uncentered": 2.0776267051696777,
+        "sal_noref_c1": 1.201503872871399,
+        "sal_noref_c2": 0.8903874158859253,
+        "sal_noref_c3": 0.6484987735748291,
+        "sal_noref_c4": 0.4959547221660614,
+        "sal_noref_c5": 0.4027916491031647,
+        "sal_wref_c1": 0.40572673082351685,
+        "sal_wref_c2": 0.20509026944637299,
+        "sal_wref_c3": 0.15100817382335663,
+        "sal_wref_c4": 0.13948217034339905,
+        "sal_wref_c5": 0.1120501384139061
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4328.869140625,
+        "gradnorm_l1_uncentered": 4626.98291015625,
+        "gradnorm_l2_centered": 8.022439002990723,
+        "gradnorm_l2_uncentered": 8.890554428100586,
+        "sal_noref_c1": 20.1878719329834,
+        "sal_noref_c2": 14.169353485107422,
+        "sal_noref_c3": 9.611108779907227,
+        "sal_noref_c4": 7.879016876220703,
+        "sal_noref_c5": 6.490460395812988,
+        "sal_wref_c1": 4.971195697784424,
+        "sal_wref_c2": 7.0686564445495605,
+        "sal_wref_c3": 4.730331897735596,
+        "sal_wref_c4": 4.872554779052734,
+        "sal_wref_c5": 4.262515068054199
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 738.1155395507812,
+        "gradnorm_l1_uncentered": 372.7906188964844,
+        "gradnorm_l2_centered": 1.52415931224823,
+        "gradnorm_l2_uncentered": 0.6801937222480774,
+        "sal_noref_c1": 0.09154942631721497,
+        "sal_noref_c2": 0.06008593738079071,
+        "sal_noref_c3": 0.04103253036737442,
+        "sal_noref_c4": 0.032332584261894226,
+        "sal_noref_c5": 0.026093149557709694,
+        "sal_wref_c1": 1.5536956787109375,
+        "sal_wref_c2": 0.9538404941558838,
+        "sal_wref_c3": 0.6435664296150208,
+        "sal_wref_c4": 0.48879480361938477,
+        "sal_wref_c5": 0.39340096712112427
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4545.9306640625,
+        "gradnorm_l1_uncentered": 4828.1455078125,
+        "gradnorm_l2_centered": 7.217337131500244,
+        "gradnorm_l2_uncentered": 7.982494354248047,
+        "sal_noref_c1": 15.606208801269531,
+        "sal_noref_c2": 8.825091361999512,
+        "sal_noref_c3": 6.077253341674805,
+        "sal_noref_c4": 6.906984329223633,
+        "sal_noref_c5": 5.716363430023193,
+        "sal_wref_c1": 4.005943775177002,
+        "sal_wref_c2": 3.063876152038574,
+        "sal_wref_c3": 2.247109889984131,
+        "sal_wref_c4": 4.568194389343262,
+        "sal_wref_c5": 3.971108913421631
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "VerificationExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 785.8963012695312,
+        "gradnorm_l1_uncentered": 460.6693420410156,
+        "gradnorm_l2_centered": 1.5516681671142578,
+        "gradnorm_l2_uncentered": 0.8829016089439392,
+        "sal_noref_c1": 0.09484119713306427,
+        "sal_noref_c2": 0.10315646231174469,
+        "sal_noref_c3": 0.0694497600197792,
+        "sal_noref_c4": 0.054514236748218536,
+        "sal_noref_c5": 0.045017141848802567,
+        "sal_wref_c1": 1.6546645164489746,
+        "sal_wref_c2": 0.9256861805915833,
+        "sal_wref_c3": 0.6258016228675842,
+        "sal_wref_c4": 0.4769020974636078,
+        "sal_wref_c5": 0.3846835196018219
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4065.10498046875,
+        "gradnorm_l1_uncentered": 4347.958984375,
+        "gradnorm_l2_centered": 6.502270698547363,
+        "gradnorm_l2_uncentered": 7.209641456604004,
+        "sal_noref_c1": 12.758925437927246,
+        "sal_noref_c2": 6.6124725341796875,
+        "sal_noref_c3": 4.5242600440979,
+        "sal_noref_c4": 5.362102508544922,
+        "sal_noref_c5": 4.4246673583984375,
+        "sal_wref_c1": 3.2099757194519043,
+        "sal_wref_c2": 1.806815266609192,
+        "sal_wref_c3": 1.3974131345748901,
+        "sal_wref_c4": 3.3273744583129883,
+        "sal_wref_c5": 2.9132041931152344
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Python_Programmer_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 765.361572265625,
+        "gradnorm_l1_uncentered": 458.271484375,
+        "gradnorm_l2_centered": 1.5041120052337646,
+        "gradnorm_l2_uncentered": 0.9085682034492493,
+        "sal_noref_c1": 0.12934908270835876,
+        "sal_noref_c2": 0.1551819145679474,
+        "sal_noref_c3": 0.1041080579161644,
+        "sal_noref_c4": 0.08125892281532288,
+        "sal_noref_c5": 0.06503728032112122,
+        "sal_wref_c1": 1.5544358491897583,
+        "sal_wref_c2": 0.8272249102592468,
+        "sal_wref_c3": 0.5575064420700073,
+        "sal_wref_c4": 0.4264277517795563,
+        "sal_wref_c5": 0.34448835253715515
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3247.939208984375,
+        "gradnorm_l1_uncentered": 3511.409423828125,
+        "gradnorm_l2_centered": 5.300358772277832,
+        "gradnorm_l2_uncentered": 5.927943706512451,
+        "sal_noref_c1": 8.140774726867676,
+        "sal_noref_c2": 4.157115936279297,
+        "sal_noref_c3": 2.9598844051361084,
+        "sal_noref_c4": 3.714188814163208,
+        "sal_noref_c5": 3.165004253387451,
+        "sal_wref_c1": 1.3310173749923706,
+        "sal_wref_c2": 0.693357527256012,
+        "sal_wref_c3": 0.7395644783973694,
+        "sal_wref_c4": 2.334686040878296,
+        "sal_wref_c5": 2.1098036766052246
+      }
+    }
+  ]
+}

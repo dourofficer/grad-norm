@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "14.json",
+    "question_id": "dc22a632-937f-4e6a-b72f-ba0ff3f5ff97",
+    "mistake_agent": "Culinary_Awards_Expert",
+    "mistake_step": 2,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "What was the complete title of the book in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show that started in 2015? Write the numbers in plain text if there are some in the title."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 873.3998413085938,
+        "gradnorm_l1_uncentered": 548.5707397460938,
+        "gradnorm_l2_centered": 1.6062700748443604,
+        "gradnorm_l2_uncentered": 1.2660572528839111,
+        "sal_noref_c1": 0.19108590483665466,
+        "sal_noref_c2": 0.24832773208618164,
+        "sal_noref_c3": 0.17204837501049042,
+        "sal_noref_c4": 0.14337225258350372,
+        "sal_noref_c5": 0.11772042512893677,
+        "sal_wref_c1": 1.4673947095870972,
+        "sal_wref_c2": 0.7504066228866577,
+        "sal_wref_c3": 0.5002713203430176,
+        "sal_wref_c4": 0.39447617530822754,
+        "sal_wref_c5": 0.32057899236679077
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Culinary_Awards_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1953.5958251953125,
+        "gradnorm_l1_uncentered": 2070.94775390625,
+        "gradnorm_l2_centered": 3.242086887359619,
+        "gradnorm_l2_uncentered": 3.841815233230591,
+        "sal_noref_c1": 2.4163496494293213,
+        "sal_noref_c2": 2.301002025604248,
+        "sal_noref_c3": 1.6940336227416992,
+        "sal_noref_c4": 1.3159520626068115,
+        "sal_noref_c5": 1.0530608892440796,
+        "sal_wref_c1": 0.180978924036026,
+        "sal_wref_c2": 0.35249826312065125,
+        "sal_wref_c3": 0.3053310513496399,
+        "sal_wref_c4": 0.3098098933696747,
+        "sal_wref_c5": 0.24804672598838806
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1048.8106689453125,
+        "gradnorm_l1_uncentered": 896.9058837890625,
+        "gradnorm_l2_centered": 1.9285556077957153,
+        "gradnorm_l2_uncentered": 1.7263160943984985,
+        "sal_noref_c1": 0.24863141775131226,
+        "sal_noref_c2": 0.2789076566696167,
+        "sal_noref_c3": 0.22462649643421173,
+        "sal_noref_c4": 0.17896002531051636,
+        "sal_noref_c5": 0.15655826032161713,
+        "sal_wref_c1": 1.342758059501648,
+        "sal_wref_c2": 0.6934927701950073,
+        "sal_wref_c3": 0.4646461308002472,
+        "sal_wref_c4": 0.3495960235595703,
+        "sal_wref_c5": 0.27972331643104553
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1241.857666015625,
+        "gradnorm_l1_uncentered": 1259.68603515625,
+        "gradnorm_l2_centered": 1.9822200536727905,
+        "gradnorm_l2_uncentered": 2.0681073665618896,
+        "sal_noref_c1": 0.73936927318573,
+        "sal_noref_c2": 0.41150039434432983,
+        "sal_noref_c3": 0.29019954800605774,
+        "sal_noref_c4": 0.21824905276298523,
+        "sal_noref_c5": 0.17685584723949432,
+        "sal_wref_c1": 0.5894775390625,
+        "sal_wref_c2": 0.3932490944862366,
+        "sal_wref_c3": 0.26266857981681824,
+        "sal_wref_c4": 0.19797314703464508,
+        "sal_wref_c5": 0.15931609272956848
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 772.7761840820312,
+        "gradnorm_l1_uncentered": 353.3265380859375,
+        "gradnorm_l2_centered": 1.6525812149047852,
+        "gradnorm_l2_uncentered": 0.6354659199714661,
+        "sal_noref_c1": 0.036347486078739166,
+        "sal_noref_c2": 0.02779693901538849,
+        "sal_noref_c3": 0.021595517173409462,
+        "sal_noref_c4": 0.018055595457553864,
+        "sal_noref_c5": 0.015855124220252037,
+        "sal_wref_c1": 1.793177604675293,
+        "sal_wref_c2": 1.09849214553833,
+        "sal_wref_c3": 0.7381441593170166,
+        "sal_wref_c4": 0.5536215901374817,
+        "sal_wref_c5": 0.447077214717865
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Culinary_Awards_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1343.1787109375,
+        "gradnorm_l1_uncentered": 1382.4361572265625,
+        "gradnorm_l2_centered": 2.162888526916504,
+        "gradnorm_l2_uncentered": 2.3370654582977295,
+        "sal_noref_c1": 0.8488305807113647,
+        "sal_noref_c2": 0.5283137559890747,
+        "sal_noref_c3": 0.375717431306839,
+        "sal_noref_c4": 0.2819463312625885,
+        "sal_noref_c5": 0.22573883831501007,
+        "sal_wref_c1": 0.571374237537384,
+        "sal_wref_c2": 0.327960729598999,
+        "sal_wref_c3": 0.2187148779630661,
+        "sal_wref_c4": 0.1675376445055008,
+        "sal_wref_c5": 0.13484957814216614
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 928.7027587890625,
+        "gradnorm_l1_uncentered": 722.0731811523438,
+        "gradnorm_l2_centered": 1.7324588298797607,
+        "gradnorm_l2_uncentered": 1.3489131927490234,
+        "sal_noref_c1": 0.16962610185146332,
+        "sal_noref_c2": 0.1754058301448822,
+        "sal_noref_c3": 0.1354743093252182,
+        "sal_noref_c4": 0.10418913513422012,
+        "sal_noref_c5": 0.08603178709745407,
+        "sal_wref_c1": 1.4617873430252075,
+        "sal_wref_c2": 0.7910316586494446,
+        "sal_wref_c3": 0.5273551344871521,
+        "sal_wref_c4": 0.395555704832077,
+        "sal_wref_c5": 0.316814124584198
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1533.126953125,
+        "gradnorm_l1_uncentered": 1555.9658203125,
+        "gradnorm_l2_centered": 2.416437864303589,
+        "gradnorm_l2_uncentered": 2.5216970443725586,
+        "sal_noref_c1": 0.7445686459541321,
+        "sal_noref_c2": 0.4711582064628601,
+        "sal_noref_c3": 0.3441556394100189,
+        "sal_noref_c4": 0.2689804136753082,
+        "sal_noref_c5": 0.21870338916778564,
+        "sal_wref_c1": 0.642659068107605,
+        "sal_wref_c2": 0.3659728467464447,
+        "sal_wref_c3": 0.24415276944637299,
+        "sal_wref_c4": 0.18458764255046844,
+        "sal_wref_c5": 0.14881740510463715
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1193.8905029296875,
+        "gradnorm_l1_uncentered": 1067.3421630859375,
+        "gradnorm_l2_centered": 2.219341278076172,
+        "gradnorm_l2_uncentered": 1.9842023849487305,
+        "sal_noref_c1": 0.21676287055015564,
+        "sal_noref_c2": 0.18201695382595062,
+        "sal_noref_c3": 0.1521819531917572,
+        "sal_noref_c4": 0.12904685735702515,
+        "sal_noref_c5": 0.1141083687543869,
+        "sal_wref_c1": 1.3363996744155884,
+        "sal_wref_c2": 0.7506533861160278,
+        "sal_wref_c3": 0.5004906058311462,
+        "sal_wref_c4": 0.37700310349464417,
+        "sal_wref_c5": 0.3026450574398041
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Culinary_Awards_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1302.630859375,
+        "gradnorm_l1_uncentered": 1317.3607177734375,
+        "gradnorm_l2_centered": 2.065311908721924,
+        "gradnorm_l2_uncentered": 2.1368536949157715,
+        "sal_noref_c1": 0.7355918884277344,
+        "sal_noref_c2": 0.39785856008529663,
+        "sal_noref_c3": 0.29213008284568787,
+        "sal_noref_c4": 0.2200404703617096,
+        "sal_noref_c5": 0.17615573108196259,
+        "sal_wref_c1": 0.5785205960273743,
+        "sal_wref_c2": 0.41020137071609497,
+        "sal_wref_c3": 0.27348101139068604,
+        "sal_wref_c4": 0.20734159648418427,
+        "sal_wref_c5": 0.16604068875312805
+      }
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "43.json",
+    "question_id": "16d825ff-1623-4176-a5b5-42e0f5c2b0ac",
+    "mistake_agent": "DataAnalysis_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What time was the Tri-Rail train that carried the most passengers on May 27, 2019 scheduled to arrive in Pompano Beach? Express your answer in the 12-hour digital clock format without leading zero if any, and include whether it is AM or PM."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 972.9088134765625,
+        "gradnorm_l1_uncentered": 286.7529296875,
+        "gradnorm_l2_centered": 2.0450663566589355,
+        "gradnorm_l2_uncentered": 0.6567289233207703,
+        "sal_noref_c1": 0.0982673317193985,
+        "sal_noref_c2": 0.06166313216090202,
+        "sal_noref_c3": 0.04113774746656418,
+        "sal_noref_c4": 0.030892526730895042,
+        "sal_noref_c5": 0.024846220389008522,
+        "sal_wref_c1": 3.8908305168151855,
+        "sal_wref_c2": 1.9356117248535156,
+        "sal_wref_c3": 1.290946125984192,
+        "sal_wref_c4": 0.9683704376220703,
+        "sal_wref_c5": 0.7747514247894287
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3827.183837890625,
+        "gradnorm_l1_uncentered": 4422.8369140625,
+        "gradnorm_l2_centered": 9.125126838684082,
+        "gradnorm_l2_uncentered": 10.475290298461914,
+        "sal_noref_c1": 46.412391662597656,
+        "sal_noref_c2": 34.54869842529297,
+        "sal_noref_c3": 23.872283935546875,
+        "sal_noref_c4": 18.026708602905273,
+        "sal_noref_c5": 14.498626708984375,
+        "sal_wref_c1": 19.4860782623291,
+        "sal_wref_c2": 21.351572036743164,
+        "sal_wref_c3": 15.14318561553955,
+        "sal_wref_c4": 11.518963813781738,
+        "sal_wref_c5": 9.624204635620117
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Database_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1181.4761962890625,
+        "gradnorm_l1_uncentered": 1527.32080078125,
+        "gradnorm_l2_centered": 2.94998836517334,
+        "gradnorm_l2_uncentered": 3.9461216926574707,
+        "sal_noref_c1": 6.839205265045166,
+        "sal_noref_c2": 4.730098724365234,
+        "sal_noref_c3": 3.2349469661712646,
+        "sal_noref_c4": 2.4665534496307373,
+        "sal_noref_c5": 1.9871143102645874,
+        "sal_wref_c1": 0.09124831110239029,
+        "sal_wref_c2": 1.2827099561691284,
+        "sal_wref_c3": 0.9367172718048096,
+        "sal_wref_c4": 0.7250551581382751,
+        "sal_wref_c5": 0.6149708032608032
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 833.6538696289062,
+        "gradnorm_l1_uncentered": 517.70068359375,
+        "gradnorm_l2_centered": 1.6952624320983887,
+        "gradnorm_l2_uncentered": 1.0944442749023438,
+        "sal_noref_c1": 0.594305694103241,
+        "sal_noref_c2": 0.3472270369529724,
+        "sal_noref_c3": 0.2464991807937622,
+        "sal_noref_c4": 0.1901356428861618,
+        "sal_noref_c5": 0.1528913974761963,
+        "sal_wref_c1": 2.293419599533081,
+        "sal_wref_c2": 1.165853500366211,
+        "sal_wref_c3": 0.7868908047676086,
+        "sal_wref_c4": 0.5920431613922119,
+        "sal_wref_c5": 0.4753011167049408
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2116.422119140625,
+        "gradnorm_l1_uncentered": 2693.361328125,
+        "gradnorm_l2_centered": 4.158077716827393,
+        "gradnorm_l2_uncentered": 5.245205402374268,
+        "sal_noref_c1": 11.046587944030762,
+        "sal_noref_c2": 5.583374500274658,
+        "sal_noref_c3": 4.889742851257324,
+        "sal_noref_c4": 3.66751766204834,
+        "sal_noref_c5": 2.9371306896209717,
+        "sal_wref_c1": 1.0033313035964966,
+        "sal_wref_c2": 0.6018807888031006,
+        "sal_wref_c3": 1.5243571996688843,
+        "sal_wref_c4": 1.1440695524215698,
+        "sal_wref_c5": 0.9281031489372253
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Database_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 825.8909912109375,
+        "gradnorm_l1_uncentered": 681.7135009765625,
+        "gradnorm_l2_centered": 1.6111483573913574,
+        "gradnorm_l2_uncentered": 1.3020565509796143,
+        "sal_noref_c1": 0.8861539363861084,
+        "sal_noref_c2": 0.4468868374824524,
+        "sal_noref_c3": 0.30134645104408264,
+        "sal_noref_c4": 0.22857174277305603,
+        "sal_noref_c5": 0.18589520454406738,
+        "sal_wref_c1": 1.8024438619613647,
+        "sal_wref_c2": 0.8972879648208618,
+        "sal_wref_c3": 0.5993278622627258,
+        "sal_wref_c4": 0.4509899616241455,
+        "sal_wref_c5": 0.36086922883987427
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2322.773193359375,
+        "gradnorm_l1_uncentered": 2784.60791015625,
+        "gradnorm_l2_centered": 5.516099452972412,
+        "gradnorm_l2_uncentered": 6.398096561431885,
+        "sal_noref_c1": 11.48179817199707,
+        "sal_noref_c2": 7.64992094039917,
+        "sal_noref_c3": 7.215496063232422,
+        "sal_noref_c4": 6.857181072235107,
+        "sal_noref_c5": 5.541927814483643,
+        "sal_wref_c1": 1.1576515436172485,
+        "sal_wref_c2": 2.619603157043457,
+        "sal_wref_c3": 3.7440102100372314,
+        "sal_wref_c4": 4.075087070465088,
+        "sal_wref_c5": 3.2614848613739014
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 812.7564086914062,
+        "gradnorm_l1_uncentered": 1018.9935913085938,
+        "gradnorm_l2_centered": 1.6901648044586182,
+        "gradnorm_l2_uncentered": 2.3277080059051514,
+        "sal_noref_c1": 2.9731123447418213,
+        "sal_noref_c2": 1.4871141910552979,
+        "sal_noref_c3": 1.037619709968567,
+        "sal_noref_c4": 0.8114591240882874,
+        "sal_noref_c5": 0.6545715928077698,
+        "sal_wref_c1": 0.29146987199783325,
+        "sal_wref_c2": 0.1575656682252884,
+        "sal_wref_c3": 0.16097913682460785,
+        "sal_wref_c4": 0.16731248795986176,
+        "sal_wref_c5": 0.1414237916469574
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8260.0234375,
+        "gradnorm_l1_uncentered": 9044.9794921875,
+        "gradnorm_l2_centered": 19.87824058532715,
+        "gradnorm_l2_uncentered": 21.51683235168457,
+        "sal_noref_c1": 266.90716552734375,
+        "sal_noref_c2": 139.8563995361328,
+        "sal_noref_c3": 115.18416595458984,
+        "sal_noref_c4": 91.43728637695312,
+        "sal_noref_c5": 74.37152099609375,
+        "sal_wref_c1": 205.75282287597656,
+        "sal_wref_c2": 108.28173065185547,
+        "sal_wref_c3": 93.50225067138672,
+        "sal_wref_c4": 75.36871337890625,
+        "sal_wref_c5": 61.79564666748047
+      }
+    }
+  ]
+}

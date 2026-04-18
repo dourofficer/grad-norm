@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "88.json",
+    "question_id": "08cae58d-4084-4616-b6dd-dd6534e4825b",
+    "mistake_agent": "FinancialData_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "According to Google Finance, when was the first year the Apple stock went above $50 (without adjusting for stock split)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "FinancialData_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 972.0685424804688,
+        "gradnorm_l1_uncentered": 313.93121337890625,
+        "gradnorm_l2_centered": 2.0424301624298096,
+        "gradnorm_l2_uncentered": 0.7474938035011292,
+        "sal_noref_c1": 0.11563131213188171,
+        "sal_noref_c2": 0.0780983492732048,
+        "sal_noref_c3": 0.05219626426696777,
+        "sal_noref_c4": 0.039147280156612396,
+        "sal_noref_c5": 0.03240028768777847,
+        "sal_wref_c1": 3.7981507778167725,
+        "sal_wref_c2": 1.8928494453430176,
+        "sal_wref_c3": 1.2634657621383667,
+        "sal_wref_c4": 0.9478294253349304,
+        "sal_wref_c5": 0.7584542632102966
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1613.984375,
+        "gradnorm_l1_uncentered": 2054.613525390625,
+        "gradnorm_l2_centered": 3.7651987075805664,
+        "gradnorm_l2_uncentered": 4.886889934539795,
+        "sal_noref_c1": 10.40168571472168,
+        "sal_noref_c2": 7.5125579833984375,
+        "sal_noref_c3": 5.0952606201171875,
+        "sal_noref_c4": 3.838632583618164,
+        "sal_noref_c5": 3.0979034900665283,
+        "sal_wref_c1": 0.8124955892562866,
+        "sal_wref_c2": 2.6496174335479736,
+        "sal_wref_c3": 1.8545676469802856,
+        "sal_wref_c4": 1.4380606412887573,
+        "sal_wref_c5": 1.2254526615142822
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "DataValidation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 868.5147094726562,
+        "gradnorm_l1_uncentered": 358.26611328125,
+        "gradnorm_l2_centered": 1.8579754829406738,
+        "gradnorm_l2_uncentered": 0.7308038473129272,
+        "sal_noref_c1": 0.262838214635849,
+        "sal_noref_c2": 0.1351621448993683,
+        "sal_noref_c3": 0.10228737443685532,
+        "sal_noref_c4": 0.08003059774637222,
+        "sal_noref_c5": 0.06571553647518158,
+        "sal_wref_c1": 3.1012017726898193,
+        "sal_wref_c2": 1.5426322221755981,
+        "sal_wref_c3": 1.0356694459915161,
+        "sal_wref_c4": 0.7827330827713013,
+        "sal_wref_c5": 0.6272966265678406
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 999.170654296875,
+        "gradnorm_l1_uncentered": 851.0308837890625,
+        "gradnorm_l2_centered": 1.7349309921264648,
+        "gradnorm_l2_uncentered": 1.3555240631103516,
+        "sal_noref_c1": 0.7837158441543579,
+        "sal_noref_c2": 0.40242063999176025,
+        "sal_noref_c3": 0.26955536007881165,
+        "sal_noref_c4": 0.2039221078157425,
+        "sal_noref_c5": 0.1680144965648651,
+        "sal_wref_c1": 1.9525365829467773,
+        "sal_wref_c2": 0.9739391207695007,
+        "sal_wref_c3": 0.6493619084358215,
+        "sal_wref_c4": 0.48808860778808594,
+        "sal_wref_c5": 0.3927484154701233
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 889.160888671875,
+        "gradnorm_l1_uncentered": 388.32958984375,
+        "gradnorm_l2_centered": 1.8448779582977295,
+        "gradnorm_l2_uncentered": 0.7806711196899414,
+        "sal_noref_c1": 0.2998924255371094,
+        "sal_noref_c2": 0.14964953064918518,
+        "sal_noref_c3": 0.11811845749616623,
+        "sal_noref_c4": 0.08991547673940659,
+        "sal_noref_c5": 0.07193473726511002,
+        "sal_wref_c1": 2.9563074111938477,
+        "sal_wref_c2": 1.4735068082809448,
+        "sal_wref_c3": 1.008529543876648,
+        "sal_wref_c4": 0.7603849768638611,
+        "sal_wref_c5": 0.6083096265792847
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 935.6209106445312,
+        "gradnorm_l1_uncentered": 354.98199462890625,
+        "gradnorm_l2_centered": 1.9946483373641968,
+        "gradnorm_l2_uncentered": 0.6291711926460266,
+        "sal_noref_c1": 0.14254818856716156,
+        "sal_noref_c2": 0.0775814801454544,
+        "sal_noref_c3": 0.05188979580998421,
+        "sal_noref_c4": 0.03910849243402481,
+        "sal_noref_c5": 0.03268643468618393,
+        "sal_wref_c1": 3.561304807662964,
+        "sal_wref_c2": 1.7947808504104614,
+        "sal_wref_c3": 1.1980782747268677,
+        "sal_wref_c4": 0.8994359970092773,
+        "sal_wref_c5": 0.7205647230148315
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataValidation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 833.3575439453125,
+        "gradnorm_l1_uncentered": 806.392578125,
+        "gradnorm_l2_centered": 1.6956977844238281,
+        "gradnorm_l2_uncentered": 1.839826226234436,
+        "sal_noref_c1": 1.6007150411605835,
+        "sal_noref_c2": 0.8503557443618774,
+        "sal_noref_c3": 0.5760884881019592,
+        "sal_noref_c4": 0.44006890058517456,
+        "sal_noref_c5": 0.39968276023864746,
+        "sal_wref_c1": 1.0102713108062744,
+        "sal_wref_c2": 0.5853627324104309,
+        "sal_wref_c3": 0.40380701422691345,
+        "sal_wref_c4": 0.30676281452178955,
+        "sal_wref_c5": 0.2861524820327759
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2814.32373046875,
+        "gradnorm_l1_uncentered": 3403.640380859375,
+        "gradnorm_l2_centered": 7.123682022094727,
+        "gradnorm_l2_uncentered": 8.543960571289062,
+        "sal_noref_c1": 35.82380676269531,
+        "sal_noref_c2": 18.027978897094727,
+        "sal_noref_c3": 14.44436264038086,
+        "sal_noref_c4": 11.056574821472168,
+        "sal_noref_c5": 10.139372825622559,
+        "sal_wref_c1": 13.602411270141602,
+        "sal_wref_c2": 6.929283142089844,
+        "sal_wref_c3": 7.048482418060303,
+        "sal_wref_c4": 5.443820953369141,
+        "sal_wref_c5": 5.794238090515137
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "FinancialData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2130.206787109375,
+        "gradnorm_l1_uncentered": 2620.670654296875,
+        "gradnorm_l2_centered": 4.913361549377441,
+        "gradnorm_l2_uncentered": 6.181514263153076,
+        "sal_noref_c1": 17.133222579956055,
+        "sal_noref_c2": 8.943527221679688,
+        "sal_noref_c3": 6.746371746063232,
+        "sal_noref_c4": 5.643514633178711,
+        "sal_noref_c5": 4.783768653869629,
+        "sal_wref_c1": 3.245137929916382,
+        "sal_wref_c2": 2.0499749183654785,
+        "sal_wref_c3": 2.214742422103882,
+        "sal_wref_c4": 2.2554285526275635,
+        "sal_wref_c5": 2.0162150859832764
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2917.942138671875,
+        "gradnorm_l1_uncentered": 3471.27490234375,
+        "gradnorm_l2_centered": 5.897073268890381,
+        "gradnorm_l2_uncentered": 7.231490135192871,
+        "sal_noref_c1": 24.35814094543457,
+        "sal_noref_c2": 13.867972373962402,
+        "sal_noref_c3": 9.580601692199707,
+        "sal_noref_c4": 7.195933818817139,
+        "sal_noref_c5": 5.96769380569458,
+        "sal_wref_c1": 6.931460857391357,
+        "sal_wref_c2": 5.203105926513672,
+        "sal_wref_c3": 3.840858221054077,
+        "sal_wref_c4": 2.9070470333099365,
+        "sal_wref_c5": 2.505831241607666
+      }
+    }
+  ]
+}

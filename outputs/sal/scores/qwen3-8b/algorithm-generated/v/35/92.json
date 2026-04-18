@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "68.json",
+    "question_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 3,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 623.5286254882812,
+        "gradnorm_l1_uncentered": 319.4689636230469,
+        "gradnorm_l2_centered": 1.502859354019165,
+        "gradnorm_l2_uncentered": 0.91717129945755,
+        "sal_noref_c1": 0.5680678486824036,
+        "sal_noref_c2": 0.30386286973953247,
+        "sal_noref_c3": 0.21526356041431427,
+        "sal_noref_c4": 0.1625819206237793,
+        "sal_noref_c5": 0.13115715980529785,
+        "sal_wref_c1": 2.070053815841675,
+        "sal_wref_c2": 1.025409460067749,
+        "sal_wref_c3": 0.6844117641448975,
+        "sal_wref_c4": 0.5133197903633118,
+        "sal_wref_c5": 0.41321420669555664
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 633.7235717773438,
+        "gradnorm_l1_uncentered": 242.76939392089844,
+        "gradnorm_l2_centered": 1.6901969909667969,
+        "gradnorm_l2_uncentered": 0.6548970341682434,
+        "sal_noref_c1": 0.2845495641231537,
+        "sal_noref_c2": 0.14334529638290405,
+        "sal_noref_c3": 0.10552725940942764,
+        "sal_noref_c4": 0.08087135851383209,
+        "sal_noref_c5": 0.06723771244287491,
+        "sal_wref_c1": 2.7007195949554443,
+        "sal_wref_c2": 1.3512651920318604,
+        "sal_wref_c3": 0.9009024500846863,
+        "sal_wref_c4": 0.6756971478462219,
+        "sal_wref_c5": 0.5409172177314758
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1457.0072021484375,
+        "gradnorm_l1_uncentered": 1897.007568359375,
+        "gradnorm_l2_centered": 2.6441762447357178,
+        "gradnorm_l2_uncentered": 4.475697994232178,
+        "sal_noref_c1": 16.443201065063477,
+        "sal_noref_c2": 8.60827350616455,
+        "sal_noref_c3": 5.757839679718018,
+        "sal_noref_c4": 4.463993549346924,
+        "sal_noref_c5": 3.587512493133545,
+        "sal_wref_c1": 3.3823742866516113,
+        "sal_wref_c2": 2.1629772186279297,
+        "sal_wref_c3": 1.505476951599121,
+        "sal_wref_c4": 1.226651668548584,
+        "sal_wref_c5": 0.9833930134773254
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 810.6430053710938,
+        "gradnorm_l1_uncentered": 1055.6641845703125,
+        "gradnorm_l2_centered": 1.417846441268921,
+        "gradnorm_l2_uncentered": 2.772406578063965,
+        "sal_noref_c1": 5.405630588531494,
+        "sal_noref_c2": 2.782987594604492,
+        "sal_noref_c3": 1.9370828866958618,
+        "sal_noref_c4": 1.49781334400177,
+        "sal_noref_c5": 1.2111281156539917,
+        "sal_wref_c1": 0.0036639152094721794,
+        "sal_wref_c2": 0.04263872653245926,
+        "sal_wref_c3": 0.060626644641160965,
+        "sal_wref_c4": 0.07845378667116165,
+        "sal_wref_c5": 0.08448132872581482
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 638.7013549804688,
+        "gradnorm_l1_uncentered": 810.7176513671875,
+        "gradnorm_l2_centered": 1.1963645219802856,
+        "gradnorm_l2_uncentered": 1.9369906187057495,
+        "sal_noref_c1": 2.6531434059143066,
+        "sal_noref_c2": 1.3809107542037964,
+        "sal_noref_c3": 0.9357492327690125,
+        "sal_noref_c4": 0.7030039429664612,
+        "sal_noref_c5": 0.5716203451156616,
+        "sal_wref_c1": 0.28831344842910767,
+        "sal_wref_c2": 0.27386564016342163,
+        "sal_wref_c3": 0.18507830798625946,
+        "sal_wref_c4": 0.14568011462688446,
+        "sal_wref_c5": 0.11654601991176605
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 920.6344604492188,
+        "gradnorm_l1_uncentered": 1308.51708984375,
+        "gradnorm_l2_centered": 1.8678635358810425,
+        "gradnorm_l2_uncentered": 3.497579336166382,
+        "sal_noref_c1": 9.5052490234375,
+        "sal_noref_c2": 4.92510461807251,
+        "sal_noref_c3": 3.463247537612915,
+        "sal_noref_c4": 2.5991594791412354,
+        "sal_noref_c5": 2.082228183746338,
+        "sal_wref_c1": 0.809524655342102,
+        "sal_wref_c2": 0.6662366390228271,
+        "sal_wref_c3": 0.5717409253120422,
+        "sal_wref_c4": 0.43113505840301514,
+        "sal_wref_c5": 0.36267566680908203
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4587.66650390625,
+        "gradnorm_l1_uncentered": 5132.72412109375,
+        "gradnorm_l2_centered": 10.590425491333008,
+        "gradnorm_l2_uncentered": 12.622962951660156,
+        "sal_noref_c1": 143.3126678466797,
+        "sal_noref_c2": 72.38330841064453,
+        "sal_noref_c3": 48.27218246459961,
+        "sal_noref_c4": 36.320682525634766,
+        "sal_noref_c5": 29.253402709960938,
+        "sal_wref_c1": 97.79084777832031,
+        "sal_wref_c2": 49.00738525390625,
+        "sal_wref_c3": 32.751007080078125,
+        "sal_wref_c4": 24.83535385131836,
+        "sal_wref_c5": 19.92978858947754
+      }
+    }
+  ]
+}

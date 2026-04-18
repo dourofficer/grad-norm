@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "123.json",
+    "question_id": "4e615af6f0348597b4133cc1ec5418bb3f35328e3d95e23a275027cee97b5e09",
+    "mistake_agent": "Paintball_Expert",
+    "mistake_step": 3,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which paintball places in Cologne, Germany are within a 10 minute walk from a karting track?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Karting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 875.8370971679688,
+        "gradnorm_l1_uncentered": 555.616943359375,
+        "gradnorm_l2_centered": 1.6456722021102905,
+        "gradnorm_l2_uncentered": 1.2122255563735962,
+        "sal_noref_c1": 0.1561279594898224,
+        "sal_noref_c2": 0.17616844177246094,
+        "sal_noref_c3": 0.11832212656736374,
+        "sal_noref_c4": 0.09997283667325974,
+        "sal_noref_c5": 0.0857141837477684,
+        "sal_wref_c1": 1.5000851154327393,
+        "sal_wref_c2": 0.7967401146888733,
+        "sal_wref_c3": 0.5341576933860779,
+        "sal_wref_c4": 0.4170587956905365,
+        "sal_wref_c5": 0.33859843015670776
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Geospatial_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 885.862060546875,
+        "gradnorm_l1_uncentered": 719.2323608398438,
+        "gradnorm_l2_centered": 1.5858346223831177,
+        "gradnorm_l2_uncentered": 1.2712290287017822,
+        "sal_noref_c1": 0.289823979139328,
+        "sal_noref_c2": 0.19074566662311554,
+        "sal_noref_c3": 0.1282871514558792,
+        "sal_noref_c4": 0.09682964533567429,
+        "sal_noref_c5": 0.08102168142795563,
+        "sal_wref_c1": 1.110959768295288,
+        "sal_wref_c2": 0.6449545621871948,
+        "sal_wref_c3": 0.4482417106628418,
+        "sal_wref_c4": 0.33879712224006653,
+        "sal_wref_c5": 0.2749243974685669
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2105.8173828125,
+        "gradnorm_l1_uncentered": 2375.179931640625,
+        "gradnorm_l2_centered": 3.6763312816619873,
+        "gradnorm_l2_uncentered": 4.485835075378418,
+        "sal_noref_c1": 5.2864885330200195,
+        "sal_noref_c2": 4.2832183837890625,
+        "sal_noref_c3": 2.8555383682250977,
+        "sal_noref_c4": 2.189544200897217,
+        "sal_noref_c5": 2.140806198120117,
+        "sal_wref_c1": 0.08413762599229813,
+        "sal_wref_c2": 0.9926434755325317,
+        "sal_wref_c3": 0.6748895645141602,
+        "sal_wref_c4": 0.5313111543655396,
+        "sal_wref_c5": 0.7750688195228577
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Paintball_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1160.470703125,
+        "gradnorm_l1_uncentered": 1000.152099609375,
+        "gradnorm_l2_centered": 1.9790384769439697,
+        "gradnorm_l2_uncentered": 1.6706677675247192,
+        "sal_noref_c1": 0.20956002175807953,
+        "sal_noref_c2": 0.14276516437530518,
+        "sal_noref_c3": 0.11214983463287354,
+        "sal_noref_c4": 0.08440198004245758,
+        "sal_noref_c5": 0.0677487924695015,
+        "sal_wref_c1": 1.2943886518478394,
+        "sal_wref_c2": 0.7753021121025085,
+        "sal_wref_c3": 0.5169553756713867,
+        "sal_wref_c4": 0.3887849748134613,
+        "sal_wref_c5": 0.3111535906791687
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1323.9334716796875,
+        "gradnorm_l1_uncentered": 1245.375244140625,
+        "gradnorm_l2_centered": 2.112701654434204,
+        "gradnorm_l2_uncentered": 2.0381674766540527,
+        "sal_noref_c1": 0.4550895094871521,
+        "sal_noref_c2": 0.3568688631057739,
+        "sal_noref_c3": 0.2559258043766022,
+        "sal_noref_c4": 0.20738635957241058,
+        "sal_noref_c5": 0.19113849103450775,
+        "sal_wref_c1": 0.9230634570121765,
+        "sal_wref_c2": 0.48076626658439636,
+        "sal_wref_c3": 0.3205180764198303,
+        "sal_wref_c4": 0.24362073838710785,
+        "sal_wref_c5": 0.19619515538215637
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Geospatial_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 839.7671508789062,
+        "gradnorm_l1_uncentered": 615.9165649414062,
+        "gradnorm_l2_centered": 1.5928771495819092,
+        "gradnorm_l2_uncentered": 1.0100399255752563,
+        "sal_noref_c1": 0.14142194390296936,
+        "sal_noref_c2": 0.08424285054206848,
+        "sal_noref_c3": 0.06162567436695099,
+        "sal_noref_c4": 0.04837227240204811,
+        "sal_noref_c5": 0.03882429748773575,
+        "sal_wref_c1": 1.415740966796875,
+        "sal_wref_c2": 0.9014794826507568,
+        "sal_wref_c3": 0.6061804890632629,
+        "sal_wref_c4": 0.4546748399734497,
+        "sal_wref_c5": 0.36379560828208923
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 999.06640625,
+        "gradnorm_l1_uncentered": 894.305908203125,
+        "gradnorm_l2_centered": 1.674469232559204,
+        "gradnorm_l2_uncentered": 1.3863452672958374,
+        "sal_noref_c1": 0.34577709436416626,
+        "sal_noref_c2": 0.19827744364738464,
+        "sal_noref_c3": 0.13839422166347504,
+        "sal_noref_c4": 0.11045945435762405,
+        "sal_noref_c5": 0.09090414643287659,
+        "sal_wref_c1": 0.9586821794509888,
+        "sal_wref_c2": 0.5962995290756226,
+        "sal_wref_c3": 0.3978993892669678,
+        "sal_wref_c4": 0.30351418256759644,
+        "sal_wref_c5": 0.24284608662128448
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Geospatial_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 915.7763671875,
+        "gradnorm_l1_uncentered": 717.5518188476562,
+        "gradnorm_l2_centered": 1.6202565431594849,
+        "gradnorm_l2_uncentered": 1.1403435468673706,
+        "sal_noref_c1": 0.22522495687007904,
+        "sal_noref_c2": 0.11958038806915283,
+        "sal_noref_c3": 0.08246085792779922,
+        "sal_noref_c4": 0.06551077961921692,
+        "sal_noref_c5": 0.05378122255206108,
+        "sal_wref_c1": 1.145819902420044,
+        "sal_wref_c2": 0.7650188207626343,
+        "sal_wref_c3": 0.5145261287689209,
+        "sal_wref_c4": 0.38666805624961853,
+        "sal_wref_c5": 0.30936098098754883
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3405.77783203125,
+        "gradnorm_l1_uncentered": 3482.28125,
+        "gradnorm_l2_centered": 6.562108039855957,
+        "gradnorm_l2_uncentered": 6.720250606536865,
+        "sal_noref_c1": 1.6476784944534302,
+        "sal_noref_c2": 1.1408313512802124,
+        "sal_noref_c3": 0.7701117396354675,
+        "sal_noref_c4": 0.695753812789917,
+        "sal_noref_c5": 0.5679451823234558,
+        "sal_wref_c1": 0.19900111854076385,
+        "sal_wref_c2": 0.1213729977607727,
+        "sal_wref_c3": 0.10826311260461807,
+        "sal_wref_c4": 0.21535040438175201,
+        "sal_wref_c5": 0.18218986690044403
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Paintball_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 836.170654296875,
+        "gradnorm_l1_uncentered": 575.1196899414062,
+        "gradnorm_l2_centered": 1.614875078201294,
+        "gradnorm_l2_uncentered": 0.8956931829452515,
+        "sal_noref_c1": 0.12868405878543854,
+        "sal_noref_c2": 0.0654335469007492,
+        "sal_noref_c3": 0.04387754574418068,
+        "sal_noref_c4": 0.03412573039531708,
+        "sal_noref_c5": 0.027607139199972153,
+        "sal_wref_c1": 1.3524450063705444,
+        "sal_wref_c2": 0.9226957559585571,
+        "sal_wref_c3": 0.6267045140266418,
+        "sal_wref_c4": 0.4700283706188202,
+        "sal_wref_c5": 0.37786251306533813
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "122.json",
+    "question_id": "557e78eceec08ca8b0da5f9fdaca6e1c7ec6140a8ce600983ee716327dab005e",
+    "mistake_agent": "BingAPI_Expert",
+    "mistake_step": 3,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which bar is closest to Mummers Museum in Philadelphia and is wheel chair accessible?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "BingAPI_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1111.6783447265625,
+        "gradnorm_l1_uncentered": 708.9423217773438,
+        "gradnorm_l2_centered": 2.1492886543273926,
+        "gradnorm_l2_uncentered": 1.596809983253479,
+        "sal_noref_c1": 0.4358268976211548,
+        "sal_noref_c2": 0.2710585296154022,
+        "sal_noref_c3": 0.18072044849395752,
+        "sal_noref_c4": 0.1428755819797516,
+        "sal_noref_c5": 0.12109924852848053,
+        "sal_wref_c1": 2.699371814727783,
+        "sal_wref_c2": 1.3695627450942993,
+        "sal_wref_c3": 0.9139276146888733,
+        "sal_wref_c4": 0.6931883096694946,
+        "sal_wref_c5": 0.5561515092849731
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Accessibility_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 890.0975341796875,
+        "gradnorm_l1_uncentered": 591.2177734375,
+        "gradnorm_l2_centered": 1.7790477275848389,
+        "gradnorm_l2_uncentered": 1.2007704973220825,
+        "sal_noref_c1": 0.5752193927764893,
+        "sal_noref_c2": 0.33283868432044983,
+        "sal_noref_c3": 0.22189615666866302,
+        "sal_noref_c4": 0.17983056604862213,
+        "sal_noref_c5": 0.16581740975379944,
+        "sal_wref_c1": 2.3364171981811523,
+        "sal_wref_c2": 1.184600830078125,
+        "sal_wref_c3": 0.7903862595558167,
+        "sal_wref_c4": 0.6121753454208374,
+        "sal_wref_c5": 0.5135061740875244
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "BingAPI_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 936.5726318359375,
+        "gradnorm_l1_uncentered": 657.705078125,
+        "gradnorm_l2_centered": 1.8948439359664917,
+        "gradnorm_l2_uncentered": 1.2195050716400146,
+        "sal_noref_c1": 0.4528903067111969,
+        "sal_noref_c2": 0.2426229566335678,
+        "sal_noref_c3": 0.19160659611225128,
+        "sal_noref_c4": 0.14374861121177673,
+        "sal_noref_c5": 0.11788155883550644,
+        "sal_wref_c1": 2.608156204223633,
+        "sal_wref_c2": 1.3027620315551758,
+        "sal_wref_c3": 0.8894591331481934,
+        "sal_wref_c4": 0.6682133078575134,
+        "sal_wref_c5": 0.5402249097824097
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "BingAPI_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 910.823974609375,
+        "gradnorm_l1_uncentered": 644.4426879882812,
+        "gradnorm_l2_centered": 1.8369642496109009,
+        "gradnorm_l2_uncentered": 1.3566579818725586,
+        "sal_noref_c1": 0.6191838979721069,
+        "sal_noref_c2": 0.36893272399902344,
+        "sal_noref_c3": 0.27270910143852234,
+        "sal_noref_c4": 0.2252713143825531,
+        "sal_noref_c5": 0.18076984584331512,
+        "sal_wref_c1": 2.2803235054016113,
+        "sal_wref_c2": 1.1654434204101562,
+        "sal_wref_c3": 0.7955487370491028,
+        "sal_wref_c4": 0.6093875169754028,
+        "sal_wref_c5": 0.4886525571346283
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1126.790771484375,
+        "gradnorm_l1_uncentered": 1553.4779052734375,
+        "gradnorm_l2_centered": 2.6056816577911377,
+        "gradnorm_l2_uncentered": 3.7254137992858887,
+        "sal_noref_c1": 7.156675815582275,
+        "sal_noref_c2": 4.552928924560547,
+        "sal_noref_c3": 3.1068315505981445,
+        "sal_noref_c4": 2.360185146331787,
+        "sal_noref_c5": 1.945054292678833,
+        "sal_wref_c1": 0.13793623447418213,
+        "sal_wref_c2": 0.9857174158096313,
+        "sal_wref_c3": 0.7243576645851135,
+        "sal_wref_c4": 0.5663715600967407,
+        "sal_wref_c5": 0.5429307222366333
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "BingAPI_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 880.3386840820312,
+        "gradnorm_l1_uncentered": 450.9527282714844,
+        "gradnorm_l2_centered": 1.8795185089111328,
+        "gradnorm_l2_uncentered": 0.8030040264129639,
+        "sal_noref_c1": 0.2605178952217102,
+        "sal_noref_c2": 0.12988711893558502,
+        "sal_noref_c3": 0.0928657278418541,
+        "sal_noref_c4": 0.07027953863143921,
+        "sal_noref_c5": 0.05697202682495117,
+        "sal_wref_c1": 3.131103754043579,
+        "sal_wref_c2": 1.5623363256454468,
+        "sal_wref_c3": 1.0441036224365234,
+        "sal_wref_c4": 0.784422755241394,
+        "sal_wref_c5": 0.6275831460952759
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 902.038818359375,
+        "gradnorm_l1_uncentered": 419.57476806640625,
+        "gradnorm_l2_centered": 1.8351519107818604,
+        "gradnorm_l2_uncentered": 0.9715809226036072,
+        "sal_noref_c1": 0.37758341431617737,
+        "sal_noref_c2": 0.19641399383544922,
+        "sal_noref_c3": 0.15265785157680511,
+        "sal_noref_c4": 0.11849332600831985,
+        "sal_noref_c5": 0.0949903279542923,
+        "sal_wref_c1": 2.7684812545776367,
+        "sal_wref_c2": 1.3760813474655151,
+        "sal_wref_c3": 0.9477996230125427,
+        "sal_wref_c4": 0.7132516503334045,
+        "sal_wref_c5": 0.5729315876960754
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Accessibility_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 954.7984619140625,
+        "gradnorm_l1_uncentered": 216.44247436523438,
+        "gradnorm_l2_centered": 2.0702595710754395,
+        "gradnorm_l2_uncentered": 0.38481593132019043,
+        "sal_noref_c1": 0.06254421919584274,
+        "sal_noref_c2": 0.03148733824491501,
+        "sal_noref_c3": 0.021055517718195915,
+        "sal_noref_c4": 0.01579291932284832,
+        "sal_noref_c5": 0.012821448035538197,
+        "sal_wref_c1": 4.078151226043701,
+        "sal_wref_c2": 2.0354299545288086,
+        "sal_wref_c3": 1.3573704957962036,
+        "sal_wref_c4": 1.018396019935608,
+        "sal_wref_c5": 0.8147168159484863
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1119.9031982421875,
+        "gradnorm_l1_uncentered": 1183.92333984375,
+        "gradnorm_l2_centered": 2.1584889888763428,
+        "gradnorm_l2_uncentered": 2.2637152671813965,
+        "sal_noref_c1": 1.4864742755889893,
+        "sal_noref_c2": 0.8017492294311523,
+        "sal_noref_c3": 0.5422409176826477,
+        "sal_noref_c4": 0.40709224343299866,
+        "sal_noref_c5": 0.3261573910713196,
+        "sal_wref_c1": 1.165263056755066,
+        "sal_wref_c2": 0.6771538257598877,
+        "sal_wref_c3": 0.45421770215034485,
+        "sal_wref_c4": 0.3410777151584625,
+        "sal_wref_c5": 0.2736443877220154
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 924.333984375,
+        "gradnorm_l1_uncentered": 709.784912109375,
+        "gradnorm_l2_centered": 1.9082016944885254,
+        "gradnorm_l2_uncentered": 1.2761398553848267,
+        "sal_noref_c1": 0.4757242500782013,
+        "sal_noref_c2": 0.23731587827205658,
+        "sal_noref_c3": 0.16091391444206238,
+        "sal_noref_c4": 0.12164144217967987,
+        "sal_noref_c5": 0.09733422100543976,
+        "sal_wref_c1": 2.558745861053467,
+        "sal_wref_c2": 1.2827956676483154,
+        "sal_wref_c3": 0.862088680267334,
+        "sal_wref_c4": 0.6466130614280701,
+        "sal_wref_c5": 0.5179550647735596
+      }
+    }
+  ]
+}

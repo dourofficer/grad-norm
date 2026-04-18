@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "32.json",
+    "question_id": "73c1b9fe-ee1d-4cf4-96ca-35c08f97b054",
+    "mistake_agent": "SpeciesSightingsData_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "According to the USGS, in what year was the American Alligator first found west of Texas (not including Texas)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "SpeciesSightingsData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 906.3119506835938,
+        "gradnorm_l1_uncentered": 581.4202880859375,
+        "gradnorm_l2_centered": 1.705520510673523,
+        "gradnorm_l2_uncentered": 1.2826260328292847,
+        "sal_noref_c1": 0.1358652263879776,
+        "sal_noref_c2": 0.18297705054283142,
+        "sal_noref_c3": 0.1246991828083992,
+        "sal_noref_c4": 0.11146127432584763,
+        "sal_noref_c5": 0.09425167739391327,
+        "sal_wref_c1": 1.5951160192489624,
+        "sal_wref_c2": 0.8372767567634583,
+        "sal_wref_c3": 0.5590417385101318,
+        "sal_wref_c4": 0.442119836807251,
+        "sal_wref_c5": 0.3569735586643219
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "SpeciesSightingsData_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1555.09619140625,
+        "gradnorm_l1_uncentered": 1622.720947265625,
+        "gradnorm_l2_centered": 2.7768282890319824,
+        "gradnorm_l2_uncentered": 3.2412006855010986,
+        "sal_noref_c1": 1.4994938373565674,
+        "sal_noref_c2": 1.523738145828247,
+        "sal_noref_c3": 1.0335363149642944,
+        "sal_noref_c4": 0.9171393513679504,
+        "sal_noref_c5": 0.7692177295684814,
+        "sal_wref_c1": 0.4513480067253113,
+        "sal_wref_c2": 0.3445078134536743,
+        "sal_wref_c3": 0.23324398696422577,
+        "sal_wref_c4": 0.3393014669418335,
+        "sal_wref_c5": 0.2718350291252136
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1518.3486328125,
+        "gradnorm_l1_uncentered": 1700.6951904296875,
+        "gradnorm_l2_centered": 2.6101114749908447,
+        "gradnorm_l2_uncentered": 3.322157382965088,
+        "sal_noref_c1": 2.904735803604126,
+        "sal_noref_c2": 2.7196857929229736,
+        "sal_noref_c3": 1.8990068435668945,
+        "sal_noref_c4": 1.4312770366668701,
+        "sal_noref_c5": 1.1854727268218994,
+        "sal_wref_c1": 0.04532778635621071,
+        "sal_wref_c2": 0.5841400027275085,
+        "sal_wref_c3": 0.454301118850708,
+        "sal_wref_c4": 0.3437013030052185,
+        "sal_wref_c5": 0.28553786873817444
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2352.7724609375,
+        "gradnorm_l1_uncentered": 2489.878662109375,
+        "gradnorm_l2_centered": 3.971362590789795,
+        "gradnorm_l2_uncentered": 4.355445861816406,
+        "sal_noref_c1": 1.7324031591415405,
+        "sal_noref_c2": 1.433748483657837,
+        "sal_noref_c3": 1.1203131675720215,
+        "sal_noref_c4": 0.885831892490387,
+        "sal_noref_c5": 0.7189501523971558,
+        "sal_wref_c1": 0.34296104311943054,
+        "sal_wref_c2": 0.19541192054748535,
+        "sal_wref_c3": 0.1536378115415573,
+        "sal_wref_c4": 0.12213023751974106,
+        "sal_wref_c5": 0.10777071863412857
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1067.3653564453125,
+        "gradnorm_l1_uncentered": 911.1529541015625,
+        "gradnorm_l2_centered": 1.944828748703003,
+        "gradnorm_l2_uncentered": 1.7685437202453613,
+        "sal_noref_c1": 0.2546219825744629,
+        "sal_noref_c2": 0.3099561929702759,
+        "sal_noref_c3": 0.24459071457386017,
+        "sal_noref_c4": 0.18640641868114471,
+        "sal_noref_c5": 0.15304988622665405,
+        "sal_wref_c1": 1.3598921298980713,
+        "sal_wref_c2": 0.6916270852088928,
+        "sal_wref_c3": 0.4648655652999878,
+        "sal_wref_c4": 0.3486717939376831,
+        "sal_wref_c5": 0.2789952754974365
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "AlligatorBiology_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1189.4976806640625,
+        "gradnorm_l1_uncentered": 1196.4674072265625,
+        "gradnorm_l2_centered": 2.0325570106506348,
+        "gradnorm_l2_uncentered": 2.041461706161499,
+        "sal_noref_c1": 0.500710666179657,
+        "sal_noref_c2": 0.3534032106399536,
+        "sal_noref_c3": 0.27002814412117004,
+        "sal_noref_c4": 0.21897055208683014,
+        "sal_noref_c5": 0.1752525418996811,
+        "sal_wref_c1": 0.9192237257957458,
+        "sal_wref_c2": 0.5148783922195435,
+        "sal_wref_c3": 0.34346678853034973,
+        "sal_wref_c4": 0.2608339488506317,
+        "sal_wref_c5": 0.20943212509155273
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1087.579345703125,
+        "gradnorm_l1_uncentered": 1149.66357421875,
+        "gradnorm_l2_centered": 1.828163743019104,
+        "gradnorm_l2_uncentered": 1.8984262943267822,
+        "sal_noref_c1": 0.6848355531692505,
+        "sal_noref_c2": 0.4163416624069214,
+        "sal_noref_c3": 0.27772629261016846,
+        "sal_noref_c4": 0.22979888319969177,
+        "sal_noref_c5": 0.18525049090385437,
+        "sal_wref_c1": 0.6554101705551147,
+        "sal_wref_c2": 0.3809531033039093,
+        "sal_wref_c3": 0.2756315767765045,
+        "sal_wref_c4": 0.21767432987689972,
+        "sal_wref_c5": 0.17428253591060638
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2532.87109375,
+        "gradnorm_l1_uncentered": 2840.918212890625,
+        "gradnorm_l2_centered": 4.279619216918945,
+        "gradnorm_l2_uncentered": 5.118611812591553,
+        "sal_noref_c1": 7.200789928436279,
+        "sal_noref_c2": 5.029249668121338,
+        "sal_noref_c3": 3.3544204235076904,
+        "sal_noref_c4": 2.520259141921997,
+        "sal_noref_c5": 2.3155956268310547,
+        "sal_wref_c1": 0.45405951142311096,
+        "sal_wref_c2": 1.0857046842575073,
+        "sal_wref_c3": 0.7238976955413818,
+        "sal_wref_c4": 0.5479050278663635,
+        "sal_wref_c5": 0.9646396636962891
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "SpeciesSightingsData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1254.978515625,
+        "gradnorm_l1_uncentered": 1335.269287109375,
+        "gradnorm_l2_centered": 1.9977225065231323,
+        "gradnorm_l2_uncentered": 2.2444920539855957,
+        "sal_noref_c1": 0.9560271501541138,
+        "sal_noref_c2": 0.6053574085235596,
+        "sal_noref_c3": 0.4638923108577728,
+        "sal_noref_c4": 0.3562059998512268,
+        "sal_noref_c5": 0.28519076108932495,
+        "sal_wref_c1": 0.5143781304359436,
+        "sal_wref_c2": 0.2878277003765106,
+        "sal_wref_c3": 0.1996973305940628,
+        "sal_wref_c4": 0.15117116272449493,
+        "sal_wref_c5": 0.1288457065820694
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 921.531494140625,
+        "gradnorm_l1_uncentered": 657.8658447265625,
+        "gradnorm_l2_centered": 1.7393717765808105,
+        "gradnorm_l2_uncentered": 1.2223305702209473,
+        "sal_noref_c1": 0.10911393910646439,
+        "sal_noref_c2": 0.12434686720371246,
+        "sal_noref_c3": 0.09598367661237717,
+        "sal_noref_c4": 0.07448744773864746,
+        "sal_noref_c5": 0.06178157776594162,
+        "sal_wref_c1": 1.6183542013168335,
+        "sal_wref_c2": 0.8909500241279602,
+        "sal_wref_c3": 0.5943034291267395,
+        "sal_wref_c4": 0.4457317292690277,
+        "sal_wref_c5": 0.3584727644920349
+      }
+    }
+  ]
+}

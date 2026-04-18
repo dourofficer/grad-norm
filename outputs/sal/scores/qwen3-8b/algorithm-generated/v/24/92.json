@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "68.json",
+    "question_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 3,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 863.5332641601562,
+        "gradnorm_l1_uncentered": 468.68292236328125,
+        "gradnorm_l2_centered": 1.6353563070297241,
+        "gradnorm_l2_uncentered": 0.8212321996688843,
+        "sal_noref_c1": 0.05355525389313698,
+        "sal_noref_c2": 0.06764337420463562,
+        "sal_noref_c3": 0.0464763380587101,
+        "sal_noref_c4": 0.04081019014120102,
+        "sal_noref_c5": 0.033616602420806885,
+        "sal_wref_c1": 1.7939497232437134,
+        "sal_wref_c2": 1.0156419277191162,
+        "sal_wref_c3": 0.6809082627296448,
+        "sal_wref_c4": 0.5216357111930847,
+        "sal_wref_c5": 0.42082053422927856
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 793.9837646484375,
+        "gradnorm_l1_uncentered": 369.1522216796875,
+        "gradnorm_l2_centered": 1.6196725368499756,
+        "gradnorm_l2_uncentered": 0.6476588249206543,
+        "sal_noref_c1": 0.043371934443712234,
+        "sal_noref_c2": 0.03473728150129318,
+        "sal_noref_c3": 0.023345477879047394,
+        "sal_noref_c4": 0.018610376864671707,
+        "sal_noref_c5": 0.015434089116752148,
+        "sal_wref_c1": 1.7765262126922607,
+        "sal_wref_c2": 1.07759428024292,
+        "sal_wref_c3": 0.7288115620613098,
+        "sal_wref_c4": 0.5512716770172119,
+        "sal_wref_c5": 0.44473934173583984
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2474.1025390625,
+        "gradnorm_l1_uncentered": 2674.675537109375,
+        "gradnorm_l2_centered": 3.917057991027832,
+        "gradnorm_l2_uncentered": 4.632278919219971,
+        "sal_noref_c1": 4.582650184631348,
+        "sal_noref_c2": 4.64984130859375,
+        "sal_noref_c3": 3.1317222118377686,
+        "sal_noref_c4": 2.355207681655884,
+        "sal_noref_c5": 1.8858528137207031,
+        "sal_wref_c1": 0.010087750852108002,
+        "sal_wref_c2": 1.5836888551712036,
+        "sal_wref_c3": 1.1253130435943604,
+        "sal_wref_c4": 0.8664501309394836,
+        "sal_wref_c5": 0.6988292932510376
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1843.8575439453125,
+        "gradnorm_l1_uncentered": 1949.12060546875,
+        "gradnorm_l2_centered": 2.8149497509002686,
+        "gradnorm_l2_uncentered": 3.2642767429351807,
+        "sal_noref_c1": 1.8803086280822754,
+        "sal_noref_c2": 1.2461707592010498,
+        "sal_noref_c3": 0.862171471118927,
+        "sal_noref_c4": 0.657289445400238,
+        "sal_noref_c5": 0.5258327722549438,
+        "sal_wref_c1": 0.16888132691383362,
+        "sal_wref_c2": 0.08848349004983902,
+        "sal_wref_c3": 0.06091703101992607,
+        "sal_wref_c4": 0.07385280728340149,
+        "sal_wref_c5": 0.06132916733622551
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1404.88232421875,
+        "gradnorm_l1_uncentered": 1565.2381591796875,
+        "gradnorm_l2_centered": 2.266251802444458,
+        "gradnorm_l2_uncentered": 2.770329236984253,
+        "sal_noref_c1": 2.242926597595215,
+        "sal_noref_c2": 1.2515333890914917,
+        "sal_noref_c3": 0.8355305790901184,
+        "sal_noref_c4": 0.6280451416969299,
+        "sal_noref_c5": 0.509321391582489,
+        "sal_wref_c1": 0.03074832633137703,
+        "sal_wref_c2": 0.015745321288704872,
+        "sal_wref_c3": 0.010945347137749195,
+        "sal_wref_c4": 0.009763416834175587,
+        "sal_wref_c5": 0.011202143505215645
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2316.85107421875,
+        "gradnorm_l1_uncentered": 2641.864501953125,
+        "gradnorm_l2_centered": 3.873080015182495,
+        "gradnorm_l2_uncentered": 4.707245349884033,
+        "sal_noref_c1": 9.16347599029541,
+        "sal_noref_c2": 4.557039737701416,
+        "sal_noref_c3": 3.0840282440185547,
+        "sal_noref_c4": 2.3137335777282715,
+        "sal_noref_c5": 1.871490716934204,
+        "sal_wref_c1": 2.0257961750030518,
+        "sal_wref_c2": 1.018118143081665,
+        "sal_wref_c3": 0.7480646967887878,
+        "sal_wref_c4": 0.5611230731010437,
+        "sal_wref_c5": 0.46437209844589233
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 10046.107421875,
+        "gradnorm_l1_uncentered": 10428.6376953125,
+        "gradnorm_l2_centered": 18.551830291748047,
+        "gradnorm_l2_uncentered": 19.48358917236328,
+        "sal_noref_c1": 147.9022674560547,
+        "sal_noref_c2": 73.67608642578125,
+        "sal_noref_c3": 58.65644836425781,
+        "sal_noref_c4": 46.76784133911133,
+        "sal_noref_c5": 37.59377670288086,
+        "sal_wref_c1": 114.49695587158203,
+        "sal_wref_c2": 58.52120590209961,
+        "sal_wref_c3": 50.58180618286133,
+        "sal_wref_c4": 38.89000701904297,
+        "sal_wref_c5": 32.776153564453125
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "112.json",
+    "question_id": "e2dc3a6b10b762e8aba7fa4d4e70f757f6d04dcbc8b56c48fc53fd9928d31d07",
+    "mistake_agent": "HistoricalWeatherData_Expert",
+    "mistake_step": 4,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "Based on the last decade (2014-2023), what is the likelihood that it will snow on New Year\u2019s Eve in Chicago? (Provide the answer in percentage.)"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "HistoricalWeatherData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 986.8623046875,
+        "gradnorm_l1_uncentered": 245.1692352294922,
+        "gradnorm_l2_centered": 2.126984119415283,
+        "gradnorm_l2_uncentered": 0.5760389566421509,
+        "sal_noref_c1": 0.04807064309716225,
+        "sal_noref_c2": 0.03776659071445465,
+        "sal_noref_c3": 0.025207936763763428,
+        "sal_noref_c4": 0.019003327935934067,
+        "sal_noref_c5": 0.016587626188993454,
+        "sal_wref_c1": 4.26424503326416,
+        "sal_wref_c2": 2.1194815635681152,
+        "sal_wref_c3": 1.4142093658447266,
+        "sal_wref_c4": 1.060722827911377,
+        "sal_wref_c5": 0.8514251708984375
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1493.27783203125,
+        "gradnorm_l1_uncentered": 1952.2222900390625,
+        "gradnorm_l2_centered": 3.1756703853607178,
+        "gradnorm_l2_uncentered": 4.375782489776611,
+        "sal_noref_c1": 9.571454048156738,
+        "sal_noref_c2": 5.393867492675781,
+        "sal_noref_c3": 3.749988555908203,
+        "sal_noref_c4": 2.9066715240478516,
+        "sal_noref_c5": 2.4591689109802246,
+        "sal_wref_c1": 0.6118226051330566,
+        "sal_wref_c2": 0.8804553151130676,
+        "sal_wref_c3": 0.733729898929596,
+        "sal_wref_c4": 0.6831940412521362,
+        "sal_wref_c5": 0.7384807467460632
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 858.85498046875,
+        "gradnorm_l1_uncentered": 925.0603637695312,
+        "gradnorm_l2_centered": 1.6459205150604248,
+        "gradnorm_l2_uncentered": 1.9847384691238403,
+        "sal_noref_c1": 1.9541476964950562,
+        "sal_noref_c2": 1.0361276865005493,
+        "sal_noref_c3": 0.6948420405387878,
+        "sal_noref_c4": 0.5220488905906677,
+        "sal_noref_c5": 0.42681440711021423,
+        "sal_wref_c1": 0.8002872467041016,
+        "sal_wref_c2": 0.43548864126205444,
+        "sal_wref_c3": 0.2974090576171875,
+        "sal_wref_c4": 0.2233535796403885,
+        "sal_wref_c5": 0.18204672634601593
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2139.73876953125,
+        "gradnorm_l1_uncentered": 2497.22802734375,
+        "gradnorm_l2_centered": 3.7585532665252686,
+        "gradnorm_l2_uncentered": 4.738919258117676,
+        "sal_noref_c1": 8.47782039642334,
+        "sal_noref_c2": 4.566720008850098,
+        "sal_noref_c3": 3.132796287536621,
+        "sal_noref_c4": 2.6911399364471436,
+        "sal_noref_c5": 2.153017520904541,
+        "sal_wref_c1": 0.35311928391456604,
+        "sal_wref_c2": 0.5710498690605164,
+        "sal_wref_c3": 0.4526759088039398,
+        "sal_wref_c4": 0.565449595451355,
+        "sal_wref_c5": 0.45486515760421753
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "HistoricalWeatherData_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 910.2269287109375,
+        "gradnorm_l1_uncentered": 274.4945068359375,
+        "gradnorm_l2_centered": 1.9504801034927368,
+        "gradnorm_l2_uncentered": 0.6186609268188477,
+        "sal_noref_c1": 0.16112682223320007,
+        "sal_noref_c2": 0.08038696646690369,
+        "sal_noref_c3": 0.06738092750310898,
+        "sal_noref_c4": 0.050620272755622864,
+        "sal_noref_c5": 0.041274961084127426,
+        "sal_wref_c1": 3.504258871078491,
+        "sal_wref_c2": 1.7466826438903809,
+        "sal_wref_c3": 1.185582160949707,
+        "sal_wref_c4": 0.8898648619651794,
+        "sal_wref_c5": 0.7138895988464355
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 846.5369873046875,
+        "gradnorm_l1_uncentered": 729.2437744140625,
+        "gradnorm_l2_centered": 1.6051360368728638,
+        "gradnorm_l2_uncentered": 1.5062378644943237,
+        "sal_noref_c1": 1.183557152748108,
+        "sal_noref_c2": 0.6236913800239563,
+        "sal_noref_c3": 0.4251287281513214,
+        "sal_noref_c4": 0.329128623008728,
+        "sal_noref_c5": 0.2982843518257141,
+        "sal_wref_c1": 1.3970855474472046,
+        "sal_wref_c2": 0.7546245455741882,
+        "sal_wref_c3": 0.5171461701393127,
+        "sal_wref_c4": 0.39744627475738525,
+        "sal_wref_c5": 0.3370613753795624
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Statistics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 854.4310302734375,
+        "gradnorm_l1_uncentered": 475.2758483886719,
+        "gradnorm_l2_centered": 1.766003131866455,
+        "gradnorm_l2_uncentered": 1.0605926513671875,
+        "sal_noref_c1": 0.5000210404396057,
+        "sal_noref_c2": 0.2523386776447296,
+        "sal_noref_c3": 0.18449373543262482,
+        "sal_noref_c4": 0.14166031777858734,
+        "sal_noref_c5": 0.12797950208187103,
+        "sal_wref_c1": 2.4687702655792236,
+        "sal_wref_c2": 1.2416932582855225,
+        "sal_wref_c3": 0.8516555428504944,
+        "sal_wref_c4": 0.6400308012962341,
+        "sal_wref_c5": 0.5213061571121216
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1411.449462890625,
+        "gradnorm_l1_uncentered": 1787.468505859375,
+        "gradnorm_l2_centered": 3.024919271469116,
+        "gradnorm_l2_uncentered": 4.021226406097412,
+        "sal_noref_c1": 6.975356101989746,
+        "sal_noref_c2": 4.154972553253174,
+        "sal_noref_c3": 2.7706172466278076,
+        "sal_noref_c4": 2.181736946105957,
+        "sal_noref_c5": 1.8126060962677002,
+        "sal_wref_c1": 0.1141262948513031,
+        "sal_wref_c2": 0.810133695602417,
+        "sal_wref_c3": 0.5401226282119751,
+        "sal_wref_c4": 0.4702695310115814,
+        "sal_wref_c5": 0.4184790551662445
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 809.909912109375,
+        "gradnorm_l1_uncentered": 830.267333984375,
+        "gradnorm_l2_centered": 1.6368571519851685,
+        "gradnorm_l2_uncentered": 1.7510846853256226,
+        "sal_noref_c1": 1.4748470783233643,
+        "sal_noref_c2": 0.7646457552909851,
+        "sal_noref_c3": 0.5594482421875,
+        "sal_noref_c4": 0.4204423725605011,
+        "sal_noref_c5": 0.34237435460090637,
+        "sal_wref_c1": 1.152817726135254,
+        "sal_wref_c2": 0.6281037330627441,
+        "sal_wref_c3": 0.4821121394634247,
+        "sal_wref_c4": 0.3617180287837982,
+        "sal_wref_c5": 0.29299798607826233
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "HistoricalWeatherData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2028.590087890625,
+        "gradnorm_l1_uncentered": 2515.0078125,
+        "gradnorm_l2_centered": 3.676823854446411,
+        "gradnorm_l2_uncentered": 4.905704975128174,
+        "sal_noref_c1": 11.92155933380127,
+        "sal_noref_c2": 6.494896411895752,
+        "sal_noref_c3": 4.335978031158447,
+        "sal_noref_c4": 3.2519984245300293,
+        "sal_noref_c5": 2.6024367809295654,
+        "sal_wref_c1": 1.3924628496170044,
+        "sal_wref_c2": 1.2866268157958984,
+        "sal_wref_c3": 0.8662766814231873,
+        "sal_wref_c4": 0.6512898802757263,
+        "sal_wref_c5": 0.5446488857269287
+      }
+    }
+  ]
+}

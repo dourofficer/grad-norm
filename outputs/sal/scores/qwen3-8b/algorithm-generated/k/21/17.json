@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "113.json",
+    "question_id": "f88066d274e265edd6cd9d61cd80a41accb3a14baf2297652fdd05cdf716d455",
+    "mistake_agent": "Reviews_Expert",
+    "mistake_step": 7,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "What popular hiking trails to waterfalls in Yosemite National Park (more than 1,000 reviews on TripAdvisor) have been recommended to be fully accessible to wheelchairs by at least three different people and are highly rated (4.5/5 or more on average)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Hiking_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 698.339599609375,
+        "gradnorm_l1_uncentered": 426.71270751953125,
+        "gradnorm_l2_centered": 1.5723170042037964,
+        "gradnorm_l2_uncentered": 1.3842259645462036,
+        "sal_noref_c1": 0.40920281410217285,
+        "sal_noref_c2": 0.3514788746833801,
+        "sal_noref_c3": 0.27509042620658875,
+        "sal_noref_c4": 0.21208366751670837,
+        "sal_noref_c5": 0.17301161587238312,
+        "sal_wref_c1": 0.689551055431366,
+        "sal_wref_c2": 0.357688844203949,
+        "sal_wref_c3": 0.4714217185974121,
+        "sal_wref_c4": 0.3856172561645508,
+        "sal_wref_c5": 0.308939129114151
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Reviews_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 697.3158569335938,
+        "gradnorm_l1_uncentered": 510.8890686035156,
+        "gradnorm_l2_centered": 1.5889531373977661,
+        "gradnorm_l2_uncentered": 1.6247339248657227,
+        "sal_noref_c1": 0.6707068085670471,
+        "sal_noref_c2": 0.47179025411605835,
+        "sal_noref_c3": 0.34093570709228516,
+        "sal_noref_c4": 0.26779812574386597,
+        "sal_noref_c5": 0.21586087346076965,
+        "sal_wref_c1": 0.45766398310661316,
+        "sal_wref_c2": 0.23830202221870422,
+        "sal_wref_c3": 0.35101255774497986,
+        "sal_wref_c4": 0.2807413935661316,
+        "sal_wref_c5": 0.2246902734041214
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 633.1189575195312,
+        "gradnorm_l1_uncentered": 322.9898681640625,
+        "gradnorm_l2_centered": 1.7947239875793457,
+        "gradnorm_l2_uncentered": 0.9634321928024292,
+        "sal_noref_c1": 0.0003577567113097757,
+        "sal_noref_c2": 0.1481873244047165,
+        "sal_noref_c3": 0.15781129896640778,
+        "sal_noref_c4": 0.1228770837187767,
+        "sal_noref_c5": 0.10064367204904556,
+        "sal_wref_c1": 2.1186676025390625,
+        "sal_wref_c2": 1.1991440057754517,
+        "sal_wref_c3": 0.8096839785575867,
+        "sal_wref_c4": 0.6269062757492065,
+        "sal_wref_c5": 0.5074477791786194
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 604.0342407226562,
+        "gradnorm_l1_uncentered": 229.5773162841797,
+        "gradnorm_l2_centered": 1.613799810409546,
+        "gradnorm_l2_uncentered": 0.5038732886314392,
+        "sal_noref_c1": 0.05141863226890564,
+        "sal_noref_c2": 0.03270000219345093,
+        "sal_noref_c3": 0.024113526567816734,
+        "sal_noref_c4": 0.018962064757943153,
+        "sal_noref_c5": 0.015259882435202599,
+        "sal_wref_c1": 1.0677008628845215,
+        "sal_wref_c2": 0.806907057762146,
+        "sal_wref_c3": 0.6872472167015076,
+        "sal_wref_c4": 0.5687620639801025,
+        "sal_wref_c5": 0.45506420731544495
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 763.7984008789062,
+        "gradnorm_l1_uncentered": 650.4642944335938,
+        "gradnorm_l2_centered": 1.9778180122375488,
+        "gradnorm_l2_uncentered": 1.7833446264266968,
+        "sal_noref_c1": 0.08939564973115921,
+        "sal_noref_c2": 0.7958192229270935,
+        "sal_noref_c3": 0.6021129488945007,
+        "sal_noref_c4": 0.4553285539150238,
+        "sal_noref_c5": 0.36996328830718994,
+        "sal_wref_c1": 2.205932140350342,
+        "sal_wref_c2": 1.109025001525879,
+        "sal_wref_c3": 0.7400406002998352,
+        "sal_wref_c4": 0.6040900945663452,
+        "sal_wref_c5": 0.5007351636886597
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 630.3038330078125,
+        "gradnorm_l1_uncentered": 269.208740234375,
+        "gradnorm_l2_centered": 1.7062721252441406,
+        "gradnorm_l2_uncentered": 0.6297621130943298,
+        "sal_noref_c1": 0.04761147499084473,
+        "sal_noref_c2": 0.03899255394935608,
+        "sal_noref_c3": 0.03714386746287346,
+        "sal_noref_c4": 0.031474217772483826,
+        "sal_noref_c5": 0.025978034362196922,
+        "sal_wref_c1": 1.0767704248428345,
+        "sal_wref_c2": 0.7507821321487427,
+        "sal_wref_c3": 0.6732969284057617,
+        "sal_wref_c4": 0.608813464641571,
+        "sal_wref_c5": 0.48930591344833374
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 900.0746459960938,
+        "gradnorm_l1_uncentered": 845.384033203125,
+        "gradnorm_l2_centered": 2.7406351566314697,
+        "gradnorm_l2_uncentered": 3.0451560020446777,
+        "sal_noref_c1": 0.5871678590774536,
+        "sal_noref_c2": 2.9805350303649902,
+        "sal_noref_c3": 2.035799741744995,
+        "sal_noref_c4": 1.5580730438232422,
+        "sal_noref_c5": 1.263859748840332,
+        "sal_wref_c1": 2.2601301670074463,
+        "sal_wref_c2": 2.0459671020507812,
+        "sal_wref_c3": 1.382174015045166,
+        "sal_wref_c4": 1.1109519004821777,
+        "sal_wref_c5": 0.9287155866622925
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Reviews_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 624.0172729492188,
+        "gradnorm_l1_uncentered": 317.650390625,
+        "gradnorm_l2_centered": 1.4713202714920044,
+        "gradnorm_l2_uncentered": 0.7982515692710876,
+        "sal_noref_c1": 0.17873084545135498,
+        "sal_noref_c2": 0.10871829837560654,
+        "sal_noref_c3": 0.07421153038740158,
+        "sal_noref_c4": 0.06323801726102829,
+        "sal_noref_c5": 0.050592221319675446,
+        "sal_wref_c1": 0.8159037232398987,
+        "sal_wref_c2": 0.5948631763458252,
+        "sal_wref_c3": 0.533706545829773,
+        "sal_wref_c4": 0.426241397857666,
+        "sal_wref_c5": 0.3415762186050415
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Hiking_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 10280.953125,
+        "gradnorm_l1_uncentered": 10548.919921875,
+        "gradnorm_l2_centered": 23.157508850097656,
+        "gradnorm_l2_uncentered": 24.221965789794922,
+        "sal_noref_c1": 268.2452087402344,
+        "sal_noref_c2": 135.4961700439453,
+        "sal_noref_c3": 92.16494750976562,
+        "sal_noref_c4": 69.81275177001953,
+        "sal_noref_c5": 58.01990509033203,
+        "sal_wref_c1": 167.95660400390625,
+        "sal_wref_c2": 112.088623046875,
+        "sal_wref_c3": 74.73188781738281,
+        "sal_wref_c4": 58.73115539550781,
+        "sal_wref_c5": 50.89412307739258
+      }
+    }
+  ]
+}

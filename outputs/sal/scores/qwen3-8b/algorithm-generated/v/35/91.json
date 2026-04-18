@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "67.json",
+    "question_id": "8b3379c0-0981-4f5b-8407-6444610cb212",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 4,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What is the maximum length in meters of #9 in the first National Geographic short on YouTube that was ever released according to the Monterey Bay Aquarium website? Just give the number."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "MarineLifeData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 685.3389892578125,
+        "gradnorm_l1_uncentered": 646.8645629882812,
+        "gradnorm_l2_centered": 1.1793192625045776,
+        "gradnorm_l2_uncentered": 1.8344541788101196,
+        "sal_noref_c1": 2.2616946697235107,
+        "sal_noref_c2": 1.1837456226348877,
+        "sal_noref_c3": 0.850911557674408,
+        "sal_noref_c4": 0.6382349133491516,
+        "sal_noref_c5": 0.5122649669647217,
+        "sal_wref_c1": 0.5258017182350159,
+        "sal_wref_c2": 0.2736269235610962,
+        "sal_wref_c3": 0.2137635499238968,
+        "sal_wref_c4": 0.16035985946655273,
+        "sal_wref_c5": 0.13119499385356903
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 574.6806030273438,
+        "gradnorm_l1_uncentered": 382.8585510253906,
+        "gradnorm_l2_centered": 1.2569953203201294,
+        "gradnorm_l2_uncentered": 1.215371012687683,
+        "sal_noref_c1": 1.0851361751556396,
+        "sal_noref_c2": 0.5595526099205017,
+        "sal_noref_c3": 0.40012112259864807,
+        "sal_noref_c4": 0.31502845883369446,
+        "sal_noref_c5": 0.2576715350151062,
+        "sal_wref_c1": 1.3631728887557983,
+        "sal_wref_c2": 0.6753504276275635,
+        "sal_wref_c3": 0.4537888467311859,
+        "sal_wref_c4": 0.3467968702316284,
+        "sal_wref_c5": 0.2797268331050873
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 560.1216430664062,
+        "gradnorm_l1_uncentered": 386.81829833984375,
+        "gradnorm_l2_centered": 1.448468804359436,
+        "gradnorm_l2_uncentered": 0.9629123210906982,
+        "sal_noref_c1": 0.6702805757522583,
+        "sal_noref_c2": 0.35055193305015564,
+        "sal_noref_c3": 0.2358388751745224,
+        "sal_noref_c4": 0.1831938624382019,
+        "sal_noref_c5": 0.14702486991882324,
+        "sal_wref_c1": 1.8590272665023804,
+        "sal_wref_c2": 0.9208599925041199,
+        "sal_wref_c3": 0.615380585193634,
+        "sal_wref_c4": 0.46284037828445435,
+        "sal_wref_c5": 0.37231701612472534
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 966.7383422851562,
+        "gradnorm_l1_uncentered": 1318.72412109375,
+        "gradnorm_l2_centered": 1.8705886602401733,
+        "gradnorm_l2_uncentered": 3.640906810760498,
+        "sal_noref_c1": 10.677605628967285,
+        "sal_noref_c2": 5.917792320251465,
+        "sal_noref_c3": 3.9457175731658936,
+        "sal_noref_c4": 2.9666755199432373,
+        "sal_noref_c5": 2.373365640640259,
+        "sal_wref_c1": 1.0152497291564941,
+        "sal_wref_c2": 1.0696437358856201,
+        "sal_wref_c3": 0.7146043181419373,
+        "sal_wref_c4": 0.5424103140830994,
+        "sal_wref_c5": 0.4376761317253113
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 579.2017822265625,
+        "gradnorm_l1_uncentered": 381.01495361328125,
+        "gradnorm_l2_centered": 1.4127987623214722,
+        "gradnorm_l2_uncentered": 1.0264753103256226,
+        "sal_noref_c1": 0.745097815990448,
+        "sal_noref_c2": 0.37107905745506287,
+        "sal_noref_c3": 0.26498404145240784,
+        "sal_noref_c4": 0.20604103803634644,
+        "sal_noref_c5": 0.172062486410141,
+        "sal_wref_c1": 1.7611812353134155,
+        "sal_wref_c2": 0.8880836963653564,
+        "sal_wref_c3": 0.5929186344146729,
+        "sal_wref_c4": 0.4459214508533478,
+        "sal_wref_c5": 0.3591449558734894
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1841.3521728515625,
+        "gradnorm_l1_uncentered": 2307.974365234375,
+        "gradnorm_l2_centered": 4.324295997619629,
+        "gradnorm_l2_uncentered": 6.190385341644287,
+        "sal_noref_c1": 30.53519630432129,
+        "sal_noref_c2": 16.75933074951172,
+        "sal_noref_c3": 11.551680564880371,
+        "sal_noref_c4": 8.798908233642578,
+        "sal_noref_c5": 7.0420942306518555,
+        "sal_wref_c1": 10.605391502380371,
+        "sal_wref_c2": 7.1335320472717285,
+        "sal_wref_c3": 5.1177263259887695,
+        "sal_wref_c4": 3.950519561767578,
+        "sal_wref_c5": 3.167130708694458
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2213.75830078125,
+        "gradnorm_l1_uncentered": 2623.353271484375,
+        "gradnorm_l2_centered": 4.281854152679443,
+        "gradnorm_l2_uncentered": 6.04826545715332,
+        "sal_noref_c1": 26.99844741821289,
+        "sal_noref_c2": 14.138028144836426,
+        "sal_noref_c3": 9.709609031677246,
+        "sal_noref_c4": 7.650955677032471,
+        "sal_noref_c5": 6.157456398010254,
+        "sal_wref_c1": 8.46971321105957,
+        "sal_wref_c2": 5.043753623962402,
+        "sal_wref_c3": 3.7549049854278564,
+        "sal_wref_c4": 3.055950403213501,
+        "sal_wref_c5": 2.5204625129699707
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "MarineLifeData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1217.400390625,
+        "gradnorm_l1_uncentered": 1510.44677734375,
+        "gradnorm_l2_centered": 2.0175681114196777,
+        "gradnorm_l2_uncentered": 2.887153148651123,
+        "sal_noref_c1": 4.419432640075684,
+        "sal_noref_c2": 2.2571818828582764,
+        "sal_noref_c3": 1.6338186264038086,
+        "sal_noref_c4": 1.2256149053573608,
+        "sal_noref_c5": 1.0061469078063965,
+        "sal_wref_c1": 0.0009806198067963123,
+        "sal_wref_c2": 0.09325027465820312,
+        "sal_wref_c3": 0.24346117675304413,
+        "sal_wref_c4": 0.19190126657485962,
+        "sal_wref_c5": 0.153522789478302
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1330.898681640625,
+        "gradnorm_l1_uncentered": 1684.17724609375,
+        "gradnorm_l2_centered": 2.1360108852386475,
+        "gradnorm_l2_uncentered": 3.5378081798553467,
+        "sal_noref_c1": 8.253801345825195,
+        "sal_noref_c2": 4.201632499694824,
+        "sal_noref_c3": 2.8341434001922607,
+        "sal_noref_c4": 2.182661294937134,
+        "sal_noref_c5": 1.8178749084472656,
+        "sal_wref_c1": 0.410942018032074,
+        "sal_wref_c2": 0.2712532579898834,
+        "sal_wref_c3": 0.2596309185028076,
+        "sal_wref_c4": 0.2114134579896927,
+        "sal_wref_c5": 0.19074353575706482
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3718.0673828125,
+        "gradnorm_l1_uncentered": 4086.18017578125,
+        "gradnorm_l2_centered": 7.53879976272583,
+        "gradnorm_l2_uncentered": 8.89238166809082,
+        "sal_noref_c1": 40.828941345214844,
+        "sal_noref_c2": 29.051118850708008,
+        "sal_noref_c3": 19.85909652709961,
+        "sal_noref_c4": 15.127667427062988,
+        "sal_noref_c5": 12.271345138549805,
+        "sal_wref_c1": 20.215545654296875,
+        "sal_wref_c2": 18.012880325317383,
+        "sal_wref_c3": 12.75305461883545,
+        "sal_wref_c4": 9.659704208374023,
+        "sal_wref_c5": 8.004332542419434
+      }
+    }
+  ]
+}

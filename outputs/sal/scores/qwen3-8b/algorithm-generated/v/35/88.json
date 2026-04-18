@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "64.json",
+    "question_id": "b4cc024b-3f5e-480e-b96a-6656493255b5",
+    "mistake_agent": "MilitaryHistory_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The photograph in the Whitney Museum of American Art's collection with accession number 2022.128 shows a person holding a book. Which military unit did the author of this book join in 1813? Answer without using articles."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Whitney_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 610.4198608398438,
+        "gradnorm_l1_uncentered": 418.4718017578125,
+        "gradnorm_l2_centered": 1.2051918506622314,
+        "gradnorm_l2_uncentered": 1.4520002603530884,
+        "sal_noref_c1": 1.4454584121704102,
+        "sal_noref_c2": 0.7673746943473816,
+        "sal_noref_c3": 0.5768998265266418,
+        "sal_noref_c4": 0.4413977861404419,
+        "sal_noref_c5": 0.355607271194458,
+        "sal_wref_c1": 1.0511490106582642,
+        "sal_wref_c2": 0.5266806483268738,
+        "sal_wref_c3": 0.37661829590797424,
+        "sal_wref_c4": 0.28762152791023254,
+        "sal_wref_c5": 0.23038995265960693
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "MilitaryHistory_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 598.3062744140625,
+        "gradnorm_l1_uncentered": 729.9321899414062,
+        "gradnorm_l2_centered": 0.9860477447509766,
+        "gradnorm_l2_uncentered": 2.112757921218872,
+        "sal_noref_c1": 3.4112350940704346,
+        "sal_noref_c2": 1.739327073097229,
+        "sal_noref_c3": 1.273135781288147,
+        "sal_noref_c4": 0.9690093398094177,
+        "sal_noref_c5": 0.7762871980667114,
+        "sal_wref_c1": 0.1500287801027298,
+        "sal_wref_c2": 0.08325473964214325,
+        "sal_wref_c3": 0.1195613220334053,
+        "sal_wref_c4": 0.10352468490600586,
+        "sal_wref_c5": 0.08632026612758636
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 612.3832397460938,
+        "gradnorm_l1_uncentered": 606.4542236328125,
+        "gradnorm_l2_centered": 1.2150734663009644,
+        "gradnorm_l2_uncentered": 1.7325819730758667,
+        "sal_noref_c1": 1.960930347442627,
+        "sal_noref_c2": 1.1869678497314453,
+        "sal_noref_c3": 0.7918750643730164,
+        "sal_noref_c4": 0.6096482276916504,
+        "sal_noref_c5": 0.4889078736305237,
+        "sal_wref_c1": 0.69339519739151,
+        "sal_wref_c2": 0.45758745074272156,
+        "sal_wref_c3": 0.30839523673057556,
+        "sal_wref_c4": 0.2380835860967636,
+        "sal_wref_c5": 0.19146838784217834
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Whitney_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 588.736572265625,
+        "gradnorm_l1_uncentered": 535.4096069335938,
+        "gradnorm_l2_centered": 1.2576647996902466,
+        "gradnorm_l2_uncentered": 1.3576420545578003,
+        "sal_noref_c1": 1.2586265802383423,
+        "sal_noref_c2": 0.6550312638282776,
+        "sal_noref_c3": 0.4424489438533783,
+        "sal_noref_c4": 0.3458525538444519,
+        "sal_noref_c5": 0.2937932312488556,
+        "sal_wref_c1": 1.1930290460586548,
+        "sal_wref_c2": 0.5931201577186584,
+        "sal_wref_c3": 0.39655280113220215,
+        "sal_wref_c4": 0.3001028001308441,
+        "sal_wref_c5": 0.24210520088672638
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 590.9017333984375,
+        "gradnorm_l1_uncentered": 314.4256591796875,
+        "gradnorm_l2_centered": 1.5159997940063477,
+        "gradnorm_l2_uncentered": 0.9758864641189575,
+        "sal_noref_c1": 0.5839205384254456,
+        "sal_noref_c2": 0.3422853946685791,
+        "sal_noref_c3": 0.2314627319574356,
+        "sal_noref_c4": 0.1836106777191162,
+        "sal_noref_c5": 0.14813518524169922,
+        "sal_wref_c1": 2.065023899078369,
+        "sal_wref_c2": 1.0287386178970337,
+        "sal_wref_c3": 0.6872085928916931,
+        "sal_wref_c4": 0.5181101560592651,
+        "sal_wref_c5": 0.41646265983581543
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "MilitaryHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 642.364990234375,
+        "gradnorm_l1_uncentered": 705.0220336914062,
+        "gradnorm_l2_centered": 1.0792309045791626,
+        "gradnorm_l2_uncentered": 1.9664993286132812,
+        "sal_noref_c1": 2.7358479499816895,
+        "sal_noref_c2": 1.436091661453247,
+        "sal_noref_c3": 0.9805676341056824,
+        "sal_noref_c4": 0.772242546081543,
+        "sal_noref_c5": 0.6504449844360352,
+        "sal_wref_c1": 0.35482925176620483,
+        "sal_wref_c2": 0.19646291434764862,
+        "sal_wref_c3": 0.1317576766014099,
+        "sal_wref_c4": 0.11488788574934006,
+        "sal_wref_c5": 0.10704533755779266
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Whitney_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 593.8113403320312,
+        "gradnorm_l1_uncentered": 521.8572387695312,
+        "gradnorm_l2_centered": 1.2668415307998657,
+        "gradnorm_l2_uncentered": 1.3238455057144165,
+        "sal_noref_c1": 1.2230952978134155,
+        "sal_noref_c2": 0.6311615109443665,
+        "sal_noref_c3": 0.42423030734062195,
+        "sal_noref_c4": 0.3325124979019165,
+        "sal_noref_c5": 0.2735420763492584,
+        "sal_wref_c1": 1.2009086608886719,
+        "sal_wref_c2": 0.5964275598526001,
+        "sal_wref_c3": 0.3993389904499054,
+        "sal_wref_c4": 0.3034643828868866,
+        "sal_wref_c5": 0.24379496276378632
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 608.177734375,
+        "gradnorm_l1_uncentered": 397.01953125,
+        "gradnorm_l2_centered": 1.441794753074646,
+        "gradnorm_l2_uncentered": 1.0669881105422974,
+        "sal_noref_c1": 0.7349121570587158,
+        "sal_noref_c2": 0.3768455386161804,
+        "sal_noref_c3": 0.2640317976474762,
+        "sal_noref_c4": 0.2116616666316986,
+        "sal_noref_c5": 0.1742653101682663,
+        "sal_wref_c1": 1.8011553287506104,
+        "sal_wref_c2": 0.8938848376274109,
+        "sal_wref_c3": 0.5959671139717102,
+        "sal_wref_c4": 0.4512536823749542,
+        "sal_wref_c5": 0.3614574670791626
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 607.7700805664062,
+        "gradnorm_l1_uncentered": 407.1474914550781,
+        "gradnorm_l2_centered": 1.3465163707733154,
+        "gradnorm_l2_uncentered": 1.339800238609314,
+        "sal_noref_c1": 1.1064738035202026,
+        "sal_noref_c2": 0.6217794418334961,
+        "sal_noref_c3": 0.4314689636230469,
+        "sal_noref_c4": 0.3406330645084381,
+        "sal_noref_c5": 0.2747516930103302,
+        "sal_wref_c1": 1.3713124990463257,
+        "sal_wref_c2": 0.6941609382629395,
+        "sal_wref_c3": 0.4635959565639496,
+        "sal_wref_c4": 0.35554635524749756,
+        "sal_wref_c5": 0.2847324311733246
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Whitney_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 594.241455078125,
+        "gradnorm_l1_uncentered": 336.1090087890625,
+        "gradnorm_l2_centered": 1.4776816368103027,
+        "gradnorm_l2_uncentered": 0.9686238765716553,
+        "sal_noref_c1": 0.6287482976913452,
+        "sal_noref_c2": 0.314280241727829,
+        "sal_noref_c3": 0.21951502561569214,
+        "sal_noref_c4": 0.17230291664600372,
+        "sal_noref_c5": 0.14785298705101013,
+        "sal_wref_c1": 1.9545563459396362,
+        "sal_wref_c2": 0.9819999933242798,
+        "sal_wref_c3": 0.6547196507453918,
+        "sal_wref_c4": 0.4918562173843384,
+        "sal_wref_c5": 0.39402222633361816
+      }
+    }
+  ]
+}

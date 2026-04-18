@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "85.json",
+    "question_id": "624cbf11-6a41-4692-af9c-36b3e5ca3130",
+    "mistake_agent": "BenAndJerrysFlavors_Expert",
+    "mistake_step": 6,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What's the last line of the rhyme under the flavor name on the headstone visible in the background of the photo of the oldest flavor's headstone in the Ben & Jerry's online flavor graveyard as of the end of 2022?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 986.3873291015625,
+        "gradnorm_l1_uncentered": 447.9092712402344,
+        "gradnorm_l2_centered": 1.9757698774337769,
+        "gradnorm_l2_uncentered": 1.075058102607727,
+        "sal_noref_c1": 0.262928307056427,
+        "sal_noref_c2": 0.16004066169261932,
+        "sal_noref_c3": 0.10824211686849594,
+        "sal_noref_c4": 0.08157747238874435,
+        "sal_noref_c5": 0.06591897457838058,
+        "sal_wref_c1": 3.199505090713501,
+        "sal_wref_c2": 1.6006921529769897,
+        "sal_wref_c3": 1.067229151725769,
+        "sal_wref_c4": 0.8016747832298279,
+        "sal_wref_c5": 0.6428178548812866
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 982.9661865234375,
+        "gradnorm_l1_uncentered": 445.302490234375,
+        "gradnorm_l2_centered": 2.022430419921875,
+        "gradnorm_l2_uncentered": 1.0536226034164429,
+        "sal_noref_c1": 0.23540250957012177,
+        "sal_noref_c2": 0.20598363876342773,
+        "sal_noref_c3": 0.15315040946006775,
+        "sal_noref_c4": 0.1163732185959816,
+        "sal_noref_c5": 0.09316934645175934,
+        "sal_wref_c1": 3.241629123687744,
+        "sal_wref_c2": 1.6628363132476807,
+        "sal_wref_c3": 1.1322126388549805,
+        "sal_wref_c4": 0.8529466986656189,
+        "sal_wref_c5": 0.6826520562171936
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 934.8087768554688,
+        "gradnorm_l1_uncentered": 537.6436767578125,
+        "gradnorm_l2_centered": 1.8484768867492676,
+        "gradnorm_l2_uncentered": 1.5880488157272339,
+        "sal_noref_c1": 0.8972017168998718,
+        "sal_noref_c2": 0.44909271597862244,
+        "sal_noref_c3": 0.4088086187839508,
+        "sal_noref_c4": 0.31330886483192444,
+        "sal_noref_c5": 0.28295260667800903,
+        "sal_wref_c1": 1.7756543159484863,
+        "sal_wref_c2": 0.882611870765686,
+        "sal_wref_c3": 0.7164425849914551,
+        "sal_wref_c4": 0.540791928768158,
+        "sal_wref_c5": 0.4607800841331482
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1253.24609375,
+        "gradnorm_l1_uncentered": 1545.9541015625,
+        "gradnorm_l2_centered": 3.047022581100464,
+        "gradnorm_l2_uncentered": 4.195178031921387,
+        "sal_noref_c1": 8.713433265686035,
+        "sal_noref_c2": 4.459563732147217,
+        "sal_noref_c3": 3.2470123767852783,
+        "sal_noref_c4": 2.4365038871765137,
+        "sal_noref_c5": 1.9677985906600952,
+        "sal_wref_c1": 0.44394004344940186,
+        "sal_wref_c2": 0.35545435547828674,
+        "sal_wref_c3": 0.5307243466377258,
+        "sal_wref_c4": 0.40184831619262695,
+        "sal_wref_c5": 0.3458098769187927
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1134.084228515625,
+        "gradnorm_l1_uncentered": 1392.3681640625,
+        "gradnorm_l2_centered": 2.8396265506744385,
+        "gradnorm_l2_uncentered": 3.8863561153411865,
+        "sal_noref_c1": 7.082449913024902,
+        "sal_noref_c2": 3.5599987506866455,
+        "sal_noref_c3": 2.900486707687378,
+        "sal_noref_c4": 2.1981122493743896,
+        "sal_noref_c5": 1.84465754032135,
+        "sal_wref_c1": 0.13423050940036774,
+        "sal_wref_c2": 0.10838746279478073,
+        "sal_wref_c3": 0.634956419467926,
+        "sal_wref_c4": 0.4943018853664398,
+        "sal_wref_c5": 0.49068886041641235
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 919.5206298828125,
+        "gradnorm_l1_uncentered": 749.5349731445312,
+        "gradnorm_l2_centered": 1.8432608842849731,
+        "gradnorm_l2_uncentered": 1.9101656675338745,
+        "sal_noref_c1": 1.388471245765686,
+        "sal_noref_c2": 0.7062669992446899,
+        "sal_noref_c3": 0.5046847462654114,
+        "sal_noref_c4": 0.4622737169265747,
+        "sal_noref_c5": 0.39317965507507324,
+        "sal_wref_c1": 1.2438812255859375,
+        "sal_wref_c2": 0.6499759554862976,
+        "sal_wref_c3": 0.47847017645835876,
+        "sal_wref_c4": 0.4295196235179901,
+        "sal_wref_c5": 0.3638361096382141
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "BenAndJerrysFlavors_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 924.4904174804688,
+        "gradnorm_l1_uncentered": 394.115234375,
+        "gradnorm_l2_centered": 1.9402822256088257,
+        "gradnorm_l2_uncentered": 0.8316576480865479,
+        "sal_noref_c1": 0.2272876799106598,
+        "sal_noref_c2": 0.11351751536130905,
+        "sal_noref_c3": 0.08305024355649948,
+        "sal_noref_c4": 0.0692070797085762,
+        "sal_noref_c5": 0.059054773300886154,
+        "sal_wref_c1": 3.231152057647705,
+        "sal_wref_c2": 1.6099745035171509,
+        "sal_wref_c3": 1.0857998132705688,
+        "sal_wref_c4": 0.817662239074707,
+        "sal_wref_c5": 0.6565701961517334
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1361.5584716796875,
+        "gradnorm_l1_uncentered": 1836.0904541015625,
+        "gradnorm_l2_centered": 2.9444174766540527,
+        "gradnorm_l2_uncentered": 3.795248031616211,
+        "sal_noref_c1": 5.4594502449035645,
+        "sal_noref_c2": 2.7759573459625244,
+        "sal_noref_c3": 1.8552721738815308,
+        "sal_noref_c4": 1.3998816013336182,
+        "sal_noref_c5": 1.1368790864944458,
+        "sal_wref_c1": 0.00015043700113892555,
+        "sal_wref_c2": 0.08304643630981445,
+        "sal_wref_c3": 0.06731145083904266,
+        "sal_wref_c4": 0.05071670934557915,
+        "sal_wref_c5": 0.045823872089385986
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "BenAndJerrysFlavors_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3841.177978515625,
+        "gradnorm_l1_uncentered": 4552.48193359375,
+        "gradnorm_l2_centered": 8.576168060302734,
+        "gradnorm_l2_uncentered": 9.902975082397461,
+        "sal_noref_c1": 42.779727935791016,
+        "sal_noref_c2": 22.977462768554688,
+        "sal_noref_c3": 15.662318229675293,
+        "sal_noref_c4": 11.942500114440918,
+        "sal_noref_c5": 10.319317817687988,
+        "sal_wref_c1": 18.455251693725586,
+        "sal_wref_c2": 10.79589557647705,
+        "sal_wref_c3": 7.5408101081848145,
+        "sal_wref_c4": 6.014033317565918,
+        "sal_wref_c5": 5.280033588409424
+      }
+    }
+  ]
+}

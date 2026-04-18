@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "58.json",
+    "question_id": "d0633230-7067-47a9-9dbf-ee11e0a2cdd6",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In the Scikit-Learn July 2017 changelog, what other predictor base command received a bug fix? Just give the name, not a path."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Python_ScikitLearn_StatisticalAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 656.5466918945312,
+        "gradnorm_l1_uncentered": 572.5004272460938,
+        "gradnorm_l2_centered": 1.2411389350891113,
+        "gradnorm_l2_uncentered": 1.5978425741195679,
+        "sal_noref_c1": 1.6723213195800781,
+        "sal_noref_c2": 0.8837500810623169,
+        "sal_noref_c3": 0.6365016102790833,
+        "sal_noref_c4": 0.47737917304039,
+        "sal_noref_c5": 0.381905198097229,
+        "sal_wref_c1": 0.8536584377288818,
+        "sal_wref_c2": 0.4325701892375946,
+        "sal_wref_c3": 0.31127482652664185,
+        "sal_wref_c4": 0.2336142659187317,
+        "sal_wref_c5": 0.19549815356731415
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 631.1099853515625,
+        "gradnorm_l1_uncentered": 477.8599853515625,
+        "gradnorm_l2_centered": 1.279841661453247,
+        "gradnorm_l2_uncentered": 1.2758363485336304,
+        "sal_noref_c1": 1.1385722160339355,
+        "sal_noref_c2": 0.5772022604942322,
+        "sal_noref_c3": 0.41902288794517517,
+        "sal_noref_c4": 0.32257136702537537,
+        "sal_noref_c5": 0.26203781366348267,
+        "sal_wref_c1": 1.2941781282424927,
+        "sal_wref_c2": 0.6438563466072083,
+        "sal_wref_c3": 0.4369070529937744,
+        "sal_wref_c4": 0.3306620717048645,
+        "sal_wref_c5": 0.2659156024456024
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1755.4757080078125,
+        "gradnorm_l1_uncentered": 2221.455810546875,
+        "gradnorm_l2_centered": 3.911675453186035,
+        "gradnorm_l2_uncentered": 5.863156795501709,
+        "sal_noref_c1": 29.22635269165039,
+        "sal_noref_c2": 15.405807495117188,
+        "sal_noref_c3": 10.275965690612793,
+        "sal_noref_c4": 7.762572765350342,
+        "sal_noref_c5": 6.212010383605957,
+        "sal_wref_c1": 9.903779029846191,
+        "sal_wref_c2": 5.984047889709473,
+        "sal_wref_c3": 3.9908721446990967,
+        "sal_wref_c4": 3.0835483074188232,
+        "sal_wref_c5": 2.467982769012451
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Python_ScikitLearn_StatisticalAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 852.580322265625,
+        "gradnorm_l1_uncentered": 1136.953125,
+        "gradnorm_l2_centered": 1.378199577331543,
+        "gradnorm_l2_uncentered": 2.830554962158203,
+        "sal_noref_c1": 5.988039970397949,
+        "sal_noref_c2": 3.136047601699829,
+        "sal_noref_c3": 2.1102097034454346,
+        "sal_noref_c4": 1.6603769063949585,
+        "sal_noref_c5": 1.3483068943023682,
+        "sal_wref_c1": 0.043318334966897964,
+        "sal_wref_c2": 0.12356340885162354,
+        "sal_wref_c3": 0.1426798701286316,
+        "sal_wref_c4": 0.14361752569675446,
+        "sal_wref_c5": 0.15445715188980103
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 943.3377685546875,
+        "gradnorm_l1_uncentered": 1197.7593994140625,
+        "gradnorm_l2_centered": 1.7171627283096313,
+        "gradnorm_l2_uncentered": 2.410097360610962,
+        "sal_noref_c1": 3.1594386100769043,
+        "sal_noref_c2": 1.743009328842163,
+        "sal_noref_c3": 1.220262050628662,
+        "sal_noref_c4": 0.9163579940795898,
+        "sal_noref_c5": 0.7619940042495728,
+        "sal_wref_c1": 0.12682312726974487,
+        "sal_wref_c2": 0.3163295090198517,
+        "sal_wref_c3": 0.31671246886253357,
+        "sal_wref_c4": 0.2611463665962219,
+        "sal_wref_c5": 0.22354984283447266
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Python_ScikitLearn_StatisticalAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1740.9979248046875,
+        "gradnorm_l1_uncentered": 1821.0726318359375,
+        "gradnorm_l2_centered": 3.4023430347442627,
+        "gradnorm_l2_uncentered": 3.7828633785247803,
+        "sal_noref_c1": 3.3166866302490234,
+        "sal_noref_c2": 4.144522190093994,
+        "sal_noref_c3": 2.876885414123535,
+        "sal_noref_c4": 2.2013134956359863,
+        "sal_noref_c5": 1.823351502418518,
+        "sal_wref_c1": 0.04264916479587555,
+        "sal_wref_c2": 2.7823538780212402,
+        "sal_wref_c3": 2.051661729812622,
+        "sal_wref_c4": 1.6825988292694092,
+        "sal_wref_c5": 1.3702865839004517
+      }
+    }
+  ]
+}

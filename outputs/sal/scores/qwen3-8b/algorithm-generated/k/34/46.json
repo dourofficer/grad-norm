@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "26.json",
+    "question_id": "7d4a7d1d-cac6-44a8-96e8-ea9584a70825",
+    "mistake_agent": "WomenInComputerScienceHistory_Expert",
+    "mistake_step": 3,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "According to Girls Who Code, how long did it take in years for the percentage of computer scientists that were women to change by 13% from a starting point of 37%?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WomenInComputerScienceHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 982.3629150390625,
+        "gradnorm_l1_uncentered": 502.1426086425781,
+        "gradnorm_l2_centered": 1.9307215213775635,
+        "gradnorm_l2_uncentered": 1.21779203414917,
+        "sal_noref_c1": 0.3989189565181732,
+        "sal_noref_c2": 0.22173070907592773,
+        "sal_noref_c3": 0.14823931455612183,
+        "sal_noref_c4": 0.1233464777469635,
+        "sal_noref_c5": 0.09923634678125381,
+        "sal_wref_c1": 2.7676191329956055,
+        "sal_wref_c2": 1.3834190368652344,
+        "sal_wref_c3": 0.922313392162323,
+        "sal_wref_c4": 0.7057250142097473,
+        "sal_wref_c5": 0.5645827054977417
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 933.1006469726562,
+        "gradnorm_l1_uncentered": 807.0023193359375,
+        "gradnorm_l2_centered": 1.908561110496521,
+        "gradnorm_l2_uncentered": 1.744252324104309,
+        "sal_noref_c1": 0.9887048006057739,
+        "sal_noref_c2": 0.620628297328949,
+        "sal_noref_c3": 0.4258466064929962,
+        "sal_noref_c4": 0.3554847240447998,
+        "sal_noref_c5": 0.29116708040237427,
+        "sal_wref_c1": 1.692978858947754,
+        "sal_wref_c2": 0.9286025166511536,
+        "sal_wref_c3": 0.6372749209403992,
+        "sal_wref_c4": 0.5184975266456604,
+        "sal_wref_c5": 0.4256121516227722
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 916.5264282226562,
+        "gradnorm_l1_uncentered": 706.519775390625,
+        "gradnorm_l2_centered": 1.8407396078109741,
+        "gradnorm_l2_uncentered": 1.96950101852417,
+        "sal_noref_c1": 1.5097380876541138,
+        "sal_noref_c2": 1.1357862949371338,
+        "sal_noref_c3": 0.7714487910270691,
+        "sal_noref_c4": 0.5787307024002075,
+        "sal_noref_c5": 0.4652298390865326,
+        "sal_wref_c1": 1.1518833637237549,
+        "sal_wref_c2": 0.8826364278793335,
+        "sal_wref_c3": 0.6093049049377441,
+        "sal_wref_c4": 0.4570038318634033,
+        "sal_wref_c5": 0.36655038595199585
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "WomenInComputerScienceHistory_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 890.7998046875,
+        "gradnorm_l1_uncentered": 1223.243408203125,
+        "gradnorm_l2_centered": 2.022254467010498,
+        "gradnorm_l2_uncentered": 2.8807566165924072,
+        "sal_noref_c1": 4.226319313049316,
+        "sal_noref_c2": 2.1935625076293945,
+        "sal_noref_c3": 1.5742827653884888,
+        "sal_noref_c4": 1.2528040409088135,
+        "sal_noref_c5": 1.083475947380066,
+        "sal_wref_c1": 0.05196123197674751,
+        "sal_wref_c2": 0.14224062860012054,
+        "sal_wref_c3": 0.2182590514421463,
+        "sal_wref_c4": 0.227616548538208,
+        "sal_wref_c5": 0.23929950594902039
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WomenInComputerScienceHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 876.194091796875,
+        "gradnorm_l1_uncentered": 1069.084716796875,
+        "gradnorm_l2_centered": 2.030294895172119,
+        "gradnorm_l2_uncentered": 2.605085849761963,
+        "sal_noref_c1": 2.8899917602539062,
+        "sal_noref_c2": 1.4551939964294434,
+        "sal_noref_c3": 1.0794697999954224,
+        "sal_noref_c4": 0.8627958297729492,
+        "sal_noref_c5": 0.8101973533630371,
+        "sal_wref_c1": 0.3580152094364166,
+        "sal_wref_c2": 0.20714811980724335,
+        "sal_wref_c3": 0.26486703753471375,
+        "sal_wref_c4": 0.24364066123962402,
+        "sal_wref_c5": 0.30220645666122437
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 830.6984252929688,
+        "gradnorm_l1_uncentered": 886.8934936523438,
+        "gradnorm_l2_centered": 1.7574291229248047,
+        "gradnorm_l2_uncentered": 1.8510124683380127,
+        "sal_noref_c1": 1.440659999847412,
+        "sal_noref_c2": 0.7451555132865906,
+        "sal_noref_c3": 0.537311315536499,
+        "sal_noref_c4": 0.4149664044380188,
+        "sal_noref_c5": 0.375483900308609,
+        "sal_wref_c1": 1.1894824504852295,
+        "sal_wref_c2": 0.644205629825592,
+        "sal_wref_c3": 0.4830293357372284,
+        "sal_wref_c4": 0.3701763153076172,
+        "sal_wref_c5": 0.3390367031097412
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 986.437255859375,
+        "gradnorm_l1_uncentered": 953.4365844726562,
+        "gradnorm_l2_centered": 1.8473461866378784,
+        "gradnorm_l2_uncentered": 2.2277863025665283,
+        "sal_noref_c1": 2.1703360080718994,
+        "sal_noref_c2": 1.1071645021438599,
+        "sal_noref_c3": 0.9558178782463074,
+        "sal_noref_c4": 0.7670032978057861,
+        "sal_noref_c5": 0.6282023191452026,
+        "sal_wref_c1": 0.6612180471420288,
+        "sal_wref_c2": 0.3722377121448517,
+        "sal_wref_c3": 0.4910767376422882,
+        "sal_wref_c4": 0.41912904381752014,
+        "sal_wref_c5": 0.33788248896598816
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "WomenInComputerScienceHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 782.981201171875,
+        "gradnorm_l1_uncentered": 850.08740234375,
+        "gradnorm_l2_centered": 1.7231807708740234,
+        "gradnorm_l2_uncentered": 1.80203378200531,
+        "sal_noref_c1": 1.409324049949646,
+        "sal_noref_c2": 0.7145060896873474,
+        "sal_noref_c3": 0.4911998212337494,
+        "sal_noref_c4": 0.368400901556015,
+        "sal_noref_c5": 0.2949313521385193,
+        "sal_wref_c1": 1.2196455001831055,
+        "sal_wref_c2": 0.6372831463813782,
+        "sal_wref_c3": 0.44911858439445496,
+        "sal_wref_c4": 0.3383035361766815,
+        "sal_wref_c5": 0.27080732583999634
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Statistics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7619.93017578125,
+        "gradnorm_l1_uncentered": 8383.125,
+        "gradnorm_l2_centered": 15.128560066223145,
+        "gradnorm_l2_uncentered": 16.646068572998047,
+        "sal_noref_c1": 139.7278289794922,
+        "sal_noref_c2": 77.69161224365234,
+        "sal_noref_c3": 52.281890869140625,
+        "sal_noref_c4": 39.52446365356445,
+        "sal_noref_c5": 32.49977493286133,
+        "sal_wref_c1": 93.11998748779297,
+        "sal_wref_c2": 53.779998779296875,
+        "sal_wref_c3": 36.320308685302734,
+        "sal_wref_c4": 27.72074317932129,
+        "sal_wref_c5": 22.459125518798828
+      }
+    }
+  ]
+}

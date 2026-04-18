@@ -1,0 +1,15 @@
+variant	desc_step_acc	desc_agent_acc	asc_step_acc	asc_agent_acc
+gradnorm_l1_centered	0.0238	0.2381	0.1825	0.3571
+gradnorm_l1_uncentered	0.0079	0.2222	0.2222	0.5079
+gradnorm_l2_centered	0.0238	0.2143	0.1349	0.3413
+gradnorm_l2_uncentered	0.0238	0.2222	0.2381	0.5079
+sal_noref_c1	0.0238	0.2143	0.254	0.5397
+sal_noref_c2	0.0159	0.1984	0.2143	0.4921
+sal_noref_c3	0.0238	0.2063	0.2222	0.5
+sal_noref_c4	0.0238	0.2063	0.2222	0.5159
+sal_noref_c5	0.0238	0.2063	0.2302	0.5159
+sal_wref_c1	0.0397	0.254	0.0952	0.254
+sal_wref_c2	0.0238	0.2381	0.0794	0.2937
+sal_wref_c3	0.0238	0.246	0.0714	0.2698
+sal_wref_c4	0.0238	0.2381	0.0556	0.2698
+sal_wref_c5	0.0317	0.2381	0.0635	0.2857

@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "115.json",
+    "question_id": "4dbedc5e1a0205e14b7ff3ba89bce3060dab15d0ada3b7e1351a6f2aa8287aec",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much did I save by purchasing a season pass instead of daily tickets for California's Great America in San Jose, if I planned to visit once a month in June, July, August, and September during the summer of 2024?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "ProblemSolving_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 763.9727783203125,
+        "gradnorm_l1_uncentered": 532.7830810546875,
+        "gradnorm_l2_centered": 1.8149734735488892,
+        "gradnorm_l2_uncentered": 1.9837580919265747,
+        "sal_noref_c1": 0.76816326379776,
+        "sal_noref_c2": 0.83965665102005,
+        "sal_noref_c3": 0.623687207698822,
+        "sal_noref_c4": 0.4719756543636322,
+        "sal_noref_c5": 0.3857432007789612,
+        "sal_wref_c1": 0.6191173791885376,
+        "sal_wref_c2": 0.3480299115180969,
+        "sal_wref_c3": 0.4626968801021576,
+        "sal_wref_c4": 0.37690746784210205,
+        "sal_wref_c5": 0.3027408719062805
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 643.2950439453125,
+        "gradnorm_l1_uncentered": 403.94720458984375,
+        "gradnorm_l2_centered": 1.3290674686431885,
+        "gradnorm_l2_uncentered": 1.251976728439331,
+        "sal_noref_c1": 0.5128617286682129,
+        "sal_noref_c2": 0.3116729259490967,
+        "sal_noref_c3": 0.20859579741954803,
+        "sal_noref_c4": 0.1833905577659607,
+        "sal_noref_c5": 0.14702458679676056,
+        "sal_wref_c1": 0.523639976978302,
+        "sal_wref_c2": 0.3467777371406555,
+        "sal_wref_c3": 0.3510824739933014,
+        "sal_wref_c4": 0.2686649560928345,
+        "sal_wref_c5": 0.2150624543428421
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2131.72412109375,
+        "gradnorm_l1_uncentered": 2289.8154296875,
+        "gradnorm_l2_centered": 5.32460880279541,
+        "gradnorm_l2_uncentered": 6.179533958435059,
+        "sal_noref_c1": 14.648605346679688,
+        "sal_noref_c2": 7.531108856201172,
+        "sal_noref_c3": 5.072349548339844,
+        "sal_noref_c4": 5.037903785705566,
+        "sal_noref_c5": 4.3131585121154785,
+        "sal_wref_c1": 5.7471489906311035,
+        "sal_wref_c2": 2.9021756649017334,
+        "sal_wref_c3": 2.2110812664031982,
+        "sal_wref_c4": 2.5800886154174805,
+        "sal_wref_c5": 2.3166816234588623
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "ArithmeticProgressions_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2124.02001953125,
+        "gradnorm_l1_uncentered": 2217.73046875,
+        "gradnorm_l2_centered": 5.395934104919434,
+        "gradnorm_l2_uncentered": 6.282909393310547,
+        "sal_noref_c1": 12.16427230834961,
+        "sal_noref_c2": 7.108191013336182,
+        "sal_noref_c3": 4.814167499542236,
+        "sal_noref_c4": 4.10441255569458,
+        "sal_noref_c5": 3.5950095653533936,
+        "sal_wref_c1": 1.6039777994155884,
+        "sal_wref_c2": 2.0762581825256348,
+        "sal_wref_c3": 1.509175419807434,
+        "sal_wref_c4": 1.5141154527664185,
+        "sal_wref_c5": 1.5582783222198486
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2329.575439453125,
+        "gradnorm_l1_uncentered": 2481.85498046875,
+        "gradnorm_l2_centered": 4.488704681396484,
+        "gradnorm_l2_uncentered": 4.834096431732178,
+        "sal_noref_c1": 4.875220775604248,
+        "sal_noref_c2": 3.381837844848633,
+        "sal_noref_c3": 2.257246255874634,
+        "sal_noref_c4": 1.8120825290679932,
+        "sal_noref_c5": 1.6983197927474976,
+        "sal_wref_c1": 1.6802639961242676,
+        "sal_wref_c2": 1.8838520050048828,
+        "sal_wref_c3": 1.3387521505355835,
+        "sal_wref_c4": 1.0256565809249878,
+        "sal_wref_c5": 1.1040797233581543
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4921.302734375,
+        "gradnorm_l1_uncentered": 5152.23291015625,
+        "gradnorm_l2_centered": 11.12438678741455,
+        "gradnorm_l2_uncentered": 11.888060569763184,
+        "sal_noref_c1": 43.177608489990234,
+        "sal_noref_c2": 28.3826904296875,
+        "sal_noref_c3": 20.296342849731445,
+        "sal_noref_c4": 16.937416076660156,
+        "sal_noref_c5": 15.417329788208008,
+        "sal_wref_c1": 33.9171142578125,
+        "sal_wref_c2": 19.939430236816406,
+        "sal_wref_c3": 13.977744102478027,
+        "sal_wref_c4": 12.524260520935059,
+        "sal_wref_c5": 11.682251930236816
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7705.03466796875,
+        "gradnorm_l1_uncentered": 7920.04833984375,
+        "gradnorm_l2_centered": 18.4663143157959,
+        "gradnorm_l2_uncentered": 18.630237579345703,
+        "sal_noref_c1": 7.092397689819336,
+        "sal_noref_c2": 30.177091598510742,
+        "sal_noref_c3": 60.68336486816406,
+        "sal_noref_c4": 45.51817321777344,
+        "sal_noref_c5": 41.68645477294922,
+        "sal_wref_c1": 8.590622901916504,
+        "sal_wref_c2": 43.12636947631836,
+        "sal_wref_c3": 58.595458984375,
+        "sal_wref_c4": 44.16542053222656,
+        "sal_wref_c5": 40.686065673828125
+      }
+    }
+  ]
+}

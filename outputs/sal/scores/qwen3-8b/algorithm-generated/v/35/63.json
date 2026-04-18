@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "41.json",
+    "question_id": "42576abe-0deb-4869-8c63-225c2d75a95a",
+    "mistake_agent": "Tizin_Translation_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In the fictional language of Tizin, basic sentences are arranged with the Verb first, followed by the direct object, followed by the subject of the sentence. I want to express my love for apples to my Tizin friend. \n\nThe word that indicates oneself is \"Pa\" is the nominative form, \"Mato\" is the accusative form, and \"Sing\" is the genitive form. \n\nThe root verb that indicates an intense like for something is \"Maktay\". When it is used in the present, it is used in it's root form, when it is used in the preterit past, it is \"Tay\", and when it is used in the imperfect past, it is \"Aktay\". It is used differently than in English, and is better translated as \"is pleasing to\", meaning that the thing doing the liking is actually the object of the sentence rather than the subject.\n\nThe word for apples is borrowed from English in Tizin, and so it is \"Apple\" is the nominative form, \"Zapple\" is the accusative form, and \"Izapple\" is the genitive form. \n\nPlease translate \"I like apples\" to Tizin."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "TizinGrammar_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 645.0473022460938,
+        "gradnorm_l1_uncentered": 495.61883544921875,
+        "gradnorm_l2_centered": 1.2101502418518066,
+        "gradnorm_l2_uncentered": 1.5376538038253784,
+        "sal_noref_c1": 1.5796213150024414,
+        "sal_noref_c2": 0.8429538011550903,
+        "sal_noref_c3": 0.6115865111351013,
+        "sal_noref_c4": 0.46647781133651733,
+        "sal_noref_c5": 0.37723878026008606,
+        "sal_wref_c1": 0.9474490880966187,
+        "sal_wref_c2": 0.4791759252548218,
+        "sal_wref_c3": 0.3356870412826538,
+        "sal_wref_c4": 0.25544625520706177,
+        "sal_wref_c5": 0.20438237488269806
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Tizin_Translation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 586.0634155273438,
+        "gradnorm_l1_uncentered": 523.3840942382812,
+        "gradnorm_l2_centered": 1.183261513710022,
+        "gradnorm_l2_uncentered": 1.514632225036621,
+        "sal_noref_c1": 1.6086004972457886,
+        "sal_noref_c2": 0.8211097717285156,
+        "sal_noref_c3": 0.6121438145637512,
+        "sal_noref_c4": 0.46942365169525146,
+        "sal_noref_c5": 0.37636667490005493,
+        "sal_wref_c1": 0.8914957046508789,
+        "sal_wref_c2": 0.44233620166778564,
+        "sal_wref_c3": 0.32211950421333313,
+        "sal_wref_c4": 0.24840523302555084,
+        "sal_wref_c5": 0.19946624338626862
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1104.9471435546875,
+        "gradnorm_l1_uncentered": 1437.38232421875,
+        "gradnorm_l2_centered": 2.440084218978882,
+        "gradnorm_l2_uncentered": 4.149188041687012,
+        "sal_noref_c1": 12.795467376708984,
+        "sal_noref_c2": 6.38800573348999,
+        "sal_noref_c3": 4.768534183502197,
+        "sal_noref_c4": 3.6564481258392334,
+        "sal_noref_c5": 2.929478168487549,
+        "sal_wref_c1": 1.644431471824646,
+        "sal_wref_c2": 0.8303908705711365,
+        "sal_wref_c3": 0.9268891215324402,
+        "sal_wref_c4": 0.8001412749290466,
+        "sal_wref_c5": 0.711374044418335
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1292.3272705078125,
+        "gradnorm_l1_uncentered": 1658.168212890625,
+        "gradnorm_l2_centered": 1.9669604301452637,
+        "gradnorm_l2_uncentered": 3.423916816711426,
+        "sal_noref_c1": 8.227497100830078,
+        "sal_noref_c2": 4.0936689376831055,
+        "sal_noref_c3": 2.7492496967315674,
+        "sal_noref_c4": 2.0827674865722656,
+        "sal_noref_c5": 1.669808030128479,
+        "sal_wref_c1": 0.43798336386680603,
+        "sal_wref_c2": 0.21888744831085205,
+        "sal_wref_c3": 0.15326060354709625,
+        "sal_wref_c4": 0.13233710825443268,
+        "sal_wref_c5": 0.10758741945028305
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "TizinGrammar_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1180.2685546875,
+        "gradnorm_l1_uncentered": 1530.508544921875,
+        "gradnorm_l2_centered": 2.032744884490967,
+        "gradnorm_l2_uncentered": 3.5761802196502686,
+        "sal_noref_c1": 9.2001314163208,
+        "sal_noref_c2": 4.576796054840088,
+        "sal_noref_c3": 3.2566821575164795,
+        "sal_noref_c4": 2.5119619369506836,
+        "sal_noref_c5": 2.0095925331115723,
+        "sal_wref_c1": 0.6443984508514404,
+        "sal_wref_c2": 0.32155776023864746,
+        "sal_wref_c3": 0.3562335669994354,
+        "sal_wref_c4": 0.3556555211544037,
+        "sal_wref_c5": 0.2854173481464386
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3946.748046875,
+        "gradnorm_l1_uncentered": 4418.78369140625,
+        "gradnorm_l2_centered": 7.046957015991211,
+        "gradnorm_l2_uncentered": 8.653909683227539,
+        "sal_noref_c1": 50.30107879638672,
+        "sal_noref_c2": 30.777847290039062,
+        "sal_noref_c3": 20.53716468811035,
+        "sal_noref_c4": 15.545875549316406,
+        "sal_noref_c5": 12.64094352722168,
+        "sal_wref_c1": 27.17799186706543,
+        "sal_wref_c2": 18.38191795349121,
+        "sal_wref_c3": 12.263598442077637,
+        "sal_wref_c4": 9.431976318359375,
+        "sal_wref_c5": 7.67099666595459
+      }
+    }
+  ]
+}

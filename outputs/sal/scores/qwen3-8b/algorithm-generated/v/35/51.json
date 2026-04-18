@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "30.json",
+    "question_id": "99c9cc74-fdc8-46c6-8f8d-3ce2d3bfeea3",
+    "mistake_agent": "Culinary_Expert",
+    "mistake_step": 3,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Hi, I'm making a pie but I could use some help with my shopping list. I have everything I need for the crust, but I'm not sure about the filling. I got the recipe from my friend Aditi, but she left it as a voice memo and the speaker on my phone is buzzing so I can't quite make out what she's saying. Could you please listen to the recipe and list all of the ingredients that my friend described? I only want the ingredients for the filling, as I have everything I need to make my favorite pie crust. I've attached the recipe as Strawberry pie.mp3.\n\nIn your response, please only list the ingredients, not any measurements. So if the recipe calls for \"a pinch of salt\" or \"two cups of ripe strawberries\" the ingredients on the list would be \"salt\" and \"ripe strawberries\".\n\nPlease format your response as a comma separated list of ingredients. Also, please alphabetize the ingredients."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "AudioProcessing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 641.7686767578125,
+        "gradnorm_l1_uncentered": 527.4603271484375,
+        "gradnorm_l2_centered": 1.202623724937439,
+        "gradnorm_l2_uncentered": 1.6458635330200195,
+        "sal_noref_c1": 1.786007046699524,
+        "sal_noref_c2": 1.0045549869537354,
+        "sal_noref_c3": 0.7012810707092285,
+        "sal_noref_c4": 0.5368170738220215,
+        "sal_noref_c5": 0.43114930391311646,
+        "sal_wref_c1": 0.8090836405754089,
+        "sal_wref_c2": 0.4436395764350891,
+        "sal_wref_c3": 0.3034878671169281,
+        "sal_wref_c4": 0.23376686871051788,
+        "sal_wref_c5": 0.18743613362312317
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1965.8038330078125,
+        "gradnorm_l1_uncentered": 2377.96630859375,
+        "gradnorm_l2_centered": 4.361878395080566,
+        "gradnorm_l2_uncentered": 6.218197345733643,
+        "sal_noref_c1": 30.334989547729492,
+        "sal_noref_c2": 16.36349105834961,
+        "sal_noref_c3": 10.991931915283203,
+        "sal_noref_c4": 8.37909984588623,
+        "sal_noref_c5": 6.725892066955566,
+        "sal_wref_c1": 10.305998802185059,
+        "sal_wref_c2": 6.605311393737793,
+        "sal_wref_c3": 4.4971466064453125,
+        "sal_wref_c4": 3.505397081375122,
+        "sal_wref_c5": 2.8195958137512207
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "TranscriptionVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2016.388671875,
+        "gradnorm_l1_uncentered": 2341.68798828125,
+        "gradnorm_l2_centered": 3.4301815032958984,
+        "gradnorm_l2_uncentered": 4.975675106048584,
+        "sal_noref_c1": 15.97802734375,
+        "sal_noref_c2": 9.031034469604492,
+        "sal_noref_c3": 6.349807262420654,
+        "sal_noref_c4": 4.890128135681152,
+        "sal_noref_c5": 3.951923370361328,
+        "sal_wref_c1": 2.945096969604492,
+        "sal_wref_c2": 2.571901321411133,
+        "sal_wref_c3": 2.1208457946777344,
+        "sal_wref_c4": 1.6457852125167847,
+        "sal_wref_c5": 1.3644683361053467
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Culinary_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1443.2803955078125,
+        "gradnorm_l1_uncentered": 1699.4986572265625,
+        "gradnorm_l2_centered": 2.172105312347412,
+        "gradnorm_l2_uncentered": 3.4363410472869873,
+        "sal_noref_c1": 7.096992492675781,
+        "sal_noref_c2": 3.639242649078369,
+        "sal_noref_c3": 2.502180337905884,
+        "sal_noref_c4": 1.92496657371521,
+        "sal_noref_c5": 1.6566565036773682,
+        "sal_wref_c1": 0.17379163205623627,
+        "sal_wref_c2": 0.15113186836242676,
+        "sal_wref_c3": 0.2611140310764313,
+        "sal_wref_c4": 0.20065362751483917,
+        "sal_wref_c5": 0.26573389768600464
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "TranscriptionVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1615.2890625,
+        "gradnorm_l1_uncentered": 1953.5550537109375,
+        "gradnorm_l2_centered": 2.7722525596618652,
+        "gradnorm_l2_uncentered": 4.366717338562012,
+        "sal_noref_c1": 13.277029991149902,
+        "sal_noref_c2": 7.191852569580078,
+        "sal_noref_c3": 4.976851940155029,
+        "sal_noref_c4": 3.934462070465088,
+        "sal_noref_c5": 3.157741069793701,
+        "sal_wref_c1": 1.9201043844223022,
+        "sal_wref_c2": 1.5304733514785767,
+        "sal_wref_c3": 1.282334804534912,
+        "sal_wref_c4": 1.0877685546875,
+        "sal_wref_c5": 0.8840905427932739
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 831.8240966796875,
+        "gradnorm_l1_uncentered": 1022.317138671875,
+        "gradnorm_l2_centered": 1.6720398664474487,
+        "gradnorm_l2_uncentered": 1.994253158569336,
+        "sal_noref_c1": 2.0226082801818848,
+        "sal_noref_c2": 1.137507438659668,
+        "sal_noref_c3": 0.8749995231628418,
+        "sal_noref_c4": 0.6571873426437378,
+        "sal_noref_c5": 0.527001678943634,
+        "sal_wref_c1": 0.4569413363933563,
+        "sal_wref_c2": 0.42866191267967224,
+        "sal_wref_c3": 0.4417719542980194,
+        "sal_wref_c4": 0.3448089063167572,
+        "sal_wref_c5": 0.2927798330783844
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "AudioProcessing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3115.680419921875,
+        "gradnorm_l1_uncentered": 3454.53955078125,
+        "gradnorm_l2_centered": 5.658565521240234,
+        "gradnorm_l2_uncentered": 6.849327564239502,
+        "sal_noref_c1": 22.038612365722656,
+        "sal_noref_c2": 16.623929977416992,
+        "sal_noref_c3": 11.73084545135498,
+        "sal_noref_c4": 8.83338737487793,
+        "sal_noref_c5": 7.07784366607666,
+        "sal_wref_c1": 7.7472310066223145,
+        "sal_wref_c2": 9.125905990600586,
+        "sal_wref_c3": 6.880197048187256,
+        "sal_wref_c4": 5.161599159240723,
+        "sal_wref_c5": 4.132813453674316
+      }
+    }
+  ]
+}

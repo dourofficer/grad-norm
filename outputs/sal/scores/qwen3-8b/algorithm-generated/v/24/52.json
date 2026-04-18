@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "31.json",
+    "question_id": "56137764-b4e0-45b8-9c52-1866420c3df5",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "Which contributor to the version of OpenCV where support was added for the Mask-RCNN model has the same name as a former Chinese head of government when the names are transliterated to the Latin alphabet?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "OpenCV_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 934.3250732421875,
+        "gradnorm_l1_uncentered": 625.0673217773438,
+        "gradnorm_l2_centered": 1.7486844062805176,
+        "gradnorm_l2_uncentered": 1.331705093383789,
+        "sal_noref_c1": 0.13523417711257935,
+        "sal_noref_c2": 0.18926893174648285,
+        "sal_noref_c3": 0.13119061291217804,
+        "sal_noref_c4": 0.11677488684654236,
+        "sal_noref_c5": 0.09719128906726837,
+        "sal_wref_c1": 1.5941071510314941,
+        "sal_wref_c2": 0.8308795094490051,
+        "sal_wref_c3": 0.5539441704750061,
+        "sal_wref_c4": 0.43839800357818604,
+        "sal_wref_c5": 0.3535545766353607
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Chinese_Political_History_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1010.0938720703125,
+        "gradnorm_l1_uncentered": 748.2855224609375,
+        "gradnorm_l2_centered": 1.8579509258270264,
+        "gradnorm_l2_uncentered": 1.4055918455123901,
+        "sal_noref_c1": 0.12445557117462158,
+        "sal_noref_c2": 0.11709041893482208,
+        "sal_noref_c3": 0.07827282696962357,
+        "sal_noref_c4": 0.0699823647737503,
+        "sal_noref_c5": 0.057515036314725876,
+        "sal_wref_c1": 1.5447254180908203,
+        "sal_wref_c2": 0.8685198426246643,
+        "sal_wref_c3": 0.5865148901939392,
+        "sal_wref_c4": 0.4580306112766266,
+        "sal_wref_c5": 0.37012067437171936
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 818.2909545898438,
+        "gradnorm_l1_uncentered": 436.9331970214844,
+        "gradnorm_l2_centered": 1.6408332586288452,
+        "gradnorm_l2_uncentered": 0.8114975690841675,
+        "sal_noref_c1": 0.058693718165159225,
+        "sal_noref_c2": 0.062261201441287994,
+        "sal_noref_c3": 0.047043394297361374,
+        "sal_noref_c4": 0.03574053570628166,
+        "sal_noref_c5": 0.029854822903871536,
+        "sal_wref_c1": 1.7340199947357178,
+        "sal_wref_c2": 0.9961985349655151,
+        "sal_wref_c3": 0.6661456227302551,
+        "sal_wref_c4": 0.5001066327095032,
+        "sal_wref_c5": 0.40062451362609863
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 803.0944213867188,
+        "gradnorm_l1_uncentered": 434.14190673828125,
+        "gradnorm_l2_centered": 1.6374067068099976,
+        "gradnorm_l2_uncentered": 0.7277931571006775,
+        "sal_noref_c1": 0.05871737375855446,
+        "sal_noref_c2": 0.034367047250270844,
+        "sal_noref_c3": 0.023318244144320488,
+        "sal_noref_c4": 0.01749303564429283,
+        "sal_noref_c5": 0.01400063931941986,
+        "sal_wref_c1": 1.6544069051742554,
+        "sal_wref_c2": 1.0526888370513916,
+        "sal_wref_c3": 0.7132574915885925,
+        "sal_wref_c4": 0.537132203578949,
+        "sal_wref_c5": 0.43276649713516235
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Chinese_Political_History_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1041.6673583984375,
+        "gradnorm_l1_uncentered": 974.2793579101562,
+        "gradnorm_l2_centered": 1.8619002103805542,
+        "gradnorm_l2_uncentered": 1.7124781608581543,
+        "sal_noref_c1": 0.4073396921157837,
+        "sal_noref_c2": 0.2271736115217209,
+        "sal_noref_c3": 0.15146997570991516,
+        "sal_noref_c4": 0.11828676611185074,
+        "sal_noref_c5": 0.09680908918380737,
+        "sal_wref_c1": 0.9114655256271362,
+        "sal_wref_c2": 0.5940338373184204,
+        "sal_wref_c3": 0.4095498323440552,
+        "sal_wref_c4": 0.3191370666027069,
+        "sal_wref_c5": 0.2558756470680237
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2574.577880859375,
+        "gradnorm_l1_uncentered": 2868.69091796875,
+        "gradnorm_l2_centered": 4.569051742553711,
+        "gradnorm_l2_uncentered": 5.340986728668213,
+        "sal_noref_c1": 7.223862171173096,
+        "sal_noref_c2": 4.780344486236572,
+        "sal_noref_c3": 3.202972650527954,
+        "sal_noref_c4": 2.678255319595337,
+        "sal_noref_c5": 2.5170974731445312,
+        "sal_wref_c1": 0.5324681401252747,
+        "sal_wref_c2": 0.9836108684539795,
+        "sal_wref_c3": 0.6564502120018005,
+        "sal_wref_c4": 0.7554558515548706,
+        "sal_wref_c5": 1.078397274017334
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1497.2943115234375,
+        "gradnorm_l1_uncentered": 1702.852783203125,
+        "gradnorm_l2_centered": 2.3606436252593994,
+        "gradnorm_l2_uncentered": 3.030954360961914,
+        "sal_noref_c1": 3.07843017578125,
+        "sal_noref_c2": 1.5933558940887451,
+        "sal_noref_c3": 1.1614230871200562,
+        "sal_noref_c4": 0.8788198828697205,
+        "sal_noref_c5": 0.7033685445785522,
+        "sal_wref_c1": 0.003008462954312563,
+        "sal_wref_c2": 0.04004689306020737,
+        "sal_wref_c3": 0.05125923827290535,
+        "sal_wref_c4": 0.040113333612680435,
+        "sal_wref_c5": 0.04441436380147934
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2153.851806640625,
+        "gradnorm_l1_uncentered": 2347.101806640625,
+        "gradnorm_l2_centered": 3.6440682411193848,
+        "gradnorm_l2_uncentered": 4.107583999633789,
+        "sal_noref_c1": 3.741426706314087,
+        "sal_noref_c2": 1.8797205686569214,
+        "sal_noref_c3": 1.2532707452774048,
+        "sal_noref_c4": 0.943794310092926,
+        "sal_noref_c5": 0.8056852221488953,
+        "sal_wref_c1": 0.1130395159125328,
+        "sal_wref_c2": 0.08609005808830261,
+        "sal_wref_c3": 0.0577174536883831,
+        "sal_wref_c4": 0.04443265125155449,
+        "sal_wref_c5": 0.11284388601779938
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Chinese_Political_History_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2252.04150390625,
+        "gradnorm_l1_uncentered": 2569.97509765625,
+        "gradnorm_l2_centered": 3.770936965942383,
+        "gradnorm_l2_uncentered": 4.687755584716797,
+        "sal_noref_c1": 8.085769653320312,
+        "sal_noref_c2": 4.246054172515869,
+        "sal_noref_c3": 3.0690670013427734,
+        "sal_noref_c4": 2.3143248558044434,
+        "sal_noref_c5": 1.8534530401229858,
+        "sal_wref_c1": 1.0207699537277222,
+        "sal_wref_c2": 0.5311611890792847,
+        "sal_wref_c3": 0.4739406108856201,
+        "sal_wref_c4": 0.3856847882270813,
+        "sal_wref_c5": 0.40231984853744507
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8211.20703125,
+        "gradnorm_l1_uncentered": 8629.9306640625,
+        "gradnorm_l2_centered": 14.650839805603027,
+        "gradnorm_l2_uncentered": 15.59672737121582,
+        "sal_noref_c1": 120.6176528930664,
+        "sal_noref_c2": 74.65360260009766,
+        "sal_noref_c3": 51.57026672363281,
+        "sal_noref_c4": 38.848350524902344,
+        "sal_noref_c5": 31.150415420532227,
+        "sal_wref_c1": 107.18722534179688,
+        "sal_wref_c2": 60.777828216552734,
+        "sal_wref_c3": 42.33547592163086,
+        "sal_wref_c4": 31.810213088989258,
+        "sal_wref_c5": 26.191638946533203
+      }
+    }
+  ]
+}

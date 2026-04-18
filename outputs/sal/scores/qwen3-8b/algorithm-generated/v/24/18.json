@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "114.json",
+    "question_id": "6b06d186921b8b390c65aebd0d16f09f60a47d2f1288ebe36953f734e84c0a3c",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "What's the smallest house (based on square footage) that has at least 2 beds and 2 baths and was sold in Prince Edward Island between June 1, 2022 and May 15 2024 according to Zillow?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 871.3911743164062,
+        "gradnorm_l1_uncentered": 533.676513671875,
+        "gradnorm_l2_centered": 1.6504517793655396,
+        "gradnorm_l2_uncentered": 1.227235198020935,
+        "sal_noref_c1": 0.1439877450466156,
+        "sal_noref_c2": 0.2055935263633728,
+        "sal_noref_c3": 0.14211657643318176,
+        "sal_noref_c4": 0.12370157986879349,
+        "sal_noref_c5": 0.10225026309490204,
+        "sal_wref_c1": 1.5802329778671265,
+        "sal_wref_c2": 0.8164672255516052,
+        "sal_wref_c3": 0.5443436503410339,
+        "sal_wref_c4": 0.43001100420951843,
+        "sal_wref_c5": 0.3467872738838196
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 771.47607421875,
+        "gradnorm_l1_uncentered": 288.93304443359375,
+        "gradnorm_l2_centered": 1.627973198890686,
+        "gradnorm_l2_uncentered": 0.5443763136863708,
+        "sal_noref_c1": 0.02903846837580204,
+        "sal_noref_c2": 0.026150833815336227,
+        "sal_noref_c3": 0.017495565116405487,
+        "sal_noref_c4": 0.015283815562725067,
+        "sal_noref_c5": 0.012960771098732948,
+        "sal_wref_c1": 1.8632913827896118,
+        "sal_wref_c2": 1.127734661102295,
+        "sal_wref_c3": 0.7628039717674255,
+        "sal_wref_c4": 0.5782027840614319,
+        "sal_wref_c5": 0.4694213271141052
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1168.3355712890625,
+        "gradnorm_l1_uncentered": 985.3507080078125,
+        "gradnorm_l2_centered": 1.9047330617904663,
+        "gradnorm_l2_uncentered": 1.5191075801849365,
+        "sal_noref_c1": 0.17345519363880157,
+        "sal_noref_c2": 0.17540067434310913,
+        "sal_noref_c3": 0.11800246685743332,
+        "sal_noref_c4": 0.08889477699995041,
+        "sal_noref_c5": 0.07146071642637253,
+        "sal_wref_c1": 1.3948482275009155,
+        "sal_wref_c2": 0.7416213750839233,
+        "sal_wref_c3": 0.4963078796863556,
+        "sal_wref_c4": 0.37373223900794983,
+        "sal_wref_c5": 0.29910966753959656
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 771.809814453125,
+        "gradnorm_l1_uncentered": 346.57135009765625,
+        "gradnorm_l2_centered": 1.5782558917999268,
+        "gradnorm_l2_uncentered": 0.5908100008964539,
+        "sal_noref_c1": 0.0523521788418293,
+        "sal_noref_c2": 0.04145978391170502,
+        "sal_noref_c3": 0.02773316204547882,
+        "sal_noref_c4": 0.02116234228014946,
+        "sal_noref_c5": 0.017419198527932167,
+        "sal_wref_c1": 1.7243540287017822,
+        "sal_wref_c2": 1.0369876623153687,
+        "sal_wref_c3": 0.7017781734466553,
+        "sal_wref_c4": 0.5289267301559448,
+        "sal_wref_c5": 0.42659372091293335
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 828.7521362304688,
+        "gradnorm_l1_uncentered": 418.9625244140625,
+        "gradnorm_l2_centered": 1.6500775814056396,
+        "gradnorm_l2_uncentered": 0.6347441077232361,
+        "sal_noref_c1": 0.035059746354818344,
+        "sal_noref_c2": 0.03547825664281845,
+        "sal_noref_c3": 0.02373574860394001,
+        "sal_noref_c4": 0.017970586195588112,
+        "sal_noref_c5": 0.014645986258983612,
+        "sal_wref_c1": 1.8204455375671387,
+        "sal_wref_c2": 1.0739167928695679,
+        "sal_wref_c3": 0.7257719039916992,
+        "sal_wref_c4": 0.5445448756217957,
+        "sal_wref_c5": 0.4410989284515381
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "RealEstateMarket_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 812.4507446289062,
+        "gradnorm_l1_uncentered": 618.6449584960938,
+        "gradnorm_l2_centered": 1.5135825872421265,
+        "gradnorm_l2_uncentered": 1.1923837661743164,
+        "sal_noref_c1": 0.2700960040092468,
+        "sal_noref_c2": 0.22444094717502594,
+        "sal_noref_c3": 0.14992906153202057,
+        "sal_noref_c4": 0.11809002608060837,
+        "sal_noref_c5": 0.09916336834430695,
+        "sal_wref_c1": 1.2007970809936523,
+        "sal_wref_c2": 0.6448771357536316,
+        "sal_wref_c3": 0.4413667917251587,
+        "sal_wref_c4": 0.3407675623893738,
+        "sal_wref_c5": 0.2748715579509735
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3968.109375,
+        "gradnorm_l1_uncentered": 4387.826171875,
+        "gradnorm_l2_centered": 7.618417739868164,
+        "gradnorm_l2_uncentered": 8.665960311889648,
+        "sal_noref_c1": 42.091983795166016,
+        "sal_noref_c2": 21.100605010986328,
+        "sal_noref_c3": 18.40989875793457,
+        "sal_noref_c4": 13.841188430786133,
+        "sal_noref_c5": 11.075170516967773,
+        "sal_wref_c1": 26.11182403564453,
+        "sal_wref_c2": 13.020210266113281,
+        "sal_wref_c3": 12.211276054382324,
+        "sal_wref_c4": 9.217374801635742,
+        "sal_wref_c5": 7.374182224273682
+      }
+    }
+  ]
+}

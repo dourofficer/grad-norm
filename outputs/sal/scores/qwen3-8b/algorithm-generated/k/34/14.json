@@ -1,0 +1,206 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "110.json",
+    "question_id": "a9074997e698f912b9e751779ea19c1e92fa148404e90e0ae997acea3f9559b0",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 5,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "What are hikes in Yellowstone that have been recommended by at least three different people with kids and are highly rated on TripAdvisor (an average from 4.5/5 from at least 50 reviews)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataCollection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1009.4226684570312,
+        "gradnorm_l1_uncentered": 393.8951416015625,
+        "gradnorm_l2_centered": 2.0550882816314697,
+        "gradnorm_l2_uncentered": 0.8090730905532837,
+        "sal_noref_c1": 0.12564954161643982,
+        "sal_noref_c2": 0.08546604216098785,
+        "sal_noref_c3": 0.05825796350836754,
+        "sal_noref_c4": 0.04452693089842796,
+        "sal_noref_c5": 0.03587952256202698,
+        "sal_wref_c1": 3.7293319702148438,
+        "sal_wref_c2": 1.860670566558838,
+        "sal_wref_c3": 1.244368314743042,
+        "sal_wref_c4": 0.9350044131278992,
+        "sal_wref_c5": 0.7480036616325378
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 935.5601196289062,
+        "gradnorm_l1_uncentered": 268.2589416503906,
+        "gradnorm_l2_centered": 2.030034303665161,
+        "gradnorm_l2_uncentered": 0.5388399362564087,
+        "sal_noref_c1": 0.09808635711669922,
+        "sal_noref_c2": 0.05263031646609306,
+        "sal_noref_c3": 0.038264643400907516,
+        "sal_noref_c4": 0.036008697003126144,
+        "sal_noref_c5": 0.029282694682478905,
+        "sal_wref_c1": 3.842057704925537,
+        "sal_wref_c2": 1.9111462831497192,
+        "sal_wref_c3": 1.2748888731002808,
+        "sal_wref_c4": 0.9673988819122314,
+        "sal_wref_c5": 0.7748077511787415
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3756.410400390625,
+        "gradnorm_l1_uncentered": 4470.1962890625,
+        "gradnorm_l2_centered": 7.7020769119262695,
+        "gradnorm_l2_uncentered": 9.27935791015625,
+        "sal_noref_c1": 47.85377883911133,
+        "sal_noref_c2": 27.15165901184082,
+        "sal_noref_c3": 19.14444923400879,
+        "sal_noref_c4": 14.415884971618652,
+        "sal_noref_c5": 11.70592975616455,
+        "sal_wref_c1": 20.754886627197266,
+        "sal_wref_c2": 13.781989097595215,
+        "sal_wref_c3": 10.265840530395508,
+        "sal_wref_c4": 7.816056251525879,
+        "sal_wref_c5": 6.716540336608887
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataCollection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 867.8890991210938,
+        "gradnorm_l1_uncentered": 380.6207275390625,
+        "gradnorm_l2_centered": 1.846024990081787,
+        "gradnorm_l2_uncentered": 0.7624592781066895,
+        "sal_noref_c1": 0.2786484956741333,
+        "sal_noref_c2": 0.14865532517433167,
+        "sal_noref_c3": 0.09911089390516281,
+        "sal_noref_c4": 0.07543176412582397,
+        "sal_noref_c5": 0.061387401074171066,
+        "sal_wref_c1": 3.060694456100464,
+        "sal_wref_c2": 1.5222324132919312,
+        "sal_wref_c3": 1.0156441926956177,
+        "sal_wref_c4": 0.7618555426597595,
+        "sal_wref_c5": 0.6112335920333862
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1034.667724609375,
+        "gradnorm_l1_uncentered": 106.24845123291016,
+        "gradnorm_l2_centered": 2.311143159866333,
+        "gradnorm_l2_uncentered": 0.3006875216960907,
+        "sal_noref_c1": 2.1270421711960807e-05,
+        "sal_noref_c2": 0.00023738766321912408,
+        "sal_noref_c3": 0.0006979540921747684,
+        "sal_noref_c4": 0.0005280048353597522,
+        "sal_noref_c5": 0.000452376261819154,
+        "sal_wref_c1": 5.135415077209473,
+        "sal_wref_c2": 2.5550365447998047,
+        "sal_wref_c3": 1.7034066915512085,
+        "sal_wref_c4": 1.2780861854553223,
+        "sal_wref_c5": 1.0225504636764526
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 993.8430786132812,
+        "gradnorm_l1_uncentered": 243.9652862548828,
+        "gradnorm_l2_centered": 2.1371755599975586,
+        "gradnorm_l2_uncentered": 0.507984459400177,
+        "sal_noref_c1": 0.03847076743841171,
+        "sal_noref_c2": 0.023531515151262283,
+        "sal_noref_c3": 0.01570015959441662,
+        "sal_noref_c4": 0.01185576617717743,
+        "sal_noref_c5": 0.009734494611620903,
+        "sal_wref_c1": 4.350968360900879,
+        "sal_wref_c2": 2.1610448360443115,
+        "sal_wref_c3": 1.4413810968399048,
+        "sal_wref_c4": 1.0811537504196167,
+        "sal_wref_c5": 0.8649260401725769
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataCollection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 851.9161987304688,
+        "gradnorm_l1_uncentered": 579.8197631835938,
+        "gradnorm_l2_centered": 1.6908050775527954,
+        "gradnorm_l2_uncentered": 1.251900315284729,
+        "sal_noref_c1": 0.7299952507019043,
+        "sal_noref_c2": 0.4205804467201233,
+        "sal_noref_c3": 0.28519561886787415,
+        "sal_noref_c4": 0.22211498022079468,
+        "sal_noref_c5": 0.1782030463218689,
+        "sal_wref_c1": 2.04970645904541,
+        "sal_wref_c2": 1.0494741201400757,
+        "sal_wref_c3": 0.7016589045524597,
+        "sal_wref_c4": 0.5285923480987549,
+        "sal_wref_c5": 0.4244801998138428
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1805.1322021484375,
+        "gradnorm_l1_uncentered": 2182.732421875,
+        "gradnorm_l2_centered": 3.226173162460327,
+        "gradnorm_l2_uncentered": 3.931093692779541,
+        "sal_noref_c1": 4.771177768707275,
+        "sal_noref_c2": 2.4264707565307617,
+        "sal_noref_c3": 1.6351275444030762,
+        "sal_noref_c4": 1.4412897825241089,
+        "sal_noref_c5": 1.3643146753311157,
+        "sal_wref_c1": 0.019811579957604408,
+        "sal_wref_c2": 0.08791743963956833,
+        "sal_wref_c3": 0.06770550459623337,
+        "sal_wref_c4": 0.19586092233657837,
+        "sal_wref_c5": 0.3522419035434723
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "DataCollection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4387.60009765625,
+        "gradnorm_l1_uncentered": 5010.373046875,
+        "gradnorm_l2_centered": 7.9384894371032715,
+        "gradnorm_l2_uncentered": 9.38148021697998,
+        "sal_noref_c1": 44.31728744506836,
+        "sal_noref_c2": 22.245235443115234,
+        "sal_noref_c3": 14.85409927368164,
+        "sal_noref_c4": 11.178492546081543,
+        "sal_noref_c5": 10.140897750854492,
+        "sal_wref_c1": 19.49264907836914,
+        "sal_wref_c2": 9.852340698242188,
+        "sal_wref_c3": 6.587275981903076,
+        "sal_wref_c4": 4.9476470947265625,
+        "sal_wref_c5": 4.698846340179443
+      }
+    }
+  ]
+}

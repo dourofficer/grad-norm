@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "115.json",
+    "question_id": "4dbedc5e1a0205e14b7ff3ba89bce3060dab15d0ada3b7e1351a6f2aa8287aec",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "How much did I save by purchasing a season pass instead of daily tickets for California's Great America in San Jose, if I planned to visit once a month in June, July, August, and September during the summer of 2024?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "ProblemSolving_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 652.409423828125,
+        "gradnorm_l1_uncentered": 574.7523193359375,
+        "gradnorm_l2_centered": 1.1306676864624023,
+        "gradnorm_l2_uncentered": 1.6865160465240479,
+        "sal_noref_c1": 1.9982547760009766,
+        "sal_noref_c2": 1.0473064184188843,
+        "sal_noref_c3": 0.7375691533088684,
+        "sal_noref_c4": 0.5548390746116638,
+        "sal_noref_c5": 0.4475972056388855,
+        "sal_wref_c1": 0.6584724187850952,
+        "sal_wref_c2": 0.33627596497535706,
+        "sal_wref_c3": 0.23783688247203827,
+        "sal_wref_c4": 0.1786036640405655,
+        "sal_wref_c5": 0.1430061310529709
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 589.1467895507812,
+        "gradnorm_l1_uncentered": 311.0526123046875,
+        "gradnorm_l2_centered": 1.5071169137954712,
+        "gradnorm_l2_uncentered": 0.9406664371490479,
+        "sal_noref_c1": 0.5781859755516052,
+        "sal_noref_c2": 0.3034491240978241,
+        "sal_noref_c3": 0.23051322996616364,
+        "sal_noref_c4": 0.18206343054771423,
+        "sal_noref_c5": 0.14566351473331451,
+        "sal_wref_c1": 2.0515365600585938,
+        "sal_wref_c2": 1.017202615737915,
+        "sal_wref_c3": 0.6840596199035645,
+        "sal_wref_c4": 0.5178310871124268,
+        "sal_wref_c5": 0.4162622392177582
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1503.2119140625,
+        "gradnorm_l1_uncentered": 1969.593994140625,
+        "gradnorm_l2_centered": 3.356041669845581,
+        "gradnorm_l2_uncentered": 5.270634174346924,
+        "sal_noref_c1": 23.225566864013672,
+        "sal_noref_c2": 12.380626678466797,
+        "sal_noref_c3": 8.259441375732422,
+        "sal_noref_c4": 6.2628397941589355,
+        "sal_noref_c5": 5.021943092346191,
+        "sal_wref_c1": 6.545582294464111,
+        "sal_wref_c2": 4.2049150466918945,
+        "sal_wref_c3": 2.807398796081543,
+        "sal_wref_c4": 2.202643871307373,
+        "sal_wref_c5": 1.766789197921753
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "ArithmeticProgressions_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 998.7086181640625,
+        "gradnorm_l1_uncentered": 1314.3607177734375,
+        "gradnorm_l2_centered": 1.6977651119232178,
+        "gradnorm_l2_uncentered": 3.2634661197662354,
+        "sal_noref_c1": 7.897458553314209,
+        "sal_noref_c2": 4.2224836349487305,
+        "sal_noref_c3": 2.8150577545166016,
+        "sal_noref_c4": 2.2050130367279053,
+        "sal_noref_c5": 1.7675195932388306,
+        "sal_wref_c1": 0.3018982410430908,
+        "sal_wref_c2": 0.38052159547805786,
+        "sal_wref_c3": 0.26350632309913635,
+        "sal_wref_c4": 0.26463961601257324,
+        "sal_wref_c5": 0.23304061591625214
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 910.1160278320312,
+        "gradnorm_l1_uncentered": 929.9696655273438,
+        "gradnorm_l2_centered": 1.8949867486953735,
+        "gradnorm_l2_uncentered": 1.832763433456421,
+        "sal_noref_c1": 1.1758562326431274,
+        "sal_noref_c2": 0.9076743125915527,
+        "sal_noref_c3": 0.6304493546485901,
+        "sal_noref_c4": 0.4852549433708191,
+        "sal_noref_c5": 0.42572498321533203,
+        "sal_wref_c1": 1.056496024131775,
+        "sal_wref_c2": 1.000339150428772,
+        "sal_wref_c3": 0.7279916405677795,
+        "sal_wref_c4": 0.594668447971344,
+        "sal_wref_c5": 0.48368173837661743
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1871.9757080078125,
+        "gradnorm_l1_uncentered": 2283.539794921875,
+        "gradnorm_l2_centered": 3.04940128326416,
+        "gradnorm_l2_uncentered": 4.648746490478516,
+        "sal_noref_c1": 15.380572319030762,
+        "sal_noref_c2": 7.876889705657959,
+        "sal_noref_c3": 5.322712421417236,
+        "sal_noref_c4": 4.093615531921387,
+        "sal_noref_c5": 3.3019745349884033,
+        "sal_wref_c1": 3.1102592945098877,
+        "sal_wref_c2": 1.7829573154449463,
+        "sal_wref_c3": 1.3310320377349854,
+        "sal_wref_c4": 1.0426626205444336,
+        "sal_wref_c5": 0.8861352205276489
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2633.58154296875,
+        "gradnorm_l1_uncentered": 2953.462646484375,
+        "gradnorm_l2_centered": 5.0952839851379395,
+        "gradnorm_l2_uncentered": 6.10601806640625,
+        "sal_noref_c1": 15.05424690246582,
+        "sal_noref_c2": 14.332968711853027,
+        "sal_noref_c3": 10.187891960144043,
+        "sal_noref_c4": 7.641005039215088,
+        "sal_noref_c5": 6.148728370666504,
+        "sal_wref_c1": 3.9083051681518555,
+        "sal_wref_c2": 8.6131591796875,
+        "sal_wref_c3": 6.565309047698975,
+        "sal_wref_c4": 4.970946311950684,
+        "sal_wref_c5": 4.009692668914795
+      }
+    }
+  ]
+}

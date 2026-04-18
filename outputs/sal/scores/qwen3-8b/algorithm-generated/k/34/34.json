@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "15.json",
+    "question_id": "851e570a-e3de-4d84-bcfa-cc85578baa59",
+    "mistake_agent": "Boggle_Board_Expert",
+    "mistake_step": 6,
+    "level": "3",
+    "subset": "algorithm-generated",
+    "question": "I thought we could try a fun word puzzle together :)\n\nI've got a Boggle board here:\n\nABRL\nEITE\nIONS\nFPEI\n\nI'd like to know the longest word that can be generated from the board. Please find the longest English language word that can be generated from this board. If more than one word of the same length exists at the maximum word length, please report the longest word that comes first, alphabetically. Oh, and I know that there might be different wordlists available for Boggle, so let's please just use the words_alpha dictionary found at https://github.com/dwyl/english-words as the dictionary for our game."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Boggle_Board_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1012.8081665039062,
+        "gradnorm_l1_uncentered": 445.2417907714844,
+        "gradnorm_l2_centered": 2.035039186477661,
+        "gradnorm_l2_uncentered": 0.9772650003433228,
+        "sal_noref_c1": 0.18149423599243164,
+        "sal_noref_c2": 0.10854195803403854,
+        "sal_noref_c3": 0.07307050377130508,
+        "sal_noref_c4": 0.055125001817941666,
+        "sal_noref_c5": 0.04596944898366928,
+        "sal_wref_c1": 3.4913768768310547,
+        "sal_wref_c2": 1.7405803203582764,
+        "sal_wref_c3": 1.1603914499282837,
+        "sal_wref_c4": 0.8712972402572632,
+        "sal_wref_c5": 0.6973563432693481
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Dictionary_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 941.3890991210938,
+        "gradnorm_l1_uncentered": 433.47210693359375,
+        "gradnorm_l2_centered": 1.9077340364456177,
+        "gradnorm_l2_uncentered": 0.9220949411392212,
+        "sal_noref_c1": 0.28733524680137634,
+        "sal_noref_c2": 0.14777180552482605,
+        "sal_noref_c3": 0.12093458324670792,
+        "sal_noref_c4": 0.1077856719493866,
+        "sal_noref_c5": 0.08643881231546402,
+        "sal_wref_c1": 3.032858371734619,
+        "sal_wref_c2": 1.509476900100708,
+        "sal_wref_c3": 1.0216028690338135,
+        "sal_wref_c4": 0.7862257361412048,
+        "sal_wref_c5": 0.6296293139457703
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5157.685546875,
+        "gradnorm_l1_uncentered": 5726.4462890625,
+        "gradnorm_l2_centered": 11.72453498840332,
+        "gradnorm_l2_uncentered": 12.657204627990723,
+        "sal_noref_c1": 36.146060943603516,
+        "sal_noref_c2": 29.456995010375977,
+        "sal_noref_c3": 19.775171279907227,
+        "sal_noref_c4": 14.951201438903809,
+        "sal_noref_c5": 12.252138137817383,
+        "sal_wref_c1": 13.13317584991455,
+        "sal_wref_c2": 18.132143020629883,
+        "sal_wref_c3": 12.257068634033203,
+        "sal_wref_c4": 9.30429744720459,
+        "sal_wref_c5": 7.986356258392334
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Boggle_Board_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 886.1410522460938,
+        "gradnorm_l1_uncentered": 464.3058166503906,
+        "gradnorm_l2_centered": 1.857923150062561,
+        "gradnorm_l2_uncentered": 0.8678428530693054,
+        "sal_noref_c1": 0.3062712550163269,
+        "sal_noref_c2": 0.15382960438728333,
+        "sal_noref_c3": 0.12196191400289536,
+        "sal_noref_c4": 0.09605886787176132,
+        "sal_noref_c5": 0.07727937400341034,
+        "sal_wref_c1": 2.977545976638794,
+        "sal_wref_c2": 1.4826682806015015,
+        "sal_wref_c3": 1.0012048482894897,
+        "sal_wref_c4": 0.7523736357688904,
+        "sal_wref_c5": 0.6033703088760376
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Boggle_Board_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 903.07470703125,
+        "gradnorm_l1_uncentered": 472.24554443359375,
+        "gradnorm_l2_centered": 1.8259600400924683,
+        "gradnorm_l2_uncentered": 1.3128900527954102,
+        "sal_noref_c1": 0.6193842887878418,
+        "sal_noref_c2": 0.33971288800239563,
+        "sal_noref_c3": 0.23345404863357544,
+        "sal_noref_c4": 0.22484365105628967,
+        "sal_noref_c5": 0.18525245785713196,
+        "sal_wref_c1": 2.2399544715881348,
+        "sal_wref_c2": 1.1245956420898438,
+        "sal_wref_c3": 0.7533748149871826,
+        "sal_wref_c4": 0.6052085161209106,
+        "sal_wref_c5": 0.4859512746334076
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1348.6307373046875,
+        "gradnorm_l1_uncentered": 1719.1685791015625,
+        "gradnorm_l2_centered": 2.9399240016937256,
+        "gradnorm_l2_uncentered": 3.866302967071533,
+        "sal_noref_c1": 6.37870454788208,
+        "sal_noref_c2": 3.1846306324005127,
+        "sal_noref_c3": 2.585381269454956,
+        "sal_noref_c4": 2.123636484146118,
+        "sal_noref_c5": 1.7281253337860107,
+        "sal_wref_c1": 0.06126384809613228,
+        "sal_wref_c2": 0.037251945585012436,
+        "sal_wref_c3": 0.5190686583518982,
+        "sal_wref_c4": 0.5592576265335083,
+        "sal_wref_c5": 0.4681863784790039
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 965.0088500976562,
+        "gradnorm_l1_uncentered": 135.4639892578125,
+        "gradnorm_l2_centered": 2.1326732635498047,
+        "gradnorm_l2_uncentered": 0.2748786509037018,
+        "sal_noref_c1": 0.03258190676569939,
+        "sal_noref_c2": 0.016541479155421257,
+        "sal_noref_c3": 0.011903085745871067,
+        "sal_noref_c4": 0.009330041706562042,
+        "sal_noref_c5": 0.007526302244514227,
+        "sal_wref_c1": 4.351769924163818,
+        "sal_wref_c2": 2.1692466735839844,
+        "sal_wref_c3": 1.4494937658309937,
+        "sal_wref_c4": 1.0887542963027954,
+        "sal_wref_c5": 0.8734685182571411
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1787.018310546875,
+        "gradnorm_l1_uncentered": 1663.2977294921875,
+        "gradnorm_l2_centered": 3.1344199180603027,
+        "gradnorm_l2_uncentered": 3.0967938899993896,
+        "sal_noref_c1": 1.1308221817016602,
+        "sal_noref_c2": 0.824322521686554,
+        "sal_noref_c3": 0.7092850804328918,
+        "sal_noref_c4": 0.5326076745986938,
+        "sal_noref_c5": 0.4264814853668213,
+        "sal_wref_c1": 1.526667594909668,
+        "sal_wref_c2": 1.0965471267700195,
+        "sal_wref_c3": 0.8631427884101868,
+        "sal_wref_c4": 0.6473705172538757,
+        "sal_wref_c5": 0.5185778141021729
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Boggle_Board_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 895.3789672851562,
+        "gradnorm_l1_uncentered": 287.2875061035156,
+        "gradnorm_l2_centered": 1.9183536767959595,
+        "gradnorm_l2_uncentered": 0.6992480158805847,
+        "sal_noref_c1": 0.21215885877609253,
+        "sal_noref_c2": 0.11856867372989655,
+        "sal_noref_c3": 0.0867803692817688,
+        "sal_noref_c4": 0.07076340913772583,
+        "sal_noref_c5": 0.05950499698519707,
+        "sal_wref_c1": 3.260265588760376,
+        "sal_wref_c2": 1.6540910005569458,
+        "sal_wref_c3": 1.1159237623214722,
+        "sal_wref_c4": 0.8398375511169434,
+        "sal_wref_c5": 0.6734229922294617
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1921.9168701171875,
+        "gradnorm_l1_uncentered": 1825.6517333984375,
+        "gradnorm_l2_centered": 3.506394147872925,
+        "gradnorm_l2_uncentered": 3.552950859069824,
+        "sal_noref_c1": 1.4117070436477661,
+        "sal_noref_c2": 0.9799090623855591,
+        "sal_noref_c3": 0.8558149337768555,
+        "sal_noref_c4": 0.6470027565956116,
+        "sal_noref_c5": 0.5263521671295166,
+        "sal_wref_c1": 1.230952501296997,
+        "sal_wref_c2": 0.963390588760376,
+        "sal_wref_c3": 0.8148109316825867,
+        "sal_wref_c4": 0.6190464496612549,
+        "sal_wref_c5": 0.5031759142875671
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "22.json",
+    "question_id": "1f975693-876d-457b-a649-393859e79bf3",
+    "mistake_agent": "PythonDebugging_Expert",
+    "mistake_step": 0,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Hi, I was out sick from my classes on Friday, so I'm trying to figure out what I need to study for my Calculus mid-term next week. My friend from class sent me an audio recording of Professor Willowbrook giving out the recommended reading for the test, but my headphones are broken :(\n\nCould you please listen to the recording for me and tell me the page numbers I'm supposed to go over? I've attached a file called Homework.mp3 that has the recording. Please provide just the page numbers as a comma-delimited list. And please provide the list in ascending order."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 842.7703857421875,
+        "gradnorm_l1_uncentered": 449.0269470214844,
+        "gradnorm_l2_centered": 1.6590042114257812,
+        "gradnorm_l2_uncentered": 0.9615706205368042,
+        "sal_noref_c1": 0.06900957971811295,
+        "sal_noref_c2": 0.098167784512043,
+        "sal_noref_c3": 0.06765924394130707,
+        "sal_noref_c4": 0.060578443109989166,
+        "sal_noref_c5": 0.049541957676410675,
+        "sal_wref_c1": 1.7551828622817993,
+        "sal_wref_c2": 0.959780216217041,
+        "sal_wref_c3": 0.6414441466331482,
+        "sal_wref_c4": 0.4955041706562042,
+        "sal_wref_c5": 0.4002746045589447
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 9088.580078125,
+        "gradnorm_l1_uncentered": 9286.548828125,
+        "gradnorm_l2_centered": 18.11861228942871,
+        "gradnorm_l2_uncentered": 18.637969970703125,
+        "sal_noref_c1": 28.430994033813477,
+        "sal_noref_c2": 33.60578918457031,
+        "sal_noref_c3": 23.397554397583008,
+        "sal_noref_c4": 35.58036804199219,
+        "sal_noref_c5": 28.9502010345459,
+        "sal_wref_c1": 6.420512676239014,
+        "sal_wref_c2": 28.235422134399414,
+        "sal_wref_c3": 29.970674514770508,
+        "sal_wref_c4": 28.743717193603516,
+        "sal_wref_c5": 41.154632568359375
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "UnitTesting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 759.2152709960938,
+        "gradnorm_l1_uncentered": 427.4040832519531,
+        "gradnorm_l2_centered": 1.488901138305664,
+        "gradnorm_l2_uncentered": 0.85874342918396,
+        "sal_noref_c1": 0.13361378014087677,
+        "sal_noref_c2": 0.13308700919151306,
+        "sal_noref_c3": 0.08919224143028259,
+        "sal_noref_c4": 0.0721636489033699,
+        "sal_noref_c5": 0.05889345332980156,
+        "sal_wref_c1": 1.5043879747390747,
+        "sal_wref_c2": 0.8227234482765198,
+        "sal_wref_c3": 0.5534627437591553,
+        "sal_wref_c4": 0.4245927333831787,
+        "sal_wref_c5": 0.3442501723766327
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3620.97607421875,
+        "gradnorm_l1_uncentered": 3792.623046875,
+        "gradnorm_l2_centered": 5.951961517333984,
+        "gradnorm_l2_uncentered": 6.621105194091797,
+        "sal_noref_c1": 7.660991668701172,
+        "sal_noref_c2": 6.414228439331055,
+        "sal_noref_c3": 4.388762474060059,
+        "sal_noref_c4": 3.291627883911133,
+        "sal_noref_c5": 2.6819679737091064,
+        "sal_wref_c1": 0.45843833684921265,
+        "sal_wref_c2": 2.300710678100586,
+        "sal_wref_c3": 1.5826557874679565,
+        "sal_wref_c4": 1.1910241842269897,
+        "sal_wref_c5": 1.0827986001968384
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Python_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 703.7410888671875,
+        "gradnorm_l1_uncentered": 369.14666748046875,
+        "gradnorm_l2_centered": 1.436490535736084,
+        "gradnorm_l2_uncentered": 0.7325207591056824,
+        "sal_noref_c1": 0.15775983035564423,
+        "sal_noref_c2": 0.10817839205265045,
+        "sal_noref_c3": 0.07256302237510681,
+        "sal_noref_c4": 0.057602573186159134,
+        "sal_noref_c5": 0.04703714698553085,
+        "sal_wref_c1": 1.3527354001998901,
+        "sal_wref_c2": 0.7929679155349731,
+        "sal_wref_c3": 0.5429815649986267,
+        "sal_wref_c4": 0.41514480113983154,
+        "sal_wref_c5": 0.3340041935443878
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5404.3720703125,
+        "gradnorm_l1_uncentered": 5784.51806640625,
+        "gradnorm_l2_centered": 10.46781063079834,
+        "gradnorm_l2_uncentered": 11.391111373901367,
+        "sal_noref_c1": 59.85732650756836,
+        "sal_noref_c2": 30.802236557006836,
+        "sal_noref_c3": 27.004037857055664,
+        "sal_noref_c4": 20.497713088989258,
+        "sal_noref_c5": 16.458181381225586,
+        "sal_wref_c1": 42.844573974609375,
+        "sal_wref_c2": 21.280317306518555,
+        "sal_wref_c3": 18.586889266967773,
+        "sal_wref_c4": 14.112491607666016,
+        "sal_wref_c5": 11.326990127563477
+      }
+    }
+  ]
+}

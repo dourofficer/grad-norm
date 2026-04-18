@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "46.json",
+    "question_id": "c714ab3a-da30-4603-bacd-d008800188b9",
+    "mistake_agent": "Behavioral_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "You are Van Helsing, a renowned vampire hunter. A Count of Moldova, La\u021bcu IV, son of  Costea, has tasked you with investigating the village of \u0218irnea in neighboring Wallachia. The Count's advisors have reported that a vampire was spotted crossing the border near the village, and would like you to investigate it.\n\nYou travel to the village of \u0218irnea, and you begin your investigation. One night, just before dawn, you catch a glimpse of a man in a long black cape with red lining leaping from roof-top to roof-top with superhuman agility. It's a vampire! You try to chase the creature back to its home, but the creature is too fast. However, because of the remoteness of the village, you know with absolute certainty that the vampire must be a resident of the village. You decide that your best course of action will be to visit all 100 residents of the town during the day. You know something about vampires and humans that will make your investigation possible; humans always tell the truth, but vampires always lie.\n\nIn the afternoon, you go from house to house, speaking with all 100 residents of \u0218irnea. You ask everyone the same question: \"How many vampires are living in \u0218irnea\". Everyone in the village gives the same response, \"At least one of us is a human.\"\n\nHow many residents of \u0218irnea have been turned into vampires?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "LogicExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 676.220458984375,
+        "gradnorm_l1_uncentered": 354.24591064453125,
+        "gradnorm_l2_centered": 1.518239974975586,
+        "gradnorm_l2_uncentered": 1.0958291292190552,
+        "sal_noref_c1": 0.17763857543468475,
+        "sal_noref_c2": 0.2412392497062683,
+        "sal_noref_c3": 0.16086338460445404,
+        "sal_noref_c4": 0.1275426149368286,
+        "sal_noref_c5": 0.10211805999279022,
+        "sal_wref_c1": 1.1316179037094116,
+        "sal_wref_c2": 0.612406849861145,
+        "sal_wref_c3": 0.4980016052722931,
+        "sal_wref_c4": 0.39450713992118835,
+        "sal_wref_c5": 0.31632381677627563
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Behavioral_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 743.1695556640625,
+        "gradnorm_l1_uncentered": 510.0310363769531,
+        "gradnorm_l2_centered": 1.6773755550384521,
+        "gradnorm_l2_uncentered": 1.0723525285720825,
+        "sal_noref_c1": 0.0791587382555008,
+        "sal_noref_c2": 0.07801201939582825,
+        "sal_noref_c3": 0.07696729898452759,
+        "sal_noref_c4": 0.0723004937171936,
+        "sal_noref_c5": 0.06288918107748032,
+        "sal_wref_c1": 1.2240437269210815,
+        "sal_wref_c2": 0.8345060348510742,
+        "sal_wref_c3": 0.5940000414848328,
+        "sal_wref_c4": 0.45558372139930725,
+        "sal_wref_c5": 0.37676817178726196
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 869.51171875,
+        "gradnorm_l1_uncentered": 704.5401000976562,
+        "gradnorm_l2_centered": 1.8509939908981323,
+        "gradnorm_l2_uncentered": 2.0670831203460693,
+        "sal_noref_c1": 1.2127516269683838,
+        "sal_noref_c2": 0.7705539464950562,
+        "sal_noref_c3": 0.5727554559707642,
+        "sal_noref_c4": 0.4367407560348511,
+        "sal_noref_c5": 0.34959810972213745,
+        "sal_wref_c1": 0.17121784389019012,
+        "sal_wref_c2": 0.0861886739730835,
+        "sal_wref_c3": 0.2768060266971588,
+        "sal_wref_c4": 0.22615937888622284,
+        "sal_wref_c5": 0.1810687631368637
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1866.716796875,
+        "gradnorm_l1_uncentered": 1993.8033447265625,
+        "gradnorm_l2_centered": 4.1469831466674805,
+        "gradnorm_l2_uncentered": 4.972373008728027,
+        "sal_noref_c1": 9.029383659362793,
+        "sal_noref_c2": 4.501647472381592,
+        "sal_noref_c3": 3.010014295578003,
+        "sal_noref_c4": 2.859097957611084,
+        "sal_noref_c5": 2.3827123641967773,
+        "sal_wref_c1": 2.022488594055176,
+        "sal_wref_c2": 1.0118639469146729,
+        "sal_wref_c3": 0.8008856177330017,
+        "sal_wref_c4": 1.0022728443145752,
+        "sal_wref_c5": 0.8463292121887207
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "LogicExpert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4626.5791015625,
+        "gradnorm_l1_uncentered": 4801.3701171875,
+        "gradnorm_l2_centered": 9.645283699035645,
+        "gradnorm_l2_uncentered": 10.361855506896973,
+        "sal_noref_c1": 35.49869155883789,
+        "sal_noref_c2": 19.728986740112305,
+        "sal_noref_c3": 13.554343223571777,
+        "sal_noref_c4": 10.879737854003906,
+        "sal_noref_c5": 10.623254776000977,
+        "sal_wref_c1": 25.21841812133789,
+        "sal_wref_c2": 12.681304931640625,
+        "sal_wref_c3": 8.955796241760254,
+        "sal_wref_c4": 7.308089256286621,
+        "sal_wref_c5": 7.900618076324463
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2990.794189453125,
+        "gradnorm_l1_uncentered": 3157.180419921875,
+        "gradnorm_l2_centered": 7.567225933074951,
+        "gradnorm_l2_uncentered": 8.139735221862793,
+        "sal_noref_c1": 21.07291603088379,
+        "sal_noref_c2": 11.698874473571777,
+        "sal_noref_c3": 9.399813652038574,
+        "sal_noref_c4": 7.0807695388793945,
+        "sal_noref_c5": 6.374912738800049,
+        "sal_wref_c1": 14.582222938537598,
+        "sal_wref_c2": 7.297998905181885,
+        "sal_wref_c3": 6.364293575286865,
+        "sal_wref_c4": 4.965304374694824,
+        "sal_wref_c5": 4.811527729034424
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 10690.025390625,
+        "gradnorm_l1_uncentered": 10953.4072265625,
+        "gradnorm_l2_centered": 21.10956573486328,
+        "gradnorm_l2_uncentered": 21.96055793762207,
+        "sal_noref_c1": 129.09068298339844,
+        "sal_noref_c2": 65.27445220947266,
+        "sal_noref_c3": 59.31634521484375,
+        "sal_noref_c4": 44.5202522277832,
+        "sal_noref_c5": 41.813045501708984,
+        "sal_wref_c1": 78.53814697265625,
+        "sal_wref_c2": 39.33455276489258,
+        "sal_wref_c3": 47.01385498046875,
+        "sal_wref_c4": 35.98853302001953,
+        "sal_wref_c5": 34.62594985961914
+      }
+    }
+  ]
+}

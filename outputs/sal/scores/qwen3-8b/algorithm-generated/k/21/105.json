@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "8.json",
+    "question_id": "65afbc8a-89ca-4ad5-8d62-355bb401f61d",
+    "mistake_agent": "AlgorithmDesign_Expert",
+    "mistake_step": 4,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "You are given this Excel file as a map. You start on the START cell and move toward the END cell. You are allowed to move two cells per turn, and you may move up, down, left, or right. You may not move fewer than two cells, and you may not move backward. You must avoid moving onto any blue cells. On the eleventh turn, what is the 6-digit hex code (without prefix) of the color of the cell where you land after moving?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Excel_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 603.9017333984375,
+        "gradnorm_l1_uncentered": 194.82577514648438,
+        "gradnorm_l2_centered": 1.5273126363754272,
+        "gradnorm_l2_uncentered": 0.5512186288833618,
+        "sal_noref_c1": 0.06352102011442184,
+        "sal_noref_c2": 0.053850360214710236,
+        "sal_noref_c3": 0.03590024262666702,
+        "sal_noref_c4": 0.03470336273312569,
+        "sal_noref_c5": 0.02823270857334137,
+        "sal_wref_c1": 1.143141269683838,
+        "sal_wref_c2": 0.8007059097290039,
+        "sal_wref_c3": 0.6537289619445801,
+        "sal_wref_c4": 0.5170033574104309,
+        "sal_wref_c5": 0.41370853781700134
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1152.0557861328125,
+        "gradnorm_l1_uncentered": 1170.6162109375,
+        "gradnorm_l2_centered": 2.2635104656219482,
+        "gradnorm_l2_uncentered": 2.6551883220672607,
+        "sal_noref_c1": 1.540833592414856,
+        "sal_noref_c2": 1.103834867477417,
+        "sal_noref_c3": 0.7618218064308167,
+        "sal_noref_c4": 0.6913036704063416,
+        "sal_noref_c5": 0.5534203052520752,
+        "sal_wref_c1": 0.19636869430541992,
+        "sal_wref_c2": 0.12695178389549255,
+        "sal_wref_c3": 0.25993695855140686,
+        "sal_wref_c4": 0.2165258377790451,
+        "sal_wref_c5": 0.17647913098335266
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "AlgorithmDesign_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 695.9251098632812,
+        "gradnorm_l1_uncentered": 462.2723388671875,
+        "gradnorm_l2_centered": 1.673559546470642,
+        "gradnorm_l2_uncentered": 1.2503690719604492,
+        "sal_noref_c1": 0.08939643204212189,
+        "sal_noref_c2": 0.35525989532470703,
+        "sal_noref_c3": 0.23983050882816315,
+        "sal_noref_c4": 0.19370707869529724,
+        "sal_noref_c5": 0.1570458710193634,
+        "sal_wref_c1": 1.6432595252990723,
+        "sal_wref_c2": 0.827506959438324,
+        "sal_wref_c3": 0.6149711012840271,
+        "sal_wref_c4": 0.4709332585334778,
+        "sal_wref_c5": 0.3775917887687683
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 770.7888793945312,
+        "gradnorm_l1_uncentered": 557.3460083007812,
+        "gradnorm_l2_centered": 1.9529869556427002,
+        "gradnorm_l2_uncentered": 1.1593633890151978,
+        "sal_noref_c1": 0.0002926642482634634,
+        "sal_noref_c2": 0.0500408373773098,
+        "sal_noref_c3": 0.1212744489312172,
+        "sal_noref_c4": 0.09178426861763,
+        "sal_noref_c5": 0.08063918352127075,
+        "sal_wref_c1": 1.8795019388198853,
+        "sal_wref_c2": 1.2271639108657837,
+        "sal_wref_c3": 0.8217747807502747,
+        "sal_wref_c4": 0.6487063765525818,
+        "sal_wref_c5": 0.5331442952156067
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "AlgorithmDesign_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 641.0499267578125,
+        "gradnorm_l1_uncentered": 285.3864440917969,
+        "gradnorm_l2_centered": 1.734708547592163,
+        "gradnorm_l2_uncentered": 0.5863156914710999,
+        "sal_noref_c1": 0.007197256665676832,
+        "sal_noref_c2": 0.009186100214719772,
+        "sal_noref_c3": 0.0189635269343853,
+        "sal_noref_c4": 0.014599244110286236,
+        "sal_noref_c5": 0.012867179699242115,
+        "sal_wref_c1": 1.4043110609054565,
+        "sal_wref_c2": 1.0678086280822754,
+        "sal_wref_c3": 0.7713349461555481,
+        "sal_wref_c4": 0.6280167102813721,
+        "sal_wref_c5": 0.5077439546585083
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2428.474609375,
+        "gradnorm_l1_uncentered": 2550.662841796875,
+        "gradnorm_l2_centered": 5.740157127380371,
+        "gradnorm_l2_uncentered": 6.027034759521484,
+        "sal_noref_c1": 0.4015982151031494,
+        "sal_noref_c2": 5.316856384277344,
+        "sal_noref_c3": 5.303663730621338,
+        "sal_noref_c4": 4.07566499710083,
+        "sal_noref_c5": 3.3978359699249268,
+        "sal_wref_c1": 4.836456298828125,
+        "sal_wref_c2": 3.8919730186462402,
+        "sal_wref_c3": 4.24468469619751,
+        "sal_wref_c4": 3.227330446243286,
+        "sal_wref_c5": 2.7864599227905273
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 599.4169921875,
+        "gradnorm_l1_uncentered": 195.85592651367188,
+        "gradnorm_l2_centered": 1.63815438747406,
+        "gradnorm_l2_uncentered": 0.44790810346603394,
+        "sal_noref_c1": 0.02630509063601494,
+        "sal_noref_c2": 0.049415647983551025,
+        "sal_noref_c3": 0.03426271304488182,
+        "sal_noref_c4": 0.025745108723640442,
+        "sal_noref_c5": 0.020607251673936844,
+        "sal_wref_c1": 1.3162486553192139,
+        "sal_wref_c2": 0.847294270992279,
+        "sal_wref_c3": 0.6932074427604675,
+        "sal_wref_c4": 0.5868371725082397,
+        "sal_wref_c5": 0.4696732461452484
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1486.0853271484375,
+        "gradnorm_l1_uncentered": 1630.0269775390625,
+        "gradnorm_l2_centered": 3.4895153045654297,
+        "gradnorm_l2_uncentered": 3.907562732696533,
+        "sal_noref_c1": 1.5940818786621094,
+        "sal_noref_c2": 3.0189645290374756,
+        "sal_noref_c3": 2.1330854892730713,
+        "sal_noref_c4": 1.7490062713623047,
+        "sal_noref_c5": 1.438568115234375,
+        "sal_wref_c1": 0.9337549209594727,
+        "sal_wref_c2": 1.3792295455932617,
+        "sal_wref_c3": 1.0361195802688599,
+        "sal_wref_c4": 0.9599002003669739,
+        "sal_wref_c5": 0.8526676893234253
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Excel_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 944.8778686523438,
+        "gradnorm_l1_uncentered": 908.293212890625,
+        "gradnorm_l2_centered": 1.9863388538360596,
+        "gradnorm_l2_uncentered": 1.9312655925750732,
+        "sal_noref_c1": 0.8367908596992493,
+        "sal_noref_c2": 0.46380552649497986,
+        "sal_noref_c3": 0.38411664962768555,
+        "sal_noref_c4": 0.2988598644733429,
+        "sal_noref_c5": 0.2416032999753952,
+        "sal_wref_c1": 0.19452284276485443,
+        "sal_wref_c2": 0.12269492447376251,
+        "sal_wref_c3": 0.3309822082519531,
+        "sal_wref_c4": 0.37204113602638245,
+        "sal_wref_c5": 0.30639225244522095
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1253.241455078125,
+        "gradnorm_l1_uncentered": 1376.8182373046875,
+        "gradnorm_l2_centered": 2.925745964050293,
+        "gradnorm_l2_uncentered": 3.6848535537719727,
+        "sal_noref_c1": 5.850377082824707,
+        "sal_noref_c2": 3.170161247253418,
+        "sal_noref_c3": 2.3492467403411865,
+        "sal_noref_c4": 1.7664861679077148,
+        "sal_noref_c5": 1.4202520847320557,
+        "sal_wref_c1": 0.5755832195281982,
+        "sal_wref_c2": 0.5825732946395874,
+        "sal_wref_c3": 0.6956821084022522,
+        "sal_wref_c4": 0.5314973592758179,
+        "sal_wref_c5": 0.43269890546798706
+      }
+    }
+  ]
+}

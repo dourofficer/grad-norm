@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "75.json",
+    "question_id": "0b260a57-3f3a-4405-9f29-6d7a1012dbfb",
+    "mistake_agent": "Data_Collection_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "On ScienceDirect, what is the difference to 3 decimal places in the sample standard deviations of the number of Reference Works in each Life Science domain compared to Health Sciences as of 2022?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Data_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 622.5839233398438,
+        "gradnorm_l1_uncentered": 426.3056640625,
+        "gradnorm_l2_centered": 1.3954226970672607,
+        "gradnorm_l2_uncentered": 1.149548053741455,
+        "sal_noref_c1": 0.8735529184341431,
+        "sal_noref_c2": 0.4492754340171814,
+        "sal_noref_c3": 0.322885662317276,
+        "sal_noref_c4": 0.2422647923231125,
+        "sal_noref_c5": 0.19441251456737518,
+        "sal_wref_c1": 1.5846933126449585,
+        "sal_wref_c2": 0.7856043577194214,
+        "sal_wref_c3": 0.5302157998085022,
+        "sal_wref_c4": 0.3990132212638855,
+        "sal_wref_c5": 0.3259378969669342
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Data_Collection_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 617.1592407226562,
+        "gradnorm_l1_uncentered": 338.8497314453125,
+        "gradnorm_l2_centered": 1.4924503564834595,
+        "gradnorm_l2_uncentered": 1.0009547472000122,
+        "sal_noref_c1": 0.6316085457801819,
+        "sal_noref_c2": 0.32027468085289,
+        "sal_noref_c3": 0.25555768609046936,
+        "sal_noref_c4": 0.19712646305561066,
+        "sal_noref_c5": 0.1589863896369934,
+        "sal_wref_c1": 1.9619193077087402,
+        "sal_wref_c2": 0.9778063297271729,
+        "sal_wref_c3": 0.6639182567596436,
+        "sal_wref_c4": 0.49986207485198975,
+        "sal_wref_c5": 0.3999137282371521
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 588.2796020507812,
+        "gradnorm_l1_uncentered": 236.9825897216797,
+        "gradnorm_l2_centered": 1.735538125038147,
+        "gradnorm_l2_uncentered": 0.5676032900810242,
+        "sal_noref_c1": 0.23092548549175262,
+        "sal_noref_c2": 0.11609453707933426,
+        "sal_noref_c3": 0.08053932338953018,
+        "sal_noref_c4": 0.06055356562137604,
+        "sal_noref_c5": 0.04969135671854019,
+        "sal_wref_c1": 2.8458292484283447,
+        "sal_wref_c2": 1.4238545894622803,
+        "sal_wref_c3": 0.9499607682228088,
+        "sal_wref_c4": 0.7137612700462341,
+        "sal_wref_c5": 0.5744819045066833
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1372.4530029296875,
+        "gradnorm_l1_uncentered": 1848.04150390625,
+        "gradnorm_l2_centered": 2.6672165393829346,
+        "gradnorm_l2_uncentered": 4.621784210205078,
+        "sal_noref_c1": 18.84089469909668,
+        "sal_noref_c2": 9.586515426635742,
+        "sal_noref_c3": 6.403891086578369,
+        "sal_noref_c4": 4.943102836608887,
+        "sal_noref_c5": 3.962646007537842,
+        "sal_wref_c1": 4.5747151374816895,
+        "sal_wref_c2": 2.546060800552368,
+        "sal_wref_c3": 1.7478176355361938,
+        "sal_wref_c4": 1.4080647230148315,
+        "sal_wref_c5": 1.126452922821045
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 727.6486206054688,
+        "gradnorm_l1_uncentered": 999.8408203125,
+        "gradnorm_l2_centered": 1.160630226135254,
+        "gradnorm_l2_uncentered": 2.314244508743286,
+        "sal_noref_c1": 3.948500156402588,
+        "sal_noref_c2": 1.9629179239273071,
+        "sal_noref_c3": 1.3373979330062866,
+        "sal_noref_c4": 1.006554365158081,
+        "sal_noref_c5": 0.8203017115592957,
+        "sal_wref_c1": 0.04705715924501419,
+        "sal_wref_c2": 0.039663009345531464,
+        "sal_wref_c3": 0.033842720091342926,
+        "sal_wref_c4": 0.025608576834201813,
+        "sal_wref_c5": 0.02342395856976509
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 623.1671142578125,
+        "gradnorm_l1_uncentered": 266.5215759277344,
+        "gradnorm_l2_centered": 1.7359539270401,
+        "gradnorm_l2_uncentered": 0.6569426655769348,
+        "sal_noref_c1": 0.25112271308898926,
+        "sal_noref_c2": 0.12759409844875336,
+        "sal_noref_c3": 0.0981825590133667,
+        "sal_noref_c4": 0.07528118789196014,
+        "sal_noref_c5": 0.06026298925280571,
+        "sal_wref_c1": 2.7961666584014893,
+        "sal_wref_c2": 1.3964544534683228,
+        "sal_wref_c3": 0.9318614602088928,
+        "sal_wref_c4": 0.6989213824272156,
+        "sal_wref_c5": 0.5637111663818359
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Data_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2616.52490234375,
+        "gradnorm_l1_uncentered": 3146.690185546875,
+        "gradnorm_l2_centered": 5.610485553741455,
+        "gradnorm_l2_uncentered": 7.490184307098389,
+        "sal_noref_c1": 46.38345718383789,
+        "sal_noref_c2": 24.967504501342773,
+        "sal_noref_c3": 17.095361709594727,
+        "sal_noref_c4": 12.821614265441895,
+        "sal_noref_c5": 10.45124626159668,
+        "sal_wref_c1": 22.53824806213379,
+        "sal_wref_c2": 12.793251991271973,
+        "sal_wref_c3": 9.096470832824707,
+        "sal_wref_c4": 6.86599063873291,
+        "sal_wref_c5": 5.610101222991943
+      }
+    }
+  ]
+}

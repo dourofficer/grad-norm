@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "75.json",
+    "question_id": "0b260a57-3f3a-4405-9f29-6d7a1012dbfb",
+    "mistake_agent": "Data_Collection_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "On ScienceDirect, what is the difference to 3 decimal places in the sample standard deviations of the number of Reference Works in each Life Science domain compared to Health Sciences as of 2022?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Data_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 964.9674682617188,
+        "gradnorm_l1_uncentered": 366.9189758300781,
+        "gradnorm_l2_centered": 1.9977002143859863,
+        "gradnorm_l2_uncentered": 0.8340532183647156,
+        "sal_noref_c1": 0.17105413973331451,
+        "sal_noref_c2": 0.09324895590543747,
+        "sal_noref_c3": 0.06251045316457748,
+        "sal_noref_c4": 0.052449777722358704,
+        "sal_noref_c5": 0.04212799295783043,
+        "sal_wref_c1": 3.504516839981079,
+        "sal_wref_c2": 1.743512749671936,
+        "sal_wref_c3": 1.1624146699905396,
+        "sal_wref_c4": 0.8787665963172913,
+        "sal_wref_c5": 0.7047761678695679
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Data_Collection_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 956.0012817382812,
+        "gradnorm_l1_uncentered": 305.97802734375,
+        "gradnorm_l2_centered": 2.0675246715545654,
+        "gradnorm_l2_uncentered": 0.6004303693771362,
+        "sal_noref_c1": 0.08351351320743561,
+        "sal_noref_c2": 0.04746898263692856,
+        "sal_noref_c3": 0.0325990729033947,
+        "sal_noref_c4": 0.027430256828665733,
+        "sal_noref_c5": 0.02434668317437172,
+        "sal_wref_c1": 3.9549098014831543,
+        "sal_wref_c2": 1.966468095779419,
+        "sal_wref_c3": 1.3109806776046753,
+        "sal_wref_c4": 0.9895470142364502,
+        "sal_wref_c5": 0.7945294380187988
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 874.023681640625,
+        "gradnorm_l1_uncentered": 325.2965393066406,
+        "gradnorm_l2_centered": 1.882092833518982,
+        "gradnorm_l2_uncentered": 0.6668327450752258,
+        "sal_noref_c1": 0.21734388172626495,
+        "sal_noref_c2": 0.1261274367570877,
+        "sal_noref_c3": 0.09063494950532913,
+        "sal_noref_c4": 0.06816072762012482,
+        "sal_noref_c5": 0.05474507063627243,
+        "sal_wref_c1": 3.287754774093628,
+        "sal_wref_c2": 1.6383864879608154,
+        "sal_wref_c3": 1.0951484441757202,
+        "sal_wref_c4": 0.8214696645736694,
+        "sal_wref_c5": 0.6572867631912231
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2215.442626953125,
+        "gradnorm_l1_uncentered": 2828.145263671875,
+        "gradnorm_l2_centered": 4.340229034423828,
+        "gradnorm_l2_uncentered": 5.800662994384766,
+        "sal_noref_c1": 19.110166549682617,
+        "sal_noref_c2": 10.003475189208984,
+        "sal_noref_c3": 6.7740397453308105,
+        "sal_noref_c4": 5.307976245880127,
+        "sal_noref_c5": 4.265542984008789,
+        "sal_wref_c1": 4.310051918029785,
+        "sal_wref_c2": 2.6305716037750244,
+        "sal_wref_c3": 1.8591208457946777,
+        "sal_wref_c4": 1.6035882234573364,
+        "sal_wref_c5": 1.294019341468811
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1041.4085693359375,
+        "gradnorm_l1_uncentered": 1398.9752197265625,
+        "gradnorm_l2_centered": 2.0335726737976074,
+        "gradnorm_l2_uncentered": 2.990873098373413,
+        "sal_noref_c1": 4.787206172943115,
+        "sal_noref_c2": 2.4199986457824707,
+        "sal_noref_c3": 1.6136404275894165,
+        "sal_noref_c4": 1.2812703847885132,
+        "sal_noref_c5": 1.0267928838729858,
+        "sal_wref_c1": 0.009275545366108418,
+        "sal_wref_c2": 0.06068900227546692,
+        "sal_wref_c3": 0.04193950071930885,
+        "sal_wref_c4": 0.1072293072938919,
+        "sal_wref_c5": 0.08643138408660889
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 966.96484375,
+        "gradnorm_l1_uncentered": 324.50555419921875,
+        "gradnorm_l2_centered": 2.0969972610473633,
+        "gradnorm_l2_uncentered": 0.5473673939704895,
+        "sal_noref_c1": 0.06738273054361343,
+        "sal_noref_c2": 0.03406480699777603,
+        "sal_noref_c3": 0.02412361651659012,
+        "sal_noref_c4": 0.01956765353679657,
+        "sal_noref_c5": 0.015667514875531197,
+        "sal_wref_c1": 4.038809776306152,
+        "sal_wref_c2": 2.018726348876953,
+        "sal_wref_c3": 1.3458914756774902,
+        "sal_wref_c4": 1.0129646062850952,
+        "sal_wref_c5": 0.8105400800704956
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Data_Collection_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3528.40478515625,
+        "gradnorm_l1_uncentered": 4231.775390625,
+        "gradnorm_l2_centered": 7.098237991333008,
+        "gradnorm_l2_uncentered": 8.545042037963867,
+        "sal_noref_c1": 38.4804801940918,
+        "sal_noref_c2": 23.54469108581543,
+        "sal_noref_c3": 15.905357360839844,
+        "sal_noref_c4": 11.951709747314453,
+        "sal_noref_c5": 9.880651473999023,
+        "sal_wref_c1": 16.136703491210938,
+        "sal_wref_c2": 12.324580192565918,
+        "sal_wref_c3": 8.44553279876709,
+        "sal_wref_c4": 6.407712459564209,
+        "sal_wref_c5": 5.632271766662598
+      }
+    }
+  ]
+}

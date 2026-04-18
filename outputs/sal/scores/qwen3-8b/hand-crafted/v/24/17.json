@@ -1,0 +1,101 @@
+{
+  "config": {
+    "subset": "hand-crafted",
+    "weight_config": "/home/hoangpham/exchange/hand-crafted/v/24"
+  },
+  "metadata": {
+    "filename": "24.json",
+    "question_id": "42576abe-0deb-4869-8c63-225c2d75a95a",
+    "mistake_agent": "Orchestrator",
+    "mistake_step": 1,
+    "level": 1,
+    "subset": "hand-crafted",
+    "question": "In the fictional language of Tizin, basic sentences are arranged with the Verb first, followed by the direct object, followed by the subject of the sentence. I want to express my love for apples to my Tizin friend."
+  },
+  "steps": [
+    {
+      "step_idx": 1,
+      "role": "Orchestrator (thought)",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1371.3819580078125,
+        "gradnorm_l1_uncentered": 403.51953125,
+        "gradnorm_l2_centered": 2.6253209114074707,
+        "gradnorm_l2_uncentered": 0.7636443376541138,
+        "sal_noref_c1": 0.04058859497308731,
+        "sal_noref_c2": 0.03843364864587784,
+        "sal_noref_c3": 0.02661355584859848,
+        "sal_noref_c4": 0.033033594489097595,
+        "sal_noref_c5": 0.038969986140728,
+        "sal_wref_c1": 5.940719127655029,
+        "sal_wref_c2": 3.0327725410461426,
+        "sal_wref_c3": 2.045180559158325,
+        "sal_wref_c4": 1.5440037250518799,
+        "sal_wref_c5": 1.2614511251449585
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1458.4920654296875,
+        "gradnorm_l1_uncentered": 1027.00927734375,
+        "gradnorm_l2_centered": 2.548389196395874,
+        "gradnorm_l2_uncentered": 2.1833865642547607,
+        "sal_noref_c1": 0.7732837796211243,
+        "sal_noref_c2": 0.6286472678184509,
+        "sal_noref_c3": 0.46953392028808594,
+        "sal_noref_c4": 0.4006880819797516,
+        "sal_noref_c5": 0.4507066309452057,
+        "sal_wref_c1": 3.5081875324249268,
+        "sal_wref_c2": 1.7407386302947998,
+        "sal_wref_c3": 1.275777816772461,
+        "sal_wref_c4": 1.013146162033081,
+        "sal_wref_c5": 0.8228128552436829
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4604.28466796875,
+        "gradnorm_l1_uncentered": 4914.013671875,
+        "gradnorm_l2_centered": 8.41773796081543,
+        "gradnorm_l2_uncentered": 9.571609497070312,
+        "sal_noref_c1": 21.984724044799805,
+        "sal_noref_c2": 12.401552200317383,
+        "sal_noref_c3": 8.272183418273926,
+        "sal_noref_c4": 6.539727687835693,
+        "sal_noref_c5": 7.572495460510254,
+        "sal_wref_c1": 2.8329739570617676,
+        "sal_wref_c2": 1.4615795612335205,
+        "sal_wref_c3": 0.9860536456108093,
+        "sal_wref_c4": 1.1745762825012207,
+        "sal_wref_c5": 3.645350694656372
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Orchestrator (termination condition)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3792.974853515625,
+        "gradnorm_l1_uncentered": 4016.702392578125,
+        "gradnorm_l2_centered": 8.091277122497559,
+        "gradnorm_l2_uncentered": 9.155309677124023,
+        "sal_noref_c1": 16.248416900634766,
+        "sal_noref_c2": 14.018280029296875,
+        "sal_noref_c3": 11.23363971710205,
+        "sal_noref_c4": 10.188199043273926,
+        "sal_noref_c5": 9.984724044799805,
+        "sal_wref_c1": 0.7884067296981812,
+        "sal_wref_c2": 4.01924467086792,
+        "sal_wref_c3": 4.108255386352539,
+        "sal_wref_c4": 4.922211647033691,
+        "sal_wref_c5": 7.068967342376709
+      }
+    }
+  ]
+}

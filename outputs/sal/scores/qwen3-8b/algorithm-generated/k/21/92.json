@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "68.json",
+    "question_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 3,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 737.1090698242188,
+        "gradnorm_l1_uncentered": 462.38177490234375,
+        "gradnorm_l2_centered": 1.6337623596191406,
+        "gradnorm_l2_uncentered": 1.2824901342391968,
+        "sal_noref_c1": 0.3090628385543823,
+        "sal_noref_c2": 0.25096747279167175,
+        "sal_noref_c3": 0.20681899785995483,
+        "sal_noref_c4": 0.15581820905208588,
+        "sal_noref_c5": 0.13144949078559875,
+        "sal_wref_c1": 0.726629376411438,
+        "sal_wref_c2": 0.40272027254104614,
+        "sal_wref_c3": 0.5003955364227295,
+        "sal_wref_c4": 0.429279625415802,
+        "sal_wref_c5": 0.34646859765052795
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 610.4866943359375,
+        "gradnorm_l1_uncentered": 254.42352294921875,
+        "gradnorm_l2_centered": 1.6239688396453857,
+        "gradnorm_l2_uncentered": 0.5223323702812195,
+        "sal_noref_c1": 0.05546463280916214,
+        "sal_noref_c2": 0.02913575805723667,
+        "sal_noref_c3": 0.01962755061686039,
+        "sal_noref_c4": 0.019083267077803612,
+        "sal_noref_c5": 0.015270426869392395,
+        "sal_wref_c1": 0.9467142224311829,
+        "sal_wref_c2": 0.8980501890182495,
+        "sal_wref_c3": 0.7199625968933105,
+        "sal_wref_c4": 0.5774410963058472,
+        "sal_wref_c5": 0.46207255125045776
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2284.829345703125,
+        "gradnorm_l1_uncentered": 2354.363525390625,
+        "gradnorm_l2_centered": 4.4640631675720215,
+        "gradnorm_l2_uncentered": 4.967961311340332,
+        "sal_noref_c1": 1.3672888278961182,
+        "sal_noref_c2": 4.287644863128662,
+        "sal_noref_c3": 3.396826982498169,
+        "sal_noref_c4": 2.813316583633423,
+        "sal_noref_c5": 2.2575032711029053,
+        "sal_wref_c1": 2.228318691253662,
+        "sal_wref_c2": 2.284499168395996,
+        "sal_wref_c3": 1.8133293390274048,
+        "sal_wref_c4": 1.6263173818588257,
+        "sal_wref_c5": 1.3065005540847778
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1930.13427734375,
+        "gradnorm_l1_uncentered": 1959.048095703125,
+        "gradnorm_l2_centered": 3.691277265548706,
+        "gradnorm_l2_uncentered": 3.9630565643310547,
+        "sal_noref_c1": 0.5751162767410278,
+        "sal_noref_c2": 1.691197156906128,
+        "sal_noref_c3": 1.777239203453064,
+        "sal_noref_c4": 1.3420888185501099,
+        "sal_noref_c5": 1.138701319694519,
+        "sal_wref_c1": 1.9573309421539307,
+        "sal_wref_c2": 1.111682653427124,
+        "sal_wref_c3": 1.08293616771698,
+        "sal_wref_c4": 0.8149335384368896,
+        "sal_wref_c5": 0.6910179257392883
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1440.655517578125,
+        "gradnorm_l1_uncentered": 1534.9842529296875,
+        "gradnorm_l2_centered": 3.890106678009033,
+        "gradnorm_l2_uncentered": 3.8799619674682617,
+        "sal_noref_c1": 1.5675406455993652,
+        "sal_noref_c2": 3.110474109649658,
+        "sal_noref_c3": 2.2700679302215576,
+        "sal_noref_c4": 1.9305737018585205,
+        "sal_noref_c5": 1.5450602769851685,
+        "sal_wref_c1": 0.4454319179058075,
+        "sal_wref_c2": 3.778623580932617,
+        "sal_wref_c3": 2.528522253036499,
+        "sal_wref_c4": 1.9555699825286865,
+        "sal_wref_c5": 1.568910837173462
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2765.632080078125,
+        "gradnorm_l1_uncentered": 2986.943603515625,
+        "gradnorm_l2_centered": 5.8335371017456055,
+        "gradnorm_l2_uncentered": 6.770800590515137,
+        "sal_noref_c1": 21.58110237121582,
+        "sal_noref_c2": 10.73232650756836,
+        "sal_noref_c3": 7.252401351928711,
+        "sal_noref_c4": 5.439614772796631,
+        "sal_noref_c5": 4.363034725189209,
+        "sal_wref_c1": 8.948355674743652,
+        "sal_wref_c2": 4.978904724121094,
+        "sal_wref_c3": 3.3550193309783936,
+        "sal_wref_c4": 2.5174901485443115,
+        "sal_wref_c5": 2.0163512229919434
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 13470.9599609375,
+        "gradnorm_l1_uncentered": 13738.9326171875,
+        "gradnorm_l2_centered": 36.04249572753906,
+        "gradnorm_l2_uncentered": 36.93305969238281,
+        "sal_noref_c1": 669.9415283203125,
+        "sal_noref_c2": 354.8392333984375,
+        "sal_noref_c3": 281.0601501464844,
+        "sal_noref_c4": 212.931884765625,
+        "sal_noref_c5": 174.6331787109375,
+        "sal_wref_c1": 693.9395141601562,
+        "sal_wref_c2": 360.0179138183594,
+        "sal_wref_c3": 261.7009582519531,
+        "sal_wref_c4": 200.2987518310547,
+        "sal_wref_c5": 165.94363403320312
+      }
+    }
+  ]
+}

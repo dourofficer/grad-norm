@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "23.json",
+    "question_id": "6b078778-0b90-464d-83f6-59511c811b01",
+    "mistake_agent": "Church_Historian_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "The Metropolitan Museum of Art has a portrait in its collection with an accession number of 29.100.5. Of the consecrators and co-consecrators of this portrait's subject as a bishop, what is the name of the one who never became pope?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Art_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 647.14892578125,
+        "gradnorm_l1_uncentered": 490.07208251953125,
+        "gradnorm_l2_centered": 1.2648075819015503,
+        "gradnorm_l2_uncentered": 1.3540153503417969,
+        "sal_noref_c1": 1.256533145904541,
+        "sal_noref_c2": 0.6604760885238647,
+        "sal_noref_c3": 0.4703724682331085,
+        "sal_noref_c4": 0.3540247976779938,
+        "sal_noref_c5": 0.28369373083114624,
+        "sal_wref_c1": 1.1826460361480713,
+        "sal_wref_c2": 0.5891163349151611,
+        "sal_wref_c3": 0.4017941951751709,
+        "sal_wref_c4": 0.3014734387397766,
+        "sal_wref_c5": 0.24407212436199188
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Art_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 689.2546997070312,
+        "gradnorm_l1_uncentered": 681.5296020507812,
+        "gradnorm_l2_centered": 1.2769238948822021,
+        "gradnorm_l2_uncentered": 2.0515341758728027,
+        "sal_noref_c1": 2.684267997741699,
+        "sal_noref_c2": 1.3422735929489136,
+        "sal_noref_c3": 1.0756336450576782,
+        "sal_noref_c4": 0.8155432939529419,
+        "sal_noref_c5": 0.654674232006073,
+        "sal_wref_c1": 0.3527176082134247,
+        "sal_wref_c2": 0.1775122880935669,
+        "sal_wref_c3": 0.2278510481119156,
+        "sal_wref_c4": 0.1797085851430893,
+        "sal_wref_c5": 0.14668044447898865
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1573.878662109375,
+        "gradnorm_l1_uncentered": 1993.1646728515625,
+        "gradnorm_l2_centered": 3.427724838256836,
+        "gradnorm_l2_uncentered": 5.288984298706055,
+        "sal_noref_c1": 22.25002670288086,
+        "sal_noref_c2": 12.08840560913086,
+        "sal_noref_c3": 8.076203346252441,
+        "sal_noref_c4": 6.1232733726501465,
+        "sal_noref_c5": 4.90354061126709,
+        "sal_wref_c1": 5.8104047775268555,
+        "sal_wref_c2": 3.9816513061523438,
+        "sal_wref_c3": 2.6677732467651367,
+        "sal_wref_c4": 2.096989870071411,
+        "sal_wref_c5": 1.6776660680770874
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Church_Historian_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 817.9598999023438,
+        "gradnorm_l1_uncentered": 1057.008056640625,
+        "gradnorm_l2_centered": 1.2767127752304077,
+        "gradnorm_l2_uncentered": 2.5964195728302,
+        "sal_noref_c1": 4.917057514190674,
+        "sal_noref_c2": 2.487170457839966,
+        "sal_noref_c3": 1.6604795455932617,
+        "sal_noref_c4": 1.2843555212020874,
+        "sal_noref_c5": 1.0561071634292603,
+        "sal_wref_c1": 0.0003654566826298833,
+        "sal_wref_c2": 0.010449203662574291,
+        "sal_wref_c3": 0.010961341671645641,
+        "sal_wref_c4": 0.024126295000314713,
+        "sal_wref_c5": 0.05427192896604538
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1699.8126220703125,
+        "gradnorm_l1_uncentered": 2086.635498046875,
+        "gradnorm_l2_centered": 2.929109573364258,
+        "gradnorm_l2_uncentered": 4.461788654327393,
+        "sal_noref_c1": 13.648130416870117,
+        "sal_noref_c2": 7.817845344543457,
+        "sal_noref_c3": 5.615262508392334,
+        "sal_noref_c4": 4.323482036590576,
+        "sal_noref_c5": 3.471487045288086,
+        "sal_wref_c1": 2.2827348709106445,
+        "sal_wref_c2": 2.2724955081939697,
+        "sal_wref_c3": 1.7714042663574219,
+        "sal_wref_c4": 1.4608224630355835,
+        "sal_wref_c5": 1.1903396844863892
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 619.6917724609375,
+        "gradnorm_l1_uncentered": 609.2964477539062,
+        "gradnorm_l2_centered": 1.250451922416687,
+        "gradnorm_l2_uncentered": 1.4072375297546387,
+        "sal_noref_c1": 1.3530786037445068,
+        "sal_noref_c2": 0.7393598556518555,
+        "sal_noref_c3": 0.49613523483276367,
+        "sal_noref_c4": 0.38562464714050293,
+        "sal_noref_c5": 0.3119632303714752,
+        "sal_wref_c1": 1.0946475267410278,
+        "sal_wref_c2": 0.55922532081604,
+        "sal_wref_c3": 0.37396740913391113,
+        "sal_wref_c4": 0.2850205898284912,
+        "sal_wref_c5": 0.22802725434303284
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 757.3685913085938,
+        "gradnorm_l1_uncentered": 814.0540161132812,
+        "gradnorm_l2_centered": 1.4131313562393188,
+        "gradnorm_l2_uncentered": 1.5403443574905396,
+        "sal_noref_c1": 1.384826898574829,
+        "sal_noref_c2": 0.7565891146659851,
+        "sal_noref_c3": 0.5331834554672241,
+        "sal_noref_c4": 0.40044063329696655,
+        "sal_noref_c5": 0.32892048358917236,
+        "sal_wref_c1": 1.0108884572982788,
+        "sal_wref_c2": 0.5243221521377563,
+        "sal_wref_c3": 0.4012288749217987,
+        "sal_wref_c4": 0.31034600734710693,
+        "sal_wref_c5": 0.25040334463119507
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 676.3472290039062,
+        "gradnorm_l1_uncentered": 488.50408935546875,
+        "gradnorm_l2_centered": 1.5229371786117554,
+        "gradnorm_l2_uncentered": 1.0021499395370483,
+        "sal_noref_c1": 0.6119474172592163,
+        "sal_noref_c2": 0.3094596862792969,
+        "sal_noref_c3": 0.20966173708438873,
+        "sal_noref_c4": 0.16038143634796143,
+        "sal_noref_c5": 0.13450737297534943,
+        "sal_wref_c1": 1.9709727764129639,
+        "sal_wref_c2": 0.9833770394325256,
+        "sal_wref_c3": 0.6569340825080872,
+        "sal_wref_c4": 0.49270325899124146,
+        "sal_wref_c5": 0.39549869298934937
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2063.06298828125,
+        "gradnorm_l1_uncentered": 2486.78369140625,
+        "gradnorm_l2_centered": 3.3092093467712402,
+        "gradnorm_l2_uncentered": 4.782519817352295,
+        "sal_noref_c1": 14.647582054138184,
+        "sal_noref_c2": 7.294620513916016,
+        "sal_noref_c3": 4.980576038360596,
+        "sal_noref_c4": 4.125258922576904,
+        "sal_noref_c5": 3.3892197608947754,
+        "sal_wref_c1": 2.7337613105773926,
+        "sal_wref_c2": 1.3797874450683594,
+        "sal_wref_c3": 0.9893181920051575,
+        "sal_wref_c4": 1.2875444889068604,
+        "sal_wref_c5": 1.0440319776535034
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Church_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 582.4737548828125,
+        "gradnorm_l1_uncentered": 454.64080810546875,
+        "gradnorm_l2_centered": 1.451587438583374,
+        "gradnorm_l2_uncentered": 0.9957879781723022,
+        "sal_noref_c1": 0.6956274509429932,
+        "sal_noref_c2": 0.35389429330825806,
+        "sal_noref_c3": 0.2359827607870102,
+        "sal_noref_c4": 0.179483100771904,
+        "sal_noref_c5": 0.145955428481102,
+        "sal_wref_c1": 1.8081798553466797,
+        "sal_wref_c2": 0.8981436491012573,
+        "sal_wref_c3": 0.6047336459159851,
+        "sal_wref_c4": 0.45357388257980347,
+        "sal_wref_c5": 0.3646238446235657
+      }
+    }
+  ]
+}

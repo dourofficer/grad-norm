@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "93.json",
+    "question_id": "08c0b6e9-1b43-4c2e-ae55-4e3fce2c2715",
+    "mistake_agent": "FilmCritic_Expert",
+    "mistake_step": 4,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "In the film Goldfinger, what color was the object that James Bond concealed himself and his companion Pussy Galore at the end of the film? If there are multiple colors, put them in a comma-separated list in alphabetical order."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JamesBondFilms_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1002.9771728515625,
+        "gradnorm_l1_uncentered": 591.9178466796875,
+        "gradnorm_l2_centered": 1.9593137502670288,
+        "gradnorm_l2_uncentered": 1.3461159467697144,
+        "sal_noref_c1": 0.44773268699645996,
+        "sal_noref_c2": 0.242460697889328,
+        "sal_noref_c3": 0.16523881256580353,
+        "sal_noref_c4": 0.13327452540397644,
+        "sal_noref_c5": 0.10872913897037506,
+        "sal_wref_c1": 2.6685056686401367,
+        "sal_wref_c2": 1.3330553770065308,
+        "sal_wref_c3": 0.8897252082824707,
+        "sal_wref_c4": 0.678993821144104,
+        "sal_wref_c5": 0.5444326996803284
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "JamesBondFilms_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2626.04345703125,
+        "gradnorm_l1_uncentered": 3038.850341796875,
+        "gradnorm_l2_centered": 7.496413707733154,
+        "gradnorm_l2_uncentered": 8.607861518859863,
+        "sal_noref_c1": 24.40757179260254,
+        "sal_noref_c2": 16.227210998535156,
+        "sal_noref_c3": 11.59339427947998,
+        "sal_noref_c4": 9.434210777282715,
+        "sal_noref_c5": 7.943753242492676,
+        "sal_wref_c1": 6.53080940246582,
+        "sal_wref_c2": 7.3136749267578125,
+        "sal_wref_c3": 5.684243679046631,
+        "sal_wref_c4": 5.026825428009033,
+        "sal_wref_c5": 4.435881614685059
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "MovieProp_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3298.99365234375,
+        "gradnorm_l1_uncentered": 3814.88525390625,
+        "gradnorm_l2_centered": 8.100519180297852,
+        "gradnorm_l2_uncentered": 9.317049026489258,
+        "sal_noref_c1": 30.93305206298828,
+        "sal_noref_c2": 19.352031707763672,
+        "sal_noref_c3": 13.401073455810547,
+        "sal_noref_c4": 10.052785873413086,
+        "sal_noref_c5": 8.522479057312012,
+        "sal_wref_c1": 9.626275062561035,
+        "sal_wref_c2": 8.721776962280273,
+        "sal_wref_c3": 6.4064812660217285,
+        "sal_wref_c4": 4.807679176330566,
+        "sal_wref_c5": 4.6518402099609375
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "FilmCritic_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3066.774658203125,
+        "gradnorm_l1_uncentered": 3408.9560546875,
+        "gradnorm_l2_centered": 7.514393329620361,
+        "gradnorm_l2_uncentered": 8.452430725097656,
+        "sal_noref_c1": 17.696287155151367,
+        "sal_noref_c2": 10.386326789855957,
+        "sal_noref_c3": 7.001835346221924,
+        "sal_noref_c4": 5.839024543762207,
+        "sal_noref_c5": 5.118264198303223,
+        "sal_wref_c1": 3.074575662612915,
+        "sal_wref_c2": 3.0270843505859375,
+        "sal_wref_c3": 2.066486358642578,
+        "sal_wref_c4": 2.145238161087036,
+        "sal_wref_c5": 2.6589672565460205
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "FilmCritic_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 4378.833984375,
+        "gradnorm_l1_uncentered": 4741.5546875,
+        "gradnorm_l2_centered": 10.312113761901855,
+        "gradnorm_l2_uncentered": 10.895262718200684,
+        "sal_noref_c1": 12.340853691101074,
+        "sal_noref_c2": 6.197506427764893,
+        "sal_noref_c3": 4.49445104598999,
+        "sal_noref_c4": 4.028928756713867,
+        "sal_noref_c5": 3.4313011169433594,
+        "sal_wref_c1": 0.9561723470687866,
+        "sal_wref_c2": 0.4990031123161316,
+        "sal_wref_c3": 0.5546131730079651,
+        "sal_wref_c4": 0.9085274934768677,
+        "sal_wref_c5": 1.312489628791809
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "JamesBondFilms_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7016.66845703125,
+        "gradnorm_l1_uncentered": 7631.67333984375,
+        "gradnorm_l2_centered": 13.448044776916504,
+        "gradnorm_l2_uncentered": 14.886188507080078,
+        "sal_noref_c1": 101.04053497314453,
+        "sal_noref_c2": 52.474124908447266,
+        "sal_noref_c3": 40.763736724853516,
+        "sal_noref_c4": 31.696514129638672,
+        "sal_noref_c5": 26.231842041015625,
+        "sal_wref_c1": 59.999942779541016,
+        "sal_wref_c2": 32.33229446411133,
+        "sal_wref_c3": 27.53712272644043,
+        "sal_wref_c4": 21.2720890045166,
+        "sal_wref_c5": 17.671398162841797
+      }
+    }
+  ]
+}

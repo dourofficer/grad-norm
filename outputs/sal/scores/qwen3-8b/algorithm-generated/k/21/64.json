@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "42.json",
+    "question_id": "e0c10771-d627-4fd7-9694-05348e54ee36",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "Take the gender split from the 2011 Bulgarian census about those who have completed tertiary education. Subtract the smaller number from the larger number, then return the difference in thousands of women. So if there were 30.1 thousand more men, you'd give \"30.1\""
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DemographicData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 692.3744506835938,
+        "gradnorm_l1_uncentered": 418.51666259765625,
+        "gradnorm_l2_centered": 1.5856897830963135,
+        "gradnorm_l2_uncentered": 1.3579376935958862,
+        "sal_noref_c1": 0.4349679946899414,
+        "sal_noref_c2": 0.2684529721736908,
+        "sal_noref_c3": 0.23178227245807648,
+        "sal_noref_c4": 0.1862451732158661,
+        "sal_noref_c5": 0.15838870406150818,
+        "sal_wref_c1": 0.5215666890144348,
+        "sal_wref_c2": 0.32694557309150696,
+        "sal_wref_c3": 0.5039809346199036,
+        "sal_wref_c4": 0.40348249673843384,
+        "sal_wref_c5": 0.32707449793815613
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 612.5635986328125,
+        "gradnorm_l1_uncentered": 366.4337158203125,
+        "gradnorm_l2_centered": 1.4455053806304932,
+        "gradnorm_l2_uncentered": 1.252548098564148,
+        "sal_noref_c1": 0.5522489547729492,
+        "sal_noref_c2": 0.28336766362190247,
+        "sal_noref_c3": 0.21339954435825348,
+        "sal_noref_c4": 0.1703491061925888,
+        "sal_noref_c5": 0.13706281781196594,
+        "sal_wref_c1": 0.33561083674430847,
+        "sal_wref_c2": 0.31022781133651733,
+        "sal_wref_c3": 0.42580685019493103,
+        "sal_wref_c4": 0.3452925384044647,
+        "sal_wref_c5": 0.276569664478302
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2229.6328125,
+        "gradnorm_l1_uncentered": 2429.6962890625,
+        "gradnorm_l2_centered": 5.40475606918335,
+        "gradnorm_l2_uncentered": 6.555228233337402,
+        "sal_noref_c1": 15.145049095153809,
+        "sal_noref_c2": 12.559839248657227,
+        "sal_noref_c3": 8.452187538146973,
+        "sal_noref_c4": 6.806864261627197,
+        "sal_noref_c5": 5.671795845031738,
+        "sal_wref_c1": 0.6741431355476379,
+        "sal_wref_c2": 5.206623077392578,
+        "sal_wref_c3": 3.612030267715454,
+        "sal_wref_c4": 3.346527576446533,
+        "sal_wref_c5": 2.9286792278289795
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "ProblemSolving_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3652.98779296875,
+        "gradnorm_l1_uncentered": 3865.688720703125,
+        "gradnorm_l2_centered": 9.071160316467285,
+        "gradnorm_l2_uncentered": 10.211935043334961,
+        "sal_noref_c1": 37.77781677246094,
+        "sal_noref_c2": 26.412912368774414,
+        "sal_noref_c3": 17.63348960876465,
+        "sal_noref_c4": 13.69906997680664,
+        "sal_noref_c5": 11.08769416809082,
+        "sal_wref_c1": 6.592901706695557,
+        "sal_wref_c2": 14.38402271270752,
+        "sal_wref_c3": 9.624200820922852,
+        "sal_wref_c4": 7.935052394866943,
+        "sal_wref_c5": 6.601677894592285
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2642.83349609375,
+        "gradnorm_l1_uncentered": 2856.0966796875,
+        "gradnorm_l2_centered": 4.682722568511963,
+        "gradnorm_l2_uncentered": 5.316493988037109,
+        "sal_noref_c1": 7.375106334686279,
+        "sal_noref_c2": 3.922574520111084,
+        "sal_noref_c3": 2.7049005031585693,
+        "sal_noref_c4": 2.422700881958008,
+        "sal_noref_c5": 2.1474976539611816,
+        "sal_wref_c1": 1.8671832084655762,
+        "sal_wref_c2": 1.2680007219314575,
+        "sal_wref_c3": 0.8461378216743469,
+        "sal_wref_c4": 0.8815712928771973,
+        "sal_wref_c5": 0.8435587882995605
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DemographicData_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8409.7568359375,
+        "gradnorm_l1_uncentered": 8692.2998046875,
+        "gradnorm_l2_centered": 15.397787094116211,
+        "gradnorm_l2_uncentered": 16.00082778930664,
+        "sal_noref_c1": 52.64200210571289,
+        "sal_noref_c2": 47.46678924560547,
+        "sal_noref_c3": 41.42190170288086,
+        "sal_noref_c4": 31.209136962890625,
+        "sal_noref_c5": 29.422954559326172,
+        "sal_wref_c1": 53.066776275634766,
+        "sal_wref_c2": 40.70041275024414,
+        "sal_wref_c3": 34.542137145996094,
+        "sal_wref_c4": 26.37354278564453,
+        "sal_wref_c5": 25.336971282958984
+      }
+    }
+  ]
+}

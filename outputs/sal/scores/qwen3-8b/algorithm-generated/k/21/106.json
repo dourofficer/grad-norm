@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "80.json",
+    "question_id": "0bdb7c40-671d-4ad1-9ce3-986b159c0ddc",
+    "mistake_agent": "PythonDebugging_Expert",
+    "mistake_step": 0,
+    "level": "3",
+    "subset": "algorithm-generated",
+    "question": "In NASA's Astronomy Picture of the Day on 2006 January 21, two astronauts are visible, with one appearing much smaller than the other. As of August 2023, out of the astronauts in the NASA Astronaut Group that the smaller astronaut was a member of, which one spent the least time in space, and how many minutes did he spend in space, rounded to the nearest minute? Exclude any astronauts who did not spend any time in space. Give the last name of the astronaut, separated from the number of minutes by a semicolon."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 651.4794921875,
+        "gradnorm_l1_uncentered": 330.66973876953125,
+        "gradnorm_l2_centered": 1.4425392150878906,
+        "gradnorm_l2_uncentered": 0.9870185852050781,
+        "sal_noref_c1": 0.2099909782409668,
+        "sal_noref_c2": 0.16003340482711792,
+        "sal_noref_c3": 0.10713857412338257,
+        "sal_noref_c4": 0.09924066066741943,
+        "sal_noref_c5": 0.0807608813047409,
+        "sal_wref_c1": 0.8981308341026306,
+        "sal_wref_c2": 0.5752271413803101,
+        "sal_wref_c3": 0.5099770426750183,
+        "sal_wref_c4": 0.39461150765419006,
+        "sal_wref_c5": 0.3157067894935608
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 648.12646484375,
+        "gradnorm_l1_uncentered": 254.3929901123047,
+        "gradnorm_l2_centered": 1.7689030170440674,
+        "gradnorm_l2_uncentered": 0.6267464756965637,
+        "sal_noref_c1": 0.006231621839106083,
+        "sal_noref_c2": 0.02500982955098152,
+        "sal_noref_c3": 0.01667407713830471,
+        "sal_noref_c4": 0.013405508361756802,
+        "sal_noref_c5": 0.01083100214600563,
+        "sal_wref_c1": 1.461374044418335,
+        "sal_wref_c2": 0.9898338317871094,
+        "sal_wref_c3": 0.7781453132629395,
+        "sal_wref_c4": 0.6337071061134338,
+        "sal_wref_c5": 0.5079498887062073
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Environment_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 724.6776123046875,
+        "gradnorm_l1_uncentered": 493.34814453125,
+        "gradnorm_l2_centered": 2.0888843536376953,
+        "gradnorm_l2_uncentered": 1.2200042009353638,
+        "sal_noref_c1": 0.042211901396512985,
+        "sal_noref_c2": 0.23160578310489655,
+        "sal_noref_c3": 0.1544065773487091,
+        "sal_noref_c4": 0.14171242713928223,
+        "sal_noref_c5": 0.11337685585021973,
+        "sal_wref_c1": 0.5924071669578552,
+        "sal_wref_c2": 1.4040169715881348,
+        "sal_wref_c3": 1.1300601959228516,
+        "sal_wref_c4": 0.8664789795875549,
+        "sal_wref_c5": 0.6943080425262451
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 593.4213256835938,
+        "gradnorm_l1_uncentered": 24.892478942871094,
+        "gradnorm_l2_centered": 1.7885520458221436,
+        "gradnorm_l2_uncentered": 0.05360989272594452,
+        "sal_noref_c1": 4.349593655206263e-05,
+        "sal_noref_c2": 0.0001239977136719972,
+        "sal_noref_c3": 0.00012267129204701632,
+        "sal_noref_c4": 9.980178583646193e-05,
+        "sal_noref_c5": 8.076017547864467e-05,
+        "sal_wref_c1": 1.4129399061203003,
+        "sal_wref_c2": 1.1299041509628296,
+        "sal_wref_c3": 0.8781201839447021,
+        "sal_wref_c4": 0.7268402576446533,
+        "sal_wref_c5": 0.5834396481513977
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 765.951171875,
+        "gradnorm_l1_uncentered": 561.7289428710938,
+        "gradnorm_l2_centered": 1.750226378440857,
+        "gradnorm_l2_uncentered": 1.8910536766052246,
+        "sal_noref_c1": 0.9087074995040894,
+        "sal_noref_c2": 0.5229952335357666,
+        "sal_noref_c3": 0.39683154225349426,
+        "sal_noref_c4": 0.3265761733055115,
+        "sal_noref_c5": 0.2697841227054596,
+        "sal_wref_c1": 0.25002598762512207,
+        "sal_wref_c2": 0.15292450785636902,
+        "sal_wref_c3": 0.3646817207336426,
+        "sal_wref_c4": 0.2814815044403076,
+        "sal_wref_c5": 0.22921450436115265
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 592.97509765625,
+        "gradnorm_l1_uncentered": 27.4450626373291,
+        "gradnorm_l2_centered": 1.775808572769165,
+        "gradnorm_l2_uncentered": 0.06847421079874039,
+        "sal_noref_c1": 0.00019284298468846828,
+        "sal_noref_c2": 0.000554704456590116,
+        "sal_noref_c3": 0.0004702912119682878,
+        "sal_noref_c4": 0.0003793325449805707,
+        "sal_noref_c5": 0.00030499559943564236,
+        "sal_wref_c1": 1.4159741401672363,
+        "sal_wref_c2": 1.1173876523971558,
+        "sal_wref_c3": 0.8664010167121887,
+        "sal_wref_c4": 0.716011643409729,
+        "sal_wref_c5": 0.5736589431762695
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 704.3900146484375,
+        "gradnorm_l1_uncentered": 471.7120666503906,
+        "gradnorm_l2_centered": 1.6739460229873657,
+        "gradnorm_l2_uncentered": 1.6743769645690918,
+        "sal_noref_c1": 0.7532365918159485,
+        "sal_noref_c2": 0.4661196172237396,
+        "sal_noref_c3": 0.4299733340740204,
+        "sal_noref_c4": 0.33167770504951477,
+        "sal_noref_c5": 0.2829357087612152,
+        "sal_wref_c1": 0.3106233775615692,
+        "sal_wref_c2": 0.1669313609600067,
+        "sal_wref_c3": 0.4908367097377777,
+        "sal_wref_c4": 0.40012025833129883,
+        "sal_wref_c5": 0.3291013836860657
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7750.65625,
+        "gradnorm_l1_uncentered": 7976.0029296875,
+        "gradnorm_l2_centered": 17.032651901245117,
+        "gradnorm_l2_uncentered": 17.303241729736328,
+        "sal_noref_c1": 54.155296325683594,
+        "sal_noref_c2": 61.837913513183594,
+        "sal_noref_c3": 45.87466812133789,
+        "sal_noref_c4": 37.76730728149414,
+        "sal_noref_c5": 31.146387100219727,
+        "sal_wref_c1": 90.15078735351562,
+        "sal_wref_c2": 55.65169906616211,
+        "sal_wref_c3": 41.048919677734375,
+        "sal_wref_c4": 36.12389373779297,
+        "sal_wref_c5": 30.526805877685547
+      }
+    }
+  ]
+}

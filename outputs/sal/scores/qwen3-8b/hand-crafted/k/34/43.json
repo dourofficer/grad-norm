@@ -1,0 +1,101 @@
+{
+  "config": {
+    "subset": "hand-crafted",
+    "weight_config": "/home/hoangpham/exchange/hand-crafted/k/34"
+  },
+  "metadata": {
+    "filename": "48.json",
+    "question_id": "2aa5dd83fbcd0dce9a3dd4592106e5b5edf738008d932e357d477bba80e59ccf",
+    "mistake_agent": "WebSurfer",
+    "mistake_step": 4,
+    "level": -1,
+    "subset": "hand-crafted",
+    "question": "Based on recent years (2020-2023), how likely am I to hit a rainy day (at least 0.5mm of precipitation) if I travel to Seattle during the first week of September? (provide the answer in percentage)"
+  },
+  "steps": [
+    {
+      "step_idx": 1,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1676.2586669921875,
+        "gradnorm_l1_uncentered": 403.93463134765625,
+        "gradnorm_l2_centered": 4.134058475494385,
+        "gradnorm_l2_uncentered": 0.9218447208404541,
+        "sal_noref_c1": 0.14829085767269135,
+        "sal_noref_c2": 0.0936715304851532,
+        "sal_noref_c3": 0.0625586286187172,
+        "sal_noref_c4": 0.04770435020327568,
+        "sal_noref_c5": 0.03821858391165733,
+        "sal_wref_c1": 15.511917114257812,
+        "sal_wref_c2": 7.998605251312256,
+        "sal_wref_c3": 5.332682132720947,
+        "sal_wref_c4": 3.999663829803467,
+        "sal_wref_c5": 3.218581438064575
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Orchestrator (thought)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1498.667724609375,
+        "gradnorm_l1_uncentered": 902.8817749023438,
+        "gradnorm_l2_centered": 3.829744815826416,
+        "gradnorm_l2_uncentered": 2.527949810028076,
+        "sal_noref_c1": 1.2731608152389526,
+        "sal_noref_c2": 1.288987159729004,
+        "sal_noref_c3": 0.8711923956871033,
+        "sal_noref_c4": 0.6769345998764038,
+        "sal_noref_c5": 0.5523459315299988,
+        "sal_wref_c1": 10.97547721862793,
+        "sal_wref_c2": 5.4671196937561035,
+        "sal_wref_c3": 3.6580686569213867,
+        "sal_wref_c4": 2.772578716278076,
+        "sal_wref_c5": 2.251676082611084
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Orchestrator (-> WebSurfer)",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1028.90185546875,
+        "gradnorm_l1_uncentered": 1554.9554443359375,
+        "gradnorm_l2_centered": 2.177170753479004,
+        "gradnorm_l2_uncentered": 4.38332462310791,
+        "sal_noref_c1": 14.362202644348145,
+        "sal_noref_c2": 7.227014541625977,
+        "sal_noref_c3": 5.232823371887207,
+        "sal_noref_c4": 3.974270820617676,
+        "sal_noref_c5": 3.236907958984375,
+        "sal_wref_c1": 0.37150838971138,
+        "sal_wref_c2": 0.2993348240852356,
+        "sal_wref_c3": 0.5502007603645325,
+        "sal_wref_c4": 0.46449753642082214,
+        "sal_wref_c5": 0.3758097290992737
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WebSurfer",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1601.84033203125,
+        "gradnorm_l1_uncentered": 653.1593627929688,
+        "gradnorm_l2_centered": 4.091923236846924,
+        "gradnorm_l2_uncentered": 1.617897868156433,
+        "sal_noref_c1": 0.3048311173915863,
+        "sal_noref_c2": 0.4259190261363983,
+        "sal_noref_c3": 0.29373618960380554,
+        "sal_noref_c4": 0.221358522772789,
+        "sal_noref_c5": 0.17895063757896423,
+        "sal_wref_c1": 14.62558650970459,
+        "sal_wref_c2": 7.284049034118652,
+        "sal_wref_c3": 4.8639397621154785,
+        "sal_wref_c4": 3.6508285999298096,
+        "sal_wref_c5": 2.9301087856292725
+      }
+    }
+  ]
+}

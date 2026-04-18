@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "13.json",
+    "question_id": "853c8244-429e-46ca-89f2-addf40dfb2bd",
+    "mistake_agent": "ArtHistory_Expert",
+    "mistake_step": 4,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "In the 2015 Metropolitan Museum of Art exhibition titled after the Chinese zodiac animal of 2015, how many of the \"twelve animals of the Chinese zodiac\" have a hand visible?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "ArtHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 984.0147094726562,
+        "gradnorm_l1_uncentered": 499.709716796875,
+        "gradnorm_l2_centered": 1.9786803722381592,
+        "gradnorm_l2_uncentered": 1.2082184553146362,
+        "sal_noref_c1": 0.34672433137893677,
+        "sal_noref_c2": 0.19066724181175232,
+        "sal_noref_c3": 0.1286890059709549,
+        "sal_noref_c4": 0.11005936563014984,
+        "sal_noref_c5": 0.09007640182971954,
+        "sal_wref_c1": 2.902702808380127,
+        "sal_wref_c2": 1.4480808973312378,
+        "sal_wref_c3": 0.9655978679656982,
+        "sal_wref_c4": 0.7384673953056335,
+        "sal_wref_c5": 0.5909730792045593
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Chinese_Zodiac_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 927.4822998046875,
+        "gradnorm_l1_uncentered": 522.7593994140625,
+        "gradnorm_l2_centered": 1.851732611656189,
+        "gradnorm_l2_uncentered": 1.1179616451263428,
+        "sal_noref_c1": 0.42668241262435913,
+        "sal_noref_c2": 0.25874292850494385,
+        "sal_noref_c3": 0.17611642181873322,
+        "sal_noref_c4": 0.15040002763271332,
+        "sal_noref_c5": 0.1262478083372116,
+        "sal_wref_c1": 2.681701183319092,
+        "sal_wref_c2": 1.3551363945007324,
+        "sal_wref_c3": 0.9044004082679749,
+        "sal_wref_c4": 0.7024474740028381,
+        "sal_wref_c5": 0.5675479769706726
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 903.746337890625,
+        "gradnorm_l1_uncentered": 564.1270141601562,
+        "gradnorm_l2_centered": 1.8664344549179077,
+        "gradnorm_l2_uncentered": 1.6604875326156616,
+        "sal_noref_c1": 0.9497470259666443,
+        "sal_noref_c2": 0.8152480721473694,
+        "sal_noref_c3": 0.5527294278144836,
+        "sal_noref_c4": 0.4150773584842682,
+        "sal_noref_c5": 0.3334866464138031,
+        "sal_wref_c1": 1.7347795963287354,
+        "sal_wref_c2": 1.1325314044952393,
+        "sal_wref_c3": 0.7687088847160339,
+        "sal_wref_c4": 0.5767558217048645,
+        "sal_wref_c5": 0.4631017744541168
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 804.759033203125,
+        "gradnorm_l1_uncentered": 595.7141723632812,
+        "gradnorm_l2_centered": 1.7100471258163452,
+        "gradnorm_l2_uncentered": 1.5749354362487793,
+        "sal_noref_c1": 1.1046831607818604,
+        "sal_noref_c2": 0.5616486668586731,
+        "sal_noref_c3": 0.4060157239437103,
+        "sal_noref_c4": 0.33188849687576294,
+        "sal_noref_c5": 0.3125334084033966,
+        "sal_wref_c1": 1.4977715015411377,
+        "sal_wref_c2": 0.7712355256080627,
+        "sal_wref_c3": 0.554035484790802,
+        "sal_wref_c4": 0.4349564015865326,
+        "sal_wref_c5": 0.3847448229789734
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "ArtHistory_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 811.5377197265625,
+        "gradnorm_l1_uncentered": 624.6589965820312,
+        "gradnorm_l2_centered": 1.765363335609436,
+        "gradnorm_l2_uncentered": 1.2167938947677612,
+        "sal_noref_c1": 0.5857045650482178,
+        "sal_noref_c2": 0.3132089078426361,
+        "sal_noref_c3": 0.2099686712026596,
+        "sal_noref_c4": 0.1781139075756073,
+        "sal_noref_c5": 0.14266766607761383,
+        "sal_wref_c1": 2.333779811859131,
+        "sal_wref_c2": 1.208364725112915,
+        "sal_wref_c3": 0.8100023865699768,
+        "sal_wref_c4": 0.6243672370910645,
+        "sal_wref_c5": 0.4997733235359192
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "ArtHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 809.4613647460938,
+        "gradnorm_l1_uncentered": 804.888916015625,
+        "gradnorm_l2_centered": 1.7215231657028198,
+        "gradnorm_l2_uncentered": 1.5850273370742798,
+        "sal_noref_c1": 1.0213069915771484,
+        "sal_noref_c2": 0.5279296040534973,
+        "sal_noref_c3": 0.35576769709587097,
+        "sal_noref_c4": 0.2711223065853119,
+        "sal_noref_c5": 0.22121581435203552,
+        "sal_wref_c1": 1.6725389957427979,
+        "sal_wref_c2": 0.8765713572502136,
+        "sal_wref_c3": 0.5939852595329285,
+        "sal_wref_c4": 0.4481140971183777,
+        "sal_wref_c5": 0.3600435256958008
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2510.09765625,
+        "gradnorm_l1_uncentered": 3150.89697265625,
+        "gradnorm_l2_centered": 5.8542375564575195,
+        "gradnorm_l2_uncentered": 7.32398796081543,
+        "sal_noref_c1": 28.03595542907715,
+        "sal_noref_c2": 14.090216636657715,
+        "sal_noref_c3": 11.224848747253418,
+        "sal_noref_c4": 8.503938674926758,
+        "sal_noref_c5": 6.904364109039307,
+        "sal_wref_c1": 8.730026245117188,
+        "sal_wref_c2": 4.469078063964844,
+        "sal_wref_c3": 4.879430294036865,
+        "sal_wref_c4": 3.7206759452819824,
+        "sal_wref_c5": 3.084824800491333
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 872.3089599609375,
+        "gradnorm_l1_uncentered": 704.2302856445312,
+        "gradnorm_l2_centered": 1.7848440408706665,
+        "gradnorm_l2_uncentered": 1.3274956941604614,
+        "sal_noref_c1": 0.6824450492858887,
+        "sal_noref_c2": 0.36996638774871826,
+        "sal_noref_c3": 0.25695309042930603,
+        "sal_noref_c4": 0.23087173700332642,
+        "sal_noref_c5": 0.18602697551250458,
+        "sal_wref_c1": 2.122084140777588,
+        "sal_wref_c2": 1.1148638725280762,
+        "sal_wref_c3": 0.760576069355011,
+        "sal_wref_c4": 0.6049336791038513,
+        "sal_wref_c5": 0.48742422461509705
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 995.0767822265625,
+        "gradnorm_l1_uncentered": 757.052001953125,
+        "gradnorm_l2_centered": 2.0403947830200195,
+        "gradnorm_l2_uncentered": 1.4368575811386108,
+        "sal_noref_c1": 0.4676739573478699,
+        "sal_noref_c2": 0.2422001212835312,
+        "sal_noref_c3": 0.16614492237567902,
+        "sal_noref_c4": 0.1331036537885666,
+        "sal_noref_c5": 0.11792421340942383,
+        "sal_wref_c1": 2.5508971214294434,
+        "sal_wref_c2": 1.2720122337341309,
+        "sal_wref_c3": 0.8570806384086609,
+        "sal_wref_c4": 0.6493556499481201,
+        "sal_wref_c5": 0.5304714441299438
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 831.013916015625,
+        "gradnorm_l1_uncentered": 493.4590148925781,
+        "gradnorm_l2_centered": 1.8615152835845947,
+        "gradnorm_l2_uncentered": 0.9134682416915894,
+        "sal_noref_c1": 0.3272193670272827,
+        "sal_noref_c2": 0.17752639949321747,
+        "sal_noref_c3": 0.11898219585418701,
+        "sal_noref_c4": 0.08994348347187042,
+        "sal_noref_c5": 0.07219307869672775,
+        "sal_wref_c1": 2.8998446464538574,
+        "sal_wref_c2": 1.4802818298339844,
+        "sal_wref_c3": 0.9899247288703918,
+        "sal_wref_c4": 0.7426629662513733,
+        "sal_wref_c5": 0.5941375494003296
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "10.json",
+    "question_id": "d1af70ea-a9a4-421a-b9cc-94b5e02f1788",
+    "mistake_agent": "Validation_Expert",
+    "mistake_step": 5,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "As of the 2020 census, what was the population difference between the largest county seat and smallest county seat, by land area of the county seat, in Washington state? For population figures, please use the official data from data.census.gov. Please report the integer difference."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 651.0325317382812,
+        "gradnorm_l1_uncentered": 608.4500732421875,
+        "gradnorm_l2_centered": 1.1062053442001343,
+        "gradnorm_l2_uncentered": 1.8165134191513062,
+        "sal_noref_c1": 2.3245418071746826,
+        "sal_noref_c2": 1.211317777633667,
+        "sal_noref_c3": 0.8626155853271484,
+        "sal_noref_c4": 0.650079607963562,
+        "sal_noref_c5": 0.5233802199363708,
+        "sal_wref_c1": 0.5001634359359741,
+        "sal_wref_c2": 0.2587254047393799,
+        "sal_wref_c3": 0.19514107704162598,
+        "sal_wref_c4": 0.14758166670799255,
+        "sal_wref_c5": 0.11836637556552887
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1345.3890380859375,
+        "gradnorm_l1_uncentered": 1789.715576171875,
+        "gradnorm_l2_centered": 3.2614381313323975,
+        "gradnorm_l2_uncentered": 5.186171054840088,
+        "sal_noref_c1": 22.42364501953125,
+        "sal_noref_c2": 11.782267570495605,
+        "sal_noref_c3": 8.08466625213623,
+        "sal_noref_c4": 6.085355281829834,
+        "sal_noref_c5": 4.887841701507568,
+        "sal_wref_c1": 5.977069854736328,
+        "sal_wref_c2": 3.6572866439819336,
+        "sal_wref_c3": 2.685978651046753,
+        "sal_wref_c4": 2.092630386352539,
+        "sal_wref_c5": 1.6788580417633057
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 637.5921630859375,
+        "gradnorm_l1_uncentered": 443.0309143066406,
+        "gradnorm_l2_centered": 1.4372797012329102,
+        "gradnorm_l2_uncentered": 1.15557062625885,
+        "sal_noref_c1": 0.8228272199630737,
+        "sal_noref_c2": 0.4136050045490265,
+        "sal_noref_c3": 0.2969348430633545,
+        "sal_noref_c4": 0.23460623621940613,
+        "sal_noref_c5": 0.19229790568351746,
+        "sal_wref_c1": 1.6641007661819458,
+        "sal_wref_c2": 0.8311097025871277,
+        "sal_wref_c3": 0.5557253956794739,
+        "sal_wref_c4": 0.42081418633461,
+        "sal_wref_c5": 0.33694225549697876
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 654.8511352539062,
+        "gradnorm_l1_uncentered": 705.3321533203125,
+        "gradnorm_l2_centered": 1.1940720081329346,
+        "gradnorm_l2_uncentered": 1.6498852968215942,
+        "sal_noref_c1": 1.8562911748886108,
+        "sal_noref_c2": 0.9386565685272217,
+        "sal_noref_c3": 0.6434031128883362,
+        "sal_noref_c4": 0.49556705355644226,
+        "sal_noref_c5": 0.4025944173336029,
+        "sal_wref_c1": 0.7185574769973755,
+        "sal_wref_c2": 0.35678985714912415,
+        "sal_wref_c3": 0.23911207914352417,
+        "sal_wref_c4": 0.1839618682861328,
+        "sal_wref_c5": 0.14764404296875
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 745.7786865234375,
+        "gradnorm_l1_uncentered": 804.4202880859375,
+        "gradnorm_l2_centered": 1.2290507555007935,
+        "gradnorm_l2_uncentered": 2.012410879135132,
+        "sal_noref_c1": 2.625506639480591,
+        "sal_noref_c2": 1.3283177614212036,
+        "sal_noref_c3": 0.9595295786857605,
+        "sal_noref_c4": 0.7560022473335266,
+        "sal_noref_c5": 0.6248708367347717,
+        "sal_wref_c1": 0.3892323970794678,
+        "sal_wref_c2": 0.19330288469791412,
+        "sal_wref_c3": 0.1503860056400299,
+        "sal_wref_c4": 0.13380101323127747,
+        "sal_wref_c5": 0.1217179074883461
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Validation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 859.9954833984375,
+        "gradnorm_l1_uncentered": 1112.166259765625,
+        "gradnorm_l2_centered": 1.2227132320404053,
+        "gradnorm_l2_uncentered": 2.3396201133728027,
+        "sal_noref_c1": 3.8695068359375,
+        "sal_noref_c2": 2.1064000129699707,
+        "sal_noref_c3": 1.4166635274887085,
+        "sal_noref_c4": 1.0941699743270874,
+        "sal_noref_c5": 0.8833707571029663,
+        "sal_wref_c1": 0.06814733147621155,
+        "sal_wref_c2": 0.14562740921974182,
+        "sal_wref_c3": 0.1348813772201538,
+        "sal_wref_c4": 0.11302001029253006,
+        "sal_wref_c5": 0.09043138474225998
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1917.402587890625,
+        "gradnorm_l1_uncentered": 2281.360107421875,
+        "gradnorm_l2_centered": 3.045313835144043,
+        "gradnorm_l2_uncentered": 4.600254535675049,
+        "sal_noref_c1": 14.463993072509766,
+        "sal_noref_c2": 8.358601570129395,
+        "sal_noref_c3": 5.87144136428833,
+        "sal_noref_c4": 4.417799472808838,
+        "sal_noref_c5": 3.567408800125122,
+        "sal_wref_c1": 2.535489320755005,
+        "sal_wref_c2": 2.521963596343994,
+        "sal_wref_c3": 1.8875328302383423,
+        "sal_wref_c4": 1.432910442352295,
+        "sal_wref_c5": 1.164710521697998
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1096.3048095703125,
+        "gradnorm_l1_uncentered": 1413.416015625,
+        "gradnorm_l2_centered": 1.5607573986053467,
+        "gradnorm_l2_uncentered": 2.906911849975586,
+        "sal_noref_c1": 6.115707874298096,
+        "sal_noref_c2": 3.043304443359375,
+        "sal_noref_c3": 2.096181631088257,
+        "sal_noref_c4": 1.5745161771774292,
+        "sal_noref_c5": 1.2808282375335693,
+        "sal_wref_c1": 0.08932098001241684,
+        "sal_wref_c2": 0.04611699655652046,
+        "sal_wref_c3": 0.13374869525432587,
+        "sal_wref_c4": 0.10243118554353714,
+        "sal_wref_c5": 0.08634021133184433
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2001.80322265625,
+        "gradnorm_l1_uncentered": 2312.72265625,
+        "gradnorm_l2_centered": 3.3684842586517334,
+        "gradnorm_l2_uncentered": 4.437135696411133,
+        "sal_noref_c1": 9.592121124267578,
+        "sal_noref_c2": 5.641802787780762,
+        "sal_noref_c3": 3.9800615310668945,
+        "sal_noref_c4": 3.236039876937866,
+        "sal_noref_c5": 2.691349744796753,
+        "sal_wref_c1": 1.097688913345337,
+        "sal_wref_c2": 1.424506425857544,
+        "sal_wref_c3": 1.1516486406326294,
+        "sal_wref_c4": 1.269968032836914,
+        "sal_wref_c5": 1.019242763519287
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 745.2247314453125,
+        "gradnorm_l1_uncentered": 1064.5323486328125,
+        "gradnorm_l2_centered": 1.181897759437561,
+        "gradnorm_l2_uncentered": 2.6294760704040527,
+        "sal_noref_c1": 5.435229778289795,
+        "sal_noref_c2": 2.749363660812378,
+        "sal_noref_c3": 1.8354201316833496,
+        "sal_noref_c4": 1.4108359813690186,
+        "sal_noref_c5": 1.1307764053344727,
+        "sal_wref_c1": 0.014572246000170708,
+        "sal_wref_c2": 0.025886012241244316,
+        "sal_wref_c3": 0.017722569406032562,
+        "sal_wref_c4": 0.037028729915618896,
+        "sal_wref_c5": 0.02987608313560486
+      }
+    }
+  ]
+}

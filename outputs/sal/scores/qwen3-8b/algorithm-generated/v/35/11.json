@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "108.json",
+    "question_id": "cca4776df3c73e7f9430a2e624aafad056b14322a0b7ca6c0c22b7e7f3f0890a",
+    "mistake_agent": "Corporate_Governance_Expert",
+    "mistake_step": 8,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which member of Apple\u2019s Board of Directors did not hold C-suite positions at their companies when they joined the board?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Corporate_Governance_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 679.4625244140625,
+        "gradnorm_l1_uncentered": 565.3829345703125,
+        "gradnorm_l2_centered": 1.2028226852416992,
+        "gradnorm_l2_uncentered": 1.633355975151062,
+        "sal_noref_c1": 1.7778551578521729,
+        "sal_noref_c2": 0.948118269443512,
+        "sal_noref_c3": 0.6848130822181702,
+        "sal_noref_c4": 0.5177801847457886,
+        "sal_noref_c5": 0.41526252031326294,
+        "sal_wref_c1": 0.7992501854896545,
+        "sal_wref_c2": 0.41007187962532043,
+        "sal_wref_c3": 0.2948504388332367,
+        "sal_wref_c4": 0.2233763039112091,
+        "sal_wref_c5": 0.17963123321533203
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 616.7947998046875,
+        "gradnorm_l1_uncentered": 370.95806884765625,
+        "gradnorm_l2_centered": 1.3520249128341675,
+        "gradnorm_l2_uncentered": 1.2854526042938232,
+        "sal_noref_c1": 1.0340466499328613,
+        "sal_noref_c2": 0.5837740302085876,
+        "sal_noref_c3": 0.4141223132610321,
+        "sal_noref_c4": 0.32706350088119507,
+        "sal_noref_c5": 0.2638057470321655,
+        "sal_wref_c1": 1.4507046937942505,
+        "sal_wref_c2": 0.7320061326026917,
+        "sal_wref_c3": 0.49128222465515137,
+        "sal_wref_c4": 0.377031147480011,
+        "sal_wref_c5": 0.3025452196598053
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Corporate_Governance_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 635.2926025390625,
+        "gradnorm_l1_uncentered": 502.494873046875,
+        "gradnorm_l2_centered": 1.3112143278121948,
+        "gradnorm_l2_uncentered": 1.2932753562927246,
+        "sal_noref_c1": 1.1168632507324219,
+        "sal_noref_c2": 0.5665507316589355,
+        "sal_noref_c3": 0.40551885962486267,
+        "sal_noref_c4": 0.32074883580207825,
+        "sal_noref_c5": 0.25913581252098083,
+        "sal_wref_c1": 1.3225150108337402,
+        "sal_wref_c2": 0.6571911573410034,
+        "sal_wref_c3": 0.44201791286468506,
+        "sal_wref_c4": 0.33954840898513794,
+        "sal_wref_c5": 0.27166467905044556
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 632.2393798828125,
+        "gradnorm_l1_uncentered": 204.3270721435547,
+        "gradnorm_l2_centered": 1.6111080646514893,
+        "gradnorm_l2_uncentered": 0.8878198266029358,
+        "sal_noref_c1": 0.4311375021934509,
+        "sal_noref_c2": 0.23614813387393951,
+        "sal_noref_c3": 0.184269979596138,
+        "sal_noref_c4": 0.1471303105354309,
+        "sal_noref_c5": 0.11878712475299835,
+        "sal_wref_c1": 2.3873133659362793,
+        "sal_wref_c2": 1.183109998703003,
+        "sal_wref_c3": 0.7926470637321472,
+        "sal_wref_c4": 0.5978631973266602,
+        "sal_wref_c5": 0.47898411750793457
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 602.0906982421875,
+        "gradnorm_l1_uncentered": 288.25689697265625,
+        "gradnorm_l2_centered": 1.5313537120819092,
+        "gradnorm_l2_uncentered": 0.8794309496879578,
+        "sal_noref_c1": 0.5144029259681702,
+        "sal_noref_c2": 0.2649940550327301,
+        "sal_noref_c3": 0.19921249151229858,
+        "sal_noref_c4": 0.15684057772159576,
+        "sal_noref_c5": 0.12729492783546448,
+        "sal_wref_c1": 2.1780076026916504,
+        "sal_wref_c2": 1.082884669303894,
+        "sal_wref_c3": 0.724581241607666,
+        "sal_wref_c4": 0.5456507205963135,
+        "sal_wref_c5": 0.43658336997032166
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 590.0394897460938,
+        "gradnorm_l1_uncentered": 270.8304138183594,
+        "gradnorm_l2_centered": 1.5438281297683716,
+        "gradnorm_l2_uncentered": 0.8377168774604797,
+        "sal_noref_c1": 0.4843164086341858,
+        "sal_noref_c2": 0.2692255973815918,
+        "sal_noref_c3": 0.18479014933109283,
+        "sal_noref_c4": 0.14168979227542877,
+        "sal_noref_c5": 0.11411184072494507,
+        "sal_wref_c1": 2.229877233505249,
+        "sal_wref_c2": 1.1053082942962646,
+        "sal_wref_c3": 0.7370306849479675,
+        "sal_wref_c4": 0.5529600381851196,
+        "sal_wref_c5": 0.4458412528038025
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 598.5524291992188,
+        "gradnorm_l1_uncentered": 327.2708740234375,
+        "gradnorm_l2_centered": 1.4986746311187744,
+        "gradnorm_l2_uncentered": 0.9682049751281738,
+        "sal_noref_c1": 0.6152868866920471,
+        "sal_noref_c2": 0.30769380927085876,
+        "sal_noref_c3": 0.2205173373222351,
+        "sal_noref_c4": 0.16860614717006683,
+        "sal_noref_c5": 0.14613714814186096,
+        "sal_wref_c1": 1.955511450767517,
+        "sal_wref_c2": 1.0045897960662842,
+        "sal_wref_c3": 0.6701436638832092,
+        "sal_wref_c4": 0.5026090741157532,
+        "sal_wref_c5": 0.40354543924331665
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "WebServing_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 617.3184204101562,
+        "gradnorm_l1_uncentered": 224.6505889892578,
+        "gradnorm_l2_centered": 1.5612156391143799,
+        "gradnorm_l2_uncentered": 0.941679060459137,
+        "sal_noref_c1": 0.5084053874015808,
+        "sal_noref_c2": 0.27825191617012024,
+        "sal_noref_c3": 0.21128566563129425,
+        "sal_noref_c4": 0.1687742918729782,
+        "sal_noref_c5": 0.13667483627796173,
+        "sal_wref_c1": 2.225431203842163,
+        "sal_wref_c2": 1.1025196313858032,
+        "sal_wref_c3": 0.7383540272712708,
+        "sal_wref_c4": 0.5577314496040344,
+        "sal_wref_c5": 0.4464414715766907
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Corporate_Governance_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 612.4816284179688,
+        "gradnorm_l1_uncentered": 387.0700378417969,
+        "gradnorm_l2_centered": 1.395792841911316,
+        "gradnorm_l2_uncentered": 1.1382791996002197,
+        "sal_noref_c1": 0.8543060421943665,
+        "sal_noref_c2": 0.4309215247631073,
+        "sal_noref_c3": 0.33346009254455566,
+        "sal_noref_c4": 0.25968414545059204,
+        "sal_noref_c5": 0.20880086719989777,
+        "sal_wref_c1": 1.6218022108078003,
+        "sal_wref_c2": 0.8085069060325623,
+        "sal_wref_c3": 0.5531474947929382,
+        "sal_wref_c4": 0.41999760270118713,
+        "sal_wref_c5": 0.3360669016838074
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Corporate_Governance_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1801.092529296875,
+        "gradnorm_l1_uncentered": 2149.146728515625,
+        "gradnorm_l2_centered": 3.6479029655456543,
+        "gradnorm_l2_uncentered": 5.085134029388428,
+        "sal_noref_c1": 16.513477325439453,
+        "sal_noref_c2": 10.889693260192871,
+        "sal_noref_c3": 7.413305282592773,
+        "sal_noref_c4": 5.563391208648682,
+        "sal_noref_c5": 4.466456413269043,
+        "sal_wref_c1": 4.110569477081299,
+        "sal_wref_c2": 4.708471775054932,
+        "sal_wref_c3": 3.2752532958984375,
+        "sal_wref_c4": 2.456505060195923,
+        "sal_wref_c5": 2.00616455078125
+      }
+    }
+  ]
+}

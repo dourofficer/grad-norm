@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "76.json",
+    "question_id": "a0c07678-e491-4bbc-8f0b-07405144218f",
+    "mistake_agent": "Validation_Expert",
+    "mistake_step": 5,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Who are the pitchers with the number before and after Taish\u014d Tamai's number as of July 2023? Give them to me in the form Pitcher Before, Pitcher After, use their last names only, in Roman characters."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Baseball_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 652.0342407226562,
+        "gradnorm_l1_uncentered": 491.4740295410156,
+        "gradnorm_l2_centered": 1.2047364711761475,
+        "gradnorm_l2_uncentered": 1.5030797719955444,
+        "sal_noref_c1": 1.538816213607788,
+        "sal_noref_c2": 0.8239447474479675,
+        "sal_noref_c3": 0.5954763889312744,
+        "sal_noref_c4": 0.45200878381729126,
+        "sal_noref_c5": 0.363527774810791,
+        "sal_wref_c1": 0.9682680368423462,
+        "sal_wref_c2": 0.4906754195690155,
+        "sal_wref_c3": 0.34326890110969543,
+        "sal_wref_c4": 0.26006147265434265,
+        "sal_wref_c5": 0.20805087685585022
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 658.7489624023438,
+        "gradnorm_l1_uncentered": 647.0912475585938,
+        "gradnorm_l2_centered": 1.1278992891311646,
+        "gradnorm_l2_uncentered": 1.6658861637115479,
+        "sal_noref_c1": 2.0012238025665283,
+        "sal_noref_c2": 0.9952686429023743,
+        "sal_noref_c3": 0.7166629433631897,
+        "sal_noref_c4": 0.5420613884925842,
+        "sal_noref_c5": 0.4418511986732483,
+        "sal_wref_c1": 0.6212605834007263,
+        "sal_wref_c2": 0.3251762092113495,
+        "sal_wref_c3": 0.23564499616622925,
+        "sal_wref_c4": 0.1780511438846588,
+        "sal_wref_c5": 0.14659525454044342
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1624.0770263671875,
+        "gradnorm_l1_uncentered": 2068.060302734375,
+        "gradnorm_l2_centered": 3.3626010417938232,
+        "gradnorm_l2_uncentered": 5.229082107543945,
+        "sal_noref_c1": 22.235233306884766,
+        "sal_noref_c2": 11.938544273376465,
+        "sal_noref_c3": 7.980617523193359,
+        "sal_noref_c4": 6.030094146728516,
+        "sal_noref_c5": 4.828141212463379,
+        "sal_wref_c1": 6.057401180267334,
+        "sal_wref_c2": 4.012951850891113,
+        "sal_wref_c3": 2.6905510425567627,
+        "sal_wref_c4": 2.085040330886841,
+        "sal_wref_c5": 1.6847187280654907
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "SportsHistorian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 850.4569091796875,
+        "gradnorm_l1_uncentered": 1103.400390625,
+        "gradnorm_l2_centered": 1.373351812362671,
+        "gradnorm_l2_uncentered": 2.9158473014831543,
+        "sal_noref_c1": 6.460265159606934,
+        "sal_noref_c2": 3.483114242553711,
+        "sal_noref_c3": 2.3226020336151123,
+        "sal_noref_c4": 1.7972276210784912,
+        "sal_noref_c5": 1.470712661743164,
+        "sal_wref_c1": 0.07591317594051361,
+        "sal_wref_c2": 0.22979627549648285,
+        "sal_wref_c3": 0.1687399297952652,
+        "sal_wref_c4": 0.15307168662548065,
+        "sal_wref_c5": 0.14999553561210632
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 738.9125366210938,
+        "gradnorm_l1_uncentered": 769.909912109375,
+        "gradnorm_l2_centered": 1.6125906705856323,
+        "gradnorm_l2_uncentered": 1.51228928565979,
+        "sal_noref_c1": 1.0870548486709595,
+        "sal_noref_c2": 0.5963847041130066,
+        "sal_noref_c3": 0.3978006839752197,
+        "sal_noref_c4": 0.3093809187412262,
+        "sal_noref_c5": 0.26761478185653687,
+        "sal_wref_c1": 1.2160183191299438,
+        "sal_wref_c2": 0.7369675636291504,
+        "sal_wref_c3": 0.4982527792453766,
+        "sal_wref_c4": 0.40379831194877625,
+        "sal_wref_c5": 0.3281596899032593
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Validation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 609.7413330078125,
+        "gradnorm_l1_uncentered": 609.1954956054688,
+        "gradnorm_l2_centered": 1.1695605516433716,
+        "gradnorm_l2_uncentered": 1.538387656211853,
+        "sal_noref_c1": 1.6644271612167358,
+        "sal_noref_c2": 0.8878010511398315,
+        "sal_noref_c3": 0.5949020981788635,
+        "sal_noref_c4": 0.4751424193382263,
+        "sal_noref_c5": 0.3907637298107147,
+        "sal_wref_c1": 0.8595419526100159,
+        "sal_wref_c2": 0.43939709663391113,
+        "sal_wref_c3": 0.29556092619895935,
+        "sal_wref_c4": 0.23415927588939667,
+        "sal_wref_c5": 0.19115810096263885
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 763.09912109375,
+        "gradnorm_l1_uncentered": 939.6817016601562,
+        "gradnorm_l2_centered": 1.4191137552261353,
+        "gradnorm_l2_uncentered": 1.9981820583343506,
+        "sal_noref_c1": 2.437281847000122,
+        "sal_noref_c2": 1.4638381004333496,
+        "sal_noref_c3": 1.098565697669983,
+        "sal_noref_c4": 0.8308766484260559,
+        "sal_noref_c5": 0.6724691987037659,
+        "sal_wref_c1": 0.3644002079963684,
+        "sal_wref_c2": 0.36637842655181885,
+        "sal_wref_c3": 0.36328116059303284,
+        "sal_wref_c4": 0.2887243330478668,
+        "sal_wref_c5": 0.2532774806022644
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 594.1807861328125,
+        "gradnorm_l1_uncentered": 458.9130859375,
+        "gradnorm_l2_centered": 1.4784988164901733,
+        "gradnorm_l2_uncentered": 1.0093600749969482,
+        "sal_noref_c1": 0.6724236607551575,
+        "sal_noref_c2": 0.34610435366630554,
+        "sal_noref_c3": 0.2307468056678772,
+        "sal_noref_c4": 0.1772911250591278,
+        "sal_noref_c5": 0.14311818778514862,
+        "sal_wref_c1": 1.8532726764678955,
+        "sal_wref_c2": 0.919377863407135,
+        "sal_wref_c3": 0.6198542714118958,
+        "sal_wref_c4": 0.4649866223335266,
+        "sal_wref_c5": 0.3747725784778595
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1548.471923828125,
+        "gradnorm_l1_uncentered": 1925.2685546875,
+        "gradnorm_l2_centered": 2.53326678276062,
+        "gradnorm_l2_uncentered": 3.8952085971832275,
+        "sal_noref_c1": 9.671427726745605,
+        "sal_noref_c2": 4.817416667938232,
+        "sal_noref_c3": 3.363903760910034,
+        "sal_noref_c4": 2.7589006423950195,
+        "sal_noref_c5": 2.298780918121338,
+        "sal_wref_c1": 0.8982788324356079,
+        "sal_wref_c2": 0.4554760158061981,
+        "sal_wref_c3": 0.42430830001831055,
+        "sal_wref_c4": 0.6843541264533997,
+        "sal_wref_c5": 0.5584465861320496
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Baseball_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 654.9820556640625,
+        "gradnorm_l1_uncentered": 613.629638671875,
+        "gradnorm_l2_centered": 1.2181845903396606,
+        "gradnorm_l2_uncentered": 1.465152382850647,
+        "sal_noref_c1": 1.4862006902694702,
+        "sal_noref_c2": 0.7444252967834473,
+        "sal_noref_c3": 0.504464328289032,
+        "sal_noref_c4": 0.3995548486709595,
+        "sal_noref_c5": 0.3352866768836975,
+        "sal_wref_c1": 0.9761307835578918,
+        "sal_wref_c2": 0.48933959007263184,
+        "sal_wref_c3": 0.326856404542923,
+        "sal_wref_c4": 0.25185686349868774,
+        "sal_wref_c5": 0.20996055006980896
+      }
+    }
+  ]
+}

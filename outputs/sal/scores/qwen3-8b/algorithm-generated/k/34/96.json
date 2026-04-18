@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "71.json",
+    "question_id": "ecbc4f94-95a3-4cc7-b255-6741a458a625",
+    "mistake_agent": "DataExtraction_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "How many images are there in the latest 2022 Lego english wikipedia article?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1003.7267456054688,
+        "gradnorm_l1_uncentered": 560.5745849609375,
+        "gradnorm_l2_centered": 1.993023157119751,
+        "gradnorm_l2_uncentered": 1.2767928838729858,
+        "sal_noref_c1": 0.37503886222839355,
+        "sal_noref_c2": 0.20577426254749298,
+        "sal_noref_c3": 0.13995933532714844,
+        "sal_noref_c4": 0.12539692223072052,
+        "sal_noref_c5": 0.10196448862552643,
+        "sal_wref_c1": 2.82661509513855,
+        "sal_wref_c2": 1.4113141298294067,
+        "sal_wref_c3": 0.941580593585968,
+        "sal_wref_c4": 0.727801501750946,
+        "sal_wref_c5": 0.5824528336524963
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "DataExtraction_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 870.339111328125,
+        "gradnorm_l1_uncentered": 741.9473266601562,
+        "gradnorm_l2_centered": 1.878799319267273,
+        "gradnorm_l2_uncentered": 1.6471229791641235,
+        "sal_noref_c1": 0.874671459197998,
+        "sal_noref_c2": 0.6005691289901733,
+        "sal_noref_c3": 0.40971049666404724,
+        "sal_noref_c4": 0.3339516520500183,
+        "sal_noref_c5": 0.274343341588974,
+        "sal_wref_c1": 1.8739219903945923,
+        "sal_wref_c2": 1.0473402738571167,
+        "sal_wref_c3": 0.7135889530181885,
+        "sal_wref_c4": 0.5643284320831299,
+        "sal_wref_c5": 0.4637628495693207
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 7051.3623046875,
+        "gradnorm_l1_uncentered": 7702.09033203125,
+        "gradnorm_l2_centered": 16.310218811035156,
+        "gradnorm_l2_uncentered": 17.783098220825195,
+        "sal_noref_c1": 143.77667236328125,
+        "sal_noref_c2": 110.82049560546875,
+        "sal_noref_c3": 73.90946960449219,
+        "sal_noref_c4": 57.24125671386719,
+        "sal_noref_c5": 45.926971435546875,
+        "sal_wref_c1": 91.2203369140625,
+        "sal_wref_c2": 86.2509536743164,
+        "sal_wref_c3": 57.54996109008789,
+        "sal_wref_c4": 44.33356475830078,
+        "sal_wref_c5": 35.46751022338867
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 865.7028198242188,
+        "gradnorm_l1_uncentered": 644.1583862304688,
+        "gradnorm_l2_centered": 1.8675681352615356,
+        "gradnorm_l2_uncentered": 1.2529749870300293,
+        "sal_noref_c1": 0.4815864562988281,
+        "sal_noref_c2": 0.2941732406616211,
+        "sal_noref_c3": 0.19827251136302948,
+        "sal_noref_c4": 0.16052208840847015,
+        "sal_noref_c5": 0.13407638669013977,
+        "sal_wref_c1": 2.5893800258636475,
+        "sal_wref_c2": 1.3152318000793457,
+        "sal_wref_c3": 0.8770466446876526,
+        "sal_wref_c4": 0.6657435894012451,
+        "sal_wref_c5": 0.5458003282546997
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2284.3125,
+        "gradnorm_l1_uncentered": 2771.948486328125,
+        "gradnorm_l2_centered": 5.022207736968994,
+        "gradnorm_l2_uncentered": 5.78795862197876,
+        "sal_noref_c1": 8.285969734191895,
+        "sal_noref_c2": 4.4994635581970215,
+        "sal_noref_c3": 5.109923362731934,
+        "sal_noref_c4": 4.136388301849365,
+        "sal_noref_c5": 3.4503910541534424,
+        "sal_wref_c1": 0.29616591334342957,
+        "sal_wref_c2": 0.586466908454895,
+        "sal_wref_c3": 2.425964593887329,
+        "sal_wref_c4": 2.0548858642578125,
+        "sal_wref_c5": 1.669396162033081
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 854.136474609375,
+        "gradnorm_l1_uncentered": 585.5872192382812,
+        "gradnorm_l2_centered": 1.7546030282974243,
+        "gradnorm_l2_uncentered": 1.2294721603393555,
+        "sal_noref_c1": 0.6086941957473755,
+        "sal_noref_c2": 0.36595553159713745,
+        "sal_noref_c3": 0.24411654472351074,
+        "sal_noref_c4": 0.2027464658021927,
+        "sal_noref_c5": 0.1674422174692154,
+        "sal_wref_c1": 2.298334836959839,
+        "sal_wref_c2": 1.175862431526184,
+        "sal_wref_c3": 0.7841546535491943,
+        "sal_wref_c4": 0.6007215976715088,
+        "sal_wref_c5": 0.4833979606628418
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 837.5360107421875,
+        "gradnorm_l1_uncentered": 918.6267700195312,
+        "gradnorm_l2_centered": 1.6213399171829224,
+        "gradnorm_l2_uncentered": 1.6975727081298828,
+        "sal_noref_c1": 1.4466092586517334,
+        "sal_noref_c2": 0.7199335694313049,
+        "sal_noref_c3": 0.5144020915031433,
+        "sal_noref_c4": 0.3870604932308197,
+        "sal_noref_c5": 0.3276746869087219,
+        "sal_wref_c1": 1.1531636714935303,
+        "sal_wref_c2": 0.5786305665969849,
+        "sal_wref_c3": 0.4312242567539215,
+        "sal_wref_c4": 0.3234720528125763,
+        "sal_wref_c5": 0.27143463492393494
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1011.3944702148438,
+        "gradnorm_l1_uncentered": 1440.5478515625,
+        "gradnorm_l2_centered": 1.931146264076233,
+        "gradnorm_l2_uncentered": 2.876246690750122,
+        "sal_noref_c1": 4.5025954246521,
+        "sal_noref_c2": 2.374484062194824,
+        "sal_noref_c3": 1.5976428985595703,
+        "sal_noref_c4": 1.216307282447815,
+        "sal_noref_c5": 0.9909735918045044,
+        "sal_wref_c1": 0.027810756117105484,
+        "sal_wref_c2": 0.18508660793304443,
+        "sal_wref_c3": 0.14671266078948975,
+        "sal_wref_c4": 0.13833841681480408,
+        "sal_wref_c5": 0.14126518368721008
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5574.03125,
+        "gradnorm_l1_uncentered": 6257.623046875,
+        "gradnorm_l2_centered": 12.257195472717285,
+        "gradnorm_l2_uncentered": 13.920092582702637,
+        "sal_noref_c1": 114.86666107177734,
+        "sal_noref_c2": 57.937442779541016,
+        "sal_noref_c3": 43.45491409301758,
+        "sal_noref_c4": 32.609954833984375,
+        "sal_noref_c5": 26.187307357788086,
+        "sal_wref_c1": 71.90824127197266,
+        "sal_wref_c2": 36.36310958862305,
+        "sal_wref_c3": 28.95430564880371,
+        "sal_wref_c4": 21.74753189086914,
+        "sal_wref_c5": 17.750885009765625
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5459.58935546875,
+        "gradnorm_l1_uncentered": 5950.1572265625,
+        "gradnorm_l2_centered": 8.805265426635742,
+        "gradnorm_l2_uncentered": 9.577901840209961,
+        "sal_noref_c1": 18.886669158935547,
+        "sal_noref_c2": 11.558119773864746,
+        "sal_noref_c3": 7.772414684295654,
+        "sal_noref_c4": 5.909193992614746,
+        "sal_noref_c5": 5.50828742980957,
+        "sal_wref_c1": 4.614374160766602,
+        "sal_wref_c2": 4.469755172729492,
+        "sal_wref_c3": 3.0636768341064453,
+        "sal_wref_c4": 2.545377016067505,
+        "sal_wref_c5": 2.6358914375305176
+      }
+    }
+  ]
+}

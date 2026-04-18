@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "48.json",
+    "question_id": "6359a0b1-8f7b-499b-9336-840f9ab90688",
+    "mistake_agent": "Geometry_Expert",
+    "mistake_step": 6,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What is the area of the green polygon in the attached file? The numbers in purple represent the lengths of the side they are next to."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Geometry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 631.401611328125,
+        "gradnorm_l1_uncentered": 435.7699279785156,
+        "gradnorm_l2_centered": 1.3597450256347656,
+        "gradnorm_l2_uncentered": 1.1943118572235107,
+        "sal_noref_c1": 0.9529982805252075,
+        "sal_noref_c2": 0.5098848938941956,
+        "sal_noref_c3": 0.35901233553886414,
+        "sal_noref_c4": 0.26982632279396057,
+        "sal_noref_c5": 0.21601808071136475,
+        "sal_wref_c1": 1.499548077583313,
+        "sal_wref_c2": 0.7457625865936279,
+        "sal_wref_c3": 0.5011122822761536,
+        "sal_wref_c4": 0.3758409321308136,
+        "sal_wref_c5": 0.3060837388038635
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1253.0538330078125,
+        "gradnorm_l1_uncentered": 1692.885498046875,
+        "gradnorm_l2_centered": 2.5892200469970703,
+        "gradnorm_l2_uncentered": 4.477087020874023,
+        "sal_noref_c1": 16.736988067626953,
+        "sal_noref_c2": 8.742979049682617,
+        "sal_noref_c3": 5.928079128265381,
+        "sal_noref_c4": 4.451153755187988,
+        "sal_noref_c5": 3.5664877891540527,
+        "sal_wref_c1": 3.3694121837615967,
+        "sal_wref_c2": 2.1144919395446777,
+        "sal_wref_c3": 1.5196813344955444,
+        "sal_wref_c4": 1.1670840978622437,
+        "sal_wref_c5": 0.944918155670166
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 575.1798095703125,
+        "gradnorm_l1_uncentered": 755.2781982421875,
+        "gradnorm_l2_centered": 1.0299367904663086,
+        "gradnorm_l2_uncentered": 1.7820782661437988,
+        "sal_noref_c1": 2.43520188331604,
+        "sal_noref_c2": 1.2791430950164795,
+        "sal_noref_c3": 0.8577976822853088,
+        "sal_noref_c4": 0.6603526473045349,
+        "sal_noref_c5": 0.5325074195861816,
+        "sal_wref_c1": 0.40773168206214905,
+        "sal_wref_c2": 0.22655433416366577,
+        "sal_wref_c3": 0.17371971905231476,
+        "sal_wref_c4": 0.13564147055149078,
+        "sal_wref_c5": 0.10871727764606476
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Geometry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 585.5045776367188,
+        "gradnorm_l1_uncentered": 370.3193054199219,
+        "gradnorm_l2_centered": 1.575374722480774,
+        "gradnorm_l2_uncentered": 0.8303636908531189,
+        "sal_noref_c1": 0.46628835797309875,
+        "sal_noref_c2": 0.23830468952655792,
+        "sal_noref_c3": 0.15987670421600342,
+        "sal_noref_c4": 0.12174218893051147,
+        "sal_noref_c5": 0.09796878695487976,
+        "sal_wref_c1": 2.2211196422576904,
+        "sal_wref_c2": 1.1054270267486572,
+        "sal_wref_c3": 0.7394581437110901,
+        "sal_wref_c4": 0.5546059012413025,
+        "sal_wref_c5": 0.44740232825279236
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 792.3290405273438,
+        "gradnorm_l1_uncentered": 781.1912841796875,
+        "gradnorm_l2_centered": 1.4517854452133179,
+        "gradnorm_l2_uncentered": 1.3987414836883545,
+        "sal_noref_c1": 1.1174595355987549,
+        "sal_noref_c2": 0.6033993363380432,
+        "sal_noref_c3": 0.41527172923088074,
+        "sal_noref_c4": 0.31173691153526306,
+        "sal_noref_c5": 0.25335508584976196,
+        "sal_wref_c1": 1.2611470222473145,
+        "sal_wref_c2": 0.6367918252944946,
+        "sal_wref_c3": 0.4552144706249237,
+        "sal_wref_c4": 0.34803080558776855,
+        "sal_wref_c5": 0.27864983677864075
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "MathAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 727.6339111328125,
+        "gradnorm_l1_uncentered": 874.6819458007812,
+        "gradnorm_l2_centered": 1.1324517726898193,
+        "gradnorm_l2_uncentered": 2.2094998359680176,
+        "sal_noref_c1": 3.463629722595215,
+        "sal_noref_c2": 1.8317804336547852,
+        "sal_noref_c3": 1.2432451248168945,
+        "sal_noref_c4": 0.9643802046775818,
+        "sal_noref_c5": 0.7927684187889099,
+        "sal_wref_c1": 0.1509760469198227,
+        "sal_wref_c2": 0.12079118192195892,
+        "sal_wref_c3": 0.08217014372348785,
+        "sal_wref_c4": 0.07755978405475616,
+        "sal_wref_c5": 0.07470196485519409
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Geometry_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 592.544189453125,
+        "gradnorm_l1_uncentered": 407.0573425292969,
+        "gradnorm_l2_centered": 1.4427493810653687,
+        "gradnorm_l2_uncentered": 1.0077894926071167,
+        "sal_noref_c1": 0.7056915760040283,
+        "sal_noref_c2": 0.3544532358646393,
+        "sal_noref_c3": 0.23905587196350098,
+        "sal_noref_c4": 0.1838885098695755,
+        "sal_noref_c5": 0.1530340611934662,
+        "sal_wref_c1": 1.8071120977401733,
+        "sal_wref_c2": 0.9026902318000793,
+        "sal_wref_c3": 0.6036337018013,
+        "sal_wref_c4": 0.4528464674949646,
+        "sal_wref_c5": 0.36336851119995117
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 620.893310546875,
+        "gradnorm_l1_uncentered": 690.01416015625,
+        "gradnorm_l2_centered": 1.0567500591278076,
+        "gradnorm_l2_uncentered": 1.944103717803955,
+        "sal_noref_c1": 2.7630529403686523,
+        "sal_noref_c2": 1.3911701440811157,
+        "sal_noref_c3": 0.9642322659492493,
+        "sal_noref_c4": 0.7693632245063782,
+        "sal_noref_c5": 0.6262160539627075,
+        "sal_wref_c1": 0.3187113106250763,
+        "sal_wref_c2": 0.1579301506280899,
+        "sal_wref_c3": 0.11075202375650406,
+        "sal_wref_c4": 0.11246277391910553,
+        "sal_wref_c5": 0.10188695043325424
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 840.2854614257812,
+        "gradnorm_l1_uncentered": 1137.76806640625,
+        "gradnorm_l2_centered": 1.3521239757537842,
+        "gradnorm_l2_uncentered": 2.6350979804992676,
+        "sal_noref_c1": 5.03790283203125,
+        "sal_noref_c2": 2.529733180999756,
+        "sal_noref_c3": 1.6888136863708496,
+        "sal_noref_c4": 1.2976224422454834,
+        "sal_noref_c5": 1.0405443906784058,
+        "sal_wref_c1": 0.001696664490737021,
+        "sal_wref_c2": 0.0064714220352470875,
+        "sal_wref_c3": 0.020845487713813782,
+        "sal_wref_c4": 0.030819881707429886,
+        "sal_wref_c5": 0.024773377925157547
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Validation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3059.599609375,
+        "gradnorm_l1_uncentered": 3593.494384765625,
+        "gradnorm_l2_centered": 5.600220203399658,
+        "gradnorm_l2_uncentered": 7.433806419372559,
+        "sal_noref_c1": 44.57471466064453,
+        "sal_noref_c2": 22.798709869384766,
+        "sal_noref_c3": 15.274739265441895,
+        "sal_noref_c4": 11.604334831237793,
+        "sal_noref_c5": 9.78541374206543,
+        "sal_wref_c1": 21.559545516967773,
+        "sal_wref_c2": 11.1451997756958,
+        "sal_wref_c3": 7.467260837554932,
+        "sal_wref_c4": 5.8601226806640625,
+        "sal_wref_c5": 5.111819267272949
+      }
+    }
+  ]
+}

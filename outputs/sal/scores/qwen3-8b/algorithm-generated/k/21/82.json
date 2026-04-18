@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "59.json",
+    "question_id": "1dcc160f-c187-48c2-b68e-319bd4354f3d",
+    "mistake_agent": "DataExtraction_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "According to Openreview.net, at the NeurIPS 2022 Conference, how many papers by an author named Yuri were accepted with a \"certain\" recommendation?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 617.82568359375,
+        "gradnorm_l1_uncentered": 245.7843475341797,
+        "gradnorm_l2_centered": 1.5183115005493164,
+        "gradnorm_l2_uncentered": 0.8217339515686035,
+        "sal_noref_c1": 0.15468689799308777,
+        "sal_noref_c2": 0.12107370793819427,
+        "sal_noref_c3": 0.09931956976652145,
+        "sal_noref_c4": 0.07687501609325409,
+        "sal_noref_c5": 0.06482420116662979,
+        "sal_wref_c1": 0.9040743708610535,
+        "sal_wref_c2": 0.5747885704040527,
+        "sal_wref_c3": 0.5866774916648865,
+        "sal_wref_c4": 0.4860655665397644,
+        "sal_wref_c5": 0.38971954584121704
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1037.5458984375,
+        "gradnorm_l1_uncentered": 909.2777099609375,
+        "gradnorm_l2_centered": 2.059823989868164,
+        "gradnorm_l2_uncentered": 2.053502321243286,
+        "sal_noref_c1": 0.47659817337989807,
+        "sal_noref_c2": 0.39081263542175293,
+        "sal_noref_c3": 0.2607591450214386,
+        "sal_noref_c4": 0.2719936966896057,
+        "sal_noref_c5": 0.21821537613868713,
+        "sal_wref_c1": 0.7195867896080017,
+        "sal_wref_c2": 0.3888528347015381,
+        "sal_wref_c3": 0.37487050890922546,
+        "sal_wref_c4": 0.28373953700065613,
+        "sal_wref_c5": 0.22860944271087646
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 602.0324096679688,
+        "gradnorm_l1_uncentered": 256.97998046875,
+        "gradnorm_l2_centered": 1.5507962703704834,
+        "gradnorm_l2_uncentered": 0.5199438333511353,
+        "sal_noref_c1": 0.080672986805439,
+        "sal_noref_c2": 0.042084790766239166,
+        "sal_noref_c3": 0.028058042749762535,
+        "sal_noref_c4": 0.02482135221362114,
+        "sal_noref_c5": 0.019864745438098907,
+        "sal_wref_c1": 0.9442042708396912,
+        "sal_wref_c2": 0.7864179015159607,
+        "sal_wref_c3": 0.6429522037506104,
+        "sal_wref_c4": 0.5181968808174133,
+        "sal_wref_c5": 0.415015310049057
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 675.2933349609375,
+        "gradnorm_l1_uncentered": 349.2388916015625,
+        "gradnorm_l2_centered": 1.7305876016616821,
+        "gradnorm_l2_uncentered": 0.6758288741111755,
+        "sal_noref_c1": 0.024247663095593452,
+        "sal_noref_c2": 0.030526645481586456,
+        "sal_noref_c3": 0.021437229588627815,
+        "sal_noref_c4": 0.016405001282691956,
+        "sal_noref_c5": 0.013140013441443443,
+        "sal_wref_c1": 1.2682565450668335,
+        "sal_wref_c2": 0.8770781755447388,
+        "sal_wref_c3": 0.720656156539917,
+        "sal_wref_c4": 0.5972820520401001,
+        "sal_wref_c5": 0.47825852036476135
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 597.5529174804688,
+        "gradnorm_l1_uncentered": 203.4300537109375,
+        "gradnorm_l2_centered": 1.598667025566101,
+        "gradnorm_l2_uncentered": 0.5775851011276245,
+        "sal_noref_c1": 0.04724523425102234,
+        "sal_noref_c2": 0.07611294835805893,
+        "sal_noref_c3": 0.05084042251110077,
+        "sal_noref_c4": 0.03930465131998062,
+        "sal_noref_c5": 0.031660161912441254,
+        "sal_wref_c1": 1.2643373012542725,
+        "sal_wref_c2": 0.7848296761512756,
+        "sal_wref_c3": 0.6254221796989441,
+        "sal_wref_c4": 0.5458611845970154,
+        "sal_wref_c5": 0.43821558356285095
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 880.573974609375,
+        "gradnorm_l1_uncentered": 645.659912109375,
+        "gradnorm_l2_centered": 2.0649590492248535,
+        "gradnorm_l2_uncentered": 1.183884859085083,
+        "sal_noref_c1": 0.007467916700989008,
+        "sal_noref_c2": 0.12588369846343994,
+        "sal_noref_c3": 0.12077245861291885,
+        "sal_noref_c4": 0.09640607982873917,
+        "sal_noref_c5": 0.07765550911426544,
+        "sal_wref_c1": 2.2608721256256104,
+        "sal_wref_c2": 1.298340082168579,
+        "sal_wref_c3": 0.8836650848388672,
+        "sal_wref_c4": 0.7520334124565125,
+        "sal_wref_c5": 0.60385662317276
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 657.5199584960938,
+        "gradnorm_l1_uncentered": 357.921875,
+        "gradnorm_l2_centered": 1.6070055961608887,
+        "gradnorm_l2_uncentered": 0.7745383381843567,
+        "sal_noref_c1": 0.0598718635737896,
+        "sal_noref_c2": 0.11746541410684586,
+        "sal_noref_c3": 0.07836209982633591,
+        "sal_noref_c4": 0.05888424813747406,
+        "sal_noref_c5": 0.04713454097509384,
+        "sal_wref_c1": 1.3169251680374146,
+        "sal_wref_c2": 0.7680912613868713,
+        "sal_wref_c3": 0.6021741032600403,
+        "sal_wref_c4": 0.5127336382865906,
+        "sal_wref_c5": 0.4103507399559021
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4540.416015625,
+        "gradnorm_l1_uncentered": 4613.56103515625,
+        "gradnorm_l2_centered": 7.275149822235107,
+        "gradnorm_l2_uncentered": 7.291435718536377,
+        "sal_noref_c1": 0.7023000717163086,
+        "sal_noref_c2": 0.356842964887619,
+        "sal_noref_c3": 0.5462045669555664,
+        "sal_noref_c4": 0.6732177138328552,
+        "sal_noref_c5": 0.6636763215065002,
+        "sal_wref_c1": 0.33177170157432556,
+        "sal_wref_c2": 0.4073190689086914,
+        "sal_wref_c3": 0.38625216484069824,
+        "sal_wref_c4": 0.7478146553039551,
+        "sal_wref_c5": 0.7097217440605164
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 775.7564086914062,
+        "gradnorm_l1_uncentered": 677.1454467773438,
+        "gradnorm_l2_centered": 1.7255462408065796,
+        "gradnorm_l2_uncentered": 1.4491009712219238,
+        "sal_noref_c1": 0.3521900475025177,
+        "sal_noref_c2": 0.37717169523239136,
+        "sal_noref_c3": 0.26013612747192383,
+        "sal_noref_c4": 0.2025943398475647,
+        "sal_noref_c5": 0.16320344805717468,
+        "sal_wref_c1": 0.7929330468177795,
+        "sal_wref_c2": 0.3992428481578827,
+        "sal_wref_c3": 0.37118327617645264,
+        "sal_wref_c4": 0.36850646138191223,
+        "sal_wref_c5": 0.2986067533493042
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 939.39306640625,
+        "gradnorm_l1_uncentered": 767.7062377929688,
+        "gradnorm_l2_centered": 2.343967914581299,
+        "gradnorm_l2_uncentered": 2.364076852798462,
+        "sal_noref_c1": 0.3195851147174835,
+        "sal_noref_c2": 1.6571711301803589,
+        "sal_noref_c3": 1.1114062070846558,
+        "sal_noref_c4": 0.842517077922821,
+        "sal_noref_c5": 0.6742383241653442,
+        "sal_wref_c1": 1.8850901126861572,
+        "sal_wref_c2": 1.3120933771133423,
+        "sal_wref_c3": 0.9272505640983582,
+        "sal_wref_c4": 0.7643414735794067,
+        "sal_wref_c5": 0.6137572526931763
+      }
+    }
+  ]
+}

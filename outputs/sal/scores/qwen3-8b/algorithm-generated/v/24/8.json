@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "105.json",
+    "question_id": "b36ef2d8f2643b80e74a44ce3403f674ecb2aed7fd36afeaa289061a59feef92",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 6,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "Which gyms near Tompkins Square Park (<200m) have fitness classes before 7am?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Local_Knowledge_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 903.9046630859375,
+        "gradnorm_l1_uncentered": 570.4981689453125,
+        "gradnorm_l2_centered": 1.7167655229568481,
+        "gradnorm_l2_uncentered": 1.2247403860092163,
+        "sal_noref_c1": 0.11018215864896774,
+        "sal_noref_c2": 0.1614028811454773,
+        "sal_noref_c3": 0.11078795045614243,
+        "sal_noref_c4": 0.09797742962837219,
+        "sal_noref_c5": 0.08196129649877548,
+        "sal_wref_c1": 1.6595938205718994,
+        "sal_wref_c2": 0.8738241791725159,
+        "sal_wref_c3": 0.5830782055854797,
+        "sal_wref_c4": 0.4561237096786499,
+        "sal_wref_c5": 0.36822542548179626
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Local_Knowledge_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 798.7904052734375,
+        "gradnorm_l1_uncentered": 395.9539794921875,
+        "gradnorm_l2_centered": 1.6206138134002686,
+        "gradnorm_l2_uncentered": 0.710625946521759,
+        "sal_noref_c1": 0.05064785107970238,
+        "sal_noref_c2": 0.03980075567960739,
+        "sal_noref_c3": 0.02660258300602436,
+        "sal_noref_c4": 0.023017339408397675,
+        "sal_noref_c5": 0.020456477999687195,
+        "sal_wref_c1": 1.7454031705856323,
+        "sal_wref_c2": 1.0571728944778442,
+        "sal_wref_c3": 0.715779721736908,
+        "sal_wref_c4": 0.5443976521492004,
+        "sal_wref_c5": 0.4399489760398865
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3308.30517578125,
+        "gradnorm_l1_uncentered": 3628.8583984375,
+        "gradnorm_l2_centered": 6.003872394561768,
+        "gradnorm_l2_uncentered": 7.010172367095947,
+        "sal_noref_c1": 15.30085277557373,
+        "sal_noref_c2": 13.140214920043945,
+        "sal_noref_c3": 8.785768508911133,
+        "sal_noref_c4": 6.621824741363525,
+        "sal_noref_c5": 5.297654151916504,
+        "sal_wref_c1": 2.463794469833374,
+        "sal_wref_c2": 6.712649345397949,
+        "sal_wref_c3": 4.664472579956055,
+        "sal_wref_c4": 3.6176869869232178,
+        "sal_wref_c5": 2.8942739963531494
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Fitness_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 801.7411499023438,
+        "gradnorm_l1_uncentered": 541.7125244140625,
+        "gradnorm_l2_centered": 1.5374009609222412,
+        "gradnorm_l2_uncentered": 0.9351155161857605,
+        "sal_noref_c1": 0.12313810735940933,
+        "sal_noref_c2": 0.11243750900030136,
+        "sal_noref_c3": 0.08167824894189835,
+        "sal_noref_c4": 0.06134745851159096,
+        "sal_noref_c5": 0.04910976439714432,
+        "sal_wref_c1": 1.545953392982483,
+        "sal_wref_c2": 0.8783687353134155,
+        "sal_wref_c3": 0.5878487229347229,
+        "sal_wref_c4": 0.44214314222335815,
+        "sal_wref_c5": 0.357002317905426
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Fitness_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 869.8827514648438,
+        "gradnorm_l1_uncentered": 711.134765625,
+        "gradnorm_l2_centered": 1.5877763032913208,
+        "gradnorm_l2_uncentered": 1.2062664031982422,
+        "sal_noref_c1": 0.20051486790180206,
+        "sal_noref_c2": 0.16662758588790894,
+        "sal_noref_c3": 0.1118871197104454,
+        "sal_noref_c4": 0.08459599316120148,
+        "sal_noref_c5": 0.07120972871780396,
+        "sal_wref_c1": 1.3628895282745361,
+        "sal_wref_c2": 0.7648768424987793,
+        "sal_wref_c3": 0.519525408744812,
+        "sal_wref_c4": 0.3897196650505066,
+        "sal_wref_c5": 0.3156249225139618
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Local_Knowledge_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 822.986083984375,
+        "gradnorm_l1_uncentered": 676.9225463867188,
+        "gradnorm_l2_centered": 1.5146507024765015,
+        "gradnorm_l2_uncentered": 1.2136987447738647,
+        "sal_noref_c1": 0.2827700078487396,
+        "sal_noref_c2": 0.19579973816871643,
+        "sal_noref_c3": 0.1305518001317978,
+        "sal_noref_c4": 0.09819797426462173,
+        "sal_noref_c5": 0.08219437301158905,
+        "sal_wref_c1": 1.1610958576202393,
+        "sal_wref_c2": 0.6692385673522949,
+        "sal_wref_c3": 0.46198877692222595,
+        "sal_wref_c4": 0.34686341881752014,
+        "sal_wref_c5": 0.27855736017227173
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1565.4415283203125,
+        "gradnorm_l1_uncentered": 1829.126953125,
+        "gradnorm_l2_centered": 2.7938482761383057,
+        "gradnorm_l2_uncentered": 3.6157541275024414,
+        "sal_noref_c1": 4.391491889953613,
+        "sal_noref_c2": 2.6492538452148438,
+        "sal_noref_c3": 1.7849241495132446,
+        "sal_noref_c4": 1.4372910261154175,
+        "sal_noref_c5": 1.1976476907730103,
+        "sal_wref_c1": 0.06914928555488586,
+        "sal_wref_c2": 0.1445406675338745,
+        "sal_wref_c3": 0.13578486442565918,
+        "sal_wref_c4": 0.23748518526554108,
+        "sal_wref_c5": 0.19470863044261932
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5909.2734375,
+        "gradnorm_l1_uncentered": 6348.669921875,
+        "gradnorm_l2_centered": 10.668387413024902,
+        "gradnorm_l2_uncentered": 11.640190124511719,
+        "sal_noref_c1": 73.93607330322266,
+        "sal_noref_c2": 41.1630973815918,
+        "sal_noref_c3": 32.18821716308594,
+        "sal_noref_c4": 24.162376403808594,
+        "sal_noref_c5": 19.60614585876465,
+        "sal_wref_c1": 59.425174713134766,
+        "sal_wref_c2": 30.452247619628906,
+        "sal_wref_c3": 24.68084716796875,
+        "sal_wref_c4": 18.60902976989746,
+        "sal_wref_c5": 14.989372253417969
+      }
+    }
+  ]
+}

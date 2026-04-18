@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "60.json",
+    "question_id": "e29834fd-413a-455c-a33e-c3915b07401c",
+    "mistake_agent": "DataAnalysis_Expert",
+    "mistake_step": 3,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "I'd like to learn more about some popular reality television competition shows. As of the end of the 44th season of the American version of Survivor, how many more unique winners have there been compared to the number of winners of American Idol?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "RealityTV_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 677.46142578125,
+        "gradnorm_l1_uncentered": 605.380859375,
+        "gradnorm_l2_centered": 1.183436632156372,
+        "gradnorm_l2_uncentered": 1.699375033378601,
+        "sal_noref_c1": 1.9496408700942993,
+        "sal_noref_c2": 1.0329375267028809,
+        "sal_noref_c3": 0.7348647713661194,
+        "sal_noref_c4": 0.5524150729179382,
+        "sal_noref_c5": 0.442568838596344,
+        "sal_wref_c1": 0.6862614154815674,
+        "sal_wref_c2": 0.3548734188079834,
+        "sal_wref_c3": 0.25619980692863464,
+        "sal_wref_c4": 0.19251349568367004,
+        "sal_wref_c5": 0.15625770390033722
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "RealityTV_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 608.0404663085938,
+        "gradnorm_l1_uncentered": 438.326904296875,
+        "gradnorm_l2_centered": 1.3582521677017212,
+        "gradnorm_l2_uncentered": 1.1936606168746948,
+        "sal_noref_c1": 0.9497418999671936,
+        "sal_noref_c2": 0.49176472425460815,
+        "sal_noref_c3": 0.3563045263290405,
+        "sal_noref_c4": 0.2711794376373291,
+        "sal_noref_c5": 0.21936874091625214,
+        "sal_wref_c1": 1.5087064504623413,
+        "sal_wref_c2": 0.7477567791938782,
+        "sal_wref_c3": 0.5047122836112976,
+        "sal_wref_c4": 0.3793162405490875,
+        "sal_wref_c5": 0.3034937083721161
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3851.27001953125,
+        "gradnorm_l1_uncentered": 4357.4326171875,
+        "gradnorm_l2_centered": 8.279860496520996,
+        "gradnorm_l2_uncentered": 10.221521377563477,
+        "sal_noref_c1": 87.09700775146484,
+        "sal_noref_c2": 45.42979049682617,
+        "sal_noref_c3": 30.393205642700195,
+        "sal_noref_c4": 23.88396644592285,
+        "sal_noref_c5": 19.26130485534668,
+        "sal_wref_c1": 50.88230514526367,
+        "sal_wref_c2": 28.616384506225586,
+        "sal_wref_c3": 19.095727920532227,
+        "sal_wref_c4": 15.03662109375,
+        "sal_wref_c5": 12.03746223449707
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 633.3899536132812,
+        "gradnorm_l1_uncentered": 347.9482727050781,
+        "gradnorm_l2_centered": 1.5740219354629517,
+        "gradnorm_l2_uncentered": 0.8804240822792053,
+        "sal_noref_c1": 0.47671735286712646,
+        "sal_noref_c2": 0.239203080534935,
+        "sal_noref_c3": 0.17593377828598022,
+        "sal_noref_c4": 0.13710540533065796,
+        "sal_noref_c5": 0.1157631054520607,
+        "sal_wref_c1": 2.245046377182007,
+        "sal_wref_c2": 1.125334620475769,
+        "sal_wref_c3": 0.7509006857872009,
+        "sal_wref_c4": 0.5636526942253113,
+        "sal_wref_c5": 0.45249462127685547
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1662.2530517578125,
+        "gradnorm_l1_uncentered": 2093.30615234375,
+        "gradnorm_l2_centered": 3.2949039936065674,
+        "gradnorm_l2_uncentered": 5.02396821975708,
+        "sal_noref_c1": 18.98772430419922,
+        "sal_noref_c2": 9.46511173248291,
+        "sal_noref_c3": 6.320497989654541,
+        "sal_noref_c4": 5.048450946807861,
+        "sal_noref_c5": 4.4129319190979,
+        "sal_wref_c1": 4.608940601348877,
+        "sal_wref_c2": 2.3161542415618896,
+        "sal_wref_c3": 1.5521794557571411,
+        "sal_wref_c4": 1.6495627164840698,
+        "sal_wref_c5": 1.3555481433868408
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 549.8215942382812,
+        "gradnorm_l1_uncentered": 455.19854736328125,
+        "gradnorm_l2_centered": 1.2913126945495605,
+        "gradnorm_l2_uncentered": 1.1919996738433838,
+        "sal_noref_c1": 1.0302786827087402,
+        "sal_noref_c2": 0.5601177215576172,
+        "sal_noref_c3": 0.3740161657333374,
+        "sal_noref_c4": 0.2886243760585785,
+        "sal_noref_c5": 0.23891258239746094,
+        "sal_wref_c1": 1.4103730916976929,
+        "sal_wref_c2": 0.7055739164352417,
+        "sal_wref_c3": 0.47514238953590393,
+        "sal_wref_c4": 0.35722851753234863,
+        "sal_wref_c5": 0.28580614924430847
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1238.29345703125,
+        "gradnorm_l1_uncentered": 1613.4766845703125,
+        "gradnorm_l2_centered": 2.575161933898926,
+        "gradnorm_l2_uncentered": 4.066835403442383,
+        "sal_noref_c1": 11.248309135437012,
+        "sal_noref_c2": 5.98533821105957,
+        "sal_noref_c3": 4.012153625488281,
+        "sal_noref_c4": 3.2544875144958496,
+        "sal_noref_c5": 2.9850234985351562,
+        "sal_wref_c1": 1.3874754905700684,
+        "sal_wref_c2": 1.150240182876587,
+        "sal_wref_c3": 0.7788846492767334,
+        "sal_wref_c4": 0.9736337661743164,
+        "sal_wref_c5": 0.8382192850112915
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "RealityTV_Historian_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 636.5697021484375,
+        "gradnorm_l1_uncentered": 221.76487731933594,
+        "gradnorm_l2_centered": 1.9328116178512573,
+        "gradnorm_l2_uncentered": 0.44160398840904236,
+        "sal_noref_c1": 0.08639910072088242,
+        "sal_noref_c2": 0.04426237568259239,
+        "sal_noref_c3": 0.029767410829663277,
+        "sal_noref_c4": 0.02238547056913376,
+        "sal_noref_c5": 0.021766507998108864,
+        "sal_wref_c1": 3.4677822589874268,
+        "sal_wref_c2": 1.7574162483215332,
+        "sal_wref_c3": 1.1766293048858643,
+        "sal_wref_c4": 0.8871686458587646,
+        "sal_wref_c5": 0.7154481410980225
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3014.020263671875,
+        "gradnorm_l1_uncentered": 3454.414306640625,
+        "gradnorm_l2_centered": 5.396101951599121,
+        "gradnorm_l2_uncentered": 7.1224446296691895,
+        "sal_noref_c1": 36.11894607543945,
+        "sal_noref_c2": 18.82211685180664,
+        "sal_noref_c3": 13.0878324508667,
+        "sal_noref_c4": 10.020666122436523,
+        "sal_noref_c5": 8.107439041137695,
+        "sal_wref_c1": 14.300992965698242,
+        "sal_wref_c2": 8.249404907226562,
+        "sal_wref_c3": 5.859272480010986,
+        "sal_wref_c4": 4.724658966064453,
+        "sal_wref_c5": 3.791179656982422
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 571.4486083984375,
+        "gradnorm_l1_uncentered": 638.037353515625,
+        "gradnorm_l2_centered": 1.0128437280654907,
+        "gradnorm_l2_uncentered": 1.8662828207015991,
+        "sal_noref_c1": 2.591163158416748,
+        "sal_noref_c2": 1.328463077545166,
+        "sal_noref_c3": 0.927392303943634,
+        "sal_noref_c4": 0.7127031087875366,
+        "sal_noref_c5": 0.5932058095932007,
+        "sal_wref_c1": 0.3895213007926941,
+        "sal_wref_c2": 0.19775430858135223,
+        "sal_wref_c3": 0.14123378694057465,
+        "sal_wref_c4": 0.11253893375396729,
+        "sal_wref_c5": 0.10499552637338638
+      }
+    }
+  ]
+}

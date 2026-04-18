@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "3.json",
+    "question_id": "df6561b2-7ee5-4540-baab-5095f742716a",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 4,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "When you take the average of the standard population deviation of the red numbers and the standard sample deviation of the green numbers in this image using the statistics module in Python 3.11, what is the result rounded to the nearest three decimal points?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Python_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 635.692138671875,
+        "gradnorm_l1_uncentered": 305.058837890625,
+        "gradnorm_l2_centered": 1.3983938694000244,
+        "gradnorm_l2_uncentered": 0.9850451350212097,
+        "sal_noref_c1": 0.2600952386856079,
+        "sal_noref_c2": 0.22545050084590912,
+        "sal_noref_c3": 0.15867893397808075,
+        "sal_noref_c4": 0.1303718239068985,
+        "sal_noref_c5": 0.10628513991832733,
+        "sal_wref_c1": 0.8523797988891602,
+        "sal_wref_c2": 0.48763149976730347,
+        "sal_wref_c3": 0.4850479066371918,
+        "sal_wref_c4": 0.3833315074443817,
+        "sal_wref_c5": 0.30679434537887573
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1678.7601318359375,
+        "gradnorm_l1_uncentered": 1782.660400390625,
+        "gradnorm_l2_centered": 3.6038928031921387,
+        "gradnorm_l2_uncentered": 4.018305778503418,
+        "sal_noref_c1": 3.8034253120422363,
+        "sal_noref_c2": 1.9401273727416992,
+        "sal_noref_c3": 1.3822869062423706,
+        "sal_noref_c4": 1.0982179641723633,
+        "sal_noref_c5": 0.9059785604476929,
+        "sal_wref_c1": 0.45195063948631287,
+        "sal_wref_c2": 0.32693055272102356,
+        "sal_wref_c3": 0.5333463549613953,
+        "sal_wref_c4": 0.40005555748939514,
+        "sal_wref_c5": 0.3224800229072571
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Statistics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 820.7134399414062,
+        "gradnorm_l1_uncentered": 611.5361328125,
+        "gradnorm_l2_centered": 1.858346939086914,
+        "gradnorm_l2_uncentered": 1.0878950357437134,
+        "sal_noref_c1": 0.09543896466493607,
+        "sal_noref_c2": 0.08982241898775101,
+        "sal_noref_c3": 0.06226100027561188,
+        "sal_noref_c4": 0.055420808494091034,
+        "sal_noref_c5": 0.049805037677288055,
+        "sal_wref_c1": 0.6746114492416382,
+        "sal_wref_c2": 0.9724310636520386,
+        "sal_wref_c3": 0.760267436504364,
+        "sal_wref_c4": 0.5985326766967773,
+        "sal_wref_c5": 0.48332351446151733
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6101.58056640625,
+        "gradnorm_l1_uncentered": 6260.75537109375,
+        "gradnorm_l2_centered": 11.717421531677246,
+        "gradnorm_l2_uncentered": 12.561849594116211,
+        "sal_noref_c1": 39.29249954223633,
+        "sal_noref_c2": 25.268047332763672,
+        "sal_noref_c3": 17.636442184448242,
+        "sal_noref_c4": 13.778304100036621,
+        "sal_noref_c5": 11.505121231079102,
+        "sal_wref_c1": 9.53212833404541,
+        "sal_wref_c2": 15.307531356811523,
+        "sal_wref_c3": 10.471402168273926,
+        "sal_wref_c4": 8.543648719787598,
+        "sal_wref_c5": 7.50537109375
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 806.1210327148438,
+        "gradnorm_l1_uncentered": 634.0070190429688,
+        "gradnorm_l2_centered": 1.7006744146347046,
+        "gradnorm_l2_uncentered": 1.2418633699417114,
+        "sal_noref_c1": 0.3175084590911865,
+        "sal_noref_c2": 0.1604868620634079,
+        "sal_noref_c3": 0.11819896847009659,
+        "sal_noref_c4": 0.09367115795612335,
+        "sal_noref_c5": 0.07938171923160553,
+        "sal_wref_c1": 0.49125924706459045,
+        "sal_wref_c2": 0.45654618740081787,
+        "sal_wref_c3": 0.48180732131004333,
+        "sal_wref_c4": 0.39325135946273804,
+        "sal_wref_c5": 0.3199346661567688
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2635.98779296875,
+        "gradnorm_l1_uncentered": 2715.977294921875,
+        "gradnorm_l2_centered": 4.901331901550293,
+        "gradnorm_l2_uncentered": 4.998286724090576,
+        "sal_noref_c1": 2.9698359966278076,
+        "sal_noref_c2": 3.5912137031555176,
+        "sal_noref_c3": 2.397963285446167,
+        "sal_noref_c4": 1.9965057373046875,
+        "sal_noref_c5": 1.6297006607055664,
+        "sal_wref_c1": 1.3009315729141235,
+        "sal_wref_c2": 3.146799087524414,
+        "sal_wref_c3": 2.2492198944091797,
+        "sal_wref_c4": 1.7296886444091797,
+        "sal_wref_c5": 1.3842661380767822
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 604.3515014648438,
+        "gradnorm_l1_uncentered": 302.9471740722656,
+        "gradnorm_l2_centered": 1.5549190044403076,
+        "gradnorm_l2_uncentered": 0.6693676114082336,
+        "sal_noref_c1": 0.13342784345149994,
+        "sal_noref_c2": 0.07034126669168472,
+        "sal_noref_c3": 0.048227693885564804,
+        "sal_noref_c4": 0.040674299001693726,
+        "sal_noref_c5": 0.03318684548139572,
+        "sal_wref_c1": 0.7134811878204346,
+        "sal_wref_c2": 0.7693130373954773,
+        "sal_wref_c3": 0.612215518951416,
+        "sal_wref_c4": 0.4912245273590088,
+        "sal_wref_c5": 0.3934672474861145
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8911.2568359375,
+        "gradnorm_l1_uncentered": 9094.4306640625,
+        "gradnorm_l2_centered": 15.01452922821045,
+        "gradnorm_l2_uncentered": 15.10373306274414,
+        "sal_noref_c1": 4.5559773445129395,
+        "sal_noref_c2": 5.3766093254089355,
+        "sal_noref_c3": 11.099011421203613,
+        "sal_noref_c4": 14.493667602539062,
+        "sal_noref_c5": 16.4472599029541,
+        "sal_wref_c1": 2.1649937629699707,
+        "sal_wref_c2": 5.55566930770874,
+        "sal_wref_c3": 11.642125129699707,
+        "sal_wref_c4": 13.924413681030273,
+        "sal_wref_c5": 14.109107971191406
+      }
+    }
+  ]
+}

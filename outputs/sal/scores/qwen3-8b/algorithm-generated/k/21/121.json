@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "94.json",
+    "question_id": "0383a3ee-47a7-41a4-b493-519bdefe0488",
+    "mistake_agent": "AnimalBehavior_Expert",
+    "mistake_step": 8,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "BirdSpeciesIdentification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 824.6618041992188,
+        "gradnorm_l1_uncentered": 630.629150390625,
+        "gradnorm_l2_centered": 2.1662752628326416,
+        "gradnorm_l2_uncentered": 2.430556058883667,
+        "sal_noref_c1": 1.466455101966858,
+        "sal_noref_c2": 0.8825538158416748,
+        "sal_noref_c3": 0.8618881106376648,
+        "sal_noref_c4": 0.6758572459220886,
+        "sal_noref_c5": 0.5776590704917908,
+        "sal_wref_c1": 0.08099259436130524,
+        "sal_wref_c2": 0.04753842577338219,
+        "sal_wref_c3": 0.6183541417121887,
+        "sal_wref_c4": 0.47658008337020874,
+        "sal_wref_c5": 0.40515246987342834
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2150.408447265625,
+        "gradnorm_l1_uncentered": 2307.66162109375,
+        "gradnorm_l2_centered": 4.774906158447266,
+        "gradnorm_l2_uncentered": 5.699202060699463,
+        "sal_noref_c1": 10.820673942565918,
+        "sal_noref_c2": 6.870041847229004,
+        "sal_noref_c3": 4.679277420043945,
+        "sal_noref_c4": 3.7312464714050293,
+        "sal_noref_c5": 3.061190366744995,
+        "sal_wref_c1": 1.0238595008850098,
+        "sal_wref_c2": 2.181027412414551,
+        "sal_wref_c3": 1.5682638883590698,
+        "sal_wref_c4": 1.3253060579299927,
+        "sal_wref_c5": 1.1367427110671997
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Ornithology_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2264.96826171875,
+        "gradnorm_l1_uncentered": 2324.674560546875,
+        "gradnorm_l2_centered": 5.8599090576171875,
+        "gradnorm_l2_uncentered": 5.954176425933838,
+        "sal_noref_c1": 0.721205472946167,
+        "sal_noref_c2": 1.3534542322158813,
+        "sal_noref_c3": 2.0726816654205322,
+        "sal_noref_c4": 2.4828662872314453,
+        "sal_noref_c5": 2.0044825077056885,
+        "sal_wref_c1": 0.06398295611143112,
+        "sal_wref_c2": 3.219550371170044,
+        "sal_wref_c3": 2.292660713195801,
+        "sal_wref_c4": 2.2987473011016846,
+        "sal_wref_c5": 1.8392646312713623
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2141.4140625,
+        "gradnorm_l1_uncentered": 2188.981201171875,
+        "gradnorm_l2_centered": 3.505577802658081,
+        "gradnorm_l2_uncentered": 3.5450186729431152,
+        "sal_noref_c1": 0.37759044766426086,
+        "sal_noref_c2": 0.7738298773765564,
+        "sal_noref_c3": 0.5664746165275574,
+        "sal_noref_c4": 0.4704688787460327,
+        "sal_noref_c5": 0.3764553368091583,
+        "sal_wref_c1": 1.3131458759307861,
+        "sal_wref_c2": 0.6692062616348267,
+        "sal_wref_c3": 0.4463231563568115,
+        "sal_wref_c4": 0.49244409799575806,
+        "sal_wref_c5": 0.39850756525993347
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "BirdSpeciesIdentification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1371.315185546875,
+        "gradnorm_l1_uncentered": 1322.45458984375,
+        "gradnorm_l2_centered": 3.3912923336029053,
+        "gradnorm_l2_uncentered": 3.5903096199035645,
+        "sal_noref_c1": 1.405593752861023,
+        "sal_noref_c2": 1.1145350933074951,
+        "sal_noref_c3": 0.7599669098854065,
+        "sal_noref_c4": 1.1497834920883179,
+        "sal_noref_c5": 0.9311589002609253,
+        "sal_wref_c1": 0.0033666847739368677,
+        "sal_wref_c2": 1.2312376499176025,
+        "sal_wref_c3": 0.9934120178222656,
+        "sal_wref_c4": 0.9585012793540955,
+        "sal_wref_c5": 0.7919445037841797
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 824.5567626953125,
+        "gradnorm_l1_uncentered": 602.9639282226562,
+        "gradnorm_l2_centered": 2.0754833221435547,
+        "gradnorm_l2_uncentered": 1.4962000846862793,
+        "sal_noref_c1": 0.01718681864440441,
+        "sal_noref_c2": 0.020610883831977844,
+        "sal_noref_c3": 0.10570421814918518,
+        "sal_noref_c4": 0.10035725682973862,
+        "sal_noref_c5": 0.08238190412521362,
+        "sal_wref_c1": 1.4979482889175415,
+        "sal_wref_c2": 1.146286964416504,
+        "sal_wref_c3": 0.7716664671897888,
+        "sal_wref_c4": 0.583922803401947,
+        "sal_wref_c5": 0.4704548418521881
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "BirdSpeciesIdentification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 907.4148559570312,
+        "gradnorm_l1_uncentered": 828.9072875976562,
+        "gradnorm_l2_centered": 1.8545562028884888,
+        "gradnorm_l2_uncentered": 1.7257509231567383,
+        "sal_noref_c1": 0.46467968821525574,
+        "sal_noref_c2": 0.2563760280609131,
+        "sal_noref_c3": 0.17226479947566986,
+        "sal_noref_c4": 0.12927374243736267,
+        "sal_noref_c5": 0.1037924736738205,
+        "sal_wref_c1": 0.49694597721099854,
+        "sal_wref_c2": 0.3889099657535553,
+        "sal_wref_c3": 0.3299837112426758,
+        "sal_wref_c4": 0.29896482825279236,
+        "sal_wref_c5": 0.24154046177864075
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Ornithology_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1496.499267578125,
+        "gradnorm_l1_uncentered": 1546.7445068359375,
+        "gradnorm_l2_centered": 4.9515485763549805,
+        "gradnorm_l2_uncentered": 4.9380784034729,
+        "sal_noref_c1": 1.7796698808670044,
+        "sal_noref_c2": 5.231548309326172,
+        "sal_noref_c3": 3.49060320854187,
+        "sal_noref_c4": 3.520453929901123,
+        "sal_noref_c5": 2.836458683013916,
+        "sal_wref_c1": 1.0925183296203613,
+        "sal_wref_c2": 6.103785514831543,
+        "sal_wref_c3": 4.509150505065918,
+        "sal_wref_c4": 3.7070977687835693,
+        "sal_wref_c5": 3.0284438133239746
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "AnimalBehavior_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1065.48388671875,
+        "gradnorm_l1_uncentered": 1002.189453125,
+        "gradnorm_l2_centered": 2.8145945072174072,
+        "gradnorm_l2_uncentered": 2.7046329975128174,
+        "sal_noref_c1": 0.720389723777771,
+        "sal_noref_c2": 0.7612258791923523,
+        "sal_noref_c3": 0.5153778195381165,
+        "sal_noref_c4": 0.5380681753158569,
+        "sal_noref_c5": 0.43355804681777954,
+        "sal_wref_c1": 0.016733644530177116,
+        "sal_wref_c2": 1.1489880084991455,
+        "sal_wref_c3": 1.0725646018981934,
+        "sal_wref_c4": 0.8095278739929199,
+        "sal_wref_c5": 0.6617891192436218
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "BirdSpeciesIdentification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1812.3824462890625,
+        "gradnorm_l1_uncentered": 1925.27587890625,
+        "gradnorm_l2_centered": 4.113024711608887,
+        "gradnorm_l2_uncentered": 4.785034656524658,
+        "sal_noref_c1": 7.119073867797852,
+        "sal_noref_c2": 4.075008869171143,
+        "sal_noref_c3": 3.570713996887207,
+        "sal_noref_c4": 2.6817126274108887,
+        "sal_noref_c5": 2.287733554840088,
+        "sal_wref_c1": 0.8256415128707886,
+        "sal_wref_c2": 1.1951653957366943,
+        "sal_wref_c3": 1.711321473121643,
+        "sal_wref_c4": 1.3180630207061768,
+        "sal_wref_c5": 1.2179142236709595
+      }
+    }
+  ]
+}

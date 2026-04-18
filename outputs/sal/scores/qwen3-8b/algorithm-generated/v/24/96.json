@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/24"
+  },
+  "metadata": {
+    "filename": "71.json",
+    "question_id": "ecbc4f94-95a3-4cc7-b255-6741a458a625",
+    "mistake_agent": "DataExtraction_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "How many images are there in the latest 2022 Lego english wikipedia article?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 927.6896362304688,
+        "gradnorm_l1_uncentered": 614.234130859375,
+        "gradnorm_l2_centered": 1.7921617031097412,
+        "gradnorm_l2_uncentered": 1.4359354972839355,
+        "sal_noref_c1": 0.14719615876674652,
+        "sal_noref_c2": 0.2342565655708313,
+        "sal_noref_c3": 0.16007843613624573,
+        "sal_noref_c4": 0.14466531574726105,
+        "sal_noref_c5": 0.12191866338253021,
+        "sal_wref_c1": 1.6002590656280518,
+        "sal_wref_c2": 0.8150687217712402,
+        "sal_wref_c3": 0.5433900952339172,
+        "sal_wref_c4": 0.4346713125705719,
+        "sal_wref_c5": 0.35087913274765015
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "DataExtraction_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 949.322021484375,
+        "gradnorm_l1_uncentered": 809.958251953125,
+        "gradnorm_l2_centered": 1.6759361028671265,
+        "gradnorm_l2_uncentered": 1.6351596117019653,
+        "sal_noref_c1": 0.3839831054210663,
+        "sal_noref_c2": 0.39690154790878296,
+        "sal_noref_c3": 0.27830326557159424,
+        "sal_noref_c4": 0.22168314456939697,
+        "sal_noref_c5": 0.17858734726905823,
+        "sal_wref_c1": 1.1588329076766968,
+        "sal_wref_c2": 0.5855244994163513,
+        "sal_wref_c3": 0.3903510868549347,
+        "sal_wref_c4": 0.31861743330955505,
+        "sal_wref_c5": 0.2557979226112366
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5011.3125,
+        "gradnorm_l1_uncentered": 5331.27197265625,
+        "gradnorm_l2_centered": 9.65056324005127,
+        "gradnorm_l2_uncentered": 10.645586967468262,
+        "sal_noref_c1": 29.173063278198242,
+        "sal_noref_c2": 30.846298217773438,
+        "sal_noref_c3": 21.47089385986328,
+        "sal_noref_c4": 16.42378807067871,
+        "sal_noref_c5": 14.190040588378906,
+        "sal_wref_c1": 6.232054233551025,
+        "sal_wref_c2": 20.792396545410156,
+        "sal_wref_c3": 15.480987548828125,
+        "sal_wref_c4": 12.099891662597656,
+        "sal_wref_c5": 9.772809982299805
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 865.8742065429688,
+        "gradnorm_l1_uncentered": 710.7378540039062,
+        "gradnorm_l2_centered": 1.5776605606079102,
+        "gradnorm_l2_uncentered": 1.2544231414794922,
+        "sal_noref_c1": 0.23578831553459167,
+        "sal_noref_c2": 0.19674688577651978,
+        "sal_noref_c3": 0.13516847789287567,
+        "sal_noref_c4": 0.10170809924602509,
+        "sal_noref_c5": 0.08136874437332153,
+        "sal_wref_c1": 1.2940775156021118,
+        "sal_wref_c2": 0.7156546115875244,
+        "sal_wref_c3": 0.48224571347236633,
+        "sal_wref_c4": 0.36275407671928406,
+        "sal_wref_c5": 0.2908940315246582
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2083.47900390625,
+        "gradnorm_l1_uncentered": 2336.03076171875,
+        "gradnorm_l2_centered": 3.8687777519226074,
+        "gradnorm_l2_uncentered": 4.561307907104492,
+        "sal_noref_c1": 5.55751895904541,
+        "sal_noref_c2": 3.38568115234375,
+        "sal_noref_c3": 2.385345935821533,
+        "sal_noref_c4": 2.762037515640259,
+        "sal_noref_c5": 2.316842555999756,
+        "sal_wref_c1": 0.30276456475257874,
+        "sal_wref_c2": 0.48763567209243774,
+        "sal_wref_c3": 0.4600854218006134,
+        "sal_wref_c4": 1.5297815799713135,
+        "sal_wref_c5": 1.3040449619293213
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 951.1848754882812,
+        "gradnorm_l1_uncentered": 836.4383544921875,
+        "gradnorm_l2_centered": 1.644684910774231,
+        "gradnorm_l2_uncentered": 1.5459463596343994,
+        "sal_noref_c1": 0.3755153715610504,
+        "sal_noref_c2": 0.29665762186050415,
+        "sal_noref_c3": 0.22043238580226898,
+        "sal_noref_c4": 0.170868918299675,
+        "sal_noref_c5": 0.1368037760257721,
+        "sal_wref_c1": 1.0947726964950562,
+        "sal_wref_c2": 0.5974056720733643,
+        "sal_wref_c3": 0.39828693866729736,
+        "sal_wref_c4": 0.3178335726261139,
+        "sal_wref_c5": 0.2553481459617615
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "DataAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1291.6175537109375,
+        "gradnorm_l1_uncentered": 1445.940673828125,
+        "gradnorm_l2_centered": 2.0555970668792725,
+        "gradnorm_l2_uncentered": 2.43687105178833,
+        "sal_noref_c1": 1.5407856702804565,
+        "sal_noref_c2": 0.8431501984596252,
+        "sal_noref_c3": 0.5621426701545715,
+        "sal_noref_c4": 0.4691552519798279,
+        "sal_noref_c5": 0.3754372000694275,
+        "sal_wref_c1": 0.1749567687511444,
+        "sal_wref_c2": 0.12089666724205017,
+        "sal_wref_c3": 0.10856276750564575,
+        "sal_wref_c4": 0.10338257253170013,
+        "sal_wref_c5": 0.08557642996311188
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "DataExtraction_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1881.792236328125,
+        "gradnorm_l1_uncentered": 2081.27783203125,
+        "gradnorm_l2_centered": 3.05914044380188,
+        "gradnorm_l2_uncentered": 3.6299984455108643,
+        "sal_noref_c1": 2.8237533569335938,
+        "sal_noref_c2": 1.709727168083191,
+        "sal_noref_c3": 1.1398656368255615,
+        "sal_noref_c4": 0.855539858341217,
+        "sal_noref_c5": 0.6882683634757996,
+        "sal_wref_c1": 0.013765533454716206,
+        "sal_wref_c2": 0.016739126294851303,
+        "sal_wref_c3": 0.04059041664004326,
+        "sal_wref_c4": 0.033732637763023376,
+        "sal_wref_c5": 0.040372587740421295
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4391.51025390625,
+        "gradnorm_l1_uncentered": 4709.8623046875,
+        "gradnorm_l2_centered": 8.244037628173828,
+        "gradnorm_l2_uncentered": 9.1670560836792,
+        "sal_noref_c1": 22.059627532958984,
+        "sal_noref_c2": 15.577754974365234,
+        "sal_noref_c3": 10.757308006286621,
+        "sal_noref_c4": 8.124343872070312,
+        "sal_noref_c5": 6.6116132736206055,
+        "sal_wref_c1": 5.270965576171875,
+        "sal_wref_c2": 6.922051429748535,
+        "sal_wref_c3": 4.975076198577881,
+        "sal_wref_c4": 3.874295711517334,
+        "sal_wref_c5": 4.37408447265625
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "DataVerification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 8397.740234375,
+        "gradnorm_l1_uncentered": 8672.4189453125,
+        "gradnorm_l2_centered": 14.142167091369629,
+        "gradnorm_l2_uncentered": 14.742158889770508,
+        "sal_noref_c1": 60.159263610839844,
+        "sal_noref_c2": 50.46597671508789,
+        "sal_noref_c3": 36.58408737182617,
+        "sal_noref_c4": 28.7957706451416,
+        "sal_noref_c5": 23.475276947021484,
+        "sal_wref_c1": 54.31053924560547,
+        "sal_wref_c2": 43.184417724609375,
+        "sal_wref_c3": 31.21283531188965,
+        "sal_wref_c4": 25.759065628051758,
+        "sal_wref_c5": 20.68173599243164
+      }
+    }
+  ]
+}

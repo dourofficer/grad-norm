@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "97.json",
+    "question_id": "4fc2f1ae-8625-45b5-ab34-ad4433bc21f8",
+    "mistake_agent": "WikipediaHistory_Expert",
+    "mistake_step": 2,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "Who nominated the only Featured Article on English Wikipedia about a dinosaur that was promoted in November 2016?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "WikipediaHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 792.3445434570312,
+        "gradnorm_l1_uncentered": 587.3824462890625,
+        "gradnorm_l2_centered": 1.92145574092865,
+        "gradnorm_l2_uncentered": 2.1910202503204346,
+        "sal_noref_c1": 1.2299063205718994,
+        "sal_noref_c2": 0.8599885702133179,
+        "sal_noref_c3": 0.732046902179718,
+        "sal_noref_c4": 0.5712218880653381,
+        "sal_noref_c5": 0.4765097200870514,
+        "sal_wref_c1": 0.2097773253917694,
+        "sal_wref_c2": 0.12075869739055634,
+        "sal_wref_c3": 0.48618245124816895,
+        "sal_wref_c4": 0.3773932158946991,
+        "sal_wref_c5": 0.3125929534435272
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Wikipedia_Editor_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1324.784912109375,
+        "gradnorm_l1_uncentered": 1355.5115966796875,
+        "gradnorm_l2_centered": 2.903177499771118,
+        "gradnorm_l2_uncentered": 3.520740270614624,
+        "sal_noref_c1": 3.283381223678589,
+        "sal_noref_c2": 2.125635862350464,
+        "sal_noref_c3": 1.5468239784240723,
+        "sal_noref_c4": 1.2515619993209839,
+        "sal_noref_c5": 1.0016815662384033,
+        "sal_wref_c1": 0.0003394345985725522,
+        "sal_wref_c2": 0.2146945744752884,
+        "sal_wref_c3": 0.44644784927368164,
+        "sal_wref_c4": 0.3431941270828247,
+        "sal_wref_c5": 0.2748667299747467
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "WikipediaHistory_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 1135.9012451171875,
+        "gradnorm_l1_uncentered": 1131.755859375,
+        "gradnorm_l2_centered": 2.220266580581665,
+        "gradnorm_l2_uncentered": 2.490891695022583,
+        "sal_noref_c1": 0.9168214201927185,
+        "sal_noref_c2": 0.6283302903175354,
+        "sal_noref_c3": 0.47474563121795654,
+        "sal_noref_c4": 0.37526580691337585,
+        "sal_noref_c5": 0.3009249269962311,
+        "sal_wref_c1": 0.4590109586715698,
+        "sal_wref_c2": 0.25076502561569214,
+        "sal_wref_c3": 0.17039252817630768,
+        "sal_wref_c4": 0.13020756840705872,
+        "sal_wref_c5": 0.1041824072599411
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3935.05810546875,
+        "gradnorm_l1_uncentered": 4090.97509765625,
+        "gradnorm_l2_centered": 11.609928131103516,
+        "gradnorm_l2_uncentered": 12.357390403747559,
+        "sal_noref_c1": 10.727235794067383,
+        "sal_noref_c2": 43.18406295776367,
+        "sal_noref_c3": 30.024824142456055,
+        "sal_noref_c4": 22.547861099243164,
+        "sal_noref_c5": 18.657766342163086,
+        "sal_wref_c1": 4.756187915802002,
+        "sal_wref_c2": 31.26312255859375,
+        "sal_wref_c3": 23.488916397094727,
+        "sal_wref_c4": 17.947975158691406,
+        "sal_wref_c5": 15.000356674194336
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "WikipediaHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 842.7374267578125,
+        "gradnorm_l1_uncentered": 716.6123046875,
+        "gradnorm_l2_centered": 1.7083408832550049,
+        "gradnorm_l2_uncentered": 1.5985337495803833,
+        "sal_noref_c1": 0.27429360151290894,
+        "sal_noref_c2": 0.3727957308292389,
+        "sal_noref_c3": 0.2792206108570099,
+        "sal_noref_c4": 0.22581420838832855,
+        "sal_noref_c5": 0.1814582347869873,
+        "sal_wref_c1": 1.149943470954895,
+        "sal_wref_c2": 0.598331093788147,
+        "sal_wref_c3": 0.41582992672920227,
+        "sal_wref_c4": 0.31627658009529114,
+        "sal_wref_c5": 0.25872018933296204
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2780.624755859375,
+        "gradnorm_l1_uncentered": 2950.166259765625,
+        "gradnorm_l2_centered": 7.334887504577637,
+        "gradnorm_l2_uncentered": 7.998317241668701,
+        "sal_noref_c1": 5.1590681076049805,
+        "sal_noref_c2": 18.03517723083496,
+        "sal_noref_c3": 12.224352836608887,
+        "sal_noref_c4": 9.619765281677246,
+        "sal_noref_c5": 7.860160827636719,
+        "sal_wref_c1": 2.3866357803344727,
+        "sal_wref_c2": 12.55794906616211,
+        "sal_wref_c3": 9.0452299118042,
+        "sal_wref_c4": 7.0889201164245605,
+        "sal_wref_c5": 5.879533290863037
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Wikipedia_Editor_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1309.4827880859375,
+        "gradnorm_l1_uncentered": 1281.5194091796875,
+        "gradnorm_l2_centered": 2.460488796234131,
+        "gradnorm_l2_uncentered": 2.7197763919830322,
+        "sal_noref_c1": 0.5681751370429993,
+        "sal_noref_c2": 0.7817730903625488,
+        "sal_noref_c3": 0.6858962178230286,
+        "sal_noref_c4": 0.683064877986908,
+        "sal_noref_c5": 0.5467062592506409,
+        "sal_wref_c1": 1.1854759454727173,
+        "sal_wref_c2": 0.590286135673523,
+        "sal_wref_c3": 0.3981669843196869,
+        "sal_wref_c4": 0.3673049211502075,
+        "sal_wref_c5": 0.2947852313518524
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "WikipediaHistory_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1611.9229736328125,
+        "gradnorm_l1_uncentered": 1689.8052978515625,
+        "gradnorm_l2_centered": 2.815420150756836,
+        "gradnorm_l2_uncentered": 3.2494091987609863,
+        "sal_noref_c1": 1.0593245029449463,
+        "sal_noref_c2": 1.0940701961517334,
+        "sal_noref_c3": 1.134280800819397,
+        "sal_noref_c4": 0.9778075218200684,
+        "sal_noref_c5": 0.7889355421066284,
+        "sal_wref_c1": 0.8453701734542847,
+        "sal_wref_c2": 0.4241645932197571,
+        "sal_wref_c3": 0.3896649181842804,
+        "sal_wref_c4": 0.3563847541809082,
+        "sal_wref_c5": 0.2949158251285553
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Wikipedia_Editor_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1304.97314453125,
+        "gradnorm_l1_uncentered": 1371.1097412109375,
+        "gradnorm_l2_centered": 2.69877290725708,
+        "gradnorm_l2_uncentered": 3.1292061805725098,
+        "sal_noref_c1": 0.90532386302948,
+        "sal_noref_c2": 2.6399824619293213,
+        "sal_noref_c3": 1.8663333654403687,
+        "sal_noref_c4": 1.4028151035308838,
+        "sal_noref_c5": 1.1410681009292603,
+        "sal_wref_c1": 1.6786285638809204,
+        "sal_wref_c2": 1.4921643733978271,
+        "sal_wref_c3": 1.0287048816680908,
+        "sal_wref_c4": 0.7722909450531006,
+        "sal_wref_c5": 0.6542484164237976
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Wikipedia_Editor_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1297.2330322265625,
+        "gradnorm_l1_uncentered": 1343.685302734375,
+        "gradnorm_l2_centered": 2.9134674072265625,
+        "gradnorm_l2_uncentered": 3.0432474613189697,
+        "sal_noref_c1": 0.40584731101989746,
+        "sal_noref_c2": 0.23516283929347992,
+        "sal_noref_c3": 0.6512495875358582,
+        "sal_noref_c4": 0.8355405330657959,
+        "sal_noref_c5": 0.6711480021476746,
+        "sal_wref_c1": 0.9372929930686951,
+        "sal_wref_c2": 0.8382524847984314,
+        "sal_wref_c3": 0.6190214157104492,
+        "sal_wref_c4": 0.6595525741577148,
+        "sal_wref_c5": 0.5310570001602173
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "25.json",
+    "question_id": "c61d22de-5f6c-4958-a7f6-5e9707bd3466",
+    "mistake_agent": "ModelEvaluation_Interpretation_Expert",
+    "mistake_step": 4,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "A paper about AI regulation that was originally submitted to arXiv.org in June 2022 shows a figure with three axes, where each axis has a label word at both ends. Which of these words is used to describe a type of society in a Physics and Society article submitted to arXiv.org on August 11, 2016?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "ModelEvaluation_Interpretation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 664.0189208984375,
+        "gradnorm_l1_uncentered": 368.16473388671875,
+        "gradnorm_l2_centered": 1.4794176816940308,
+        "gradnorm_l2_uncentered": 1.2087770700454712,
+        "sal_noref_c1": 0.3355869650840759,
+        "sal_noref_c2": 0.3238745331764221,
+        "sal_noref_c3": 0.24075309932231903,
+        "sal_noref_c4": 0.18614105880260468,
+        "sal_noref_c5": 0.15246951580047607,
+        "sal_wref_c1": 0.80330491065979,
+        "sal_wref_c2": 0.4177214205265045,
+        "sal_wref_c3": 0.47319984436035156,
+        "sal_wref_c4": 0.3846142888069153,
+        "sal_wref_c5": 0.30809706449508667
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Physics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 618.4132690429688,
+        "gradnorm_l1_uncentered": 271.2637023925781,
+        "gradnorm_l2_centered": 1.5136054754257202,
+        "gradnorm_l2_uncentered": 0.6344330906867981,
+        "sal_noref_c1": 0.09093883633613586,
+        "sal_noref_c2": 0.05222618207335472,
+        "sal_noref_c3": 0.03589918091893196,
+        "sal_noref_c4": 0.036545153707265854,
+        "sal_noref_c5": 0.029276961460709572,
+        "sal_wref_c1": 0.9927913546562195,
+        "sal_wref_c2": 0.7854130268096924,
+        "sal_wref_c3": 0.6269926428794861,
+        "sal_wref_c4": 0.49335023760795593,
+        "sal_wref_c5": 0.39483878016471863
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 639.2395629882812,
+        "gradnorm_l1_uncentered": 327.2839660644531,
+        "gradnorm_l2_centered": 1.7450083494186401,
+        "gradnorm_l2_uncentered": 1.1920640468597412,
+        "sal_noref_c1": 0.013178752735257149,
+        "sal_noref_c2": 0.23919372260570526,
+        "sal_noref_c3": 0.26452574133872986,
+        "sal_noref_c4": 0.21997985243797302,
+        "sal_noref_c5": 0.17680539190769196,
+        "sal_wref_c1": 2.1262171268463135,
+        "sal_wref_c2": 1.146976351737976,
+        "sal_wref_c3": 0.7652406692504883,
+        "sal_wref_c4": 0.5756738781929016,
+        "sal_wref_c5": 0.4647604525089264
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 615.1134643554688,
+        "gradnorm_l1_uncentered": 263.06817626953125,
+        "gradnorm_l2_centered": 1.5739617347717285,
+        "gradnorm_l2_uncentered": 0.6535980105400085,
+        "sal_noref_c1": 0.10379743576049805,
+        "sal_noref_c2": 0.05861092358827591,
+        "sal_noref_c3": 0.04424934461712837,
+        "sal_noref_c4": 0.035818614065647125,
+        "sal_noref_c5": 0.028802994638681412,
+        "sal_wref_c1": 0.8928912878036499,
+        "sal_wref_c2": 0.6915808916091919,
+        "sal_wref_c3": 0.6246516108512878,
+        "sal_wref_c4": 0.5113639235496521,
+        "sal_wref_c5": 0.40972834825515747
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "ModelEvaluation_Interpretation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 669.9656372070312,
+        "gradnorm_l1_uncentered": 409.24713134765625,
+        "gradnorm_l2_centered": 1.5163905620574951,
+        "gradnorm_l2_uncentered": 1.0575580596923828,
+        "sal_noref_c1": 0.21647712588310242,
+        "sal_noref_c2": 0.23549959063529968,
+        "sal_noref_c3": 0.16129492223262787,
+        "sal_noref_c4": 0.12099257111549377,
+        "sal_noref_c5": 0.09681083261966705,
+        "sal_wref_c1": 0.9590113759040833,
+        "sal_wref_c2": 0.5223885178565979,
+        "sal_wref_c3": 0.4693548381328583,
+        "sal_wref_c4": 0.4110270142555237,
+        "sal_wref_c5": 0.3292923867702484
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 669.9327392578125,
+        "gradnorm_l1_uncentered": 336.6285400390625,
+        "gradnorm_l2_centered": 1.8385049104690552,
+        "gradnorm_l2_uncentered": 0.7979971766471863,
+        "sal_noref_c1": 0.004575980827212334,
+        "sal_noref_c2": 0.008604983799159527,
+        "sal_noref_c3": 0.03764060139656067,
+        "sal_noref_c4": 0.04585891216993332,
+        "sal_noref_c5": 0.03668951243162155,
+        "sal_wref_c1": 1.2941032648086548,
+        "sal_wref_c2": 1.2560241222381592,
+        "sal_wref_c3": 0.8880897164344788,
+        "sal_wref_c4": 0.6788056492805481,
+        "sal_wref_c5": 0.543440580368042
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "ModelEvaluation_Interpretation_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 619.1717529296875,
+        "gradnorm_l1_uncentered": 305.52392578125,
+        "gradnorm_l2_centered": 1.732749342918396,
+        "gradnorm_l2_uncentered": 0.6412749886512756,
+        "sal_noref_c1": 0.010960498824715614,
+        "sal_noref_c2": 0.006194041110575199,
+        "sal_noref_c3": 0.023604756221175194,
+        "sal_noref_c4": 0.025334453210234642,
+        "sal_noref_c5": 0.02084195986390114,
+        "sal_wref_c1": 1.2685433626174927,
+        "sal_wref_c2": 1.1399673223495483,
+        "sal_wref_c3": 0.8208031058311462,
+        "sal_wref_c4": 0.6418299674987793,
+        "sal_wref_c5": 0.5167430639266968
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Physics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 655.577392578125,
+        "gradnorm_l1_uncentered": 541.8875732421875,
+        "gradnorm_l2_centered": 1.5501874685287476,
+        "gradnorm_l2_uncentered": 1.6212407350540161,
+        "sal_noref_c1": 0.7126628756523132,
+        "sal_noref_c2": 0.690916121006012,
+        "sal_noref_c3": 0.48629334568977356,
+        "sal_noref_c4": 0.3718765676021576,
+        "sal_noref_c5": 0.29790788888931274,
+        "sal_wref_c1": 0.5561841726303101,
+        "sal_wref_c2": 0.2888048589229584,
+        "sal_wref_c3": 0.3240198493003845,
+        "sal_wref_c4": 0.33459287881851196,
+        "sal_wref_c5": 0.2680821716785431
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Physics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 726.428955078125,
+        "gradnorm_l1_uncentered": 616.246337890625,
+        "gradnorm_l2_centered": 1.9167760610580444,
+        "gradnorm_l2_uncentered": 1.8902816772460938,
+        "sal_noref_c1": 0.1591290533542633,
+        "sal_noref_c2": 0.7420992255210876,
+        "sal_noref_c3": 0.6384541988372803,
+        "sal_noref_c4": 0.4842499792575836,
+        "sal_noref_c5": 0.39159756898880005,
+        "sal_wref_c1": 2.000779151916504,
+        "sal_wref_c2": 0.9944750666618347,
+        "sal_wref_c3": 0.6730847358703613,
+        "sal_wref_c4": 0.5110549330711365,
+        "sal_wref_c5": 0.42010292410850525
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1593.968994140625,
+        "gradnorm_l1_uncentered": 1721.4183349609375,
+        "gradnorm_l2_centered": 3.252629280090332,
+        "gradnorm_l2_uncentered": 3.832061290740967,
+        "sal_noref_c1": 2.143699884414673,
+        "sal_noref_c2": 2.8047242164611816,
+        "sal_noref_c3": 1.903268814086914,
+        "sal_noref_c4": 1.4538428783416748,
+        "sal_noref_c5": 1.1732184886932373,
+        "sal_wref_c1": 0.5562829375267029,
+        "sal_wref_c2": 0.9311177730560303,
+        "sal_wref_c3": 0.6223157644271851,
+        "sal_wref_c4": 0.4699329137802124,
+        "sal_wref_c5": 0.37623924016952515
+      }
+    }
+  ]
+}

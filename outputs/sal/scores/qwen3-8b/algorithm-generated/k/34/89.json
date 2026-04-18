@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "65.json",
+    "question_id": "05407167-39ec-4d3a-a234-73a9120c325d",
+    "mistake_agent": "VideoContentAnalysis_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "In the 2018 VSCode blog post on replit.com, what was the command they clicked on in the last video to remove extra lines?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "VSCode_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 981.3136596679688,
+        "gradnorm_l1_uncentered": 506.38531494140625,
+        "gradnorm_l2_centered": 1.9630446434020996,
+        "gradnorm_l2_uncentered": 1.206990122795105,
+        "sal_noref_c1": 0.36181268095970154,
+        "sal_noref_c2": 0.20371554791927338,
+        "sal_noref_c3": 0.13627313077449799,
+        "sal_noref_c4": 0.11650669574737549,
+        "sal_noref_c5": 0.09401017427444458,
+        "sal_wref_c1": 2.860410213470459,
+        "sal_wref_c2": 1.4297772645950317,
+        "sal_wref_c3": 0.9531993269920349,
+        "sal_wref_c4": 0.7309306859970093,
+        "sal_wref_c5": 0.5859256386756897
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 848.0114135742188,
+        "gradnorm_l1_uncentered": 823.3189086914062,
+        "gradnorm_l2_centered": 1.8610596656799316,
+        "gradnorm_l2_uncentered": 2.020047664642334,
+        "sal_noref_c1": 1.5900206565856934,
+        "sal_noref_c2": 0.9898667931556702,
+        "sal_noref_c3": 0.6694009900093079,
+        "sal_noref_c4": 0.569879949092865,
+        "sal_noref_c5": 0.4896896481513977,
+        "sal_wref_c1": 1.0707993507385254,
+        "sal_wref_c2": 0.6805961728096008,
+        "sal_wref_c3": 0.4685556888580322,
+        "sal_wref_c4": 0.43085312843322754,
+        "sal_wref_c5": 0.37459632754325867
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1642.17578125,
+        "gradnorm_l1_uncentered": 2088.5029296875,
+        "gradnorm_l2_centered": 4.538924694061279,
+        "gradnorm_l2_uncentered": 5.73466157913208,
+        "sal_noref_c1": 14.056137084960938,
+        "sal_noref_c2": 10.576247215270996,
+        "sal_noref_c3": 7.110379695892334,
+        "sal_noref_c4": 5.355204105377197,
+        "sal_noref_c5": 4.296020984649658,
+        "sal_wref_c1": 1.937767744064331,
+        "sal_wref_c2": 4.457272529602051,
+        "sal_wref_c3": 3.036707878112793,
+        "sal_wref_c4": 2.2855021953582764,
+        "sal_wref_c5": 1.8533557653427124
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 840.4884033203125,
+        "gradnorm_l1_uncentered": 610.9112548828125,
+        "gradnorm_l2_centered": 1.710235357284546,
+        "gradnorm_l2_uncentered": 1.2112771272659302,
+        "sal_noref_c1": 0.6453948020935059,
+        "sal_noref_c2": 0.3574080467224121,
+        "sal_noref_c3": 0.2512095868587494,
+        "sal_noref_c4": 0.1952376514673233,
+        "sal_noref_c5": 0.15769293904304504,
+        "sal_wref_c1": 2.230225086212158,
+        "sal_wref_c2": 1.124950885772705,
+        "sal_wref_c3": 0.7569946646690369,
+        "sal_wref_c4": 0.5713326334953308,
+        "sal_wref_c5": 0.4575951099395752
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 893.75146484375,
+        "gradnorm_l1_uncentered": 1005.8773193359375,
+        "gradnorm_l2_centered": 1.7216598987579346,
+        "gradnorm_l2_uncentered": 2.0101144313812256,
+        "sal_noref_c1": 1.831546664237976,
+        "sal_noref_c2": 0.9173734784126282,
+        "sal_noref_c3": 0.6820911765098572,
+        "sal_noref_c4": 0.5371441841125488,
+        "sal_noref_c5": 0.430792897939682,
+        "sal_wref_c1": 0.8959826231002808,
+        "sal_wref_c2": 0.44752371311187744,
+        "sal_wref_c3": 0.3568965494632721,
+        "sal_wref_c4": 0.28369322419166565,
+        "sal_wref_c5": 0.22783398628234863
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "VideoContentAnalysis_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5229.33837890625,
+        "gradnorm_l1_uncentered": 5891.0537109375,
+        "gradnorm_l2_centered": 10.455270767211914,
+        "gradnorm_l2_uncentered": 11.99569320678711,
+        "sal_noref_c1": 74.50985717773438,
+        "sal_noref_c2": 39.79680252075195,
+        "sal_noref_c3": 26.531217575073242,
+        "sal_noref_c4": 21.30596923828125,
+        "sal_noref_c5": 17.118213653564453,
+        "sal_wref_c1": 39.345523834228516,
+        "sal_wref_c2": 22.542442321777344,
+        "sal_wref_c3": 15.028297424316406,
+        "sal_wref_c4": 12.28191089630127,
+        "sal_wref_c5": 9.829816818237305
+      }
+    }
+  ]
+}

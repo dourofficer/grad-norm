@@ -1,0 +1,227 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "18.json",
+    "question_id": "23dd907f-1261-4488-b21c-e9185af91d5e",
+    "mistake_agent": "Poetry_Expert",
+    "mistake_step": 7,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In Audre Lorde\u2019s poem \u201cFather Son and Holy Ghost\u201d, what is the number of the stanza in which some lines are indented?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Poetry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 723.072021484375,
+        "gradnorm_l1_uncentered": 698.5247802734375,
+        "gradnorm_l2_centered": 1.1927670240402222,
+        "gradnorm_l2_uncentered": 2.008120536804199,
+        "sal_noref_c1": 2.720834255218506,
+        "sal_noref_c2": 1.387251615524292,
+        "sal_noref_c3": 1.0018600225448608,
+        "sal_noref_c4": 0.7514289021492004,
+        "sal_noref_c5": 0.6061853170394897,
+        "sal_wref_c1": 0.3359890580177307,
+        "sal_wref_c2": 0.17030133306980133,
+        "sal_wref_c3": 0.15460850298404694,
+        "sal_wref_c4": 0.11603466421365738,
+        "sal_wref_c5": 0.09304137527942657
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Python_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 796.1266479492188,
+        "gradnorm_l1_uncentered": 1063.2379150390625,
+        "gradnorm_l2_centered": 1.3126405477523804,
+        "gradnorm_l2_uncentered": 2.9022481441497803,
+        "sal_noref_c1": 6.652055263519287,
+        "sal_noref_c2": 3.3432610034942627,
+        "sal_noref_c3": 2.2588446140289307,
+        "sal_noref_c4": 1.7084087133407593,
+        "sal_noref_c5": 1.3928881883621216,
+        "sal_wref_c1": 0.1161990761756897,
+        "sal_wref_c2": 0.07066618651151657,
+        "sal_wref_c3": 0.054696500301361084,
+        "sal_wref_c4": 0.047703683376312256,
+        "sal_wref_c5": 0.05766136199235916
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 903.3198852539062,
+        "gradnorm_l1_uncentered": 1210.114501953125,
+        "gradnorm_l2_centered": 1.7636839151382446,
+        "gradnorm_l2_uncentered": 3.330831527709961,
+        "sal_noref_c1": 8.116142272949219,
+        "sal_noref_c2": 4.70977258682251,
+        "sal_noref_c3": 3.1454334259033203,
+        "sal_noref_c4": 2.392205238342285,
+        "sal_noref_c5": 1.9139419794082642,
+        "sal_wref_c1": 0.3274785280227661,
+        "sal_wref_c2": 0.7434049844741821,
+        "sal_wref_c3": 0.49654582142829895,
+        "sal_wref_c4": 0.40379828214645386,
+        "sal_wref_c5": 0.32304733991622925
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Python_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 806.1578979492188,
+        "gradnorm_l1_uncentered": 1133.5198974609375,
+        "gradnorm_l2_centered": 1.2579774856567383,
+        "gradnorm_l2_uncentered": 2.3248000144958496,
+        "sal_noref_c1": 3.902945041656494,
+        "sal_noref_c2": 1.9638326168060303,
+        "sal_noref_c3": 1.3116575479507446,
+        "sal_noref_c4": 0.9847575426101685,
+        "sal_noref_c5": 0.7896412014961243,
+        "sal_wref_c1": 0.03551090508699417,
+        "sal_wref_c2": 0.07487870007753372,
+        "sal_wref_c3": 0.06087840721011162,
+        "sal_wref_c4": 0.0537564791738987,
+        "sal_wref_c5": 0.052148979157209396
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 581.7994384765625,
+        "gradnorm_l1_uncentered": 416.8278503417969,
+        "gradnorm_l2_centered": 1.583260416984558,
+        "gradnorm_l2_uncentered": 0.8969424962997437,
+        "sal_noref_c1": 0.48756763339042664,
+        "sal_noref_c2": 0.24948713183403015,
+        "sal_noref_c3": 0.17124514281749725,
+        "sal_noref_c4": 0.12991134822368622,
+        "sal_noref_c5": 0.10524312406778336,
+        "sal_wref_c1": 2.1951205730438232,
+        "sal_wref_c2": 1.0927586555480957,
+        "sal_wref_c3": 0.7287003993988037,
+        "sal_wref_c4": 0.5465908646583557,
+        "sal_wref_c5": 0.4428333342075348
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 557.6063232421875,
+        "gradnorm_l1_uncentered": 515.05224609375,
+        "gradnorm_l2_centered": 1.2195234298706055,
+        "gradnorm_l2_uncentered": 1.6070749759674072,
+        "sal_noref_c1": 1.7064889669418335,
+        "sal_noref_c2": 1.0351474285125732,
+        "sal_noref_c3": 0.6903265118598938,
+        "sal_noref_c4": 0.5343835353851318,
+        "sal_noref_c5": 0.4299275279045105,
+        "sal_wref_c1": 0.8469546437263489,
+        "sal_wref_c2": 0.5137538313865662,
+        "sal_wref_c3": 0.3527292013168335,
+        "sal_wref_c4": 0.2704235017299652,
+        "sal_wref_c5": 0.21686813235282898
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 538.708740234375,
+        "gradnorm_l1_uncentered": 359.6297607421875,
+        "gradnorm_l2_centered": 1.4699889421463013,
+        "gradnorm_l2_uncentered": 0.8864832520484924,
+        "sal_noref_c1": 0.6016170382499695,
+        "sal_noref_c2": 0.30295711755752563,
+        "sal_noref_c3": 0.2024734765291214,
+        "sal_noref_c4": 0.15438410639762878,
+        "sal_noref_c5": 0.12781073153018951,
+        "sal_wref_c1": 1.9623801708221436,
+        "sal_wref_c2": 0.9789281487464905,
+        "sal_wref_c3": 0.6570140719413757,
+        "sal_wref_c4": 0.4928111433982849,
+        "sal_wref_c5": 0.3945724368095398
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Poetry_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 782.5696411132812,
+        "gradnorm_l1_uncentered": 859.5111083984375,
+        "gradnorm_l2_centered": 1.65555739402771,
+        "gradnorm_l2_uncentered": 2.371180295944214,
+        "sal_noref_c1": 2.897768259048462,
+        "sal_noref_c2": 1.8481425046920776,
+        "sal_noref_c3": 1.2991057634353638,
+        "sal_noref_c4": 1.0302268266677856,
+        "sal_noref_c5": 0.8408249616622925,
+        "sal_wref_c1": 0.29575836658477783,
+        "sal_wref_c2": 0.43029043078422546,
+        "sal_wref_c3": 0.4164743423461914,
+        "sal_wref_c4": 0.3306267559528351,
+        "sal_wref_c5": 0.26487553119659424
+      }
+    },
+    {
+      "step_idx": 8,
+      "role": "Literature_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 796.122802734375,
+        "gradnorm_l1_uncentered": 1113.013427734375,
+        "gradnorm_l2_centered": 1.5170117616653442,
+        "gradnorm_l2_uncentered": 3.1639020442962646,
+        "sal_noref_c1": 7.764220714569092,
+        "sal_noref_c2": 3.9062445163726807,
+        "sal_noref_c3": 2.715069055557251,
+        "sal_noref_c4": 2.0845673084259033,
+        "sal_noref_c5": 1.7015626430511475,
+        "sal_wref_c1": 0.26997992396354675,
+        "sal_wref_c2": 0.15108385682106018,
+        "sal_wref_c3": 0.15033678710460663,
+        "sal_wref_c4": 0.14715313911437988,
+        "sal_wref_c5": 0.1612509936094284
+      }
+    },
+    {
+      "step_idx": 9,
+      "role": "Poetry_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 846.9719848632812,
+        "gradnorm_l1_uncentered": 1182.551513671875,
+        "gradnorm_l2_centered": 1.4480016231536865,
+        "gradnorm_l2_uncentered": 2.7537002563476562,
+        "sal_noref_c1": 5.499616622924805,
+        "sal_noref_c2": 2.730550765991211,
+        "sal_noref_c3": 1.8616350889205933,
+        "sal_noref_c4": 1.4140102863311768,
+        "sal_noref_c5": 1.1436582803726196,
+        "sal_wref_c1": 0.02678765542805195,
+        "sal_wref_c2": 0.01701543666422367,
+        "sal_wref_c3": 0.0362614281475544,
+        "sal_wref_c4": 0.050899967551231384,
+        "sal_wref_c5": 0.06366538256406784
+      }
+    }
+  ]
+}

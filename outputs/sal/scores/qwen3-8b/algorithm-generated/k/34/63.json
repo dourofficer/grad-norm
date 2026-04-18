@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/34"
+  },
+  "metadata": {
+    "filename": "41.json",
+    "question_id": "42576abe-0deb-4869-8c63-225c2d75a95a",
+    "mistake_agent": "Tizin_Translation_Expert",
+    "mistake_step": 1,
+    "level": "1",
+    "subset": "algorithm-generated",
+    "question": "In the fictional language of Tizin, basic sentences are arranged with the Verb first, followed by the direct object, followed by the subject of the sentence. I want to express my love for apples to my Tizin friend. \n\nThe word that indicates oneself is \"Pa\" is the nominative form, \"Mato\" is the accusative form, and \"Sing\" is the genitive form. \n\nThe root verb that indicates an intense like for something is \"Maktay\". When it is used in the present, it is used in it's root form, when it is used in the preterit past, it is \"Tay\", and when it is used in the imperfect past, it is \"Aktay\". It is used differently than in English, and is better translated as \"is pleasing to\", meaning that the thing doing the liking is actually the object of the sentence rather than the subject.\n\nThe word for apples is borrowed from English in Tizin, and so it is \"Apple\" is the nominative form, \"Zapple\" is the accusative form, and \"Izapple\" is the genitive form. \n\nPlease translate \"I like apples\" to Tizin."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "TizinGrammar_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 993.592529296875,
+        "gradnorm_l1_uncentered": 436.98486328125,
+        "gradnorm_l2_centered": 2.026975154876709,
+        "gradnorm_l2_uncentered": 0.9562349915504456,
+        "sal_noref_c1": 0.18100842833518982,
+        "sal_noref_c2": 0.10378040373325348,
+        "sal_noref_c3": 0.07094676047563553,
+        "sal_noref_c4": 0.053520116955041885,
+        "sal_noref_c5": 0.04442950338125229,
+        "sal_wref_c1": 3.489825487136841,
+        "sal_wref_c2": 1.7380218505859375,
+        "sal_wref_c3": 1.158864974975586,
+        "sal_wref_c4": 0.8691505789756775,
+        "sal_wref_c5": 0.6956220269203186
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Tizin_Translation_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 886.1529541015625,
+        "gradnorm_l1_uncentered": 619.34716796875,
+        "gradnorm_l2_centered": 1.9588176012039185,
+        "gradnorm_l2_uncentered": 1.231323480606079,
+        "sal_noref_c1": 0.38677099347114563,
+        "sal_noref_c2": 0.1929677277803421,
+        "sal_noref_c3": 0.13893839716911316,
+        "sal_noref_c4": 0.10425447672605515,
+        "sal_noref_c5": 0.09713403880596161,
+        "sal_wref_c1": 2.7809641361236572,
+        "sal_wref_c2": 1.3939779996871948,
+        "sal_wref_c3": 0.9339999556541443,
+        "sal_wref_c4": 0.7018351554870605,
+        "sal_wref_c5": 0.5831502079963684
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1433.926513671875,
+        "gradnorm_l1_uncentered": 1823.4439697265625,
+        "gradnorm_l2_centered": 2.791919708251953,
+        "gradnorm_l2_uncentered": 3.715744972229004,
+        "sal_noref_c1": 6.076416015625,
+        "sal_noref_c2": 3.111579418182373,
+        "sal_noref_c3": 2.317970037460327,
+        "sal_noref_c4": 1.7385120391845703,
+        "sal_noref_c5": 1.4212156534194946,
+        "sal_wref_c1": 0.03476497158408165,
+        "sal_wref_c2": 0.08168987929821014,
+        "sal_wref_c3": 0.2914733588695526,
+        "sal_wref_c4": 0.22179020941257477,
+        "sal_wref_c5": 0.19006286561489105
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2078.595703125,
+        "gradnorm_l1_uncentered": 2669.44921875,
+        "gradnorm_l2_centered": 4.1091413497924805,
+        "gradnorm_l2_uncentered": 5.36985969543457,
+        "sal_noref_c1": 13.836209297180176,
+        "sal_noref_c2": 7.107708930969238,
+        "sal_noref_c3": 5.073559761047363,
+        "sal_noref_c4": 3.9830968379974365,
+        "sal_noref_c5": 3.221825122833252,
+        "sal_wref_c1": 1.9776380062103271,
+        "sal_wref_c2": 1.1793345212936401,
+        "sal_wref_c3": 1.1120390892028809,
+        "sal_wref_c4": 0.9641901254653931,
+        "sal_wref_c5": 0.7969697117805481
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "TizinGrammar_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1531.365478515625,
+        "gradnorm_l1_uncentered": 1936.8157958984375,
+        "gradnorm_l2_centered": 2.7852261066436768,
+        "gradnorm_l2_uncentered": 3.377732276916504,
+        "sal_noref_c1": 3.6333072185516357,
+        "sal_noref_c2": 1.9025795459747314,
+        "sal_noref_c3": 1.4972847700119019,
+        "sal_noref_c4": 1.1260734796524048,
+        "sal_noref_c5": 0.9291964769363403,
+        "sal_wref_c1": 0.1591660976409912,
+        "sal_wref_c2": 0.20781083405017853,
+        "sal_wref_c3": 0.33990371227264404,
+        "sal_wref_c4": 0.2551010847091675,
+        "sal_wref_c5": 0.2550846338272095
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 5455.35791015625,
+        "gradnorm_l1_uncentered": 6136.55517578125,
+        "gradnorm_l2_centered": 9.45979118347168,
+        "gradnorm_l2_uncentered": 10.897242546081543,
+        "sal_noref_c1": 58.4855842590332,
+        "sal_noref_c2": 30.03275489807129,
+        "sal_noref_c3": 23.300790786743164,
+        "sal_noref_c4": 17.630279541015625,
+        "sal_noref_c5": 14.294705390930176,
+        "sal_wref_c1": 29.6790771484375,
+        "sal_wref_c2": 15.569766998291016,
+        "sal_wref_c3": 13.751633644104004,
+        "sal_wref_c4": 10.694835662841797,
+        "sal_wref_c5": 8.656920433044434
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "51.json",
+    "question_id": "2a649bb1-795f-4a01-b3be-9a01868dae73",
+    "mistake_agent": "PythonDebugging_Expert",
+    "mistake_step": 0,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "What are the EC numbers of the two most commonly used chemicals for the virus testing method in the paper about SPFMV and SPCSV in the Pearl Of Africa from 2016? Return the semicolon-separated numbers in the order of the alphabetized chemicals."
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 669.796142578125,
+        "gradnorm_l1_uncentered": 390.84271240234375,
+        "gradnorm_l2_centered": 1.4965604543685913,
+        "gradnorm_l2_uncentered": 1.2075896263122559,
+        "sal_noref_c1": 0.3627810776233673,
+        "sal_noref_c2": 0.24150905013084412,
+        "sal_noref_c3": 0.18251514434814453,
+        "sal_noref_c4": 0.14508627355098724,
+        "sal_noref_c5": 0.12064217031002045,
+        "sal_wref_c1": 0.6342535614967346,
+        "sal_wref_c2": 0.39090895652770996,
+        "sal_wref_c3": 0.46481916308403015,
+        "sal_wref_c4": 0.3766825199127197,
+        "sal_wref_c5": 0.3026943504810333
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6427.8525390625,
+        "gradnorm_l1_uncentered": 6540.2685546875,
+        "gradnorm_l2_centered": 12.530220031738281,
+        "gradnorm_l2_uncentered": 12.820516586303711,
+        "sal_noref_c1": 16.93118667602539,
+        "sal_noref_c2": 11.200342178344727,
+        "sal_noref_c3": 10.556523323059082,
+        "sal_noref_c4": 8.20933723449707,
+        "sal_noref_c5": 6.576236724853516,
+        "sal_wref_c1": 13.497973442077637,
+        "sal_wref_c2": 7.305078983306885,
+        "sal_wref_c3": 8.940218925476074,
+        "sal_wref_c4": 6.708920001983643,
+        "sal_wref_c5": 5.471705436706543
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "UnitTesting_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 640.4994506835938,
+        "gradnorm_l1_uncentered": 373.3525695800781,
+        "gradnorm_l2_centered": 1.549188256263733,
+        "gradnorm_l2_uncentered": 0.796740710735321,
+        "sal_noref_c1": 0.15039557218551636,
+        "sal_noref_c2": 0.0752687156200409,
+        "sal_noref_c3": 0.050772447139024734,
+        "sal_noref_c4": 0.04719867557287216,
+        "sal_noref_c5": 0.03795573115348816,
+        "sal_wref_c1": 0.753715455532074,
+        "sal_wref_c2": 0.6919862627983093,
+        "sal_wref_c3": 0.6015908122062683,
+        "sal_wref_c4": 0.4775548577308655,
+        "sal_wref_c5": 0.3831014037132263
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 4054.09033203125,
+        "gradnorm_l1_uncentered": 4127.16455078125,
+        "gradnorm_l2_centered": 10.556925773620605,
+        "gradnorm_l2_uncentered": 10.468260765075684,
+        "sal_noref_c1": 1.327407956123352,
+        "sal_noref_c2": 17.597373962402344,
+        "sal_noref_c3": 12.659274101257324,
+        "sal_noref_c4": 11.920469284057617,
+        "sal_noref_c5": 9.882923126220703,
+        "sal_wref_c1": 3.3081061840057373,
+        "sal_wref_c2": 22.20556640625,
+        "sal_wref_c3": 14.83090591430664,
+        "sal_wref_c4": 12.501749992370605,
+        "sal_wref_c5": 10.218668937683105
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Python_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 595.2197265625,
+        "gradnorm_l1_uncentered": 343.34344482421875,
+        "gradnorm_l2_centered": 1.495866298675537,
+        "gradnorm_l2_uncentered": 0.7490513920783997,
+        "sal_noref_c1": 0.21623466908931732,
+        "sal_noref_c2": 0.10805746912956238,
+        "sal_noref_c3": 0.07629742473363876,
+        "sal_noref_c4": 0.05814608186483383,
+        "sal_noref_c5": 0.04656078666448593,
+        "sal_wref_c1": 0.6040323972702026,
+        "sal_wref_c2": 0.5701068639755249,
+        "sal_wref_c3": 0.5301139950752258,
+        "sal_wref_c4": 0.4468204975128174,
+        "sal_wref_c5": 0.35830479860305786
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "PythonDebugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6160.541015625,
+        "gradnorm_l1_uncentered": 6430.3515625,
+        "gradnorm_l2_centered": 15.35974407196045,
+        "gradnorm_l2_uncentered": 15.894497871398926,
+        "sal_noref_c1": 82.96800994873047,
+        "sal_noref_c2": 64.94310760498047,
+        "sal_noref_c3": 50.32357406616211,
+        "sal_noref_c4": 38.359073638916016,
+        "sal_noref_c5": 31.614974975585938,
+        "sal_wref_c1": 108.91295623779297,
+        "sal_wref_c2": 57.6401252746582,
+        "sal_wref_c3": 44.22901916503906,
+        "sal_wref_c4": 34.60427474975586,
+        "sal_wref_c5": 29.279159545898438
+      }
+    }
+  ]
+}

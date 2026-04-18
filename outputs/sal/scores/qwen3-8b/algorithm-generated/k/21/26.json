@@ -1,0 +1,164 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/k/21"
+  },
+  "metadata": {
+    "filename": "121.json",
+    "question_id": "9bdca8677af1e25cb7b0c7992dc62670c3e58e4afcd5ae60bcaa2483556bba00",
+    "mistake_agent": "Debugging_Expert",
+    "mistake_step": 1,
+    "level": "Medium",
+    "subset": "algorithm-generated",
+    "question": "What is the cheapest option to mail a DVD to Colombia from Hartford, Connecticut using FedEx, DHL, or USPS? (The answer should be a json object with the keys \"sender\" and \"price (usd)\")"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "JSON_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 833.0511474609375,
+        "gradnorm_l1_uncentered": 642.9083251953125,
+        "gradnorm_l2_centered": 2.0895161628723145,
+        "gradnorm_l2_uncentered": 2.3570291996002197,
+        "sal_noref_c1": 1.3730111122131348,
+        "sal_noref_c2": 0.8651147484779358,
+        "sal_noref_c3": 0.7987606525421143,
+        "sal_noref_c4": 0.6197360157966614,
+        "sal_noref_c5": 0.5214895606040955,
+        "sal_wref_c1": 0.12248668819665909,
+        "sal_wref_c2": 0.06997311860322952,
+        "sal_wref_c3": 0.553508996963501,
+        "sal_wref_c4": 0.43346020579338074,
+        "sal_wref_c5": 0.3620590567588806
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Debugging_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 645.1383666992188,
+        "gradnorm_l1_uncentered": 334.5875244140625,
+        "gradnorm_l2_centered": 1.5490481853485107,
+        "gradnorm_l2_uncentered": 0.9656497240066528,
+        "sal_noref_c1": 0.20862522721290588,
+        "sal_noref_c2": 0.12805591523647308,
+        "sal_noref_c3": 0.11377479881048203,
+        "sal_noref_c4": 0.0939866155385971,
+        "sal_noref_c5": 0.07566855102777481,
+        "sal_wref_c1": 0.7459190487861633,
+        "sal_wref_c2": 0.5204786062240601,
+        "sal_wref_c3": 0.5914212465286255,
+        "sal_wref_c4": 0.47578665614128113,
+        "sal_wref_c5": 0.3812026381492615
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2943.51904296875,
+        "gradnorm_l1_uncentered": 3105.70458984375,
+        "gradnorm_l2_centered": 6.481902599334717,
+        "gradnorm_l2_uncentered": 7.281623363494873,
+        "sal_noref_c1": 12.937228202819824,
+        "sal_noref_c2": 8.18636703491211,
+        "sal_noref_c3": 5.639440536499023,
+        "sal_noref_c4": 4.631968021392822,
+        "sal_noref_c5": 3.7058329582214355,
+        "sal_wref_c1": 1.47963285446167,
+        "sal_wref_c2": 2.869652032852173,
+        "sal_wref_c3": 2.1180012226104736,
+        "sal_wref_c4": 1.8788764476776123,
+        "sal_wref_c5": 1.5196466445922852
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Debugging_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 686.1350708007812,
+        "gradnorm_l1_uncentered": 473.3441162109375,
+        "gradnorm_l2_centered": 1.5038408041000366,
+        "gradnorm_l2_uncentered": 1.1632527112960815,
+        "sal_noref_c1": 0.27846238017082214,
+        "sal_noref_c2": 0.18214178085327148,
+        "sal_noref_c3": 0.1214342787861824,
+        "sal_noref_c4": 0.1127987802028656,
+        "sal_noref_c5": 0.09025052934885025,
+        "sal_wref_c1": 0.7627618908882141,
+        "sal_wref_c2": 0.5165519714355469,
+        "sal_wref_c3": 0.4530673027038574,
+        "sal_wref_c4": 0.34831351041793823,
+        "sal_wref_c5": 0.27871933579444885
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1696.11474609375,
+        "gradnorm_l1_uncentered": 1768.633544921875,
+        "gradnorm_l2_centered": 3.357846260070801,
+        "gradnorm_l2_uncentered": 3.665903329849243,
+        "sal_noref_c1": 0.5773622989654541,
+        "sal_noref_c2": 1.512560486793518,
+        "sal_noref_c3": 1.421586036682129,
+        "sal_noref_c4": 1.1783647537231445,
+        "sal_noref_c5": 0.9793591499328613,
+        "sal_wref_c1": 1.8595718145370483,
+        "sal_wref_c2": 1.016439437866211,
+        "sal_wref_c3": 0.8019928336143494,
+        "sal_wref_c4": 0.6581785082817078,
+        "sal_wref_c5": 0.551742672920227
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 723.0162353515625,
+        "gradnorm_l1_uncentered": 603.1160888671875,
+        "gradnorm_l2_centered": 1.5549508333206177,
+        "gradnorm_l2_uncentered": 1.3464772701263428,
+        "sal_noref_c1": 0.5318339467048645,
+        "sal_noref_c2": 0.2756727635860443,
+        "sal_noref_c3": 0.18532083928585052,
+        "sal_noref_c4": 0.1408953070640564,
+        "sal_noref_c5": 0.1258499026298523,
+        "sal_wref_c1": 0.3641548454761505,
+        "sal_wref_c2": 0.3268611431121826,
+        "sal_wref_c3": 0.328794926404953,
+        "sal_wref_c4": 0.281085729598999,
+        "sal_wref_c5": 0.23920214176177979
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 6307.3046875,
+        "gradnorm_l1_uncentered": 6611.78369140625,
+        "gradnorm_l2_centered": 13.048402786254883,
+        "gradnorm_l2_uncentered": 13.673016548156738,
+        "sal_noref_c1": 25.603132247924805,
+        "sal_noref_c2": 15.62725830078125,
+        "sal_noref_c3": 18.51778793334961,
+        "sal_noref_c4": 18.957637786865234,
+        "sal_noref_c5": 21.905622482299805,
+        "sal_wref_c1": 4.304234981536865,
+        "sal_wref_c2": 5.3146162033081055,
+        "sal_wref_c3": 16.456392288208008,
+        "sal_wref_c4": 14.811285018920898,
+        "sal_wref_c5": 19.719024658203125
+      }
+    }
+  ]
+}

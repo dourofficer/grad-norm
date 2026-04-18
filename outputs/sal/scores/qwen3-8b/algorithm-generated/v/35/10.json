@@ -1,0 +1,185 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "107.json",
+    "question_id": "929b45f34805280d77c61d1e093e3d4e551d77ddb6ecd73552b12b1af286388d",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 6,
+    "level": "Hard",
+    "subset": "algorithm-generated",
+    "question": "The dog genome was first mapped in 2004 and has been updated several times since. What is the link to the files that were most relevant in May 2020?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "Genomics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 629.224365234375,
+        "gradnorm_l1_uncentered": 445.7713928222656,
+        "gradnorm_l2_centered": 1.3621553182601929,
+        "gradnorm_l2_uncentered": 1.2256962060928345,
+        "sal_noref_c1": 0.9852638244628906,
+        "sal_noref_c2": 0.5072880983352661,
+        "sal_noref_c3": 0.3716200590133667,
+        "sal_noref_c4": 0.2787191569805145,
+        "sal_noref_c5": 0.22311241924762726,
+        "sal_wref_c1": 1.456578016281128,
+        "sal_wref_c2": 0.722400426864624,
+        "sal_wref_c3": 0.4933825731277466,
+        "sal_wref_c4": 0.3704413175582886,
+        "sal_wref_c5": 0.3025047481060028
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Bioinformatics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 719.6404418945312,
+        "gradnorm_l1_uncentered": 724.3390502929688,
+        "gradnorm_l2_centered": 1.1839367151260376,
+        "gradnorm_l2_uncentered": 2.0050230026245117,
+        "sal_noref_c1": 2.699671983718872,
+        "sal_noref_c2": 1.387976050376892,
+        "sal_noref_c3": 1.0348485708236694,
+        "sal_noref_c4": 0.7884277105331421,
+        "sal_noref_c5": 0.6354877352714539,
+        "sal_wref_c1": 0.3556678295135498,
+        "sal_wref_c2": 0.18327602744102478,
+        "sal_wref_c3": 0.17835287749767303,
+        "sal_wref_c4": 0.14301389455795288,
+        "sal_wref_c5": 0.11826857179403305
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Bioinformatics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1145.83544921875,
+        "gradnorm_l1_uncentered": 1459.399658203125,
+        "gradnorm_l2_centered": 1.9896565675735474,
+        "gradnorm_l2_uncentered": 3.5480797290802,
+        "sal_noref_c1": 8.868254661560059,
+        "sal_noref_c2": 4.495240688323975,
+        "sal_noref_c3": 3.216853380203247,
+        "sal_noref_c4": 2.439258098602295,
+        "sal_noref_c5": 1.9814687967300415,
+        "sal_wref_c1": 0.46798616647720337,
+        "sal_wref_c2": 0.2738162577152252,
+        "sal_wref_c3": 0.3167518675327301,
+        "sal_wref_c4": 0.25923416018486023,
+        "sal_wref_c5": 0.23675017058849335
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1253.38330078125,
+        "gradnorm_l1_uncentered": 1621.2265625,
+        "gradnorm_l2_centered": 1.8957914113998413,
+        "gradnorm_l2_uncentered": 3.5383288860321045,
+        "sal_noref_c1": 9.742369651794434,
+        "sal_noref_c2": 5.253749847412109,
+        "sal_noref_c3": 3.5064475536346436,
+        "sal_noref_c4": 2.6599233150482178,
+        "sal_noref_c5": 2.139991283416748,
+        "sal_wref_c1": 0.8403769135475159,
+        "sal_wref_c2": 0.8141562938690186,
+        "sal_wref_c3": 0.5428078174591064,
+        "sal_wref_c4": 0.4278479814529419,
+        "sal_wref_c5": 0.35069435834884644
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "Bioinformatics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 962.5469970703125,
+        "gradnorm_l1_uncentered": 1240.3895263671875,
+        "gradnorm_l2_centered": 1.6135772466659546,
+        "gradnorm_l2_uncentered": 2.714578151702881,
+        "sal_noref_c1": 4.5447611808776855,
+        "sal_noref_c2": 2.4016735553741455,
+        "sal_noref_c3": 1.6188093423843384,
+        "sal_noref_c4": 1.2142330408096313,
+        "sal_noref_c5": 0.9797002673149109,
+        "sal_wref_c1": 0.012976381927728653,
+        "sal_wref_c2": 0.0843796655535698,
+        "sal_wref_c3": 0.061351578682661057,
+        "sal_wref_c4": 0.04685967415571213,
+        "sal_wref_c5": 0.04073590412735939
+      }
+    },
+    {
+      "step_idx": 5,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 669.20556640625,
+        "gradnorm_l1_uncentered": 663.9177856445312,
+        "gradnorm_l2_centered": 1.281670093536377,
+        "gradnorm_l2_uncentered": 1.9490679502487183,
+        "sal_noref_c1": 2.342600107192993,
+        "sal_noref_c2": 1.4022623300552368,
+        "sal_noref_c3": 0.9367131590843201,
+        "sal_noref_c4": 0.736319899559021,
+        "sal_noref_c5": 0.5940150022506714,
+        "sal_wref_c1": 0.5193365216255188,
+        "sal_wref_c2": 0.38772672414779663,
+        "sal_wref_c3": 0.26172441244125366,
+        "sal_wref_c4": 0.2135070413351059,
+        "sal_wref_c5": 0.17116619646549225
+      }
+    },
+    {
+      "step_idx": 6,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 606.542724609375,
+        "gradnorm_l1_uncentered": 180.26702880859375,
+        "gradnorm_l2_centered": 1.7827223539352417,
+        "gradnorm_l2_uncentered": 0.5071149468421936,
+        "sal_noref_c1": 0.18292932212352753,
+        "sal_noref_c2": 0.09242513030767441,
+        "sal_noref_c3": 0.06494816392660141,
+        "sal_noref_c4": 0.05121529847383499,
+        "sal_noref_c5": 0.041510406881570816,
+        "sal_wref_c1": 3.0260138511657715,
+        "sal_wref_c2": 1.5136488676071167,
+        "sal_wref_c3": 1.0100961923599243,
+        "sal_wref_c4": 0.757586658000946,
+        "sal_wref_c5": 0.6090677976608276
+      }
+    },
+    {
+      "step_idx": 7,
+      "role": "Genomics_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 2603.627685546875,
+        "gradnorm_l1_uncentered": 3109.55517578125,
+        "gradnorm_l2_centered": 5.766336917877197,
+        "gradnorm_l2_uncentered": 7.636484146118164,
+        "sal_noref_c1": 47.97760772705078,
+        "sal_noref_c2": 26.24655532836914,
+        "sal_noref_c3": 17.840608596801758,
+        "sal_noref_c4": 13.381422996520996,
+        "sal_noref_c5": 10.807683944702148,
+        "sal_wref_c1": 23.849943161010742,
+        "sal_wref_c2": 13.860879898071289,
+        "sal_wref_c3": 9.680720329284668,
+        "sal_wref_c4": 7.281362533569336,
+        "sal_wref_c5": 5.9033403396606445
+      }
+    }
+  ]
+}

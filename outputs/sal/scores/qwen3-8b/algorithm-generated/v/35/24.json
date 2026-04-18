@@ -1,0 +1,122 @@
+{
+  "config": {
+    "subset": "algorithm-generated",
+    "weight_config": "/home/hoangpham/exchange/algorithm-generated/v/35"
+  },
+  "metadata": {
+    "filename": "12.json",
+    "question_id": "db4fd70a-2d37-40ea-873f-9433dc5e301f",
+    "mistake_agent": "Verification_Expert",
+    "mistake_step": 1,
+    "level": "2",
+    "subset": "algorithm-generated",
+    "question": "As of May 2023, how many stops are between South Station and Windsor Gardens on MBTA\u2019s Franklin-Foxboro line (not included)?"
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "role": "MBTA_FranciscoFoxboroLine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 702.939697265625,
+        "gradnorm_l1_uncentered": 577.4103393554688,
+        "gradnorm_l2_centered": 1.294487476348877,
+        "gradnorm_l2_uncentered": 1.522551417350769,
+        "sal_noref_c1": 1.4617245197296143,
+        "sal_noref_c2": 0.7779699563980103,
+        "sal_noref_c3": 0.569832980632782,
+        "sal_noref_c4": 0.4283945560455322,
+        "sal_noref_c5": 0.34305158257484436,
+        "sal_wref_c1": 1.015321135520935,
+        "sal_wref_c2": 0.5116938948631287,
+        "sal_wref_c3": 0.3644765317440033,
+        "sal_wref_c4": 0.27376970648765564,
+        "sal_wref_c5": 0.22377511858940125
+      }
+    },
+    {
+      "step_idx": 1,
+      "role": "Verification_Expert",
+      "is_mistake": true,
+      "scores": {
+        "gradnorm_l1_centered": 679.3377685546875,
+        "gradnorm_l1_uncentered": 514.4816284179688,
+        "gradnorm_l2_centered": 1.3250712156295776,
+        "gradnorm_l2_uncentered": 1.2775400876998901,
+        "sal_noref_c1": 1.0877954959869385,
+        "sal_noref_c2": 0.5531971454620361,
+        "sal_noref_c3": 0.41014090180397034,
+        "sal_noref_c4": 0.31425654888153076,
+        "sal_noref_c5": 0.25407522916793823,
+        "sal_wref_c1": 1.3448048830032349,
+        "sal_wref_c2": 0.6677181124687195,
+        "sal_wref_c3": 0.4574294984340668,
+        "sal_wref_c4": 0.34582194685935974,
+        "sal_wref_c5": 0.27739211916923523
+      }
+    },
+    {
+      "step_idx": 2,
+      "role": "Computer_terminal",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 3661.03564453125,
+        "gradnorm_l1_uncentered": 4165.2109375,
+        "gradnorm_l2_centered": 8.439152717590332,
+        "gradnorm_l2_uncentered": 10.42651653289795,
+        "sal_noref_c1": 93.16354370117188,
+        "sal_noref_c2": 48.7318115234375,
+        "sal_noref_c3": 32.62251663208008,
+        "sal_noref_c4": 25.2691707611084,
+        "sal_noref_c5": 20.32356834411621,
+        "sal_wref_c1": 54.884300231933594,
+        "sal_wref_c2": 30.925941467285156,
+        "sal_wref_c3": 20.619600296020508,
+        "sal_wref_c4": 16.02081871032715,
+        "sal_wref_c5": 12.816874504089355
+      }
+    },
+    {
+      "step_idx": 3,
+      "role": "MBTA_FranciscoFoxboroLine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 902.8441162109375,
+        "gradnorm_l1_uncentered": 1245.749755859375,
+        "gradnorm_l2_centered": 1.5383144617080688,
+        "gradnorm_l2_uncentered": 3.1657652854919434,
+        "sal_noref_c1": 7.927022933959961,
+        "sal_noref_c2": 3.9433603286743164,
+        "sal_noref_c3": 2.808305501937866,
+        "sal_noref_c4": 2.132503032684326,
+        "sal_noref_c5": 1.7063242197036743,
+        "sal_wref_c1": 0.3643355667591095,
+        "sal_wref_c2": 0.20819588005542755,
+        "sal_wref_c3": 0.26384857296943665,
+        "sal_wref_c4": 0.23362979292869568,
+        "sal_wref_c5": 0.18700489401817322
+      }
+    },
+    {
+      "step_idx": 4,
+      "role": "MBTA_FranciscoFoxboroLine_Expert",
+      "is_mistake": false,
+      "scores": {
+        "gradnorm_l1_centered": 1918.2681884765625,
+        "gradnorm_l1_uncentered": 2427.061279296875,
+        "gradnorm_l2_centered": 4.252811908721924,
+        "gradnorm_l2_uncentered": 6.073986530303955,
+        "sal_noref_c1": 30.149585723876953,
+        "sal_noref_c2": 16.868852615356445,
+        "sal_noref_c3": 11.40743350982666,
+        "sal_noref_c4": 8.56534481048584,
+        "sal_noref_c5": 6.9749603271484375,
+        "sal_wref_c1": 11.872652053833008,
+        "sal_wref_c2": 7.59115743637085,
+        "sal_wref_c3": 5.243729114532471,
+        "sal_wref_c4": 3.9826931953430176,
+        "sal_wref_c5": 3.2410788536071777
+      }
+    }
+  ]
+}
