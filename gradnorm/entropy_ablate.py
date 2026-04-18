@@ -129,7 +129,7 @@ def main() -> None:
     base  = Path(args.base_dir)
 
     for model, subset in product(args.models, args.subsets):
-        result_dir = base / model / subset / "metrics"
+        result_dir = base / model / subset 
         if not result_dir.exists():
             print(f"[skip] {result_dir} not found")
             continue

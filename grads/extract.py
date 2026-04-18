@@ -57,7 +57,7 @@ import sys
 import time
 from collections import OrderedDict
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 import torch
 from torch import Tensor
@@ -82,6 +82,7 @@ def extract_trajectory(
     target_params: list[str] | str,   # list of shorthands, or "all"
     loss_func:     Callable,
     device:        str,
+    context_strategy:   str = "dependency",
     pbar=None,
 ) -> dict[int, dict[str, Tensor]]:
     """Extract reduced gradient vectors for all scoreable steps in a trajectory.
@@ -89,6 +90,7 @@ def extract_trajectory(
     Parameters
     ----------
     target_params : list of shorthand strings (e.g. ["v/35", "gate/35"]) or "all".
+    context_strategy : the context selection strategy to use.
 
     Returns
     -------
@@ -106,7 +108,13 @@ def extract_trajectory(
     gradients: dict[int, dict[str, Tensor]] = {}
 
     for step_idx in iter_scoreable_steps(traj):
-        encoded = build_context(traj.history, step_idx, tokenizer, max_tokens=max_tokens)
+        encoded = build_context(
+            traj.history, 
+            step_idx, 
+            tokenizer, 
+            max_tokens=max_tokens, 
+            strategy=context_strategy
+        )
 
         input_ids      = encoded["input_ids"].to(device)
         attention_mask = encoded.get("attention_mask")
@@ -178,6 +186,10 @@ def parse_args() -> argparse.Namespace:
                    default="bfloat16")
     p.add_argument("--subset",     default=None)
     p.add_argument("--loss",       choices=LOSSES.keys(), default="ntp")
+    p.add_argument("--temperature", type=float, default=1.0,
+                   help="Temperature for KL divergence loss (if applicable).")
+    p.add_argument("--context", choices=["dependency", "all"], default="dependency",
+                   help="Context selection strategy for handcrafted trajectories. ")
     return p.parse_args()
 
 
@@ -188,9 +200,16 @@ def main():
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
     dtype_map = {"float32": torch.float32, "bfloat16": torch.bfloat16, "float16": torch.float16}
     torch_dtype = dtype_map[args.dtype]
+    context_strategy = args.context
 
     # ── Resolve target_params ────────────────────────────────────────────────
     loss_func = LOSSES[args.loss]
+    if args.loss == "kl_temp":
+        from functools import partial
+        temp = args.temperature
+        print(f"Computing KL divergence with the temperatured-scaled ({temp}) distribution.")
+        loss_func = partial(LOSSES[args.loss], temperature=temp)
+
     if len(args.target_params) == 1 and args.target_params[0] == "all":
         target_params = "all"
     else:
@@ -247,6 +266,8 @@ def main():
         "dtype":         args.dtype,
         "subset":        subset,
         "loss":          args.loss,
+        "temperature":   args.temperature,
+        "context":       args.context,
     }
     (out_dir / "config.json").write_text(json.dumps(config, indent=2))
 
@@ -264,7 +285,8 @@ def main():
 
         gradients = extract_trajectory(
             traj, model, tokenizer, args.max_tokens,
-            target_params, loss_func, device, pbar,
+            target_params, loss_func, device, context_strategy, 
+            pbar,
         )
 
         payload = {

@@ -20,6 +20,7 @@ MODELS=(
     llama-3.1-8b-kl_14
     llama-3.1-8b-kl_15
     llama-3.1-8b-kl_16
+    llama-3.1-8b-kl_18
     llama-3.1-8b-kl_20
     llama-3.1-8b-kl_22
     llama-3.1-8b-kl_24
@@ -28,19 +29,19 @@ MODELS=(
     llama-3.1-8b-kl_30
     llama-3.1-8b-kl_uniform
     llama-3.1-8b-ntp
-    # qwen3-8b-kl_12
-    # qwen3-8b-kl_14
-    # qwen3-8b-kl_15
-    # qwen3-8b-kl_16
-    # qwen3-8b-kl_18
-    # qwen3-8b-kl_20
-    # qwen3-8b-kl_22
-    # qwen3-8b-kl_24
-    # qwen3-8b-kl_26
-    # qwen3-8b-kl_28
-    # qwen3-8b-kl_30
-    # qwen3-8b-kl_uniform
-    # qwen3-8b-ntp
+    qwen3-8b-kl_12
+    qwen3-8b-kl_14
+    qwen3-8b-kl_15
+    qwen3-8b-kl_16
+    qwen3-8b-kl_18
+    qwen3-8b-kl_20
+    qwen3-8b-kl_22
+    qwen3-8b-kl_24
+    qwen3-8b-kl_26
+    qwen3-8b-kl_28
+    qwen3-8b-kl_30
+    qwen3-8b-kl_uniform
+    qwen3-8b-ntp
 )
 
 echo "Sweeping ${#MODELS[@]} models..."

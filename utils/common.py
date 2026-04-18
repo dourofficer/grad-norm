@@ -10,6 +10,14 @@ from rich.console import Console
 from rich.markdown import Markdown
 from typing import Any, Dict, List, Optional, Tuple
 
+
+SEEN = False
+def print_once(text):
+    global SEEN
+    if not SEEN: 
+        print(text)
+        SEEN = True
+        
 def mdprint(text):
     console = Console()
     md = Markdown(text)
