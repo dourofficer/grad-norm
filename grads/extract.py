@@ -58,6 +58,7 @@ import time
 from collections import OrderedDict
 from pathlib import Path
 from typing import Any, Callable
+from safetensors.torch import save_file
 
 import torch
 from torch import Tensor
@@ -276,7 +277,8 @@ def main():
     pbar = tqdm(trajectories)
 
     for traj in pbar:
-        out_path = out_dir / traj.filename.replace(".json", ".pt")
+        # out_path = out_dir / traj.filename.replace(".json", ".pt")
+        out_path = out_dir / traj.filename.replace(".json", ".safetensors")
         if out_path.exists():
             pbar.write(f"  skip: {traj.filename}")
             continue
@@ -289,11 +291,20 @@ def main():
             pbar,
         )
 
-        payload = {
-            "metadata":  _extract_metadata(traj),
-            "gradients": gradients,
+        # payload = {
+        #     "metadata":  _extract_metadata(traj),
+        #     "gradients": gradients,
+        # }
+        # torch.save(payload, out_path)
+        flat_dict = {
+            f"{step_idx}.{layer_name}": tensor.contiguous()
+            for step_idx, layer_dict in gradients.items()
+            for layer_name, tensor in layer_dict.items()
         }
-        torch.save(payload, out_path)
+        header_metadata = {
+            "payload_metadata": json.dumps(_extract_metadata(traj))
+        }
+        save_file(flat_dict, out_path, metadata=header_metadata)
 
     elapsed = time.perf_counter() - t0
     print(f"\nDone in {elapsed:.1f}s  "

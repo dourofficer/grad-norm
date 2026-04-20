@@ -10,10 +10,19 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 from typing import Callable
-from .sal_scoring import make_sal_scoring_fn
+# from .sal_scoring import make_sal_scoring_fn
+from itertools import product as iproduct
 
 from concurrent.futures import ThreadPoolExecutor
 
+from .scoring import (
+    make_mean_distance_scoring,
+    make_coordinate_median_scoring,
+    make_geometric_median_scoring,
+    make_projection_scoring,
+    make_reconstruction_scoring,
+    make_knn_scoring,
+)
 
 try:
     from safetensors.torch import save_file
@@ -243,79 +252,186 @@ def save_results(df: pd.DataFrame, out_dir: Path, subset: str, ks: list[int]) ->
             print(f"Saved {path}")
 
 
-# ── CLI ────────────────────────────────────────────────────────────────────────
-
-def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Evaluate gradient norms for failure attribution.")
-    p.add_argument("--model",    required=True, help="Model tag, e.g. llama-3.1-8b")
-    p.add_argument("--subset",   required=True, help="Subset name, e.g. hand-crafted")
-    p.add_argument("--grad_dir", default="outputs/grads",  help="Root gradient directory")
-    p.add_argument("--data_dir", default=None, help="JSON data dir (defaults to ww/{subset})")
-    p.add_argument("--out_dir",  default=None, help="Output dir (defaults to outputs/grads/{model}/{subset})")
-    p.add_argument("--weights",  default="all", nargs="+", help="Weight names to load, or 'all'")
-    p.add_argument("--ks",       default=[1, 3, 5], nargs="+", type=int)
-    p.add_argument("--norm",     choices=["l1", "l2"], default="l1")
-    p.add_argument("--device",   default="cuda")
-    return p.parse_args()
-
-def sweep():
-    MODELS = ["llama-3.1-8b", "qwen3-8b"]
-    SUBSETS = ["hand-crafted", "algorithm-generated"]
-    SVD_FUNCTIONS = {
-        f"sal_{'wref' if centered else 'noref'}_c{c}": make_sal_scoring_fn(c, centered)
-        for centered in (True, False)
-        for c in range(1, 11)
+from .scoring import (
+    make_mean_distance_scoring,
+    make_coordinate_median_scoring,
+    make_geometric_median_scoring,
+    make_projection_scoring,
+    make_reconstruction_scoring,
+    make_knn_scoring,
+)
+ 
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# Scoring-function registries
+# Each dict maps a canonical name → zero-argument callable → scoring fn.
+# ─────────────────────────────────────────────────────────────────────────────
+ 
+METRICS = ["l1", "l2", "cosine"]
+ 
+ 
+def build_central_functions() -> dict:
+    """Family 1: central-tendency (mean, coord-median, geometric-median)
+    × distance metric (l1, l2, cosine)."""
+    fns = {}
+ 
+    for metric in METRICS:
+        fns[f"mean_dist_{metric}"]    = make_mean_distance_scoring(metric=metric)
+        fns[f"coord_median_{metric}"] = make_coordinate_median_scoring(metric=metric)
+        fns[f"geom_median_{metric}"]  = make_geometric_median_scoring(metric=metric)
+ 
+    return fns
+ 
+ 
+def build_svd_functions() -> dict:
+    """Family 2: SVD-based (projection, reconstruction)
+    × c ∈ {1..5} × centered ∈ {True, False}."""
+    fns = {}
+ 
+    for c, centered in iproduct(range(1, 10), [True, False]):
+        tag = "cen" if centered else "raw"
+        fns[f"proj_c{c}_{tag}"]  = make_projection_scoring(c=c, centered=centered)
+        fns[f"recon_c{c}_{tag}"] = make_reconstruction_scoring(c=c, centered=centered)
+ 
+    return fns
+ 
+ 
+def build_gradnorm_functions() -> dict:
+    """GradNorm: raw L1 / L2 norm of gradient vectors (no reference)."""
+    return {
+        "gradnorm_l1": (lambda G: G.float().norm(p=1, dim=1)),
+        "gradnorm_l2": (lambda G: G.float().norm(p=2, dim=1)),
     }
-    GRADNORM_FUNCTIONS = dict(
-        gradnorm_l1=(lambda G: G.float().norm(p=1, dim=1)),
-        gradnorm_l2=(lambda G: G.float().norm(p=2, dim=1)),
-    )
-
+ 
+ 
+def build_knn_functions() -> dict:
+    """Family 3: kNN distance × k ∈ {1, 3, 5, 10, 20} × normalize ∈ {True, False}."""
+    fns = {}
+ 
+    for k, normalize in iproduct([1, 3, 5, 10, 20], [True, False]):
+        tag = "norm" if normalize else "raw"
+        fns[f"knn_k{k}_{tag}"] = make_knn_scoring(k=k, normalize=normalize)
+ 
+    return fns
+ 
+ 
+FAMILY_BUILDERS = {
+    "central":  build_central_functions,
+    "svd":      build_svd_functions,
+    "gradnorm": build_gradnorm_functions,
+    "knn":      build_knn_functions,
+}
+ 
+ 
+def build_scoring_functions(skip: list[str]) -> dict:
+    fns = {}
+    for family, builder in FAMILY_BUILDERS.items():
+        if family in skip:
+            print(f"  [skip] {family}")
+            continue
+        family_fns = builder()
+        print(f"  [{family}] {len(family_fns)} configs")
+        fns.update(family_fns)
+    return fns
+ 
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# Sweep
+# ─────────────────────────────────────────────────────────────────────────────
+ 
+def sweep(args: argparse.Namespace) -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    ks = [1, 3, 5, 10]
-
-    for model in MODELS:
-        for subset in SUBSETS:
-            print(f"\n=== {model} / {subset} ===")
-
-            store = load_and_stack(
-                model=model, subset=subset,
-                weight_names="all",
-                data_dir=Path("ww") / subset,
-                device=device,
-                grad_dir=Path("outputs/grads"),
-            )
-            out_dir = Path("outputs/grads") / model / "metrics"
-
-            for name, fn in {**GRADNORM_FUNCTIONS, **SVD_FUNCTIONS}.items():
-                print(f"  scoring: {name}")
-                df = evaluate_weights(store, scoring_fn=fn, ks=ks)
-                save_results(df, out_dir=out_dir / name, subset=subset, ks=ks)
-
-            del store
-
+    print(f"Device: {device}")
+ 
+    print("\nBuilding scoring functions …")
+    scoring_functions = build_scoring_functions(skip=args.skip_families)
+    print(f"  Total: {len(scoring_functions)} scoring configs\n")
+ 
+    for model, subset in iproduct(args.models, args.subsets):
+        print(f"\n{'━'*60}")
+        print(f"  Model : {model}")
+        print(f"  Subset: {subset}")
+        print(f"{'━'*60}")
+ 
+        store = load_and_stack(
+            model=model,
+            subset=subset,
+            weight_names="all",
+            data_dir=args.data_dir / subset,
+            device=device,
+            grad_dir=args.grad_dir,
+        )
+        out_dir = args.out_dir / model / "metrics"
+ 
+        for name, fn in tqdm(scoring_functions.items(), desc="Scoring functions"):
+            df = evaluate_weights(store, scoring_fn=fn, ks=args.ks)
+            save_results(df, out_dir=out_dir / name, subset=subset, ks=args.ks)
+ 
+        del store
+        if device.type == "cuda":
+            torch.cuda.empty_cache()
+ 
+ 
+# ─────────────────────────────────────────────────────────────────────────────
+# CLI
+# ─────────────────────────────────────────────────────────────────────────────
+ 
+KNOWN_MODELS  = ["llama-3.1-8b", "qwen3-8b"]
+KNOWN_SUBSETS = ["hand-crafted", "algorithm-generated"]
+ 
+ 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Sweep OOD scoring functions over gradient stores.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+ 
+    # --- Target selection ---
+    parser.add_argument(
+        "--models", nargs="+", default=KNOWN_MODELS,
+        metavar="MODEL",
+        help="Model name(s) to evaluate.",
+    )
+    parser.add_argument(
+        "--subsets", nargs="+", default=KNOWN_SUBSETS,
+        metavar="SUBSET",
+        help="Dataset subset(s) to evaluate.",
+    )
+ 
+    # --- Paths ---
+    parser.add_argument(
+        "--data-dir", type=Path, default=Path("ww"),
+        metavar="DIR",
+        help="Root directory of raw trajectory JSON files.",
+    )
+    parser.add_argument(
+        "--grad-dir", type=Path, default=Path("outputs/grads"),
+        metavar="DIR",
+        help="Root directory of extracted gradient .safetensors files.",
+    )
+    parser.add_argument(
+        "--out-dir", type=Path, default=Path("outputs/grads"),
+        metavar="DIR",
+        help="Root directory for metric TSV output files.",
+    )
+ 
+    # --- Evaluation ---
+    parser.add_argument(
+        "--ks", nargs="+", type=int, default=[1, 3, 5, 10],
+        metavar="K",
+        help="Top-k values for step@k and agent@k metrics.",
+    )
+ 
+    # --- Family toggles ---
+    parser.add_argument(
+        "--skip-families", nargs="*", default=[],
+        choices=list(FAMILY_BUILDERS.keys()),
+        metavar="FAMILY",
+        help=f"Scoring families to skip. Choices: {list(FAMILY_BUILDERS.keys())}",
+    )
+ 
+    return parser.parse_args()
+ 
+ 
 if __name__ == "__main__":
-    sweep()
-
-# if __name__ == "__main__":
-#     args = parse_args()
-
-#     data_dir = Path(args.data_dir) if args.data_dir else Path("ww") / args.subset
-#     out_dir  = Path(args.out_dir)  if args.out_dir  else Path("outputs/grads") / args.model / args.subset / "metrics"
-#     device   = torch.device(args.device)
-
-#     print(f"Model:   {args.model}")
-#     print(f"Subset:  {args.subset}")
-#     print(f"Device:  {device}")
-
-#     store = load_and_stack(
-#         model=args.model, subset=args.subset,
-#         weight_names=args.weights if args.weights != ["all"] else "all",
-#         data_dir=data_dir, device=device, grad_dir=Path(args.grad_dir),
-#     )
-
-#     scoring_fn = (lambda G: G.float().norm(p=1, dim=1)) if args.norm == "l1" \
-#             else (lambda G: G.float().norm(p=2, dim=1))
-
-#     df = evaluate_weights(store, scoring_fn=scoring_fn, ks=args.ks)
-#     save_results(df, out_dir=out_dir, subset=args.subset, ks=args.ks)
+    sweep(parse_args())
